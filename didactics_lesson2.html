@@ -1,0 +1,1094 @@
+<!--============================================================
+     EnglishPro · Didactics Series · Lesson 2
+     Learning Theories I — Behaviourism
+     Pavlov · Watson · Skinner · Thorndike
+     PASTE DIRECTLY into Blogger post HTML mode (the <> button)
+     100% self-contained — no external JS dependencies
+     ============================================================-->
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+#dp-l2{--ny:#0D2B4E;--ny2:#1A4070;--go:#C8933A;--go2:#E8B86D;--gop:#FDF6EC;--cr:#FAFAF7;--wh:#fff;--ink:#1A1A1A;--ink2:#3D3D3D;--mu:#7A7A7A;--bd:#E2DDD6;--bdl:#F0EDE8;--gr:#2E7D52;--grb:#EBF5EF;--rd:#C0392B;--rdb:#FDECEA;--bl:#1E5FA8;--blb:#EBF2FB;--pu:#7C3AED;--pub:#F3F0FF;--te:#0E7490;--teb:#ECFEFF;--sh1:0 2px 8px rgba(13,43,78,.07);--sh2:0 6px 20px rgba(13,43,78,.10);--r:12px;--rl:20px;font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--cr);line-height:1.7;-webkit-font-smoothing:antialiased;display:block;overflow:hidden;direction:ltr;text-align:left}
+#dp-l2 *,#dp-l2 *::before,#dp-l2 *::after{box-sizing:border-box;margin:0;padding:0}
+#dp-l2 button{cursor:pointer;font-family:'DM Sans',sans-serif;border:none;background:none}
+#dp-l2 textarea,#dp-l2 input{font-family:'DM Sans',sans-serif}
+
+/* HERO */
+#dp-l2 .lhero{background:linear-gradient(150deg,#0a1f38 0%,#0D2B4E 50%,#122e52 100%);padding:48px 24px 40px;position:relative;overflow:hidden;border-radius:var(--rl) var(--rl) 0 0}
+#dp-l2 .lhero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%,rgba(200,147,58,.08) 0%,transparent 60%),radial-gradient(circle at 80% 20%,rgba(46,125,82,.06) 0%,transparent 50%);pointer-events:none}
+#dp-l2 .lhero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,147,58,.4),transparent)}
+#dp-l2 .lhero-in{max-width:720px;margin:0 auto;position:relative;z-index:1}
+#dp-l2 .lvlbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,147,58,.12);border:1px solid rgba(200,147,58,.28);color:var(--go2);font-size:.68rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:18px}
+#dp-l2 .ltitle{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:900;color:#F5F0E8;line-height:1.15;margin-bottom:10px;letter-spacing:-.02em}
+#dp-l2 .ltitle em{color:var(--go);font-style:italic}
+#dp-l2 .lsub{font-size:.9rem;color:rgba(245,240,232,.62);margin-bottom:22px;max-width:520px;line-height:1.6}
+#dp-l2 .spills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px}
+#dp-l2 .spill{font-size:.67rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 11px;border-radius:100px}
+#dp-l2 .sp-th{background:rgba(124,58,237,.25);color:#C4B5FD}
+#dp-l2 .sp-ex{background:rgba(30,95,168,.25);color:#7DB8F0}
+#dp-l2 .sp-ic{background:rgba(46,125,82,.25);color:#6BCFA0}
+#dp-l2 .sp-qu{background:rgba(200,147,58,.25);color:var(--go2)}
+
+/* STEP DOTS */
+#dp-l2 .snav{display:flex;align-items:center;gap:5px;flex-wrap:wrap;padding-top:20px;border-top:1px solid rgba(255,255,255,.08)}
+#dp-l2 .snavdot{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;font-size:.7rem;font-weight:700;border:2px solid rgba(255,255,255,.18);color:rgba(255,255,255,.32);cursor:pointer;transition:all .25s;flex-shrink:0}
+#dp-l2 .snavdot.done{border-color:var(--gr);background:var(--gr);color:#fff}
+#dp-l2 .snavdot.active{border-color:var(--go);background:var(--go);color:#fff}
+#dp-l2 .snavsep{width:16px;height:2px;background:rgba(255,255,255,.1);border-radius:1px;flex-shrink:0}
+#dp-l2 .snavlbl{font-size:.63rem;color:rgba(245,240,232,.38);margin-left:6px}
+
+/* BODY */
+#dp-l2 .lbody{max-width:720px;margin:0 auto;padding:32px 20px 64px;background:var(--cr)}
+
+/* SECTION BLOCKS */
+#dp-l2 .sblock{background:var(--wh);border:1px solid var(--bdl);border-radius:var(--rl);padding:28px;margin-bottom:24px;display:none;animation:dp2_up .35s ease both;box-shadow:var(--sh1)}
+#dp-l2 .sblock.vis{display:block}
+@keyframes dp2_up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+#dp-l2 .slabel{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--go);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+#dp-l2 .slabel::after{content:'';flex:1;height:1px;background:var(--bdl)}
+#dp-l2 .sheading{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ny);margin-bottom:16px;line-height:1.25}
+#dp-l2 .sheading em{color:var(--go);font-style:italic}
+#dp-l2 .stxt{font-size:.9rem;color:var(--ink2);margin-bottom:16px;line-height:1.65}
+
+/* CALLOUTS */
+#dp-l2 .co{display:flex;gap:10px;padding:13px 15px;border-radius:var(--r);margin:14px 0;font-size:.855rem;line-height:1.6}
+#dp-l2 .co-tip{background:var(--gop);border:1px solid rgba(200,147,58,.2);color:var(--ink2)}
+#dp-l2 .co-info{background:var(--blb);border:1px solid rgba(30,95,168,.15);color:var(--ink2)}
+#dp-l2 .co-pur{background:var(--pub);border:1px solid rgba(124,58,237,.15);color:var(--ink2)}
+#dp-l2 .co-teal{background:var(--teb);border:1px solid rgba(14,116,144,.15);color:var(--ink2)}
+#dp-l2 .co-gr{background:var(--grb);border:1px solid rgba(46,125,82,.18);color:var(--ink2)}
+#dp-l2 .co-ico{font-size:1rem;flex-shrink:0;margin-top:1px}
+
+/* SCENE */
+#dp-l2 .scene{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:20px;margin-bottom:20px;position:relative;overflow:hidden}
+#dp-l2 .scene::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(200,147,58,.08),transparent 60%);pointer-events:none}
+#dp-l2 .s-ico{font-size:1.8rem;margin-bottom:8px;position:relative;z-index:1}
+#dp-l2 .s-t{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#F5F0E8;position:relative;z-index:1;margin-bottom:5px}
+#dp-l2 .s-d{font-size:.83rem;color:rgba(245,240,232,.65);position:relative;z-index:1;line-height:1.55}
+
+/* THEORIST CARDS */
+#dp-l2 .tcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin:20px 0}
+#dp-l2 .tcard{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:16px;cursor:pointer;transition:all .22s;position:relative;overflow:hidden;text-align:center}
+#dp-l2 .tcard::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;transform:scaleX(0);transition:transform .2s;transform-origin:left}
+#dp-l2 .tcard:hover{transform:translateY(-3px);box-shadow:var(--sh2)}
+#dp-l2 .tcard.fl{background:var(--gop);border-color:var(--go)}
+#dp-l2 .tcard.fl::after{transform:scaleX(1);background:var(--go)}
+#dp-l2 .tc-ico{font-size:2rem;margin-bottom:8px;display:block}
+#dp-l2 .tc-name{font-size:.88rem;font-weight:700;color:var(--ny);margin-bottom:3px}
+#dp-l2 .tc-role{font-size:.72rem;color:var(--go);font-weight:600;margin-bottom:8px}
+#dp-l2 .tc-hint{font-size:.68rem;color:var(--mu)}
+#dp-l2 .tc-def{font-size:.81rem;color:var(--ink2);line-height:1.55;display:none;text-align:left;margin-top:8px}
+#dp-l2 .tcard.fl .tc-def{display:block}
+#dp-l2 .tcard.fl .tc-hint{display:none}
+
+/* EXPERIMENT STEPPER */
+#dp-l2 .exp-wrap{margin:20px 0;border:1.5px solid var(--bd);border-radius:var(--rl);overflow:hidden}
+#dp-l2 .exp-tabs{display:flex;background:var(--cr);border-bottom:1.5px solid var(--bd)}
+#dp-l2 .exp-tab{flex:1;padding:11px 8px;font-size:.78rem;font-weight:600;color:var(--mu);text-align:center;cursor:pointer;transition:all .2s;border:none;background:none;border-bottom:3px solid transparent}
+#dp-l2 .exp-tab.active{color:var(--ny);border-bottom-color:var(--go);background:var(--wh)}
+#dp-l2 .exp-panel{display:none;padding:20px}
+#dp-l2 .exp-panel.active{display:block;animation:dp2_up .25s ease both}
+
+/* CHAIN VISUAL */
+#dp-l2 .chain{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;margin:18px 0}
+#dp-l2 .chain-box{border-radius:var(--r);padding:10px 14px;text-align:center;font-size:.82rem;font-weight:600;min-width:100px;flex-shrink:0}
+#dp-l2 .chain-arrow{font-size:1.2rem;color:var(--go);flex-shrink:0}
+#dp-l2 .cb-s{background:#EBF2FB;color:#0D2B4E;border:1.5px solid rgba(30,95,168,.2)}
+#dp-l2 .cb-r{background:var(--gop);color:#7a5520;border:1.5px solid rgba(200,147,58,.25)}
+#dp-l2 .cb-c{background:var(--grb);color:#1a5c35;border:1.5px solid rgba(46,125,82,.25)}
+#dp-l2 .cb-p{background:var(--rdb);color:#922b21;border:1.5px solid rgba(192,57,43,.2)}
+
+/* REINFORCEMENT INTERACTIVE */
+#dp-l2 .rf-wrap{margin:20px 0}
+#dp-l2 .rf-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+#dp-l2 .rf-card{border-radius:var(--r);padding:14px;border:1.5px solid;cursor:pointer;transition:all .2s;position:relative}
+#dp-l2 .rf-card:hover{transform:translateY(-2px);box-shadow:var(--sh1)}
+#dp-l2 .rf-card.pos{background:#EBF5EF;border-color:rgba(46,125,82,.25)}
+#dp-l2 .rf-card.neg{background:#EBF2FB;border-color:rgba(30,95,168,.2)}
+#dp-l2 .rf-card.pun{background:var(--rdb);border-color:rgba(192,57,43,.2)}
+#dp-l2 .rf-card.ext{background:var(--pub);border-color:rgba(124,58,237,.15)}
+#dp-l2 .rf-label{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+#dp-l2 .rf-label.pos{color:var(--gr)}
+#dp-l2 .rf-label.neg{color:var(--bl)}
+#dp-l2 .rf-label.pun{color:var(--rd)}
+#dp-l2 .rf-label.ext{color:var(--pu)}
+#dp-l2 .rf-def{font-size:.83rem;color:var(--ink2);line-height:1.5;margin-bottom:6px}
+#dp-l2 .rf-example{font-size:.78rem;font-style:italic;color:var(--mu)}
+#dp-l2 .rf-badge{display:none;font-size:.7rem;font-weight:600;padding:2px 8px;border-radius:100px;color:#fff;margin-top:6px}
+#dp-l2 .rf-card:hover .rf-badge,.rf-card.sel .rf-badge{display:inline-block}
+#dp-l2 .rf-card.pos .rf-badge{background:var(--gr)}
+#dp-l2 .rf-card.neg .rf-badge{background:var(--bl)}
+#dp-l2 .rf-card.pun .rf-badge{background:var(--rd)}
+#dp-l2 .rf-card.ext .rf-badge{background:var(--pu)}
+
+/* TABLE */
+#dp-l2 .gtbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.85rem}
+#dp-l2 .gtbl th{background:var(--ny);color:#F5F0E8;padding:9px 13px;text-align:left;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+#dp-l2 .gtbl th:first-child{border-radius:var(--r) 0 0 0}
+#dp-l2 .gtbl th:last-child{border-radius:0 var(--r) 0 0}
+#dp-l2 .gtbl td{padding:9px 13px;border-bottom:1px solid var(--bdl);color:var(--ink2);vertical-align:top}
+#dp-l2 .gtbl tr:nth-child(even) td{background:var(--cr)}
+#dp-l2 .tbl-b{color:var(--bl);font-weight:600}
+#dp-l2 .tbl-g{color:var(--go);font-weight:600}
+#dp-l2 .tbl-gr{color:var(--gr);font-weight:600}
+#dp-l2 .tbl-pu{color:var(--pu);font-weight:600}
+#dp-l2 .tbl-rd{color:var(--rd);font-weight:600}
+
+/* GRAMMAR BOXES */
+#dp-l2 .gbox{border-radius:0 var(--r) var(--r) 0;padding:18px 20px;margin:16px 0}
+#dp-l2 .gbox-bl{background:var(--blb);border:1px solid rgba(30,95,168,.2);border-left:4px solid var(--bl)}
+#dp-l2 .gbox-go{background:var(--gop);border:1px solid rgba(200,147,58,.2);border-left:4px solid var(--go)}
+#dp-l2 .gbox-gr{background:var(--grb);border:1px solid rgba(46,125,82,.2);border-left:4px solid var(--gr)}
+#dp-l2 .gbox-pu{background:var(--pub);border:1px solid rgba(124,58,237,.15);border-left:4px solid var(--pu)}
+#dp-l2 .gbox-rd{background:var(--rdb);border:1px solid rgba(192,57,43,.15);border-left:4px solid var(--rd)}
+#dp-l2 .gbox h4{font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:11px}
+#dp-l2 .gbox-bl h4{color:var(--bl)}
+#dp-l2 .gbox-go h4{color:var(--go)}
+#dp-l2 .gbox-gr h4{color:var(--gr)}
+#dp-l2 .gbox-pu h4{color:var(--pu)}
+#dp-l2 .gbox-rd h4{color:var(--rd)}
+#dp-l2 .grule{font-family:'DM Mono',monospace;font-size:.86rem;color:var(--ny);background:rgba(255,255,255,.65);padding:9px 14px;border-radius:7px;margin-bottom:7px;line-height:1.6}
+#dp-l2 .grule span{color:var(--bl);font-weight:600}
+#dp-l2 .grule em{color:var(--go);font-style:normal;font-weight:600}
+#dp-l2 .grule strong{color:var(--gr);font-weight:700}
+
+/* FILL BLANKS */
+#dp-l2 .fex{margin:18px 0}
+#dp-l2 .fi{background:var(--cr);border:1.5px solid var(--bd);border-radius:var(--r);padding:16px 18px;margin-bottom:10px;transition:border-color .2s}
+#dp-l2 .fi.ok{border-color:var(--gr);background:var(--grb)}
+#dp-l2 .fi.bad{border-color:var(--rd);background:var(--rdb)}
+#dp-l2 .fsen{font-size:.92rem;color:var(--ink2);line-height:2;display:flex;align-items:center;flex-wrap:wrap;gap:5px}
+#dp-l2 .finp{border:none;border-bottom:2px solid var(--go);background:transparent;font-size:.92rem;font-family:'DM Sans',sans-serif;color:var(--ny);font-weight:600;padding:2px 6px;min-width:110px;outline:none;transition:border-color .2s;text-align:center}
+#dp-l2 .finp:focus{border-color:var(--ny)}
+#dp-l2 .finp.ok{border-color:var(--gr);color:var(--gr)}
+#dp-l2 .finp.bad{border-color:var(--rd);color:var(--rd)}
+#dp-l2 .ffb{font-size:.78rem;font-weight:600;margin-top:7px;display:none}
+#dp-l2 .fi.ok .ffb{display:block;color:var(--gr)}
+#dp-l2 .fi.bad .ffb{display:block;color:var(--rd)}
+#dp-l2 .chkb{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none;margin-top:6px}
+#dp-l2 .chkb:hover{background:var(--go);transform:translateY(-1px)}
+
+/* SPEAKING */
+#dp-l2 .stask{border-radius:var(--r);padding:20px;margin:14px 0;border:1.5px solid}
+#dp-l2 .stask-gr{background:var(--grb);border-color:rgba(46,125,82,.22)}
+#dp-l2 .stask-bl{background:var(--blb);border-color:rgba(30,95,168,.18)}
+#dp-l2 .stask-pu{background:var(--pub);border-color:rgba(124,58,237,.18)}
+#dp-l2 .sth{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+#dp-l2 .stico{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;color:#fff}
+#dp-l2 .stitle{font-size:.9rem;font-weight:600}
+#dp-l2 .stitle-gr{color:var(--gr)}
+#dp-l2 .stitle-bl{color:var(--bl)}
+#dp-l2 .stitle-pu{color:var(--pu)}
+#dp-l2 .sinstr{font-size:.855rem;color:var(--ink2);line-height:1.6;margin-bottom:10px}
+#dp-l2 .smodel{background:var(--wh);border-radius:8px;padding:13px 15px;font-family:'DM Mono',monospace;font-size:.84rem;color:var(--ny);line-height:1.9}
+#dp-l2 .em-gr{color:var(--gr);font-weight:600;font-style:normal}
+#dp-l2 .em-bl{color:var(--bl);font-weight:600;font-style:normal}
+#dp-l2 .em-go{color:var(--go);font-weight:600;font-style:normal}
+
+/* AUDIO */
+#dp-l2 .aplayer{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px;margin:14px 0;flex-wrap:wrap}
+#dp-l2 .abig{width:48px;height:48px;border-radius:50%;background:var(--go);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;transition:all .2s;cursor:pointer;border:none;box-shadow:0 4px 14px rgba(200,147,58,.4)}
+#dp-l2 .abig:hover{background:var(--go2);transform:scale(1.06)}
+#dp-l2 .ainfo{flex:1;min-width:160px}
+#dp-l2 .at{font-size:.87rem;font-weight:600;color:#F5F0E8;margin-bottom:3px}
+#dp-l2 .as{font-size:.72rem;color:rgba(245,240,232,.55)}
+#dp-l2 .apbar{height:4px;background:rgba(255,255,255,.14);border-radius:2px;margin-top:9px;overflow:hidden}
+#dp-l2 .apfill{height:100%;background:var(--go);width:0%;border-radius:2px;transition:width .3s}
+#dp-l2 .scrtog{background:rgba(255,255,255,.1);color:rgba(245,240,232,.78);font-size:.72rem;font-weight:600;padding:5px 11px;border-radius:100px;border:1px solid rgba(255,255,255,.15);cursor:pointer;transition:all .2s;flex-shrink:0}
+#dp-l2 .scrtog:hover{background:rgba(255,255,255,.2)}
+#dp-l2 .scrbox{background:var(--cr);border:1px solid var(--bd);border-radius:var(--r);padding:18px;margin-top:10px;display:none}
+#dp-l2 .scrbox.show{display:block}
+#dp-l2 .scrbox p{font-size:.875rem;color:var(--ink2);margin-bottom:7px;line-height:1.7}
+
+/* WRITING */
+#dp-l2 .wa{width:100%;min-height:130px;border:2px solid var(--bd);border-radius:var(--r);padding:14px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--ink);background:var(--cr);resize:vertical;outline:none;transition:border-color .2s;line-height:1.7}
+#dp-l2 .wa:focus{border-color:var(--go)}
+#dp-l2 .wa::placeholder{color:var(--mu)}
+#dp-l2 .wcnt{font-size:.72rem;color:var(--mu);text-align:right;margin-top:5px}
+#dp-l2 .wsub{margin-top:11px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none}
+#dp-l2 .wsub:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l2 .wfb{display:none;margin-top:13px;background:var(--grb);border:1.5px solid rgba(46,125,82,.22);border-radius:var(--r);padding:15px;font-size:.855rem;color:var(--gr);line-height:1.65}
+#dp-l2 .wfb.show{display:block}
+
+/* QUIZ */
+#dp-l2 .qpr{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+#dp-l2 .qpbar{flex:1;height:6px;background:var(--bd);border-radius:3px;overflow:hidden;margin:0 11px}
+#dp-l2 .qpfill{height:100%;background:linear-gradient(90deg,var(--go),var(--go2));border-radius:3px;transition:width .4s ease}
+#dp-l2 .qcnt{font-size:.77rem;font-weight:600;color:var(--mu)}
+#dp-l2 .qq{font-size:1rem;font-weight:600;color:var(--ny);margin-bottom:16px;line-height:1.5}
+#dp-l2 .qqn{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--go);color:#fff;font-size:.75rem;font-weight:700;margin-right:7px;flex-shrink:0;vertical-align:middle}
+#dp-l2 .qopts{display:flex;flex-direction:column;gap:9px}
+#dp-l2 .qopt{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:13px 16px;font-size:.9rem;color:var(--ink2);text-align:left;transition:all .2s;display:flex;align-items:center;gap:9px;cursor:pointer}
+#dp-l2 .qopt::before{content:'';width:17px;height:17px;border-radius:50%;border:2px solid var(--bd);flex-shrink:0;transition:all .2s}
+#dp-l2 .qopt:hover:not([disabled]){border-color:var(--go);background:var(--gop);transform:translateX(3px)}
+#dp-l2 .qopt:hover::before{border-color:var(--go)}
+#dp-l2 .qopt.qco{border-color:var(--gr)!important;background:var(--grb)!important;color:var(--gr)!important}
+#dp-l2 .qopt.qco::before{background:var(--gr);border-color:var(--gr)}
+#dp-l2 .qopt.qwr{border-color:var(--rd)!important;background:var(--rdb)!important;color:var(--rd)!important}
+#dp-l2 .qopt.qwr::before{background:var(--rd);border-color:var(--rd)}
+#dp-l2 .qfbm{display:none;margin-top:11px;padding:13px 16px;border-radius:var(--r);font-size:.86rem;font-weight:500;line-height:1.6}
+#dp-l2 .qfbm.show{display:block}
+#dp-l2 .qfbm.ok{background:var(--grb);color:var(--gr);border:1px solid rgba(46,125,82,.2)}
+#dp-l2 .qfbm.bad{background:var(--rdb);color:var(--rd);border:1px solid rgba(192,57,43,.2)}
+#dp-l2 .qnxt{margin-top:14px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;display:none;cursor:pointer;border:none}
+#dp-l2 .qnxt:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l2 .qnxt.show{display:inline-block}
+
+/* SCORE */
+#dp-l2 .spl{text-align:center;padding:28px 20px;display:none;animation:dp2_up .4s ease both}
+#dp-l2 .spl.show{display:block}
+#dp-l2 .scir{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--ny),var(--ny2));display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 8px 24px rgba(13,43,78,.2)}
+#dp-l2 .snum{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:var(--go);line-height:1}
+#dp-l2 .sden{font-size:.7rem;color:rgba(245,240,232,.5)}
+#dp-l2 .smsg{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--ny);margin-bottom:7px}
+#dp-l2 .ssub{font-size:.84rem;color:var(--mu);margin-bottom:18px}
+#dp-l2 .srty{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none}
+#dp-l2 .srty:hover{background:var(--go)}
+
+/* NAV */
+#dp-l2 .navb{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:18px;border-top:1px solid var(--bdl);gap:10px}
+#dp-l2 .nb{display:flex;align-items:center;gap:7px;padding:11px 22px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;border:2px solid var(--bd);color:var(--ink2);background:var(--wh);cursor:pointer}
+#dp-l2 .nb:hover{border-color:var(--go);color:var(--go)}
+#dp-l2 .nb.pri{background:var(--ny);color:#fff;border-color:transparent}
+#dp-l2 .nb.pri:hover{background:var(--go);border-color:transparent}
+#dp-l2 .nb:disabled{opacity:.38;cursor:default;pointer-events:none}
+
+/* FOOTER */
+#dp-l2 .lft{background:var(--ny);padding:24px;text-align:center;border-radius:0 0 var(--rl) var(--rl)}
+#dp-l2 .flo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:#F5F0E8;margin-bottom:5px}
+#dp-l2 .flo em{color:var(--go);font-style:italic}
+#dp-l2 .ftx{font-size:.74rem;color:rgba(245,240,232,.42)}
+
+@media(max-width:560px){
+  #dp-l2 .lhero{padding:32px 16px 28px}
+  #dp-l2 .lbody{padding:20px 14px 48px}
+  #dp-l2 .sblock{padding:18px 14px}
+  #dp-l2 .tcards{grid-template-columns:1fr 1fr}
+  #dp-l2 .rf-grid{grid-template-columns:1fr}
+  #dp-l2 .navb{flex-direction:column}
+  #dp-l2 .nb{width:100%;justify-content:center}
+  #dp-l2 .chain{flex-direction:column;align-items:flex-start}
+  #dp-l2 .chain-arrow{transform:rotate(90deg)}
+}
+</style>
+
+<!-- ═══ LESSON WRAPPER ═══ -->
+<div id="dp-l2">
+
+<!-- HERO -->
+<div class="lhero">
+  <div class="lhero-in">
+    <div class="lvlbadge">🎓 Didactics Series &nbsp;·&nbsp; Lesson 2 of 12</div>
+    <h2 class="ltitle">Learning Theories I —<br><em>Behaviourism</em></h2>
+    <p class="lsub">Pavlov, Watson, Skinner, and Thorndike: how the idea that language is a habit shaped an entire era of teaching — and why it still matters for your exam.</p>
+    <div class="spills">
+      <span class="spill sp-th">📖 Theory</span>
+      <span class="spill sp-ex">🔬 Experiments</span>
+      <span class="spill sp-ic">🎯 Interactive Tasks</span>
+      <span class="spill sp-qu">📝 12-Question Quiz</span>
+    </div>
+    <div class="snav">
+      <div class="snavdot active" data-s="0" title="What is Learning?">1</div>
+      <div class="snavsep"></div>
+      <div class="snavdot" data-s="1" title="The 4 Pioneers">2</div>
+      <div class="snavsep"></div>
+      <div class="snavdot" data-s="2" title="Classical Conditioning">3</div>
+      <div class="snavsep"></div>
+      <div class="snavdot" data-s="3" title="Operant Conditioning">4</div>
+      <div class="snavsep"></div>
+      <div class="snavdot" data-s="4" title="Thorndike's Laws">5</div>
+      <div class="snavsep"></div>
+      <div class="snavdot" data-s="5" title="Classroom Applications">6</div>
+      <div class="snavsep"></div>
+      <div class="snavdot" data-s="6" title="Listening Task">7</div>
+      <div class="snavsep"></div>
+      <div class="snavdot" data-s="7" title="Writing Task">8</div>
+      <div class="snavsep"></div>
+      <div class="snavdot" data-s="8" title="Exam Quiz">9</div>
+      <span class="snavlbl">9 sections</span>
+    </div>
+  </div>
+</div>
+
+<!-- BODY -->
+<div class="lbody">
+
+<!-- ─── SEC 0 · WHAT IS LEARNING? ─── -->
+<div class="sblock vis" id="dp2s0">
+  <div class="slabel">Section 1 · Foundations</div>
+  <h3 class="sheading">What is <em>Learning?</em></h3>
+
+  <div class="scene">
+    <div class="s-ico">🧠</div>
+    <div class="s-t">The Most Important Question in Education</div>
+    <div class="s-d">Before we can talk about how to teach, we must understand what learning actually IS. Every teaching method is built on a theory of how learning happens — and your exam will test whether you understand those foundations.</div>
+  </div>
+
+  <p class="stxt">The definition of learning that appears most frequently in teaching exams comes from Wakefield (1996):</p>
+
+  <div class="gbox gbox-go">
+    <h4>The Definition of Learning</h4>
+    <div class="grule">"A relatively <em>permanent change in behaviour</em> based on <em>experience or discovery</em>."</div>
+    <div class="grule">— Wakefield, 1996</div>
+  </div>
+
+  <p class="stxt">This definition has three critical elements that examiners look for:</p>
+
+  <table class="gtbl">
+    <tr><th>Element</th><th>What it means</th><th>Why it matters</th></tr>
+    <tr><td><span class="tbl-b">Relatively permanent</span></td><td>Not just a temporary reaction</td><td>Learning lasts — it changes future behaviour</td></tr>
+    <tr><td><span class="tbl-g">Change in behaviour</span></td><td>Something observable happens</td><td>Behaviourists focus on this — they only study what can be seen</td></tr>
+    <tr><td><span class="tbl-gr">Based on experience</span></td><td>The environment shapes learning</td><td>Practice, repetition, and reinforcement drive the change</td></tr>
+  </table>
+
+  <div class="co co-info"><span class="co-ico">🔎</span><span><strong>Why study learning theories?</strong> Every teaching method has a psychological foundation. If you understand why Behaviourism believes learning = habit formation, you will instantly understand the Audio-Lingual Method, TPR, and error correction strategies — because they all come from the same root.</span></div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>The 3 main theories you must know:</strong> (1) <strong>Behaviourism</strong> — habit formation through stimulus-response. (2) <strong>Cognitivism / Innatism</strong> — mental processing and rule discovery. (3) <strong>Constructivism</strong> — building knowledge through experience. This lesson covers Behaviourism in full.</span></div>
+
+  <div class="navb">
+    <button class="nb" disabled>← Back</button>
+    <button class="nb pri" onclick="dp2Go(1)">Next: The 4 Pioneers →</button>
+  </div>
+</div>
+
+<!-- ─── SEC 1 · THE 4 PIONEERS ─── -->
+<div class="sblock" id="dp2s1">
+  <div class="slabel">Section 2 · Key Figures</div>
+  <h3 class="sheading">The 4 Pioneers of <em>Behaviourism</em></h3>
+  <p class="stxt">Tap each card to reveal what each pioneer believed and why they matter for the teaching exam.</p>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Core belief of ALL Behaviourists:</strong> Learning is a change in observable behaviour — caused by the environment. The mind is a "black box" — Behaviourists don't care about internal thoughts, only visible responses.</span></div>
+
+  <div class="tcards">
+
+    <div class="tcard" id="p0">
+      <span class="tc-ico">🐕</span>
+      <div class="tc-name">Ivan Pavlov</div>
+      <div class="tc-role">Classical Conditioning</div>
+      <div class="tc-hint">Tap to reveal</div>
+      <div class="tc-def"><strong>Key idea:</strong> Learning happens by association — pairing a neutral stimulus with a natural response until the neutral stimulus alone triggers the response.<br><br><strong>Famous experiment:</strong> Dogs salivated to a bell after it was paired with food.<br><br><strong>Exam link:</strong> Classical Conditioning explains how emotional responses to learning are formed — anxiety, enjoyment, motivation.</div>
+    </div>
+
+    <div class="tcard" id="p1">
+      <span class="tc-ico">🧪</span>
+      <div class="tc-name">John B. Watson</div>
+      <div class="tc-role">Father of Behaviourism</div>
+      <div class="tc-hint">Tap to reveal</div>
+      <div class="tc-def"><strong>Key idea:</strong> All behaviour — including emotions — is learned through interaction with the environment. There are no innate responses.<br><br><strong>Focus:</strong> The stimulus that triggers a response. Learning is passive.<br><br><strong>Exam link:</strong> Watson established that psychology should study observable behaviour only — not the mind. This is the foundation of all Behaviourist teaching methods.</div>
+    </div>
+
+    <div class="tcard" id="p2">
+      <span class="tc-ico">🐀</span>
+      <div class="tc-name">B.F. Skinner</div>
+      <div class="tc-role">Operant Conditioning</div>
+      <div class="tc-hint">Tap to reveal</div>
+      <div class="tc-def"><strong>Key idea:</strong> Behaviour is shaped by its consequences — reinforcement increases a behaviour, punishment decreases it.<br><br><strong>Famous experiment:</strong> Rats in a box learned to press a lever for food.<br><br><strong>Exam link:</strong> Skinner's theory directly shaped the Audio-Lingual Method (praise for correct answers, correction for errors). Quote: <em>"If you want it repeated, reinforce it."</em></div>
+    </div>
+
+    <div class="tcard" id="p3">
+      <span class="tc-ico">🐈</span>
+      <div class="tc-name">Edward Thorndike</div>
+      <div class="tc-role">Trial and Error / Law of Effect</div>
+      <div class="tc-hint">Tap to reveal</div>
+      <div class="tc-def"><strong>Key idea:</strong> Learning happens through trial and error. Responses that lead to satisfying outcomes are strengthened; those that don't are weakened.<br><br><strong>Famous experiment:</strong> A cat in a puzzle box learned to escape faster over time.<br><br><strong>Exam link:</strong> Thorndike's Laws of Effect, Use, and Disuse explain why practice and repetition are essential in language learning.</div>
+    </div>
+
+  </div>
+
+  <table class="gtbl">
+    <tr><th>Pioneer</th><th>Type</th><th>Key Formula</th><th>Classroom Use</th></tr>
+    <tr><td><span class="tbl-b">Pavlov</span></td><td>Classical Conditioning</td><td>S → R (association)</td><td>Pair praise with tasks to reduce anxiety</td></tr>
+    <tr><td><span class="tbl-g">Watson</span></td><td>Classical Conditioning</td><td>Stimulus → Conditioned Response</td><td>Create positive classroom atmosphere</td></tr>
+    <tr><td><span class="tbl-gr">Skinner</span></td><td>Operant Conditioning</td><td>Behaviour → Consequence</td><td>Use praise, rewards, and corrections</td></tr>
+    <tr><td><span class="tbl-pu">Thorndike</span></td><td>Trial and Error</td><td>S → R → Satisfying Result</td><td>Encourage practice; reward progress</td></tr>
+  </table>
+
+  <div class="navb">
+    <button class="nb" onclick="dp2Go(0)">← Foundations</button>
+    <button class="nb pri" onclick="dp2Go(2)">Next: Classical Conditioning →</button>
+  </div>
+</div>
+
+<!-- ─── SEC 2 · CLASSICAL CONDITIONING ─── -->
+<div class="sblock" id="dp2s2">
+  <div class="slabel">Section 3 · Pavlov & Watson</div>
+  <h3 class="sheading">Classical Conditioning — <em>Learning by Association</em></h3>
+  <p class="stxt">Classical Conditioning is the foundation of how we associate stimuli with responses. It explains why students can feel anxious about grammar tests, or why a particular classroom routine makes them feel focused and ready.</p>
+
+  <!-- Experiment Stepper -->
+  <div class="exp-wrap">
+    <div class="exp-tabs">
+      <button class="exp-tab active" onclick="dp2Tab(0,this)">🐕 Pavlov's Experiment</button>
+      <button class="exp-tab" onclick="dp2Tab(1,this)">📊 The 3 Stages</button>
+      <button class="exp-tab" onclick="dp2Tab(2,this)">🏫 In the Classroom</button>
+    </div>
+    <div class="exp-panel active" id="dp2ep0">
+      <p class="stxt" style="margin-bottom:12px">Pavlov's famous experiment with dogs established the principles of Classical Conditioning:</p>
+      <div class="chain">
+        <div class="chain-box cb-s">🥩 Meat (UCS)<br><span style="font-size:.7rem;font-weight:400">Unconditioned Stimulus</span></div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-box cb-r">💧 Salivation (UCR)<br><span style="font-size:.7rem;font-weight:400">Unconditioned Response</span></div>
+      </div>
+      <div class="chain">
+        <div class="chain-box cb-s">🔔 Bell + 🥩 Meat</div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-box cb-r">💧 Salivation</div>
+      </div>
+      <div class="chain">
+        <div class="chain-box cb-c">🔔 Bell alone (CS)<br><span style="font-size:.7rem;font-weight:400">Conditioned Stimulus</span></div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-box cb-r">💧 Salivation (CR)<br><span style="font-size:.7rem;font-weight:400">Conditioned Response</span></div>
+      </div>
+      <div class="co co-tip" style="margin-top:12px"><span class="co-ico">💡</span><span>The key insight: a <strong>neutral stimulus</strong> (the bell) becomes meaningful through <strong>repeated pairing</strong> with a natural stimulus (food). After enough repetitions, the neutral stimulus alone produces the response.</span></div>
+    </div>
+    <div class="exp-panel" id="dp2ep1">
+      <table class="gtbl">
+        <tr><th>Stage</th><th>Before conditioning</th><th>During</th><th>After</th></tr>
+        <tr><td><span class="tbl-b">Stimulus</span></td><td>Food = natural trigger</td><td>Bell + Food together</td><td>Bell alone</td></tr>
+        <tr><td><span class="tbl-g">Response</span></td><td>Salivation (automatic)</td><td>Salivation (paired)</td><td>Salivation (learned)</td></tr>
+        <tr><td><span class="tbl-gr">Status</span></td><td>Unconditioned</td><td>Pairing phase</td><td>Conditioned</td></tr>
+      </table>
+      <div class="co co-pur"><span class="co-ico">🧠</span><span><strong>Watson added</strong> that emotions are also classically conditioned. Fear, enjoyment, and anxiety about subjects are all learned associations — not fixed personality traits. This is why a bad experience in one English class can make a student afraid of all English classes.</span></div>
+    </div>
+    <div class="exp-panel" id="dp2ep2">
+      <p class="stxt" style="margin-bottom:12px">Classical Conditioning gives teachers three powerful tools:</p>
+      <div class="gbox gbox-gr">
+        <h4>Classroom Applications</h4>
+        <div class="grule"><strong>1. Pairing praise with tasks:</strong> Consistently praising students during grammar activities creates a positive association → grammar becomes enjoyable, not frightening.</div>
+        <div class="grule"><strong>2. Using music or routines:</strong> Playing the same music at the start of every lesson conditions students to feel focused and ready. The music becomes the "bell."</div>
+        <div class="grule"><strong>3. Reducing anxiety:</strong> If students feel anxious about speaking, pair speaking tasks with low-pressure, fun activities (games, pair work) to build positive associations.</div>
+      </div>
+      <div class="co co-tip"><span class="co-ico">🎯</span><span><strong>Exam tip:</strong> When asked "how can you apply Classical Conditioning in the classroom?", always give a specific example that shows the pairing: neutral stimulus + natural response = new conditioned response.</span></div>
+    </div>
+  </div>
+
+  <!-- Quick fill-in -->
+  <h4 style="color:var(--ny);font-family:'Playfair Display',serif;font-size:1rem;margin:20px 0 12px">✏️ Check Your Understanding</h4>
+  <div class="fex">
+    <div class="fi" id="dp2f0">
+      <div class="fsen">In Classical Conditioning, a neutral stimulus becomes a <input class="finp" data-a="conditioned" id="dp2f0i" maxlength="14"> stimulus after being repeatedly paired with a natural one.</div>
+      <div class="ffb"></div>
+    </div>
+    <div class="fi" id="dp2f1">
+      <div class="fsen">Pavlov's experiment showed that a <input class="finp" data-a="bell" id="dp2f1i" maxlength="8"> could trigger salivation in dogs after being associated with food.</div>
+      <div class="ffb"></div>
+    </div>
+    <div class="fi" id="dp2f2">
+      <div class="fsen">Watson believed all behaviour, including <input class="finp" data-a="emotions" id="dp2f2i" maxlength="10">, is learned through interaction with the environment.</div>
+      <div class="ffb"></div>
+    </div>
+  </div>
+  <button class="chkb" id="dp2chkf1">Check Answers ✓</button>
+
+  <div class="navb">
+    <button class="nb" onclick="dp2Go(1)">← The 4 Pioneers</button>
+    <button class="nb pri" onclick="dp2Go(3)">Next: Operant Conditioning →</button>
+  </div>
+</div>
+
+<!-- ─── SEC 3 · OPERANT CONDITIONING ─── -->
+<div class="sblock" id="dp2s3">
+  <div class="slabel">Section 4 · B.F. Skinner</div>
+  <h3 class="sheading">Operant Conditioning — <em>Behaviour Shaped by Consequences</em></h3>
+  <p class="stxt">While Pavlov and Watson focused on what triggers behaviour, Skinner focused on what happens <em>after</em> the behaviour. He argued that the consequences of an action determine whether it will be repeated — and this is what makes language learning a form of habit formation.</p>
+
+  <div class="gbox gbox-bl">
+    <h4>Skinner's Core Formula</h4>
+    <div class="grule"><span>Behaviour</span> → <em>Consequence</em> → <strong>Change in future behaviour</strong></div>
+    <div class="grule">"Reinforced actions are more likely to be repeated." — B.F. Skinner</div>
+  </div>
+
+  <p class="stxt">Skinner identified four types of consequences. Tap each card to understand it fully:</p>
+
+  <!-- Reinforcement cards -->
+  <div class="rf-wrap">
+    <div class="rf-grid">
+      <div class="rf-card pos">
+        <div class="rf-label pos">➕ Positive Reinforcement</div>
+        <div class="rf-def">Adding something pleasant after a behaviour → increases the behaviour.</div>
+        <div class="rf-example">"She answered correctly → Teacher says 'Excellent!' → She answers more often."</div>
+        <span class="rf-badge" style="background:var(--gr)">Most used in CLT</span>
+      </div>
+      <div class="rf-card neg">
+        <div class="rf-label neg">➖ Negative Reinforcement</div>
+        <div class="rf-def">Removing something unpleasant after a behaviour → increases the behaviour.</div>
+        <div class="rf-example">"Student stops being anxious when the teacher removes timed pressure → attends more."</div>
+        <span class="rf-badge" style="background:var(--bl)">Often confused with punishment</span>
+      </div>
+      <div class="rf-card pun">
+        <div class="rf-label pun">⛔ Positive Punishment</div>
+        <div class="rf-def">Adding something unpleasant after a behaviour → decreases the behaviour.</div>
+        <div class="rf-example">"Student speaks L1 → Teacher gives extra homework → Student uses L2 more."</div>
+        <span class="rf-badge" style="background:var(--rd)">Used in ALM (error correction)</span>
+      </div>
+      <div class="rf-card ext">
+        <div class="rf-label ext">🚫 Extinction</div>
+        <div class="rf-def">Removing reinforcement → behaviour eventually disappears.</div>
+        <div class="rf-example">"Teacher stops reacting to attention-seeking behaviour → behaviour fades."</div>
+        <span class="rf-badge" style="background:var(--pu)">Classroom management tool</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">⚠️</span><span><strong>The most confused pair in exams:</strong> Negative Reinforcement ≠ Punishment. Negative reinforcement REMOVES something bad to INCREASE behaviour. Punishment ADDS something bad to DECREASE behaviour. Both use the word "negative/punishment" — but they do opposite things.</span></div>
+
+  <div class="gbox gbox-go">
+    <h4>Skinner's Box Experiment — The Rat</h4>
+    <div class="grule">Rat presses lever → receives food → <em>positive reinforcement</em> → presses lever more often</div>
+    <div class="grule">Rat presses lever → electric shock stops → <em>negative reinforcement</em> → presses lever more often</div>
+    <div class="grule">Rat presses lever → receives shock → <em>positive punishment</em> → presses lever less often</div>
+  </div>
+
+  <div class="co co-pur"><span class="co-ico">🧠</span><span><strong>Watson vs Skinner — key exam distinction:</strong><br>
+  Watson focused on the <em>stimulus</em> that produces a response — learning is passive.<br>
+  Skinner focused on the <em>behaviour itself</em> and its consequences — learning is active.<br>
+  Watson: "Something happens to the learner." Skinner: "What the learner does determines what they learn next."</span></div>
+
+  <!-- Fill blanks -->
+  <h4 style="color:var(--ny);font-family:'Playfair Display',serif;font-size:1rem;margin:20px 0 12px">✏️ Fill in the Blanks</h4>
+  <div class="fex">
+    <div class="fi" id="dp2f3">
+      <div class="fsen">Skinner's learning formula: Behaviour → <input class="finp" data-a="Consequence" id="dp2f3i" maxlength="14"> → Change in future behaviour.</div>
+      <div class="ffb"></div>
+    </div>
+    <div class="fi" id="dp2f4">
+      <div class="fsen">Adding praise after a correct answer is an example of <input class="finp" data-a="positive" id="dp2f4i" maxlength="10"> reinforcement.</div>
+      <div class="ffb"></div>
+    </div>
+    <div class="fi" id="dp2f5">
+      <div class="fsen">Negative reinforcement <input class="finp" data-a="increases" id="dp2f5i" maxlength="10"> a behaviour by removing something unpleasant.</div>
+      <div class="ffb"></div>
+    </div>
+  </div>
+  <button class="chkb" id="dp2chkf2">Check Answers ✓</button>
+
+  <div class="navb">
+    <button class="nb" onclick="dp2Go(2)">← Classical Conditioning</button>
+    <button class="nb pri" onclick="dp2Go(4)">Next: Thorndike's Laws →</button>
+  </div>
+</div>
+
+<!-- ─── SEC 4 · THORNDIKE ─── -->
+<div class="sblock" id="dp2s4">
+  <div class="slabel">Section 5 · Edward Thorndike</div>
+  <h3 class="sheading">Thorndike — <em>Trial, Error & The Law of Effect</em></h3>
+  <p class="stxt">Thorndike's work was the bridge between early stimulus-response psychology and modern learning theory. His famous experiment with a cat in a puzzle box revealed how learning progresses through repeated attempts.</p>
+
+  <!-- Experiment stepper -->
+  <div class="exp-wrap">
+    <div class="exp-tabs">
+      <button class="exp-tab active" onclick="dp2Tab2(0,this)">🐱 The Cat Experiment</button>
+      <button class="exp-tab" onclick="dp2Tab2(1,this)">📜 The Three Laws</button>
+      <button class="exp-tab" onclick="dp2Tab2(2,this)">🏫 In the Classroom</button>
+    </div>
+    <div class="exp-panel active" id="dp2ep2a">
+      <div class="chain">
+        <div class="chain-box cb-s">🐱 Cat trapped in box<br><span style="font-size:.7rem;font-weight:400">Stimulus</span></div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-box cb-r">Scratches randomly<br><span style="font-size:.7rem;font-weight:400">Random Response</span></div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-box cb-p">Accidentally hits lever<br><span style="font-size:.7rem;font-weight:400">Escape + Food</span></div>
+      </div>
+      <div class="chain" style="margin-top:6px">
+        <div class="chain-box cb-c">Tries lever first<br><span style="font-size:.7rem;font-weight:400">Learned Response</span></div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-box cb-r">Escapes faster each time<br><span style="font-size:.7rem;font-weight:400">Habit Formed</span></div>
+      </div>
+      <div class="co co-tip" style="margin-top:12px"><span class="co-ico">💡</span><span>Key insight: The cat didn't understand — it simply repeated what worked. This is <strong>learning without insight</strong> — purely through consequence. Successful actions get stronger; useless ones disappear.</span></div>
+    </div>
+    <div class="exp-panel" id="dp2ep2b">
+      <div class="gbox gbox-bl">
+        <h4>Law of Effect</h4>
+        <div class="grule">Responses followed by <em>satisfying outcomes</em> are <strong>strengthened</strong> and more likely to be repeated.</div>
+        <div class="grule">Responses followed by <em>unsatisfying outcomes</em> are <span style="color:var(--rd);font-weight:600">weakened</span> and less likely to recur.</div>
+      </div>
+      <div class="gbox gbox-go">
+        <h4>Law of Use</h4>
+        <div class="grule">The more a connection is <em>practised and used</em>, the <strong>stronger</strong> it becomes.</div>
+        <div class="grule">Example: Regular grammar drills strengthen the habit of correct use.</div>
+      </div>
+      <div class="gbox gbox-gr">
+        <h4>Law of Disuse</h4>
+        <div class="grule">Connections that are <em>not practised</em> become <span style="color:var(--rd);font-weight:600">weaker</span> over time.</div>
+        <div class="grule">Example: A student who stops practising vocabulary will forget it — the connection fades.</div>
+      </div>
+    </div>
+    <div class="exp-panel" id="dp2ep2c">
+      <p class="stxt" style="margin-bottom:12px">Thorndike's laws translate directly into language teaching strategies:</p>
+      <table class="gtbl">
+        <tr><th>Law</th><th>Teaching Application</th><th>Example</th></tr>
+        <tr><td><span class="tbl-b">Law of Effect</span></td><td>Reward correct language use</td><td>Praise, stars, positive feedback after correct answers</td></tr>
+        <tr><td><span class="tbl-g">Law of Use</span></td><td>Repeat and practise regularly</td><td>Daily vocabulary revision, weekly grammar recycling</td></tr>
+        <tr><td><span class="tbl-gr">Law of Disuse</span></td><td>Review forgotten content</td><td>Spaced repetition, revision exercises before exams</td></tr>
+      </table>
+      <div class="co co-pur"><span class="co-ico">🧠</span><span><strong>Exam insight:</strong> Thorndike's Law of Effect is essentially the same idea as Skinner's reinforcement — but Thorndike came FIRST (1898 vs 1930s). Examiners sometimes ask you to compare them: Thorndike focused on the "satisfying result" itself; Skinner was more systematic about types of reinforcement.</span></div>
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" onclick="dp2Go(3)">← Operant Conditioning</button>
+    <button class="nb pri" onclick="dp2Go(5)">Next: Classroom Applications →</button>
+  </div>
+</div>
+
+<!-- ─── SEC 5 · CLASSROOM APPLICATIONS ─── -->
+<div class="sblock" id="dp2s5">
+  <div class="slabel">Section 6 · Applied Behaviourism</div>
+  <h3 class="sheading">Behaviourism in the <em>Language Classroom</em></h3>
+  <p class="stxt">Behaviourism didn't stay in the laboratory — it directly shaped language teaching methods. Understanding this connection is one of the most valuable skills for your teaching exam.</p>
+
+  <div class="co co-info"><span class="co-ico">🔗</span><span><strong>The direct link:</strong> Behaviourism → Audio-Lingual Method (ALM). The ALM was built entirely on the idea that language learning = habit formation through stimulus-response-reinforcement. This is why ALM uses drills, repetition, immediate correction, and praise.</span></div>
+
+  <table class="gtbl">
+    <tr><th>Behaviourist Principle</th><th>Teaching Application</th><th>Method / Technique</th></tr>
+    <tr><td><span class="tbl-b">S → R → Reinforcement</span></td><td>Drill and reward correct patterns</td><td>Substitution drills (ALM)</td></tr>
+    <tr><td><span class="tbl-g">Habit formation</span></td><td>Repeat until automatic</td><td>Choral repetition, memorizing dialogues</td></tr>
+    <tr><td><span class="tbl-gr">Positive reinforcement</span></td><td>Praise correct language use</td><td>"Good!" "Excellent!" after correct answers</td></tr>
+    <tr><td><span class="tbl-pu">Error correction</span></td><td>Prevent bad habits forming</td><td>Immediate correction in ALM — errors = bad habits</td></tr>
+    <tr><td><span class="tbl-rd">Classical Conditioning</span></td><td>Create positive classroom atmosphere</td><td>Music, routines, warmth to reduce anxiety</td></tr>
+    <tr><td><span class="tbl-b">Law of Disuse</span></td><td>Review content regularly</td><td>Spaced revision, recycling vocabulary in new contexts</td></tr>
+  </table>
+
+  <div class="stask stask-gr">
+    <div class="sth"><div class="stico" style="background:var(--gr)">🗣️</div><div class="stitle stitle-gr">Speaking Task — Identify the Principle (2 min)</div></div>
+    <div class="sinstr">For each scenario, identify which Behaviourist concept is being used and name the theorist behind it. Say your answer aloud before reading the model.</div>
+    <div class="smodel">
+      <span class="em-go">Scenario A:</span> A teacher plays the same calm music every time students do a writing task. After a month, students automatically become focused when the music starts.<br><br>
+      <span class="em-go">Scenario B:</span> A teacher immediately says "not quite — repeat after me: She goes" every time a student says "She go."<br><br>
+      <span class="em-go">Scenario C:</span> A student practices vocabulary flashcards every day for a week, stops for a month, and then forgets most of the words.<br><br>
+      <span class="em-go">Scenario D:</span> Every time a student volunteers an answer, the teacher smiles and says "Well done." That student starts answering more frequently.
+    </div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">✅</span><span><strong>Model answers:</strong><br>
+  A → <strong>Classical Conditioning</strong> (Pavlov/Watson) — music = conditioned stimulus for focus<br>
+  B → <strong>Operant Conditioning / Positive Punishment + Error as bad habit</strong> (Skinner / ALM principle)<br>
+  C → <strong>Law of Disuse</strong> (Thorndike) — unused connections weaken<br>
+  D → <strong>Positive Reinforcement</strong> (Skinner) — praise increases the behaviour</span></div>
+
+  <div class="stask stask-bl">
+    <div class="sth"><div class="stico" style="background:var(--bl)">⚖️</div><div class="stitle stitle-bl">Critical Thinking — Limitations of Behaviourism</div></div>
+    <div class="sinstr">Consider this question carefully — it often appears in the written exam:</div>
+    <div class="smodel"><span class="em-go">"Behaviourism has been both praised and criticised in language teaching. Discuss two strengths and two limitations of applying Behaviourist principles in the EFL classroom."</span></div>
+  </div>
+
+  <div class="co co-pur"><span class="co-ico">🧠</span><span><strong>Model answer points:</strong><br>
+  <strong>Strengths:</strong> (1) Provides clear, structured practice through drills — good for pronunciation and pattern learning. (2) Positive reinforcement builds student confidence and motivation.<br>
+  <strong>Limitations:</strong> (1) Language is creative — humans produce sentences they have never heard (Chomsky's critique). Behaviourism cannot explain this. (2) Mechanical drills ("drill and kill") are boring and don't develop communicative competence for real-world use.</span></div>
+
+  <div class="navb">
+    <button class="nb" onclick="dp2Go(4)">← Thorndike's Laws</button>
+    <button class="nb pri" onclick="dp2Go(6)">Next: Listening Task →</button>
+  </div>
+</div>
+
+<!-- ─── SEC 6 · LISTENING ─── -->
+<div class="sblock" id="dp2s6">
+  <div class="slabel">Section 7 · Listening Comprehension</div>
+  <h3 class="sheading">Listen — A Teacher Explains Behaviourism</h3>
+  <p class="stxt">Press ▶ to hear a teacher explaining how she uses Behaviourist principles in her classroom. <strong>Listen first without the transcript</strong>, then answer the questions.</p>
+
+  <div class="aplayer">
+    <button class="abig" id="dp2playbtn">▶</button>
+    <div class="ainfo">
+      <div class="at">Behaviourism in the EFL Classroom</div>
+      <div class="as">~35 seconds · British English · browser audio</div>
+      <div class="apbar"><div class="apfill" id="dp2apf"></div></div>
+    </div>
+    <button class="scrtog" id="dp2scrtog">📄 Transcript</button>
+  </div>
+
+  <div class="scrbox" id="dp2scrbox">
+    <p><strong>Teacher:</strong> "In my classroom, I draw on several Behaviourist principles without even thinking about it. When a student pronounces a word correctly, I immediately say 'well done' — that's positive reinforcement; it increases the chance they'll do it again. When I play the same jazz music at the start of every lesson, students automatically settle down and open their books — that's classical conditioning at work. And I always recycle vocabulary every week, because I know that according to Thorndike's Law of Disuse, what we don't use, we lose. That said, I don't rely on Behaviourism alone — drills can become mechanical if overused, and real language learning needs creativity too."</p>
+    <p style="color:var(--mu);font-size:.78rem;font-style:italic;margin-top:8px">Now identify the Behaviourist concepts mentioned!</p>
+  </div>
+
+  <h4 style="color:var(--ny);font-family:'Playfair Display',serif;font-size:1rem;margin:20px 0 12px">Comprehension Check</h4>
+  <div class="fex">
+    <div class="fi" id="dp2f6">
+      <div class="fsen">The teacher says "well done" after correct pronunciation. This is an example of <input class="finp" data-a="positive" id="dp2f6i" maxlength="10"> reinforcement.</div>
+      <div class="ffb"></div>
+    </div>
+    <div class="fi" id="dp2f7">
+      <div class="fsen">Students settling down when music plays is an example of <input class="finp" data-a="classical" id="dp2f7i" maxlength="12"> conditioning.</div>
+      <div class="ffb"></div>
+    </div>
+    <div class="fi" id="dp2f8">
+      <div class="fsen">The teacher recycles vocabulary weekly to avoid the Law of <input class="finp" data-a="Disuse" id="dp2f8i" maxlength="8">.</div>
+      <div class="ffb"></div>
+    </div>
+  </div>
+  <button class="chkb" id="dp2chkf3">Check Answers ✓</button>
+
+  <div class="navb">
+    <button class="nb" onclick="dp2Go(5)">← Classroom Applications</button>
+    <button class="nb pri" onclick="dp2Go(7)">Next: Writing Task →</button>
+  </div>
+</div>
+
+<!-- ─── SEC 7 · WRITING ─── -->
+<div class="sblock" id="dp2s7">
+  <div class="slabel">Section 8 · Written Production</div>
+  <h3 class="sheading">Write an Exam-Style Answer</h3>
+  <p class="stxt">This is the type of written question you will face in the teaching exam. Write a paragraph of 70–90 words. Use at least <strong>3 Behaviourist concepts</strong> and name at least <strong>2 theorists</strong> correctly.</p>
+
+  <div class="co co-tip"><span class="co-ico">✍️</span><span><strong>The exam question:</strong> "Explain how Behaviourism can inform language teaching practice. Give specific examples."<br><br>
+  <strong>Structure your answer:</strong><br>
+  1. Define Behaviourism briefly (1–2 sentences)<br>
+  2. Mention Pavlov/Watson → classroom application<br>
+  3. Mention Skinner → classroom application<br>
+  4. Mention Thorndike → classroom application<br>
+  5. One critical reflection (strength or limitation)</span></div>
+
+  <div style="margin-top:18px">
+    <div style="color:var(--mu);font-size:.75rem;font-weight:600;letter-spacing:.06em;margin-bottom:7px;text-transform:uppercase">Your Answer:</div>
+    <textarea class="wa" id="dp2wtxt" placeholder="Behaviourism is a learning theory that views language as a habit formed through stimulus-response-reinforcement. Pavlov showed that... Skinner argued that... In the classroom, teachers can... Thorndike's Law of Effect suggests that... However, one limitation is..."></textarea>
+    <div class="wcnt" id="dp2wcnt">0 words (aim for 70–90)</div>
+    <button class="wsub" id="dp2wsub">Submit My Answer ✓</button>
+    <div class="wfb" id="dp2wfb">
+      <strong>✅ Great effort!</strong> Writing exam answers using precise technical vocabulary is a key skill.<br><br>
+      Self-assessment checklist:<br>
+      • Did you define Behaviourism in one clear sentence? ✓<br>
+      • Did you name at least 2 theorists (Pavlov, Skinner, Thorndike, Watson)? ✓<br>
+      • Did you give a concrete classroom example for each concept? ✓<br>
+      • Did you use terms: <em>stimulus, response, reinforcement, habit, conditioning</em>? ✓<br>
+      • Did you include a critical reflection? ✓<br><br>
+      💡 <strong>Exam tip:</strong> Examiners reward answers that connect theory to classroom practice with specific, realistic examples — not just definitions.
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" onclick="dp2Go(6)">← Listening Task</button>
+    <button class="nb pri" onclick="dp2Go(8)">Next: Exam Quiz →</button>
+  </div>
+</div>
+
+<!-- ─── SEC 8 · QUIZ ─── -->
+<div class="sblock" id="dp2s8">
+  <div class="slabel">Section 9 · Exam Preparation Quiz</div>
+  <h3 class="sheading">Test Your Knowledge 🎯 — 12 Exam-Style Questions</h3>
+  <p class="stxt">These questions are modelled on real teaching exam formats. Every wrong answer gives you a full explanation. Take your time — understand each one before moving on.</p>
+
+  <div>
+    <div class="qpr">
+      <span class="qcnt" id="dp2qcnt">1 / 12</span>
+      <div class="qpbar"><div class="qpfill" id="dp2qpf" style="width:8.3%"></div></div>
+      <span class="qcnt" id="dp2qsl">Score: 0</span>
+    </div>
+    <div id="dp2qarea"></div>
+    <div class="qfbm" id="dp2qfb"></div>
+    <button class="qnxt" id="dp2qnxt">Next Question →</button>
+    <div class="spl" id="dp2spl">
+      <div class="scir"><div class="snum" id="dp2sfin">0</div><div class="sden">/ 12</div></div>
+      <div class="smsg" id="dp2smsg">Well done!</div>
+      <div class="ssub" id="dp2ssub">Keep practising!</div>
+      <div style="margin-top:16px">
+        <button class="srty" id="dp2srty">🔄 Retry Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" onclick="dp2Go(7)">← Writing Task</button>
+  </div>
+</div>
+
+</div><!-- /lbody -->
+
+<!-- FOOTER -->
+<div class="lft">
+  <div class="flo">English<em>Pro</em> · Didactics</div>
+  <div class="ftx">Lesson 2 — Behaviourism · Pavlov · Watson · Skinner · Thorndike · Preparing Future Teachers for the Teaching Exam</div>
+</div>
+
+</div><!-- /dp-l2 -->
+
+<!-- ═══ JAVASCRIPT ═══ -->
+<script>
+(function(){
+'use strict';
+
+var QD=[
+  {
+    q:'Which of the following BEST defines Behaviourism as a learning theory?',
+    opts:['Learners build knowledge by actively constructing meaning from experience','Language learning is a creative process driven by innate mental abilities','Learning is a change in observable behaviour caused by environmental stimuli and their consequences','Learning occurs through social interaction and collaboration with more capable peers'],
+    a:2,
+    ex:'✅ Behaviourism defines learning as a change in observable behaviour caused by the environment — specifically through stimulus-response-reinforcement. It focuses ONLY on what can be observed, not on internal mental processes. Options A and D describe Constructivism/Social Constructivism; option B describes Innatism (Chomsky).'
+  },
+  {
+    q:'Pavlov rang a bell every time he gave dogs food. After many repetitions, the dogs salivated at the bell alone. In this experiment, the bell (after conditioning) is the:',
+    opts:['Unconditioned Stimulus (UCS)','Unconditioned Response (UCR)','Conditioned Stimulus (CS)','Conditioned Response (CR)'],
+    a:2,
+    ex:'✅ Before conditioning, the bell was neutral. After being repeatedly paired with food (the UCS), the bell ALONE triggers salivation. At this point the bell is called the Conditioned Stimulus (CS) — it has "learned" to trigger a response through association. The salivation triggered by the bell alone is the Conditioned Response (CR).'
+  },
+  {
+    q:'A student always feels anxious during English speaking tests. After the teacher starts allowing peer support during tests, the anxiety gradually disappears. Which type of conditioning best explains this change?',
+    opts:['Operant Conditioning — positive reinforcement','Classical Conditioning — extinction of a conditioned fear response','Trial and Error — the student discovered a better strategy','Negative Punishment — the test format was changed'],
+    a:1,
+    ex:'✅ The student had developed a conditioned fear response (anxiety) to speaking tests through Classical Conditioning. When the original threatening condition (isolation/pressure) is repeatedly absent, the conditioned response (anxiety) weakens and disappears — this is called extinction in Classical Conditioning. The new positive experience counter-conditions the old anxiety.'
+  },
+  {
+    q:'A teacher removes timed pressure from a grammar activity after noticing that students perform better in relaxed conditions. Students start participating more. This is an example of:',
+    opts:['Positive Reinforcement — adding something pleasant','Positive Punishment — adding something unpleasant','Negative Reinforcement — removing something unpleasant to increase behaviour','Extinction — ignoring undesirable behaviour'],
+    a:2,
+    ex:'✅ Negative Reinforcement = REMOVING something UNPLEASANT to INCREASE a behaviour. The teacher removed the timed pressure (unpleasant stimulus) → students participated more (behaviour increased). This is NOT punishment. The word "negative" refers to removal, not negativity. The most common exam mistake is confusing negative reinforcement with punishment.'
+  },
+  {
+    q:'Watson\'s contribution to Behaviourism differs from Skinner\'s mainly because Watson focused on:',
+    opts:['The consequences that follow behaviour (reinforcement and punishment)','The stimulus that triggers a response, with learning seen as passive','The internal mental processes that organize learning','The social environment and peer interaction in language acquisition'],
+    a:1,
+    ex:'✅ Watson focused on the STIMULUS that produces a response — he believed behaviour is triggered by environmental events, and learners are passive responders. Skinner, by contrast, focused on the BEHAVIOUR itself and what happens AFTER it (consequences). Watson = classical conditioning / passive learning. Skinner = operant conditioning / active learning.'
+  },
+  {
+    q:'According to Thorndike\'s Law of Effect, which of the following will be MOST strengthened?',
+    opts:['A response that is practised many times regardless of outcome','A response that follows a satisfying, successful outcome','A response that the teacher models clearly for students','A response that the student discovers independently through inquiry'],
+    a:1,
+    ex:'✅ Thorndike\'s Law of Effect states that responses followed by satisfying outcomes are strengthened and more likely to recur. The KEY element is the SATISFYING OUTCOME — not mere repetition (Law of Use) or teacher modelling. Practice alone (option A) strengthens through Law of Use, but it is the positive outcome that triggers the Law of Effect.'
+  },
+  {
+    q:'A language student practises irregular verbs intensively in January. She stops reviewing them in February and March. By April, she has forgotten most of them. Which of Thorndike\'s laws best explains this?',
+    opts:['Law of Effect — the verbs were not satisfying to learn','Law of Readiness — she was not developmentally ready','Law of Disuse — unused connections weaken over time','Law of Use — she needed more repetition initially'],
+    a:2,
+    ex:'✅ The Law of Disuse states that connections not practised weaken and eventually fade. The student formed strong connections in January (Law of Use) but allowed them to deteriorate through disuse (no review in Feb/March). This is why spaced repetition and regular vocabulary recycling are essential teaching strategies grounded in Behaviourist principles.'
+  },
+  {
+    q:'The Audio-Lingual Method (ALM) is directly rooted in Behaviourism. Which ALM feature BEST reflects Skinner\'s Operant Conditioning?',
+    opts:['Using authentic materials and real-world tasks','Immediately correcting errors and praising correct responses','Encouraging students to discover grammar rules inductively','Allowing students to use their L1 to support understanding'],
+    a:1,
+    ex:'✅ ALM\'s use of immediate error correction (consequence for wrong response) and praise for correct responses (positive reinforcement) directly applies Skinner\'s Operant Conditioning. The core ALM belief: language is habit → habits are shaped by reinforcement → errors must be corrected immediately before they become bad habits. This is Behaviourism applied to language teaching.'
+  },
+  {
+    q:'Chomsky\'s most important critique of Behaviourism was that:',
+    opts:['Children learn language through rewards and punishment from their parents','Behaviourism ignores the role of social interaction in language acquisition','Humans produce and understand sentences they have never heard before — which habit formation cannot explain','Classical conditioning creates anxiety that prevents language learning'],
+    a:2,
+    ex:'✅ Chomsky\'s key argument: language is CREATIVE — people produce and understand entirely new sentences constantly. This cannot be explained by habit formation (which only predicts repetition of previously reinforced patterns). Chomsky proposed an innate Language Acquisition Device (LAD) instead. This critique fundamentally undermined Behaviourism and led to the development of Cognitivism and Innatism.'
+  },
+  {
+    q:'Which of the following scenarios does NOT illustrate a Behaviourist approach to language teaching?',
+    opts:['A teacher uses substitution drills where students replace one word in a sentence pattern repeatedly','A teacher praises correct pronunciation immediately and repeats the word for students to imitate','A teacher gives students a problem to research independently and present their own conclusions','A teacher plays the same music at the start of every lesson to create a focused learning atmosphere'],
+    a:2,
+    ex:'✅ Having students research independently and present their own conclusions is Inquiry-Based / Constructivist learning — not Behaviourist. Behaviourism focuses on controlled stimulus-response practice, not independent discovery or self-directed research. Options A (drills), B (positive reinforcement + imitation), and D (classical conditioning via routine) all directly apply Behaviourist principles.'
+  },
+  {
+    q:'A teacher says: "If you finish the exercise correctly, you get to choose the next activity." According to Skinner, this is:',
+    opts:['Positive Reinforcement — adding a pleasant reward to increase the behaviour','Negative Reinforcement — removing a task to increase participation','Positive Punishment — adding a difficult task after wrong answers','Extinction — ignoring incorrect answers to reduce them'],
+    a:0,
+    ex:'✅ The teacher is ADDING something pleasant (choosing the next activity = a desired privilege) AFTER a desired behaviour (finishing correctly). This is Positive Reinforcement — something pleasant is added following the target behaviour, making the behaviour more likely to occur in the future. The student is motivated to finish correctly because of the anticipated reward.'
+  },
+  {
+    q:'Which statement BEST summarizes the key difference between Classical Conditioning and Operant Conditioning in a language teaching context?',
+    opts:['Classical Conditioning shapes grammar; Operant Conditioning shapes vocabulary','Classical Conditioning creates emotional/attitudinal responses to learning; Operant Conditioning shapes specific language behaviours through consequences','Classical Conditioning is used with adults; Operant Conditioning is used with children','Classical Conditioning requires a teacher; Operant Conditioning is self-directed'],
+    a:1,
+    ex:'✅ This is the most important distinction for your exam: Classical Conditioning (Pavlov/Watson) shapes EMOTIONAL and ATTITUDINAL responses — whether students feel anxious or motivated about a subject. Operant Conditioning (Skinner) shapes SPECIFIC BEHAVIOURS by controlling their consequences — whether students repeat a correct language form or avoid an error. Both are Behaviourist, but they operate differently in the classroom.'
+  }
+];
+
+var curSec=0,qCur=0,qScore=0,qAns=false;
+var audioPlaying=false,audioTimer=null;
+
+/* ── NAVIGATION ── */
+window.dp2Go=function(n){
+  document.querySelectorAll('#dp-l2 .sblock').forEach(function(b){b.classList.remove('vis')});
+  document.getElementById('dp2s'+n).classList.add('vis');
+  curSec=n;
+  updateDots();
+  var top=document.getElementById('dp-l2');
+  if(top)top.scrollIntoView({behavior:'smooth',block:'start'});
+};
+function updateDots(){
+  document.querySelectorAll('#dp-l2 .snavdot').forEach(function(d){
+    var i=parseInt(d.getAttribute('data-s'));
+    d.classList.remove('active','done');
+    if(i<curSec)d.classList.add('done');
+    if(i===curSec)d.classList.add('active');
+  });
+}
+document.querySelectorAll('#dp-l2 .snavdot').forEach(function(d){
+  d.addEventListener('click',function(){dp2Go(parseInt(d.getAttribute('data-s')))});
+});
+
+/* ── THEORIST CARDS ── */
+document.querySelectorAll('#dp-l2 .tcard').forEach(function(c){
+  c.addEventListener('click',function(){c.classList.toggle('fl')});
+});
+
+/* ── EXPERIMENT TABS ── */
+window.dp2Tab=function(i,btn){
+  document.querySelectorAll('#dp2ep0,#dp2ep1,#dp2ep2').forEach(function(p){p.classList.remove('active')});
+  document.getElementById('dp2ep'+i).classList.add('active');
+  document.querySelectorAll('#dp-l2 .exp-tabs .exp-tab').forEach(function(t){t.classList.remove('active')});
+  btn.classList.add('active');
+};
+window.dp2Tab2=function(i,btn){
+  ['2a','2b','2c'].forEach(function(s){
+    var el=document.getElementById('dp2ep'+s);
+    if(el)el.classList.remove('active');
+  });
+  var targets=['2a','2b','2c'];
+  var el2=document.getElementById('dp2ep'+targets[i]);
+  if(el2)el2.classList.add('active');
+  var tabs=btn.closest('.exp-tabs');
+  if(tabs)tabs.querySelectorAll('.exp-tab').forEach(function(t){t.classList.remove('active')});
+  btn.classList.add('active');
+};
+
+/* ── FILL BLANKS ── */
+function checkFill(pairs){
+  pairs.forEach(function(p){
+    var inp=document.getElementById(p.i);
+    var item=document.getElementById(p.d);
+    if(!inp||!item)return;
+    var fb=item.querySelector('.ffb');
+    var ans=inp.getAttribute('data-a').toLowerCase().trim();
+    var given=inp.value.toLowerCase().trim();
+    var ok=given===ans;
+    item.classList.toggle('ok',ok);item.classList.toggle('bad',!ok);
+    inp.classList.toggle('ok',ok);inp.classList.toggle('bad',!ok);
+    if(fb)fb.textContent=ok?'✅ Correct!':'❌ Answer: '+inp.getAttribute('data-a');
+  });
+}
+var chkf1=document.getElementById('dp2chkf1');
+if(chkf1)chkf1.addEventListener('click',function(){
+  checkFill([{i:'dp2f0i',d:'dp2f0'},{i:'dp2f1i',d:'dp2f1'},{i:'dp2f2i',d:'dp2f2'}]);
+});
+var chkf2=document.getElementById('dp2chkf2');
+if(chkf2)chkf2.addEventListener('click',function(){
+  checkFill([{i:'dp2f3i',d:'dp2f3'},{i:'dp2f4i',d:'dp2f4'},{i:'dp2f5i',d:'dp2f5'}]);
+});
+var chkf3=document.getElementById('dp2chkf3');
+if(chkf3)chkf3.addEventListener('click',function(){
+  checkFill([{i:'dp2f6i',d:'dp2f6'},{i:'dp2f7i',d:'dp2f7'},{i:'dp2f8i',d:'dp2f8'}]);
+});
+
+/* ── AUDIO ── */
+var playbtn=document.getElementById('dp2playbtn');
+var apf=document.getElementById('dp2apf');
+if(playbtn){
+  playbtn.addEventListener('click',function(){
+    if(audioPlaying){
+      window.speechSynthesis&&window.speechSynthesis.cancel();
+      clearInterval(audioTimer);audioPlaying=false;playbtn.textContent='▶';
+      if(apf)apf.style.width='0%';return;
+    }
+    var txt="In my classroom, I draw on several Behaviourist principles without even thinking about it. When a student pronounces a word correctly, I immediately say well done — that's positive reinforcement; it increases the chance they'll do it again. When I play the same jazz music at the start of every lesson, students automatically settle down and open their books — that's classical conditioning at work. And I always recycle vocabulary every week, because I know that according to Thorndike's Law of Disuse, what we don't use, we lose. That said, I don't rely on Behaviourism alone — drills can become mechanical if overused, and real language learning needs creativity too.";
+    if(!window.speechSynthesis)return;
+    var u=new SpeechSynthesisUtterance(txt);
+    u.lang='en-GB';u.rate=0.85;
+    var vv=window.speechSynthesis.getVoices();
+    var v=vv.find(function(x){return x.lang==='en-GB';})||vv.find(function(x){return x.lang.startsWith('en');});
+    if(v)u.voice=v;
+    audioPlaying=true;playbtn.textContent='⏸';
+    var w=0;
+    audioTimer=setInterval(function(){w=Math.min(100,w+1.1);if(apf)apf.style.width=w+'%';if(w>=100)clearInterval(audioTimer);},280);
+    u.onend=function(){audioPlaying=false;playbtn.textContent='▶';clearInterval(audioTimer);};
+    window.speechSynthesis.speak(u);
+  });
+}
+var scrtog=document.getElementById('dp2scrtog');
+var scrbox=document.getElementById('dp2scrbox');
+if(scrtog)scrtog.addEventListener('click',function(){scrbox&&scrbox.classList.toggle('show')});
+
+/* ── WRITING ── */
+var wtxt=document.getElementById('dp2wtxt');
+var wcnt=document.getElementById('dp2wcnt');
+var wsub=document.getElementById('dp2wsub');
+var wfb=document.getElementById('dp2wfb');
+if(wtxt){
+  wtxt.addEventListener('input',function(){
+    var w=wtxt.value.trim()===''?0:wtxt.value.trim().split(/\s+/).length;
+    if(wcnt){wcnt.textContent=w+' words (aim for 70–90)';wcnt.style.color=w>=70?'#2E7D52':'#7A7A7A';}
+  });
+}
+if(wsub){
+  wsub.addEventListener('click',function(){
+    if(!wtxt||wtxt.value.trim().split(/\s+/).length<20){alert('Please write a bit more first — at least 20 words! 😊');return;}
+    if(wfb)wfb.classList.add('show');
+    wsub.textContent='✅ Submitted!';wsub.style.background='#2E7D52';
+  });
+}
+
+/* ── QUIZ ── */
+function renderQ(){
+  var d=QD[qCur];
+  var area=document.getElementById('dp2qarea');
+  var fb=document.getElementById('dp2qfb');
+  var nxt=document.getElementById('dp2qnxt');
+  fb.className='qfbm';nxt.classList.remove('show');qAns=false;
+  if(document.getElementById('dp2qcnt'))document.getElementById('dp2qcnt').textContent=(qCur+1)+' / '+QD.length;
+  var pf=document.getElementById('dp2qpf');
+  if(pf)pf.style.width=((qCur+1)/QD.length*100)+'%';
+  var html='<div class="qq"><span class="qqn">'+(qCur+1)+'</span>'+d.q+'</div><div class="qopts">';
+  d.opts.forEach(function(o,i){html+='<button class="qopt" data-i="'+i+'">'+o+'</button>';});
+  html+='</div>';
+  area.innerHTML=html;
+  area.querySelectorAll('.qopt').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      if(qAns)return;qAns=true;
+      var ch=parseInt(btn.getAttribute('data-i'));
+      area.querySelectorAll('.qopt').forEach(function(b){b.disabled=true;});
+      if(ch===d.a){
+        btn.classList.add('qco');qScore++;
+        if(document.getElementById('dp2qsl'))document.getElementById('dp2qsl').textContent='Score: '+qScore;
+        fb.textContent=d.ex;fb.className='qfbm show ok';
+      }else{
+        btn.classList.add('qwr');
+        area.querySelectorAll('.qopt')[d.a].classList.add('qco');
+        fb.innerHTML='❌ Incorrect. '+d.ex;fb.className='qfbm show bad';
+      }
+      nxt.classList.add('show');
+      nxt.textContent=qCur<QD.length-1?'Next Question →':'See My Results 🎯';
+    });
+  });
+}
+var qnxt=document.getElementById('dp2qnxt');
+if(qnxt)qnxt.addEventListener('click',function(){
+  qCur++;if(qCur>=QD.length)showScore();else renderQ();
+});
+function showScore(){
+  var area=document.getElementById('dp2qarea');
+  var fb=document.getElementById('dp2qfb');
+  var nxt=document.getElementById('dp2qnxt');
+  var pr=document.querySelector('#dp-l2 .qpr');
+  var pl=document.getElementById('dp2spl');
+  if(area)area.style.display='none';
+  if(fb)fb.style.display='none';
+  if(nxt)nxt.style.display='none';
+  if(pr)pr.style.display='none';
+  if(pl)pl.classList.add('show');
+  if(document.getElementById('dp2sfin'))document.getElementById('dp2sfin').textContent=qScore;
+  var pct=qScore/QD.length,msg,sub;
+  if(pct===1){msg='Perfect Score! 🏆';sub='Outstanding — you have fully mastered Behaviourism!';}
+  else if(pct>=0.83){msg='Excellent! 🌟';sub='Very strong. Review any errors and move to Lesson 3.';}
+  else if(pct>=0.67){msg='Good Work! 👍';sub='Revise the Reinforcement types and Watson vs Skinner distinction.';}
+  else if(pct>=0.5){msg='Keep Practising! 💪';sub='Go back to the Pioneers and Operant Conditioning sections.';}
+  else{msg:'Review & Retry 🔄';sub='Work through each section carefully. Take notes on each concept.';}
+  if(document.getElementById('dp2smsg'))document.getElementById('dp2smsg').textContent=msg;
+  if(document.getElementById('dp2ssub'))document.getElementById('dp2ssub').textContent=sub;
+}
+var srty=document.getElementById('dp2srty');
+if(srty)srty.addEventListener('click',function(){
+  qScore=0;qCur=0;qAns=false;
+  var area=document.getElementById('dp2qarea');
+  var fb=document.getElementById('dp2qfb');
+  var nxt=document.getElementById('dp2qnxt');
+  var pr=document.querySelector('#dp-l2 .qpr');
+  var pl=document.getElementById('dp2spl');
+  if(area){area.style.display='block';area.innerHTML='';}
+  if(fb){fb.style.display='block';fb.className='qfbm';}
+  if(nxt)nxt.style.display='none';
+  if(pr)pr.style.display='flex';
+  if(pl)pl.classList.remove('show');
+  if(document.getElementById('dp2qsl'))document.getElementById('dp2qsl').textContent='Score: 0';
+  renderQ();
+});
+
+/* ── INIT ── */
+renderQ();
+if(window.speechSynthesis){
+  window.speechSynthesis.getVoices();
+  window.speechSynthesis.onvoiceschanged=function(){window.speechSynthesis.getVoices();};
+}
+
+})();
+</script>
