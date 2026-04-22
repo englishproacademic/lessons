@@ -1,0 +1,1016 @@
+<!--============================================================
+     EnglishPro · Didactics Series · Lesson 6
+     Teaching Methods II: CLT, Task-Based Learning, Natural Approach
+     Communicative Competence, TBLT, Krashen & Terrell
+     GitHub hosted — embedded in Blogger via iframe
+     100% self-contained — no external JS dependencies
+     UPDATED: Relevant listening + 40-MCQ exam section
+     ============================================================-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teaching Methods II: CLT, TBL, Natural Approach | EnglishPro Didactics Series</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;family=DM+Sans:wght@300;400;500;600&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{margin:0;padding:0;background:#FAFAF7;direction:ltr;text-align:left}
+
+#dp-l6{
+  --ny:#0D2B4E;--ny2:#1A4070;
+  --go:#C8933A;--go2:#E8B86D;--gop:#FDF6EC;
+  --cr:#FAFAF7;--wh:#fff;
+  --ink:#1A1A1A;--ink2:#3D3D3D;--mu:#7A7A7A;
+  --bd:#E2DDD6;--bdl:#F0EDE8;
+  --gr:#2E7D52;--grb:#EBF5EF;
+  --rd:#C0392B;--rdb:#FDECEA;
+  --bl:#1E5FA8;--blb:#EBF2FB;
+  --pu:#7C3AED;--pub:#F3F0FF;
+  --te:#0E7490;--teb:#ECFEFF;
+  --or:#D97706;--orb:#FEF3C7;
+  --sh1:0 2px 8px rgba(13,43,78,.07);
+  --sh2:0 6px 20px rgba(13,43,78,.10);
+  --r:12px;--rl:20px;
+  font-family:'DM Sans',sans-serif;
+  color:var(--ink);background:var(--cr);
+  line-height:1.7;-webkit-font-smoothing:antialiased;
+  display:block;overflow:hidden;direction:ltr;text-align:left
+}
+#dp-l6 *,#dp-l6 *::before,#dp-l6 *::after{box-sizing:border-box;margin:0;padding:0}
+#dp-l6 button{cursor:pointer;font-family:'DM Sans',sans-serif;border:none;background:none}
+#dp-l6 textarea,#dp-l6 input,#dp-l6 select{font-family:'DM Sans',sans-serif}
+
+/* HERO */
+#dp-l6 .lhero{background:linear-gradient(150deg,#0a1f38 0%,#0D2B4E 50%,#122e52 100%);padding:48px 24px 40px;position:relative;overflow:hidden;border-radius:var(--rl) var(--rl) 0 0}
+#dp-l6 .lhero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%,rgba(200,147,58,.08) 0%,transparent 60%),radial-gradient(circle at 80% 20%,rgba(124,58,237,.06) 0%,transparent 50%);pointer-events:none}
+#dp-l6 .lhero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,147,58,.4),transparent)}
+#dp-l6 .lhero-in{max-width:720px;margin:0 auto;position:relative;z-index:1}
+#dp-l6 .lvlbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,147,58,.12);border:1px solid rgba(200,147,58,.28);color:var(--go2);font-size:.68rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:18px}
+#dp-l6 .ltitle{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:900;color:#F5F0E8;line-height:1.15;margin-bottom:10px;letter-spacing:-.02em}
+#dp-l6 .ltitle em{color:var(--go);font-style:italic}
+#dp-l6 .lsub{font-size:.9rem;color:rgba(245,240,232,.62);margin-bottom:22px;max-width:520px;line-height:1.6}
+#dp-l6 .spills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px}
+#dp-l6 .spill{font-size:.67rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 11px;border-radius:100px}
+#dp-l6 .sp-th{background:rgba(124,58,237,.25);color:#C4B5FD}
+#dp-l6 .sp-ex{background:rgba(30,95,168,.25);color:#7DB8F0}
+#dp-l6 .sp-qu{background:rgba(200,147,58,.25);color:var(--go2)}
+#dp-l6 .sp-ic{background:rgba(46,125,82,.25);color:#6BCFA0}
+
+/* Nav dots */
+#dp-l6 .snav{display:flex;align-items:center;gap:5px;flex-wrap:wrap;padding-top:20px;border-top:1px solid rgba(255,255,255,.08)}
+#dp-l6 .snavdot{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;font-size:.7rem;font-weight:700;border:2px solid rgba(255,255,255,.18);color:rgba(255,255,255,.32);cursor:pointer;transition:all .25s;flex-shrink:0}
+#dp-l6 .snavdot.done{border-color:var(--gr);background:var(--gr);color:#fff}
+#dp-l6 .snavdot.active{border-color:var(--go);background:var(--go);color:#fff}
+#dp-l6 .snavsep{width:16px;height:2px;background:rgba(255,255,255,.1);border-radius:1px;flex-shrink:0}
+#dp-l6 .snavlbl{font-size:.63rem;color:rgba(245,240,232,.38);margin-left:6px}
+
+/* BODY */
+#dp-l6 .lbody{max-width:720px;margin:0 auto;padding:32px 20px 64px;background:var(--cr)}
+#dp-l6 .sblock{background:var(--wh);border:1px solid var(--bdl);border-radius:var(--rl);padding:28px;margin-bottom:24px;display:none;animation:dp6up .35s ease both;box-shadow:var(--sh1)}
+#dp-l6 .sblock.vis{display:block}
+@keyframes dp6up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+#dp-l6 .slabel{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--go);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+#dp-l6 .slabel::after{content:'';flex:1;height:1px;background:var(--bdl)}
+#dp-l6 .sheading{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ny);margin-bottom:16px;line-height:1.25}
+#dp-l6 .sheading em{color:var(--go);font-style:italic}
+#dp-l6 .stxt{font-size:.9rem;color:var(--ink2);margin-bottom:16px;line-height:1.65}
+
+/* Scene */
+#dp-l6 .scene{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:20px;margin-bottom:20px;position:relative;overflow:hidden}
+#dp-l6 .scene::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(200,147,58,.08),transparent 60%);pointer-events:none}
+#dp-l6 .s-ico{font-size:1.8rem;margin-bottom:8px;position:relative;z-index:1}
+#dp-l6 .s-t{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#F5F0E8;position:relative;z-index:1;margin-bottom:5px}
+#dp-l6 .s-d{font-size:.83rem;color:rgba(245,240,232,.65);position:relative;z-index:1;line-height:1.55}
+
+/* Callouts */
+#dp-l6 .co{display:flex;gap:10px;padding:13px 15px;border-radius:var(--r);margin:14px 0;font-size:.855rem;line-height:1.6}
+#dp-l6 .co-tip{background:var(--gop);border:1px solid rgba(200,147,58,.2);color:var(--ink2)}
+#dp-l6 .co-info{background:var(--blb);border:1px solid rgba(30,95,168,.15);color:var(--ink2)}
+#dp-l6 .co-pur{background:var(--pub);border:1px solid rgba(124,58,237,.15);color:var(--ink2)}
+#dp-l6 .co-teal{background:var(--teb);border:1px solid rgba(14,116,144,.15);color:var(--ink2)}
+#dp-l6 .co-or{background:var(--orb);border:1px solid rgba(217,119,6,.15);color:var(--ink2)}
+#dp-l6 .co-ico{font-size:1rem;flex-shrink:0;margin-top:1px}
+
+/* Gbox */
+#dp-l6 .gbox{border-radius:0 var(--r) var(--r) 0;padding:18px 20px;margin:18px 0}
+#dp-l6 .gbox-bl{background:var(--blb);border:1px solid rgba(30,95,168,.2);border-left:4px solid var(--bl)}
+#dp-l6 .gbox-go{background:var(--gop);border:1px solid rgba(200,147,58,.2);border-left:4px solid var(--go)}
+#dp-l6 .gbox-gr{background:var(--grb);border:1px solid rgba(46,125,82,.2);border-left:4px solid var(--gr)}
+#dp-l6 .gbox-pu{background:var(--pub);border:1px solid rgba(124,58,237,.15);border-left:4px solid var(--pu)}
+#dp-l6 .gbox-te{background:var(--teb);border:1px solid rgba(14,116,144,.15);border-left:4px solid var(--te)}
+#dp-l6 .gbox-rd{background:var(--rdb);border:1px solid rgba(192,57,43,.15);border-left:4px solid var(--rd)}
+#dp-l6 .gbox h4{font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:11px}
+#dp-l6 .gbox-bl h4{color:var(--bl)}
+#dp-l6 .gbox-go h4{color:var(--go)}
+#dp-l6 .gbox-gr h4{color:var(--gr)}
+#dp-l6 .gbox-pu h4{color:var(--pu)}
+#dp-l6 .gbox-te h4{color:var(--te)}
+#dp-l6 .gbox-rd h4{color:var(--rd)}
+#dp-l6 .grule{font-family:'DM Mono',monospace;font-size:.86rem;color:var(--ny);background:rgba(255,255,255,.65);padding:9px 14px;border-radius:7px;margin-bottom:7px;line-height:1.6}
+#dp-l6 .grule span{color:var(--bl);font-weight:600}
+#dp-l6 .grule em{color:var(--go);font-style:normal;font-weight:600}
+#dp-l6 .grule strong{color:var(--gr);font-weight:700}
+
+/* Flip Cards */
+#dp-l6 .tcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin:20px 0}
+#dp-l6 .tcard{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:18px;cursor:pointer;transition:all .22s;position:relative;overflow:hidden}
+#dp-l6 .tcard::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;transition:background .2s}
+#dp-l6 .tcard:hover{border-color:var(--go);transform:translateY(-3px);box-shadow:var(--sh2)}
+#dp-l6 .tcard.fl{background:var(--gop);border-color:var(--go)}
+#dp-l6 .tcard.fl::before{background:var(--go)}
+#dp-l6 .tc-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+#dp-l6 .tc-ava{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+#dp-l6 .tc-info h4{font-size:.95rem;font-weight:700;color:var(--ny);margin-bottom:2px}
+#dp-l6 .tc-info span{font-size:.72rem;color:var(--mu)}
+#dp-l6 .tc-hint{font-size:.78rem;color:var(--mu);font-style:italic}
+#dp-l6 .tc-body{display:none;margin-top:12px}
+#dp-l6 .tcard.fl .tc-hint{display:none}
+#dp-l6 .tcard.fl .tc-body{display:block}
+#dp-l6 .tc-body p{font-size:.85rem;color:var(--ink2);line-height:1.6;margin-bottom:10px}
+#dp-l6 .tc-key{background:var(--wh);border-radius:8px;padding:12px;margin-top:10px}
+#dp-l6 .tc-key h5{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--go);margin-bottom:6px}
+#dp-l6 .tc-key p{font-size:.82rem;color:var(--ny);font-weight:600;line-height:1.5;margin:0}
+
+/* Competence cards */
+#dp-l6 .compcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:20px 0}
+#dp-l6 .compcard{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:16px;cursor:pointer;transition:all .22s;text-align:center}
+#dp-l6 .compcard:hover{border-color:var(--go);transform:translateY(-3px);box-shadow:var(--sh2)}
+#dp-l6 .compcard.fl{background:var(--gop);border-color:var(--go)}
+#dp-l6 .comp-ico{font-size:1.6rem;margin-bottom:8px}
+#dp-l6 .comp-title{font-size:.9rem;font-weight:700;color:var(--ny);margin-bottom:4px}
+#dp-l6 .comp-hint{font-size:.72rem;color:var(--mu);font-style:italic}
+#dp-l6 .comp-body{display:none;margin-top:10px;text-align:left}
+#dp-l6 .compcard.fl .comp-hint{display:none}
+#dp-l6 .compcard.fl .comp-body{display:block}
+#dp-l6 .comp-body p{font-size:.82rem;color:var(--ink2);line-height:1.55;margin:0}
+
+/* Tables */
+#dp-l6 .gtbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.85rem}
+#dp-l6 .gtbl th{background:var(--ny);color:#F5F0E8;padding:9px 13px;text-align:left;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+#dp-l6 .gtbl th:first-child{border-radius:var(--r) 0 0 0}
+#dp-l6 .gtbl th:last-child{border-radius:0 var(--r) 0 0}
+#dp-l6 .gtbl td{padding:9px 13px;border-bottom:1px solid var(--bdl);color:var(--ink2);vertical-align:top}
+#dp-l6 .gtbl tr:nth-child(even) td{background:var(--cr)}
+#dp-l6 .tbl-b{color:var(--bl);font-weight:600}
+#dp-l6 .tbl-g{color:var(--go);font-weight:600}
+#dp-l6 .tbl-gr{color:var(--gr);font-weight:600}
+#dp-l6 .tbl-pu{color:var(--pu);font-weight:600}
+#dp-l6 .tbl-rd{color:var(--rd);font-weight:600}
+
+/* Tabs */
+#dp-l6 .tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+#dp-l6 .tab{padding:9px 18px;border-radius:var(--r);font-size:.82rem;font-weight:600;background:var(--cr);border:2px solid var(--bd);color:var(--ink2);cursor:pointer;transition:all .2s}
+#dp-l6 .tab:hover{border-color:var(--go);color:var(--go)}
+#dp-l6 .tab.active{background:var(--ny);border-color:var(--ny);color:#fff}
+#dp-l6 .tabpanel{display:none}
+#dp-l6 .tabpanel.vis{display:block}
+
+/* Scenario Match */
+#dp-l6 .smatch{margin:20px 0}
+#dp-l6 .sm-item{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;align-items:center}
+#dp-l6 .sm-scenario{background:var(--blb);border:1px solid rgba(30,95,168,.15);border-radius:var(--r);padding:12px 14px;font-size:.85rem;color:var(--ink2);line-height:1.5}
+#dp-l6 .sm-select{border:2px solid var(--bd);border-radius:var(--r);padding:9px 12px;font-size:.85rem;color:var(--ink2);background:var(--cr);width:100%;font-family:'DM Sans',sans-serif;outline:none;transition:border-color .2s;cursor:pointer}
+#dp-l6 .sm-select:focus{border-color:var(--go)}
+#dp-l6 .sm-select.ok{border-color:var(--gr);background:var(--grb);color:var(--gr)}
+#dp-l6 .sm-select.bad{border-color:var(--rd);background:var(--rdb);color:var(--rd)}
+#dp-l6 .smfb{font-size:.82rem;font-weight:600;padding:10px 14px;border-radius:var(--r);margin-top:4px;display:none}
+#dp-l6 .smfb.ok{background:var(--grb);color:var(--gr);display:block}
+#dp-l6 .smfb.bad{background:var(--rdb);color:var(--rd);display:block}
+
+/* Stask */
+#dp-l6 .stask{border-radius:var(--r);padding:20px;margin:14px 0;border:1.5px solid}
+#dp-l6 .stask-gr{background:var(--grb);border-color:rgba(46,125,82,.22)}
+#dp-l6 .stask-bl{background:var(--blb);border-color:rgba(30,95,168,.18)}
+#dp-l6 .stask-pu{background:var(--pub);border-color:rgba(124,58,237,.18)}
+#dp-l6 .sth{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+#dp-l6 .stico{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;color:#fff}
+#dp-l6 .stitle{font-size:.9rem;font-weight:600}
+#dp-l6 .stitle-gr{color:var(--gr)}
+#dp-l6 .stitle-bl{color:var(--bl)}
+#dp-l6 .stitle-pu{color:var(--pu)}
+#dp-l6 .sinstr{font-size:.855rem;color:var(--ink2);line-height:1.6;margin-bottom:10px}
+#dp-l6 .smodel{background:var(--wh);border-radius:8px;padding:13px 15px;font-size:.84rem;color:var(--ny);line-height:1.9}
+#dp-l6 .em-gr{color:var(--gr);font-weight:600;font-style:normal}
+#dp-l6 .em-bl{color:var(--bl);font-weight:600;font-style:normal}
+#dp-l6 .em-go{color:var(--go);font-weight:600;font-style:normal}
+#dp-l6 .em-pu{color:var(--pu);font-weight:600;font-style:normal}
+#dp-l6 .em-rd{color:var(--rd);font-weight:600;font-style:normal}
+
+/* Audio */
+#dp-l6 .aplayer{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px;margin:14px 0;flex-wrap:wrap}
+#dp-l6 .abig{width:48px;height:48px;border-radius:50%;background:var(--go);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;transition:all .2s;cursor:pointer;border:none;box-shadow:0 4px 14px rgba(200,147,58,.4)}
+#dp-l6 .abig:hover{background:var(--go2);transform:scale(1.06)}
+#dp-l6 .ainfo{flex:1;min-width:160px}
+#dp-l6 .at{font-size:.87rem;font-weight:600;color:#F5F0E8;margin-bottom:3px}
+#dp-l6 .as{font-size:.72rem;color:rgba(245,240,232,.55)}
+#dp-l6 .apbar{height:4px;background:rgba(255,255,255,.14);border-radius:2px;margin-top:9px;overflow:hidden}
+#dp-l6 .apfill{height:100%;background:var(--go);width:0%;border-radius:2px;transition:width .3s}
+#dp-l6 .scrtog{background:rgba(255,255,255,.1);color:rgba(245,240,232,.78);font-size:.72rem;font-weight:600;padding:5px 11px;border-radius:100px;border:1px solid rgba(255,255,255,.15);cursor:pointer;transition:all .2s;flex-shrink:0}
+#dp-l6 .scrtog:hover{background:rgba(255,255,255,.2)}
+#dp-l6 .scrbox{background:var(--cr);border:1px solid var(--bd);border-radius:var(--r);padding:18px;margin-top:10px;display:none}
+#dp-l6 .scrbox.show{display:block}
+#dp-l6 .scrbox p{font-size:.875rem;color:var(--ink2);margin-bottom:7px;line-height:1.7}
+
+/* Writing */
+#dp-l6 .wa{width:100%;min-height:130px;border:2px solid var(--bd);border-radius:var(--r);padding:14px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--ink);background:var(--cr);resize:vertical;outline:none;transition:border-color .2s;line-height:1.7}
+#dp-l6 .wa:focus{border-color:var(--go)}
+#dp-l6 .wa::placeholder{color:var(--mu)}
+#dp-l6 .wcnt{font-size:.72rem;color:var(--mu);text-align:right;margin-top:5px}
+#dp-l6 .wsub{margin-top:11px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none}
+#dp-l6 .wsub:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l6 .wfb{display:none;margin-top:13px;background:var(--grb);border:1.5px solid rgba(46,125,82,.22);border-radius:var(--r);padding:15px;font-size:.855rem;color:var(--gr);line-height:1.65}
+#dp-l6 .wfb.show{display:block}
+
+/* Quiz */
+#dp-l6 .qpr{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+#dp-l6 .qpbar{flex:1;height:6px;background:var(--bd);border-radius:3px;overflow:hidden;margin:0 11px}
+#dp-l6 .qpfill{height:100%;background:linear-gradient(90deg,var(--go),var(--go2));border-radius:3px;transition:width .4s ease}
+#dp-l6 .qcnt{font-size:.77rem;font-weight:600;color:var(--mu)}
+#dp-l6 .qq{font-size:1rem;font-weight:600;color:var(--ny);margin-bottom:16px;line-height:1.5}
+#dp-l6 .qqn{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--go);color:#fff;font-size:.75rem;font-weight:700;margin-right:7px;flex-shrink:0;vertical-align:middle}
+#dp-l6 .qopts{display:flex;flex-direction:column;gap:9px}
+#dp-l6 .qopt{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:13px 16px;font-size:.9rem;color:var(--ink2);text-align:left;transition:all .2s;display:flex;align-items:center;gap:9px;cursor:pointer}
+#dp-l6 .qopt .ql{font-weight:700;color:var(--ny);min-width:18px}
+#dp-l6 .qopt:hover:not([disabled]){border-color:var(--go);background:var(--gop);transform:translateX(3px)}
+#dp-l6 .qopt.qco{border-color:var(--gr)!important;background:var(--grb)!important;color:var(--gr)!important}
+#dp-l6 .qopt.qwr{border-color:var(--rd)!important;background:var(--rdb)!important;color:var(--rd)!important}
+#dp-l6 .qfbm{display:none;margin-top:11px;padding:13px 16px;border-radius:var(--r);font-size:.86rem;font-weight:500;line-height:1.6}
+#dp-l6 .qfbm.show{display:block}
+#dp-l6 .qfbm.ok{background:var(--grb);color:var(--gr);border:1px solid rgba(46,125,82,.2)}
+#dp-l6 .qfbm.bad{background:var(--rdb);color:var(--rd);border:1px solid rgba(192,57,43,.2)}
+#dp-l6 .qnxt{margin-top:14px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;display:none;cursor:pointer;border:none}
+#dp-l6 .qnxt:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l6 .qnxt.show{display:inline-block}
+#dp-l6 .spl{text-align:center;padding:28px 20px;display:none;animation:dp6up .4s ease both}
+#dp-l6 .spl.show{display:block}
+#dp-l6 .scir{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--ny),var(--ny2));display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 8px 24px rgba(13,43,78,.2)}
+#dp-l6 .snum{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:var(--go);line-height:1}
+#dp-l6 .sden{font-size:.7rem;color:rgba(245,240,232,.5)}
+#dp-l6 .smsg{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--ny);margin-bottom:7px}
+#dp-l6 .ssub{font-size:.84rem;color:var(--mu);margin-bottom:18px}
+#dp-l6 .srty{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;margin-right:8px;cursor:pointer;border:none}
+#dp-l6 .srty:hover{background:var(--go)}
+
+/* Chkb */
+#dp-l6 .chkb{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none;margin-top:6px}
+#dp-l6 .chkb:hover{background:var(--go);transform:translateY(-1px)}
+
+/* Nav buttons */
+#dp-l6 .navb{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:18px;border-top:1px solid var(--bdl);gap:10px}
+#dp-l6 .nb{display:flex;align-items:center;gap:7px;padding:11px 22px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;border:2px solid var(--bd);color:var(--ink2);background:var(--wh);cursor:pointer}
+#dp-l6 .nb:hover{border-color:var(--go);color:var(--go)}
+#dp-l6 .nb.pri{background:var(--ny);color:#fff;border-color:transparent}
+#dp-l6 .nb.pri:hover{background:var(--go);border-color:transparent}
+#dp-l6 .nb:disabled{opacity:.38;cursor:default;pointer-events:none}
+
+/* Footer */
+#dp-l6 .lft{background:var(--ny);padding:24px;text-align:center;border-radius:0 0 var(--rl) var(--rl)}
+#dp-l6 .flo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:#F5F0E8;margin-bottom:5px}
+#dp-l6 .flo em{color:var(--go);font-style:italic}
+#dp-l6 .ftx{font-size:.74rem;color:rgba(245,240,232,.42)}
+
+/* TBL Cycle */
+#dp-l6 .tblcycle{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0;justify-content:center}
+#dp-l6 .tblstage{flex:1;min-width:140px;max-width:200px;background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:16px;text-align:center;transition:all .22s;cursor:pointer}
+#dp-l6 .tblstage:hover{border-color:var(--go);transform:translateY(-3px)}
+#dp-l6 .tblstage.fl{background:var(--gop);border-color:var(--go)}
+#dp-l6 .tbl-num{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:700;color:#fff;margin:0 auto 8px}
+#dp-l6 .tbl-name{font-size:.9rem;font-weight:700;color:var(--ny);margin-bottom:4px}
+#dp-l6 .tbl-hint{font-size:.72rem;color:var(--mu);font-style:italic}
+#dp-l6 .tbl-body{display:none;margin-top:10px;text-align:left}
+#dp-l6 .tblstage.fl .tbl-hint{display:none}
+#dp-l6 .tblstage.fl .tbl-body{display:block}
+#dp-l6 .tbl-body p{font-size:.8rem;color:var(--ink2);line-height:1.5;margin:0}
+
+@media(max-width:560px){
+  #dp-l6 .lhero{padding:32px 16px 28px}
+  #dp-l6 .lbody{padding:20px 14px 48px}
+  #dp-l6 .sblock{padding:18px 14px}
+  #dp-l6 .tcards{grid-template-columns:1fr}
+  #dp-l6 .compcards{grid-template-columns:1fr 1fr}
+  #dp-l6 .navb{flex-direction:column}
+  #dp-l6 .nb{width:100%;justify-content:center}
+  #dp-l6 .tabs{gap:4px}
+  #dp-l6 .tab{padding:7px 12px;font-size:.78rem}
+  #dp-l6 .sm-item{grid-template-columns:1fr}
+  #dp-l6 .tblcycle{flex-direction:column;align-items:center}
+  #dp-l6 .tblstage{max-width:100%}
+}
+</style>
+</head>
+<body>
+
+<div id="dp-l6">
+
+<!-- HERO -->
+<div class="lhero">
+  <div class="lhero-in">
+    <div class="lvlbadge">🎓 Didactics Series · Lesson 6 of 12</div>
+    <h1 class="ltitle">Teaching Methods II:<br><em>CLT, TBL &amp; Natural Approach</em></h1>
+    <p class="lsub">Master the communicative revolution: Communicative Language Teaching, Task-Based Learning, and the Natural Approach — the foundations of modern language pedagogy.</p>
+    <div class="spills">
+      <span class="spill sp-th">💬 Communicative</span>
+      <span class="spill sp-ex">🎯 Task-Based</span>
+      <span class="spill sp-ic">🧠 Krashen & Terrell</span>
+      <span class="spill sp-qu">📝 40-Question Exam</span>
+    </div>
+    <nav class="snav">
+      <div class="snavdot active" data-s="0">1</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="1">2</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="2">3</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="3">4</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="4">5</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="5">6</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="6">7</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="7">8</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="8">9</div>
+      <span class="snavlbl">9 sections</span>
+    </nav>
+  </div>
+</div>
+
+<div class="lbody">
+
+<!-- SECTION 1: FOUNDATIONS -->
+<section class="sblock vis" id="dp6s0">
+  <div class="slabel">Section 1 · Foundations</div>
+  <h2 class="sheading">The <em>Communicative Revolution</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">🌍</div>
+    <div class="s-t">From Form to Function — Language for Real Communication</div>
+    <div class="s-d">In the 1970s-80s, language teaching shifted from focusing on grammatical forms to focusing on COMMUNICATION. The question changed from "Is it grammatically correct?" to "Can students use language to communicate meaningfully?"</div>
+  </div>
+
+  <p class="stxt">This lesson covers three interconnected approaches that dominate modern language teaching: <strong>Communicative Language Teaching (CLT)</strong>, <strong>Task-Based Learning (TBL)</strong>, and the <strong>Natural Approach</strong>.</p>
+
+  <div class="gbox gbox-go">
+    <h4>What You'll Master</h4>
+    <div class="grule"><strong>CLT</strong> — Communicative competence, authentic materials, information gaps</div>
+    <div class="grule"><em>Communicative Competence</em> — Linguistic, Sociolinguistic, Discourse, Strategic</div>
+    <div class="grule"><span>Task-Based Learning</span> — Pre-task, Task Cycle, Language Focus (Willis)</div>
+    <div class="grule"><strong>Natural Approach</strong> — Krashen & Terrell, comprehensible input, low anxiety</div>
+  </div>
+
+  <table class="gtbl">
+    <tr><th>Method</th><th>Key Figure(s)</th><th>Core Idea</th><th>Focus</th></tr>
+    <tr><td class="tbl-b">CLT</td><td>Hymes, Canale & Swain</td><td>Communicative competence</td><td>Real-life communication</td></tr>
+    <tr><td class="tbl-gr">TBL/TBLT</td><td>Willis, Prabhu</td><td>Learning through tasks</td><td>Meaningful task completion</td></tr>
+    <tr><td class="tbl-pu">Natural Approach</td><td>Krashen & Terrell</td><td>Comprehensible input</td><td>Low-anxiety acquisition</td></tr>
+  </table>
+
+  <div class="co co-info"><span class="co-ico">📚</span><span><strong>Connection to Theory:</strong> These methods draw from <em>Krashen's hypotheses</em> (Lesson 4) and reject the Behaviourist foundations of ALM (Lesson 5).</span></div>
+
+  <div class="navb">
+    <button class="nb" disabled>← Back</button>
+    <button class="nb pri" data-go="1">Next: Communicative Language Teaching →</button>
+  </div>
+</section>
+
+<!-- SECTION 2: CLT -->
+<section class="sblock" id="dp6s1">
+  <div class="slabel">Section 2 · Communicative Language Teaching</div>
+  <h2 class="sheading">CLT — <em>Language for Real Communication</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">💬</div>
+    <div class="s-t">Knowing a Language Means Using It</div>
+    <div class="s-d">CLT emerged in the 1970s as a reaction against grammar-focused methods. It shifted the goal from linguistic accuracy to COMMUNICATIVE COMPETENCE — the ability to use language appropriately in real situations.</div>
+  </div>
+
+  <div class="gbox gbox-bl">
+    <h4>Core Principles of CLT</h4>
+    <div class="grule"><strong>Goal:</strong> Develop communicative competence (not just linguistic accuracy)</div>
+    <div class="grule"><em>Focus:</em> Meaning and function over form</div>
+    <div class="grule"><span>Materials:</span> Authentic texts and real-world tasks</div>
+    <div class="grule"><strong>Interaction:</strong> Pair work, group work, information gaps</div>
+    <div class="grule"><em>Teacher role:</em> Facilitator, not controller</em></div>
+    <div class="grule"><span>Errors:</span> Tolerated if communication is successful</span></div>
+  </div>
+
+  <p class="stxt"><strong>Key Figure:</strong> <em>Dell Hymes</em> (1972) introduced "communicative competence" — knowing WHAT to say, to WHOM, WHEN, and HOW. Later expanded by <em>Canale & Swain</em> (1980) into four components.</p>
+
+  <div class="gbox gbox-go">
+    <h4>CLT Key Features</h4>
+    <div class="grule">1. <strong>Information gap activities</strong> — Students have different information and must communicate to complete tasks</div>
+    <div class="grule">2. <em>Choice</em> — Students choose what to say and how</div>
+    <div class="grule">3. <span>Feedback</span> — Communication success is the measure (Did you understand?)</div>
+    <div class="grule">4. <strong>Authentic materials</strong> — Real texts, not simplified textbook language</div>
+    <div class="grule">5. <em>Fluency AND accuracy</em> — Both matter, but fluency often prioritized</div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Trap:</strong> CLT does NOT ignore grammar. It teaches grammar in CONTEXT, for communicative purposes — not as isolated rules. CLT balances fluency AND accuracy.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="0">← Introduction</button>
+    <button class="nb pri" data-go="2">Next: Communicative Competence →</button>
+  </div>
+</section>
+
+<!-- SECTION 3: COMMUNICATIVE COMPETENCE -->
+<section class="sblock" id="dp6s2">
+  <div class="slabel">Section 3 · Communicative Competence</div>
+  <h2 class="sheading">The Four Components of <em>Communicative Competence</em></h2>
+
+  <p class="stxt"><strong>Canale & Swain (1980)</strong> expanded Hymes' concept into four components. <strong>Tap each card to reveal details.</strong> These are heavily tested!</p>
+
+  <div class="compcards">
+    <div class="compcard" data-comp="0">
+      <div class="comp-ico">📝</div>
+      <div class="comp-title">Linguistic Competence</div>
+      <div class="comp-hint">Tap to reveal...</div>
+      <div class="comp-body">
+        <p><strong>Grammar, vocabulary, pronunciation.</strong> Knowing the rules of the language system — what words to use, how to form sentences, correct pronunciation.</p>
+      </div>
+    </div>
+    <div class="compcard" data-comp="1">
+      <div class="comp-ico">🎭</div>
+      <div class="comp-title">Sociolinguistic Competence</div>
+      <div class="comp-hint">Tap to reveal...</div>
+      <div class="comp-body">
+        <p><strong>Appropriate use in context.</strong> Knowing what's appropriate for different situations — formal vs informal, polite vs casual, different social roles.</p>
+      </div>
+    </div>
+    <div class="compcard" data-comp="2">
+      <div class="comp-ico">🔗</div>
+      <div class="comp-title">Discourse Competence</div>
+      <div class="comp-hint">Tap to reveal...</div>
+      <div class="comp-body">
+        <p><strong>Cohesion and coherence.</strong> Connecting sentences into meaningful texts — using linking words, organizing ideas logically, maintaining topic flow.</p>
+      </div>
+    </div>
+    <div class="compcard" data-comp="3">
+      <div class="comp-ico">🔧</div>
+      <div class="comp-title">Strategic Competence</div>
+      <div class="comp-hint">Tap to reveal...</div>
+      <div class="comp-body">
+        <p><strong>Repair and compensation strategies.</strong> Fixing communication breakdowns — paraphrasing, asking for clarification, using gestures when words fail.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="gbox gbox-pu">
+    <h4>Memory Framework</h4>
+    <div class="grule"><strong>Linguistic</strong> = WHAT words/grammar (form)</div>
+    <div class="grule"><em>Sociolinguistic</em> = WHEN/WHERE to use them (context)</div>
+    <div class="grule"><span>Discourse</span> = HOW to connect them (text)</div>
+    <div class="grule"><strong>Strategic</strong> = WHAT TO DO when it breaks down (repair)</div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Exam Tip:</strong> Linguistic competence alone is NOT enough for real communication. A grammatically perfect sentence can be socially inappropriate or disconnected from context.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="1">← CLT Basics</button>
+    <button class="nb pri" data-go="3">Next: CLT Techniques →</button>
+  </div>
+</section>
+
+<!-- SECTION 4: CLT TECHNIQUES -->
+<section class="sblock" id="dp6s3">
+  <div class="slabel">Section 4 · CLT Techniques</div>
+  <h2 class="sheading">CLT Classroom <em>Techniques</em></h2>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="t4a">🎯 Information Gap</button>
+    <button class="tab" data-tab="t4b">🎭 Role Play</button>
+    <button class="tab" data-tab="t4c">📰 Authentic Materials</button>
+  </div>
+
+  <div class="tabpanel vis" id="t4a">
+    <div class="gbox gbox-bl">
+      <h4>Information Gap Activities</h4>
+      <div class="grule"><strong>Definition:</strong> One student has information another needs; they must communicate to share it</div>
+      <div class="grule"><em>Purpose:</em> Creates genuine need for communication</div>
+      <div class="grule"><span>Examples:</span> Partner A has a map with some places; Partner B has other places → describe to complete both maps</div>
+    </div>
+    <p class="stxt">Information gaps create <strong>authentic communication</strong> because there's a real reason to talk — you don't know what your partner knows.</p>
+  </div>
+
+  <div class="tabpanel" id="t4b">
+    <div class="gbox gbox-gr">
+      <h4>Role Play & Simulation</h4>
+      <div class="grule"><strong>Role Play:</strong> Students take on roles (customer, waiter) and interact in scenarios</div>
+      <div class="grule"><em>Simulation:</em> More complex, extended role plays mimicking real situations</div>
+      <div class="grule"><span>Benefits:</span> Practice sociolinguistic competence, real-world language functions</div>
+    </div>
+    <p class="stxt"><strong>Example:</strong> "You are a tourist asking for directions. Your partner is a local who gives directions using a map."</p>
+  </div>
+
+  <div class="tabpanel" id="t4c">
+    <div class="gbox gbox-go">
+      <h4>Authentic Materials</h4>
+      <div class="grule"><strong>Definition:</strong> Real texts not created for teaching (newspapers, menus, tickets, websites)</div>
+      <div class="grule"><em>Purpose:</em> Expose students to real language as used by native speakers</div>
+      <div class="grule"><span>Challenge:</span> May be difficult for beginners; needs scaffolding</div>
+    </div>
+    <p class="stxt">Authentic materials prepare students for <strong>real-world language</strong> — not the simplified, artificial language of textbooks.</p>
+  </div>
+
+  <table class="gtbl">
+    <tr><th>Technique</th><th>Description</th><th>Competence Developed</th></tr>
+    <tr><td>Information Gap</td><td>Exchange missing information</td><td>Linguistic, Strategic</td></tr>
+    <tr><td>Role Play</td><td>Act out social situations</td><td>Sociolinguistic</td></tr>
+    <tr><td>Jigsaw Reading</td><td>Each student reads different part, shares</td><td>Discourse, Strategic</td></tr>
+    <tr><td>Problem Solving</td><td>Work together to solve a task</td><td>All four</td></tr>
+    <tr><td>Discussion/Debate</td><td>Express and defend opinions</td><td>Discourse, Strategic</td></tr>
+  </table>
+
+  <div class="navb">
+    <button class="nb" data-go="2">← Communicative Competence</button>
+    <button class="nb pri" data-go="4">Next: Task-Based Learning →</button>
+  </div>
+</section>
+
+<!-- SECTION 5: TBL -->
+<section class="sblock" id="dp6s4">
+  <div class="slabel">Section 5 · Task-Based Learning</div>
+  <h2 class="sheading">Task-Based Learning — <em>Learning by Doing</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">🎯</div>
+    <div class="s-t">The Task is Central — Language is the Tool</div>
+    <div class="s-d">In TBL, students learn language BY completing meaningful tasks. The focus is on the OUTCOME of the task, not on practicing specific language forms. Language emerges naturally from task demands.</div>
+  </div>
+
+  <p class="stxt"><strong>Key Figures:</strong> <em>Jane Willis</em> (Willis Framework) and <em>N.S. Prabhu</em> (Bangalore Project). TBL is considered a "strong" version of CLT.</p>
+
+  <div class="gbox gbox-gr">
+    <h4>What is a "Task"?</h4>
+    <div class="grule"><strong>Definition:</strong> An activity where language is used to achieve a real-world outcome</div>
+    <div class="grule"><em>Focus:</em> Meaning and communication, NOT form</div>
+    <div class="grule"><span>Examples:</span> Plan a trip, solve a problem, make a decision, create something</div>
+    <div class="grule"><strong>NOT a task:</strong> Grammar exercises, drills, controlled practice</div>
+  </div>
+
+  <h4 style="color:var(--ny);font-family:'Playfair Display',serif;font-size:1rem;margin:20px 0 13px">Willis's TBL Framework — Three Stages (Tap to expand)</h4>
+
+  <div class="tblcycle">
+    <div class="tblstage" data-stage="0">
+      <div class="tbl-num" style="background:var(--bl)">1</div>
+      <div class="tbl-name">Pre-Task</div>
+      <div class="tbl-hint">Tap to expand...</div>
+      <div class="tbl-body">
+        <p><strong>Introduction:</strong> Teacher introduces topic and task. Activates background knowledge. May provide useful vocabulary. Students understand what they need to do.</p>
+      </div>
+    </div>
+    <div class="tblstage" data-stage="1">
+      <div class="tbl-num" style="background:var(--gr)">2</div>
+      <div class="tbl-name">Task Cycle</div>
+      <div class="tbl-hint">Tap to expand...</div>
+      <div class="tbl-body">
+        <p><strong>Task:</strong> Students do the task in pairs/groups.<br><strong>Planning:</strong> Prepare to report to class.<br><strong>Report:</strong> Share outcomes with class. Focus on MEANING.</p>
+      </div>
+    </div>
+    <div class="tblstage" data-stage="2">
+      <div class="tbl-num" style="background:var(--pu)">3</div>
+      <div class="tbl-name">Language Focus</div>
+      <div class="tbl-hint">Tap to expand...</div>
+      <div class="tbl-body">
+        <p><strong>Analysis:</strong> Examine language used in task.<br><strong>Practice:</strong> Focus on specific forms that emerged. Grammar comes AFTER communication, not before.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Trap — TBL vs PPP:</strong><br>• <strong>PPP</strong> (Presentation-Practice-Production) = Form FIRST, then use<br>• <strong>TBL</strong> = Task FIRST, then analyze form<br>TBL is task-first; PPP is grammar-first.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="3">← CLT Techniques</button>
+    <button class="nb pri" data-go="5">Next: Natural Approach →</button>
+  </div>
+</section>
+
+<!-- SECTION 6: NATURAL APPROACH -->
+<section class="sblock" id="dp6s5">
+  <div class="slabel">Section 6 · Natural Approach</div>
+  <h2 class="sheading">Natural Approach — <em>Krashen & Terrell</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">🌱</div>
+    <div class="s-t">Acquisition Over Learning — Comprehensible Input</div>
+    <div class="s-d">The Natural Approach (Krashen & Terrell, 1983) applies Krashen's Monitor Model to classroom teaching. Focus on ACQUISITION through comprehensible input in a low-anxiety environment.</div>
+  </div>
+
+  <div class="gbox gbox-pu">
+    <h4>Core Principles</h4>
+    <div class="grule"><strong>Input Hypothesis:</strong> Provide comprehensible input at i+1 level</div>
+    <div class="grule"><em>Affective Filter:</em> Create low-anxiety, supportive environment</div>
+    <div class="grule"><span>Silent Period:</span> Allow learners time to listen before speaking</div>
+    <div class="grule"><strong>Grammar:</strong> Acquired naturally, not explicitly taught</div>
+    <div class="grule"><em>Errors:</em> Not corrected directly (acquisition is unconscious)</em></div>
+  </div>
+
+  <p class="stxt"><strong>Key Figures:</strong> <em>Stephen Krashen</em> (theory) and <em>Tracy Terrell</em> (classroom application). The Natural Approach is the practical application of Krashen's five hypotheses.</p>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="t6a">📖 Techniques</button>
+    <button class="tab" data-tab="t6b">✅ Strengths</button>
+    <button class="tab" data-tab="t6c">⚠️ Limitations</button>
+  </div>
+
+  <div class="tabpanel vis" id="t6a">
+    <div class="gbox gbox-bl">
+      <h4>Natural Approach Techniques</h4>
+      <div class="grule"><strong>TPR-like activities</strong> — Physical responses to commands</div>
+      <div class="grule"><em>Picture stories</em> — Input through visual narratives</div>
+      <div class="grule"><span>Affective activities</span> — Personal topics, low-stress discussion</div>
+      <div class="grule"><strong>Extended listening</strong> — Stories, descriptions before production</div>
+      <div class="grule"><em>No forced output</em> — Students speak when ready</em></div>
+    </div>
+  </div>
+
+  <div class="tabpanel" id="t6b">
+    <div class="gbox gbox-gr">
+      <h4>Strengths</h4>
+      <div class="grule">✅ Low anxiety promotes risk-taking</div>
+      <div class="grule">✅ Respects natural acquisition order</div>
+      <div class="grule">✅ Student-centered, meaningful communication</div>
+      <div class="grule">✅ Builds listening comprehension before speaking</div>
+    </div>
+  </div>
+
+  <div class="tabpanel" id="t6c">
+    <div class="gbox gbox-rd">
+      <h4>Limitations</h4>
+      <div class="grule">❌ Difficult to measure i+1 precisely</div>
+      <div class="grule">❌ May neglect explicit grammar for some learners</div>
+      <div class="grule">❌ Silent period may frustrate some students/teachers</div>
+      <div class="grule">❌ Less effective for academic/professional language needs</div>
+    </div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Connection:</strong> Natural Approach techniques appear in TPR (Total Physical Response) and content-based instruction. The key link is <em>comprehensible input</em> and <em>low anxiety</em>.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="4">← Task-Based Learning</button>
+    <button class="nb pri" data-go="6">Next: Listening Task →</button>
+  </div>
+</section>
+
+<!-- SECTION 7: LISTENING (RELEVANT SCENARIO) -->
+<section class="sblock" id="dp6s6">
+  <div class="slabel">Section 7 · Listening Comprehension</div>
+  <h2 class="sheading">🎙️ Listen — <em>A Trainer Explains Modern Methods</em></h2>
+  <p class="stxt">Press ▶ to listen to a teacher trainer explaining CLT, TBL, and the Natural Approach. <strong>Identify which method or concept she is describing.</strong></p>
+
+  <div class="aplayer">
+    <button class="abig" id="dp6playbtn">▶</button>
+    <div class="ainfo">
+      <div class="at">A Trainer Compares CLT, TBL & Natural Approach</div>
+      <div class="as">~55 seconds · British English</div>
+      <div class="apbar"><div class="apfill" id="dp6apf"></div></div>
+    </div>
+    <button class="scrtog" id="dp6scrtog">📄 Transcript</button>
+  </div>
+
+  <div class="scrbox" id="dp6scrbox">
+    <p><strong>Trainer:</strong> "Let me explain three approaches that transformed language teaching. The first approach focuses on developing communicative competence — not just grammar knowledge, but the ability to use language appropriately in real situations. Students work in pairs and groups, often with information gap activities where they must communicate to complete tasks."</p>
+    <p>"The second approach takes this further by making the TASK central to everything. Students complete a meaningful task first — like planning a trip or solving a problem — and then analyze the language that emerged. Grammar comes AFTER the task, not before."</p>
+    <p>"The third approach is based on the idea that we acquire language best through comprehensible input — language slightly above our current level. The classroom should have low anxiety, and students aren't forced to speak until they're ready. There's a silent period where learners just listen and absorb."</p>
+    <p>"All three share important features: they're learner-centered, they prioritize meaning over form, and they see communication as both the means and the goal of learning."</p>
+  </div>
+
+  <h4 style="color:var(--ny);font-family:'Playfair Display',serif;font-size:1rem;margin:20px 0 13px">Which method or concept is being described? — Match each statement</h4>
+
+  <div class="smatch" id="dp6match">
+    <div class="sm-item">
+      <div class="sm-scenario">"Developing communicative competence — the ability to use language appropriately in real situations." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which approach?</em></div>
+      <select class="sm-select" data-a="CLT" id="dp6ms0">
+        <option value="">— Select —</option>
+        <option>CLT</option><option>TBL</option><option>Natural Approach</option><option>ALM</option><option>GTM</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp6mf0"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Grammar comes AFTER the task, not before." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which approach?</em></div>
+      <select class="sm-select" data-a="TBL" id="dp6ms1">
+        <option value="">— Select —</option>
+        <option>CLT</option><option>TBL</option><option>Natural Approach</option><option>PPP</option><option>GTM</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp6mf1"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Comprehensible input — language slightly above our current level." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which concept/approach?</em></div>
+      <select class="sm-select" data-a="Natural Approach" id="dp6ms2">
+        <option value="">— Select —</option>
+        <option>CLT</option><option>TBL</option><option>Natural Approach</option><option>ALM</option><option>Direct Method</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp6mf2"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Information gap activities where they must communicate to complete tasks." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which technique?</em></div>
+      <select class="sm-select" data-a="Information Gap" id="dp6ms3">
+        <option value="">— Select —</option>
+        <option>Information Gap</option><option>Pattern Drills</option><option>Translation</option><option>Dictation</option><option>Repetition</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp6mf3"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"A silent period where learners just listen and absorb." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Associated with which approach?</em></div>
+      <select class="sm-select" data-a="Natural Approach" id="dp6ms4">
+        <option value="">— Select —</option>
+        <option>CLT</option><option>TBL</option><option>Natural Approach</option><option>ALM</option><option>GTM</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp6mf4"></div>
+  </div>
+
+  <button class="chkb" id="dp6chkmatch">Check Answers ✓</button>
+
+  <div class="navb">
+    <button class="nb" data-go="5">← Natural Approach</button>
+    <button class="nb pri" data-go="7">Next: Interview Prep →</button>
+  </div>
+</section>
+
+<!-- SECTION 8: INTERVIEW PREP -->
+<section class="sblock" id="dp6s7">
+  <div class="slabel">Section 8 · Interview Preparation</div>
+  <h2 class="sheading">Interview Practice — <em>Explain CLT</em></h2>
+
+  <div class="co co-info"><span class="co-ico">ℹ️</span><span><strong>Note:</strong> The written exam is <strong>100% multiple choice</strong> (A, B, C, D, E). However, in the <strong>oral interview</strong>, you may be asked to explain methods. This section prepares you for that.</span></div>
+
+  <p class="stxt">Practice explaining <strong>what communicative competence is and its four components</strong> in 60–80 words.</p>
+
+  <div class="co co-tip"><span class="co-ico">✍️</span><span><strong>Structure your answer:</strong><br>1. Define communicative competence (Hymes, Canale & Swain)<br>2. Linguistic competence — grammar/vocabulary<br>3. Sociolinguistic competence — appropriate use<br>4. Discourse competence — connecting sentences<br>5. Strategic competence — repair strategies</span></div>
+
+  <div style="margin-top:18px">
+    <textarea class="wa" id="dp6wtxt" placeholder="Communicative competence, introduced by Hymes and expanded by Canale and Swain, refers to... It has four components: First, linguistic competence involves... Second, sociolinguistic competence is about... Third, discourse competence means... Fourth, strategic competence includes... Together, these components enable learners to..."></textarea>
+    <div class="wcnt" id="dp6wcnt">0 words (aim for 60–80)</div>
+    <button class="wsub" id="dp6wsub">Check My Answer ✓</button>
+    <div class="wfb" id="dp6wfb">
+      <strong>✅ Good practice!</strong><br><br>
+      <strong>Model Answer:</strong><br>
+      "Communicative competence, introduced by Dell Hymes and expanded by Canale and Swain, refers to the ability to use language appropriately in real communication. It has four components: Linguistic competence involves knowledge of grammar, vocabulary, and pronunciation. Sociolinguistic competence means knowing what language is appropriate in different social contexts. Discourse competence is the ability to connect sentences into coherent texts. Strategic competence includes strategies to repair communication breakdowns, like paraphrasing or asking for clarification. Together, these enable effective real-world communication."
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="6">← Listening Task</button>
+    <button class="nb pri" data-go="8">Next: 40-Question Exam →</button>
+  </div>
+</section>
+
+<!-- SECTION 9: 40-QUESTION EXAM -->
+<section class="sblock" id="dp6s8">
+  <div class="slabel">Section 9 · Full Exam Simulation</div>
+  <h2 class="sheading">Exam Practice 🎯 — 40 Questions</h2>
+  <p class="stxt">This section simulates the <strong>real exam format</strong>: Multiple choice with 5 options (A, B, C, D, E). Option E is always "None of the above." <strong>Every wrong answer includes a full explanation.</strong></p>
+
+  <div class="co co-or"><span class="co-ico">⏱️</span><span><strong>Exam Conditions:</strong> In the real exam, you have limited time. Try to answer each question in under 45 seconds.</span></div>
+
+  <div>
+    <div class="qpr">
+      <span class="qcnt" id="dp6qcnt">1 / 40</span>
+      <div class="qpbar"><div class="qpfill" id="dp6qpf" style="width:2.5%"></div></div>
+      <span class="qcnt" id="dp6qsl">Score: 0</span>
+    </div>
+    <div id="dp6qarea"></div>
+    <div class="qfbm" id="dp6qfb"></div>
+    <button class="qnxt" id="dp6qnxt">Next Question →</button>
+    <div class="spl" id="dp6spl">
+      <div class="scir"><div class="snum" id="dp6sfin">0</div><div class="sden">/ 40</div></div>
+      <div class="smsg" id="dp6smsg">Well done!</div>
+      <div class="ssub" id="dp6ssub">Keep practising!</div>
+      <button class="srty" id="dp6srty">🔄 Retry Quiz</button>
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="7">← Interview Prep</button>
+  </div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="lft">
+  <div class="flo">English<em>Pro</em> · Didactics</div>
+  <div class="ftx">Lesson 6 — CLT · Communicative Competence · Task-Based Learning · Natural Approach · 40-Question Exam</div>
+</footer>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+(function(){
+'use strict';
+
+/* ══════════════════════════════════════════════════════════════
+   40-QUESTION EXAM DATA — 5 options (A, B, C, D, E = None)
+   ══════════════════════════════════════════════════════════════ */
+var QD=[
+  // Questions 1-10: CLT Basics
+  {q:'Communicative Language Teaching (CLT) emerged as a reaction against:',opts:['Natural Approach','Task-Based Learning','Grammar-focused methods like ALM','Humanism','None of the above'],a:2,ex:'✅ C is correct. CLT emerged in the 1970s as a reaction against GRAMMAR-FOCUSED methods like ALM that neglected real communication.'},
+  {q:'The primary goal of CLT is to develop:',opts:['Grammatical accuracy','Communicative competence','Habit formation','Translation skills','None of the above'],a:1,ex:'✅ B is correct. CLT\'s goal is COMMUNICATIVE COMPETENCE — the ability to use language appropriately in real situations.'},
+  {q:'Who introduced the concept of "communicative competence"?',opts:['Noam Chomsky','Stephen Krashen','Dell Hymes','B.F. Skinner','None of the above'],a:2,ex:'✅ C is correct. DELL HYMES introduced "communicative competence" in 1972 — knowing what to say, to whom, when, and how.'},
+  {q:'Who expanded communicative competence into four components?',opts:['Krashen and Terrell','Canale and Swain','Willis and Prabhu','Fries and Brooks','None of the above'],a:1,ex:'✅ B is correct. CANALE & SWAIN (1980) expanded Hymes\' concept into four components: linguistic, sociolinguistic, discourse, strategic.'},
+  {q:'In CLT, the teacher\'s role is primarily as a:',opts:['Controller and authority','Facilitator and guide','Drill conductor','Silent observer','None of the above'],a:1,ex:'✅ B is correct. In CLT, the teacher is a FACILITATOR who guides communication, not a controller who dominates the class.'},
+  {q:'Which activity is MOST characteristic of CLT?',opts:['Pattern drills','Grammar translation exercises','Information gap activities','Memorization of dialogues','None of the above'],a:2,ex:'✅ C is correct. INFORMATION GAP activities — where students must communicate to share information — are central to CLT.'},
+  {q:'In CLT, how are errors typically handled?',opts:['Immediately corrected to prevent bad habits','Tolerated if communication is successful','Ignored completely','Punished to discourage repetition','None of the above'],a:1,ex:'✅ B is correct. CLT TOLERATES errors if communication is successful. Fluency is balanced with accuracy.'},
+  {q:'CLT emphasizes the use of:',opts:['Simplified textbook language','Authentic materials from real life','Only L1 for explanations','Bilingual word lists','None of the above'],a:1,ex:'✅ B is correct. CLT uses AUTHENTIC MATERIALS — real texts like newspapers, menus, websites — not artificial textbook language.'},
+  {q:'Which statement about CLT and grammar is CORRECT?',opts:['CLT ignores grammar completely','CLT teaches grammar in context for communicative purposes','CLT teaches grammar through drills only','CLT uses explicit grammar rules before communication','None of the above'],a:1,ex:'✅ B is correct. CLT teaches grammar IN CONTEXT for communicative purposes — not isolated rules, but not ignoring grammar either.'},
+  {q:'What are the three key features of CLT activities?',opts:['Repetition, memorization, drilling','Information gap, choice, feedback','Translation, grammar analysis, reading','Listening, repeating, writing','None of the above'],a:1,ex:'✅ B is correct. CLT activities feature INFORMATION GAP (real communication need), CHOICE (students decide what to say), and FEEDBACK (communication success).'},
+
+  // Questions 11-20: Communicative Competence Components
+  {q:'LINGUISTIC competence refers to knowledge of:',opts:['Appropriate social language use','Grammar, vocabulary, and pronunciation','Connecting sentences coherently','Repair strategies','None of the above'],a:1,ex:'✅ B is correct. LINGUISTIC competence = knowledge of grammar, vocabulary, pronunciation — the language system itself.'},
+  {q:'SOCIOLINGUISTIC competence involves knowing:',opts:['How to form grammatically correct sentences','What language is appropriate in different social contexts','How to connect ideas across sentences','How to fix communication breakdowns','None of the above'],a:1,ex:'✅ B is correct. SOCIOLINGUISTIC competence = knowing APPROPRIATE language for different contexts (formal/informal, polite/casual).'},
+  {q:'DISCOURSE competence refers to:',opts:['Knowing grammar rules','Using appropriate register','Connecting sentences into coherent text','Using gestures when words fail','None of the above'],a:2,ex:'✅ C is correct. DISCOURSE competence = cohesion and coherence — connecting sentences into meaningful, organized texts.'},
+  {q:'STRATEGIC competence includes:',opts:['Knowing vocabulary lists','Using formal language appropriately','Paraphrasing and asking for clarification','Understanding grammar rules','None of the above'],a:2,ex:'✅ C is correct. STRATEGIC competence = repair strategies — paraphrasing, asking for clarification, using gestures when communication breaks down.'},
+  {q:'A student says "Can you say that again more slowly?" This demonstrates:',opts:['Linguistic competence','Sociolinguistic competence','Discourse competence','Strategic competence','None of the above'],a:3,ex:'✅ D is correct. Asking for clarification is a STRATEGIC competence — repairing a communication breakdown.'},
+  {q:'A student uses "Dear Sir" in a formal letter and "Hey!" with friends. This shows:',opts:['Linguistic competence','Sociolinguistic competence','Discourse competence','Strategic competence','None of the above'],a:1,ex:'✅ B is correct. Choosing appropriate formality for different contexts = SOCIOLINGUISTIC competence.'},
+  {q:'A student writes a coherent paragraph with clear topic sentences and transitions. This shows:',opts:['Linguistic competence','Sociolinguistic competence','Discourse competence','Strategic competence','None of the above'],a:2,ex:'✅ C is correct. Organizing text coherently with transitions = DISCOURSE competence.'},
+  {q:'A student can conjugate verbs correctly and use varied vocabulary. This shows:',opts:['Linguistic competence','Sociolinguistic competence','Discourse competence','Strategic competence','None of the above'],a:0,ex:'✅ A is correct. Grammar and vocabulary knowledge = LINGUISTIC competence.'},
+  {q:'Chomsky\'s "linguistic competence" differs from Hymes\' "communicative competence" because:',opts:['Chomsky focused on social appropriateness','Hymes focused only on grammar rules','Chomsky focused on grammar; Hymes included social use','They are exactly the same concept','None of the above'],a:2,ex:'✅ C is correct. Chomsky = grammatical knowledge only. Hymes = grammar PLUS social/contextual appropriateness.'},
+  {q:'Which competence would help you explain something using simpler words when the listener doesn\'t understand?',opts:['Linguistic competence','Sociolinguistic competence','Discourse competence','Strategic competence','None of the above'],a:3,ex:'✅ D is correct. Paraphrasing to help understanding = STRATEGIC competence (repair strategy).'},
+
+  // Questions 21-30: Task-Based Learning
+  {q:'Task-Based Learning (TBL) is associated with which figures?',opts:['Krashen and Terrell','Canale and Swain','Willis and Prabhu','Fries and Brooks','None of the above'],a:2,ex:'✅ C is correct. WILLIS (framework) and PRABHU (Bangalore Project) are key figures in TBL.'},
+  {q:'In TBL, a "task" is defined as:',opts:['A grammar exercise','An activity where language achieves a real-world outcome','A translation activity','A repetition drill','None of the above'],a:1,ex:'✅ B is correct. A TASK uses language to achieve a real-world OUTCOME — plan a trip, solve a problem, make a decision.'},
+  {q:'Willis\'s TBL framework has three stages:',opts:['Presentation, Practice, Production','Pre-task, Task Cycle, Language Focus','Input, Intake, Output','Listen, Speak, Read, Write','None of the above'],a:1,ex:'✅ B is correct. Willis: PRE-TASK → TASK CYCLE (task, planning, report) → LANGUAGE FOCUS (analysis, practice).'},
+  {q:'In TBL, grammar is taught:',opts:['Before the task as preparation','During the task as correction','After the task in the Language Focus stage','Not at all','None of the above'],a:2,ex:'✅ C is correct. Grammar comes AFTER the task in the LANGUAGE FOCUS stage — analyzing language that emerged.'},
+  {q:'What is the difference between TBL and PPP?',opts:['TBL is task-first; PPP is grammar-first','PPP is task-first; TBL is grammar-first','They are the same approach','TBL ignores grammar completely','None of the above'],a:0,ex:'✅ A is correct. TBL = TASK first, then grammar. PPP = PRESENTATION (grammar) first, then practice, then production.'},
+  {q:'In the TBL Task Cycle, the "Report" phase involves:',opts:['Practicing grammar drills','Students sharing task outcomes with the class','Teacher presenting new vocabulary','Students working silently','None of the above'],a:1,ex:'✅ B is correct. In REPORT, students share their task outcomes with the class — focus on MEANING.'},
+  {q:'Which is NOT a task in TBL terms?',opts:['Planning a weekend trip','Solving a logic puzzle together','Completing a grammar fill-in-the-blank worksheet','Debating a controversial topic','None of the above'],a:2,ex:'✅ C is correct. Grammar worksheets are EXERCISES, not tasks. Tasks have real-world outcomes and focus on meaning.'},
+  {q:'TBL is considered a "strong" version of:',opts:['Grammar-Translation Method','Audio-Lingual Method','Communicative Language Teaching','Behaviourism','None of the above'],a:2,ex:'✅ C is correct. TBL is a STRONG version of CLT — taking communicative principles further by making tasks central.'},
+  {q:'In TBL, the Pre-Task phase involves:',opts:['Students completing the main task','Teacher introducing topic and activating background knowledge','Analyzing grammar from the task','Testing students on vocabulary','None of the above'],a:1,ex:'✅ B is correct. PRE-TASK: Teacher introduces topic, activates background knowledge, may provide useful vocabulary.'},
+  {q:'What happens in the "Language Focus" stage of TBL?',opts:['Students complete the main task','Students report to the class','Teacher and students analyze language that emerged from the task','Students listen to comprehensible input','None of the above'],a:2,ex:'✅ C is correct. LANGUAGE FOCUS: Analyze language from task, practice specific forms — grammar AFTER communication.'},
+
+  // Questions 31-40: Natural Approach & Comparisons
+  {q:'The Natural Approach was developed by:',opts:['Canale and Swain','Willis and Prabhu','Krashen and Terrell','Fries and Brooks','None of the above'],a:2,ex:'✅ C is correct. KRASHEN (theory) and TERRELL (classroom application) developed the Natural Approach.'},
+  {q:'The Natural Approach is based on Krashen\'s:',opts:['Behaviourist principles','Monitor Model / Five Hypotheses','Structural linguistics','Grammar-Translation tradition','None of the above'],a:1,ex:'✅ B is correct. Natural Approach applies Krashen\'s MONITOR MODEL (five hypotheses) to classroom teaching.'},
+  {q:'The "Silent Period" in the Natural Approach refers to:',opts:['A punishment for speaking errors','Time when learners listen before being required to speak','Quiet reading time','Teacher silence throughout the lesson','None of the above'],a:1,ex:'✅ B is correct. SILENT PERIOD: Learners listen and absorb input before being required to speak — natural and allowed.'},
+  {q:'In the Natural Approach, errors are:',opts:['Immediately corrected to prevent fossilization','Not directly corrected; acquisition is unconscious','Used for public correction to help all students','Punished to discourage them','None of the above'],a:1,ex:'✅ B is correct. Natural Approach doesn\'t directly correct errors — ACQUISITION is unconscious, and correction raises the affective filter.'},
+  {q:'What does "i+1" mean in the Natural Approach?',opts:['Input exactly at the learner\'s level','Input slightly above the learner\'s current level','Input far beyond the learner\'s level','Immediate error correction','None of the above'],a:1,ex:'✅ B is correct. i+1 = input SLIGHTLY ABOVE current level — comprehensible but challenging.'},
+  {q:'The Natural Approach emphasizes:',opts:['Explicit grammar instruction','Pattern drills for habit formation','Low-anxiety environment with comprehensible input','Translation exercises','None of the above'],a:2,ex:'✅ C is correct. Natural Approach: LOW ANXIETY + COMPREHENSIBLE INPUT = optimal conditions for acquisition.'},
+  {q:'Which method uses "information gap" activities most prominently?',opts:['Grammar-Translation Method','Audio-Lingual Method','Communicative Language Teaching','Natural Approach','None of the above'],a:2,ex:'✅ C is correct. INFORMATION GAP activities are central to CLT — creating genuine need for communication.'},
+  {q:'All three methods in this lesson share which feature?',opts:['Heavy use of L1','Focus on grammatical accuracy over fluency','Learner-centered, meaning-focused communication','Use of pattern drills','None of the above'],a:2,ex:'✅ C is correct. CLT, TBL, and Natural Approach are all LEARNER-CENTERED and prioritize MEANING and COMMUNICATION.'},
+  {q:'Which approach most emphasizes comprehensible INPUT over OUTPUT?',opts:['CLT','TBL','Natural Approach','All equally','None of the above'],a:2,ex:'✅ C is correct. NATURAL APPROACH emphasizes INPUT (listening/reading) over forced output, based on Krashen\'s Input Hypothesis.'},
+  {q:'A teacher has students plan a party, then report their plan, then analyze the past tense they used. This follows:',opts:['PPP model','TBL framework','Grammar-Translation Method','Audio-Lingual Method','None of the above'],a:1,ex:'✅ B is correct. Task (plan) → Report → Language Focus (analyze past tense) = TBL FRAMEWORK.'}
+];
+
+var curSec=0,qCur=0,qScore=0,qAns=false,audioPlaying=false,audioTimer=null;
+
+function goToSection(n){
+  document.querySelectorAll('#dp-l6 .sblock').forEach(function(b){b.classList.remove('vis')});
+  var sec=document.getElementById('dp6s'+n);
+  if(sec)sec.classList.add('vis');
+  curSec=n;
+  updateDots();
+  document.getElementById('dp-l6').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function updateDots(){
+  document.querySelectorAll('#dp-l6 .snavdot').forEach(function(d){
+    var i=parseInt(d.getAttribute('data-s'));
+    d.classList.remove('active','done');
+    if(i<curSec)d.classList.add('done');
+    if(i===curSec)d.classList.add('active');
+  });
+}
+
+document.querySelectorAll('#dp-l6 .snavdot').forEach(function(d){
+  d.addEventListener('click',function(){goToSection(parseInt(d.getAttribute('data-s')))});
+});
+
+document.querySelectorAll('#dp-l6 .nb[data-go]').forEach(function(btn){
+  btn.addEventListener('click',function(){goToSection(parseInt(btn.getAttribute('data-go')))});
+});
+
+document.querySelectorAll('#dp-l6 .tcard').forEach(function(c){
+  c.addEventListener('click',function(){c.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l6 .compcard').forEach(function(c){
+  c.addEventListener('click',function(){c.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l6 .tblstage').forEach(function(c){
+  c.addEventListener('click',function(){c.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l6 .tabs').forEach(function(tg){
+  tg.querySelectorAll('.tab').forEach(function(tab){
+    tab.addEventListener('click',function(){
+      var pid=tab.getAttribute('data-tab');
+      tg.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});
+      tab.classList.add('active');
+      tg.parentElement.querySelectorAll('.tabpanel').forEach(function(p){p.classList.remove('vis')});
+      var pnl=document.getElementById(pid);
+      if(pnl)pnl.classList.add('vis');
+    });
+  });
+});
+
+/* Listening Match Check */
+var chkmatch=document.getElementById('dp6chkmatch');
+if(chkmatch)chkmatch.addEventListener('click',function(){
+  for(var i=0;i<5;i++){
+    var sel=document.getElementById('dp6ms'+i);
+    var fb=document.getElementById('dp6mf'+i);
+    if(!sel)continue;
+    var ans=sel.getAttribute('data-a'),giv=sel.value;
+    var ok=giv===ans;
+    sel.classList.toggle('ok',ok);sel.classList.toggle('bad',!ok);
+    fb.textContent=ok?'✅ Correct!':'❌ Answer: '+ans;
+    fb.classList.toggle('ok',ok);fb.classList.toggle('bad',!ok);
+  }
+});
+
+var pbtn=document.getElementById('dp6playbtn'),apf=document.getElementById('dp6apf');
+var audioTxt="Let me explain three approaches that transformed language teaching. The first approach focuses on developing communicative competence — not just grammar knowledge, but the ability to use language appropriately in real situations. Students work in pairs and groups, often with information gap activities where they must communicate to complete tasks. The second approach takes this further by making the TASK central to everything. Students complete a meaningful task first — like planning a trip or solving a problem — and then analyze the language that emerged. Grammar comes AFTER the task, not before. The third approach is based on the idea that we acquire language best through comprehensible input — language slightly above our current level. The classroom should have low anxiety, and students aren't forced to speak until they're ready. There's a silent period where learners just listen and absorb. All three share important features: they're learner-centered, they prioritize meaning over form, and they see communication as both the means and the goal of learning.";
+
+if(pbtn)pbtn.addEventListener('click',function(){
+  if(audioPlaying){window.speechSynthesis&&window.speechSynthesis.cancel();clearInterval(audioTimer);audioPlaying=false;pbtn.textContent='▶';if(apf)apf.style.width='0%';return;}
+  if(!window.speechSynthesis)return;
+  var u=new SpeechSynthesisUtterance(audioTxt);u.lang='en-GB';u.rate=0.9;
+  var vv=window.speechSynthesis.getVoices(),v=vv.find(function(x){return x.lang==='en-GB'})||vv.find(function(x){return x.lang.startsWith('en')});
+  if(v)u.voice=v;
+  audioPlaying=true;pbtn.textContent='⏸';
+  var w=0;audioTimer=setInterval(function(){w=Math.min(100,w+0.35);if(apf)apf.style.width=w+'%';if(w>=100)clearInterval(audioTimer)},500);
+  u.onend=function(){audioPlaying=false;pbtn.textContent='▶';clearInterval(audioTimer)};
+  window.speechSynthesis.speak(u);
+});
+
+var stog=document.getElementById('dp6scrtog'),sbox=document.getElementById('dp6scrbox');
+if(stog)stog.addEventListener('click',function(){sbox&&sbox.classList.toggle('show')});
+
+var wtxt=document.getElementById('dp6wtxt'),wcnt=document.getElementById('dp6wcnt'),wsub=document.getElementById('dp6wsub'),wfb=document.getElementById('dp6wfb');
+if(wtxt)wtxt.addEventListener('input',function(){
+  var wc=wtxt.value.trim()===''?0:wtxt.value.trim().split(/\s+/).length;
+  if(wcnt){wcnt.textContent=wc+' words (aim for 60–80)';wcnt.style.color=wc>=60?'#2E7D52':'#7A7A7A'}
+});
+if(wsub)wsub.addEventListener('click',function(){
+  if(!wtxt||wtxt.value.trim().split(/\s+/).length<20){alert('Please write at least 20 words!');return}
+  if(wfb)wfb.classList.add('show');wsub.textContent='✅ Checked!';wsub.style.background='#2E7D52';
+});
+
+/* 40-Question Quiz with A,B,C,D,E */
+function renderQ(){
+  var d=QD[qCur],area=document.getElementById('dp6qarea'),fb=document.getElementById('dp6qfb'),nxt=document.getElementById('dp6qnxt');
+  fb.className='qfbm';nxt.classList.remove('show');qAns=false;
+  var pf=document.getElementById('dp6qpf');
+  if(document.getElementById('dp6qcnt'))document.getElementById('dp6qcnt').textContent=(qCur+1)+' / '+QD.length;
+  if(pf)pf.style.width=((qCur+1)/QD.length*100)+'%';
+  var labels=['A','B','C','D','E'];
+  var html='<div class="qq"><span class="qqn">'+(qCur+1)+'</span>'+d.q+'</div><div class="qopts">';
+  d.opts.forEach(function(o,i){html+='<button class="qopt" data-i="'+i+'"><span class="ql">'+labels[i]+'.</span> '+o+'</button>'});
+  html+='</div>';area.innerHTML=html;
+  area.querySelectorAll('.qopt').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      if(qAns)return;qAns=true;
+      var ch=parseInt(btn.getAttribute('data-i'));
+      area.querySelectorAll('.qopt').forEach(function(b){b.disabled=true});
+      if(ch===d.a){btn.classList.add('qco');qScore++;if(document.getElementById('dp6qsl'))document.getElementById('dp6qsl').textContent='Score: '+qScore;fb.textContent=d.ex;fb.className='qfbm show ok'}
+      else{btn.classList.add('qwr');area.querySelectorAll('.qopt')[d.a].classList.add('qco');fb.innerHTML='❌ Incorrect. '+d.ex;fb.className='qfbm show bad'}
+      nxt.classList.add('show');nxt.textContent=qCur<QD.length-1?'Next Question →':'See Results 🎯';
+    });
+  });
+}
+
+var qnxt=document.getElementById('dp6qnxt');
+if(qnxt)qnxt.addEventListener('click',function(){qCur++;if(qCur>=QD.length)showScore();else renderQ()});
+
+function showScore(){
+  var area=document.getElementById('dp6qarea'),fb=document.getElementById('dp6qfb'),nxt=document.getElementById('dp6qnxt'),pr=document.querySelector('#dp-l6 .qpr'),pl=document.getElementById('dp6spl');
+  if(area)area.style.display='none';if(fb)fb.style.display='none';if(nxt)nxt.style.display='none';if(pr)pr.style.display='none';if(pl)pl.classList.add('show');
+  var fin=document.getElementById('dp6sfin');if(fin)fin.textContent=qScore;
+  var pct=qScore/QD.length,msg,sub;
+  if(pct>=0.9){msg='Excellent! 🏆';sub='You\'re exam-ready!'}
+  else if(pct>=0.75){msg='Great Work! 🌟';sub='Review the questions you missed.'}
+  else if(pct>=0.6){msg='Good Progress! 👍';sub='Study the theory sections again.'}
+  else if(pct>=0.4){msg='Keep Practising! 💪';sub='Focus on the concepts you struggled with.'}
+  else{msg='More Study Needed 📚';sub='Review all sections before retrying.'}
+  if(document.getElementById('dp6smsg'))document.getElementById('dp6smsg').textContent=msg;
+  if(document.getElementById('dp6ssub'))document.getElementById('dp6ssub').textContent=sub;
+}
+
+var srty=document.getElementById('dp6srty');
+if(srty)srty.addEventListener('click',function(){
+  qScore=0;qCur=0;qAns=false;
+  var area=document.getElementById('dp6qarea'),fb=document.getElementById('dp6qfb'),nxt=document.getElementById('dp6qnxt'),pr=document.querySelector('#dp-l6 .qpr'),pl=document.getElementById('dp6spl');
+  if(area){area.style.display='block';area.innerHTML=''}if(fb){fb.style.display='block';fb.className='qfbm'}if(nxt)nxt.style.display='none';if(pr)pr.style.display='flex';if(pl)pl.classList.remove('show');
+  if(document.getElementById('dp6qsl'))document.getElementById('dp6qsl').textContent='Score: 0';
+  renderQ();
+});
+
+renderQ();
+if(window.speechSynthesis){window.speechSynthesis.getVoices();window.speechSynthesis.onvoiceschanged=function(){window.speechSynthesis.getVoices()}}
+})();
+</script>
+
+<!-- AUTO-RESIZE (MUST BE LAST) -->
+<script>
+(function(){
+  function sendHeight(){var h=document.documentElement.scrollHeight||document.body.scrollHeight;window.parent.postMessage({epHeight:h},'*')}
+  sendHeight();window.addEventListener('load',sendHeight);window.addEventListener('resize',sendHeight);
+  var mo=new MutationObserver(sendHeight);mo.observe(document.body,{childList:true,subtree:true,attributes:true});
+})();
+</script>
+
+</body>
+</html>
