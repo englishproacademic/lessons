@@ -1,0 +1,984 @@
+<!--============================================================
+     EnglishPro · Didactics Series · Lesson 5
+     Teaching Methods I: Grammar-Translation, Direct Method, Audio-Lingual
+     GTM, DM, ALM — Historical Methods & Their Foundations
+     GitHub hosted — embedded in Blogger via iframe
+     100% self-contained — no external JS dependencies
+     UPDATED: Relevant listening + 40-MCQ exam section
+     ============================================================-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teaching Methods I: GTM, Direct Method, ALM | EnglishPro Didactics Series</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;family=DM+Sans:wght@300;400;500;600&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{margin:0;padding:0;background:#FAFAF7;direction:ltr;text-align:left}
+
+#dp-l5{
+  --ny:#0D2B4E;--ny2:#1A4070;
+  --go:#C8933A;--go2:#E8B86D;--gop:#FDF6EC;
+  --cr:#FAFAF7;--wh:#fff;
+  --ink:#1A1A1A;--ink2:#3D3D3D;--mu:#7A7A7A;
+  --bd:#E2DDD6;--bdl:#F0EDE8;
+  --gr:#2E7D52;--grb:#EBF5EF;
+  --rd:#C0392B;--rdb:#FDECEA;
+  --bl:#1E5FA8;--blb:#EBF2FB;
+  --pu:#7C3AED;--pub:#F3F0FF;
+  --te:#0E7490;--teb:#ECFEFF;
+  --or:#D97706;--orb:#FEF3C7;
+  --sh1:0 2px 8px rgba(13,43,78,.07);
+  --sh2:0 6px 20px rgba(13,43,78,.10);
+  --r:12px;--rl:20px;
+  font-family:'DM Sans',sans-serif;
+  color:var(--ink);background:var(--cr);
+  line-height:1.7;-webkit-font-smoothing:antialiased;
+  display:block;overflow:hidden;direction:ltr;text-align:left
+}
+#dp-l5 *,#dp-l5 *::before,#dp-l5 *::after{box-sizing:border-box;margin:0;padding:0}
+#dp-l5 button{cursor:pointer;font-family:'DM Sans',sans-serif;border:none;background:none}
+#dp-l5 textarea,#dp-l5 input,#dp-l5 select{font-family:'DM Sans',sans-serif}
+
+/* HERO */
+#dp-l5 .lhero{background:linear-gradient(150deg,#0a1f38 0%,#0D2B4E 50%,#122e52 100%);padding:48px 24px 40px;position:relative;overflow:hidden;border-radius:var(--rl) var(--rl) 0 0}
+#dp-l5 .lhero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%,rgba(200,147,58,.08) 0%,transparent 60%),radial-gradient(circle at 80% 20%,rgba(124,58,237,.06) 0%,transparent 50%);pointer-events:none}
+#dp-l5 .lhero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,147,58,.4),transparent)}
+#dp-l5 .lhero-in{max-width:720px;margin:0 auto;position:relative;z-index:1}
+#dp-l5 .lvlbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,147,58,.12);border:1px solid rgba(200,147,58,.28);color:var(--go2);font-size:.68rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:18px}
+#dp-l5 .ltitle{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:900;color:#F5F0E8;line-height:1.15;margin-bottom:10px;letter-spacing:-.02em}
+#dp-l5 .ltitle em{color:var(--go);font-style:italic}
+#dp-l5 .lsub{font-size:.9rem;color:rgba(245,240,232,.62);margin-bottom:22px;max-width:520px;line-height:1.6}
+#dp-l5 .spills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px}
+#dp-l5 .spill{font-size:.67rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 11px;border-radius:100px}
+#dp-l5 .sp-th{background:rgba(124,58,237,.25);color:#C4B5FD}
+#dp-l5 .sp-ex{background:rgba(30,95,168,.25);color:#7DB8F0}
+#dp-l5 .sp-qu{background:rgba(200,147,58,.25);color:var(--go2)}
+#dp-l5 .sp-ic{background:rgba(46,125,82,.25);color:#6BCFA0}
+
+/* Nav dots */
+#dp-l5 .snav{display:flex;align-items:center;gap:5px;flex-wrap:wrap;padding-top:20px;border-top:1px solid rgba(255,255,255,.08)}
+#dp-l5 .snavdot{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;font-size:.7rem;font-weight:700;border:2px solid rgba(255,255,255,.18);color:rgba(255,255,255,.32);cursor:pointer;transition:all .25s;flex-shrink:0}
+#dp-l5 .snavdot.done{border-color:var(--gr);background:var(--gr);color:#fff}
+#dp-l5 .snavdot.active{border-color:var(--go);background:var(--go);color:#fff}
+#dp-l5 .snavsep{width:16px;height:2px;background:rgba(255,255,255,.1);border-radius:1px;flex-shrink:0}
+#dp-l5 .snavlbl{font-size:.63rem;color:rgba(245,240,232,.38);margin-left:6px}
+
+/* BODY */
+#dp-l5 .lbody{max-width:720px;margin:0 auto;padding:32px 20px 64px;background:var(--cr)}
+#dp-l5 .sblock{background:var(--wh);border:1px solid var(--bdl);border-radius:var(--rl);padding:28px;margin-bottom:24px;display:none;animation:dp5up .35s ease both;box-shadow:var(--sh1)}
+#dp-l5 .sblock.vis{display:block}
+@keyframes dp5up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+#dp-l5 .slabel{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--go);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+#dp-l5 .slabel::after{content:'';flex:1;height:1px;background:var(--bdl)}
+#dp-l5 .sheading{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ny);margin-bottom:16px;line-height:1.25}
+#dp-l5 .sheading em{color:var(--go);font-style:italic}
+#dp-l5 .stxt{font-size:.9rem;color:var(--ink2);margin-bottom:16px;line-height:1.65}
+
+/* Scene */
+#dp-l5 .scene{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:20px;margin-bottom:20px;position:relative;overflow:hidden}
+#dp-l5 .scene::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(200,147,58,.08),transparent 60%);pointer-events:none}
+#dp-l5 .s-ico{font-size:1.8rem;margin-bottom:8px;position:relative;z-index:1}
+#dp-l5 .s-t{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#F5F0E8;position:relative;z-index:1;margin-bottom:5px}
+#dp-l5 .s-d{font-size:.83rem;color:rgba(245,240,232,.65);position:relative;z-index:1;line-height:1.55}
+
+/* Callouts */
+#dp-l5 .co{display:flex;gap:10px;padding:13px 15px;border-radius:var(--r);margin:14px 0;font-size:.855rem;line-height:1.6}
+#dp-l5 .co-tip{background:var(--gop);border:1px solid rgba(200,147,58,.2);color:var(--ink2)}
+#dp-l5 .co-info{background:var(--blb);border:1px solid rgba(30,95,168,.15);color:var(--ink2)}
+#dp-l5 .co-pur{background:var(--pub);border:1px solid rgba(124,58,237,.15);color:var(--ink2)}
+#dp-l5 .co-teal{background:var(--teb);border:1px solid rgba(14,116,144,.15);color:var(--ink2)}
+#dp-l5 .co-or{background:var(--orb);border:1px solid rgba(217,119,6,.15);color:var(--ink2)}
+#dp-l5 .co-ico{font-size:1rem;flex-shrink:0;margin-top:1px}
+
+/* Gbox */
+#dp-l5 .gbox{border-radius:0 var(--r) var(--r) 0;padding:18px 20px;margin:18px 0}
+#dp-l5 .gbox-bl{background:var(--blb);border:1px solid rgba(30,95,168,.2);border-left:4px solid var(--bl)}
+#dp-l5 .gbox-go{background:var(--gop);border:1px solid rgba(200,147,58,.2);border-left:4px solid var(--go)}
+#dp-l5 .gbox-gr{background:var(--grb);border:1px solid rgba(46,125,82,.2);border-left:4px solid var(--gr)}
+#dp-l5 .gbox-pu{background:var(--pub);border:1px solid rgba(124,58,237,.15);border-left:4px solid var(--pu)}
+#dp-l5 .gbox-te{background:var(--teb);border:1px solid rgba(14,116,144,.15);border-left:4px solid var(--te)}
+#dp-l5 .gbox-rd{background:var(--rdb);border:1px solid rgba(192,57,43,.15);border-left:4px solid var(--rd)}
+#dp-l5 .gbox h4{font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:11px}
+#dp-l5 .gbox-bl h4{color:var(--bl)}
+#dp-l5 .gbox-go h4{color:var(--go)}
+#dp-l5 .gbox-gr h4{color:var(--gr)}
+#dp-l5 .gbox-pu h4{color:var(--pu)}
+#dp-l5 .gbox-te h4{color:var(--te)}
+#dp-l5 .gbox-rd h4{color:var(--rd)}
+#dp-l5 .grule{font-family:'DM Mono',monospace;font-size:.86rem;color:var(--ny);background:rgba(255,255,255,.65);padding:9px 14px;border-radius:7px;margin-bottom:7px;line-height:1.6}
+#dp-l5 .grule span{color:var(--bl);font-weight:600}
+#dp-l5 .grule em{color:var(--go);font-style:normal;font-weight:600}
+#dp-l5 .grule strong{color:var(--gr);font-weight:700}
+
+/* Flip Cards */
+#dp-l5 .tcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin:20px 0}
+#dp-l5 .tcard{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:18px;cursor:pointer;transition:all .22s;position:relative;overflow:hidden}
+#dp-l5 .tcard::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;transition:background .2s}
+#dp-l5 .tcard:hover{border-color:var(--go);transform:translateY(-3px);box-shadow:var(--sh2)}
+#dp-l5 .tcard.fl{background:var(--gop);border-color:var(--go)}
+#dp-l5 .tcard.fl::before{background:var(--go)}
+#dp-l5 .tc-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+#dp-l5 .tc-ava{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+#dp-l5 .tc-info h4{font-size:.95rem;font-weight:700;color:var(--ny);margin-bottom:2px}
+#dp-l5 .tc-info span{font-size:.72rem;color:var(--mu)}
+#dp-l5 .tc-hint{font-size:.78rem;color:var(--mu);font-style:italic}
+#dp-l5 .tc-body{display:none;margin-top:12px}
+#dp-l5 .tcard.fl .tc-hint{display:none}
+#dp-l5 .tcard.fl .tc-body{display:block}
+#dp-l5 .tc-body p{font-size:.85rem;color:var(--ink2);line-height:1.6;margin-bottom:10px}
+#dp-l5 .tc-key{background:var(--wh);border-radius:8px;padding:12px;margin-top:10px}
+#dp-l5 .tc-key h5{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--go);margin-bottom:6px}
+#dp-l5 .tc-key p{font-size:.82rem;color:var(--ny);font-weight:600;line-height:1.5;margin:0}
+
+/* Method cards */
+#dp-l5 .mcards{display:flex;flex-direction:column;gap:12px;margin:20px 0}
+#dp-l5 .mcard{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:18px;cursor:pointer;transition:all .22s}
+#dp-l5 .mcard:hover{border-color:var(--go);transform:translateX(4px)}
+#dp-l5 .mcard.fl{background:var(--gop);border-color:var(--go)}
+#dp-l5 .mc-head{display:flex;align-items:center;gap:12px}
+#dp-l5 .mc-icon{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;color:#fff}
+#dp-l5 .mc-title{font-size:.95rem;font-weight:700;color:var(--ny)}
+#dp-l5 .mc-sub{font-size:.75rem;color:var(--mu)}
+#dp-l5 .mc-hint{font-size:.75rem;color:var(--mu);font-style:italic;margin-top:6px}
+#dp-l5 .mc-body{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--bdl)}
+#dp-l5 .mcard.fl .mc-hint{display:none}
+#dp-l5 .mcard.fl .mc-body{display:block}
+#dp-l5 .mc-body p{font-size:.85rem;color:var(--ink2);line-height:1.6;margin-bottom:8px}
+#dp-l5 .mc-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+#dp-l5 .mc-box{background:var(--wh);border-radius:8px;padding:10px 12px}
+#dp-l5 .mc-box h5{font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+#dp-l5 .mc-box.pros h5{color:var(--gr)}
+#dp-l5 .mc-box.cons h5{color:var(--rd)}
+#dp-l5 .mc-box p{font-size:.8rem;color:var(--ink2);margin:0;line-height:1.5}
+
+/* Tables */
+#dp-l5 .gtbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.85rem}
+#dp-l5 .gtbl th{background:var(--ny);color:#F5F0E8;padding:9px 13px;text-align:left;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+#dp-l5 .gtbl th:first-child{border-radius:var(--r) 0 0 0}
+#dp-l5 .gtbl th:last-child{border-radius:0 var(--r) 0 0}
+#dp-l5 .gtbl td{padding:9px 13px;border-bottom:1px solid var(--bdl);color:var(--ink2);vertical-align:top}
+#dp-l5 .gtbl tr:nth-child(even) td{background:var(--cr)}
+#dp-l5 .tbl-b{color:var(--bl);font-weight:600}
+#dp-l5 .tbl-g{color:var(--go);font-weight:600}
+#dp-l5 .tbl-gr{color:var(--gr);font-weight:600}
+#dp-l5 .tbl-pu{color:var(--pu);font-weight:600}
+#dp-l5 .tbl-rd{color:var(--rd);font-weight:600}
+
+/* Tabs */
+#dp-l5 .tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+#dp-l5 .tab{padding:9px 18px;border-radius:var(--r);font-size:.82rem;font-weight:600;background:var(--cr);border:2px solid var(--bd);color:var(--ink2);cursor:pointer;transition:all .2s}
+#dp-l5 .tab:hover{border-color:var(--go);color:var(--go)}
+#dp-l5 .tab.active{background:var(--ny);border-color:var(--ny);color:#fff}
+#dp-l5 .tabpanel{display:none}
+#dp-l5 .tabpanel.vis{display:block}
+
+/* Scenario Match */
+#dp-l5 .smatch{margin:20px 0}
+#dp-l5 .sm-item{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;align-items:center}
+#dp-l5 .sm-scenario{background:var(--blb);border:1px solid rgba(30,95,168,.15);border-radius:var(--r);padding:12px 14px;font-size:.85rem;color:var(--ink2);line-height:1.5}
+#dp-l5 .sm-select{border:2px solid var(--bd);border-radius:var(--r);padding:9px 12px;font-size:.85rem;color:var(--ink2);background:var(--cr);width:100%;font-family:'DM Sans',sans-serif;outline:none;transition:border-color .2s;cursor:pointer}
+#dp-l5 .sm-select:focus{border-color:var(--go)}
+#dp-l5 .sm-select.ok{border-color:var(--gr);background:var(--grb);color:var(--gr)}
+#dp-l5 .sm-select.bad{border-color:var(--rd);background:var(--rdb);color:var(--rd)}
+#dp-l5 .smfb{font-size:.82rem;font-weight:600;padding:10px 14px;border-radius:var(--r);margin-top:4px;display:none}
+#dp-l5 .smfb.ok{background:var(--grb);color:var(--gr);display:block}
+#dp-l5 .smfb.bad{background:var(--rdb);color:var(--rd);display:block}
+
+/* Stask */
+#dp-l5 .stask{border-radius:var(--r);padding:20px;margin:14px 0;border:1.5px solid}
+#dp-l5 .stask-gr{background:var(--grb);border-color:rgba(46,125,82,.22)}
+#dp-l5 .stask-bl{background:var(--blb);border-color:rgba(30,95,168,.18)}
+#dp-l5 .stask-pu{background:var(--pub);border-color:rgba(124,58,237,.18)}
+#dp-l5 .sth{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+#dp-l5 .stico{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;color:#fff}
+#dp-l5 .stitle{font-size:.9rem;font-weight:600}
+#dp-l5 .stitle-gr{color:var(--gr)}
+#dp-l5 .stitle-bl{color:var(--bl)}
+#dp-l5 .stitle-pu{color:var(--pu)}
+#dp-l5 .sinstr{font-size:.855rem;color:var(--ink2);line-height:1.6;margin-bottom:10px}
+#dp-l5 .smodel{background:var(--wh);border-radius:8px;padding:13px 15px;font-size:.84rem;color:var(--ny);line-height:1.9}
+#dp-l5 .em-gr{color:var(--gr);font-weight:600;font-style:normal}
+#dp-l5 .em-bl{color:var(--bl);font-weight:600;font-style:normal}
+#dp-l5 .em-go{color:var(--go);font-weight:600;font-style:normal}
+#dp-l5 .em-pu{color:var(--pu);font-weight:600;font-style:normal}
+#dp-l5 .em-rd{color:var(--rd);font-weight:600;font-style:normal}
+
+/* Audio */
+#dp-l5 .aplayer{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px;margin:14px 0;flex-wrap:wrap}
+#dp-l5 .abig{width:48px;height:48px;border-radius:50%;background:var(--go);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;transition:all .2s;cursor:pointer;border:none;box-shadow:0 4px 14px rgba(200,147,58,.4)}
+#dp-l5 .abig:hover{background:var(--go2);transform:scale(1.06)}
+#dp-l5 .ainfo{flex:1;min-width:160px}
+#dp-l5 .at{font-size:.87rem;font-weight:600;color:#F5F0E8;margin-bottom:3px}
+#dp-l5 .as{font-size:.72rem;color:rgba(245,240,232,.55)}
+#dp-l5 .apbar{height:4px;background:rgba(255,255,255,.14);border-radius:2px;margin-top:9px;overflow:hidden}
+#dp-l5 .apfill{height:100%;background:var(--go);width:0%;border-radius:2px;transition:width .3s}
+#dp-l5 .scrtog{background:rgba(255,255,255,.1);color:rgba(245,240,232,.78);font-size:.72rem;font-weight:600;padding:5px 11px;border-radius:100px;border:1px solid rgba(255,255,255,.15);cursor:pointer;transition:all .2s;flex-shrink:0}
+#dp-l5 .scrtog:hover{background:rgba(255,255,255,.2)}
+#dp-l5 .scrbox{background:var(--cr);border:1px solid var(--bd);border-radius:var(--r);padding:18px;margin-top:10px;display:none}
+#dp-l5 .scrbox.show{display:block}
+#dp-l5 .scrbox p{font-size:.875rem;color:var(--ink2);margin-bottom:7px;line-height:1.7}
+
+/* Writing */
+#dp-l5 .wa{width:100%;min-height:130px;border:2px solid var(--bd);border-radius:var(--r);padding:14px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--ink);background:var(--cr);resize:vertical;outline:none;transition:border-color .2s;line-height:1.7}
+#dp-l5 .wa:focus{border-color:var(--go)}
+#dp-l5 .wa::placeholder{color:var(--mu)}
+#dp-l5 .wcnt{font-size:.72rem;color:var(--mu);text-align:right;margin-top:5px}
+#dp-l5 .wsub{margin-top:11px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none}
+#dp-l5 .wsub:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l5 .wfb{display:none;margin-top:13px;background:var(--grb);border:1.5px solid rgba(46,125,82,.22);border-radius:var(--r);padding:15px;font-size:.855rem;color:var(--gr);line-height:1.65}
+#dp-l5 .wfb.show{display:block}
+
+/* Quiz */
+#dp-l5 .qpr{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+#dp-l5 .qpbar{flex:1;height:6px;background:var(--bd);border-radius:3px;overflow:hidden;margin:0 11px}
+#dp-l5 .qpfill{height:100%;background:linear-gradient(90deg,var(--go),var(--go2));border-radius:3px;transition:width .4s ease}
+#dp-l5 .qcnt{font-size:.77rem;font-weight:600;color:var(--mu)}
+#dp-l5 .qq{font-size:1rem;font-weight:600;color:var(--ny);margin-bottom:16px;line-height:1.5}
+#dp-l5 .qqn{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--go);color:#fff;font-size:.75rem;font-weight:700;margin-right:7px;flex-shrink:0;vertical-align:middle}
+#dp-l5 .qopts{display:flex;flex-direction:column;gap:9px}
+#dp-l5 .qopt{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:13px 16px;font-size:.9rem;color:var(--ink2);text-align:left;transition:all .2s;display:flex;align-items:center;gap:9px;cursor:pointer}
+#dp-l5 .qopt .ql{font-weight:700;color:var(--ny);min-width:18px}
+#dp-l5 .qopt:hover:not([disabled]){border-color:var(--go);background:var(--gop);transform:translateX(3px)}
+#dp-l5 .qopt.qco{border-color:var(--gr)!important;background:var(--grb)!important;color:var(--gr)!important}
+#dp-l5 .qopt.qwr{border-color:var(--rd)!important;background:var(--rdb)!important;color:var(--rd)!important}
+#dp-l5 .qfbm{display:none;margin-top:11px;padding:13px 16px;border-radius:var(--r);font-size:.86rem;font-weight:500;line-height:1.6}
+#dp-l5 .qfbm.show{display:block}
+#dp-l5 .qfbm.ok{background:var(--grb);color:var(--gr);border:1px solid rgba(46,125,82,.2)}
+#dp-l5 .qfbm.bad{background:var(--rdb);color:var(--rd);border:1px solid rgba(192,57,43,.2)}
+#dp-l5 .qnxt{margin-top:14px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;display:none;cursor:pointer;border:none}
+#dp-l5 .qnxt:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l5 .qnxt.show{display:inline-block}
+#dp-l5 .spl{text-align:center;padding:28px 20px;display:none;animation:dp5up .4s ease both}
+#dp-l5 .spl.show{display:block}
+#dp-l5 .scir{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--ny),var(--ny2));display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 8px 24px rgba(13,43,78,.2)}
+#dp-l5 .snum{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:var(--go);line-height:1}
+#dp-l5 .sden{font-size:.7rem;color:rgba(245,240,232,.5)}
+#dp-l5 .smsg{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--ny);margin-bottom:7px}
+#dp-l5 .ssub{font-size:.84rem;color:var(--mu);margin-bottom:18px}
+#dp-l5 .srty{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;margin-right:8px;cursor:pointer;border:none}
+#dp-l5 .srty:hover{background:var(--go)}
+
+/* Chkb */
+#dp-l5 .chkb{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none;margin-top:6px}
+#dp-l5 .chkb:hover{background:var(--go);transform:translateY(-1px)}
+
+/* Nav buttons */
+#dp-l5 .navb{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:18px;border-top:1px solid var(--bdl);gap:10px}
+#dp-l5 .nb{display:flex;align-items:center;gap:7px;padding:11px 22px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;border:2px solid var(--bd);color:var(--ink2);background:var(--wh);cursor:pointer}
+#dp-l5 .nb:hover{border-color:var(--go);color:var(--go)}
+#dp-l5 .nb.pri{background:var(--ny);color:#fff;border-color:transparent}
+#dp-l5 .nb.pri:hover{background:var(--go);border-color:transparent}
+#dp-l5 .nb:disabled{opacity:.38;cursor:default;pointer-events:none}
+
+/* Footer */
+#dp-l5 .lft{background:var(--ny);padding:24px;text-align:center;border-radius:0 0 var(--rl) var(--rl)}
+#dp-l5 .flo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:#F5F0E8;margin-bottom:5px}
+#dp-l5 .flo em{color:var(--go);font-style:italic}
+#dp-l5 .ftx{font-size:.74rem;color:rgba(245,240,232,.42)}
+
+/* Timeline */
+#dp-l5 .timeline{position:relative;padding-left:28px;margin:20px 0}
+#dp-l5 .timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:3px;background:var(--bd);border-radius:2px}
+#dp-l5 .tl-item{position:relative;padding-bottom:20px}
+#dp-l5 .tl-item:last-child{padding-bottom:0}
+#dp-l5 .tl-dot{position:absolute;left:-24px;top:4px;width:14px;height:14px;border-radius:50%;border:3px solid var(--go);background:var(--wh)}
+#dp-l5 .tl-date{font-size:.72rem;font-weight:700;color:var(--go);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+#dp-l5 .tl-title{font-size:.92rem;font-weight:700;color:var(--ny);margin-bottom:3px}
+#dp-l5 .tl-desc{font-size:.84rem;color:var(--ink2);line-height:1.55}
+
+@media(max-width:560px){
+  #dp-l5 .lhero{padding:32px 16px 28px}
+  #dp-l5 .lbody{padding:20px 14px 48px}
+  #dp-l5 .sblock{padding:18px 14px}
+  #dp-l5 .tcards{grid-template-columns:1fr}
+  #dp-l5 .navb{flex-direction:column}
+  #dp-l5 .nb{width:100%;justify-content:center}
+  #dp-l5 .tabs{gap:4px}
+  #dp-l5 .tab{padding:7px 12px;font-size:.78rem}
+  #dp-l5 .sm-item{grid-template-columns:1fr}
+  #dp-l5 .mc-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div id="dp-l5">
+
+<!-- HERO -->
+<div class="lhero">
+  <div class="lhero-in">
+    <div class="lvlbadge">🎓 Didactics Series · Lesson 5 of 12</div>
+    <h1 class="ltitle">Teaching Methods I:<br><em>GTM, Direct Method &amp; ALM</em></h1>
+    <p class="lsub">Master the three foundational methods: Grammar-Translation, Direct Method, and Audio-Lingual Method — their principles, techniques, and limitations.</p>
+    <div class="spills">
+      <span class="spill sp-th">📚 Historical Methods</span>
+      <span class="spill sp-ex">🔬 Techniques</span>
+      <span class="spill sp-ic">🎯 Comparisons</span>
+      <span class="spill sp-qu">📝 40-Question Exam</span>
+    </div>
+    <nav class="snav">
+      <div class="snavdot active" data-s="0">1</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="1">2</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="2">3</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="3">4</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="4">5</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="5">6</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="6">7</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="7">8</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="8">9</div>
+      <span class="snavlbl">9 sections</span>
+    </nav>
+  </div>
+</div>
+
+<div class="lbody">
+
+<!-- SECTION 1: FOUNDATIONS -->
+<section class="sblock vis" id="dp5s0">
+  <div class="slabel">Section 1 · Foundations</div>
+  <h2 class="sheading">The Evolution of Language Teaching <em>Methods</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">📜</div>
+    <div class="s-t">From Classical Languages to Modern Communication</div>
+    <div class="s-d">Language teaching methods have evolved dramatically over the past 200 years. Understanding HOW and WHY methods changed helps you choose the right approach for your classroom.</div>
+  </div>
+
+  <p class="stxt">This lesson covers the <strong>three foundational methods</strong> that dominated language teaching from the 1800s to 1970s. Each method reflects a different theory of language and learning.</p>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-date">1800s – 1950s</div>
+      <div class="tl-title">Grammar-Translation Method (GTM)</div>
+      <div class="tl-desc">Focus on reading, writing, translation, and grammar rules. Heavy use of L1.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-date">1880s – 1930s</div>
+      <div class="tl-title">Direct Method (DM)</div>
+      <div class="tl-desc">Reaction to GTM. No L1, oral practice, meaning through demonstration.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-date">1940s – 1970s</div>
+      <div class="tl-title">Audio-Lingual Method (ALM)</div>
+      <div class="tl-desc">Based on Behaviourism. Drills, habit formation, oral fluency.</div>
+    </div>
+  </div>
+
+  <div class="gbox gbox-go">
+    <h4>What You'll Master</h4>
+    <div class="grule"><strong>Grammar-Translation</strong> — Reading, writing, translation, explicit grammar</div>
+    <div class="grule"><em>Direct Method</em> — Target language only, oral practice, no translation</div>
+    <div class="grule"><span>Audio-Lingual</span> — Drills, pattern practice, habit formation</div>
+    <div class="grule"><strong>Key Comparisons</strong> — L1 use, skills focus, teacher role, theory base</div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" disabled>← Back</button>
+    <button class="nb pri" data-go="1">Next: Grammar-Translation →</button>
+  </div>
+</section>
+
+<!-- SECTION 2: GTM -->
+<section class="sblock" id="dp5s1">
+  <div class="slabel">Section 2 · Grammar-Translation Method</div>
+  <h2 class="sheading">Grammar-Translation Method — <em>The Classical Approach</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">📖</div>
+    <div class="s-t">Reading Literature, Mastering Grammar</div>
+    <div class="s-d">Originally designed for teaching Latin and Greek, GTM focuses on reading literary texts, learning grammar rules explicitly, and translating between L1 and L2.</div>
+  </div>
+
+  <div class="gbox gbox-bl">
+    <h4>Core Principles of GTM</h4>
+    <div class="grule"><strong>Goal:</strong> Read literary texts and understand grammar</div>
+    <div class="grule"><em>Skills focus:</em> Reading and writing (NOT speaking/listening)</div>
+    <div class="grule"><span>L1 use:</span> Heavy — instruction, translation, explanations in native language</div>
+    <div class="grule"><strong>Grammar:</strong> Explicit, deductive (rules first, then examples)</div>
+    <div class="grule"><em>Vocabulary:</em> Bilingual word lists, memorization</div>
+  </div>
+
+  <p class="stxt"><strong>Typical GTM Lesson:</strong> Teacher explains a grammar rule in L1 → Students memorize the rule → Students translate sentences from L2 to L1 or vice versa → Teacher corrects errors explicitly.</p>
+
+  <div class="gbox gbox-go">
+    <h4>GTM Techniques</h4>
+    <div class="grule">1. <strong>Translation</strong> — L1 ↔ L2 passages</div>
+    <div class="grule">2. <em>Grammar analysis</em> — Parse sentences, identify parts of speech</div>
+    <div class="grule">3. <span>Memorization</span> — Vocabulary lists, verb conjugations</div>
+    <div class="grule">4. <strong>Reading comprehension</strong> — Literary texts, questions in L1</div>
+    <div class="grule">5. <em>Fill-in-the-blank</em> — Grammar exercises</div>
+  </div>
+
+  <div class="mc-grid">
+    <div class="mc-box pros">
+      <h5>✅ Strengths</h5>
+      <p>Builds strong reading skills • Good for grammar analysis • Works with large classes • Little teacher training needed • Good for academic/literary goals</p>
+    </div>
+    <div class="mc-box cons">
+      <h5>❌ Limitations</h5>
+      <p>Neglects speaking/listening • No communicative competence • Boring for many students • No real-world language use • Creates passive learners</p>
+    </div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Trap:</strong> GTM is NOT based on Behaviourism. It predates behaviourist psychology. GTM is based on classical/traditional approaches to studying Latin and Greek.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="0">← Introduction</button>
+    <button class="nb pri" data-go="2">Next: Direct Method →</button>
+  </div>
+</section>
+
+<!-- SECTION 3: DIRECT METHOD -->
+<section class="sblock" id="dp5s2">
+  <div class="slabel">Section 3 · Direct Method</div>
+  <h2 class="sheading">Direct Method — <em>Natural Language Learning</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">🗣️</div>
+    <div class="s-t">Target Language Only — Like a Child Learns</div>
+    <div class="s-d">The Direct Method was a REACTION against GTM. It tried to mimic how children learn their first language — through direct association between words and meaning, without translation.</div>
+  </div>
+
+  <div class="gbox gbox-gr">
+    <h4>Core Principles of Direct Method</h4>
+    <div class="grule"><strong>Goal:</strong> Oral fluency and natural communication</div>
+    <div class="grule"><em>Skills focus:</em> Speaking and listening (oral skills first)</div>
+    <div class="grule"><span>L1 use:</span> PROHIBITED — target language only</div>
+    <div class="grule"><strong>Grammar:</strong> Implicit, inductive (examples first, then discover rules)</div>
+    <div class="grule"><em>Meaning:</em> Through demonstration, objects, pictures — NOT translation</div>
+  </div>
+
+  <p class="stxt"><strong>Key Figure:</strong> <em>Maximilian Berlitz</em> commercialized the Direct Method through his language schools. Also associated with the <em>Reform Movement</em> of the 1880s (Sweet, Viëtor, Jespersen).</p>
+
+  <div class="gbox gbox-go">
+    <h4>Direct Method Techniques</h4>
+    <div class="grule">1. <strong>Demonstration</strong> — Use objects, pictures, actions to convey meaning</div>
+    <div class="grule">2. <em>Question-Answer</em> — Full sentences in target language</div>
+    <div class="grule">3. <span>Reading aloud</span> — Pronunciation practice</div>
+    <div class="grule">4. <strong>Conversation practice</strong> — Natural dialogues</div>
+    <div class="grule">5. <em>Self-correction</em> — Students discover their own errors</div>
+  </div>
+
+  <div class="mc-grid">
+    <div class="mc-box pros">
+      <h5>✅ Strengths</h5>
+      <p>Develops oral skills • Natural language use • Pronunciation focus • Mimics L1 acquisition • Motivating for some learners</p>
+    </div>
+    <div class="mc-box cons">
+      <h5>❌ Limitations</h5>
+      <p>Requires fluent teachers • Difficult with abstract vocabulary • Time-consuming • Hard in large classes • Neglects reading/writing</p>
+    </div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Memory Tip:</strong> Direct Method = "DIRECT" connection between word and meaning (no L1 translation). Teacher demonstrates, shows, acts out — never translates.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="1">← Grammar-Translation</button>
+    <button class="nb pri" data-go="3">Next: Audio-Lingual Method →</button>
+  </div>
+</section>
+
+<!-- SECTION 4: ALM -->
+<section class="sblock" id="dp5s3">
+  <div class="slabel">Section 4 · Audio-Lingual Method</div>
+  <h2 class="sheading">Audio-Lingual Method — <em>Drills &amp; Habits</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">🔊</div>
+    <div class="s-t">Language is a Habit — Drill Until Automatic</div>
+    <div class="s-d">ALM was developed during WWII to train soldiers quickly. Based on BEHAVIOURISM, it treats language as a set of habits formed through stimulus-response drilling.</div>
+  </div>
+
+  <div class="gbox gbox-pu">
+    <h4>Core Principles of ALM</h4>
+    <div class="grule"><strong>Theory base:</strong> Structural Linguistics + Behaviourism</div>
+    <div class="grule"><em>Goal:</em> Automatic oral responses (habit formation)</div>
+    <div class="grule"><span>Skills sequence:</span> Listen → Speak → Read → Write</div>
+    <div class="grule"><strong>L1 use:</strong> Minimal — avoided to prevent interference</div>
+    <div class="grule"><em>Grammar:</em> Implicit, through pattern drills (not rules)</div>
+    <div class="grule"><span>Errors:</span> Prevented at all costs (errors = bad habits)</div>
+  </div>
+
+  <p class="stxt"><strong>Key Figures:</strong> Charles <em>Fries</em> (structural linguistics) and Nelson <em>Brooks</em> (method design). ALM dominated US language teaching in the 1950s-60s.</p>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="t4a">🔁 Types of Drills</button>
+    <button class="tab" data-tab="t4b">⚙️ ALM Techniques</button>
+    <button class="tab" data-tab="t4c">⚠️ Limitations</button>
+  </div>
+
+  <div class="tabpanel vis" id="t4a">
+    <div class="gbox gbox-bl">
+      <h4>ALM Drill Types (Memorize These!)</h4>
+      <div class="grule"><strong>Repetition Drill</strong> — Teacher: "I go to school." Students: "I go to school."</div>
+      <div class="grule"><em>Substitution Drill</em> — "I go to school." → "I go to <strong>work</strong>." (substitute one element)</div>
+      <div class="grule"><span>Transformation Drill</span> — "She reads." → "She <strong>is reading</strong>." (change form)</div>
+      <div class="grule"><strong>Chain Drill</strong> — Student A asks B → B answers then asks C → etc.</div>
+      <div class="grule"><em>Backward Build-up</em> — "...school" → "...to school" → "...go to school" → "I go to school"</div>
+    </div>
+  </div>
+
+  <div class="tabpanel" id="t4b">
+    <div class="gbox gbox-go">
+      <h4>ALM Techniques</h4>
+      <div class="grule">1. <strong>Dialogue memorization</strong> — Model dialogue, repeat, memorize</div>
+      <div class="grule">2. <em>Pattern drills</em> — Repetition, substitution, transformation</div>
+      <div class="grule">3. <span>Minimal pair practice</span> — "ship" vs "sheep" (pronunciation)</div>
+      <div class="grule">4. <strong>Language lab</strong> — Audio equipment for individual practice</div>
+      <div class="grule">5. <em>Immediate reinforcement</em> — Praise for correct responses</div>
+    </div>
+  </div>
+
+  <div class="tabpanel" id="t4c">
+    <div class="gbox gbox-rd">
+      <h4>ALM Limitations</h4>
+      <div class="grule"><strong>Mechanical</strong> — No creativity, boring for students</div>
+      <div class="grule"><em>No meaning focus</em> — Students can drill without understanding</div>
+      <div class="grule"><span>Transfer failure</span> — Lab skills don't transfer to real communication</div>
+      <div class="grule"><strong>Theory problems</strong> — Chomsky's critique of Behaviourism (1959)</div>
+      <div class="grule"><em>Student passivity</em> — Teacher-centered, limited student initiative</div>
+    </div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Trap:</strong> ALM is based on BEHAVIOURISM (Skinner), NOT Cognitivism or Innatism. Chomsky's attack on Behaviourism contributed to ALM's decline.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="2">← Direct Method</button>
+    <button class="nb pri" data-go="4">Next: Method Comparison →</button>
+  </div>
+</section>
+
+<!-- SECTION 5: COMPARISON -->
+<section class="sblock" id="dp5s4">
+  <div class="slabel">Section 5 · Method Comparison</div>
+  <h2 class="sheading">Comparing the Three Methods</h2>
+  <p class="stxt">Use this comparison table for quick exam review. <strong>Know the differences in L1 use, skills focus, and theory base.</strong></p>
+
+  <table class="gtbl">
+    <tr><th>Feature</th><th class="tbl-b">GTM</th><th class="tbl-gr">Direct Method</th><th class="tbl-pu">ALM</th></tr>
+    <tr><td><strong>Theory Base</strong></td><td>Classical tradition</td><td>Natural acquisition</td><td>Behaviourism + Structuralism</td></tr>
+    <tr><td><strong>L1 Use</strong></td><td class="tbl-b">Heavy</td><td class="tbl-rd">Prohibited</td><td class="tbl-g">Minimal</td></tr>
+    <tr><td><strong>Skills Focus</strong></td><td>Reading, writing</td><td>Speaking, listening</td><td>Listening, speaking (oral first)</td></tr>
+    <tr><td><strong>Grammar</strong></td><td>Explicit, deductive</td><td>Implicit, inductive</td><td>Implicit, through drills</td></tr>
+    <tr><td><strong>Error Approach</strong></td><td>Explicit correction</td><td>Self-correction</td><td>Prevention (errors = bad habits)</td></tr>
+    <tr><td><strong>Teacher Role</strong></td><td>Authority, explainer</td><td>Demonstrator, model</td><td>Conductor, model</td></tr>
+    <tr><td><strong>Main Technique</strong></td><td>Translation</td><td>Demonstration</td><td>Pattern drills</td></tr>
+    <tr><td><strong>Vocabulary</strong></td><td>Bilingual lists</td><td>Context, pictures</td><td>Limited, in patterns</td></tr>
+  </table>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Quick Memory:</strong><br>• <strong>GTM</strong> = Translation, L1, reading/writing, explicit grammar<br>• <strong>DM</strong> = No L1, demonstration, oral, inductive<br>• <strong>ALM</strong> = Drills, habit formation, behaviourism, oral</span></div>
+
+  <div class="gbox gbox-go">
+    <h4>Key Contrasts to Remember</h4>
+    <div class="grule"><strong>GTM</strong> → L1 is the <em>medium</em> of instruction</div>
+    <div class="grule"><em>DM</em> → L1 is <strong>forbidden</strong></div>
+    <div class="grule"><span>ALM</span> → L1 is <em>avoided</em> (causes interference)</div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="3">← Audio-Lingual Method</button>
+    <button class="nb pri" data-go="5">Next: Classroom Application →</button>
+  </div>
+</section>
+
+<!-- SECTION 6: CLASSROOM APPLICATION -->
+<section class="sblock" id="dp5s5">
+  <div class="slabel">Section 6 · Classroom Application</div>
+  <h2 class="sheading">Recognizing Methods in the <em>Classroom</em></h2>
+
+  <p class="stxt">In the exam, you might need to identify which method a teacher is using based on a classroom scenario. Practice with these examples:</p>
+
+  <div class="stask stask-bl">
+    <div class="sth"><div class="stico" style="background:var(--bl)">🎯</div><div class="stitle stitle-bl">Match the Scenario to the Method</div></div>
+    <div class="smodel">
+      <strong>Scenario A:</strong> Teacher explains the past tense rule in Arabic, then students translate sentences from English to Arabic. <span class="em-go">→ Method?</span><br><br>
+      <strong>Scenario B:</strong> Teacher holds up an apple and says "apple" repeatedly. Students repeat. No Arabic is used. <span class="em-go">→ Method?</span><br><br>
+      <strong>Scenario C:</strong> Teacher plays an audio dialogue. Students repeat in chorus. Then they do substitution drills changing one word each time. <span class="em-go">→ Method?</span><br><br>
+      <strong>Scenario D:</strong> Students memorize a dialogue and then perform transformation drills: "I eat" → "Do I eat?" <span class="em-go">→ Method?</span><br><br>
+      <strong>Scenario E:</strong> Teacher uses gestures and pictures to explain "happy" without ever saying the Arabic word. <span class="em-go">→ Method?</span>
+    </div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">✅</span><span><strong>Answers:</strong><br>A = <strong>GTM</strong> (L1 explanation + translation)<br>B = <strong>Direct Method</strong> (target language only, demonstration)<br>C = <strong>ALM</strong> (audio, drills, repetition)<br>D = <strong>ALM</strong> (dialogue memorization + transformation drills)<br>E = <strong>Direct Method</strong> (no L1, pictures/gestures)</span></div>
+
+  <div class="gbox gbox-gr">
+    <h4>Modern Relevance</h4>
+    <div class="grule"><strong>GTM</strong> — Still used for academic/literary language courses</div>
+    <div class="grule"><em>DM</em> — Influenced immersion programs and CLT</div>
+    <div class="grule"><span>ALM</span> — Some techniques (drills) still useful for pronunciation and automaticity</div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="4">← Method Comparison</button>
+    <button class="nb pri" data-go="6">Next: Listening Task →</button>
+  </div>
+</section>
+
+<!-- SECTION 7: LISTENING (RELEVANT SCENARIO) -->
+<section class="sblock" id="dp5s6">
+  <div class="slabel">Section 7 · Listening Comprehension</div>
+  <h2 class="sheading">🎙️ Listen — <em>A Trainer Explains the Three Methods</em></h2>
+  <p class="stxt">Press ▶ to listen to a teacher trainer explaining the three methods. <strong>Identify which method she is describing in each part.</strong></p>
+
+  <div class="aplayer">
+    <button class="abig" id="dp5playbtn">▶</button>
+    <div class="ainfo">
+      <div class="at">A Trainer Compares GTM, DM, and ALM</div>
+      <div class="as">~55 seconds · British English</div>
+      <div class="apbar"><div class="apfill" id="dp5apf"></div></div>
+    </div>
+    <button class="scrtog" id="dp5scrtog">📄 Transcript</button>
+  </div>
+
+  <div class="scrbox" id="dp5scrbox">
+    <p><strong>Trainer:</strong> "Let me explain the three classical methods. The first method focuses on reading literary texts and translating them. Grammar rules are explained in the students' native language, and they memorize vocabulary through bilingual word lists. Speaking and listening are not priorities."</p>
+    <p>"The second method was a reaction against translation-based teaching. Teachers use ONLY the target language. They demonstrate meaning through objects, pictures, and actions. Students learn to speak by speaking — there's no translation at all."</p>
+    <p>"The third method was developed for military training during World War II. It's based on the idea that language is a habit. Students listen to model dialogues, repeat them in chorus, and practice through pattern drills like substitution and transformation. The goal is automatic, rapid oral responses."</p>
+    <p>"A key difference: the first method uses the native language heavily, the second bans it completely, and the third avoids it because it's believed to cause interference with the new habits being formed."</p>
+  </div>
+
+  <h4 style="color:var(--ny);font-family:'Playfair Display',serif;font-size:1rem;margin:20px 0 13px">Which method is the trainer describing? — Match each statement</h4>
+
+  <div class="smatch" id="dp5match">
+    <div class="sm-item">
+      <div class="sm-scenario">"Reading literary texts and translating them. Grammar rules are explained in the students' native language." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which method?</em></div>
+      <select class="sm-select" data-a="GTM" id="dp5ms0">
+        <option value="">— Select —</option>
+        <option>GTM</option><option>Direct Method</option><option>ALM</option><option>CLT</option><option>TPR</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp5mf0"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Teachers use ONLY the target language. They demonstrate meaning through objects, pictures, and actions." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which method?</em></div>
+      <select class="sm-select" data-a="Direct Method" id="dp5ms1">
+        <option value="">— Select —</option>
+        <option>GTM</option><option>Direct Method</option><option>ALM</option><option>Silent Way</option><option>Suggestopedia</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp5mf1"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Based on the idea that language is a habit. Students practice through pattern drills like substitution and transformation." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which method?</em></div>
+      <select class="sm-select" data-a="ALM" id="dp5ms2">
+        <option value="">— Select —</option>
+        <option>GTM</option><option>Direct Method</option><option>ALM</option><option>TPR</option><option>Natural Approach</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp5mf2"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"L1 is avoided because it's believed to cause interference with the new habits being formed." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which method?</em></div>
+      <select class="sm-select" data-a="ALM" id="dp5ms3">
+        <option value="">— Select —</option>
+        <option>GTM</option><option>Direct Method</option><option>ALM</option><option>CLL</option><option>Suggestopedia</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp5mf3"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Bans the native language completely — no translation at all." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which method?</em></div>
+      <select class="sm-select" data-a="Direct Method" id="dp5ms4">
+        <option value="">— Select —</option>
+        <option>GTM</option><option>Direct Method</option><option>ALM</option><option>CLL</option><option>TPR</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp5mf4"></div>
+  </div>
+
+  <button class="chkb" id="dp5chkmatch">Check Answers ✓</button>
+
+  <div class="navb">
+    <button class="nb" data-go="5">← Classroom Application</button>
+    <button class="nb pri" data-go="7">Next: Interview Prep →</button>
+  </div>
+</section>
+
+<!-- SECTION 8: INTERVIEW PREP -->
+<section class="sblock" id="dp5s7">
+  <div class="slabel">Section 8 · Interview Preparation</div>
+  <h2 class="sheading">Interview Practice — <em>Compare the Methods</em></h2>
+
+  <div class="co co-info"><span class="co-ico">ℹ️</span><span><strong>Note:</strong> The written exam is <strong>100% multiple choice</strong> (A, B, C, D, E). However, in the <strong>oral interview</strong>, you may be asked to compare methods. This section prepares you for that.</span></div>
+
+  <p class="stxt">Practice explaining <strong>the key differences between GTM and ALM</strong> in 60–80 words. Focus on skills, L1 use, and theory base.</p>
+
+  <div class="co co-tip"><span class="co-ico">✍️</span><span><strong>Structure your answer:</strong><br>1. Name both methods<br>2. Skills focus (GTM = reading/writing; ALM = speaking/listening)<br>3. L1 use (GTM = heavy; ALM = avoided)<br>4. Theory base (GTM = classical; ALM = Behaviourism)<br>5. Main technique (GTM = translation; ALM = drills)</span></div>
+
+  <div style="margin-top:18px">
+    <textarea class="wa" id="dp5wtxt" placeholder="Grammar-Translation and Audio-Lingual differ in several key ways. First, GTM focuses on... while ALM emphasizes... Second, regarding L1 use, GTM... whereas ALM... Third, their theoretical bases differ: GTM comes from... while ALM is based on... Finally, their main techniques are..."></textarea>
+    <div class="wcnt" id="dp5wcnt">0 words (aim for 60–80)</div>
+    <button class="wsub" id="dp5wsub">Check My Answer ✓</button>
+    <div class="wfb" id="dp5wfb">
+      <strong>✅ Good practice!</strong><br><br>
+      <strong>Model Answer:</strong><br>
+      "Grammar-Translation Method (GTM) and Audio-Lingual Method (ALM) differ in several key ways. GTM focuses on reading and writing skills, using translation and explicit grammar rules, while ALM prioritizes listening and speaking through pattern drills. Regarding L1 use, GTM uses the native language heavily as the medium of instruction, whereas ALM avoids L1 to prevent interference with new habits. GTM comes from classical language teaching traditions, while ALM is based on Behaviourist psychology. GTM's main technique is translation; ALM's is repetition drilling."
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="6">← Listening Task</button>
+    <button class="nb pri" data-go="8">Next: 40-Question Exam →</button>
+  </div>
+</section>
+
+<!-- SECTION 9: 40-QUESTION EXAM -->
+<section class="sblock" id="dp5s8">
+  <div class="slabel">Section 9 · Full Exam Simulation</div>
+  <h2 class="sheading">Exam Practice 🎯 — 40 Questions</h2>
+  <p class="stxt">This section simulates the <strong>real exam format</strong>: Multiple choice with 5 options (A, B, C, D, E). Option E is always "None of the above." <strong>Every wrong answer includes a full explanation.</strong></p>
+
+  <div class="co co-or"><span class="co-ico">⏱️</span><span><strong>Exam Conditions:</strong> In the real exam, you have limited time. Try to answer each question in under 45 seconds. Don't second-guess yourself!</span></div>
+
+  <div>
+    <div class="qpr">
+      <span class="qcnt" id="dp5qcnt">1 / 40</span>
+      <div class="qpbar"><div class="qpfill" id="dp5qpf" style="width:2.5%"></div></div>
+      <span class="qcnt" id="dp5qsl">Score: 0</span>
+    </div>
+    <div id="dp5qarea"></div>
+    <div class="qfbm" id="dp5qfb"></div>
+    <button class="qnxt" id="dp5qnxt">Next Question →</button>
+    <div class="spl" id="dp5spl">
+      <div class="scir"><div class="snum" id="dp5sfin">0</div><div class="sden">/ 40</div></div>
+      <div class="smsg" id="dp5smsg">Well done!</div>
+      <div class="ssub" id="dp5ssub">Keep practising!</div>
+      <button class="srty" id="dp5srty">🔄 Retry Quiz</button>
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="7">← Interview Prep</button>
+  </div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="lft">
+  <div class="flo">English<em>Pro</em> · Didactics</div>
+  <div class="ftx">Lesson 5 — Grammar-Translation · Direct Method · Audio-Lingual · ALM Drills · 40-Question Exam</div>
+</footer>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+(function(){
+'use strict';
+
+/* ══════════════════════════════════════════════════════════════
+   40-QUESTION EXAM DATA — 5 options (A, B, C, D, E = None)
+   ══════════════════════════════════════════════════════════════ */
+var QD=[
+  // Questions 1-10: Grammar-Translation Method
+  {q:'Grammar-Translation Method was originally designed for teaching:',opts:['Modern spoken languages','Latin and Greek','Business English','Military personnel','None of the above'],a:1,ex:'✅ B is correct. GTM was originally designed for teaching CLASSICAL LANGUAGES (Latin and Greek), focusing on literary texts.'},
+  {q:'Which skills does Grammar-Translation Method prioritize?',opts:['Speaking and listening','Reading and writing','All four skills equally','Listening only','None of the above'],a:1,ex:'✅ B is correct. GTM focuses on READING and WRITING. Speaking and listening are NOT priorities.'},
+  {q:'In GTM, grammar is taught:',opts:['Implicitly through exposure','Inductively from examples','Explicitly and deductively','Through pattern drills','None of the above'],a:2,ex:'✅ C is correct. GTM teaches grammar EXPLICITLY (stating rules) and DEDUCTIVELY (rule first, then examples).'},
+  {q:'How does GTM handle the native language (L1)?',opts:['L1 is completely prohibited','L1 is used heavily for instruction and translation','L1 is avoided but tolerated','L1 is used only for beginners','None of the above'],a:1,ex:'✅ B is correct. GTM uses L1 HEAVILY — for explanations, translation, and as the medium of instruction.'},
+  {q:'A typical GTM vocabulary exercise involves:',opts:['Acting out words with gestures','Memorizing bilingual word lists','Substitution drills','Minimal pair practice','None of the above'],a:1,ex:'✅ B is correct. GTM uses BILINGUAL WORD LISTS — vocabulary in both L1 and L2 to be memorized.'},
+  {q:'GTM is based on which theory of learning?',opts:['Behaviourism','Cognitivism','Classical/traditional approach','Constructivism','None of the above'],a:2,ex:'✅ C is correct. GTM predates modern psychology. It\'s based on CLASSICAL TRADITION of teaching Latin/Greek, NOT Behaviourism.'},
+  {q:'Which GTM technique involves identifying parts of speech in sentences?',opts:['Pattern drills','Grammar analysis/parsing','Dialogue memorization','Realia demonstration','None of the above'],a:1,ex:'✅ B is correct. GRAMMAR ANALYSIS (parsing) — identifying parts of speech, conjugations, syntactic structures — is a core GTM technique.'},
+  {q:'A WEAKNESS of Grammar-Translation Method is:',opts:['It requires fluent native-speaker teachers','It neglects oral communication skills','It is too communicatively focused','It prevents grammar learning','None of the above'],a:1,ex:'✅ B is correct. GTM NEGLECTS speaking and listening. Students can know grammar rules but cannot communicate.'},
+  {q:'Which activity is characteristic of GTM?',opts:['Role-play conversations','Translation of passages between L1 and L2','Repetition drills in language lab','Total Physical Response activities','None of the above'],a:1,ex:'✅ B is correct. TRANSLATION of passages (L1↔L2) is the core GTM technique.'},
+  {q:'GTM is still useful for:',opts:['Developing oral fluency quickly','Teaching academic/literary language courses','Training soldiers for rapid communication','Young children learning through play','None of the above'],a:1,ex:'✅ B is correct. GTM remains useful for ACADEMIC/LITERARY purposes where reading comprehension and grammar analysis are important.'},
+
+  // Questions 11-20: Direct Method
+  {q:'The Direct Method was developed as a reaction against:',opts:['Audio-Lingual Method','Communicative Language Teaching','Grammar-Translation Method','Silent Way','None of the above'],a:2,ex:'✅ C is correct. DM was a REACTION AGAINST GTM — rejecting translation and L1 use in favor of oral communication.'},
+  {q:'The key principle of the Direct Method regarding L1 is:',opts:['Heavy L1 use for explanation','L1 is prohibited in the classroom','L1 is used only for grammar','L1 is avoided to prevent bad habits','None of the above'],a:1,ex:'✅ B is correct. DM PROHIBITS L1 completely. Target language only — no translation at all.'},
+  {q:'In the Direct Method, meaning is conveyed through:',opts:['Translation into L1','Demonstration, objects, and pictures','Explicit grammar rules','Written explanations','None of the above'],a:1,ex:'✅ B is correct. DM conveys meaning through DEMONSTRATION, objects, pictures, actions — NOT translation.'},
+  {q:'Which figure is associated with commercializing the Direct Method?',opts:['Charles Fries','B.F. Skinner','Maximilian Berlitz','Stephen Krashen','None of the above'],a:2,ex:'✅ C is correct. BERLITZ commercialized the Direct Method through his famous language schools.'},
+  {q:'Grammar in the Direct Method is taught:',opts:['Explicitly through rules','Inductively — students discover rules from examples','Through translation exercises','Not at all','None of the above'],a:1,ex:'✅ B is correct. DM teaches grammar INDUCTIVELY — examples first, then students discover the rules themselves.'},
+  {q:'Which skill sequence does the Direct Method follow?',opts:['Reading → Writing → Speaking → Listening','Listening → Speaking → Reading → Writing','Speaking and listening first, then reading and writing','All skills simultaneously with equal focus','None of the above'],a:2,ex:'✅ C is correct. DM prioritizes ORAL SKILLS (speaking/listening) FIRST, then reading and writing.'},
+  {q:'The Reform Movement of the 1880s is associated with:',opts:['Grammar-Translation Method','Direct Method','Audio-Lingual Method','Silent Way','None of the above'],a:1,ex:'✅ B is correct. The REFORM MOVEMENT (Sweet, Viëtor, Jespersen) promoted Direct Method principles.'},
+  {q:'A LIMITATION of the Direct Method is:',opts:['It focuses too much on translation','It requires teachers fluent in the target language','It overuses pattern drills','It teaches grammar too explicitly','None of the above'],a:1,ex:'✅ B is correct. DM REQUIRES FLUENT TEACHERS who can explain everything without L1 — a major practical limitation.'},
+  {q:'In the Direct Method, errors are typically handled by:',opts:['Immediate explicit correction by teacher','Self-correction by students','Prevention through drills','Ignoring errors completely','None of the above'],a:1,ex:'✅ B is correct. DM favors SELF-CORRECTION — students are guided to discover their own errors.'},
+  {q:'Which technique is characteristic of the Direct Method?',opts:['Translation exercises','Question-answer practice in full sentences using L2 only','Dialogue memorization and drilling','Pattern substitution drills','None of the above'],a:1,ex:'✅ B is correct. DM uses QUESTION-ANSWER practice in full sentences, always in the target language.'},
+
+  // Questions 21-30: Audio-Lingual Method
+  {q:'The Audio-Lingual Method is based on which psychological theory?',opts:['Cognitivism','Behaviourism','Constructivism','Humanism','None of the above'],a:1,ex:'✅ B is correct. ALM is based on BEHAVIOURISM — language as habit formation through stimulus-response.'},
+  {q:'Which linguist\'s critique contributed to the decline of ALM?',opts:['Ferdinand de Saussure','Stephen Krashen','Noam Chomsky','B.F. Skinner','None of the above'],a:2,ex:'✅ C is correct. CHOMSKY\'s critique of Behaviourism (1959) undermined ALM\'s theoretical foundation.'},
+  {q:'In ALM, the skill sequence is:',opts:['Read → Write → Listen → Speak','Listen → Speak → Read → Write','Speak → Listen → Write → Read','All skills simultaneously','None of the above'],a:1,ex:'✅ B is correct. ALM follows LISTEN → SPEAK → READ → WRITE. Oral skills come first.'},
+  {q:'ALM was originally developed for:',opts:['Teaching children in schools','Academic literary studies','Training military personnel quickly','Teaching deaf students','None of the above'],a:2,ex:'✅ C is correct. ALM was developed during WWII to train MILITARY PERSONNEL to speak foreign languages quickly.'},
+  {q:'Which figures are associated with ALM?',opts:['Berlitz and Jespersen','Krashen and Terrell','Fries and Brooks','Vygotsky and Piaget','None of the above'],a:2,ex:'✅ C is correct. Charles FRIES (structural linguistics) and Nelson BROOKS (method design) developed ALM.'},
+  {q:'In a SUBSTITUTION DRILL, students:',opts:['Transform the sentence structure','Replace one element while keeping the pattern','Repeat exactly what the teacher says','Build up a sentence from the end','None of the above'],a:1,ex:'✅ B is correct. SUBSTITUTION DRILL = replace ONE element. "I go to school" → "I go to WORK."'},
+  {q:'In a TRANSFORMATION DRILL, students:',opts:['Repeat sentences identically','Replace vocabulary items','Change the grammatical form of the sentence','Translate sentences to L1','None of the above'],a:2,ex:'✅ C is correct. TRANSFORMATION DRILL = change the FORM. "She reads." → "She IS READING." or "Does she read?"'},
+  {q:'BACKWARD BUILD-UP drill involves:',opts:['Starting from the end and adding words forward','Translating sentences backward','Removing words from sentences','Speaking while walking backward','None of the above'],a:0,ex:'✅ A is correct. BACKWARD BUILD-UP: "...school" → "...to school" → "...go to school" → "I go to school."'},
+  {q:'ALM views errors as:',opts:['Natural part of learning','Opportunities for negotiation','Bad habits to be prevented','Signs of creativity','None of the above'],a:2,ex:'✅ C is correct. ALM views errors as BAD HABITS that must be PREVENTED. Errors shouldn\'t happen in the first place.'},
+  {q:'A LIMITATION of ALM is:',opts:['It focuses too much on meaning','Students can drill without understanding','It allows too much creativity','It uses L1 too heavily','None of the above'],a:1,ex:'✅ B is correct. ALM is MECHANICAL — students can perform drills perfectly without understanding meaning.'},
+
+  // Questions 31-40: Comparisons and Application
+  {q:'Which method uses L1 MOST heavily?',opts:['Direct Method','Audio-Lingual Method','Grammar-Translation Method','All three equally','None of the above'],a:2,ex:'✅ C is correct. GTM uses L1 most heavily — for instruction, translation, and explanation.'},
+  {q:'Which method PROHIBITS L1 completely?',opts:['Grammar-Translation Method','Direct Method','Audio-Lingual Method','All three','None of the above'],a:1,ex:'✅ B is correct. DIRECT METHOD prohibits L1 completely. ALM avoids it; GTM uses it heavily.'},
+  {q:'Which method is MOST teacher-centered with drilling?',opts:['Grammar-Translation Method','Direct Method','Audio-Lingual Method','Community Language Learning','None of the above'],a:2,ex:'✅ C is correct. ALM is highly teacher-centered with the teacher conducting drills and students responding.'},
+  {q:'A teacher explains the present perfect rule in Arabic, then students translate sentences. This is:',opts:['Direct Method','Audio-Lingual Method','Grammar-Translation Method','Communicative Approach','None of the above'],a:2,ex:'✅ C is correct. L1 explanation + translation = GTM.'},
+  {q:'A teacher holds up objects, names them, and students repeat. No Arabic is used. This is:',opts:['Grammar-Translation Method','Direct Method','Audio-Lingual Method','Silent Way','None of the above'],a:1,ex:'✅ B is correct. Objects for meaning + no L1 + oral practice = DIRECT METHOD.'},
+  {q:'Students listen to a dialogue, repeat in chorus, then do substitution drills. This is:',opts:['Grammar-Translation Method','Direct Method','Audio-Lingual Method','Natural Approach','None of the above'],a:2,ex:'✅ C is correct. Dialogue + chorus repetition + drills = ALM.'},
+  {q:'Which statement about grammar teaching is CORRECT?',opts:['GTM = implicit; DM = explicit; ALM = explicit','GTM = explicit; DM = inductive; ALM = through drills','GTM = inductive; DM = explicit; ALM = implicit','All three teach grammar explicitly','None of the above'],a:1,ex:'✅ B is correct. GTM = explicit/deductive; DM = implicit/inductive; ALM = implicit through pattern drills.'},
+  {q:'The term "minimal pair practice" (ship/sheep) is associated with:',opts:['Grammar-Translation Method','Direct Method','Audio-Lingual Method','Community Language Learning','None of the above'],a:2,ex:'✅ C is correct. MINIMAL PAIR practice (pronunciation contrast) is an ALM technique.'},
+  {q:'Which method was influenced by Structural Linguistics?',opts:['Grammar-Translation Method','Direct Method','Audio-Lingual Method','Silent Way','None of the above'],a:2,ex:'✅ C is correct. ALM was based on STRUCTURAL LINGUISTICS (Fries) + Behaviourism.'},
+  {q:'Which statement BEST describes the historical sequence?',opts:['ALM → DM → GTM','GTM → ALM → DM','GTM → DM → ALM','DM → GTM → ALM','None of the above'],a:2,ex:'✅ C is correct. Historical sequence: GTM (1800s) → DM (1880s-1930s) → ALM (1940s-1970s).'}
+];
+
+var curSec=0,qCur=0,qScore=0,qAns=false,audioPlaying=false,audioTimer=null;
+
+function goToSection(n){
+  document.querySelectorAll('#dp-l5 .sblock').forEach(function(b){b.classList.remove('vis')});
+  var sec=document.getElementById('dp5s'+n);
+  if(sec)sec.classList.add('vis');
+  curSec=n;
+  updateDots();
+  document.getElementById('dp-l5').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function updateDots(){
+  document.querySelectorAll('#dp-l5 .snavdot').forEach(function(d){
+    var i=parseInt(d.getAttribute('data-s'));
+    d.classList.remove('active','done');
+    if(i<curSec)d.classList.add('done');
+    if(i===curSec)d.classList.add('active');
+  });
+}
+
+document.querySelectorAll('#dp-l5 .snavdot').forEach(function(d){
+  d.addEventListener('click',function(){goToSection(parseInt(d.getAttribute('data-s')))});
+});
+
+document.querySelectorAll('#dp-l5 .nb[data-go]').forEach(function(btn){
+  btn.addEventListener('click',function(){goToSection(parseInt(btn.getAttribute('data-go')))});
+});
+
+document.querySelectorAll('#dp-l5 .tcard').forEach(function(c){
+  c.addEventListener('click',function(){c.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l5 .mcard').forEach(function(c){
+  c.addEventListener('click',function(){c.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l5 .tabs').forEach(function(tg){
+  tg.querySelectorAll('.tab').forEach(function(tab){
+    tab.addEventListener('click',function(){
+      var pid=tab.getAttribute('data-tab');
+      tg.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});
+      tab.classList.add('active');
+      tg.parentElement.querySelectorAll('.tabpanel').forEach(function(p){p.classList.remove('vis')});
+      var pnl=document.getElementById(pid);
+      if(pnl)pnl.classList.add('vis');
+    });
+  });
+});
+
+/* Listening Match Check */
+var chkmatch=document.getElementById('dp5chkmatch');
+if(chkmatch)chkmatch.addEventListener('click',function(){
+  for(var i=0;i<5;i++){
+    var sel=document.getElementById('dp5ms'+i);
+    var fb=document.getElementById('dp5mf'+i);
+    if(!sel)continue;
+    var ans=sel.getAttribute('data-a'),giv=sel.value;
+    var ok=giv===ans;
+    sel.classList.toggle('ok',ok);sel.classList.toggle('bad',!ok);
+    fb.textContent=ok?'✅ Correct!':'❌ Answer: '+ans;
+    fb.classList.toggle('ok',ok);fb.classList.toggle('bad',!ok);
+  }
+});
+
+var pbtn=document.getElementById('dp5playbtn'),apf=document.getElementById('dp5apf');
+var audioTxt="Let me explain the three classical methods. The first method focuses on reading literary texts and translating them. Grammar rules are explained in the students' native language, and they memorize vocabulary through bilingual word lists. Speaking and listening are not priorities. The second method was a reaction against translation-based teaching. Teachers use ONLY the target language. They demonstrate meaning through objects, pictures, and actions. Students learn to speak by speaking — there's no translation at all. The third method was developed for military training during World War II. It's based on the idea that language is a habit. Students listen to model dialogues, repeat them in chorus, and practice through pattern drills like substitution and transformation. The goal is automatic, rapid oral responses. A key difference: the first method uses the native language heavily, the second bans it completely, and the third avoids it because it's believed to cause interference with the new habits being formed.";
+
+if(pbtn)pbtn.addEventListener('click',function(){
+  if(audioPlaying){window.speechSynthesis&&window.speechSynthesis.cancel();clearInterval(audioTimer);audioPlaying=false;pbtn.textContent='▶';if(apf)apf.style.width='0%';return;}
+  if(!window.speechSynthesis)return;
+  var u=new SpeechSynthesisUtterance(audioTxt);u.lang='en-GB';u.rate=0.9;
+  var vv=window.speechSynthesis.getVoices(),v=vv.find(function(x){return x.lang==='en-GB'})||vv.find(function(x){return x.lang.startsWith('en')});
+  if(v)u.voice=v;
+  audioPlaying=true;pbtn.textContent='⏸';
+  var w=0;audioTimer=setInterval(function(){w=Math.min(100,w+0.35);if(apf)apf.style.width=w+'%';if(w>=100)clearInterval(audioTimer)},500);
+  u.onend=function(){audioPlaying=false;pbtn.textContent='▶';clearInterval(audioTimer)};
+  window.speechSynthesis.speak(u);
+});
+
+var stog=document.getElementById('dp5scrtog'),sbox=document.getElementById('dp5scrbox');
+if(stog)stog.addEventListener('click',function(){sbox&&sbox.classList.toggle('show')});
+
+var wtxt=document.getElementById('dp5wtxt'),wcnt=document.getElementById('dp5wcnt'),wsub=document.getElementById('dp5wsub'),wfb=document.getElementById('dp5wfb');
+if(wtxt)wtxt.addEventListener('input',function(){
+  var wc=wtxt.value.trim()===''?0:wtxt.value.trim().split(/\s+/).length;
+  if(wcnt){wcnt.textContent=wc+' words (aim for 60–80)';wcnt.style.color=wc>=60?'#2E7D52':'#7A7A7A'}
+});
+if(wsub)wsub.addEventListener('click',function(){
+  if(!wtxt||wtxt.value.trim().split(/\s+/).length<20){alert('Please write at least 20 words!');return}
+  if(wfb)wfb.classList.add('show');wsub.textContent='✅ Checked!';wsub.style.background='#2E7D52';
+});
+
+/* 40-Question Quiz with A,B,C,D,E */
+function renderQ(){
+  var d=QD[qCur],area=document.getElementById('dp5qarea'),fb=document.getElementById('dp5qfb'),nxt=document.getElementById('dp5qnxt');
+  fb.className='qfbm';nxt.classList.remove('show');qAns=false;
+  var pf=document.getElementById('dp5qpf');
+  if(document.getElementById('dp5qcnt'))document.getElementById('dp5qcnt').textContent=(qCur+1)+' / '+QD.length;
+  if(pf)pf.style.width=((qCur+1)/QD.length*100)+'%';
+  var labels=['A','B','C','D','E'];
+  var html='<div class="qq"><span class="qqn">'+(qCur+1)+'</span>'+d.q+'</div><div class="qopts">';
+  d.opts.forEach(function(o,i){html+='<button class="qopt" data-i="'+i+'"><span class="ql">'+labels[i]+'.</span> '+o+'</button>'});
+  html+='</div>';area.innerHTML=html;
+  area.querySelectorAll('.qopt').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      if(qAns)return;qAns=true;
+      var ch=parseInt(btn.getAttribute('data-i'));
+      area.querySelectorAll('.qopt').forEach(function(b){b.disabled=true});
+      if(ch===d.a){btn.classList.add('qco');qScore++;if(document.getElementById('dp5qsl'))document.getElementById('dp5qsl').textContent='Score: '+qScore;fb.textContent=d.ex;fb.className='qfbm show ok'}
+      else{btn.classList.add('qwr');area.querySelectorAll('.qopt')[d.a].classList.add('qco');fb.innerHTML='❌ Incorrect. '+d.ex;fb.className='qfbm show bad'}
+      nxt.classList.add('show');nxt.textContent=qCur<QD.length-1?'Next Question →':'See Results 🎯';
+    });
+  });
+}
+
+var qnxt=document.getElementById('dp5qnxt');
+if(qnxt)qnxt.addEventListener('click',function(){qCur++;if(qCur>=QD.length)showScore();else renderQ()});
+
+function showScore(){
+  var area=document.getElementById('dp5qarea'),fb=document.getElementById('dp5qfb'),nxt=document.getElementById('dp5qnxt'),pr=document.querySelector('#dp-l5 .qpr'),pl=document.getElementById('dp5spl');
+  if(area)area.style.display='none';if(fb)fb.style.display='none';if(nxt)nxt.style.display='none';if(pr)pr.style.display='none';if(pl)pl.classList.add('show');
+  var fin=document.getElementById('dp5sfin');if(fin)fin.textContent=qScore;
+  var pct=qScore/QD.length,msg,sub;
+  if(pct>=0.9){msg='Excellent! 🏆';sub='You\'re exam-ready!'}
+  else if(pct>=0.75){msg='Great Work! 🌟';sub='Review the questions you missed.'}
+  else if(pct>=0.6){msg='Good Progress! 👍';sub='Study the theory sections again.'}
+  else if(pct>=0.4){msg='Keep Practising! 💪';sub='Focus on the concepts you struggled with.'}
+  else{msg='More Study Needed 📚';sub='Review all sections before retrying.'}
+  if(document.getElementById('dp5smsg'))document.getElementById('dp5smsg').textContent=msg;
+  if(document.getElementById('dp5ssub'))document.getElementById('dp5ssub').textContent=sub;
+}
+
+var srty=document.getElementById('dp5srty');
+if(srty)srty.addEventListener('click',function(){
+  qScore=0;qCur=0;qAns=false;
+  var area=document.getElementById('dp5qarea'),fb=document.getElementById('dp5qfb'),nxt=document.getElementById('dp5qnxt'),pr=document.querySelector('#dp-l5 .qpr'),pl=document.getElementById('dp5spl');
+  if(area){area.style.display='block';area.innerHTML=''}if(fb){fb.style.display='block';fb.className='qfbm'}if(nxt)nxt.style.display='none';if(pr)pr.style.display='flex';if(pl)pl.classList.remove('show');
+  if(document.getElementById('dp5qsl'))document.getElementById('dp5qsl').textContent='Score: 0';
+  renderQ();
+});
+
+renderQ();
+if(window.speechSynthesis){window.speechSynthesis.getVoices();window.speechSynthesis.onvoiceschanged=function(){window.speechSynthesis.getVoices()}}
+})();
+</script>
+
+<!-- AUTO-RESIZE (MUST BE LAST) -->
+<script>
+(function(){
+  function sendHeight(){var h=document.documentElement.scrollHeight||document.body.scrollHeight;window.parent.postMessage({epHeight:h},'*')}
+  sendHeight();window.addEventListener('load',sendHeight);window.addEventListener('resize',sendHeight);
+  var mo=new MutationObserver(sendHeight);mo.observe(document.body,{childList:true,subtree:true,attributes:true});
+})();
+</script>
+
+</body>
+</html>
