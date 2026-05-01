@@ -1,0 +1,1048 @@
+<!--============================================================
+     EnglishPro · Didactics Series · Lesson 11
+     Classroom Management & Lesson Planning
+     GitHub hosted — embedded in Blogger via iframe
+     100% self-contained — no external JS dependencies
+     UPDATED FORMAT: Relevant listening + 40-MCQ exam section
+     ============================================================-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Classroom Management & Lesson Planning | EnglishPro Didactics Series</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;family=DM+Sans:wght@300;400;500;600&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{margin:0;padding:0;background:#FAFAF7;direction:ltr;text-align:left}
+
+#dp-l11{
+  --ny:#0D2B4E;--ny2:#1A4070;
+  --go:#C8933A;--go2:#E8B86D;--gop:#FDF6EC;
+  --cr:#FAFAF7;--wh:#fff;
+  --ink:#1A1A1A;--ink2:#3D3D3D;--mu:#7A7A7A;
+  --bd:#E2DDD6;--bdl:#F0EDE8;
+  --gr:#2E7D52;--grb:#EBF5EF;
+  --rd:#C0392B;--rdb:#FDECEA;
+  --bl:#1E5FA8;--blb:#EBF2FB;
+  --pu:#7C3AED;--pub:#F3F0FF;
+  --te:#0E7490;--teb:#ECFEFF;
+  --or:#D97706;--orb:#FEF3C7;
+  --pk:#DB2777;--pkb:#FDF2F8;
+  --sh1:0 2px 8px rgba(13,43,78,.07);
+  --sh2:0 6px 20px rgba(13,43,78,.10);
+  --r:12px;--rl:20px;
+  font-family:'DM Sans',sans-serif;
+  color:var(--ink);background:var(--cr);
+  line-height:1.7;-webkit-font-smoothing:antialiased;
+  display:block;overflow:hidden;direction:ltr;text-align:left
+}
+#dp-l11 *,#dp-l11 *::before,#dp-l11 *::after{box-sizing:border-box;margin:0;padding:0}
+#dp-l11 button{cursor:pointer;font-family:'DM Sans',sans-serif;border:none;background:none}
+#dp-l11 textarea,#dp-l11 input,#dp-l11 select{font-family:'DM Sans',sans-serif}
+
+/* HERO */
+#dp-l11 .lhero{background:linear-gradient(150deg,#0a1f38 0%,#0D2B4E 50%,#122e52 100%);padding:48px 24px 40px;position:relative;overflow:hidden;border-radius:var(--rl) var(--rl) 0 0}
+#dp-l11 .lhero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%,rgba(200,147,58,.08) 0%,transparent 60%),radial-gradient(circle at 80% 20%,rgba(124,58,237,.06) 0%,transparent 50%);pointer-events:none}
+#dp-l11 .lhero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,147,58,.4),transparent)}
+#dp-l11 .lhero-in{max-width:720px;margin:0 auto;position:relative;z-index:1}
+#dp-l11 .lvlbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,147,58,.12);border:1px solid rgba(200,147,58,.28);color:var(--go2);font-size:.68rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:18px}
+#dp-l11 .ltitle{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,4vw,2.5rem);font-weight:900;color:#F5F0E8;line-height:1.15;margin-bottom:10px;letter-spacing:-.02em}
+#dp-l11 .ltitle em{color:var(--go);font-style:italic}
+#dp-l11 .lsub{font-size:.9rem;color:rgba(245,240,232,.62);margin-bottom:22px;max-width:520px;line-height:1.6}
+#dp-l11 .spills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px}
+#dp-l11 .spill{font-size:.67rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 11px;border-radius:100px}
+#dp-l11 .sp-th{background:rgba(124,58,237,.25);color:#C4B5FD}
+#dp-l11 .sp-ex{background:rgba(30,95,168,.25);color:#7DB8F0}
+#dp-l11 .sp-qu{background:rgba(200,147,58,.25);color:var(--go2)}
+#dp-l11 .sp-ic{background:rgba(46,125,82,.25);color:#6BCFA0}
+
+/* Nav dots */
+#dp-l11 .snav{display:flex;align-items:center;gap:5px;flex-wrap:wrap;padding-top:20px;border-top:1px solid rgba(255,255,255,.08)}
+#dp-l11 .snavdot{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;font-size:.7rem;font-weight:700;border:2px solid rgba(255,255,255,.18);color:rgba(255,255,255,.32);cursor:pointer;transition:all .25s;flex-shrink:0}
+#dp-l11 .snavdot.done{border-color:var(--gr);background:var(--gr);color:#fff}
+#dp-l11 .snavdot.active{border-color:var(--go);background:var(--go);color:#fff}
+#dp-l11 .snavsep{width:16px;height:2px;background:rgba(255,255,255,.1);border-radius:1px;flex-shrink:0}
+#dp-l11 .snavlbl{font-size:.63rem;color:rgba(245,240,232,.38);margin-left:6px}
+
+/* BODY */
+#dp-l11 .lbody{max-width:720px;margin:0 auto;padding:32px 20px 64px;background:var(--cr)}
+#dp-l11 .sblock{background:var(--wh);border:1px solid var(--bdl);border-radius:var(--rl);padding:28px;margin-bottom:24px;display:none;animation:dp11up .35s ease both;box-shadow:var(--sh1)}
+#dp-l11 .sblock.vis{display:block}
+@keyframes dp11up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+#dp-l11 .slabel{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--go);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+#dp-l11 .slabel::after{content:'';flex:1;height:1px;background:var(--bdl)}
+#dp-l11 .sheading{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ny);margin-bottom:16px;line-height:1.25}
+#dp-l11 .sheading em{color:var(--go);font-style:italic}
+#dp-l11 .stxt{font-size:.9rem;color:var(--ink2);margin-bottom:16px;line-height:1.65}
+
+/* Scene */
+#dp-l11 .scene{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:20px;margin-bottom:20px;position:relative;overflow:hidden}
+#dp-l11 .scene::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(200,147,58,.08),transparent 60%);pointer-events:none}
+#dp-l11 .s-ico{font-size:1.8rem;margin-bottom:8px;position:relative;z-index:1}
+#dp-l11 .s-t{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#F5F0E8;position:relative;z-index:1;margin-bottom:5px}
+#dp-l11 .s-d{font-size:.83rem;color:rgba(245,240,232,.65);position:relative;z-index:1;line-height:1.55}
+
+/* Callouts */
+#dp-l11 .co{display:flex;gap:10px;padding:13px 15px;border-radius:var(--r);margin:14px 0;font-size:.855rem;line-height:1.6}
+#dp-l11 .co-tip{background:var(--gop);border:1px solid rgba(200,147,58,.2);color:var(--ink2)}
+#dp-l11 .co-info{background:var(--blb);border:1px solid rgba(30,95,168,.15);color:var(--ink2)}
+#dp-l11 .co-pur{background:var(--pub);border:1px solid rgba(124,58,237,.15);color:var(--ink2)}
+#dp-l11 .co-teal{background:var(--teb);border:1px solid rgba(14,116,144,.15);color:var(--ink2)}
+#dp-l11 .co-or{background:var(--orb);border:1px solid rgba(217,119,6,.15);color:var(--ink2)}
+#dp-l11 .co-pk{background:var(--pkb);border:1px solid rgba(219,39,119,.15);color:var(--ink2)}
+#dp-l11 .co-ico{font-size:1rem;flex-shrink:0;margin-top:1px}
+
+/* Gbox */
+#dp-l11 .gbox{border-radius:0 var(--r) var(--r) 0;padding:18px 20px;margin:18px 0}
+#dp-l11 .gbox-bl{background:var(--blb);border:1px solid rgba(30,95,168,.2);border-left:4px solid var(--bl)}
+#dp-l11 .gbox-go{background:var(--gop);border:1px solid rgba(200,147,58,.2);border-left:4px solid var(--go)}
+#dp-l11 .gbox-gr{background:var(--grb);border:1px solid rgba(46,125,82,.2);border-left:4px solid var(--gr)}
+#dp-l11 .gbox-pu{background:var(--pub);border:1px solid rgba(124,58,237,.15);border-left:4px solid var(--pu)}
+#dp-l11 .gbox-te{background:var(--teb);border:1px solid rgba(14,116,144,.15);border-left:4px solid var(--te)}
+#dp-l11 .gbox-rd{background:var(--rdb);border:1px solid rgba(192,57,43,.15);border-left:4px solid var(--rd)}
+#dp-l11 .gbox-pk{background:var(--pkb);border:1px solid rgba(219,39,119,.15);border-left:4px solid var(--pk)}
+#dp-l11 .gbox h4{font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:11px}
+#dp-l11 .gbox-bl h4{color:var(--bl)}
+#dp-l11 .gbox-go h4{color:var(--go)}
+#dp-l11 .gbox-gr h4{color:var(--gr)}
+#dp-l11 .gbox-pu h4{color:var(--pu)}
+#dp-l11 .gbox-te h4{color:var(--te)}
+#dp-l11 .gbox-rd h4{color:var(--rd)}
+#dp-l11 .gbox-pk h4{color:var(--pk)}
+#dp-l11 .grule{font-family:'DM Mono',monospace;font-size:.86rem;color:var(--ny);background:rgba(255,255,255,.65);padding:9px 14px;border-radius:7px;margin-bottom:7px;line-height:1.6}
+#dp-l11 .grule span{color:var(--bl);font-weight:600}
+#dp-l11 .grule em{color:var(--go);font-style:normal;font-weight:600}
+#dp-l11 .grule strong{color:var(--gr);font-weight:700}
+
+/* Method cards */
+#dp-l11 .mcards{display:flex;flex-direction:column;gap:12px;margin:20px 0}
+#dp-l11 .mcard{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:18px;cursor:pointer;transition:all .22s}
+#dp-l11 .mcard:hover{border-color:var(--go);transform:translateX(4px)}
+#dp-l11 .mcard.fl{background:var(--gop);border-color:var(--go)}
+#dp-l11 .mc-head{display:flex;align-items:center;gap:12px}
+#dp-l11 .mc-icon{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;color:#fff}
+#dp-l11 .mc-title{font-size:.95rem;font-weight:700;color:var(--ny)}
+#dp-l11 .mc-sub{font-size:.75rem;color:var(--mu)}
+#dp-l11 .mc-hint{font-size:.75rem;color:var(--mu);font-style:italic;margin-top:6px}
+#dp-l11 .mc-body{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--bdl)}
+#dp-l11 .mcard.fl .mc-hint{display:none}
+#dp-l11 .mcard.fl .mc-body{display:block}
+#dp-l11 .mc-body p{font-size:.85rem;color:var(--ink2);line-height:1.6;margin-bottom:8px}
+
+/* Tables */
+#dp-l11 .gtbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.82rem}
+#dp-l11 .gtbl th{background:var(--ny);color:#F5F0E8;padding:9px 10px;text-align:left;font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+#dp-l11 .gtbl th:first-child{border-radius:var(--r) 0 0 0}
+#dp-l11 .gtbl th:last-child{border-radius:0 var(--r) 0 0}
+#dp-l11 .gtbl td{padding:8px 10px;border-bottom:1px solid var(--bdl);color:var(--ink2);vertical-align:top}
+#dp-l11 .gtbl tr:nth-child(even) td{background:var(--cr)}
+#dp-l11 .tbl-b{color:var(--bl);font-weight:600}
+#dp-l11 .tbl-g{color:var(--go);font-weight:600}
+#dp-l11 .tbl-gr{color:var(--gr);font-weight:600}
+#dp-l11 .tbl-pu{color:var(--pu);font-weight:600}
+#dp-l11 .tbl-rd{color:var(--rd);font-weight:600}
+#dp-l11 .tbl-te{color:var(--te);font-weight:600}
+#dp-l11 .tbl-pk{color:var(--pk);font-weight:600}
+
+/* Tabs */
+#dp-l11 .tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+#dp-l11 .tab{padding:9px 18px;border-radius:var(--r);font-size:.82rem;font-weight:600;background:var(--cr);border:2px solid var(--bd);color:var(--ink2);cursor:pointer;transition:all .2s}
+#dp-l11 .tab:hover{border-color:var(--go);color:var(--go)}
+#dp-l11 .tab.active{background:var(--ny);border-color:var(--ny);color:#fff}
+#dp-l11 .tabpanel{display:none}
+#dp-l11 .tabpanel.vis{display:block}
+
+/* Scenario Match */
+#dp-l11 .smatch{margin:20px 0}
+#dp-l11 .sm-item{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;align-items:center}
+#dp-l11 .sm-scenario{background:var(--blb);border:1px solid rgba(30,95,168,.15);border-radius:var(--r);padding:12px 14px;font-size:.85rem;color:var(--ink2);line-height:1.5}
+#dp-l11 .sm-select{border:2px solid var(--bd);border-radius:var(--r);padding:9px 12px;font-size:.85rem;color:var(--ink2);background:var(--cr);width:100%;font-family:'DM Sans',sans-serif;outline:none;transition:border-color .2s;cursor:pointer}
+#dp-l11 .sm-select:focus{border-color:var(--go)}
+#dp-l11 .sm-select.ok{border-color:var(--gr);background:var(--grb);color:var(--gr)}
+#dp-l11 .sm-select.bad{border-color:var(--rd);background:var(--rdb);color:var(--rd)}
+#dp-l11 .smfb{font-size:.82rem;font-weight:600;padding:10px 14px;border-radius:var(--r);margin-top:4px;display:none}
+#dp-l11 .smfb.ok{background:var(--grb);color:var(--gr);display:block}
+#dp-l11 .smfb.bad{background:var(--rdb);color:var(--rd);display:block}
+
+/* Audio */
+#dp-l11 .aplayer{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px;margin:14px 0;flex-wrap:wrap}
+#dp-l11 .abig{width:48px;height:48px;border-radius:50%;background:var(--go);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;transition:all .2s;cursor:pointer;border:none;box-shadow:0 4px 14px rgba(200,147,58,.4)}
+#dp-l11 .abig:hover{background:var(--go2);transform:scale(1.06)}
+#dp-l11 .ainfo{flex:1;min-width:160px}
+#dp-l11 .at{font-size:.87rem;font-weight:600;color:#F5F0E8;margin-bottom:3px}
+#dp-l11 .as{font-size:.72rem;color:rgba(245,240,232,.55)}
+#dp-l11 .apbar{height:4px;background:rgba(255,255,255,.14);border-radius:2px;margin-top:9px;overflow:hidden}
+#dp-l11 .apfill{height:100%;background:var(--go);width:0%;border-radius:2px;transition:width .3s}
+#dp-l11 .scrtog{background:rgba(255,255,255,.1);color:rgba(245,240,232,.78);font-size:.72rem;font-weight:600;padding:5px 11px;border-radius:100px;border:1px solid rgba(255,255,255,.15);cursor:pointer;transition:all .2s;flex-shrink:0}
+#dp-l11 .scrtog:hover{background:rgba(255,255,255,.2)}
+#dp-l11 .scrbox{background:var(--cr);border:1px solid var(--bd);border-radius:var(--r);padding:18px;margin-top:10px;display:none}
+#dp-l11 .scrbox.show{display:block}
+#dp-l11 .scrbox p{font-size:.875rem;color:var(--ink2);margin-bottom:7px;line-height:1.7}
+
+/* Writing */
+#dp-l11 .wa{width:100%;min-height:130px;border:2px solid var(--bd);border-radius:var(--r);padding:14px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--ink);background:var(--cr);resize:vertical;outline:none;transition:border-color .2s;line-height:1.7}
+#dp-l11 .wa:focus{border-color:var(--go)}
+#dp-l11 .wa::placeholder{color:var(--mu)}
+#dp-l11 .wcnt{font-size:.72rem;color:var(--mu);text-align:right;margin-top:5px}
+#dp-l11 .wsub{margin-top:11px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none}
+#dp-l11 .wsub:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l11 .wfb{display:none;margin-top:13px;background:var(--grb);border:1.5px solid rgba(46,125,82,.22);border-radius:var(--r);padding:15px;font-size:.855rem;color:var(--gr);line-height:1.65}
+#dp-l11 .wfb.show{display:block}
+
+/* Quiz */
+#dp-l11 .qpr{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+#dp-l11 .qpbar{flex:1;height:6px;background:var(--bd);border-radius:3px;overflow:hidden;margin:0 11px}
+#dp-l11 .qpfill{height:100%;background:linear-gradient(90deg,var(--go),var(--go2));border-radius:3px;transition:width .4s ease}
+#dp-l11 .qcnt{font-size:.77rem;font-weight:600;color:var(--mu)}
+#dp-l11 .qq{font-size:1rem;font-weight:600;color:var(--ny);margin-bottom:16px;line-height:1.5}
+#dp-l11 .qqn{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--go);color:#fff;font-size:.75rem;font-weight:700;margin-right:7px;flex-shrink:0;vertical-align:middle}
+#dp-l11 .qopts{display:flex;flex-direction:column;gap:9px}
+#dp-l11 .qopt{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:13px 16px;font-size:.9rem;color:var(--ink2);text-align:left;transition:all .2s;display:flex;align-items:center;gap:9px;cursor:pointer}
+#dp-l11 .qopt .ql{font-weight:700;color:var(--ny);min-width:18px}
+#dp-l11 .qopt:hover:not([disabled]){border-color:var(--go);background:var(--gop);transform:translateX(3px)}
+#dp-l11 .qopt.qco{border-color:var(--gr)!important;background:var(--grb)!important;color:var(--gr)!important}
+#dp-l11 .qopt.qwr{border-color:var(--rd)!important;background:var(--rdb)!important;color:var(--rd)!important}
+#dp-l11 .qfbm{display:none;margin-top:11px;padding:13px 16px;border-radius:var(--r);font-size:.86rem;font-weight:500;line-height:1.6}
+#dp-l11 .qfbm.show{display:block}
+#dp-l11 .qfbm.ok{background:var(--grb);color:var(--gr);border:1px solid rgba(46,125,82,.2)}
+#dp-l11 .qfbm.bad{background:var(--rdb);color:var(--rd);border:1px solid rgba(192,57,43,.2)}
+#dp-l11 .qnxt{margin-top:14px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;display:none;cursor:pointer;border:none}
+#dp-l11 .qnxt:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l11 .qnxt.show{display:inline-block}
+#dp-l11 .spl{text-align:center;padding:28px 20px;display:none;animation:dp11up .4s ease both}
+#dp-l11 .spl.show{display:block}
+#dp-l11 .scir{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--ny),var(--ny2));display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 8px 24px rgba(13,43,78,.2)}
+#dp-l11 .snum{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:var(--go);line-height:1}
+#dp-l11 .sden{font-size:.7rem;color:rgba(245,240,232,.5)}
+#dp-l11 .smsg{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--ny);margin-bottom:7px}
+#dp-l11 .ssub{font-size:.84rem;color:var(--mu);margin-bottom:18px}
+#dp-l11 .srty{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;margin-right:8px;cursor:pointer;border:none}
+#dp-l11 .srty:hover{background:var(--go)}
+
+/* Chkb */
+#dp-l11 .chkb{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none;margin-top:6px}
+#dp-l11 .chkb:hover{background:var(--go);transform:translateY(-1px)}
+
+/* Nav buttons */
+#dp-l11 .navb{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:18px;border-top:1px solid var(--bdl);gap:10px}
+#dp-l11 .nb{display:flex;align-items:center;gap:7px;padding:11px 22px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;border:2px solid var(--bd);color:var(--ink2);background:var(--wh);cursor:pointer}
+#dp-l11 .nb:hover{border-color:var(--go);color:var(--go)}
+#dp-l11 .nb.pri{background:var(--ny);color:#fff;border-color:transparent}
+#dp-l11 .nb.pri:hover{background:var(--go);border-color:transparent}
+#dp-l11 .nb:disabled{opacity:.38;cursor:default;pointer-events:none}
+
+/* Footer */
+#dp-l11 .lft{background:var(--ny);padding:24px;text-align:center;border-radius:0 0 var(--rl) var(--rl)}
+#dp-l11 .flo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:#F5F0E8;margin-bottom:5px}
+#dp-l11 .flo em{color:var(--go);font-style:italic}
+#dp-l11 .ftx{font-size:.74rem;color:rgba(245,240,232,.42)}
+
+/* Feature grid */
+#dp-l11 .fgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:16px 0}
+#dp-l11 .fbox{background:var(--cr);border:1px solid var(--bdl);border-radius:var(--r);padding:14px;text-align:center;cursor:pointer;transition:all .2s}
+#dp-l11 .fbox:hover{border-color:var(--go);transform:translateY(-2px);box-shadow:var(--sh1)}
+#dp-l11 .fbox.fl{background:var(--gop);border-color:var(--go)}
+#dp-l11 .fbox-ico{font-size:1.6rem;margin-bottom:6px}
+#dp-l11 .fbox-t{font-size:.82rem;font-weight:700;color:var(--ny);margin-bottom:2px}
+#dp-l11 .fbox-s{font-size:.72rem;color:var(--mu)}
+#dp-l11 .fbox-body{display:none;margin-top:10px;text-align:left}
+#dp-l11 .fbox.fl .fbox-body{display:block}
+#dp-l11 .fbox-body p{font-size:.82rem;color:var(--ink2);line-height:1.55;margin-bottom:6px}
+
+@media(max-width:560px){
+  #dp-l11 .lhero{padding:32px 16px 28px}
+  #dp-l11 .lbody{padding:20px 14px 48px}
+  #dp-l11 .sblock{padding:18px 14px}
+  #dp-l11 .navb{flex-direction:column}
+  #dp-l11 .nb{width:100%;justify-content:center}
+  #dp-l11 .tabs{gap:4px}
+  #dp-l11 .tab{padding:7px 12px;font-size:.78rem}
+  #dp-l11 .sm-item{grid-template-columns:1fr}
+  #dp-l11 .fgrid{grid-template-columns:1fr}
+  #dp-l11 .gtbl{font-size:.75rem}
+  #dp-l11 .gtbl th,#dp-l11 .gtbl td{padding:6px 8px}
+}
+</style>
+</head>
+<body>
+
+<div id="dp-l11">
+
+<!-- HERO -->
+<div class="lhero">
+  <div class="lhero-in">
+    <div class="lvlbadge">🎓 Didactics Series · Lesson 11 of 12</div>
+    <h1 class="ltitle">Classroom Management &amp; <em>Lesson Planning</em></h1>
+    <p class="lsub">Master teacher roles, interaction patterns, seating arrangements, lesson planning frameworks (PPP, ESA), and effective classroom management strategies.</p>
+    <div class="spills">
+      <span class="spill sp-th">👨‍🏫 Teacher Roles</span>
+      <span class="spill sp-ex">📋 Lesson Planning</span>
+      <span class="spill sp-ic">🪑 Seating & Interaction</span>
+      <span class="spill sp-qu">📝 40-Question Exam</span>
+    </div>
+    <nav class="snav">
+      <div class="snavdot active" data-s="0">1</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="1">2</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="2">3</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="3">4</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="4">5</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="5">6</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="6">7</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="7">8</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="8">9</div>
+      <span class="snavlbl">9 sections</span>
+    </nav>
+  </div>
+</div>
+
+<div class="lbody">
+
+<!-- SECTION 1: CLASSROOM MANAGEMENT BASICS -->
+<section class="sblock vis" id="dp11s0">
+  <div class="slabel">Section 1 · Foundations</div>
+  <h2 class="sheading">What is <em>Classroom Management</em>?</h2>
+
+  <div class="scene">
+    <div class="s-ico">🏫</div>
+    <div class="s-t">Creating an Effective Learning Environment</div>
+    <div class="s-d">Classroom management is about organizing student behaviors and interactions to create a productive learning environment. It's essential for effective teaching.</div>
+  </div>
+
+  <div class="gbox gbox-bl">
+    <h4>Definition</h4>
+    <div class="grule"><strong>Classroom Management:</strong> Organizing student behaviors, interactions, and the learning environment to maximize learning opportunities</div>
+    <div class="grule"><em>Goal:</em> Engage all students actively while minimizing disruptions</div>
+    <div class="grule"><span>Includes:</span> Rules, routines, seating, timing, transitions, teacher positioning</div>
+  </div>
+
+  <div class="fgrid">
+    <div class="fbox" data-exp="cm1">
+      <div class="fbox-ico">📋</div>
+      <div class="fbox-t">Rules & Routines</div>
+      <div class="fbox-s">Establish expectations</div>
+      <div class="fbox-body" id="cm1">
+        <p><strong>Best practice:</strong> Set rules WITH students at the start of the year. This creates ownership and buy-in.</p>
+      </div>
+    </div>
+    <div class="fbox" data-exp="cm2">
+      <div class="fbox-ico">⏱️</div>
+      <div class="fbox-t">Timing & Pace</div>
+      <div class="fbox-s">Keep momentum</div>
+      <div class="fbox-body" id="cm2">
+        <p><strong>Key:</strong> Careful lesson planning keeps students engaged. Vary activities to maintain attention.</p>
+      </div>
+    </div>
+    <div class="fbox" data-exp="cm3">
+      <div class="fbox-ico">🪑</div>
+      <div class="fbox-t">Seating Arrangement</div>
+      <div class="fbox-s">Facilitate interaction</div>
+      <div class="fbox-body" id="cm3">
+        <p><strong>Options:</strong> Rows, horseshoe, clusters, pairs. Choose based on activity type and class size.</p>
+      </div>
+    </div>
+    <div class="fbox" data-exp="cm4">
+      <div class="fbox-ico">🚶</div>
+      <div class="fbox-t">Teacher Positioning</div>
+      <div class="fbox-s">Proximity & movement</div>
+      <div class="fbox-body" id="cm4">
+        <p><strong>Tip:</strong> Move around the room. Proximity helps prevent and address behavior issues non-verbally.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="gbox gbox-gr">
+    <h4>Preventing Disruptive Behavior</h4>
+    <div class="grule"><strong>Careful lesson planning:</strong> Engaging activities reduce opportunities for disruption</div>
+    <div class="grule"><em>Clear instructions:</em> Use ICQs (Instruction Checking Questions) to ensure understanding</div>
+    <div class="grule"><span>Established routines:</span> Students know what to expect and what's expected</span></div>
+    <div class="grule"><strong>Positive classroom climate:</strong> Build rapport and respect</strong></div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Key Principle:</strong> Prevention is better than cure. Good planning and clear expectations prevent most behavior problems before they start.</span></div>
+
+  <div class="navb">
+    <button class="nb" disabled>← Back</button>
+    <button class="nb pri" data-go="1">Next: Teacher Roles →</button>
+  </div>
+</section>
+
+<!-- SECTION 2: TEACHER ROLES -->
+<section class="sblock" id="dp11s1">
+  <div class="slabel">Section 2 · Teacher Roles</div>
+  <h2 class="sheading">The Many <em>Roles</em> of a Teacher</h2>
+
+  <div class="scene">
+    <div class="s-ico">👨‍🏫</div>
+    <div class="s-t">Teachers Wear Many Hats</div>
+    <div class="s-d">Effective teachers shift between different roles depending on the activity, the learners' needs, and the stage of the lesson.</div>
+  </div>
+
+  <div class="mcards">
+    <div class="mcard" data-exp="tr1">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--bl)">🎮</div>
+        <div><div class="mc-title">Controller</div><div class="mc-sub">Manages class & directs activities</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="tr1">
+        <p><strong>Description:</strong> Teacher-centered; the teacher controls what happens and when.</p>
+        <p><strong>When:</strong> Giving instructions, presenting new language, whole-class drilling</p>
+        <p><strong>Example:</strong> "Open your books to page 45. Now repeat after me..."</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="tr2">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--gr)">📊</div>
+        <div><div class="mc-title">Assessor</div><div class="mc-sub">Evaluates & provides feedback</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="tr2">
+        <p><strong>Description:</strong> Evaluates student performance and provides corrective feedback.</p>
+        <p><strong>When:</strong> Checking answers, correcting errors, grading work</p>
+        <p><strong>Example:</strong> "Good job! Just remember, we say 'went' not 'goed'."</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="tr3">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--pu)">📂</div>
+        <div><div class="mc-title">Organizer</div><div class="mc-sub">Sets up activities & groups</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="tr3">
+        <p><strong>Description:</strong> Organizes students into groups/pairs and sets up activities.</p>
+        <p><strong>When:</strong> Starting a new activity, forming groups, giving task instructions</p>
+        <p><strong>Example:</strong> "Get into groups of four. Each group will have one of these cards..."</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="tr4">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--go)">💡</div>
+        <div><div class="mc-title">Prompter</div><div class="mc-sub">Encourages & nudges</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="tr4">
+        <p><strong>Description:</strong> Encourages students and provides gentle prompts when they're stuck.</p>
+        <p><strong>When:</strong> Students hesitate, need encouragement, or lose momentum</p>
+        <p><strong>Example:</strong> "You're on the right track. What comes after 'I would like to...'?"</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="tr5">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--te)">👥</div>
+        <div><div class="mc-title">Participant</div><div class="mc-sub">Joins activities as partner</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="tr5">
+        <p><strong>Description:</strong> Joins in activities alongside students as an equal participant.</p>
+        <p><strong>When:</strong> Role-plays, discussions, games, to model or to balance numbers</p>
+        <p><strong>Example:</strong> Teacher joins a role-play as a customer in a restaurant scenario</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="tr6">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--pk)">📚</div>
+        <div><div class="mc-title">Resource</div><div class="mc-sub">Provides information & help</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="tr6">
+        <p><strong>Description:</strong> Available to help and provide information when students need it.</p>
+        <p><strong>When:</strong> Students working independently, need vocabulary, have questions</p>
+        <p><strong>Example:</strong> Student asks "How do you say X in English?" — teacher provides the word</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="tr7">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:#6366F1">🔍</div>
+        <div><div class="mc-title">Monitor</div><div class="mc-sub">Observes & notes</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="tr7">
+        <p><strong>Description:</strong> Observes students during activities, noting errors for later feedback.</p>
+        <p><strong>When:</strong> Pair/group work, free practice, fluency activities</p>
+        <p><strong>Example:</strong> Teacher walks around during group work, noting common errors for delayed correction</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="tr8">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:#059669">🌱</div>
+        <div><div class="mc-title">Facilitator</div><div class="mc-sub">Guides learning process</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="tr8">
+        <p><strong>Description:</strong> Guides and supports learning without dominating; student-centered.</p>
+        <p><strong>When:</strong> CLT activities, project work, learner-centered classrooms</p>
+        <p><strong>Key:</strong> The facilitator role is central to Communicative Language Teaching</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Tip:</strong> FACILITATOR is the key role in CLT. CONTROLLER is teacher-centered. MONITOR observes during activities. Know the difference!</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="0">← Classroom Management</button>
+    <button class="nb pri" data-go="2">Next: Interaction Patterns →</button>
+  </div>
+</section>
+
+<!-- SECTION 3: INTERACTION PATTERNS -->
+<section class="sblock" id="dp11s2">
+  <div class="slabel">Section 3 · Interaction Patterns</div>
+  <h2 class="sheading"><em>Interaction</em> Patterns in the Classroom</h2>
+
+  <div class="scene">
+    <div class="s-ico">🔄</div>
+    <div class="s-t">Who Talks to Whom?</div>
+    <div class="s-d">Interaction patterns describe how communication flows in the classroom. Varying interaction patterns increases student talk time and engagement.</div>
+  </div>
+
+  <table class="gtbl">
+    <tr><th>Pattern</th><th>Code</th><th>Description</th><th>When to Use</th></tr>
+    <tr><td class="tbl-bl"><strong>Teacher to Students</strong></td><td>T-Ss</td><td>Teacher speaks to whole class</td><td>Instructions, presentations, whole-class drilling</td></tr>
+    <tr><td class="tbl-pu"><strong>Teacher to Student</strong></td><td>T-S</td><td>Teacher speaks to one student</td><td>Individual feedback, eliciting, nominating</td></tr>
+    <tr><td class="tbl-gr"><strong>Student to Student</strong></td><td>S-S</td><td>Students speak to each other (pairs)</td><td>Pair work, dialogues, information gaps</td></tr>
+    <tr><td class="tbl-go"><strong>Students to Students</strong></td><td>Ss-Ss</td><td>Students speak in groups</td><td>Group work, discussions, projects</td></tr>
+    <tr><td class="tbl-te"><strong>Student to Teacher</strong></td><td>S-T</td><td>Student speaks to teacher</td><td>Questions, reporting back, presentations</td></tr>
+    <tr><td class="tbl-pk"><strong>Open Pairs</strong></td><td>OP</td><td>Two students practice in front of class</td><td>Demonstrating before closed pairs</td></tr>
+    <tr><td class="tbl-rd"><strong>Mingle</strong></td><td>M</td><td>Students move around, talking to many</td><td>Surveys, find someone who, information gathering</td></tr>
+  </table>
+
+  <div class="gbox gbox-gr">
+    <h4>TTT vs STT</h4>
+    <div class="grule"><strong>TTT (Teacher Talk Time):</strong> Time the teacher spends talking</div>
+    <div class="grule"><em>STT (Student Talk Time):</em> Time students spend talking</em></div>
+    <div class="grule"><span>Goal:</span> INCREASE STT and DECREASE TTT (students learn by using language)</span></div>
+    <div class="grule"><strong>Tip:</strong> Use pair/group work and avoid unnecessary teacher monologues</strong></div>
+  </div>
+
+  <div class="gbox gbox-bl">
+    <h4>Common Interaction Techniques</h4>
+    <div class="grule"><strong>Information Gap:</strong> Students have different information and must communicate to complete a task</div>
+    <div class="grule"><em>Jigsaw:</em> Students learn different parts, then teach each other</em></div>
+    <div class="grule"><span>Role-play:</span> Students act out scenarios (e.g., ordering food, job interview)</span></div>
+    <div class="grule"><strong>Mingle:</strong> Students move around the room talking to multiple classmates</strong></div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Key Principle:</strong> The more students talk, the more they learn. Maximize STT through varied interaction patterns!</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="1">← Teacher Roles</button>
+    <button class="nb pri" data-go="3">Next: Seating Arrangements →</button>
+  </div>
+</section>
+
+<!-- SECTION 4: SEATING ARRANGEMENTS -->
+<section class="sblock" id="dp11s3">
+  <div class="slabel">Section 4 · Seating Arrangements</div>
+  <h2 class="sheading"><em>Seating</em> Arrangements</h2>
+
+  <p class="stxt">How you arrange desks affects <strong>interaction, classroom management, and learning</strong>. Different arrangements suit different activities and class sizes.</p>
+
+  <table class="gtbl">
+    <tr><th>Arrangement</th><th>Best For</th><th>Advantages</th><th>Disadvantages</th></tr>
+    <tr><td class="tbl-bl"><strong>Rows</strong></td><td>Lectures, tests, large classes</td><td>Easy control, clear focus on teacher/board</td><td>Limited S-S interaction, teacher-centered</td></tr>
+    <tr><td class="tbl-gr"><strong>Horseshoe / U-shape</strong></td><td>Discussions, presentations</td><td>All see each other, good for discussions</td><td>Needs space, harder with large classes</td></tr>
+    <tr><td class="tbl-pu"><strong>Clusters / Groups</strong></td><td>Group work, projects</td><td>Promotes collaboration, easy group work</td><td>Can increase noise, some may not see board</td></tr>
+    <tr><td class="tbl-go"><strong>Pairs</strong></td><td>Pair work, dialogues</td><td>Easy pair work, good for conversation</td><td>May need rearranging for group work</td></tr>
+    <tr><td class="tbl-te"><strong>Circle</strong></td><td>Small classes, discussions</td><td>Equal participation, community feel</td><td>No clear focal point, impractical for writing</td></tr>
+  </table>
+
+  <div class="gbox gbox-go">
+    <h4>Choosing the Right Arrangement</h4>
+    <div class="grule"><strong>Consider the activity:</strong> Group work needs clusters; presentations need horseshoe</div>
+    <div class="grule"><em>Consider class size:</em> Rows work better for large classes</em></div>
+    <div class="grule"><span>Consider the room:</span> Physical constraints may limit options</span></div>
+    <div class="grule"><strong>Be flexible:</strong> Rearrange desks for different activities</strong></div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Tip:</strong> HORSESHOE/U-SHAPE is best for discussions where all students need to see each other. ROWS are teacher-centered and limit S-S interaction.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="2">← Interaction Patterns</button>
+    <button class="nb pri" data-go="4">Next: Lesson Planning →</button>
+  </div>
+</section>
+
+<!-- SECTION 5: LESSON PLANNING -->
+<section class="sblock" id="dp11s4">
+  <div class="slabel">Section 5 · Lesson Planning</div>
+  <h2 class="sheading"><em>Lesson Planning</em> Essentials</h2>
+
+  <div class="scene">
+    <div class="s-ico">📋</div>
+    <div class="s-t">A Roadmap for Effective Teaching</div>
+    <div class="s-d">A lesson plan is a detailed guide for instruction. It outlines objectives, materials, timing, and procedures to ensure effective, organized teaching.</div>
+  </div>
+
+  <div class="gbox gbox-bl">
+    <h4>Components of a Lesson Plan</h4>
+    <div class="grule"><strong>Lesson title/topic:</strong> What the lesson is about</div>
+    <div class="grule"><em>Objectives/Aims:</em> What students will be able to do by the end</em></div>
+    <div class="grule"><span>Time:</span> Duration of the lesson and each stage</span></div>
+    <div class="grule"><strong>Materials:</strong> Textbook, handouts, audio, visuals, etc.</strong></div>
+    <div class="grule"><em>Procedures:</em> Step-by-step activities with timing</em></div>
+    <div class="grule"><span>Interaction patterns:</span> T-S, S-S, group work, etc.</span></div>
+    <div class="grule"><strong>Anticipated problems:</strong> What might go wrong and solutions</strong></div>
+  </div>
+
+  <div class="gbox gbox-pu">
+    <h4>Types of Objectives</h4>
+    <div class="grule"><strong>Main aim:</strong> The primary goal of the lesson (e.g., "Students will be able to use present perfect for experiences")</div>
+    <div class="grule"><em>Subsidiary aim:</em> Secondary learning that happens alongside (e.g., vocabulary for travel)</em></div>
+    <div class="grule"><span>Personal aim:</span> Teacher's own development goal (e.g., "Reduce my TTT")</span></div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>SMART Objectives:</strong> Specific, Measurable, Achievable, Relevant, Time-bound. Good objectives state what students will DO, not what the teacher will teach.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="3">← Seating Arrangements</button>
+    <button class="nb pri" data-go="5">Next: Lesson Frameworks →</button>
+  </div>
+</section>
+
+<!-- SECTION 6: LESSON FRAMEWORKS (PPP, ESA) -->
+<section class="sblock" id="dp11s5">
+  <div class="slabel">Section 6 · Lesson Frameworks</div>
+  <h2 class="sheading">Lesson <em>Frameworks</em>: PPP &amp; ESA</h2>
+
+  <p class="stxt">Lesson frameworks provide a <strong>structure for organizing activities</strong>. The two most common are <strong>PPP</strong> (Presentation-Practice-Production) and <strong>ESA</strong> (Engage-Study-Activate).</p>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="t6a">📖 PPP Framework</button>
+    <button class="tab" data-tab="t6b">🔄 ESA Framework</button>
+    <button class="tab" data-tab="t6c">📊 Comparison</button>
+  </div>
+
+  <div class="tabpanel vis" id="t6a">
+    <div class="gbox gbox-bl">
+      <h4>PPP: Presentation → Practice → Production</h4>
+      <div class="grule"><strong>1. PRESENTATION:</strong> Teacher introduces target language in context</div>
+      <div class="grule">• Teacher-centered; explicit teaching of grammar/vocabulary</div>
+      <div class="grule">• Example: Teacher explains present perfect with timeline on board</div>
+    </div>
+    <div class="gbox gbox-gr">
+      <h4></h4>
+      <div class="grule"><strong>2. PRACTICE:</strong> Controlled activities to apply target language</div>
+      <div class="grule">• Drilling, gap-fills, controlled exercises</div>
+      <div class="grule">• Focus on ACCURACY; teacher monitors and corrects</div>
+    </div>
+    <div class="gbox gbox-go">
+      <h4></h4>
+      <div class="grule"><strong>3. PRODUCTION:</strong> Free practice; students create their own language</div>
+      <div class="grule">• Role-plays, discussions, writing tasks</div>
+      <div class="grule">• Focus on FLUENCY; students use language independently</div>
+    </div>
+    <div class="co co-info"><span class="co-ico">ℹ️</span><span><strong>PPP Origins:</strong> Traditional framework, associated with structural approaches. Good for grammar lessons and beginner levels.</span></div>
+  </div>
+
+  <div class="tabpanel" id="t6b">
+    <div class="gbox gbox-pu">
+      <h4>ESA: Engage → Study → Activate (Jeremy Harmer)</h4>
+      <div class="grule"><strong>1. ENGAGE:</strong> Get students interested and emotionally engaged</div>
+      <div class="grule">• Games, pictures, questions, discussions about the topic</div>
+      <div class="grule">• Example: "Have you ever been to a foreign country?"</div>
+    </div>
+    <div class="gbox gbox-te">
+      <h4></h4>
+      <div class="grule"><strong>2. STUDY:</strong> Focus on language (grammar, vocabulary, pronunciation)</div>
+      <div class="grule">• Can be inductive or deductive; drilling; exercises</div>
+      <div class="grule">• Example: Students analyze how present perfect is formed</div>
+    </div>
+    <div class="gbox gbox-pk">
+      <h4></h4>
+      <div class="grule"><strong>3. ACTIVATE:</strong> Students use language in communicative activities</div>
+      <div class="grule">• Role-plays, discussions, tasks (like Production in PPP)</div>
+      <div class="grule">• Focus on communication; errors noted for later</div>
+    </div>
+    <div class="co co-info"><span class="co-ico">ℹ️</span><span><strong>ESA Flexibility:</strong> Unlike PPP, ESA stages can be reordered (e.g., Engage → Activate → Study → Activate for a more communicative approach).</span></div>
+  </div>
+
+  <div class="tabpanel" id="t6c">
+    <table class="gtbl">
+      <tr><th>Feature</th><th class="tbl-bl">PPP</th><th class="tbl-pu">ESA</th></tr>
+      <tr><td><strong>Creator</strong></td><td>Traditional / structural</td><td>Jeremy Harmer</td></tr>
+      <tr><td><strong>Stages</strong></td><td>Presentation → Practice → Production</td><td>Engage → Study → Activate</td></tr>
+      <tr><td><strong>Order</strong></td><td>Fixed, linear</td><td>Flexible, can be reordered</td></tr>
+      <tr><td><strong>Focus</strong></td><td>Language forms (grammar)</td><td>Engagement first, then language</td></tr>
+      <tr><td><strong>Best For</strong></td><td>Grammar lessons, beginners</td><td>All levels, communicative lessons</td></tr>
+    </table>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Trap:</strong> ESA was developed by Jeremy HARMER. PPP stages are FIXED; ESA stages are FLEXIBLE and can be reordered.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="4">← Lesson Planning</button>
+    <button class="nb pri" data-go="6">Next: Listening Task →</button>
+  </div>
+</section>
+
+<!-- SECTION 7: LISTENING (RELEVANT SCENARIO) -->
+<section class="sblock" id="dp11s6">
+  <div class="slabel">Section 7 · Listening Comprehension</div>
+  <h2 class="sheading">🎙️ Listen — <em>A Trainer Discusses Classroom Management</em></h2>
+  <p class="stxt">Press ▶ to listen to a teacher trainer discussing classroom management and lesson planning. <strong>Match each description to the correct concept.</strong></p>
+
+  <div class="aplayer">
+    <button class="abig" id="dp11playbtn">▶</button>
+    <div class="ainfo">
+      <div class="at">Classroom Management & Planning Essentials</div>
+      <div class="as">~60 seconds · British English</div>
+      <div class="apbar"><div class="apfill" id="dp11apf"></div></div>
+    </div>
+    <button class="scrtog" id="dp11scrtog">📄 Transcript</button>
+  </div>
+
+  <div class="scrbox" id="dp11scrbox">
+    <p><strong>Trainer:</strong> "Let's talk about classroom management and lesson planning. First, teacher roles. As a controller, you manage and direct the class — very teacher-centered. As a facilitator, you guide learning in a student-centered way — this is key in CLT. As a monitor, you observe students during activities and note errors for later."</p>
+    <p>"For interaction patterns, we want to maximize STT — Student Talk Time — and minimize TTT — Teacher Talk Time. Use pair work, group work, and mingle activities to get students talking."</p>
+    <p>"Seating matters too. Rows are teacher-centered and limit student interaction. Horseshoe or U-shape is better for discussions where students need to see each other. Clusters work well for group projects."</p>
+    <p>"Finally, lesson frameworks. PPP stands for Presentation, Practice, Production — stages are fixed. ESA, developed by Jeremy Harmer, stands for Engage, Study, Activate — and the stages can be reordered for flexibility."</p>
+  </div>
+
+  <h4 style="color:var(--ny);font-family:'Playfair Display',serif;font-size:1rem;margin:20px 0 13px">Match each description to the correct concept</h4>
+
+  <div class="smatch" id="dp11match">
+    <div class="sm-item">
+      <div class="sm-scenario">"The teacher manages and directs the class in a teacher-centered way." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which teacher role?</em></div>
+      <select class="sm-select" data-a="Controller" id="dp11ms0">
+        <option value="">— Select —</option>
+        <option>Controller</option><option>Facilitator</option><option>Monitor</option><option>Assessor</option><option>Prompter</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp11mf0"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"The teacher guides learning in a student-centered way — key in CLT." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which teacher role?</em></div>
+      <select class="sm-select" data-a="Facilitator" id="dp11ms1">
+        <option value="">— Select —</option>
+        <option>Controller</option><option>Facilitator</option><option>Monitor</option><option>Organizer</option><option>Resource</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp11mf1"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"This seating arrangement limits student interaction and is teacher-centered." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which arrangement?</em></div>
+      <select class="sm-select" data-a="Rows" id="dp11ms2">
+        <option value="">— Select —</option>
+        <option>Rows</option><option>Horseshoe</option><option>Clusters</option><option>Circle</option><option>Pairs</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp11mf2"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"A lesson framework with fixed stages: Presentation, Practice, Production." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which framework?</em></div>
+      <select class="sm-select" data-a="PPP" id="dp11ms3">
+        <option value="">— Select —</option>
+        <option>PPP</option><option>ESA</option><option>TBL</option><option>CLT</option><option>TPR</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp11mf3"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Developed by Jeremy Harmer; stages can be reordered for flexibility." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which framework?</em></div>
+      <select class="sm-select" data-a="ESA" id="dp11ms4">
+        <option value="">— Select —</option>
+        <option>PPP</option><option>ESA</option><option>TBL</option><option>ALM</option><option>GTM</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp11mf4"></div>
+  </div>
+
+  <button class="chkb" id="dp11chkmatch">Check Answers ✓</button>
+
+  <div class="navb">
+    <button class="nb" data-go="5">← Lesson Frameworks</button>
+    <button class="nb pri" data-go="7">Next: Interview Prep →</button>
+  </div>
+</section>
+
+<!-- SECTION 8: INTERVIEW PREP -->
+<section class="sblock" id="dp11s7">
+  <div class="slabel">Section 8 · Interview Preparation</div>
+  <h2 class="sheading">Interview Practice — <em>PPP Framework</em></h2>
+
+  <div class="co co-info"><span class="co-ico">ℹ️</span><span><strong>Note:</strong> The written exam is <strong>100% multiple choice</strong> (A, B, C, D, E). However, in the <strong>oral interview</strong>, you may be asked to explain key concepts. This section prepares you for that.</span></div>
+
+  <p class="stxt">Practice explaining the <strong>PPP framework</strong> in 60–80 words. Include the meaning of each stage and an example of each.</p>
+
+  <div class="co co-tip"><span class="co-ico">✍️</span><span><strong>Structure your answer:</strong><br>1. Define PPP (what it stands for)<br>2. Explain Presentation stage + example<br>3. Explain Practice stage + example<br>4. Explain Production stage + example</span></div>
+
+  <div style="margin-top:18px">
+    <textarea class="wa" id="dp11wtxt" placeholder="PPP stands for... The first stage, Presentation, is when the teacher... For example,... The second stage, Practice, involves... For example,... Finally, Production is when students..."></textarea>
+    <div class="wcnt" id="dp11wcnt">0 words (aim for 60–80)</div>
+    <button class="wsub" id="dp11wsub">Check My Answer ✓</button>
+    <div class="wfb" id="dp11wfb">
+      <strong>✅ Good practice!</strong><br><br>
+      <strong>Model Answer:</strong><br>
+      "PPP stands for Presentation, Practice, Production — a traditional lesson framework. In the Presentation stage, the teacher introduces new language in context. For example, the teacher explains present perfect using a timeline. In the Practice stage, students do controlled activities focusing on accuracy, such as gap-fill exercises. In the Production stage, students use the language freely in communicative activities like role-plays or discussions, focusing on fluency. The stages are fixed and follow this order."
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="6">← Listening Task</button>
+    <button class="nb pri" data-go="8">Next: 40-Question Exam →</button>
+  </div>
+</section>
+
+<!-- SECTION 9: 40-QUESTION EXAM -->
+<section class="sblock" id="dp11s8">
+  <div class="slabel">Section 9 · Full Exam Simulation</div>
+  <h2 class="sheading">Exam Practice 🎯 — 40 Questions</h2>
+  <p class="stxt">This section simulates the <strong>real exam format</strong>: Multiple choice with 5 options (A, B, C, D, E). Option E is always "None of the above." <strong>Every wrong answer includes a full explanation.</strong></p>
+
+  <div class="co co-or"><span class="co-ico">⏱️</span><span><strong>Exam Conditions:</strong> In the real exam, you have limited time. Try to answer each question in under 45 seconds. Don't second-guess yourself!</span></div>
+
+  <div>
+    <div class="qpr">
+      <span class="qcnt" id="dp11qcnt">1 / 40</span>
+      <div class="qpbar"><div class="qpfill" id="dp11qpf" style="width:2.5%"></div></div>
+      <span class="qcnt" id="dp11qsl">Score: 0</span>
+    </div>
+    <div id="dp11qarea"></div>
+    <div class="qfbm" id="dp11qfb"></div>
+    <button class="qnxt" id="dp11qnxt">Next Question →</button>
+    <div class="spl" id="dp11spl">
+      <div class="scir"><div class="snum" id="dp11sfin">0</div><div class="sden">/ 40</div></div>
+      <div class="smsg" id="dp11smsg">Well done!</div>
+      <div class="ssub" id="dp11ssub">Keep practising!</div>
+      <button class="srty" id="dp11srty">🔄 Retry Quiz</button>
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="7">← Interview Prep</button>
+  </div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="lft">
+  <div class="flo">English<em>Pro</em> · Didactics</div>
+  <div class="ftx">Lesson 11 — Classroom Management · Teacher Roles · Interaction Patterns · PPP · ESA · 40-Question Exam</div>
+</footer>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+(function(){
+'use strict';
+
+/* ══════════════════════════════════════════════════════════════
+   40-QUESTION EXAM DATA — 5 options (A, B, C, D, E = None)
+   ══════════════════════════════════════════════════════════════ */
+var QD=[
+  // Questions 1-10: Classroom Management Basics
+  {q:'Classroom management is best defined as:',opts:['Only disciplining students','Organizing student behaviors and interactions for effective learning','Teaching grammar','Assessing students','None of the above'],a:1,ex:'✅ B is correct. CLASSROOM MANAGEMENT = organizing student behaviors, interactions, and the learning environment.'},
+  {q:'The goal of effective classroom management is to:',opts:['Punish disruptive students','Keep the classroom silent','Engage all students actively while minimizing disruptions','Maximize teacher talk time','None of the above'],a:2,ex:'✅ C is correct. The goal is to ENGAGE ALL STUDENTS actively while minimizing disruptions.'},
+  {q:'Which is the BEST way to establish classroom rules?',opts:['Teacher dictates all rules on day one','Set rules WITH students at the start for ownership','Have no rules for flexibility','Copy rules from another class','None of the above'],a:1,ex:'✅ B is correct. Setting rules WITH students creates OWNERSHIP and buy-in.'},
+  {q:'What is the most effective way to prevent disruptive behavior?',opts:['Strict punishment','Ignoring all misbehavior','Careful lesson planning that keeps students engaged','Sending students out of class','None of the above'],a:2,ex:'✅ C is correct. CAREFUL LESSON PLANNING keeps students engaged and prevents most disruptions.'},
+  {q:'Teacher proximity (moving around the room) helps with:',opts:['Only giving instructions','Only checking written work','Preventing and addressing behavior non-verbally','Avoiding student contact','None of the above'],a:2,ex:'✅ C is correct. PROXIMITY helps prevent behavior issues non-verbally and keeps students on task.'},
+  {q:'ICQs are used to:',opts:['Check student comprehension of instructions','Test grammar knowledge','Assess listening skills','Grade written work','None of the above'],a:0,ex:'✅ A is correct. ICQ = Instruction Checking Questions — used to ensure students understood the instructions.'},
+  {q:'CCQs are used to:',opts:['Check instructions','Check concept understanding of language','Check classroom rules','Check attendance','None of the above'],a:1,ex:'✅ B is correct. CCQ = Concept Checking Questions — used to check understanding of language MEANING.'},
+  {q:'Effective classroom routines help students because:',opts:['They create unpredictability','Students know what to expect and what\'s expected','They eliminate all rules','They increase teacher talk time','None of the above'],a:1,ex:'✅ B is correct. ROUTINES help students know what to expect, reducing anxiety and disruptions.'},
+  {q:'A positive classroom climate is built through:',opts:['Strict discipline only','Building rapport and mutual respect','Avoiding interaction with students','Only focusing on grammar','None of the above'],a:1,ex:'✅ B is correct. A POSITIVE CLIMATE is built through rapport, respect, and supportive relationships.'},
+  {q:'Which principle is key to classroom management?',opts:['Punishment is more effective than prevention','Prevention is better than cure','Students should manage themselves completely','Ignore all minor issues','None of the above'],a:1,ex:'✅ B is correct. PREVENTION IS BETTER THAN CURE — good planning prevents most problems.'},
+
+  // Questions 11-20: Teacher Roles
+  {q:'When the teacher manages and directs the class in a teacher-centered way, they are acting as:',opts:['Facilitator','Monitor','Controller','Resource','None of the above'],a:2,ex:'✅ C is correct. CONTROLLER = teacher-centered; manages and directs what happens.'},
+  {q:'In CLT, the primary teacher role is:',opts:['Controller','Drillmaster','Facilitator','Lecturer','None of the above'],a:2,ex:'✅ C is correct. FACILITATOR is the key role in CLT — guiding student-centered learning.'},
+  {q:'When the teacher observes students during pair work and notes errors for later, they are acting as:',opts:['Controller','Assessor','Monitor','Prompter','None of the above'],a:2,ex:'✅ C is correct. MONITOR = observing students during activities and noting errors for delayed correction.'},
+  {q:'When the teacher evaluates student performance and provides feedback, they are acting as:',opts:['Controller','Assessor','Resource','Participant','None of the above'],a:1,ex:'✅ B is correct. ASSESSOR = evaluates performance and provides corrective feedback.'},
+  {q:'When the teacher sets up groups and organizes activities, they are acting as:',opts:['Controller','Prompter','Organizer','Participant','None of the above'],a:2,ex:'✅ C is correct. ORGANIZER = sets up activities, forms groups, gives task instructions.'},
+  {q:'When the teacher encourages hesitant students and provides gentle hints, they are acting as:',opts:['Controller','Prompter','Monitor','Assessor','None of the above'],a:1,ex:'✅ B is correct. PROMPTER = encourages students and provides gentle hints when they\'re stuck.'},
+  {q:'When the teacher joins a role-play as an equal partner, they are acting as:',opts:['Controller','Assessor','Participant','Resource','None of the above'],a:2,ex:'✅ C is correct. PARTICIPANT = joins activities alongside students as an equal.'},
+  {q:'When the teacher is available to answer questions and provide information, they are acting as:',opts:['Controller','Facilitator','Participant','Resource','None of the above'],a:3,ex:'✅ D is correct. RESOURCE = available to help and provide information when students need it.'},
+  {q:'The role most associated with Audio-Lingual Method is:',opts:['Facilitator','Counselor','Controller/Model','Silent observer','None of the above'],a:2,ex:'✅ C is correct. In ALM, the teacher is a CONTROLLER/MODEL — directs drills and models correct language.'},
+  {q:'The role most associated with Community Language Learning is:',opts:['Controller','Counselor','Assessor','Silent teacher','None of the above'],a:1,ex:'✅ B is correct. In CLL, the teacher acts as a COUNSELOR — supportive, reducing anxiety.'},
+
+  // Questions 21-30: Interaction Patterns & Seating
+  {q:'T-Ss refers to:',opts:['One student talking to teacher','Teacher talking to whole class','Students talking to each other','Pair work','None of the above'],a:1,ex:'✅ B is correct. T-Ss = Teacher to StudentS = teacher talking to the whole class.'},
+  {q:'S-S refers to:',opts:['Student to teacher','Students to students (groups)','Student to student (pairs)','Teacher to student','None of the above'],a:2,ex:'✅ C is correct. S-S = Student to Student = pair work.'},
+  {q:'STT stands for:',opts:['Student Talking Time','Student Talk Time','Standard Teaching Time','Silent Teaching Time','None of the above'],a:1,ex:'✅ B is correct. STT = Student Talk Time — time students spend talking.'},
+  {q:'TTT stands for:',opts:['Total Teaching Time','Test Taking Time','Teacher Talk Time','Time To Talk','None of the above'],a:2,ex:'✅ C is correct. TTT = Teacher Talk Time — time the teacher spends talking.'},
+  {q:'In communicative teaching, we want to:',opts:['Increase TTT and decrease STT','Keep TTT and STT equal','Increase STT and decrease TTT','Eliminate all student talk','None of the above'],a:2,ex:'✅ C is correct. We want to INCREASE STT and DECREASE TTT — students learn by using language.'},
+  {q:'An information gap activity involves:',opts:['Students having the same information','Students having different information and communicating to complete a task','Only teacher-led instruction','Silent reading','None of the above'],a:1,ex:'✅ B is correct. INFORMATION GAP = students have DIFFERENT information and must communicate.'},
+  {q:'A mingle activity involves:',opts:['Students sitting in rows','Students staying in fixed pairs','Students moving around and talking to multiple classmates','Teacher lecturing','None of the above'],a:2,ex:'✅ C is correct. MINGLE = students move around talking to many different classmates.'},
+  {q:'Which seating arrangement is most teacher-centered and limits S-S interaction?',opts:['Horseshoe','Clusters','Rows','Circle','None of the above'],a:2,ex:'✅ C is correct. ROWS are teacher-centered and limit student-student interaction.'},
+  {q:'Which seating arrangement is best for whole-class discussions?',opts:['Rows','Horseshoe/U-shape','Individual desks','Back-to-back','None of the above'],a:1,ex:'✅ B is correct. HORSESHOE/U-SHAPE is best for discussions — all students can see each other.'},
+  {q:'Clusters/group seating is best for:',opts:['Lectures and presentations','Tests and exams','Group work and collaborative projects','Teacher-centered instruction','None of the above'],a:2,ex:'✅ C is correct. CLUSTERS are best for GROUP WORK and collaboration.'},
+
+  // Questions 31-40: Lesson Planning & Frameworks
+  {q:'A lesson plan should include all EXCEPT:',opts:['Objectives','Materials','Timing','Student personal information','None of the above'],a:3,ex:'✅ D is correct. Student personal information is NOT part of a lesson plan.'},
+  {q:'PPP stands for:',opts:['Practice, Presentation, Production','Presentation, Practice, Production','Production, Practice, Presentation','Planning, Preparing, Presenting','None of the above'],a:1,ex:'✅ B is correct. PPP = Presentation, Practice, Production.'},
+  {q:'In PPP, the PRESENTATION stage involves:',opts:['Free practice by students','Teacher introduces new language in context','Students role-play freely','Error correction only','None of the above'],a:1,ex:'✅ B is correct. PRESENTATION = teacher introduces new language in context.'},
+  {q:'In PPP, the PRACTICE stage focuses on:',opts:['Free communication','Accuracy through controlled activities','Only listening','Student presentations','None of the above'],a:1,ex:'✅ B is correct. PRACTICE = controlled activities focusing on ACCURACY.'},
+  {q:'In PPP, the PRODUCTION stage focuses on:',opts:['Teacher presentation','Controlled drilling','Fluency and free use of language','Grammar explanation','None of the above'],a:2,ex:'✅ C is correct. PRODUCTION = free practice focusing on FLUENCY.'},
+  {q:'ESA was developed by:',opts:['Noam Chomsky','Stephen Krashen','Jeremy Harmer','Michael West','None of the above'],a:2,ex:'✅ C is correct. ESA was developed by Jeremy HARMER.'},
+  {q:'ESA stands for:',opts:['Engage, Study, Activate','Explain, Show, Apply','Elicit, Study, Assess','Engage, Speak, Analyze','None of the above'],a:0,ex:'✅ A is correct. ESA = Engage, Study, Activate.'},
+  {q:'A key difference between PPP and ESA is:',opts:['PPP is newer than ESA','ESA stages are flexible and can be reordered; PPP is fixed','PPP has more stages than ESA','ESA is only for grammar','None of the above'],a:1,ex:'✅ B is correct. ESA stages are FLEXIBLE; PPP stages are FIXED.'},
+  {q:'The ENGAGE stage in ESA involves:',opts:['Teaching grammar rules','Getting students interested and emotionally engaged','Controlled practice','Assessment','None of the above'],a:1,ex:'✅ B is correct. ENGAGE = getting students interested and emotionally engaged in the topic.'},
+  {q:'A good lesson objective should be:',opts:['Vague and general','Focused on what the teacher will do','SMART: Specific, Measurable, Achievable, Relevant, Time-bound','Identical for every lesson','None of the above'],a:2,ex:'✅ C is correct. Good objectives are SMART and state what STUDENTS will do.'}
+];
+
+var curSec=0,qCur=0,qScore=0,qAns=false,audioPlaying=false,audioTimer=null;
+
+function goToSection(n){
+  document.querySelectorAll('#dp-l11 .sblock').forEach(function(b){b.classList.remove('vis')});
+  var sec=document.getElementById('dp11s'+n);
+  if(sec)sec.classList.add('vis');
+  curSec=n;
+  updateDots();
+  document.getElementById('dp-l11').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function updateDots(){
+  document.querySelectorAll('#dp-l11 .snavdot').forEach(function(d){
+    var i=parseInt(d.getAttribute('data-s'));
+    d.classList.remove('active','done');
+    if(i<curSec)d.classList.add('done');
+    if(i===curSec)d.classList.add('active');
+  });
+}
+
+document.querySelectorAll('#dp-l11 .snavdot').forEach(function(d){
+  d.addEventListener('click',function(){goToSection(parseInt(d.getAttribute('data-s')))});
+});
+
+document.querySelectorAll('#dp-l11 .nb[data-go]').forEach(function(btn){
+  btn.addEventListener('click',function(){goToSection(parseInt(btn.getAttribute('data-go')))});
+});
+
+document.querySelectorAll('#dp-l11 .mcard').forEach(function(c){
+  c.addEventListener('click',function(){c.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l11 .fbox').forEach(function(f){
+  f.addEventListener('click',function(){f.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l11 .tabs').forEach(function(tg){
+  tg.querySelectorAll('.tab').forEach(function(tab){
+    tab.addEventListener('click',function(){
+      var pid=tab.getAttribute('data-tab');
+      tg.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});
+      tab.classList.add('active');
+      tg.parentElement.querySelectorAll('.tabpanel').forEach(function(p){p.classList.remove('vis')});
+      var pnl=document.getElementById(pid);
+      if(pnl)pnl.classList.add('vis');
+    });
+  });
+});
+
+/* Listening Match Check */
+var chkmatch=document.getElementById('dp11chkmatch');
+if(chkmatch)chkmatch.addEventListener('click',function(){
+  for(var i=0;i<5;i++){
+    var sel=document.getElementById('dp11ms'+i);
+    var fb=document.getElementById('dp11mf'+i);
+    if(!sel)continue;
+    var ans=sel.getAttribute('data-a'),giv=sel.value;
+    var ok=giv===ans;
+    sel.classList.toggle('ok',ok);sel.classList.toggle('bad',!ok);
+    fb.textContent=ok?'✅ Correct!':'❌ Answer: '+ans;
+    fb.classList.toggle('ok',ok);fb.classList.toggle('bad',!ok);
+  }
+});
+
+var pbtn=document.getElementById('dp11playbtn'),apf=document.getElementById('dp11apf');
+var audioTxt="Let's talk about classroom management and lesson planning. First, teacher roles. As a controller, you manage and direct the class — very teacher-centered. As a facilitator, you guide learning in a student-centered way — this is key in CLT. As a monitor, you observe students during activities and note errors for later. For interaction patterns, we want to maximize STT — Student Talk Time — and minimize TTT — Teacher Talk Time. Use pair work, group work, and mingle activities to get students talking. Seating matters too. Rows are teacher-centered and limit student interaction. Horseshoe or U-shape is better for discussions where students need to see each other. Clusters work well for group projects. Finally, lesson frameworks. PPP stands for Presentation, Practice, Production — stages are fixed. ESA, developed by Jeremy Harmer, stands for Engage, Study, Activate — and the stages can be reordered for flexibility.";
+
+if(pbtn)pbtn.addEventListener('click',function(){
+  if(audioPlaying){window.speechSynthesis&&window.speechSynthesis.cancel();clearInterval(audioTimer);audioPlaying=false;pbtn.textContent='▶';if(apf)apf.style.width='0%';return;}
+  if(!window.speechSynthesis)return;
+  var u=new SpeechSynthesisUtterance(audioTxt);u.lang='en-GB';u.rate=0.9;
+  var vv=window.speechSynthesis.getVoices(),v=vv.find(function(x){return x.lang==='en-GB'})||vv.find(function(x){return x.lang.startsWith('en')});
+  if(v)u.voice=v;
+  audioPlaying=true;pbtn.textContent='⏸';
+  var w=0;audioTimer=setInterval(function(){w=Math.min(100,w+0.28);if(apf)apf.style.width=w+'%';if(w>=100)clearInterval(audioTimer)},500);
+  u.onend=function(){audioPlaying=false;pbtn.textContent='▶';clearInterval(audioTimer)};
+  window.speechSynthesis.speak(u);
+});
+
+var stog=document.getElementById('dp11scrtog'),sbox=document.getElementById('dp11scrbox');
+if(stog)stog.addEventListener('click',function(){sbox&&sbox.classList.toggle('show')});
+
+var wtxt=document.getElementById('dp11wtxt'),wcnt=document.getElementById('dp11wcnt'),wsub=document.getElementById('dp11wsub'),wfb=document.getElementById('dp11wfb');
+if(wtxt)wtxt.addEventListener('input',function(){
+  var wc=wtxt.value.trim()===''?0:wtxt.value.trim().split(/\s+/).length;
+  if(wcnt){wcnt.textContent=wc+' words (aim for 60–80)';wcnt.style.color=wc>=60?'#2E7D52':'#7A7A7A'}
+});
+if(wsub)wsub.addEventListener('click',function(){
+  if(!wtxt||wtxt.value.trim().split(/\s+/).length<20){alert('Please write at least 20 words!');return}
+  if(wfb)wfb.classList.add('show');wsub.textContent='✅ Checked!';wsub.style.background='#2E7D52';
+});
+
+/* 40-Question Quiz with A,B,C,D,E */
+function renderQ(){
+  var d=QD[qCur],area=document.getElementById('dp11qarea'),fb=document.getElementById('dp11qfb'),nxt=document.getElementById('dp11qnxt');
+  fb.className='qfbm';nxt.classList.remove('show');qAns=false;
+  var pf=document.getElementById('dp11qpf');
+  if(document.getElementById('dp11qcnt'))document.getElementById('dp11qcnt').textContent=(qCur+1)+' / '+QD.length;
+  if(pf)pf.style.width=((qCur+1)/QD.length*100)+'%';
+  var labels=['A','B','C','D','E'];
+  var html='<div class="qq"><span class="qqn">'+(qCur+1)+'</span>'+d.q+'</div><div class="qopts">';
+  d.opts.forEach(function(o,i){html+='<button class="qopt" data-i="'+i+'"><span class="ql">'+labels[i]+'.</span> '+o+'</button>'});
+  html+='</div>';area.innerHTML=html;
+  area.querySelectorAll('.qopt').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      if(qAns)return;qAns=true;
+      var ch=parseInt(btn.getAttribute('data-i'));
+      area.querySelectorAll('.qopt').forEach(function(b){b.disabled=true});
+      if(ch===d.a){btn.classList.add('qco');qScore++;if(document.getElementById('dp11qsl'))document.getElementById('dp11qsl').textContent='Score: '+qScore;fb.textContent=d.ex;fb.className='qfbm show ok'}
+      else{btn.classList.add('qwr');area.querySelectorAll('.qopt')[d.a].classList.add('qco');fb.innerHTML='❌ Incorrect. '+d.ex;fb.className='qfbm show bad'}
+      nxt.classList.add('show');nxt.textContent=qCur<QD.length-1?'Next Question →':'See Results 🎯';
+    });
+  });
+}
+
+var qnxt=document.getElementById('dp11qnxt');
+if(qnxt)qnxt.addEventListener('click',function(){qCur++;if(qCur>=QD.length)showScore();else renderQ()});
+
+function showScore(){
+  var area=document.getElementById('dp11qarea'),fb=document.getElementById('dp11qfb'),nxt=document.getElementById('dp11qnxt'),pr=document.querySelector('#dp-l11 .qpr'),pl=document.getElementById('dp11spl');
+  if(area)area.style.display='none';if(fb)fb.style.display='none';if(nxt)nxt.style.display='none';if(pr)pr.style.display='none';if(pl)pl.classList.add('show');
+  var fin=document.getElementById('dp11sfin');if(fin)fin.textContent=qScore;
+  var pct=qScore/QD.length,msg,sub;
+  if(pct>=0.9){msg='Excellent! 🏆';sub='You\'re exam-ready!'}
+  else if(pct>=0.75){msg='Great Work! 🌟';sub='Review the questions you missed.'}
+  else if(pct>=0.6){msg='Good Progress! 👍';sub='Study the theory sections again.'}
+  else if(pct>=0.4){msg='Keep Practising! 💪';sub='Focus on the concepts you struggled with.'}
+  else{msg='More Study Needed 📚';sub='Review all sections before retrying.'}
+  if(document.getElementById('dp11smsg'))document.getElementById('dp11smsg').textContent=msg;
+  if(document.getElementById('dp11ssub'))document.getElementById('dp11ssub').textContent=sub;
+}
+
+var srty=document.getElementById('dp11srty');
+if(srty)srty.addEventListener('click',function(){
+  qScore=0;qCur=0;qAns=false;
+  var area=document.getElementById('dp11qarea'),fb=document.getElementById('dp11qfb'),nxt=document.getElementById('dp11qnxt'),pr=document.querySelector('#dp-l11 .qpr'),pl=document.getElementById('dp11spl');
+  if(area){area.style.display='block';area.innerHTML=''}if(fb){fb.style.display='block';fb.className='qfbm'}if(nxt)nxt.style.display='none';if(pr)pr.style.display='flex';if(pl)pl.classList.remove('show');
+  if(document.getElementById('dp11qsl'))document.getElementById('dp11qsl').textContent='Score: 0';
+  renderQ();
+});
+
+renderQ();
+if(window.speechSynthesis){window.speechSynthesis.getVoices();window.speechSynthesis.onvoiceschanged=function(){window.speechSynthesis.getVoices()}}
+})();
+</script>
+
+<!-- AUTO-RESIZE (MUST BE LAST) -->
+<script>
+(function(){
+  function sendHeight(){var h=document.documentElement.scrollHeight||document.body.scrollHeight;window.parent.postMessage({epHeight:h},'*')}
+  sendHeight();window.addEventListener('load',sendHeight);window.addEventListener('resize',sendHeight);
+  var mo=new MutationObserver(sendHeight);mo.observe(document.body,{childList:true,subtree:true,attributes:true});
+})();
+</script>
+
+</body>
+</html>
