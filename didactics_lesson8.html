@@ -1,0 +1,1109 @@
+<!--============================================================
+     EnglishPro · Didactics Series · Lesson 8
+     The Learner: Styles, Intelligences, Motivation & Strategies
+     GitHub hosted — embedded in Blogger via iframe
+     100% self-contained — no external JS dependencies
+     UPDATED FORMAT: Relevant listening + 40-MCQ exam section
+     ============================================================-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Learner: Styles, Intelligences, Motivation & Strategies | EnglishPro Didactics Series</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;family=DM+Sans:wght@300;400;500;600&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{margin:0;padding:0;background:#FAFAF7;direction:ltr;text-align:left}
+
+#dp-l8{
+  --ny:#0D2B4E;--ny2:#1A4070;
+  --go:#C8933A;--go2:#E8B86D;--gop:#FDF6EC;
+  --cr:#FAFAF7;--wh:#fff;
+  --ink:#1A1A1A;--ink2:#3D3D3D;--mu:#7A7A7A;
+  --bd:#E2DDD6;--bdl:#F0EDE8;
+  --gr:#2E7D52;--grb:#EBF5EF;
+  --rd:#C0392B;--rdb:#FDECEA;
+  --bl:#1E5FA8;--blb:#EBF2FB;
+  --pu:#7C3AED;--pub:#F3F0FF;
+  --te:#0E7490;--teb:#ECFEFF;
+  --or:#D97706;--orb:#FEF3C7;
+  --pk:#DB2777;--pkb:#FDF2F8;
+  --sh1:0 2px 8px rgba(13,43,78,.07);
+  --sh2:0 6px 20px rgba(13,43,78,.10);
+  --r:12px;--rl:20px;
+  font-family:'DM Sans',sans-serif;
+  color:var(--ink);background:var(--cr);
+  line-height:1.7;-webkit-font-smoothing:antialiased;
+  display:block;overflow:hidden;direction:ltr;text-align:left
+}
+#dp-l8 *,#dp-l8 *::before,#dp-l8 *::after{box-sizing:border-box;margin:0;padding:0}
+#dp-l8 button{cursor:pointer;font-family:'DM Sans',sans-serif;border:none;background:none}
+#dp-l8 textarea,#dp-l8 input,#dp-l8 select{font-family:'DM Sans',sans-serif}
+
+/* HERO */
+#dp-l8 .lhero{background:linear-gradient(150deg,#0a1f38 0%,#0D2B4E 50%,#122e52 100%);padding:48px 24px 40px;position:relative;overflow:hidden;border-radius:var(--rl) var(--rl) 0 0}
+#dp-l8 .lhero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%,rgba(200,147,58,.08) 0%,transparent 60%),radial-gradient(circle at 80% 20%,rgba(124,58,237,.06) 0%,transparent 50%);pointer-events:none}
+#dp-l8 .lhero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,147,58,.4),transparent)}
+#dp-l8 .lhero-in{max-width:720px;margin:0 auto;position:relative;z-index:1}
+#dp-l8 .lvlbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,147,58,.12);border:1px solid rgba(200,147,58,.28);color:var(--go2);font-size:.68rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:18px}
+#dp-l8 .ltitle{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:900;color:#F5F0E8;line-height:1.15;margin-bottom:10px;letter-spacing:-.02em}
+#dp-l8 .ltitle em{color:var(--go);font-style:italic}
+#dp-l8 .lsub{font-size:.9rem;color:rgba(245,240,232,.62);margin-bottom:22px;max-width:520px;line-height:1.6}
+#dp-l8 .spills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px}
+#dp-l8 .spill{font-size:.67rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 11px;border-radius:100px}
+#dp-l8 .sp-th{background:rgba(124,58,237,.25);color:#C4B5FD}
+#dp-l8 .sp-ex{background:rgba(30,95,168,.25);color:#7DB8F0}
+#dp-l8 .sp-qu{background:rgba(200,147,58,.25);color:var(--go2)}
+#dp-l8 .sp-ic{background:rgba(46,125,82,.25);color:#6BCFA0}
+
+/* Nav dots */
+#dp-l8 .snav{display:flex;align-items:center;gap:5px;flex-wrap:wrap;padding-top:20px;border-top:1px solid rgba(255,255,255,.08)}
+#dp-l8 .snavdot{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;font-size:.7rem;font-weight:700;border:2px solid rgba(255,255,255,.18);color:rgba(255,255,255,.32);cursor:pointer;transition:all .25s;flex-shrink:0}
+#dp-l8 .snavdot.done{border-color:var(--gr);background:var(--gr);color:#fff}
+#dp-l8 .snavdot.active{border-color:var(--go);background:var(--go);color:#fff}
+#dp-l8 .snavsep{width:16px;height:2px;background:rgba(255,255,255,.1);border-radius:1px;flex-shrink:0}
+#dp-l8 .snavlbl{font-size:.63rem;color:rgba(245,240,232,.38);margin-left:6px}
+
+/* BODY */
+#dp-l8 .lbody{max-width:720px;margin:0 auto;padding:32px 20px 64px;background:var(--cr)}
+#dp-l8 .sblock{background:var(--wh);border:1px solid var(--bdl);border-radius:var(--rl);padding:28px;margin-bottom:24px;display:none;animation:dp8up .35s ease both;box-shadow:var(--sh1)}
+#dp-l8 .sblock.vis{display:block}
+@keyframes dp8up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+#dp-l8 .slabel{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--go);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+#dp-l8 .slabel::after{content:'';flex:1;height:1px;background:var(--bdl)}
+#dp-l8 .sheading{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ny);margin-bottom:16px;line-height:1.25}
+#dp-l8 .sheading em{color:var(--go);font-style:italic}
+#dp-l8 .stxt{font-size:.9rem;color:var(--ink2);margin-bottom:16px;line-height:1.65}
+
+/* Scene */
+#dp-l8 .scene{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:20px;margin-bottom:20px;position:relative;overflow:hidden}
+#dp-l8 .scene::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(200,147,58,.08),transparent 60%);pointer-events:none}
+#dp-l8 .s-ico{font-size:1.8rem;margin-bottom:8px;position:relative;z-index:1}
+#dp-l8 .s-t{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#F5F0E8;position:relative;z-index:1;margin-bottom:5px}
+#dp-l8 .s-d{font-size:.83rem;color:rgba(245,240,232,.65);position:relative;z-index:1;line-height:1.55}
+
+/* Callouts */
+#dp-l8 .co{display:flex;gap:10px;padding:13px 15px;border-radius:var(--r);margin:14px 0;font-size:.855rem;line-height:1.6}
+#dp-l8 .co-tip{background:var(--gop);border:1px solid rgba(200,147,58,.2);color:var(--ink2)}
+#dp-l8 .co-info{background:var(--blb);border:1px solid rgba(30,95,168,.15);color:var(--ink2)}
+#dp-l8 .co-pur{background:var(--pub);border:1px solid rgba(124,58,237,.15);color:var(--ink2)}
+#dp-l8 .co-teal{background:var(--teb);border:1px solid rgba(14,116,144,.15);color:var(--ink2)}
+#dp-l8 .co-or{background:var(--orb);border:1px solid rgba(217,119,6,.15);color:var(--ink2)}
+#dp-l8 .co-pk{background:var(--pkb);border:1px solid rgba(219,39,119,.15);color:var(--ink2)}
+#dp-l8 .co-ico{font-size:1rem;flex-shrink:0;margin-top:1px}
+
+/* Gbox */
+#dp-l8 .gbox{border-radius:0 var(--r) var(--r) 0;padding:18px 20px;margin:18px 0}
+#dp-l8 .gbox-bl{background:var(--blb);border:1px solid rgba(30,95,168,.2);border-left:4px solid var(--bl)}
+#dp-l8 .gbox-go{background:var(--gop);border:1px solid rgba(200,147,58,.2);border-left:4px solid var(--go)}
+#dp-l8 .gbox-gr{background:var(--grb);border:1px solid rgba(46,125,82,.2);border-left:4px solid var(--gr)}
+#dp-l8 .gbox-pu{background:var(--pub);border:1px solid rgba(124,58,237,.15);border-left:4px solid var(--pu)}
+#dp-l8 .gbox-te{background:var(--teb);border:1px solid rgba(14,116,144,.15);border-left:4px solid var(--te)}
+#dp-l8 .gbox-rd{background:var(--rdb);border:1px solid rgba(192,57,43,.15);border-left:4px solid var(--rd)}
+#dp-l8 .gbox-pk{background:var(--pkb);border:1px solid rgba(219,39,119,.15);border-left:4px solid var(--pk)}
+#dp-l8 .gbox h4{font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:11px}
+#dp-l8 .gbox-bl h4{color:var(--bl)}
+#dp-l8 .gbox-go h4{color:var(--go)}
+#dp-l8 .gbox-gr h4{color:var(--gr)}
+#dp-l8 .gbox-pu h4{color:var(--pu)}
+#dp-l8 .gbox-te h4{color:var(--te)}
+#dp-l8 .gbox-rd h4{color:var(--rd)}
+#dp-l8 .gbox-pk h4{color:var(--pk)}
+#dp-l8 .grule{font-family:'DM Mono',monospace;font-size:.86rem;color:var(--ny);background:rgba(255,255,255,.65);padding:9px 14px;border-radius:7px;margin-bottom:7px;line-height:1.6}
+#dp-l8 .grule span{color:var(--bl);font-weight:600}
+#dp-l8 .grule em{color:var(--go);font-style:normal;font-weight:600}
+#dp-l8 .grule strong{color:var(--gr);font-weight:700}
+
+/* Method cards */
+#dp-l8 .mcards{display:flex;flex-direction:column;gap:12px;margin:20px 0}
+#dp-l8 .mcard{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:18px;cursor:pointer;transition:all .22s}
+#dp-l8 .mcard:hover{border-color:var(--go);transform:translateX(4px)}
+#dp-l8 .mcard.fl{background:var(--gop);border-color:var(--go)}
+#dp-l8 .mc-head{display:flex;align-items:center;gap:12px}
+#dp-l8 .mc-icon{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;color:#fff}
+#dp-l8 .mc-title{font-size:.95rem;font-weight:700;color:var(--ny)}
+#dp-l8 .mc-sub{font-size:.75rem;color:var(--mu)}
+#dp-l8 .mc-hint{font-size:.75rem;color:var(--mu);font-style:italic;margin-top:6px}
+#dp-l8 .mc-body{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--bdl)}
+#dp-l8 .mcard.fl .mc-hint{display:none}
+#dp-l8 .mcard.fl .mc-body{display:block}
+#dp-l8 .mc-body p{font-size:.85rem;color:var(--ink2);line-height:1.6;margin-bottom:8px}
+#dp-l8 .mc-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+#dp-l8 .mc-box{background:var(--wh);border-radius:8px;padding:10px 12px}
+#dp-l8 .mc-box h5{font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+#dp-l8 .mc-box.pros h5{color:var(--gr)}
+#dp-l8 .mc-box.cons h5{color:var(--rd)}
+#dp-l8 .mc-box p{font-size:.8rem;color:var(--ink2);margin:0;line-height:1.5}
+
+/* Tables */
+#dp-l8 .gtbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.82rem}
+#dp-l8 .gtbl th{background:var(--ny);color:#F5F0E8;padding:9px 10px;text-align:left;font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+#dp-l8 .gtbl th:first-child{border-radius:var(--r) 0 0 0}
+#dp-l8 .gtbl th:last-child{border-radius:0 var(--r) 0 0}
+#dp-l8 .gtbl td{padding:8px 10px;border-bottom:1px solid var(--bdl);color:var(--ink2);vertical-align:top}
+#dp-l8 .gtbl tr:nth-child(even) td{background:var(--cr)}
+#dp-l8 .tbl-b{color:var(--bl);font-weight:600}
+#dp-l8 .tbl-g{color:var(--go);font-weight:600}
+#dp-l8 .tbl-gr{color:var(--gr);font-weight:600}
+#dp-l8 .tbl-pu{color:var(--pu);font-weight:600}
+#dp-l8 .tbl-rd{color:var(--rd);font-weight:600}
+#dp-l8 .tbl-te{color:var(--te);font-weight:600}
+#dp-l8 .tbl-pk{color:var(--pk);font-weight:600}
+
+/* Tabs */
+#dp-l8 .tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+#dp-l8 .tab{padding:9px 18px;border-radius:var(--r);font-size:.82rem;font-weight:600;background:var(--cr);border:2px solid var(--bd);color:var(--ink2);cursor:pointer;transition:all .2s}
+#dp-l8 .tab:hover{border-color:var(--go);color:var(--go)}
+#dp-l8 .tab.active{background:var(--ny);border-color:var(--ny);color:#fff}
+#dp-l8 .tabpanel{display:none}
+#dp-l8 .tabpanel.vis{display:block}
+
+/* Scenario Match */
+#dp-l8 .smatch{margin:20px 0}
+#dp-l8 .sm-item{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;align-items:center}
+#dp-l8 .sm-scenario{background:var(--blb);border:1px solid rgba(30,95,168,.15);border-radius:var(--r);padding:12px 14px;font-size:.85rem;color:var(--ink2);line-height:1.5}
+#dp-l8 .sm-select{border:2px solid var(--bd);border-radius:var(--r);padding:9px 12px;font-size:.85rem;color:var(--ink2);background:var(--cr);width:100%;font-family:'DM Sans',sans-serif;outline:none;transition:border-color .2s;cursor:pointer}
+#dp-l8 .sm-select:focus{border-color:var(--go)}
+#dp-l8 .sm-select.ok{border-color:var(--gr);background:var(--grb);color:var(--gr)}
+#dp-l8 .sm-select.bad{border-color:var(--rd);background:var(--rdb);color:var(--rd)}
+#dp-l8 .smfb{font-size:.82rem;font-weight:600;padding:10px 14px;border-radius:var(--r);margin-top:4px;display:none}
+#dp-l8 .smfb.ok{background:var(--grb);color:var(--gr);display:block}
+#dp-l8 .smfb.bad{background:var(--rdb);color:var(--rd);display:block}
+
+/* Stask */
+#dp-l8 .stask{border-radius:var(--r);padding:20px;margin:14px 0;border:1.5px solid}
+#dp-l8 .stask-gr{background:var(--grb);border-color:rgba(46,125,82,.22)}
+#dp-l8 .stask-bl{background:var(--blb);border-color:rgba(30,95,168,.18)}
+#dp-l8 .stask-pu{background:var(--pub);border-color:rgba(124,58,237,.18)}
+#dp-l8 .sth{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+#dp-l8 .stico{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;color:#fff}
+#dp-l8 .stitle{font-size:.9rem;font-weight:600}
+#dp-l8 .stitle-gr{color:var(--gr)}
+#dp-l8 .stitle-bl{color:var(--bl)}
+#dp-l8 .stitle-pu{color:var(--pu)}
+#dp-l8 .sinstr{font-size:.855rem;color:var(--ink2);line-height:1.6;margin-bottom:10px}
+#dp-l8 .smodel{background:var(--wh);border-radius:8px;padding:13px 15px;font-size:.84rem;color:var(--ny);line-height:1.9}
+#dp-l8 .em-gr{color:var(--gr);font-weight:600;font-style:normal}
+#dp-l8 .em-bl{color:var(--bl);font-weight:600;font-style:normal}
+#dp-l8 .em-go{color:var(--go);font-weight:600;font-style:normal}
+#dp-l8 .em-pu{color:var(--pu);font-weight:600;font-style:normal}
+#dp-l8 .em-rd{color:var(--rd);font-weight:600;font-style:normal}
+
+/* Audio */
+#dp-l8 .aplayer{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px;margin:14px 0;flex-wrap:wrap}
+#dp-l8 .abig{width:48px;height:48px;border-radius:50%;background:var(--go);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;transition:all .2s;cursor:pointer;border:none;box-shadow:0 4px 14px rgba(200,147,58,.4)}
+#dp-l8 .abig:hover{background:var(--go2);transform:scale(1.06)}
+#dp-l8 .ainfo{flex:1;min-width:160px}
+#dp-l8 .at{font-size:.87rem;font-weight:600;color:#F5F0E8;margin-bottom:3px}
+#dp-l8 .as{font-size:.72rem;color:rgba(245,240,232,.55)}
+#dp-l8 .apbar{height:4px;background:rgba(255,255,255,.14);border-radius:2px;margin-top:9px;overflow:hidden}
+#dp-l8 .apfill{height:100%;background:var(--go);width:0%;border-radius:2px;transition:width .3s}
+#dp-l8 .scrtog{background:rgba(255,255,255,.1);color:rgba(245,240,232,.78);font-size:.72rem;font-weight:600;padding:5px 11px;border-radius:100px;border:1px solid rgba(255,255,255,.15);cursor:pointer;transition:all .2s;flex-shrink:0}
+#dp-l8 .scrtog:hover{background:rgba(255,255,255,.2)}
+#dp-l8 .scrbox{background:var(--cr);border:1px solid var(--bd);border-radius:var(--r);padding:18px;margin-top:10px;display:none}
+#dp-l8 .scrbox.show{display:block}
+#dp-l8 .scrbox p{font-size:.875rem;color:var(--ink2);margin-bottom:7px;line-height:1.7}
+
+/* Writing */
+#dp-l8 .wa{width:100%;min-height:130px;border:2px solid var(--bd);border-radius:var(--r);padding:14px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--ink);background:var(--cr);resize:vertical;outline:none;transition:border-color .2s;line-height:1.7}
+#dp-l8 .wa:focus{border-color:var(--go)}
+#dp-l8 .wa::placeholder{color:var(--mu)}
+#dp-l8 .wcnt{font-size:.72rem;color:var(--mu);text-align:right;margin-top:5px}
+#dp-l8 .wsub{margin-top:11px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none}
+#dp-l8 .wsub:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l8 .wfb{display:none;margin-top:13px;background:var(--grb);border:1.5px solid rgba(46,125,82,.22);border-radius:var(--r);padding:15px;font-size:.855rem;color:var(--gr);line-height:1.65}
+#dp-l8 .wfb.show{display:block}
+
+/* Quiz */
+#dp-l8 .qpr{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+#dp-l8 .qpbar{flex:1;height:6px;background:var(--bd);border-radius:3px;overflow:hidden;margin:0 11px}
+#dp-l8 .qpfill{height:100%;background:linear-gradient(90deg,var(--go),var(--go2));border-radius:3px;transition:width .4s ease}
+#dp-l8 .qcnt{font-size:.77rem;font-weight:600;color:var(--mu)}
+#dp-l8 .qq{font-size:1rem;font-weight:600;color:var(--ny);margin-bottom:16px;line-height:1.5}
+#dp-l8 .qqn{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--go);color:#fff;font-size:.75rem;font-weight:700;margin-right:7px;flex-shrink:0;vertical-align:middle}
+#dp-l8 .qopts{display:flex;flex-direction:column;gap:9px}
+#dp-l8 .qopt{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:13px 16px;font-size:.9rem;color:var(--ink2);text-align:left;transition:all .2s;display:flex;align-items:center;gap:9px;cursor:pointer}
+#dp-l8 .qopt .ql{font-weight:700;color:var(--ny);min-width:18px}
+#dp-l8 .qopt:hover:not([disabled]){border-color:var(--go);background:var(--gop);transform:translateX(3px)}
+#dp-l8 .qopt.qco{border-color:var(--gr)!important;background:var(--grb)!important;color:var(--gr)!important}
+#dp-l8 .qopt.qwr{border-color:var(--rd)!important;background:var(--rdb)!important;color:var(--rd)!important}
+#dp-l8 .qfbm{display:none;margin-top:11px;padding:13px 16px;border-radius:var(--r);font-size:.86rem;font-weight:500;line-height:1.6}
+#dp-l8 .qfbm.show{display:block}
+#dp-l8 .qfbm.ok{background:var(--grb);color:var(--gr);border:1px solid rgba(46,125,82,.2)}
+#dp-l8 .qfbm.bad{background:var(--rdb);color:var(--rd);border:1px solid rgba(192,57,43,.2)}
+#dp-l8 .qnxt{margin-top:14px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;display:none;cursor:pointer;border:none}
+#dp-l8 .qnxt:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l8 .qnxt.show{display:inline-block}
+#dp-l8 .spl{text-align:center;padding:28px 20px;display:none;animation:dp8up .4s ease both}
+#dp-l8 .spl.show{display:block}
+#dp-l8 .scir{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--ny),var(--ny2));display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 8px 24px rgba(13,43,78,.2)}
+#dp-l8 .snum{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:var(--go);line-height:1}
+#dp-l8 .sden{font-size:.7rem;color:rgba(245,240,232,.5)}
+#dp-l8 .smsg{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--ny);margin-bottom:7px}
+#dp-l8 .ssub{font-size:.84rem;color:var(--mu);margin-bottom:18px}
+#dp-l8 .srty{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;margin-right:8px;cursor:pointer;border:none}
+#dp-l8 .srty:hover{background:var(--go)}
+
+/* Chkb */
+#dp-l8 .chkb{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none;margin-top:6px}
+#dp-l8 .chkb:hover{background:var(--go);transform:translateY(-1px)}
+
+/* Nav buttons */
+#dp-l8 .navb{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:18px;border-top:1px solid var(--bdl);gap:10px}
+#dp-l8 .nb{display:flex;align-items:center;gap:7px;padding:11px 22px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;border:2px solid var(--bd);color:var(--ink2);background:var(--wh);cursor:pointer}
+#dp-l8 .nb:hover{border-color:var(--go);color:var(--go)}
+#dp-l8 .nb.pri{background:var(--ny);color:#fff;border-color:transparent}
+#dp-l8 .nb.pri:hover{background:var(--go);border-color:transparent}
+#dp-l8 .nb:disabled{opacity:.38;cursor:default;pointer-events:none}
+
+/* Footer */
+#dp-l8 .lft{background:var(--ny);padding:24px;text-align:center;border-radius:0 0 var(--rl) var(--rl)}
+#dp-l8 .flo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:#F5F0E8;margin-bottom:5px}
+#dp-l8 .flo em{color:var(--go);font-style:italic}
+#dp-l8 .ftx{font-size:.74rem;color:rgba(245,240,232,.42)}
+
+/* Feature grid */
+#dp-l8 .fgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:16px 0}
+#dp-l8 .fbox{background:var(--cr);border:1px solid var(--bdl);border-radius:var(--r);padding:14px;text-align:center;cursor:pointer;transition:all .2s}
+#dp-l8 .fbox:hover{border-color:var(--go);transform:translateY(-2px);box-shadow:var(--sh1)}
+#dp-l8 .fbox.fl{background:var(--gop);border-color:var(--go)}
+#dp-l8 .fbox-ico{font-size:1.6rem;margin-bottom:6px}
+#dp-l8 .fbox-t{font-size:.82rem;font-weight:700;color:var(--ny);margin-bottom:2px}
+#dp-l8 .fbox-s{font-size:.72rem;color:var(--mu)}
+#dp-l8 .fbox-body{display:none;margin-top:10px;text-align:left}
+#dp-l8 .fbox.fl .fbox-body{display:block}
+#dp-l8 .fbox-body p{font-size:.82rem;color:var(--ink2);line-height:1.55;margin-bottom:6px}
+
+/* Intelligence grid */
+#dp-l8 .igrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:16px 0}
+#dp-l8 .ibox{background:var(--cr);border:1px solid var(--bdl);border-radius:var(--r);padding:12px;cursor:pointer;transition:all .2s}
+#dp-l8 .ibox:hover{border-color:var(--go);box-shadow:var(--sh1)}
+#dp-l8 .ibox.fl{background:var(--gop);border-color:var(--go)}
+#dp-l8 .ibox-head{display:flex;align-items:center;gap:8px}
+#dp-l8 .ibox-ico{font-size:1.2rem}
+#dp-l8 .ibox-t{font-size:.82rem;font-weight:700;color:var(--ny)}
+#dp-l8 .ibox-body{display:none;margin-top:8px;padding-top:8px;border-top:1px solid var(--bdl)}
+#dp-l8 .ibox.fl .ibox-body{display:block}
+#dp-l8 .ibox-body p{font-size:.8rem;color:var(--ink2);line-height:1.5;margin:0}
+
+@media(max-width:560px){
+  #dp-l8 .lhero{padding:32px 16px 28px}
+  #dp-l8 .lbody{padding:20px 14px 48px}
+  #dp-l8 .sblock{padding:18px 14px}
+  #dp-l8 .navb{flex-direction:column}
+  #dp-l8 .nb{width:100%;justify-content:center}
+  #dp-l8 .tabs{gap:4px}
+  #dp-l8 .tab{padding:7px 12px;font-size:.78rem}
+  #dp-l8 .sm-item{grid-template-columns:1fr}
+  #dp-l8 .mc-grid{grid-template-columns:1fr}
+  #dp-l8 .fgrid{grid-template-columns:1fr}
+  #dp-l8 .igrid{grid-template-columns:1fr}
+  #dp-l8 .gtbl{font-size:.75rem}
+  #dp-l8 .gtbl th,#dp-l8 .gtbl td{padding:6px 8px}
+}
+</style>
+</head>
+<body>
+
+<div id="dp-l8">
+
+<!-- HERO -->
+<div class="lhero">
+  <div class="lhero-in">
+    <div class="lvlbadge">🎓 Didactics Series · Lesson 8 of 12</div>
+    <h1 class="ltitle">The <em>Learner</em>:<br>Styles, Intelligences &amp; Motivation</h1>
+    <p class="lsub">Understand individual differences: learning styles (VAK), Gardner's Multiple Intelligences, motivation types, and learning strategies.</p>
+    <div class="spills">
+      <span class="spill sp-th">🧠 Learning Styles</span>
+      <span class="spill sp-ex">🎯 Multiple Intelligences</span>
+      <span class="spill sp-ic">💪 Motivation</span>
+      <span class="spill sp-qu">📝 40-Question Exam</span>
+    </div>
+    <nav class="snav">
+      <div class="snavdot active" data-s="0">1</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="1">2</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="2">3</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="3">4</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="4">5</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="5">6</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="6">7</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="7">8</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="8">9</div>
+      <span class="snavlbl">9 sections</span>
+    </nav>
+  </div>
+</div>
+
+<div class="lbody">
+
+<!-- SECTION 1: FOUNDATIONS -->
+<section class="sblock vis" id="dp8s0">
+  <div class="slabel">Section 1 · Foundations</div>
+  <h2 class="sheading">Understanding <em>Individual Differences</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">🧩</div>
+    <div class="s-t">No Two Learners Are the Same</div>
+    <div class="s-d">Effective teachers recognize that learners differ in HOW they learn (styles), WHAT abilities they have (intelligences), WHY they learn (motivation), and WHAT techniques they use (strategies).</div>
+  </div>
+
+  <p class="stxt">This lesson covers four key areas of <strong>individual learner differences</strong> that every teacher must understand to differentiate instruction effectively.</p>
+
+  <div class="fgrid">
+    <div class="fbox" data-exp="f1">
+      <div class="fbox-ico">👁️</div>
+      <div class="fbox-t">Learning Styles</div>
+      <div class="fbox-s">VAK/VARK Model</div>
+      <div class="fbox-body" id="f1">
+        <p><strong>Focus:</strong> HOW learners prefer to receive information — Visual, Auditory, Kinesthetic (Read/Write).</p>
+      </div>
+    </div>
+    <div class="fbox" data-exp="f2">
+      <div class="fbox-ico">🧠</div>
+      <div class="fbox-t">Multiple Intelligences</div>
+      <div class="fbox-s">Howard Gardner</div>
+      <div class="fbox-body" id="f2">
+        <p><strong>Focus:</strong> WHAT types of intelligence learners have — 8 different ways of being "smart."</p>
+      </div>
+    </div>
+    <div class="fbox" data-exp="f3">
+      <div class="fbox-ico">💪</div>
+      <div class="fbox-t">Motivation Types</div>
+      <div class="fbox-s">Intrinsic vs Extrinsic</div>
+      <div class="fbox-body" id="f3">
+        <p><strong>Focus:</strong> WHY learners study — internal interest vs external rewards; integrative vs instrumental.</p>
+      </div>
+    </div>
+    <div class="fbox" data-exp="f4">
+      <div class="fbox-ico">🔧</div>
+      <div class="fbox-t">Learning Strategies</div>
+      <div class="fbox-s">Oxford's Taxonomy</div>
+      <div class="fbox-body" id="f4">
+        <p><strong>Focus:</strong> WHAT techniques learners use — memory, cognitive, metacognitive, social strategies.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="gbox gbox-go">
+    <h4>Why Individual Differences Matter</h4>
+    <div class="grule"><strong>Differentiated instruction</strong> — Adapt teaching to meet diverse needs</div>
+    <div class="grule"><em>Motivation</em> — Engage learners through their preferred channels</div>
+    <div class="grule"><span>Autonomy</span> — Help learners understand their own learning</div>
+    <div class="grule"><strong>Assessment</strong> — Evaluate fairly across different learner types</div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Tip:</strong> Know the KEY THEORISTS: Gardner (Multiple Intelligences), Oxford (Learning Strategies), and the VAK/VARK model for learning styles.</span></div>
+
+  <div class="navb">
+    <button class="nb" disabled>← Back</button>
+    <button class="nb pri" data-go="1">Next: Learning Styles →</button>
+  </div>
+</section>
+
+<!-- SECTION 2: LEARNING STYLES -->
+<section class="sblock" id="dp8s1">
+  <div class="slabel">Section 2 · Learning Styles</div>
+  <h2 class="sheading">Learning Styles — <em>VAK/VARK Model</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">👁️</div>
+    <div class="s-t">How Learners Prefer to Receive Information</div>
+    <div class="s-d">The VAK (Visual-Auditory-Kinesthetic) or VARK (adding Read/Write) model describes how learners prefer to take in new information through different sensory channels.</div>
+  </div>
+
+  <div class="mcards">
+    <div class="mcard" data-exp="ls1">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--bl)">👁️</div>
+        <div><div class="mc-title">Visual Learners</div><div class="mc-sub">Learn best through seeing</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="ls1">
+        <p><strong>Characteristics:</strong> Prefer diagrams, charts, videos, demonstrations, colors, and spatial organization.</p>
+        <p><strong>Teaching strategies:</strong> Use mind maps, graphic organizers, color-coding, videos, and visual presentations.</p>
+        <p><strong>Example:</strong> "I understand better when I see a diagram of the grammar structure."</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="ls2">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--gr)">👂</div>
+        <div><div class="mc-title">Auditory Learners</div><div class="mc-sub">Learn best through hearing</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="ls2">
+        <p><strong>Characteristics:</strong> Prefer lectures, discussions, audio recordings, verbal explanations, and reading aloud.</p>
+        <p><strong>Teaching strategies:</strong> Use podcasts, discussions, verbal instructions, songs, and read-aloud activities.</p>
+        <p><strong>Example:</strong> "I remember things better when I hear them explained out loud."</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="ls3">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--pu)">✋</div>
+        <div><div class="mc-title">Kinesthetic/Tactile Learners</div><div class="mc-sub">Learn best through doing</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="ls3">
+        <p><strong>Characteristics:</strong> Prefer hands-on activities, movement, physical manipulation, and learning by doing.</p>
+        <p><strong>Teaching strategies:</strong> Use role-plays, TPR activities, manipulatives, projects, and physical movement.</p>
+        <p><strong>Example:</strong> "I learn vocabulary better when I act out the words or use flashcards."</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="ls4">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--go)">📖</div>
+        <div><div class="mc-title">Read/Write Learners</div><div class="mc-sub">Learn best through text</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="ls4">
+        <p><strong>Characteristics:</strong> Prefer reading texts, writing notes, lists, and written materials.</p>
+        <p><strong>Teaching strategies:</strong> Use reading assignments, note-taking, written instructions, and journaling.</p>
+        <p><strong>Example:</strong> "I understand better when I read the grammar rules and write my own examples."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Teaching Tip:</strong> Most learners use a COMBINATION of styles. Good teachers use <strong>multimodal instruction</strong> — combining visual, auditory, and kinesthetic elements in each lesson.</span></div>
+
+  <div class="gbox gbox-bl">
+    <h4>Other Cognitive Style Dimensions</h4>
+    <div class="grule"><strong>Field-dependent</strong> — Sees the whole picture; influenced by context; social learner</div>
+    <div class="grule"><em>Field-independent</em> — Analyzes details; separates from context; individual learner</div>
+    <div class="grule"><span>Impulsive</span> — Quick decisions; takes risks; may make errors</div>
+    <div class="grule"><strong>Reflective</strong> — Careful consideration; slower response; more accurate</div>
+    <div class="grule"><em>Global learner</em> — Big picture first; top-down processing</div>
+    <div class="grule"><strong>Analytic learner</strong> — Details first; bottom-up processing</div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="0">← Introduction</button>
+    <button class="nb pri" data-go="2">Next: Multiple Intelligences →</button>
+  </div>
+</section>
+
+<!-- SECTION 3: MULTIPLE INTELLIGENCES -->
+<section class="sblock" id="dp8s2">
+  <div class="slabel">Section 3 · Multiple Intelligences</div>
+  <h2 class="sheading">Gardner's <em>Multiple Intelligences</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">🧠</div>
+    <div class="s-t">"We All Have Different Combinations of Intelligences"</div>
+    <div class="s-d">Howard Gardner (1983) challenged the idea of a single IQ, proposing that humans have MULTIPLE types of intelligence. Each person has a unique profile of strengths.</div>
+  </div>
+
+  <div class="gbox gbox-pu">
+    <h4>Gardner's Theory — Key Points</h4>
+    <div class="grule"><strong>Theorist:</strong> Howard GARDNER (1983)</div>
+    <div class="grule"><em>Core idea:</em> Intelligence is NOT a single ability but MULTIPLE abilities</div>
+    <div class="grule"><span>Originally 7, now 8:</span> Gardner later added Naturalistic Intelligence</div>
+    <div class="grule"><strong>Educational implication:</strong> Teach through multiple channels; value all intelligences</div>
+  </div>
+
+  <h4 style="color:var(--ny);font-family:'Playfair Display',serif;font-size:1rem;margin:20px 0 13px">The 8 Intelligences — Click to learn more</h4>
+
+  <div class="igrid">
+    <div class="ibox" data-exp="i1">
+      <div class="ibox-head"><span class="ibox-ico">📝</span><span class="ibox-t">Verbal-Linguistic</span></div>
+      <div class="ibox-body"><p>Word smart. Good with language, reading, writing, storytelling. Learns through reading/writing.</p></div>
+    </div>
+    <div class="ibox" data-exp="i2">
+      <div class="ibox-head"><span class="ibox-ico">🔢</span><span class="ibox-t">Logical-Mathematical</span></div>
+      <div class="ibox-body"><p>Number/logic smart. Good with reasoning, problem-solving, patterns. Learns through logic puzzles.</p></div>
+    </div>
+    <div class="ibox" data-exp="i3">
+      <div class="ibox-head"><span class="ibox-ico">🎨</span><span class="ibox-t">Visual-Spatial</span></div>
+      <div class="ibox-body"><p>Picture smart. Good with images, maps, visualizing. Learns through diagrams, videos, art.</p></div>
+    </div>
+    <div class="ibox" data-exp="i4">
+      <div class="ibox-head"><span class="ibox-ico">🎵</span><span class="ibox-t">Musical</span></div>
+      <div class="ibox-body"><p>Music smart. Good with rhythm, melody, sounds. Learns through songs, chants, music.</p></div>
+    </div>
+    <div class="ibox" data-exp="i5">
+      <div class="ibox-head"><span class="ibox-ico">🏃</span><span class="ibox-t">Bodily-Kinesthetic</span></div>
+      <div class="ibox-body"><p>Body smart. Good with movement, hands-on activities. Learns through TPR, role-play, crafts.</p></div>
+    </div>
+    <div class="ibox" data-exp="i6">
+      <div class="ibox-head"><span class="ibox-ico">👥</span><span class="ibox-t">Interpersonal</span></div>
+      <div class="ibox-body"><p>People smart. Good with social interaction, cooperation. Learns through group work, discussion.</p></div>
+    </div>
+    <div class="ibox" data-exp="i7">
+      <div class="ibox-head"><span class="ibox-ico">🧘</span><span class="ibox-t">Intrapersonal</span></div>
+      <div class="ibox-body"><p>Self smart. Good with self-reflection, independent work. Learns through journals, self-study.</p></div>
+    </div>
+    <div class="ibox" data-exp="i8">
+      <div class="ibox-head"><span class="ibox-ico">🌿</span><span class="ibox-t">Naturalistic</span></div>
+      <div class="ibox-body"><p>Nature smart. Good with categorizing, observing nature. Learns through outdoor activities, classification.</p></div>
+    </div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Trap:</strong> Don't confuse INTERPERSONAL (people smart, social) with INTRAPERSONAL (self smart, introspective). Inter = between people; Intra = within self.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="1">← Learning Styles</button>
+    <button class="nb pri" data-go="3">Next: Motivation Types →</button>
+  </div>
+</section>
+
+<!-- SECTION 4: MOTIVATION -->
+<section class="sblock" id="dp8s3">
+  <div class="slabel">Section 4 · Motivation</div>
+  <h2 class="sheading">Types of <em>Motivation</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">💪</div>
+    <div class="s-t">Why Do Learners Study a Language?</div>
+    <div class="s-d">Motivation is the driving force behind language learning. Understanding different types of motivation helps teachers engage learners more effectively.</div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="t4a">🔥 Intrinsic/Extrinsic</button>
+    <button class="tab" data-tab="t4b">🌍 Integrative/Instrumental</button>
+    <button class="tab" data-tab="t4c">📊 Other Types</button>
+  </div>
+
+  <div class="tabpanel vis" id="t4a">
+    <div class="gbox gbox-gr">
+      <h4>Intrinsic vs Extrinsic Motivation</h4>
+      <div class="grule"><strong>INTRINSIC Motivation</strong> — Comes from WITHIN the learner</div>
+      <div class="grule">• Driven by interest, curiosity, enjoyment of the task itself</div>
+      <div class="grule">• Example: "I study English because I love reading English novels."</div>
+      <div class="grule">• More sustainable; leads to deeper learning</div>
+    </div>
+    <div class="gbox gbox-rd">
+      <h4></h4>
+      <div class="grule"><strong>EXTRINSIC Motivation</strong> — Comes from OUTSIDE the learner</div>
+      <div class="grule">• Driven by rewards, grades, fear of punishment, approval</div>
+      <div class="grule">• Example: "I study English because my parents want me to."</div>
+      <div class="grule">• Can be effective short-term; may decrease intrinsic motivation</div>
+    </div>
+  </div>
+
+  <div class="tabpanel" id="t4b">
+    <div class="gbox gbox-bl">
+      <h4>Integrative vs Instrumental Motivation</h4>
+      <div class="grule"><strong>INTEGRATIVE Motivation</strong> — Desire to INTEGRATE into target culture</div>
+      <div class="grule">• Want to understand and participate in the target community</div>
+      <div class="grule">• Example: "I study French because I love French culture and want to live in Paris."</div>
+      <div class="grule">• Associated with higher achievement and persistence</div>
+    </div>
+    <div class="gbox gbox-go">
+      <h4></h4>
+      <div class="grule"><strong>INSTRUMENTAL Motivation</strong> — Practical goals; language as a TOOL</div>
+      <div class="grule">• Learn for practical purposes (job, travel, exams)</div>
+      <div class="grule">• Example: "I study English to get a better job."</div>
+      <div class="grule">• Can be very effective; common in EFL contexts</div>
+    </div>
+  </div>
+
+  <div class="tabpanel" id="t4c">
+    <div class="gbox gbox-pu">
+      <h4>Other Motivation Types</h4>
+      <div class="grule"><strong>Achievement motivation</strong> — Desire to succeed, reach goals, master challenges</div>
+      <div class="grule"><em>Social motivation</em> — Desire to connect with others, belong to a group</div>
+      <div class="grule"><span>Task motivation</span> — Motivation linked to the specific activity; engaging tasks increase motivation</span></div>
+      <div class="grule"><strong>Introjected motivation</strong> — Motivated by guilt, fear, or wanting approval ("I should learn English")</div>
+      <div class="grule"><em>Identified motivation</em> — Learner sees language as personally meaningful for their future</div>
+    </div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>For Krashen:</strong> Low anxiety + high motivation = LOW affective filter = better acquisition. High anxiety = mental block.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="2">← Multiple Intelligences</button>
+    <button class="nb pri" data-go="4">Next: Learning Strategies →</button>
+  </div>
+</section>
+
+<!-- SECTION 5: LEARNING STRATEGIES -->
+<section class="sblock" id="dp8s4">
+  <div class="slabel">Section 5 · Learning Strategies</div>
+  <h2 class="sheading">Learning Strategies — <em>Oxford's Taxonomy</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">🔧</div>
+    <div class="s-t">Techniques Learners Use to Learn</div>
+    <div class="s-d">Rebecca Oxford (1990) classified learning strategies into DIRECT strategies (work directly with language) and INDIRECT strategies (support learning). Teachers can explicitly teach these strategies.</div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="t5a">📌 Direct Strategies</button>
+    <button class="tab" data-tab="t5b">📋 Indirect Strategies</button>
+    <button class="tab" data-tab="t5c">🎯 Metacognitive</button>
+  </div>
+
+  <div class="tabpanel vis" id="t5a">
+    <div class="gbox gbox-bl">
+      <h4>Direct Strategies — Work Directly with Language</h4>
+      <div class="grule"><strong>1. MEMORY Strategies</strong> — Help store and retrieve information</div>
+      <div class="grule">• Grouping, imagery, keyword method, placing in context</div>
+      <div class="grule">• Example: Using a mnemonic to remember irregular verbs</div>
+    </div>
+    <div class="gbox gbox-gr">
+      <h4></h4>
+      <div class="grule"><strong>2. COGNITIVE Strategies</strong> — Mental processes for learning</div>
+      <div class="grule">• Practicing, analyzing, note-taking, summarizing, translating</div>
+      <div class="grule">• Example: Creating a summary of a reading passage</div>
+    </div>
+    <div class="gbox gbox-pu">
+      <h4></h4>
+      <div class="grule"><strong>3. COMPENSATION Strategies</strong> — Overcome limitations</div>
+      <div class="grule">• Guessing from context, using gestures, paraphrasing, switching to L1</div>
+      <div class="grule">• Example: Describing a word you don't know ("the thing you use to open doors")</div>
+    </div>
+  </div>
+
+  <div class="tabpanel" id="t5b">
+    <div class="gbox gbox-te">
+      <h4>Indirect Strategies — Support the Learning Process</h4>
+      <div class="grule"><strong>4. METACOGNITIVE Strategies</strong> — Control and manage learning</div>
+      <div class="grule">• Planning, monitoring, evaluating; "thinking about thinking"</div>
+      <div class="grule">• Example: Setting goals, self-testing, organizing study time</div>
+    </div>
+    <div class="gbox gbox-pk">
+      <h4></h4>
+      <div class="grule"><strong>5. AFFECTIVE Strategies</strong> — Manage emotions</div>
+      <div class="grule">• Lowering anxiety, self-encouragement, rewarding oneself</div>
+      <div class="grule">• Example: Taking deep breaths before speaking; positive self-talk</div>
+    </div>
+    <div class="gbox gbox-go">
+      <h4></h4>
+      <div class="grule"><strong>6. SOCIAL Strategies</strong> — Interact with others</div>
+      <div class="grule">• Asking questions, cooperating, empathizing with others</div>
+      <div class="grule">• Example: Practicing with native speakers; working in study groups</div>
+    </div>
+  </div>
+
+  <div class="tabpanel" id="t5c">
+    <div class="gbox gbox-te">
+      <h4>Metacognition — "Thinking About Thinking"</h4>
+      <div class="grule"><strong>Definition:</strong> Awareness and control of one's own learning processes</div>
+      <div class="grule"><em>Planning:</em> Setting goals, choosing strategies, allocating time</div>
+      <div class="grule"><span>Monitoring:</span> Checking comprehension, noticing errors as you work</div>
+      <div class="grule"><strong>Evaluating:</strong> Assessing progress, reflecting on what worked</div>
+      <div class="grule"><em>Example:</em> "I'll use flashcards for vocabulary because I know I learn better with visual aids."</div>
+    </div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Trap:</strong> DIRECT = Memory, Cognitive, Compensation (work WITH language). INDIRECT = Metacognitive, Affective, Social (SUPPORT learning). Oxford's taxonomy has 6 categories total.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="3">← Motivation Types</button>
+    <button class="nb pri" data-go="5">Next: Learner Autonomy →</button>
+  </div>
+</section>
+
+<!-- SECTION 6: LEARNER AUTONOMY -->
+<section class="sblock" id="dp8s5">
+  <div class="slabel">Section 6 · Learner Autonomy</div>
+  <h2 class="sheading">Learner Autonomy &amp; <em>Affective Factors</em></h2>
+
+  <p class="stxt"><strong>Learner autonomy</strong> is the ability to take charge of one's own learning. Autonomous learners set goals, monitor progress, and adapt strategies independently.</p>
+
+  <div class="gbox gbox-gr">
+    <h4>Characteristics of Autonomous Learners</h4>
+    <div class="grule"><strong>Self-directed</strong> — Set their own learning goals</div>
+    <div class="grule"><em>Self-monitoring</em> — Track their own progress and errors</div>
+    <div class="grule"><span>Strategic</span> — Choose appropriate learning strategies</div>
+    <div class="grule"><strong>Reflective</strong> — Evaluate what works and what doesn't</div>
+    <div class="grule"><em>Responsible</em> — Take ownership of their learning</div>
+  </div>
+
+  <h4 style="color:var(--ny);font-family:'Playfair Display',serif;font-size:1rem;margin:20px 0 13px">Affective Factors in Language Learning</h4>
+
+  <table class="gtbl">
+    <tr><th>Factor</th><th>Description</th><th>Impact on Learning</th></tr>
+    <tr><td class="tbl-rd"><strong>Anxiety</strong></td><td>Fear, nervousness about using L2</td><td>High anxiety = mental block; raises affective filter</td></tr>
+    <tr><td class="tbl-gr"><strong>Self-efficacy</strong></td><td>Belief in one's ability to succeed</td><td>High self-efficacy = more persistence, better outcomes</td></tr>
+    <tr><td class="tbl-bl"><strong>Risk-taking</strong></td><td>Willingness to try despite possible errors</td><td>Moderate risk-taking aids fluency development</td></tr>
+    <tr><td class="tbl-pu"><strong>Tolerance of ambiguity</strong></td><td>Comfort with uncertainty</td><td>High tolerance = better at dealing with unknown vocab/grammar</td></tr>
+    <tr><td class="tbl-go"><strong>Attitude</strong></td><td>Feelings toward L2 and its speakers</td><td>Positive attitude lowers filter, aids acquisition</td></tr>
+  </table>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Krashen's Affective Filter:</strong> Low anxiety + high motivation + positive attitude = LOW filter = MORE acquisition. High anxiety = HIGH filter = BLOCKED acquisition.</span></div>
+
+  <div class="gbox gbox-bl">
+    <h4>How Teachers Foster Learner Autonomy</h4>
+    <div class="grule">1. <strong>Strategy training</strong> — Explicitly teach learning strategies</div>
+    <div class="grule">2. <em>Self-assessment tools</em> — Help learners evaluate their own progress</div>
+    <div class="grule">3. <span>Goal-setting activities</span> — Guide learners to set SMART goals</div>
+    <div class="grule">4. <strong>Choice</strong> — Allow learners to choose topics, activities, materials</div>
+    <div class="grule">5. <em>Reflection tasks</em> — Learning journals, portfolios, self-evaluation</div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="4">← Learning Strategies</button>
+    <button class="nb pri" data-go="6">Next: Listening Task →</button>
+  </div>
+</section>
+
+<!-- SECTION 7: LISTENING (RELEVANT SCENARIO) -->
+<section class="sblock" id="dp8s6">
+  <div class="slabel">Section 7 · Listening Comprehension</div>
+  <h2 class="sheading">🎙️ Listen — <em>A Trainer Explains Learner Differences</em></h2>
+  <p class="stxt">Press ▶ to listen to a teacher trainer discussing individual learner differences. <strong>Match each description to the correct concept.</strong></p>
+
+  <div class="aplayer">
+    <button class="abig" id="dp8playbtn">▶</button>
+    <div class="ainfo">
+      <div class="at">Understanding Individual Learner Differences</div>
+      <div class="as">~60 seconds · British English</div>
+      <div class="apbar"><div class="apfill" id="dp8apf"></div></div>
+    </div>
+    <button class="scrtog" id="dp8scrtog">📄 Transcript</button>
+  </div>
+
+  <div class="scrbox" id="dp8scrbox">
+    <p><strong>Trainer:</strong> "Today we'll discuss how learners differ. First, let's look at learning styles. Some students are visual learners — they prefer diagrams and videos. Others are auditory learners — they learn best through listening. And kinesthetic learners need to move and do hands-on activities."</p>
+    <p>"Howard Gardner proposed that we have multiple intelligences, not just one IQ. Someone might be strong in verbal-linguistic intelligence but weaker in logical-mathematical intelligence. Interpersonal learners work well with others, while intrapersonal learners prefer working alone."</p>
+    <p>"Motivation is also key. Intrinsic motivation comes from within — genuine interest in learning. Extrinsic motivation comes from outside — rewards, grades, or avoiding punishment. Students with integrative motivation want to become part of the English-speaking community, while those with instrumental motivation learn English for practical reasons like getting a job."</p>
+    <p>"Finally, metacognitive strategies help learners plan, monitor, and evaluate their own learning — it's called 'thinking about thinking.' This leads to greater learner autonomy."</p>
+  </div>
+
+  <h4 style="color:var(--ny);font-family:'Playfair Display',serif;font-size:1rem;margin:20px 0 13px">Match each description to the correct concept</h4>
+
+  <div class="smatch" id="dp8match">
+    <div class="sm-item">
+      <div class="sm-scenario">"They prefer diagrams and videos; learn best through seeing." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which learner type?</em></div>
+      <select class="sm-select" data-a="Visual learners" id="dp8ms0">
+        <option value="">— Select —</option>
+        <option>Visual learners</option><option>Auditory learners</option><option>Kinesthetic learners</option><option>Intrapersonal learners</option><option>Autonomous learners</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp8mf0"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Work well with others; strong social skills." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which intelligence?</em></div>
+      <select class="sm-select" data-a="Interpersonal" id="dp8ms1">
+        <option value="">— Select —</option>
+        <option>Intrapersonal</option><option>Interpersonal</option><option>Linguistic</option><option>Kinesthetic</option><option>Spatial</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp8mf1"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Motivation that comes from within — genuine interest in learning." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which motivation type?</em></div>
+      <select class="sm-select" data-a="Intrinsic" id="dp8ms2">
+        <option value="">— Select —</option>
+        <option>Extrinsic</option><option>Intrinsic</option><option>Integrative</option><option>Instrumental</option><option>Social</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp8mf2"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Learning English for practical reasons like getting a job." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which motivation type?</em></div>
+      <select class="sm-select" data-a="Instrumental" id="dp8ms3">
+        <option value="">— Select —</option>
+        <option>Integrative</option><option>Instrumental</option><option>Intrinsic</option><option>Achievement</option><option>Task</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp8mf3"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Strategies that help learners plan, monitor, and evaluate their learning." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which strategy type?</em></div>
+      <select class="sm-select" data-a="Metacognitive" id="dp8ms4">
+        <option value="">— Select —</option>
+        <option>Memory</option><option>Cognitive</option><option>Compensation</option><option>Metacognitive</option><option>Affective</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp8mf4"></div>
+  </div>
+
+  <button class="chkb" id="dp8chkmatch">Check Answers ✓</button>
+
+  <div class="navb">
+    <button class="nb" data-go="5">← Learner Autonomy</button>
+    <button class="nb pri" data-go="7">Next: Interview Prep →</button>
+  </div>
+</section>
+
+<!-- SECTION 8: INTERVIEW PREP -->
+<section class="sblock" id="dp8s7">
+  <div class="slabel">Section 8 · Interview Preparation</div>
+  <h2 class="sheading">Interview Practice — <em>Explain Motivation Types</em></h2>
+
+  <div class="co co-info"><span class="co-ico">ℹ️</span><span><strong>Note:</strong> The written exam is <strong>100% multiple choice</strong> (A, B, C, D, E). However, in the <strong>oral interview</strong>, you may be asked to explain key concepts. This section prepares you for that.</span></div>
+
+  <p class="stxt">Practice explaining the difference between <strong>intrinsic and extrinsic motivation</strong> in 60–80 words. Include definitions and examples.</p>
+
+  <div class="co co-tip"><span class="co-ico">✍️</span><span><strong>Structure your answer:</strong><br>1. Define intrinsic motivation + example<br>2. Define extrinsic motivation + example<br>3. Which is more effective for long-term learning?<br>4. How can teachers foster intrinsic motivation?</span></div>
+
+  <div style="margin-top:18px">
+    <textarea class="wa" id="dp8wtxt" placeholder="Intrinsic motivation comes from within the learner — it's driven by... For example, a student who... Extrinsic motivation, on the other hand, comes from... For example, studying to... Research suggests that intrinsic motivation... Teachers can foster intrinsic motivation by..."></textarea>
+    <div class="wcnt" id="dp8wcnt">0 words (aim for 60–80)</div>
+    <button class="wsub" id="dp8wsub">Check My Answer ✓</button>
+    <div class="wfb" id="dp8wfb">
+      <strong>✅ Good practice!</strong><br><br>
+      <strong>Model Answer:</strong><br>
+      "Intrinsic motivation comes from within the learner — it's driven by genuine interest, curiosity, or enjoyment of learning itself. For example, a student who reads English novels because they love the stories has intrinsic motivation. Extrinsic motivation, on the other hand, comes from external factors like rewards, grades, or avoiding punishment. For example, studying to pass an exam or please parents. Research suggests that intrinsic motivation leads to deeper, more sustainable learning. Teachers can foster intrinsic motivation by making lessons engaging, offering choices, and connecting content to students' interests."
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="6">← Listening Task</button>
+    <button class="nb pri" data-go="8">Next: 40-Question Exam →</button>
+  </div>
+</section>
+
+<!-- SECTION 9: 40-QUESTION EXAM -->
+<section class="sblock" id="dp8s8">
+  <div class="slabel">Section 9 · Full Exam Simulation</div>
+  <h2 class="sheading">Exam Practice 🎯 — 40 Questions</h2>
+  <p class="stxt">This section simulates the <strong>real exam format</strong>: Multiple choice with 5 options (A, B, C, D, E). Option E is always "None of the above." <strong>Every wrong answer includes a full explanation.</strong></p>
+
+  <div class="co co-or"><span class="co-ico">⏱️</span><span><strong>Exam Conditions:</strong> In the real exam, you have limited time. Try to answer each question in under 45 seconds. Don't second-guess yourself!</span></div>
+
+  <div>
+    <div class="qpr">
+      <span class="qcnt" id="dp8qcnt">1 / 40</span>
+      <div class="qpbar"><div class="qpfill" id="dp8qpf" style="width:2.5%"></div></div>
+      <span class="qcnt" id="dp8qsl">Score: 0</span>
+    </div>
+    <div id="dp8qarea"></div>
+    <div class="qfbm" id="dp8qfb"></div>
+    <button class="qnxt" id="dp8qnxt">Next Question →</button>
+    <div class="spl" id="dp8spl">
+      <div class="scir"><div class="snum" id="dp8sfin">0</div><div class="sden">/ 40</div></div>
+      <div class="smsg" id="dp8smsg">Well done!</div>
+      <div class="ssub" id="dp8ssub">Keep practising!</div>
+      <button class="srty" id="dp8srty">🔄 Retry Quiz</button>
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="7">← Interview Prep</button>
+  </div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="lft">
+  <div class="flo">English<em>Pro</em> · Didactics</div>
+  <div class="ftx">Lesson 8 — Learning Styles · Multiple Intelligences · Motivation · Strategies · 40-Question Exam</div>
+</footer>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+(function(){
+'use strict';
+
+/* ══════════════════════════════════════════════════════════════
+   40-QUESTION EXAM DATA — 5 options (A, B, C, D, E = None)
+   ══════════════════════════════════════════════════════════════ */
+var QD=[
+  // Questions 1-10: Learning Styles
+  {q:'A learner who prefers diagrams, charts, and videos is classified as:',opts:['Auditory learner','Kinesthetic learner','Visual learner','Read/Write learner','None of the above'],a:2,ex:'✅ C is correct. VISUAL learners prefer diagrams, charts, videos, and other visual materials.'},
+  {q:'VAK stands for:',opts:['Visual-Auditory-Kinesthetic','Verbal-Analytical-Kinetic','Visual-Analytical-Knowledge','Verbal-Auditory-Kinesthetic','None of the above'],a:0,ex:'✅ A is correct. VAK = Visual, Auditory, Kinesthetic — the three main learning style preferences.'},
+  {q:'A kinesthetic learner would benefit most from:',opts:['Listening to lectures','Reading textbooks','Hands-on activities and movement','Watching videos','None of the above'],a:2,ex:'✅ C is correct. KINESTHETIC learners learn best through HANDS-ON activities, movement, and physical engagement.'},
+  {q:'VARK adds which category to VAK?',opts:['Reading/Writing','Reasoning','Reflection','Research','None of the above'],a:0,ex:'✅ A is correct. VARK = Visual, Auditory, Read/Write, Kinesthetic. The "R" adds Reading/Writing as a distinct style.'},
+  {q:'A field-DEPENDENT learner:',opts:['Prefers to analyze details separately','Sees the whole picture and is influenced by context','Works best alone','Is always more successful','None of the above'],a:1,ex:'✅ B is correct. Field-DEPENDENT learners see the WHOLE PICTURE and are influenced by context. They\'re often social learners.'},
+  {q:'A field-INDEPENDENT learner:',opts:['Depends on the teacher for everything','Analyzes details and separates from context','Cannot work alone','Prefers group work only','None of the above'],a:1,ex:'✅ B is correct. Field-INDEPENDENT learners ANALYZE DETAILS and separate them from the surrounding context.'},
+  {q:'An IMPULSIVE learner tends to:',opts:['Think carefully before answering','Make quick decisions and take risks','Avoid all errors','Never participate in class','None of the above'],a:1,ex:'✅ B is correct. IMPULSIVE learners make QUICK DECISIONS and take risks, though they may make more errors.'},
+  {q:'A REFLECTIVE learner tends to:',opts:['Answer quickly without thinking','Consider carefully before responding','Only learn through action','Avoid all written work','None of the above'],a:1,ex:'✅ B is correct. REFLECTIVE learners CONSIDER CAREFULLY before responding — slower but often more accurate.'},
+  {q:'Multimodal instruction means:',opts:['Using only one learning style','Combining visual, auditory, and kinesthetic elements','Teaching only advanced students','Using computers exclusively','None of the above'],a:1,ex:'✅ B is correct. MULTIMODAL instruction COMBINES multiple learning style approaches (visual, auditory, kinesthetic) in each lesson.'},
+  {q:'Which statement about learning styles is TRUE?',opts:['Each person has only one fixed learning style','Most learners use a combination of styles','Kinesthetic learning is always superior','Learning styles cannot be identified','None of the above'],a:1,ex:'✅ B is correct. Most learners use a COMBINATION of styles, not just one fixed preference.'},
+
+  // Questions 11-20: Multiple Intelligences
+  {q:'The theory of Multiple Intelligences was proposed by:',opts:['Jean Piaget','Lev Vygotsky','Howard Gardner','Noam Chomsky','None of the above'],a:2,ex:'✅ C is correct. HOWARD GARDNER proposed Multiple Intelligences theory in 1983.'},
+  {q:'According to Gardner, how many intelligences are there?',opts:['3','5','7','8','None of the above'],a:3,ex:'✅ D is correct. Gardner identified 8 intelligences (originally 7, later added Naturalistic).'},
+  {q:'Verbal-Linguistic intelligence involves strength in:',opts:['Numbers and logic','Language, reading, and writing','Physical movement','Understanding others','None of the above'],a:1,ex:'✅ B is correct. VERBAL-LINGUISTIC intelligence = strength in LANGUAGE, reading, writing, and storytelling.'},
+  {q:'Logical-Mathematical intelligence involves strength in:',opts:['Music and rhythm','Social interaction','Reasoning, problem-solving, and patterns','Self-reflection','None of the above'],a:2,ex:'✅ C is correct. LOGICAL-MATHEMATICAL intelligence = strength in REASONING, problem-solving, and working with patterns/numbers.'},
+  {q:'INTERPERSONAL intelligence means being strong at:',opts:['Working alone and self-reflection','Understanding and interacting with others','Physical movement','Musical abilities','None of the above'],a:1,ex:'✅ B is correct. INTERPERSONAL = "people smart" — understanding and interacting with OTHERS.'},
+  {q:'INTRAPERSONAL intelligence means being strong at:',opts:['Group work and cooperation','Self-understanding and reflection','Physical activities','Nature observation','None of the above'],a:1,ex:'✅ B is correct. INTRAPERSONAL = "self smart" — SELF-understanding and reflection (working within oneself).'},
+  {q:'Which intelligence was added later by Gardner?',opts:['Musical','Bodily-Kinesthetic','Naturalistic','Linguistic','None of the above'],a:2,ex:'✅ C is correct. NATURALISTIC intelligence (nature smart) was added later to the original 7.'},
+  {q:'A student who learns best through songs and chants likely has strong:',opts:['Logical-Mathematical intelligence','Musical intelligence','Interpersonal intelligence','Naturalistic intelligence','None of the above'],a:1,ex:'✅ B is correct. MUSICAL intelligence = learning through rhythm, melody, and music — songs and chants.'},
+  {q:'Bodily-Kinesthetic intelligence involves:',opts:['Reading and writing skills','Control of body movement and hands-on learning','Understanding nature','Mathematical reasoning','None of the above'],a:1,ex:'✅ B is correct. BODILY-KINESTHETIC = "body smart" — learning through MOVEMENT and hands-on activities (like TPR).'},
+  {q:'A classroom implication of Multiple Intelligences theory is:',opts:['Teach only to the strongest intelligence','Use only linguistic activities','Teach through multiple channels and value all intelligences','Ignore individual differences','None of the above'],a:2,ex:'✅ C is correct. MI theory implies teachers should TEACH THROUGH MULTIPLE CHANNELS and VALUE ALL intelligences.'},
+
+  // Questions 21-30: Motivation
+  {q:'INTRINSIC motivation comes from:',opts:['External rewards like grades','Within the learner — interest and enjoyment','Fear of punishment','Teacher pressure','None of the above'],a:1,ex:'✅ B is correct. INTRINSIC motivation comes from WITHIN — driven by genuine interest, curiosity, or enjoyment.'},
+  {q:'EXTRINSIC motivation comes from:',opts:['Personal interest in the subject','Outside factors like rewards, grades, or approval','Only positive emotions','Internal curiosity','None of the above'],a:1,ex:'✅ B is correct. EXTRINSIC motivation comes from OUTSIDE — rewards, grades, fear of punishment, approval from others.'},
+  {q:'INTEGRATIVE motivation refers to:',opts:['Learning for practical job-related purposes','Desire to integrate into the target language community','Fear of failing exams','Pressure from parents','None of the above'],a:1,ex:'✅ B is correct. INTEGRATIVE motivation = desire to INTEGRATE into the target culture and community.'},
+  {q:'INSTRUMENTAL motivation refers to:',opts:['Wanting to become part of the English-speaking culture','Using language as a tool for practical purposes','Learning music through language','Avoiding all exams','None of the above'],a:1,ex:'✅ B is correct. INSTRUMENTAL motivation = language as a TOOL for practical purposes (jobs, travel, exams).'},
+  {q:'According to Krashen, what happens when the affective filter is HIGH?',opts:['Learning is enhanced','Acquisition is blocked','Motivation increases','Anxiety decreases','None of the above'],a:1,ex:'✅ B is correct. HIGH affective filter = acquisition is BLOCKED. (High anxiety, low motivation, negative attitude)'},
+  {q:'A LOW affective filter results from:',opts:['High anxiety and low confidence','Low anxiety, high motivation, and positive attitude','Fear of making mistakes','Teacher criticism','None of the above'],a:1,ex:'✅ B is correct. LOW filter = low anxiety + high motivation + positive attitude = better acquisition.'},
+  {q:'A student who studies English because they want to live in London has:',opts:['Instrumental motivation','Integrative motivation','Extrinsic motivation only','No motivation','None of the above'],a:1,ex:'✅ B is correct. Wanting to LIVE in an English-speaking country shows INTEGRATIVE motivation (desire to integrate).'},
+  {q:'A student who studies English to get a promotion at work has:',opts:['Integrative motivation','Instrumental motivation','Only intrinsic motivation','No practical goals','None of the above'],a:1,ex:'✅ B is correct. Studying for a PROMOTION (practical career goal) shows INSTRUMENTAL motivation.'},
+  {q:'Which type of motivation tends to lead to deeper, more sustainable learning?',opts:['Extrinsic motivation','Instrumental motivation','Intrinsic motivation','Introjected motivation','None of the above'],a:2,ex:'✅ C is correct. INTRINSIC motivation typically leads to DEEPER, more sustainable learning because it comes from genuine interest.'},
+  {q:'Task motivation means:',opts:['Motivation from completing all tasks','Motivation linked to how engaging the specific activity is','Motivation from external rewards only','No interest in tasks','None of the above'],a:1,ex:'✅ B is correct. TASK motivation = motivation linked to the specific ACTIVITY — engaging tasks increase motivation.'},
+
+  // Questions 31-40: Learning Strategies & Autonomy
+  {q:'Rebecca Oxford\'s taxonomy classifies learning strategies into:',opts:['2 categories: cognitive and affective','4 categories: visual, auditory, kinesthetic, reading','6 categories: memory, cognitive, compensation, metacognitive, affective, social','8 categories matching multiple intelligences','None of the above'],a:2,ex:'✅ C is correct. Oxford\'s taxonomy has 6 CATEGORIES: Memory, Cognitive, Compensation (Direct) + Metacognitive, Affective, Social (Indirect).'},
+  {q:'DIRECT strategies in Oxford\'s taxonomy are:',opts:['Metacognitive, affective, and social','Memory, cognitive, and compensation','Only memory strategies','Only social strategies','None of the above'],a:1,ex:'✅ B is correct. DIRECT strategies (work with language): Memory, Cognitive, Compensation.'},
+  {q:'INDIRECT strategies in Oxford\'s taxonomy are:',opts:['Memory, cognitive, and compensation','Metacognitive, affective, and social','Only compensation strategies','Only memory strategies','None of the above'],a:1,ex:'✅ B is correct. INDIRECT strategies (support learning): Metacognitive, Affective, Social.'},
+  {q:'METACOGNITIVE strategies involve:',opts:['Memorizing vocabulary lists','Planning, monitoring, and evaluating one\'s own learning','Managing emotions','Cooperating with others','None of the above'],a:1,ex:'✅ B is correct. METACOGNITIVE = "thinking about thinking" — PLANNING, MONITORING, and EVALUATING learning.'},
+  {q:'Using a keyword method to remember vocabulary is an example of:',opts:['Memory strategy','Compensation strategy','Social strategy','Affective strategy','None of the above'],a:0,ex:'✅ A is correct. Keyword method for vocabulary = MEMORY strategy (helps store and retrieve information).'},
+  {q:'Describing a word you don\'t know using other words is an example of:',opts:['Memory strategy','Cognitive strategy','Compensation strategy','Metacognitive strategy','None of the above'],a:2,ex:'✅ C is correct. Paraphrasing/circumlocution to overcome vocabulary gaps = COMPENSATION strategy.'},
+  {q:'Taking deep breaths before speaking to reduce nervousness is an example of:',opts:['Cognitive strategy','Memory strategy','Affective strategy','Social strategy','None of the above'],a:2,ex:'✅ C is correct. Managing anxiety and emotions = AFFECTIVE strategy.'},
+  {q:'Practicing with native speakers is an example of:',opts:['Memory strategy','Compensation strategy','Metacognitive strategy','Social strategy','None of the above'],a:3,ex:'✅ D is correct. Interacting with others to practice = SOCIAL strategy.'},
+  {q:'Learner AUTONOMY means:',opts:['The teacher controls all learning','The learner takes charge of their own learning','Learning only happens in class','Students never need guidance','None of the above'],a:1,ex:'✅ B is correct. LEARNER AUTONOMY = learners take CHARGE of their own learning (set goals, monitor progress, choose strategies).'},
+  {q:'Self-efficacy refers to:',opts:['Fear of failure','Belief in one\'s ability to succeed','Teacher\'s confidence in students','External motivation only','None of the above'],a:1,ex:'✅ B is correct. SELF-EFFICACY = belief in one\'s own ABILITY TO SUCCEED. High self-efficacy leads to persistence and better outcomes.'}
+];
+
+var curSec=0,qCur=0,qScore=0,qAns=false,audioPlaying=false,audioTimer=null;
+
+function goToSection(n){
+  document.querySelectorAll('#dp-l8 .sblock').forEach(function(b){b.classList.remove('vis')});
+  var sec=document.getElementById('dp8s'+n);
+  if(sec)sec.classList.add('vis');
+  curSec=n;
+  updateDots();
+  document.getElementById('dp-l8').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function updateDots(){
+  document.querySelectorAll('#dp-l8 .snavdot').forEach(function(d){
+    var i=parseInt(d.getAttribute('data-s'));
+    d.classList.remove('active','done');
+    if(i<curSec)d.classList.add('done');
+    if(i===curSec)d.classList.add('active');
+  });
+}
+
+document.querySelectorAll('#dp-l8 .snavdot').forEach(function(d){
+  d.addEventListener('click',function(){goToSection(parseInt(d.getAttribute('data-s')))});
+});
+
+document.querySelectorAll('#dp-l8 .nb[data-go]').forEach(function(btn){
+  btn.addEventListener('click',function(){goToSection(parseInt(btn.getAttribute('data-go')))});
+});
+
+document.querySelectorAll('#dp-l8 .mcard').forEach(function(c){
+  c.addEventListener('click',function(){c.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l8 .fbox').forEach(function(f){
+  f.addEventListener('click',function(){f.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l8 .ibox').forEach(function(i){
+  i.addEventListener('click',function(){i.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l8 .tabs').forEach(function(tg){
+  tg.querySelectorAll('.tab').forEach(function(tab){
+    tab.addEventListener('click',function(){
+      var pid=tab.getAttribute('data-tab');
+      tg.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});
+      tab.classList.add('active');
+      tg.parentElement.querySelectorAll('.tabpanel').forEach(function(p){p.classList.remove('vis')});
+      var pnl=document.getElementById(pid);
+      if(pnl)pnl.classList.add('vis');
+    });
+  });
+});
+
+/* Listening Match Check */
+var chkmatch=document.getElementById('dp8chkmatch');
+if(chkmatch)chkmatch.addEventListener('click',function(){
+  for(var i=0;i<5;i++){
+    var sel=document.getElementById('dp8ms'+i);
+    var fb=document.getElementById('dp8mf'+i);
+    if(!sel)continue;
+    var ans=sel.getAttribute('data-a'),giv=sel.value;
+    var ok=giv===ans;
+    sel.classList.toggle('ok',ok);sel.classList.toggle('bad',!ok);
+    fb.textContent=ok?'✅ Correct!':'❌ Answer: '+ans;
+    fb.classList.toggle('ok',ok);fb.classList.toggle('bad',!ok);
+  }
+});
+
+var pbtn=document.getElementById('dp8playbtn'),apf=document.getElementById('dp8apf');
+var audioTxt="Today we'll discuss how learners differ. First, let's look at learning styles. Some students are visual learners — they prefer diagrams and videos. Others are auditory learners — they learn best through listening. And kinesthetic learners need to move and do hands-on activities. Howard Gardner proposed that we have multiple intelligences, not just one IQ. Someone might be strong in verbal-linguistic intelligence but weaker in logical-mathematical intelligence. Interpersonal learners work well with others, while intrapersonal learners prefer working alone. Motivation is also key. Intrinsic motivation comes from within — genuine interest in learning. Extrinsic motivation comes from outside — rewards, grades, or avoiding punishment. Students with integrative motivation want to become part of the English-speaking community, while those with instrumental motivation learn English for practical reasons like getting a job. Finally, metacognitive strategies help learners plan, monitor, and evaluate their own learning — it's called thinking about thinking. This leads to greater learner autonomy.";
+
+if(pbtn)pbtn.addEventListener('click',function(){
+  if(audioPlaying){window.speechSynthesis&&window.speechSynthesis.cancel();clearInterval(audioTimer);audioPlaying=false;pbtn.textContent='▶';if(apf)apf.style.width='0%';return;}
+  if(!window.speechSynthesis)return;
+  var u=new SpeechSynthesisUtterance(audioTxt);u.lang='en-GB';u.rate=0.9;
+  var vv=window.speechSynthesis.getVoices(),v=vv.find(function(x){return x.lang==='en-GB'})||vv.find(function(x){return x.lang.startsWith('en')});
+  if(v)u.voice=v;
+  audioPlaying=true;pbtn.textContent='⏸';
+  var w=0;audioTimer=setInterval(function(){w=Math.min(100,w+0.28);if(apf)apf.style.width=w+'%';if(w>=100)clearInterval(audioTimer)},500);
+  u.onend=function(){audioPlaying=false;pbtn.textContent='▶';clearInterval(audioTimer)};
+  window.speechSynthesis.speak(u);
+});
+
+var stog=document.getElementById('dp8scrtog'),sbox=document.getElementById('dp8scrbox');
+if(stog)stog.addEventListener('click',function(){sbox&&sbox.classList.toggle('show')});
+
+var wtxt=document.getElementById('dp8wtxt'),wcnt=document.getElementById('dp8wcnt'),wsub=document.getElementById('dp8wsub'),wfb=document.getElementById('dp8wfb');
+if(wtxt)wtxt.addEventListener('input',function(){
+  var wc=wtxt.value.trim()===''?0:wtxt.value.trim().split(/\s+/).length;
+  if(wcnt){wcnt.textContent=wc+' words (aim for 60–80)';wcnt.style.color=wc>=60?'#2E7D52':'#7A7A7A'}
+});
+if(wsub)wsub.addEventListener('click',function(){
+  if(!wtxt||wtxt.value.trim().split(/\s+/).length<20){alert('Please write at least 20 words!');return}
+  if(wfb)wfb.classList.add('show');wsub.textContent='✅ Checked!';wsub.style.background='#2E7D52';
+});
+
+/* 40-Question Quiz with A,B,C,D,E */
+function renderQ(){
+  var d=QD[qCur],area=document.getElementById('dp8qarea'),fb=document.getElementById('dp8qfb'),nxt=document.getElementById('dp8qnxt');
+  fb.className='qfbm';nxt.classList.remove('show');qAns=false;
+  var pf=document.getElementById('dp8qpf');
+  if(document.getElementById('dp8qcnt'))document.getElementById('dp8qcnt').textContent=(qCur+1)+' / '+QD.length;
+  if(pf)pf.style.width=((qCur+1)/QD.length*100)+'%';
+  var labels=['A','B','C','D','E'];
+  var html='<div class="qq"><span class="qqn">'+(qCur+1)+'</span>'+d.q+'</div><div class="qopts">';
+  d.opts.forEach(function(o,i){html+='<button class="qopt" data-i="'+i+'"><span class="ql">'+labels[i]+'.</span> '+o+'</button>'});
+  html+='</div>';area.innerHTML=html;
+  area.querySelectorAll('.qopt').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      if(qAns)return;qAns=true;
+      var ch=parseInt(btn.getAttribute('data-i'));
+      area.querySelectorAll('.qopt').forEach(function(b){b.disabled=true});
+      if(ch===d.a){btn.classList.add('qco');qScore++;if(document.getElementById('dp8qsl'))document.getElementById('dp8qsl').textContent='Score: '+qScore;fb.textContent=d.ex;fb.className='qfbm show ok'}
+      else{btn.classList.add('qwr');area.querySelectorAll('.qopt')[d.a].classList.add('qco');fb.innerHTML='❌ Incorrect. '+d.ex;fb.className='qfbm show bad'}
+      nxt.classList.add('show');nxt.textContent=qCur<QD.length-1?'Next Question →':'See Results 🎯';
+    });
+  });
+}
+
+var qnxt=document.getElementById('dp8qnxt');
+if(qnxt)qnxt.addEventListener('click',function(){qCur++;if(qCur>=QD.length)showScore();else renderQ()});
+
+function showScore(){
+  var area=document.getElementById('dp8qarea'),fb=document.getElementById('dp8qfb'),nxt=document.getElementById('dp8qnxt'),pr=document.querySelector('#dp-l8 .qpr'),pl=document.getElementById('dp8spl');
+  if(area)area.style.display='none';if(fb)fb.style.display='none';if(nxt)nxt.style.display='none';if(pr)pr.style.display='none';if(pl)pl.classList.add('show');
+  var fin=document.getElementById('dp8sfin');if(fin)fin.textContent=qScore;
+  var pct=qScore/QD.length,msg,sub;
+  if(pct>=0.9){msg='Excellent! 🏆';sub='You\'re exam-ready!'}
+  else if(pct>=0.75){msg='Great Work! 🌟';sub='Review the questions you missed.'}
+  else if(pct>=0.6){msg='Good Progress! 👍';sub='Study the theory sections again.'}
+  else if(pct>=0.4){msg='Keep Practising! 💪';sub='Focus on the concepts you struggled with.'}
+  else{msg='More Study Needed 📚';sub='Review all sections before retrying.'}
+  if(document.getElementById('dp8smsg'))document.getElementById('dp8smsg').textContent=msg;
+  if(document.getElementById('dp8ssub'))document.getElementById('dp8ssub').textContent=sub;
+}
+
+var srty=document.getElementById('dp8srty');
+if(srty)srty.addEventListener('click',function(){
+  qScore=0;qCur=0;qAns=false;
+  var area=document.getElementById('dp8qarea'),fb=document.getElementById('dp8qfb'),nxt=document.getElementById('dp8qnxt'),pr=document.querySelector('#dp-l8 .qpr'),pl=document.getElementById('dp8spl');
+  if(area){area.style.display='block';area.innerHTML=''}if(fb){fb.style.display='block';fb.className='qfbm'}if(nxt)nxt.style.display='none';if(pr)pr.style.display='flex';if(pl)pl.classList.remove('show');
+  if(document.getElementById('dp8qsl'))document.getElementById('dp8qsl').textContent='Score: 0';
+  renderQ();
+});
+
+renderQ();
+if(window.speechSynthesis){window.speechSynthesis.getVoices();window.speechSynthesis.onvoiceschanged=function(){window.speechSynthesis.getVoices()}}
+})();
+</script>
+
+<!-- AUTO-RESIZE (MUST BE LAST) -->
+<script>
+(function(){
+  function sendHeight(){var h=document.documentElement.scrollHeight||document.body.scrollHeight;window.parent.postMessage({epHeight:h},'*')}
+  sendHeight();window.addEventListener('load',sendHeight);window.addEventListener('resize',sendHeight);
+  var mo=new MutationObserver(sendHeight);mo.observe(document.body,{childList:true,subtree:true,attributes:true});
+})();
+</script>
+
+</body>
+</html>
