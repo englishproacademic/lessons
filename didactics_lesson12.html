@@ -1,0 +1,939 @@
+<!--============================================================
+     EnglishPro · Didactics Series · Lesson 12
+     Second Language Acquisition (SLA) Theories
+     GitHub hosted — embedded in Blogger via iframe
+     100% self-contained — no external JS dependencies
+     UPDATED FORMAT: Relevant listening + 40-MCQ exam section
+     ============================================================-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SLA Theories | EnglishPro Didactics Series</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;family=DM+Sans:wght@300;400;500;600&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{margin:0;padding:0;background:#FAFAF7;direction:ltr;text-align:left}
+
+#dp-l12{
+  --ny:#0D2B4E;--ny2:#1A4070;
+  --go:#C8933A;--go2:#E8B86D;--gop:#FDF6EC;
+  --cr:#FAFAF7;--wh:#fff;
+  --ink:#1A1A1A;--ink2:#3D3D3D;--mu:#7A7A7A;
+  --bd:#E2DDD6;--bdl:#F0EDE8;
+  --gr:#2E7D52;--grb:#EBF5EF;
+  --rd:#C0392B;--rdb:#FDECEA;
+  --bl:#1E5FA8;--blb:#EBF2FB;
+  --pu:#7C3AED;--pub:#F3F0FF;
+  --te:#0E7490;--teb:#ECFEFF;
+  --or:#D97706;--orb:#FEF3C7;
+  --pk:#DB2777;--pkb:#FDF2F8;
+  --sh1:0 2px 8px rgba(13,43,78,.07);
+  --sh2:0 6px 20px rgba(13,43,78,.10);
+  --r:12px;--rl:20px;
+  font-family:'DM Sans',sans-serif;
+  color:var(--ink);background:var(--cr);
+  line-height:1.7;-webkit-font-smoothing:antialiased;
+  display:block;overflow:hidden;direction:ltr;text-align:left
+}
+#dp-l12 *,#dp-l12 *::before,#dp-l12 *::after{box-sizing:border-box;margin:0;padding:0}
+#dp-l12 button{cursor:pointer;font-family:'DM Sans',sans-serif;border:none;background:none}
+#dp-l12 textarea,#dp-l12 input,#dp-l12 select{font-family:'DM Sans',sans-serif}
+
+/* HERO */
+#dp-l12 .lhero{background:linear-gradient(150deg,#0a1f38 0%,#0D2B4E 50%,#122e52 100%);padding:48px 24px 40px;position:relative;overflow:hidden;border-radius:var(--rl) var(--rl) 0 0}
+#dp-l12 .lhero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%,rgba(200,147,58,.08) 0%,transparent 60%),radial-gradient(circle at 80% 20%,rgba(124,58,237,.06) 0%,transparent 50%);pointer-events:none}
+#dp-l12 .lhero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,147,58,.4),transparent)}
+#dp-l12 .lhero-in{max-width:720px;margin:0 auto;position:relative;z-index:1}
+#dp-l12 .lvlbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,147,58,.12);border:1px solid rgba(200,147,58,.28);color:var(--go2);font-size:.68rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:18px}
+#dp-l12 .ltitle{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,4vw,2.5rem);font-weight:900;color:#F5F0E8;line-height:1.15;margin-bottom:10px;letter-spacing:-.02em}
+#dp-l12 .ltitle em{color:var(--go);font-style:italic}
+#dp-l12 .lsub{font-size:.9rem;color:rgba(245,240,232,.62);margin-bottom:22px;max-width:520px;line-height:1.6}
+#dp-l12 .spills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px}
+#dp-l12 .spill{font-size:.67rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 11px;border-radius:100px}
+#dp-l12 .sp-th{background:rgba(124,58,237,.25);color:#C4B5FD}
+#dp-l12 .sp-ex{background:rgba(30,95,168,.25);color:#7DB8F0}
+#dp-l12 .sp-qu{background:rgba(200,147,58,.25);color:var(--go2)}
+#dp-l12 .sp-ic{background:rgba(46,125,82,.25);color:#6BCFA0}
+
+/* Nav dots */
+#dp-l12 .snav{display:flex;align-items:center;gap:5px;flex-wrap:wrap;padding-top:20px;border-top:1px solid rgba(255,255,255,.08)}
+#dp-l12 .snavdot{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;font-size:.7rem;font-weight:700;border:2px solid rgba(255,255,255,.18);color:rgba(255,255,255,.32);cursor:pointer;transition:all .25s;flex-shrink:0}
+#dp-l12 .snavdot.done{border-color:var(--gr);background:var(--gr);color:#fff}
+#dp-l12 .snavdot.active{border-color:var(--go);background:var(--go);color:#fff}
+#dp-l12 .snavsep{width:16px;height:2px;background:rgba(255,255,255,.1);border-radius:1px;flex-shrink:0}
+#dp-l12 .snavlbl{font-size:.63rem;color:rgba(245,240,232,.38);margin-left:6px}
+
+/* BODY */
+#dp-l12 .lbody{max-width:720px;margin:0 auto;padding:32px 20px 64px;background:var(--cr)}
+#dp-l12 .sblock{background:var(--wh);border:1px solid var(--bdl);border-radius:var(--rl);padding:28px;margin-bottom:24px;display:none;animation:dp12up .35s ease both;box-shadow:var(--sh1)}
+#dp-l12 .sblock.vis{display:block}
+@keyframes dp12up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+#dp-l12 .slabel{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--go);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+#dp-l12 .slabel::after{content:'';flex:1;height:1px;background:var(--bdl)}
+#dp-l12 .sheading{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ny);margin-bottom:16px;line-height:1.25}
+#dp-l12 .sheading em{color:var(--go);font-style:italic}
+#dp-l12 .stxt{font-size:.9rem;color:var(--ink2);margin-bottom:16px;line-height:1.65}
+
+/* Scene */
+#dp-l12 .scene{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:20px;margin-bottom:20px;position:relative;overflow:hidden}
+#dp-l12 .scene::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(200,147,58,.08),transparent 60%);pointer-events:none}
+#dp-l12 .s-ico{font-size:1.8rem;margin-bottom:8px;position:relative;z-index:1}
+#dp-l12 .s-t{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#F5F0E8;position:relative;z-index:1;margin-bottom:5px}
+#dp-l12 .s-d{font-size:.83rem;color:rgba(245,240,232,.65);position:relative;z-index:1;line-height:1.55}
+
+/* Callouts */
+#dp-l12 .co{display:flex;gap:10px;padding:13px 15px;border-radius:var(--r);margin:14px 0;font-size:.855rem;line-height:1.6}
+#dp-l12 .co-tip{background:var(--gop);border:1px solid rgba(200,147,58,.2);color:var(--ink2)}
+#dp-l12 .co-info{background:var(--blb);border:1px solid rgba(30,95,168,.15);color:var(--ink2)}
+#dp-l12 .co-pur{background:var(--pub);border:1px solid rgba(124,58,237,.15);color:var(--ink2)}
+#dp-l12 .co-teal{background:var(--teb);border:1px solid rgba(14,116,144,.15);color:var(--ink2)}
+#dp-l12 .co-or{background:var(--orb);border:1px solid rgba(217,119,6,.15);color:var(--ink2)}
+#dp-l12 .co-pk{background:var(--pkb);border:1px solid rgba(219,39,119,.15);color:var(--ink2)}
+#dp-l12 .co-ico{font-size:1rem;flex-shrink:0;margin-top:1px}
+
+/* Gbox */
+#dp-l12 .gbox{border-radius:0 var(--r) var(--r) 0;padding:18px 20px;margin:18px 0}
+#dp-l12 .gbox-bl{background:var(--blb);border:1px solid rgba(30,95,168,.2);border-left:4px solid var(--bl)}
+#dp-l12 .gbox-go{background:var(--gop);border:1px solid rgba(200,147,58,.2);border-left:4px solid var(--go)}
+#dp-l12 .gbox-gr{background:var(--grb);border:1px solid rgba(46,125,82,.2);border-left:4px solid var(--gr)}
+#dp-l12 .gbox-pu{background:var(--pub);border:1px solid rgba(124,58,237,.15);border-left:4px solid var(--pu)}
+#dp-l12 .gbox-te{background:var(--teb);border:1px solid rgba(14,116,144,.15);border-left:4px solid var(--te)}
+#dp-l12 .gbox-rd{background:var(--rdb);border:1px solid rgba(192,57,43,.15);border-left:4px solid var(--rd)}
+#dp-l12 .gbox-pk{background:var(--pkb);border:1px solid rgba(219,39,119,.15);border-left:4px solid var(--pk)}
+#dp-l12 .gbox h4{font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:11px}
+#dp-l12 .gbox-bl h4{color:var(--bl)}
+#dp-l12 .gbox-go h4{color:var(--go)}
+#dp-l12 .gbox-gr h4{color:var(--gr)}
+#dp-l12 .gbox-pu h4{color:var(--pu)}
+#dp-l12 .gbox-te h4{color:var(--te)}
+#dp-l12 .gbox-rd h4{color:var(--rd)}
+#dp-l12 .gbox-pk h4{color:var(--pk)}
+#dp-l12 .grule{font-family:'DM Mono',monospace;font-size:.86rem;color:var(--ny);background:rgba(255,255,255,.65);padding:9px 14px;border-radius:7px;margin-bottom:7px;line-height:1.6}
+#dp-l12 .grule span{color:var(--bl);font-weight:600}
+#dp-l12 .grule em{color:var(--go);font-style:normal;font-weight:600}
+#dp-l12 .grule strong{color:var(--gr);font-weight:700}
+
+/* Method cards */
+#dp-l12 .mcards{display:flex;flex-direction:column;gap:12px;margin:20px 0}
+#dp-l12 .mcard{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:18px;cursor:pointer;transition:all .22s}
+#dp-l12 .mcard:hover{border-color:var(--go);transform:translateX(4px)}
+#dp-l12 .mcard.fl{background:var(--gop);border-color:var(--go)}
+#dp-l12 .mc-head{display:flex;align-items:center;gap:12px}
+#dp-l12 .mc-icon{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;color:#fff}
+#dp-l12 .mc-title{font-size:.95rem;font-weight:700;color:var(--ny)}
+#dp-l12 .mc-sub{font-size:.75rem;color:var(--mu)}
+#dp-l12 .mc-hint{font-size:.75rem;color:var(--mu);font-style:italic;margin-top:6px}
+#dp-l12 .mc-body{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--bdl)}
+#dp-l12 .mcard.fl .mc-hint{display:none}
+#dp-l12 .mcard.fl .mc-body{display:block}
+#dp-l12 .mc-body p{font-size:.85rem;color:var(--ink2);line-height:1.6;margin-bottom:8px}
+
+/* Tables */
+#dp-l12 .gtbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.82rem}
+#dp-l12 .gtbl th{background:var(--ny);color:#F5F0E8;padding:9px 10px;text-align:left;font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+#dp-l12 .gtbl th:first-child{border-radius:var(--r) 0 0 0}
+#dp-l12 .gtbl th:last-child{border-radius:0 var(--r) 0 0}
+#dp-l12 .gtbl td{padding:8px 10px;border-bottom:1px solid var(--bdl);color:var(--ink2);vertical-align:top}
+#dp-l12 .gtbl tr:nth-child(even) td{background:var(--cr)}
+#dp-l12 .tbl-b{color:var(--bl);font-weight:600}
+#dp-l12 .tbl-g{color:var(--go);font-weight:600}
+#dp-l12 .tbl-gr{color:var(--gr);font-weight:600}
+#dp-l12 .tbl-pu{color:var(--pu);font-weight:600}
+#dp-l12 .tbl-rd{color:var(--rd);font-weight:600}
+#dp-l12 .tbl-te{color:var(--te);font-weight:600}
+#dp-l12 .tbl-pk{color:var(--pk);font-weight:600}
+
+/* Tabs */
+#dp-l12 .tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+#dp-l12 .tab{padding:9px 18px;border-radius:var(--r);font-size:.82rem;font-weight:600;background:var(--cr);border:2px solid var(--bd);color:var(--ink2);cursor:pointer;transition:all .2s}
+#dp-l12 .tab:hover{border-color:var(--go);color:var(--go)}
+#dp-l12 .tab.active{background:var(--ny);border-color:var(--ny);color:#fff}
+#dp-l12 .tabpanel{display:none}
+#dp-l12 .tabpanel.vis{display:block}
+
+/* Scenario Match */
+#dp-l12 .smatch{margin:20px 0}
+#dp-l12 .sm-item{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;align-items:center}
+#dp-l12 .sm-scenario{background:var(--blb);border:1px solid rgba(30,95,168,.15);border-radius:var(--r);padding:12px 14px;font-size:.85rem;color:var(--ink2);line-height:1.5}
+#dp-l12 .sm-select{border:2px solid var(--bd);border-radius:var(--r);padding:9px 12px;font-size:.85rem;color:var(--ink2);background:var(--cr);width:100%;font-family:'DM Sans',sans-serif;outline:none;transition:border-color .2s;cursor:pointer}
+#dp-l12 .sm-select:focus{border-color:var(--go)}
+#dp-l12 .sm-select.ok{border-color:var(--gr);background:var(--grb);color:var(--gr)}
+#dp-l12 .sm-select.bad{border-color:var(--rd);background:var(--rdb);color:var(--rd)}
+#dp-l12 .smfb{font-size:.82rem;font-weight:600;padding:10px 14px;border-radius:var(--r);margin-top:4px;display:none}
+#dp-l12 .smfb.ok{background:var(--grb);color:var(--gr);display:block}
+#dp-l12 .smfb.bad{background:var(--rdb);color:var(--rd);display:block}
+
+/* Audio */
+#dp-l12 .aplayer{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px;margin:14px 0;flex-wrap:wrap}
+#dp-l12 .abig{width:48px;height:48px;border-radius:50%;background:var(--go);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;transition:all .2s;cursor:pointer;border:none;box-shadow:0 4px 14px rgba(200,147,58,.4)}
+#dp-l12 .abig:hover{background:var(--go2);transform:scale(1.06)}
+#dp-l12 .ainfo{flex:1;min-width:160px}
+#dp-l12 .at{font-size:.87rem;font-weight:600;color:#F5F0E8;margin-bottom:3px}
+#dp-l12 .as{font-size:.72rem;color:rgba(245,240,232,.55)}
+#dp-l12 .apbar{height:4px;background:rgba(255,255,255,.14);border-radius:2px;margin-top:9px;overflow:hidden}
+#dp-l12 .apfill{height:100%;background:var(--go);width:0%;border-radius:2px;transition:width .3s}
+#dp-l12 .scrtog{background:rgba(255,255,255,.1);color:rgba(245,240,232,.78);font-size:.72rem;font-weight:600;padding:5px 11px;border-radius:100px;border:1px solid rgba(255,255,255,.15);cursor:pointer;transition:all .2s;flex-shrink:0}
+#dp-l12 .scrtog:hover{background:rgba(255,255,255,.2)}
+#dp-l12 .scrbox{background:var(--cr);border:1px solid var(--bd);border-radius:var(--r);padding:18px;margin-top:10px;display:none}
+#dp-l12 .scrbox.show{display:block}
+#dp-l12 .scrbox p{font-size:.875rem;color:var(--ink2);margin-bottom:7px;line-height:1.7}
+
+/* Writing */
+#dp-l12 .wa{width:100%;min-height:130px;border:2px solid var(--bd);border-radius:var(--r);padding:14px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--ink);background:var(--cr);resize:vertical;outline:none;transition:border-color .2s;line-height:1.7}
+#dp-l12 .wa:focus{border-color:var(--go)}
+#dp-l12 .wa::placeholder{color:var(--mu)}
+#dp-l12 .wcnt{font-size:.72rem;color:var(--mu);text-align:right;margin-top:5px}
+#dp-l12 .wsub{margin-top:11px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none}
+#dp-l12 .wsub:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l12 .wfb{display:none;margin-top:13px;background:var(--grb);border:1.5px solid rgba(46,125,82,.22);border-radius:var(--r);padding:15px;font-size:.855rem;color:var(--gr);line-height:1.65}
+#dp-l12 .wfb.show{display:block}
+
+/* Quiz */
+#dp-l12 .qpr{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+#dp-l12 .qpbar{flex:1;height:6px;background:var(--bd);border-radius:3px;overflow:hidden;margin:0 11px}
+#dp-l12 .qpfill{height:100%;background:linear-gradient(90deg,var(--go),var(--go2));border-radius:3px;transition:width .4s ease}
+#dp-l12 .qcnt{font-size:.77rem;font-weight:600;color:var(--mu)}
+#dp-l12 .qq{font-size:1rem;font-weight:600;color:var(--ny);margin-bottom:16px;line-height:1.5}
+#dp-l12 .qqn{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--go);color:#fff;font-size:.75rem;font-weight:700;margin-right:7px;flex-shrink:0;vertical-align:middle}
+#dp-l12 .qopts{display:flex;flex-direction:column;gap:9px}
+#dp-l12 .qopt{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:13px 16px;font-size:.9rem;color:var(--ink2);text-align:left;transition:all .2s;display:flex;align-items:center;gap:9px;cursor:pointer}
+#dp-l12 .qopt .ql{font-weight:700;color:var(--ny);min-width:18px}
+#dp-l12 .qopt:hover:not([disabled]){border-color:var(--go);background:var(--gop);transform:translateX(3px)}
+#dp-l12 .qopt.qco{border-color:var(--gr)!important;background:var(--grb)!important;color:var(--gr)!important}
+#dp-l12 .qopt.qwr{border-color:var(--rd)!important;background:var(--rdb)!important;color:var(--rd)!important}
+#dp-l12 .qfbm{display:none;margin-top:11px;padding:13px 16px;border-radius:var(--r);font-size:.86rem;font-weight:500;line-height:1.6}
+#dp-l12 .qfbm.show{display:block}
+#dp-l12 .qfbm.ok{background:var(--grb);color:var(--gr);border:1px solid rgba(46,125,82,.2)}
+#dp-l12 .qfbm.bad{background:var(--rdb);color:var(--rd);border:1px solid rgba(192,57,43,.2)}
+#dp-l12 .qnxt{margin-top:14px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;display:none;cursor:pointer;border:none}
+#dp-l12 .qnxt:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l12 .qnxt.show{display:inline-block}
+#dp-l12 .spl{text-align:center;padding:28px 20px;display:none;animation:dp12up .4s ease both}
+#dp-l12 .spl.show{display:block}
+#dp-l12 .scir{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--ny),var(--ny2));display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 8px 24px rgba(13,43,78,.2)}
+#dp-l12 .snum{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:var(--go);line-height:1}
+#dp-l12 .sden{font-size:.7rem;color:rgba(245,240,232,.5)}
+#dp-l12 .smsg{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--ny);margin-bottom:7px}
+#dp-l12 .ssub{font-size:.84rem;color:var(--mu);margin-bottom:18px}
+#dp-l12 .srty{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;margin-right:8px;cursor:pointer;border:none}
+#dp-l12 .srty:hover{background:var(--go)}
+
+/* Chkb */
+#dp-l12 .chkb{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none;margin-top:6px}
+#dp-l12 .chkb:hover{background:var(--go);transform:translateY(-1px)}
+
+/* Nav buttons */
+#dp-l12 .navb{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:18px;border-top:1px solid var(--bdl);gap:10px}
+#dp-l12 .nb{display:flex;align-items:center;gap:7px;padding:11px 22px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;border:2px solid var(--bd);color:var(--ink2);background:var(--wh);cursor:pointer}
+#dp-l12 .nb:hover{border-color:var(--go);color:var(--go)}
+#dp-l12 .nb.pri{background:var(--ny);color:#fff;border-color:transparent}
+#dp-l12 .nb.pri:hover{background:var(--go);border-color:transparent}
+#dp-l12 .nb:disabled{opacity:.38;cursor:default;pointer-events:none}
+
+/* Footer */
+#dp-l12 .lft{background:var(--ny);padding:24px;text-align:center;border-radius:0 0 var(--rl) var(--rl)}
+#dp-l12 .flo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:#F5F0E8;margin-bottom:5px}
+#dp-l12 .flo em{color:var(--go);font-style:italic}
+#dp-l12 .ftx{font-size:.74rem;color:rgba(245,240,232,.42)}
+
+@media(max-width:560px){
+  #dp-l12 .lhero{padding:32px 16px 28px}
+  #dp-l12 .lbody{padding:20px 14px 48px}
+  #dp-l12 .sblock{padding:18px 14px}
+  #dp-l12 .navb{flex-direction:column}
+  #dp-l12 .nb{width:100%;justify-content:center}
+  #dp-l12 .tabs{gap:4px}
+  #dp-l12 .tab{padding:7px 12px;font-size:.78rem}
+  #dp-l12 .sm-item{grid-template-columns:1fr}
+  #dp-l12 .gtbl{font-size:.75rem}
+  #dp-l12 .gtbl th,#dp-l12 .gtbl td{padding:6px 8px}
+}
+</style>
+</head>
+<body>
+
+<div id="dp-l12">
+
+<!-- HERO -->
+<div class="lhero">
+  <div class="lhero-in">
+    <div class="lvlbadge">🎓 Didactics Series · Lesson 12 of 12</div>
+    <h1 class="ltitle">SLA <em>Theories</em></h1>
+    <p class="lsub">Master Second Language Acquisition theories: Critical Period, Krashen's 5 Hypotheses, Output, Interaction, Noticing, and Communicative Competence.</p>
+    <div class="spills">
+      <span class="spill sp-th">🧠 Krashen's 5 Hypotheses</span>
+      <span class="spill sp-ex">📢 Output & Interaction</span>
+      <span class="spill sp-ic">👀 Noticing Hypothesis</span>
+      <span class="spill sp-qu">📝 40-Question Exam</span>
+    </div>
+    <nav class="snav">
+      <div class="snavdot active" data-s="0">1</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="1">2</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="2">3</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="3">4</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="4">5</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="5">6</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="6">7</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="7">8</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="8">9</div>
+      <span class="snavlbl">9 sections</span>
+    </nav>
+  </div>
+</div>
+
+<div class="lbody">
+
+<!-- SECTION 1: WHAT IS SLA -->
+<section class="sblock vis" id="dp12s0">
+  <div class="slabel">Section 1 · Foundations</div>
+  <h2 class="sheading">What is <em>SLA</em>?</h2>
+
+  <div class="scene">
+    <div class="s-ico">🌍</div>
+    <div class="s-t">Understanding How People Learn a Second Language</div>
+    <div class="s-d">Second Language Acquisition (SLA) is the scientific study of how people learn languages other than their native language. It draws on linguistics, psychology, and education.</div>
+  </div>
+
+  <div class="gbox gbox-bl">
+    <h4>SLA — Key Definitions</h4>
+    <div class="grule"><strong>SLA:</strong> Second Language Acquisition — the study of how people learn additional languages</div>
+    <div class="grule"><em>L1:</em> First Language (native language / mother tongue)</div>
+    <div class="grule"><span>L2:</span> Second Language (any language learned after L1)</span></div>
+    <div class="grule"><strong>Target Language:</strong> The language being learned</strong></div>
+  </div>
+
+  <div class="gbox gbox-pu">
+    <h4>Key Questions SLA Addresses</h4>
+    <div class="grule">• How do people acquire a second language?</div>
+    <div class="grule">• What role does input play? What about output?</div>
+    <div class="grule">• Is there an optimal age for language learning?</div>
+    <div class="grule">• What factors affect success in L2 learning?</div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Important Distinction:</strong> ACQUISITION is subconscious (like how children learn L1). LEARNING is conscious (studying rules). This distinction is central to Krashen's theory.</span></div>
+
+  <div class="navb">
+    <button class="nb" disabled>← Back</button>
+    <button class="nb pri" data-go="1">Next: Critical Period →</button>
+  </div>
+</section>
+
+<!-- SECTION 2: CRITICAL PERIOD HYPOTHESIS -->
+<section class="sblock" id="dp12s1">
+  <div class="slabel">Section 2 · Age & Acquisition</div>
+  <h2 class="sheading">Critical Period <em>Hypothesis</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">👶</div>
+    <div class="s-t">Is There an Optimal Age for Language Learning?</div>
+    <div class="s-d">The Critical Period Hypothesis suggests that there is a window of time when language acquisition is easiest, and after this period, it becomes more difficult.</div>
+  </div>
+
+  <div class="gbox gbox-rd">
+    <h4>Critical Period Hypothesis (CPH)</h4>
+    <div class="grule"><strong>Proposed by:</strong> Eric LENNEBERG (1967)</div>
+    <div class="grule"><em>Definition:</em> There is a critical period (roughly birth to puberty) during which language acquisition occurs most naturally</em></div>
+    <div class="grule"><span>After puberty:</span> The brain loses plasticity, making native-like proficiency harder</span></div>
+    <div class="grule"><strong>Evidence:</strong> Children often achieve better pronunciation and implicit grammar</strong></div>
+  </div>
+
+  <table class="gtbl">
+    <tr><th>Aspect</th><th class="tbl-gr">Younger Learners</th><th class="tbl-bl">Older Learners</th></tr>
+    <tr><td><strong>Pronunciation</strong></td><td>Often achieve native-like accent</td><td>More likely to retain L1 accent</td></tr>
+    <tr><td><strong>Grammar intuition</strong></td><td>Develop implicit knowledge</td><td>Rely more on explicit rules</td></tr>
+    <tr><td><strong>Learning speed</strong></td><td>Slower initially</td><td>Faster initial progress</td></tr>
+    <tr><td><strong>Ultimate attainment</strong></td><td>Higher ceiling</td><td>May plateau earlier</td></tr>
+  </table>
+
+  <div class="gbox gbox-go">
+    <h4>Related Concepts</h4>
+    <div class="grule"><strong>Sensitive Period:</strong> A weaker version — learning is easier but not impossible afterward</div>
+    <div class="grule"><em>Brain Lateralization:</em> Language functions become localized in one hemisphere as the brain matures</em></div>
+    <div class="grule"><span>Ultimate Attainment:</span> The final level of L2 proficiency a learner achieves</span></div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Tip:</strong> CPH was proposed by LENNEBERG (1967). Native-like attainment is harder AFTER PUBERTY. Critical Period ≠ impossible after puberty, just harder.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="0">← What is SLA</button>
+    <button class="nb pri" data-go="2">Next: Krashen's Hypotheses →</button>
+  </div>
+</section>
+
+<!-- SECTION 3: KRASHEN'S 5 HYPOTHESES -->
+<section class="sblock" id="dp12s2">
+  <div class="slabel">Section 3 · Input-Based Theory</div>
+  <h2 class="sheading">Krashen's <em>5 Hypotheses</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">📚</div>
+    <div class="s-t">The Most Influential SLA Theory</div>
+    <div class="s-d">Stephen Krashen proposed five interconnected hypotheses explaining how second languages are acquired. His theory emphasizes COMPREHENSIBLE INPUT.</div>
+  </div>
+
+  <div class="mcards">
+    <div class="mcard" data-exp="kh1">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--bl)">1️⃣</div>
+        <div><div class="mc-title">Acquisition-Learning Hypothesis</div><div class="mc-sub">Two distinct ways to develop L2</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="kh1">
+        <p><strong>ACQUISITION:</strong> Subconscious process, like how children learn L1. Results in implicit knowledge.</p>
+        <p><strong>LEARNING:</strong> Conscious process of studying rules. Results in explicit knowledge.</p>
+        <p><strong>Key claim:</strong> Only ACQUISITION leads to fluent, spontaneous use. Learning can only "monitor."</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="kh2">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--pu)">2️⃣</div>
+        <div><div class="mc-title">Monitor Hypothesis</div><div class="mc-sub">Learned knowledge acts as editor</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="kh2">
+        <p><strong>Definition:</strong> Learned knowledge can only be used as a MONITOR (editor) to check and correct output.</p>
+        <p><strong>Monitor conditions:</strong> Time, focus on form, knowledge of the rule.</p>
+        <p><strong>Types:</strong> Over-users (too careful), under-users (ignore rules), optimal users (balance).</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="kh3">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--gr)">3️⃣</div>
+        <div><div class="mc-title">Input Hypothesis (i+1)</div><div class="mc-sub">Comprehensible input drives acquisition</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="kh3">
+        <p><strong>Definition:</strong> Learners acquire language when they receive COMPREHENSIBLE INPUT slightly above their current level (i+1).</p>
+        <p><strong>i = current level</strong>; +1 = slightly beyond current competence</p>
+        <p><strong>Key claim:</strong> Speaking is a RESULT of acquisition, not its cause. Input is primary.</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="kh4">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--go)">4️⃣</div>
+        <div><div class="mc-title">Affective Filter Hypothesis</div><div class="mc-sub">Emotions can block acquisition</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="kh4">
+        <p><strong>Definition:</strong> Emotional factors (anxiety, motivation, confidence) can BLOCK or ALLOW input to reach the LAD.</p>
+        <p><strong>High filter:</strong> Anxiety, low motivation → blocks input</p>
+        <p><strong>Low filter:</strong> Relaxed, motivated → input gets through</p>
+        <p><strong>Implication:</strong> Create low-anxiety classrooms for better acquisition.</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="kh5">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--te)">5️⃣</div>
+        <div><div class="mc-title">Natural Order Hypothesis</div><div class="mc-sub">Grammar acquired in predictable order</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="kh5">
+        <p><strong>Definition:</strong> Grammatical structures are acquired in a PREDICTABLE ORDER, regardless of teaching order.</p>
+        <p><strong>Example:</strong> -ing is acquired before 3rd person -s, regardless of instruction.</p>
+        <p><strong>Implication:</strong> Teaching order doesn't determine acquisition order.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Trap:</strong> i+1 is KRASHEN's Input Hypothesis. Don't confuse with ZPD (Vygotsky) — similar concepts, different theorists! Krashen = INPUT; Swain = OUTPUT.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="1">← Critical Period</button>
+    <button class="nb pri" data-go="3">Next: Output & Interaction →</button>
+  </div>
+</section>
+
+<!-- SECTION 4: OUTPUT & INTERACTION HYPOTHESES -->
+<section class="sblock" id="dp12s3">
+  <div class="slabel">Section 4 · Beyond Input</div>
+  <h2 class="sheading">Output &amp; <em>Interaction</em> Hypotheses</h2>
+
+  <p class="stxt">While Krashen emphasized INPUT, other researchers argued that OUTPUT and INTERACTION are also essential for language acquisition.</p>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="t4a">📢 Output (Swain)</button>
+    <button class="tab" data-tab="t4b">🔄 Interaction (Long)</button>
+    <button class="tab" data-tab="t4c">📊 Comparison</button>
+  </div>
+
+  <div class="tabpanel vis" id="t4a">
+    <div class="gbox gbox-pu">
+      <h4>Output Hypothesis — Merrill Swain (1985)</h4>
+      <div class="grule"><strong>Theorist:</strong> Merrill SWAIN</div>
+      <div class="grule"><em>Key claim:</em> Learners need not only INPUT but also opportunities to PRODUCE language (output)</div>
+      <div class="grule"><span>Pushed Output:</span> When learners are pushed to produce language, they notice gaps in their knowledge</span></div>
+    </div>
+    <div class="gbox gbox-gr">
+      <h4>Functions of Output</h4>
+      <div class="grule"><strong>1. Noticing function:</strong> Producing output helps learners notice what they DON'T know</div>
+      <div class="grule"><em>2. Hypothesis testing:</em> Learners test their hypotheses about the language</em></div>
+      <div class="grule"><span>3. Metalinguistic function:</span> Output promotes reflection on language</span></div>
+    </div>
+    <div class="co co-info"><span class="co-ico">ℹ️</span><span><strong>Key insight:</strong> Speaking isn't just a result of acquisition — it actively CONTRIBUTES to acquisition.</span></div>
+  </div>
+
+  <div class="tabpanel" id="t4b">
+    <div class="gbox gbox-bl">
+      <h4>Interaction Hypothesis — Michael Long (1983, 1996)</h4>
+      <div class="grule"><strong>Theorist:</strong> Michael LONG</div>
+      <div class="grule"><em>Key claim:</em> Language develops through INTERACTION and NEGOTIATION OF MEANING</div>
+      <div class="grule"><span>Negotiation of Meaning:</span> When communication breaks down, speakers modify input</span></div>
+    </div>
+    <div class="gbox gbox-te">
+      <h4>Types of Interactional Modifications</h4>
+      <div class="grule"><strong>Clarification requests:</strong> "What do you mean?" "Sorry?"</div>
+      <div class="grule"><em>Confirmation checks:</em> "You mean you went yesterday?"</em></div>
+      <div class="grule"><span>Comprehension checks:</span> "Do you understand?" "Is that clear?"</span></div>
+    </div>
+    <div class="co co-info"><span class="co-ico">ℹ️</span><span><strong>Key insight:</strong> Interaction provides MODIFIED INPUT tailored to the learner's level.</span></div>
+  </div>
+
+  <div class="tabpanel" id="t4c">
+    <table class="gtbl">
+      <tr><th>Hypothesis</th><th>Theorist</th><th>Focus</th><th>Key Claim</th></tr>
+      <tr><td class="tbl-g"><strong>Input</strong></td><td>Krashen</td><td>Receiving language</td><td>i+1 comprehensible input drives acquisition</td></tr>
+      <tr><td class="tbl-pu"><strong>Output</strong></td><td>Swain</td><td>Producing language</td><td>Pushed output helps notice gaps</td></tr>
+      <tr><td class="tbl-b"><strong>Interaction</strong></td><td>Long</td><td>Communicating</td><td>Negotiation of meaning provides ideal input</td></tr>
+    </table>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Trap:</strong> KRASHEN = Input (i+1). SWAIN = Output. LONG = Interaction. Know the theorist-hypothesis pairs!</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="2">← Krashen's Hypotheses</button>
+    <button class="nb pri" data-go="4">Next: Noticing Hypothesis →</button>
+  </div>
+</section>
+
+<!-- SECTION 5: NOTICING HYPOTHESIS -->
+<section class="sblock" id="dp12s4">
+  <div class="slabel">Section 5 · Attention & Awareness</div>
+  <h2 class="sheading">Noticing <em>Hypothesis</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">👀</div>
+    <div class="s-t">You Can't Learn What You Don't Notice</div>
+    <div class="s-d">Richard Schmidt proposed that conscious NOTICING of input features is necessary for acquisition. Input alone isn't enough — you must pay attention to it.</div>
+  </div>
+
+  <div class="gbox gbox-pk">
+    <h4>Noticing Hypothesis — Richard Schmidt (1990)</h4>
+    <div class="grule"><strong>Theorist:</strong> Richard SCHMIDT</div>
+    <div class="grule"><em>Key claim:</em> Learners must consciously NOTICE features of input to acquire them</em></div>
+    <div class="grule"><span>Input → Intake:</span> Only NOTICED input becomes intake (what's actually processed)</span></div>
+    <div class="grule"><strong>Example:</strong> A learner uses past tense correctly only after consciously noticing "-ed"</strong></div>
+  </div>
+
+  <div class="gbox gbox-bl">
+    <h4>Key Concepts</h4>
+    <div class="grule"><strong>Input:</strong> All the language a learner is exposed to</div>
+    <div class="grule"><em>Intake:</em> The portion of input that is actually processed and stored</em></div>
+    <div class="grule"><span>Noticing:</span> Consciously paying attention to specific features</span></div>
+    <div class="grule"><strong>Noticing the gap:</strong> Realizing difference between your output and target forms</strong></div>
+  </div>
+
+  <div class="gbox gbox-gr">
+    <h4>Noticing vs Consciousness Raising</h4>
+    <div class="grule"><strong>Noticing (Schmidt):</strong> Paying attention to forms IN INPUT naturally</div>
+    <div class="grule"><em>Consciousness Raising:</em> Explicit instruction to make learners aware of rules</em></div>
+    <div class="grule"><span>Both</span> help learners pay attention to language features</span></div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Teaching Implication:</strong> Use input enhancement (highlighting, bold) to help learners NOTICE target features.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="3">← Output & Interaction</button>
+    <button class="nb pri" data-go="5">Next: Communicative Competence →</button>
+  </div>
+</section>
+
+<!-- SECTION 6: COMMUNICATIVE COMPETENCE -->
+<section class="sblock" id="dp12s5">
+  <div class="slabel">Section 6 · What Does It Mean to "Know" a Language?</div>
+  <h2 class="sheading">Communicative <em>Competence</em></h2>
+
+  <p class="stxt">Knowing a language is more than just knowing grammar. <strong>Communicative Competence</strong> is the ability to use language appropriately in real social contexts.</p>
+
+  <div class="gbox gbox-go">
+    <h4>Origins</h4>
+    <div class="grule"><strong>Dell Hymes (1972):</strong> Coined "Communicative Competence" — knowing WHAT to say, TO WHOM, WHERE, WHEN, and HOW</div>
+    <div class="grule"><em>Response to Chomsky:</em> Chomsky focused on grammatical competence; Hymes added social context</em></div>
+  </div>
+
+  <div class="gbox gbox-pu">
+    <h4>Canale & Swain's Model (1980) — 4 Components</h4>
+    <div class="grule"><strong>1. Grammatical Competence:</strong> Knowledge of grammar, vocabulary, pronunciation</div>
+    <div class="grule"><em>2. Sociolinguistic Competence:</em> Using language appropriately in social contexts</em></div>
+    <div class="grule"><span>3. Discourse Competence:</span> Connecting sentences coherently (cohesion, coherence)</span></div>
+    <div class="grule"><strong>4. Strategic Competence:</strong> Strategies to overcome communication breakdowns</strong></div>
+  </div>
+
+  <table class="gtbl">
+    <tr><th>Component</th><th>What It Covers</th><th>Example</th></tr>
+    <tr><td class="tbl-b"><strong>Grammatical</strong></td><td>Grammar, vocabulary, pronunciation</td><td>Using correct verb forms</td></tr>
+    <tr><td class="tbl-pu"><strong>Sociolinguistic</strong></td><td>Appropriateness, register</td><td>Using formal language with boss</td></tr>
+    <tr><td class="tbl-gr"><strong>Discourse</strong></td><td>Cohesion, coherence</td><td>Using "however," "therefore"</td></tr>
+    <tr><td class="tbl-g"><strong>Strategic</strong></td><td>Communication strategies</td><td>Paraphrasing when stuck</td></tr>
+  </table>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Tip:</strong> HYMES coined Communicative Competence. CANALE & SWAIN expanded to 4 components. Strategic = repair strategies.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="4">← Noticing Hypothesis</button>
+    <button class="nb pri" data-go="6">Next: Listening Task →</button>
+  </div>
+</section>
+
+<!-- SECTION 7: LISTENING -->
+<section class="sblock" id="dp12s6">
+  <div class="slabel">Section 7 · Listening Comprehension</div>
+  <h2 class="sheading">🎙️ Listen — <em>An SLA Expert Explains Key Theories</em></h2>
+  <p class="stxt">Press ▶ to listen to an SLA expert explaining key theories. <strong>Match each description to the correct concept.</strong></p>
+
+  <div class="aplayer">
+    <button class="abig" id="dp12playbtn">▶</button>
+    <div class="ainfo">
+      <div class="at">Key SLA Theories Explained</div>
+      <div class="as">~70 seconds · British English</div>
+      <div class="apbar"><div class="apfill" id="dp12apf"></div></div>
+    </div>
+    <button class="scrtog" id="dp12scrtog">📄 Transcript</button>
+  </div>
+
+  <div class="scrbox" id="dp12scrbox">
+    <p><strong>Expert:</strong> "Let me explain key SLA theories. First, Krashen's Input Hypothesis. Krashen argued that learners acquire language when they receive comprehensible input — language slightly above their current level, called i+1. The key is INPUT."</p>
+    <p>"Swain disagreed. Her Output Hypothesis says learners also need to PRODUCE language. When pushed to speak or write, learners notice gaps in their knowledge."</p>
+    <p>"Long's Interaction Hypothesis combines these ideas. During interaction, when communication breaks down, speakers negotiate meaning — asking for clarification. This provides ideal modified input."</p>
+    <p>"Schmidt's Noticing Hypothesis adds: you can't learn what you don't notice. Learners must consciously pay attention to input features for acquisition to occur."</p>
+    <p>"Finally, Communicative Competence from Hymes, expanded by Canale and Swain into four components: grammatical, sociolinguistic, discourse, and strategic competence."</p>
+  </div>
+
+  <h4 style="color:var(--ny);font-family:'Playfair Display',serif;font-size:1rem;margin:20px 0 13px">Match each description to the correct concept</h4>
+
+  <div class="smatch" id="dp12match">
+    <div class="sm-item">
+      <div class="sm-scenario">"Learners acquire language through comprehensible input slightly above their level (i+1)."</div>
+      <select class="sm-select" data-a="Krashen's Input Hypothesis" id="dp12ms0">
+        <option value="">— Select —</option>
+        <option>Krashen's Input Hypothesis</option><option>Swain's Output Hypothesis</option><option>Long's Interaction Hypothesis</option><option>Schmidt's Noticing Hypothesis</option><option>Vygotsky's ZPD</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp12mf0"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Pushed output helps learners notice gaps in their knowledge."</div>
+      <select class="sm-select" data-a="Swain's Output Hypothesis" id="dp12ms1">
+        <option value="">— Select —</option>
+        <option>Krashen's Input Hypothesis</option><option>Swain's Output Hypothesis</option><option>Long's Interaction Hypothesis</option><option>Schmidt's Noticing Hypothesis</option><option>Chomsky's LAD</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp12mf1"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Language develops through interaction and negotiation of meaning."</div>
+      <select class="sm-select" data-a="Long's Interaction Hypothesis" id="dp12ms2">
+        <option value="">— Select —</option>
+        <option>Krashen's Input Hypothesis</option><option>Swain's Output Hypothesis</option><option>Long's Interaction Hypothesis</option><option>Schmidt's Noticing Hypothesis</option><option>Hymes' Theory</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp12mf2"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Learners must consciously notice input features for acquisition to occur."</div>
+      <select class="sm-select" data-a="Schmidt's Noticing Hypothesis" id="dp12ms3">
+        <option value="">— Select —</option>
+        <option>Krashen's Affective Filter</option><option>Swain's Output Hypothesis</option><option>Long's Interaction Hypothesis</option><option>Schmidt's Noticing Hypothesis</option><option>Canale & Swain's Model</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp12mf3"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Using strategies to deal with communication breakdowns."</div>
+      <select class="sm-select" data-a="Strategic Competence" id="dp12ms4">
+        <option value="">— Select —</option>
+        <option>Grammatical Competence</option><option>Sociolinguistic Competence</option><option>Discourse Competence</option><option>Strategic Competence</option><option>Linguistic Competence</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp12mf4"></div>
+  </div>
+
+  <button class="chkb" id="dp12chkmatch">Check Answers ✓</button>
+
+  <div class="navb">
+    <button class="nb" data-go="5">← Communicative Competence</button>
+    <button class="nb pri" data-go="7">Next: Interview Prep →</button>
+  </div>
+</section>
+
+<!-- SECTION 8: INTERVIEW PREP -->
+<section class="sblock" id="dp12s7">
+  <div class="slabel">Section 8 · Interview Preparation</div>
+  <h2 class="sheading">Interview Practice — <em>Krashen's Input Hypothesis</em></h2>
+
+  <div class="co co-info"><span class="co-ico">ℹ️</span><span><strong>Note:</strong> The written exam is <strong>100% multiple choice</strong> (A, B, C, D, E). However, in the <strong>oral interview</strong>, you may be asked to explain key concepts.</span></div>
+
+  <p class="stxt">Practice explaining <strong>Krashen's Input Hypothesis</strong> in 60–80 words. Include the theorist, i+1 concept, and a teaching implication.</p>
+
+  <div class="co co-tip"><span class="co-ico">✍️</span><span><strong>Structure:</strong> 1. Name the theorist 2. Define i+1 3. Key claim about input 4. One classroom implication</span></div>
+
+  <div style="margin-top:18px">
+    <textarea class="wa" id="dp12wtxt" placeholder="Krashen's Input Hypothesis states that... The term i+1 means... According to Krashen..."></textarea>
+    <div class="wcnt" id="dp12wcnt">0 words (aim for 60–80)</div>
+    <button class="wsub" id="dp12wsub">Check My Answer ✓</button>
+    <div class="wfb" id="dp12wfb">
+      <strong>✅ Good practice!</strong><br><br>
+      <strong>Model Answer:</strong><br>
+      "Krashen's Input Hypothesis, proposed by Stephen Krashen, states that language acquisition occurs when learners are exposed to comprehensible input slightly above their current level, represented as i+1. The 'i' stands for current competence, and '+1' is the next level. According to Krashen, input is primary — speaking is a result of acquisition, not its cause. In the classroom, teachers should provide rich, understandable input through reading and listening at an appropriate level."
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="6">← Listening Task</button>
+    <button class="nb pri" data-go="8">Next: 40-Question Exam →</button>
+  </div>
+</section>
+
+<!-- SECTION 9: 40-QUESTION EXAM -->
+<section class="sblock" id="dp12s8">
+  <div class="slabel">Section 9 · Full Exam Simulation</div>
+  <h2 class="sheading">Exam Practice 🎯 — 40 Questions</h2>
+  <p class="stxt">This section simulates the <strong>real exam format</strong>: Multiple choice with 5 options (A, B, C, D, E). Option E is always "None of the above."</p>
+
+  <div class="co co-or"><span class="co-ico">⏱️</span><span><strong>Exam Conditions:</strong> Try to answer each question in under 45 seconds.</span></div>
+
+  <div>
+    <div class="qpr">
+      <span class="qcnt" id="dp12qcnt">1 / 40</span>
+      <div class="qpbar"><div class="qpfill" id="dp12qpf" style="width:2.5%"></div></div>
+      <span class="qcnt" id="dp12qsl">Score: 0</span>
+    </div>
+    <div id="dp12qarea"></div>
+    <div class="qfbm" id="dp12qfb"></div>
+    <button class="qnxt" id="dp12qnxt">Next Question →</button>
+    <div class="spl" id="dp12spl">
+      <div class="scir"><div class="snum" id="dp12sfin">0</div><div class="sden">/ 40</div></div>
+      <div class="smsg" id="dp12smsg">Well done!</div>
+      <div class="ssub" id="dp12ssub">Keep practising!</div>
+      <button class="srty" id="dp12srty">🔄 Retry Quiz</button>
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="7">← Interview Prep</button>
+  </div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="lft">
+  <div class="flo">English<em>Pro</em> · Didactics</div>
+  <div class="ftx">Lesson 12 — SLA Theories · Krashen · Swain · Long · Schmidt · Communicative Competence · 40-Question Exam</div>
+</footer>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+(function(){
+'use strict';
+
+var QD=[
+  {q:'SLA stands for:',opts:['Standard Language Assessment','Second Language Acquisition','Systematic Learning Approach','Speech and Language Arts','None of the above'],a:1,ex:'✅ B is correct. SLA = Second Language Acquisition.'},
+  {q:'L1 refers to:',opts:['First lesson','First Language (native/mother tongue)','Level 1 proficiency','Learning stage 1','None of the above'],a:1,ex:'✅ B is correct. L1 = First Language = native language.'},
+  {q:'The Critical Period Hypothesis was proposed by:',opts:['Noam Chomsky','Stephen Krashen','Eric Lenneberg','Lev Vygotsky','None of the above'],a:2,ex:'✅ C is correct. CPH was proposed by Eric LENNEBERG (1967).'},
+  {q:'According to CPH, native-like attainment is harder after:',opts:['Age 3','Age 7','Puberty','Age 25','None of the above'],a:2,ex:'✅ C is correct. CPH: native-like attainment harder after PUBERTY.'},
+  {q:'The Critical Period Hypothesis suggests that:',opts:['Adults cannot learn languages','There is no optimal age','There is a window when learning is easiest','Only children can learn languages','None of the above'],a:2,ex:'✅ C is correct. CPH: there is a WINDOW when learning is most natural.'},
+  {q:'A weaker version of CPH is called:',opts:['Optimal Period','Sensitive Period','Learning Window','Golden Age','None of the above'],a:1,ex:'✅ B is correct. SENSITIVE PERIOD is a weaker version of CPH.'},
+  {q:'Ultimate attainment refers to:',opts:['The first stage of learning','The final level of L2 proficiency achieved','Native-speaker competence only','Initial proficiency','None of the above'],a:1,ex:'✅ B is correct. ULTIMATE ATTAINMENT = final level of L2 proficiency.'},
+  {q:'Younger learners typically have an advantage in:',opts:['Learning speed','Grammatical explanations','Pronunciation and accent','Test-taking skills','None of the above'],a:2,ex:'✅ C is correct. Younger learners often achieve native-like PRONUNCIATION.'},
+  {q:'How many hypotheses did Krashen propose?',opts:['3','4','5','6','None of the above'],a:2,ex:'✅ C is correct. Krashen proposed FIVE hypotheses.'},
+  {q:'According to Krashen, ACQUISITION is:',opts:['Conscious learning of rules','Subconscious process like L1','Memorizing vocabulary','Studying grammar','None of the above'],a:1,ex:'✅ B is correct. ACQUISITION = subconscious, like children learning L1.'},
+  {q:'According to Krashen, LEARNING is:',opts:['Subconscious process','Conscious process of studying rules','Always superior to acquisition','The same as acquisition','None of the above'],a:1,ex:'✅ B is correct. LEARNING = conscious process of studying rules.'},
+  {q:'Which leads to fluent, spontaneous language use (Krashen)?',opts:['Learning only','Acquisition only','Both equally','Neither','None of the above'],a:1,ex:'✅ B is correct. Only ACQUISITION leads to fluent use (Krashen).'},
+  {q:'The Monitor Hypothesis states that learned knowledge:',opts:['Is the primary source of fluency','Acts as an editor to check output','Is more important than acquired','Cannot be used at all','None of the above'],a:1,ex:'✅ B is correct. MONITOR: learned knowledge EDITS output.'},
+  {q:'For the Monitor to work, learners need:',opts:['Only motivation','Time, focus on form, and knowledge of rule','Only input','Only practice','None of the above'],a:1,ex:'✅ B is correct. Monitor conditions: TIME, FOCUS ON FORM, RULE KNOWLEDGE.'},
+  {q:'Krashen\'s i+1 refers to:',opts:['Input at current level','Input slightly above current level','Input far above level','Output at current level','None of the above'],a:1,ex:'✅ B is correct. i+1 = comprehensible input SLIGHTLY ABOVE current level.'},
+  {q:'The Input Hypothesis claims that:',opts:['Output is primary','Speaking causes acquisition','Comprehensible input drives acquisition','Grammar study is essential','None of the above'],a:2,ex:'✅ C is correct. INPUT HYPOTHESIS: comprehensible input DRIVES acquisition.'},
+  {q:'According to the Affective Filter, high anxiety:',opts:['Helps acquisition','Blocks input from reaching LAD','Has no effect','Improves output','None of the above'],a:1,ex:'✅ B is correct. HIGH FILTER (anxiety) BLOCKS input.'},
+  {q:'A "low affective filter" means:',opts:['High anxiety','Input is blocked','Learner is relaxed — input gets through','Learning is impossible','None of the above'],a:2,ex:'✅ C is correct. LOW FILTER = relaxed, motivated → input acquired.'},
+  {q:'The Natural Order Hypothesis states that:',opts:['Teachers determine acquisition order','Grammar is acquired in predictable order','All structures acquired simultaneously','There is no order','None of the above'],a:1,ex:'✅ B is correct. NATURAL ORDER: grammar acquired in PREDICTABLE ORDER.'},
+  {q:'According to Natural Order, -ing is typically acquired:',opts:['After 3rd person -s','At same time as 3rd person -s','Before 3rd person -s','Last','None of the above'],a:2,ex:'✅ C is correct. -ING acquired BEFORE 3rd person -s.'},
+  {q:'The Output Hypothesis was proposed by:',opts:['Stephen Krashen','Merrill Swain','Michael Long','Richard Schmidt','None of the above'],a:1,ex:'✅ B is correct. OUTPUT HYPOTHESIS = Merrill SWAIN.'},
+  {q:'According to Swain, "pushed output" helps learners:',opts:['Relax more','Notice gaps in their knowledge','Avoid speaking','Forget grammar rules','None of the above'],a:1,ex:'✅ B is correct. PUSHED OUTPUT helps notice GAPS in knowledge.'},
+  {q:'According to Swain, output is:',opts:['Only a result of acquisition','Not important','Both a result and cause of learning','Less important than input','None of the above'],a:2,ex:'✅ C is correct. Output is BOTH result AND cause of learning (Swain).'},
+  {q:'The Interaction Hypothesis was proposed by:',opts:['Stephen Krashen','Merrill Swain','Michael Long','Richard Schmidt','None of the above'],a:2,ex:'✅ C is correct. INTERACTION HYPOTHESIS = Michael LONG.'},
+  {q:'Long\'s Interaction Hypothesis emphasizes:',opts:['Silent input','Negotiation of meaning during communication','Avoiding interaction','Teacher-centered instruction','None of the above'],a:1,ex:'✅ B is correct. Long: NEGOTIATION OF MEANING during interaction.'},
+  {q:'Clarification requests, confirmation checks are examples of:',opts:['Output strategies','Interactional modifications/negotiation','Input alone','Grammar drills','None of the above'],a:1,ex:'✅ B is correct. These are INTERACTIONAL MODIFICATIONS.'},
+  {q:'The Noticing Hypothesis was proposed by:',opts:['Stephen Krashen','Merrill Swain','Michael Long','Richard Schmidt','None of the above'],a:3,ex:'✅ D is correct. NOTICING HYPOTHESIS = Richard SCHMIDT.'},
+  {q:'According to Schmidt, learners must:',opts:['Avoid paying attention','Consciously notice input features','Only listen passively','Focus only on meaning','None of the above'],a:1,ex:'✅ B is correct. Must CONSCIOUSLY NOTICE input features (Schmidt).'},
+  {q:'"Communicative Competence" was coined by:',opts:['Noam Chomsky','Dell Hymes','Canale & Swain','Stephen Krashen','None of the above'],a:1,ex:'✅ B is correct. Dell HYMES coined "Communicative Competence."'},
+  {q:'Canale & Swain\'s model includes how many components?',opts:['2','3','4','5','None of the above'],a:2,ex:'✅ C is correct. FOUR components: grammatical, sociolinguistic, discourse, strategic.'},
+  {q:'Knowledge of grammar, vocabulary, pronunciation is:',opts:['Sociolinguistic competence','Discourse competence','Grammatical competence','Strategic competence','None of the above'],a:2,ex:'✅ C is correct. GRAMMATICAL COMPETENCE = grammar, vocab, pronunciation.'},
+  {q:'Using language appropriately in social contexts is:',opts:['Grammatical competence','Sociolinguistic competence','Discourse competence','Strategic competence','None of the above'],a:1,ex:'✅ B is correct. SOCIOLINGUISTIC = appropriate use in social contexts.'},
+  {q:'Connecting sentences coherently is:',opts:['Grammatical competence','Sociolinguistic competence','Discourse competence','Strategic competence','None of the above'],a:2,ex:'✅ C is correct. DISCOURSE COMPETENCE = cohesion, coherence.'},
+  {q:'Using strategies to overcome breakdowns is:',opts:['Grammatical competence','Sociolinguistic competence','Discourse competence','Strategic competence','None of the above'],a:3,ex:'✅ D is correct. STRATEGIC COMPETENCE = repair strategies.'},
+  {q:'The difference between INPUT and INTAKE:',opts:['They are the same','Input is exposure; intake is what\'s processed','Intake is more than input','Input requires effort','None of the above'],a:1,ex:'✅ B is correct. INPUT = all exposure; INTAKE = what\'s processed.'},
+  {q:'"Noticing the gap" means:',opts:['Ignoring differences','Realizing difference between output and target','Avoiding mistakes','Only focusing on input','None of the above'],a:1,ex:'✅ B is correct. NOTICING THE GAP = seeing difference from target forms.'},
+  {q:'i+1 is associated with:',opts:['Vygotsky','Krashen','Swain','Long','None of the above'],a:1,ex:'✅ B is correct. i+1 = KRASHEN. ZPD = Vygotsky.'},
+  {q:'ZPD is associated with:',opts:['Krashen','Swain','Vygotsky','Schmidt','None of the above'],a:2,ex:'✅ C is correct. ZPD = VYGOTSKY. Don\'t confuse with i+1 (Krashen).'},
+  {q:'Which pairing is CORRECT?',opts:['Krashen = Output, Swain = Input','Long = Noticing, Schmidt = Interaction','Krashen = Input, Swain = Output','Hymes = Strategic Competence','None of the above'],a:2,ex:'✅ C is correct. KRASHEN = Input; SWAIN = Output.'},
+  {q:'The Silent Period is associated with:',opts:['Swain','Long','Krashen','Schmidt','None of the above'],a:2,ex:'✅ C is correct. SILENT PERIOD = Krashen (absorbing input before speaking).'}
+];
+
+var curSec=0,qCur=0,qScore=0,qAns=false,audioPlaying=false,audioTimer=null;
+
+function goToSection(n){
+  document.querySelectorAll('#dp-l12 .sblock').forEach(function(b){b.classList.remove('vis')});
+  var sec=document.getElementById('dp12s'+n);
+  if(sec)sec.classList.add('vis');
+  curSec=n;
+  updateDots();
+  document.getElementById('dp-l12').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function updateDots(){
+  document.querySelectorAll('#dp-l12 .snavdot').forEach(function(d){
+    var i=parseInt(d.getAttribute('data-s'));
+    d.classList.remove('active','done');
+    if(i<curSec)d.classList.add('done');
+    if(i===curSec)d.classList.add('active');
+  });
+}
+
+document.querySelectorAll('#dp-l12 .snavdot').forEach(function(d){
+  d.addEventListener('click',function(){goToSection(parseInt(d.getAttribute('data-s')))});
+});
+
+document.querySelectorAll('#dp-l12 .nb[data-go]').forEach(function(btn){
+  btn.addEventListener('click',function(){goToSection(parseInt(btn.getAttribute('data-go')))});
+});
+
+document.querySelectorAll('#dp-l12 .mcard').forEach(function(c){
+  c.addEventListener('click',function(){c.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l12 .tabs').forEach(function(tg){
+  tg.querySelectorAll('.tab').forEach(function(tab){
+    tab.addEventListener('click',function(){
+      var pid=tab.getAttribute('data-tab');
+      tg.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});
+      tab.classList.add('active');
+      tg.parentElement.querySelectorAll('.tabpanel').forEach(function(p){p.classList.remove('vis')});
+      var pnl=document.getElementById(pid);
+      if(pnl)pnl.classList.add('vis');
+    });
+  });
+});
+
+var chkmatch=document.getElementById('dp12chkmatch');
+if(chkmatch)chkmatch.addEventListener('click',function(){
+  for(var i=0;i<5;i++){
+    var sel=document.getElementById('dp12ms'+i);
+    var fb=document.getElementById('dp12mf'+i);
+    if(!sel)continue;
+    var ans=sel.getAttribute('data-a'),giv=sel.value;
+    var ok=giv===ans;
+    sel.classList.toggle('ok',ok);sel.classList.toggle('bad',!ok);
+    fb.textContent=ok?'✅ Correct!':'❌ Answer: '+ans;
+    fb.classList.toggle('ok',ok);fb.classList.toggle('bad',!ok);
+  }
+});
+
+var pbtn=document.getElementById('dp12playbtn'),apf=document.getElementById('dp12apf');
+var audioTxt="Let me explain key SLA theories. First, Krashen's Input Hypothesis. Krashen argued that learners acquire language when they receive comprehensible input — language slightly above their current level, called i plus 1. The key is INPUT. Swain disagreed. Her Output Hypothesis says learners also need to PRODUCE language. When pushed to speak or write, learners notice gaps in their knowledge. Long's Interaction Hypothesis combines these ideas. During interaction, when communication breaks down, speakers negotiate meaning — asking for clarification. This provides ideal modified input. Schmidt's Noticing Hypothesis adds: you can't learn what you don't notice. Learners must consciously pay attention to input features for acquisition to occur. Finally, Communicative Competence from Hymes, expanded by Canale and Swain into four components: grammatical, sociolinguistic, discourse, and strategic competence.";
+
+if(pbtn)pbtn.addEventListener('click',function(){
+  if(audioPlaying){window.speechSynthesis&&window.speechSynthesis.cancel();clearInterval(audioTimer);audioPlaying=false;pbtn.textContent='▶';if(apf)apf.style.width='0%';return;}
+  if(!window.speechSynthesis)return;
+  var u=new SpeechSynthesisUtterance(audioTxt);u.lang='en-GB';u.rate=0.9;
+  var vv=window.speechSynthesis.getVoices(),v=vv.find(function(x){return x.lang==='en-GB'})||vv.find(function(x){return x.lang.startsWith('en')});
+  if(v)u.voice=v;
+  audioPlaying=true;pbtn.textContent='⏸';
+  var w=0;audioTimer=setInterval(function(){w=Math.min(100,w+0.24);if(apf)apf.style.width=w+'%';if(w>=100)clearInterval(audioTimer)},500);
+  u.onend=function(){audioPlaying=false;pbtn.textContent='▶';clearInterval(audioTimer)};
+  window.speechSynthesis.speak(u);
+});
+
+var stog=document.getElementById('dp12scrtog'),sbox=document.getElementById('dp12scrbox');
+if(stog)stog.addEventListener('click',function(){sbox&&sbox.classList.toggle('show')});
+
+var wtxt=document.getElementById('dp12wtxt'),wcnt=document.getElementById('dp12wcnt'),wsub=document.getElementById('dp12wsub'),wfb=document.getElementById('dp12wfb');
+if(wtxt)wtxt.addEventListener('input',function(){
+  var wc=wtxt.value.trim()===''?0:wtxt.value.trim().split(/\s+/).length;
+  if(wcnt){wcnt.textContent=wc+' words (aim for 60–80)';wcnt.style.color=wc>=60?'#2E7D52':'#7A7A7A'}
+});
+if(wsub)wsub.addEventListener('click',function(){
+  if(!wtxt||wtxt.value.trim().split(/\s+/).length<20){alert('Please write at least 20 words!');return}
+  if(wfb)wfb.classList.add('show');wsub.textContent='✅ Checked!';wsub.style.background='#2E7D52';
+});
+
+function renderQ(){
+  var d=QD[qCur],area=document.getElementById('dp12qarea'),fb=document.getElementById('dp12qfb'),nxt=document.getElementById('dp12qnxt');
+  fb.className='qfbm';nxt.classList.remove('show');qAns=false;
+  var pf=document.getElementById('dp12qpf');
+  if(document.getElementById('dp12qcnt'))document.getElementById('dp12qcnt').textContent=(qCur+1)+' / '+QD.length;
+  if(pf)pf.style.width=((qCur+1)/QD.length*100)+'%';
+  var labels=['A','B','C','D','E'];
+  var html='<div class="qq"><span class="qqn">'+(qCur+1)+'</span>'+d.q+'</div><div class="qopts">';
+  d.opts.forEach(function(o,i){html+='<button class="qopt" data-i="'+i+'"><span class="ql">'+labels[i]+'.</span> '+o+'</button>'});
+  html+='</div>';area.innerHTML=html;
+  area.querySelectorAll('.qopt').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      if(qAns)return;qAns=true;
+      var ch=parseInt(btn.getAttribute('data-i'));
+      area.querySelectorAll('.qopt').forEach(function(b){b.disabled=true});
+      if(ch===d.a){btn.classList.add('qco');qScore++;if(document.getElementById('dp12qsl'))document.getElementById('dp12qsl').textContent='Score: '+qScore;fb.textContent=d.ex;fb.className='qfbm show ok'}
+      else{btn.classList.add('qwr');area.querySelectorAll('.qopt')[d.a].classList.add('qco');fb.innerHTML='❌ Incorrect. '+d.ex;fb.className='qfbm show bad'}
+      nxt.classList.add('show');nxt.textContent=qCur<QD.length-1?'Next Question →':'See Results 🎯';
+    });
+  });
+}
+
+var qnxt=document.getElementById('dp12qnxt');
+if(qnxt)qnxt.addEventListener('click',function(){qCur++;if(qCur>=QD.length)showScore();else renderQ()});
+
+function showScore(){
+  var area=document.getElementById('dp12qarea'),fb=document.getElementById('dp12qfb'),nxt=document.getElementById('dp12qnxt'),pr=document.querySelector('#dp-l12 .qpr'),pl=document.getElementById('dp12spl');
+  if(area)area.style.display='none';if(fb)fb.style.display='none';if(nxt)nxt.style.display='none';if(pr)pr.style.display='none';if(pl)pl.classList.add('show');
+  var fin=document.getElementById('dp12sfin');if(fin)fin.textContent=qScore;
+  var pct=qScore/QD.length,msg,sub;
+  if(pct>=0.9){msg='Excellent! 🏆';sub='You\'re exam-ready!'}
+  else if(pct>=0.75){msg='Great Work! 🌟';sub='Review the questions you missed.'}
+  else if(pct>=0.6){msg='Good Progress! 👍';sub='Study the theory sections again.'}
+  else if(pct>=0.4){msg='Keep Practising! 💪';sub='Focus on concepts you struggled with.'}
+  else{msg='More Study Needed 📚';sub='Review all sections before retrying.'}
+  if(document.getElementById('dp12smsg'))document.getElementById('dp12smsg').textContent=msg;
+  if(document.getElementById('dp12ssub'))document.getElementById('dp12ssub').textContent=sub;
+}
+
+var srty=document.getElementById('dp12srty');
+if(srty)srty.addEventListener('click',function(){
+  qScore=0;qCur=0;qAns=false;
+  var area=document.getElementById('dp12qarea'),fb=document.getElementById('dp12qfb'),nxt=document.getElementById('dp12qnxt'),pr=document.querySelector('#dp-l12 .qpr'),pl=document.getElementById('dp12spl');
+  if(area){area.style.display='block';area.innerHTML=''}if(fb){fb.style.display='block';fb.className='qfbm'}if(nxt)nxt.style.display='none';if(pr)pr.style.display='flex';if(pl)pl.classList.remove('show');
+  if(document.getElementById('dp12qsl'))document.getElementById('dp12qsl').textContent='Score: 0';
+  renderQ();
+});
+
+renderQ();
+if(window.speechSynthesis){window.speechSynthesis.getVoices();window.speechSynthesis.onvoiceschanged=function(){window.speechSynthesis.getVoices()}}
+})();
+</script>
+
+<script>
+(function(){
+  function sendHeight(){var h=document.documentElement.scrollHeight||document.body.scrollHeight;window.parent.postMessage({epHeight:h},'*')}
+  sendHeight();window.addEventListener('load',sendHeight);window.addEventListener('resize',sendHeight);
+  var mo=new MutationObserver(sendHeight);mo.observe(document.body,{childList:true,subtree:true,attributes:true});
+})();
+</script>
+
+</body>
+</html>
