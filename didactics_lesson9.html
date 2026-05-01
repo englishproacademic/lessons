@@ -1,0 +1,1061 @@
+<!--============================================================
+     EnglishPro · Didactics Series · Lesson 9
+     Assessment & Testing: Types, Principles, and Formats
+     GitHub hosted — embedded in Blogger via iframe
+     100% self-contained — no external JS dependencies
+     UPDATED FORMAT: Relevant listening + 40-MCQ exam section
+     ============================================================-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assessment & Testing: Types, Principles & Formats | EnglishPro Didactics Series</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;family=DM+Sans:wght@300;400;500;600&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{margin:0;padding:0;background:#FAFAF7;direction:ltr;text-align:left}
+
+#dp-l9{
+  --ny:#0D2B4E;--ny2:#1A4070;
+  --go:#C8933A;--go2:#E8B86D;--gop:#FDF6EC;
+  --cr:#FAFAF7;--wh:#fff;
+  --ink:#1A1A1A;--ink2:#3D3D3D;--mu:#7A7A7A;
+  --bd:#E2DDD6;--bdl:#F0EDE8;
+  --gr:#2E7D52;--grb:#EBF5EF;
+  --rd:#C0392B;--rdb:#FDECEA;
+  --bl:#1E5FA8;--blb:#EBF2FB;
+  --pu:#7C3AED;--pub:#F3F0FF;
+  --te:#0E7490;--teb:#ECFEFF;
+  --or:#D97706;--orb:#FEF3C7;
+  --pk:#DB2777;--pkb:#FDF2F8;
+  --sh1:0 2px 8px rgba(13,43,78,.07);
+  --sh2:0 6px 20px rgba(13,43,78,.10);
+  --r:12px;--rl:20px;
+  font-family:'DM Sans',sans-serif;
+  color:var(--ink);background:var(--cr);
+  line-height:1.7;-webkit-font-smoothing:antialiased;
+  display:block;overflow:hidden;direction:ltr;text-align:left
+}
+#dp-l9 *,#dp-l9 *::before,#dp-l9 *::after{box-sizing:border-box;margin:0;padding:0}
+#dp-l9 button{cursor:pointer;font-family:'DM Sans',sans-serif;border:none;background:none}
+#dp-l9 textarea,#dp-l9 input,#dp-l9 select{font-family:'DM Sans',sans-serif}
+
+/* HERO */
+#dp-l9 .lhero{background:linear-gradient(150deg,#0a1f38 0%,#0D2B4E 50%,#122e52 100%);padding:48px 24px 40px;position:relative;overflow:hidden;border-radius:var(--rl) var(--rl) 0 0}
+#dp-l9 .lhero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%,rgba(200,147,58,.08) 0%,transparent 60%),radial-gradient(circle at 80% 20%,rgba(124,58,237,.06) 0%,transparent 50%);pointer-events:none}
+#dp-l9 .lhero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,147,58,.4),transparent)}
+#dp-l9 .lhero-in{max-width:720px;margin:0 auto;position:relative;z-index:1}
+#dp-l9 .lvlbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,147,58,.12);border:1px solid rgba(200,147,58,.28);color:var(--go2);font-size:.68rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:18px}
+#dp-l9 .ltitle{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:900;color:#F5F0E8;line-height:1.15;margin-bottom:10px;letter-spacing:-.02em}
+#dp-l9 .ltitle em{color:var(--go);font-style:italic}
+#dp-l9 .lsub{font-size:.9rem;color:rgba(245,240,232,.62);margin-bottom:22px;max-width:520px;line-height:1.6}
+#dp-l9 .spills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px}
+#dp-l9 .spill{font-size:.67rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 11px;border-radius:100px}
+#dp-l9 .sp-th{background:rgba(124,58,237,.25);color:#C4B5FD}
+#dp-l9 .sp-ex{background:rgba(30,95,168,.25);color:#7DB8F0}
+#dp-l9 .sp-qu{background:rgba(200,147,58,.25);color:var(--go2)}
+#dp-l9 .sp-ic{background:rgba(46,125,82,.25);color:#6BCFA0}
+
+/* Nav dots */
+#dp-l9 .snav{display:flex;align-items:center;gap:5px;flex-wrap:wrap;padding-top:20px;border-top:1px solid rgba(255,255,255,.08)}
+#dp-l9 .snavdot{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;font-size:.7rem;font-weight:700;border:2px solid rgba(255,255,255,.18);color:rgba(255,255,255,.32);cursor:pointer;transition:all .25s;flex-shrink:0}
+#dp-l9 .snavdot.done{border-color:var(--gr);background:var(--gr);color:#fff}
+#dp-l9 .snavdot.active{border-color:var(--go);background:var(--go);color:#fff}
+#dp-l9 .snavsep{width:16px;height:2px;background:rgba(255,255,255,.1);border-radius:1px;flex-shrink:0}
+#dp-l9 .snavlbl{font-size:.63rem;color:rgba(245,240,232,.38);margin-left:6px}
+
+/* BODY */
+#dp-l9 .lbody{max-width:720px;margin:0 auto;padding:32px 20px 64px;background:var(--cr)}
+#dp-l9 .sblock{background:var(--wh);border:1px solid var(--bdl);border-radius:var(--rl);padding:28px;margin-bottom:24px;display:none;animation:dp9up .35s ease both;box-shadow:var(--sh1)}
+#dp-l9 .sblock.vis{display:block}
+@keyframes dp9up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+#dp-l9 .slabel{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--go);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+#dp-l9 .slabel::after{content:'';flex:1;height:1px;background:var(--bdl)}
+#dp-l9 .sheading{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ny);margin-bottom:16px;line-height:1.25}
+#dp-l9 .sheading em{color:var(--go);font-style:italic}
+#dp-l9 .stxt{font-size:.9rem;color:var(--ink2);margin-bottom:16px;line-height:1.65}
+
+/* Scene */
+#dp-l9 .scene{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:20px;margin-bottom:20px;position:relative;overflow:hidden}
+#dp-l9 .scene::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(200,147,58,.08),transparent 60%);pointer-events:none}
+#dp-l9 .s-ico{font-size:1.8rem;margin-bottom:8px;position:relative;z-index:1}
+#dp-l9 .s-t{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#F5F0E8;position:relative;z-index:1;margin-bottom:5px}
+#dp-l9 .s-d{font-size:.83rem;color:rgba(245,240,232,.65);position:relative;z-index:1;line-height:1.55}
+
+/* Callouts */
+#dp-l9 .co{display:flex;gap:10px;padding:13px 15px;border-radius:var(--r);margin:14px 0;font-size:.855rem;line-height:1.6}
+#dp-l9 .co-tip{background:var(--gop);border:1px solid rgba(200,147,58,.2);color:var(--ink2)}
+#dp-l9 .co-info{background:var(--blb);border:1px solid rgba(30,95,168,.15);color:var(--ink2)}
+#dp-l9 .co-pur{background:var(--pub);border:1px solid rgba(124,58,237,.15);color:var(--ink2)}
+#dp-l9 .co-teal{background:var(--teb);border:1px solid rgba(14,116,144,.15);color:var(--ink2)}
+#dp-l9 .co-or{background:var(--orb);border:1px solid rgba(217,119,6,.15);color:var(--ink2)}
+#dp-l9 .co-pk{background:var(--pkb);border:1px solid rgba(219,39,119,.15);color:var(--ink2)}
+#dp-l9 .co-ico{font-size:1rem;flex-shrink:0;margin-top:1px}
+
+/* Gbox */
+#dp-l9 .gbox{border-radius:0 var(--r) var(--r) 0;padding:18px 20px;margin:18px 0}
+#dp-l9 .gbox-bl{background:var(--blb);border:1px solid rgba(30,95,168,.2);border-left:4px solid var(--bl)}
+#dp-l9 .gbox-go{background:var(--gop);border:1px solid rgba(200,147,58,.2);border-left:4px solid var(--go)}
+#dp-l9 .gbox-gr{background:var(--grb);border:1px solid rgba(46,125,82,.2);border-left:4px solid var(--gr)}
+#dp-l9 .gbox-pu{background:var(--pub);border:1px solid rgba(124,58,237,.15);border-left:4px solid var(--pu)}
+#dp-l9 .gbox-te{background:var(--teb);border:1px solid rgba(14,116,144,.15);border-left:4px solid var(--te)}
+#dp-l9 .gbox-rd{background:var(--rdb);border:1px solid rgba(192,57,43,.15);border-left:4px solid var(--rd)}
+#dp-l9 .gbox-pk{background:var(--pkb);border:1px solid rgba(219,39,119,.15);border-left:4px solid var(--pk)}
+#dp-l9 .gbox h4{font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:11px}
+#dp-l9 .gbox-bl h4{color:var(--bl)}
+#dp-l9 .gbox-go h4{color:var(--go)}
+#dp-l9 .gbox-gr h4{color:var(--gr)}
+#dp-l9 .gbox-pu h4{color:var(--pu)}
+#dp-l9 .gbox-te h4{color:var(--te)}
+#dp-l9 .gbox-rd h4{color:var(--rd)}
+#dp-l9 .gbox-pk h4{color:var(--pk)}
+#dp-l9 .grule{font-family:'DM Mono',monospace;font-size:.86rem;color:var(--ny);background:rgba(255,255,255,.65);padding:9px 14px;border-radius:7px;margin-bottom:7px;line-height:1.6}
+#dp-l9 .grule span{color:var(--bl);font-weight:600}
+#dp-l9 .grule em{color:var(--go);font-style:normal;font-weight:600}
+#dp-l9 .grule strong{color:var(--gr);font-weight:700}
+
+/* Method cards */
+#dp-l9 .mcards{display:flex;flex-direction:column;gap:12px;margin:20px 0}
+#dp-l9 .mcard{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:18px;cursor:pointer;transition:all .22s}
+#dp-l9 .mcard:hover{border-color:var(--go);transform:translateX(4px)}
+#dp-l9 .mcard.fl{background:var(--gop);border-color:var(--go)}
+#dp-l9 .mc-head{display:flex;align-items:center;gap:12px}
+#dp-l9 .mc-icon{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;color:#fff}
+#dp-l9 .mc-title{font-size:.95rem;font-weight:700;color:var(--ny)}
+#dp-l9 .mc-sub{font-size:.75rem;color:var(--mu)}
+#dp-l9 .mc-hint{font-size:.75rem;color:var(--mu);font-style:italic;margin-top:6px}
+#dp-l9 .mc-body{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--bdl)}
+#dp-l9 .mcard.fl .mc-hint{display:none}
+#dp-l9 .mcard.fl .mc-body{display:block}
+#dp-l9 .mc-body p{font-size:.85rem;color:var(--ink2);line-height:1.6;margin-bottom:8px}
+
+/* Tables */
+#dp-l9 .gtbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.82rem}
+#dp-l9 .gtbl th{background:var(--ny);color:#F5F0E8;padding:9px 10px;text-align:left;font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+#dp-l9 .gtbl th:first-child{border-radius:var(--r) 0 0 0}
+#dp-l9 .gtbl th:last-child{border-radius:0 var(--r) 0 0}
+#dp-l9 .gtbl td{padding:8px 10px;border-bottom:1px solid var(--bdl);color:var(--ink2);vertical-align:top}
+#dp-l9 .gtbl tr:nth-child(even) td{background:var(--cr)}
+#dp-l9 .tbl-b{color:var(--bl);font-weight:600}
+#dp-l9 .tbl-g{color:var(--go);font-weight:600}
+#dp-l9 .tbl-gr{color:var(--gr);font-weight:600}
+#dp-l9 .tbl-pu{color:var(--pu);font-weight:600}
+#dp-l9 .tbl-rd{color:var(--rd);font-weight:600}
+#dp-l9 .tbl-te{color:var(--te);font-weight:600}
+#dp-l9 .tbl-pk{color:var(--pk);font-weight:600}
+
+/* Tabs */
+#dp-l9 .tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+#dp-l9 .tab{padding:9px 18px;border-radius:var(--r);font-size:.82rem;font-weight:600;background:var(--cr);border:2px solid var(--bd);color:var(--ink2);cursor:pointer;transition:all .2s}
+#dp-l9 .tab:hover{border-color:var(--go);color:var(--go)}
+#dp-l9 .tab.active{background:var(--ny);border-color:var(--ny);color:#fff}
+#dp-l9 .tabpanel{display:none}
+#dp-l9 .tabpanel.vis{display:block}
+
+/* Scenario Match */
+#dp-l9 .smatch{margin:20px 0}
+#dp-l9 .sm-item{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;align-items:center}
+#dp-l9 .sm-scenario{background:var(--blb);border:1px solid rgba(30,95,168,.15);border-radius:var(--r);padding:12px 14px;font-size:.85rem;color:var(--ink2);line-height:1.5}
+#dp-l9 .sm-select{border:2px solid var(--bd);border-radius:var(--r);padding:9px 12px;font-size:.85rem;color:var(--ink2);background:var(--cr);width:100%;font-family:'DM Sans',sans-serif;outline:none;transition:border-color .2s;cursor:pointer}
+#dp-l9 .sm-select:focus{border-color:var(--go)}
+#dp-l9 .sm-select.ok{border-color:var(--gr);background:var(--grb);color:var(--gr)}
+#dp-l9 .sm-select.bad{border-color:var(--rd);background:var(--rdb);color:var(--rd)}
+#dp-l9 .smfb{font-size:.82rem;font-weight:600;padding:10px 14px;border-radius:var(--r);margin-top:4px;display:none}
+#dp-l9 .smfb.ok{background:var(--grb);color:var(--gr);display:block}
+#dp-l9 .smfb.bad{background:var(--rdb);color:var(--rd);display:block}
+
+/* Audio */
+#dp-l9 .aplayer{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px;margin:14px 0;flex-wrap:wrap}
+#dp-l9 .abig{width:48px;height:48px;border-radius:50%;background:var(--go);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;transition:all .2s;cursor:pointer;border:none;box-shadow:0 4px 14px rgba(200,147,58,.4)}
+#dp-l9 .abig:hover{background:var(--go2);transform:scale(1.06)}
+#dp-l9 .ainfo{flex:1;min-width:160px}
+#dp-l9 .at{font-size:.87rem;font-weight:600;color:#F5F0E8;margin-bottom:3px}
+#dp-l9 .as{font-size:.72rem;color:rgba(245,240,232,.55)}
+#dp-l9 .apbar{height:4px;background:rgba(255,255,255,.14);border-radius:2px;margin-top:9px;overflow:hidden}
+#dp-l9 .apfill{height:100%;background:var(--go);width:0%;border-radius:2px;transition:width .3s}
+#dp-l9 .scrtog{background:rgba(255,255,255,.1);color:rgba(245,240,232,.78);font-size:.72rem;font-weight:600;padding:5px 11px;border-radius:100px;border:1px solid rgba(255,255,255,.15);cursor:pointer;transition:all .2s;flex-shrink:0}
+#dp-l9 .scrtog:hover{background:rgba(255,255,255,.2)}
+#dp-l9 .scrbox{background:var(--cr);border:1px solid var(--bd);border-radius:var(--r);padding:18px;margin-top:10px;display:none}
+#dp-l9 .scrbox.show{display:block}
+#dp-l9 .scrbox p{font-size:.875rem;color:var(--ink2);margin-bottom:7px;line-height:1.7}
+
+/* Writing */
+#dp-l9 .wa{width:100%;min-height:130px;border:2px solid var(--bd);border-radius:var(--r);padding:14px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--ink);background:var(--cr);resize:vertical;outline:none;transition:border-color .2s;line-height:1.7}
+#dp-l9 .wa:focus{border-color:var(--go)}
+#dp-l9 .wa::placeholder{color:var(--mu)}
+#dp-l9 .wcnt{font-size:.72rem;color:var(--mu);text-align:right;margin-top:5px}
+#dp-l9 .wsub{margin-top:11px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none}
+#dp-l9 .wsub:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l9 .wfb{display:none;margin-top:13px;background:var(--grb);border:1.5px solid rgba(46,125,82,.22);border-radius:var(--r);padding:15px;font-size:.855rem;color:var(--gr);line-height:1.65}
+#dp-l9 .wfb.show{display:block}
+
+/* Quiz */
+#dp-l9 .qpr{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+#dp-l9 .qpbar{flex:1;height:6px;background:var(--bd);border-radius:3px;overflow:hidden;margin:0 11px}
+#dp-l9 .qpfill{height:100%;background:linear-gradient(90deg,var(--go),var(--go2));border-radius:3px;transition:width .4s ease}
+#dp-l9 .qcnt{font-size:.77rem;font-weight:600;color:var(--mu)}
+#dp-l9 .qq{font-size:1rem;font-weight:600;color:var(--ny);margin-bottom:16px;line-height:1.5}
+#dp-l9 .qqn{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--go);color:#fff;font-size:.75rem;font-weight:700;margin-right:7px;flex-shrink:0;vertical-align:middle}
+#dp-l9 .qopts{display:flex;flex-direction:column;gap:9px}
+#dp-l9 .qopt{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:13px 16px;font-size:.9rem;color:var(--ink2);text-align:left;transition:all .2s;display:flex;align-items:center;gap:9px;cursor:pointer}
+#dp-l9 .qopt .ql{font-weight:700;color:var(--ny);min-width:18px}
+#dp-l9 .qopt:hover:not([disabled]){border-color:var(--go);background:var(--gop);transform:translateX(3px)}
+#dp-l9 .qopt.qco{border-color:var(--gr)!important;background:var(--grb)!important;color:var(--gr)!important}
+#dp-l9 .qopt.qwr{border-color:var(--rd)!important;background:var(--rdb)!important;color:var(--rd)!important}
+#dp-l9 .qfbm{display:none;margin-top:11px;padding:13px 16px;border-radius:var(--r);font-size:.86rem;font-weight:500;line-height:1.6}
+#dp-l9 .qfbm.show{display:block}
+#dp-l9 .qfbm.ok{background:var(--grb);color:var(--gr);border:1px solid rgba(46,125,82,.2)}
+#dp-l9 .qfbm.bad{background:var(--rdb);color:var(--rd);border:1px solid rgba(192,57,43,.2)}
+#dp-l9 .qnxt{margin-top:14px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;display:none;cursor:pointer;border:none}
+#dp-l9 .qnxt:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l9 .qnxt.show{display:inline-block}
+#dp-l9 .spl{text-align:center;padding:28px 20px;display:none;animation:dp9up .4s ease both}
+#dp-l9 .spl.show{display:block}
+#dp-l9 .scir{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--ny),var(--ny2));display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 8px 24px rgba(13,43,78,.2)}
+#dp-l9 .snum{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:var(--go);line-height:1}
+#dp-l9 .sden{font-size:.7rem;color:rgba(245,240,232,.5)}
+#dp-l9 .smsg{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--ny);margin-bottom:7px}
+#dp-l9 .ssub{font-size:.84rem;color:var(--mu);margin-bottom:18px}
+#dp-l9 .srty{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;margin-right:8px;cursor:pointer;border:none}
+#dp-l9 .srty:hover{background:var(--go)}
+
+/* Chkb */
+#dp-l9 .chkb{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none;margin-top:6px}
+#dp-l9 .chkb:hover{background:var(--go);transform:translateY(-1px)}
+
+/* Nav buttons */
+#dp-l9 .navb{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:18px;border-top:1px solid var(--bdl);gap:10px}
+#dp-l9 .nb{display:flex;align-items:center;gap:7px;padding:11px 22px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;border:2px solid var(--bd);color:var(--ink2);background:var(--wh);cursor:pointer}
+#dp-l9 .nb:hover{border-color:var(--go);color:var(--go)}
+#dp-l9 .nb.pri{background:var(--ny);color:#fff;border-color:transparent}
+#dp-l9 .nb.pri:hover{background:var(--go);border-color:transparent}
+#dp-l9 .nb:disabled{opacity:.38;cursor:default;pointer-events:none}
+
+/* Footer */
+#dp-l9 .lft{background:var(--ny);padding:24px;text-align:center;border-radius:0 0 var(--rl) var(--rl)}
+#dp-l9 .flo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:#F5F0E8;margin-bottom:5px}
+#dp-l9 .flo em{color:var(--go);font-style:italic}
+#dp-l9 .ftx{font-size:.74rem;color:rgba(245,240,232,.42)}
+
+/* Feature grid */
+#dp-l9 .fgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:16px 0}
+#dp-l9 .fbox{background:var(--cr);border:1px solid var(--bdl);border-radius:var(--r);padding:14px;text-align:center;cursor:pointer;transition:all .2s}
+#dp-l9 .fbox:hover{border-color:var(--go);transform:translateY(-2px);box-shadow:var(--sh1)}
+#dp-l9 .fbox.fl{background:var(--gop);border-color:var(--go)}
+#dp-l9 .fbox-ico{font-size:1.6rem;margin-bottom:6px}
+#dp-l9 .fbox-t{font-size:.82rem;font-weight:700;color:var(--ny);margin-bottom:2px}
+#dp-l9 .fbox-s{font-size:.72rem;color:var(--mu)}
+#dp-l9 .fbox-body{display:none;margin-top:10px;text-align:left}
+#dp-l9 .fbox.fl .fbox-body{display:block}
+#dp-l9 .fbox-body p{font-size:.82rem;color:var(--ink2);line-height:1.55;margin-bottom:6px}
+
+@media(max-width:560px){
+  #dp-l9 .lhero{padding:32px 16px 28px}
+  #dp-l9 .lbody{padding:20px 14px 48px}
+  #dp-l9 .sblock{padding:18px 14px}
+  #dp-l9 .navb{flex-direction:column}
+  #dp-l9 .nb{width:100%;justify-content:center}
+  #dp-l9 .tabs{gap:4px}
+  #dp-l9 .tab{padding:7px 12px;font-size:.78rem}
+  #dp-l9 .sm-item{grid-template-columns:1fr}
+  #dp-l9 .fgrid{grid-template-columns:1fr}
+  #dp-l9 .gtbl{font-size:.75rem}
+  #dp-l9 .gtbl th,#dp-l9 .gtbl td{padding:6px 8px}
+}
+</style>
+</head>
+<body>
+
+<div id="dp-l9">
+
+<!-- HERO -->
+<div class="lhero">
+  <div class="lhero-in">
+    <div class="lvlbadge">🎓 Didactics Series · Lesson 9 of 12</div>
+    <h1 class="ltitle">Assessment &amp; <em>Testing</em></h1>
+    <p class="lsub">Master the key concepts: formative vs summative assessment, types of tests, principles of testing (validity, reliability, washback), and test item formats.</p>
+    <div class="spills">
+      <span class="spill sp-th">📊 Assessment Types</span>
+      <span class="spill sp-ex">📝 Test Types</span>
+      <span class="spill sp-ic">✅ Testing Principles</span>
+      <span class="spill sp-qu">📝 40-Question Exam</span>
+    </div>
+    <nav class="snav">
+      <div class="snavdot active" data-s="0">1</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="1">2</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="2">3</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="3">4</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="4">5</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="5">6</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="6">7</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="7">8</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="8">9</div>
+      <span class="snavlbl">9 sections</span>
+    </nav>
+  </div>
+</div>
+
+<div class="lbody">
+
+<!-- SECTION 1: FOUNDATIONS -->
+<section class="sblock vis" id="dp9s0">
+  <div class="slabel">Section 1 · Foundations</div>
+  <h2 class="sheading">Assessment vs <em>Testing</em> vs <em>Evaluation</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">📊</div>
+    <div class="s-t">Understanding the Key Distinctions</div>
+    <div class="s-d">These terms are often confused but have distinct meanings. Understanding them is essential for effective teaching and for exam success.</div>
+  </div>
+
+  <div class="gbox gbox-bl">
+    <h4>Key Definitions</h4>
+    <div class="grule"><strong>ASSESSMENT</strong> — The process of gathering information about learner performance</div>
+    <div class="grule">• Can be formal (tests) or informal (observation, class participation)</div>
+    <div class="grule">• Ongoing; helps inform teaching decisions</div>
+  </div>
+
+  <div class="gbox gbox-go">
+    <h4></h4>
+    <div class="grule"><em>TESTING</em> — A specific TYPE of assessment using formal instruments</div>
+    <div class="grule">• Examples: multiple-choice tests, quizzes, cloze tests, essays</div>
+    <div class="grule">• Structured and standardized; produces quantifiable results</div>
+  </div>
+
+  <div class="gbox gbox-pu">
+    <h4></h4>
+    <div class="grule"><span>EVALUATION</span> — Making judgments about learner achievement</div>
+    <div class="grule">• Uses assessment data to arrive at grades/marks</div>
+    <div class="grule">• Involves interpretation and decision-making</div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Simple Formula:</strong> Assessment (gather data) → Testing (one method) → Evaluation (make judgments). Assessment is BROADER than testing.</span></div>
+
+  <div class="fgrid">
+    <div class="fbox" data-exp="f1">
+      <div class="fbox-ico">📈</div>
+      <div class="fbox-t">Formative</div>
+      <div class="fbox-s">Assessment FOR learning</div>
+      <div class="fbox-body" id="f1">
+        <p><strong>Purpose:</strong> Improve learning DURING instruction; provides feedback to guide next steps.</p>
+      </div>
+    </div>
+    <div class="fbox" data-exp="f2">
+      <div class="fbox-ico">📋</div>
+      <div class="fbox-t">Summative</div>
+      <div class="fbox-s">Assessment OF learning</div>
+      <div class="fbox-body" id="f2">
+        <p><strong>Purpose:</strong> Evaluate overall achievement at the END; results in a final grade.</p>
+      </div>
+    </div>
+    <div class="fbox" data-exp="f3">
+      <div class="fbox-ico">🔍</div>
+      <div class="fbox-t">Diagnostic</div>
+      <div class="fbox-s">Identify weaknesses</div>
+      <div class="fbox-body" id="f3">
+        <p><strong>Purpose:</strong> Identify specific areas of weakness BEFORE or during instruction.</p>
+      </div>
+    </div>
+    <div class="fbox" data-exp="f4">
+      <div class="fbox-ico">🎯</div>
+      <div class="fbox-t">Placement</div>
+      <div class="fbox-s">Determine level</div>
+      <div class="fbox-body" id="f4">
+        <p><strong>Purpose:</strong> Place learners in the appropriate class or level at the START.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" disabled>← Back</button>
+    <button class="nb pri" data-go="1">Next: Types of Assessment →</button>
+  </div>
+</section>
+
+<!-- SECTION 2: TYPES OF ASSESSMENT -->
+<section class="sblock" id="dp9s1">
+  <div class="slabel">Section 2 · Types of Assessment</div>
+  <h2 class="sheading">Formative vs <em>Summative</em> Assessment</h2>
+
+  <div class="scene">
+    <div class="s-ico">📊</div>
+    <div class="s-t">Two Fundamental Purposes of Assessment</div>
+    <div class="s-d">The most important distinction in assessment is between FORMATIVE (assessment FOR learning) and SUMMATIVE (assessment OF learning).</div>
+  </div>
+
+  <table class="gtbl">
+    <tr><th>Feature</th><th class="tbl-gr">Formative</th><th class="tbl-pu">Summative</th></tr>
+    <tr><td><strong>Purpose</strong></td><td>Improve learning during instruction</td><td>Evaluate achievement at the end</td></tr>
+    <tr><td><strong>Timing</strong></td><td>Ongoing, throughout the course</td><td>At the end of a unit/course</td></tr>
+    <tr><td><strong>Focus</strong></td><td>Process of learning</td><td>Product/final outcome</td></tr>
+    <tr><td><strong>Feedback</strong></td><td>Detailed, immediate, guides improvement</td><td>General, often just a grade</td></tr>
+    <tr><td><strong>Stakes</strong></td><td>Low-stakes (no/little grade impact)</td><td>High-stakes (affects final grade)</td></tr>
+    <tr><td><strong>Examples</strong></td><td>Quizzes, peer feedback, observations</td><td>Final exams, end-of-term tests</td></tr>
+    <tr><td><strong>Key phrase</strong></td><td>"Assessment FOR learning"</td><td>"Assessment OF learning"</td></tr>
+  </table>
+
+  <div class="gbox gbox-gr">
+    <h4>Formative Assessment — "Assessment FOR Learning"</h4>
+    <div class="grule"><strong>Purpose:</strong> Help learners understand where they are and what to do next</div>
+    <div class="grule"><em>Involves:</em> Feedback, self-assessment, peer assessment, quizzes</div>
+    <div class="grule"><span>Example:</span> After a grammar lesson, students exchange gap-fill exercises and provide feedback to each other</div>
+    <div class="grule"><strong>Key benefit:</strong> Teachers can adjust instruction based on results</div>
+  </div>
+
+  <div class="gbox gbox-pu">
+    <h4>Summative Assessment — "Assessment OF Learning"</h4>
+    <div class="grule"><strong>Purpose:</strong> Evaluate overall achievement; provide a final grade</div>
+    <div class="grule"><em>Involves:</em> Final exams, standardized tests, end-of-unit assessments</div>
+    <div class="grule"><span>Example:</span> The Baccalaureate exam at the end of secondary school</div>
+    <div class="grule"><strong>Provides:</strong> A "snapshot" of learner achievement at a specific point</div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Tip:</strong> Remember: Formative = FOR learning (ongoing, feedback-focused) | Summative = OF learning (end, grade-focused). The words "for" and "of" are key!</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="0">← Introduction</button>
+    <button class="nb pri" data-go="2">Next: Types of Tests →</button>
+  </div>
+</section>
+
+<!-- SECTION 3: TYPES OF TESTS -->
+<section class="sblock" id="dp9s2">
+  <div class="slabel">Section 3 · Types of Tests</div>
+  <h2 class="sheading">Types of <em>Tests</em> by Purpose</h2>
+
+  <div class="scene">
+    <div class="s-ico">📝</div>
+    <div class="s-t">Different Tests for Different Purposes</div>
+    <div class="s-d">Tests can be classified by their PURPOSE. Know these five types and when to use each one.</div>
+  </div>
+
+  <div class="mcards">
+    <div class="mcard" data-exp="t1">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--bl)">🚪</div>
+        <div><div class="mc-title">Placement Test</div><div class="mc-sub">Given at the START to place learners in appropriate levels</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="t1">
+        <p><strong>Purpose:</strong> Determine a learner's level to place them in the right class/group.</p>
+        <p><strong>When:</strong> At the BEGINNING, before instruction starts.</p>
+        <p><strong>Example:</strong> A new student takes a test to be placed in Beginner, Intermediate, or Advanced class.</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="t2">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--rd)">🔍</div>
+        <div><div class="mc-title">Diagnostic Test</div><div class="mc-sub">Identifies specific WEAKNESSES in learner knowledge</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="t2">
+        <p><strong>Purpose:</strong> Identify specific areas where learners need additional support.</p>
+        <p><strong>When:</strong> Before or during instruction to target problem areas.</p>
+        <p><strong>Example:</strong> A test reveals that students struggle specifically with passive voice formation.</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="t3">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--gr)">📈</div>
+        <div><div class="mc-title">Progress/Formative Test</div><div class="mc-sub">Monitors learning DURING instruction</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="t3">
+        <p><strong>Purpose:</strong> Check ongoing progress and provide feedback for improvement.</p>
+        <p><strong>When:</strong> Throughout the course at regular intervals.</p>
+        <p><strong>Example:</strong> Weekly quizzes to check understanding of recent material.</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="t4">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--pu)">🏆</div>
+        <div><div class="mc-title">Achievement Test</div><div class="mc-sub">Measures what was TAUGHT in a specific course</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="t4">
+        <p><strong>Purpose:</strong> Evaluate how well learners mastered the specific content taught.</p>
+        <p><strong>When:</strong> At the END of a unit, term, or course.</p>
+        <p><strong>Example:</strong> End-of-unit test covering the grammar and vocabulary from Unit 5.</p>
+        <p><strong>Key:</strong> Tests what was TAUGHT (course content) — "test what you taught."</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="t5">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--go)">🌍</div>
+        <div><div class="mc-title">Proficiency Test</div><div class="mc-sub">Measures OVERALL ability regardless of specific course</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="t5">
+        <p><strong>Purpose:</strong> Measure overall language ability for real-world use.</p>
+        <p><strong>When:</strong> Independent of any specific course; for certification.</p>
+        <p><strong>Examples:</strong> TOEFL, IELTS, Cambridge exams (FCE, CAE, CPE).</p>
+        <p><strong>Key:</strong> NOT tied to specific course content — measures general proficiency.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Key Distinction:</strong> ACHIEVEMENT tests measure what was TAUGHT (course-specific). PROFICIENCY tests measure overall ability (not tied to any course).</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="1">← Types of Assessment</button>
+    <button class="nb pri" data-go="3">Next: Principles of Testing →</button>
+  </div>
+</section>
+
+<!-- SECTION 4: PRINCIPLES OF TESTING -->
+<section class="sblock" id="dp9s3">
+  <div class="slabel">Section 4 · Principles of Testing</div>
+  <h2 class="sheading">Key Principles: <em>Validity, Reliability, Practicality, Washback</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">✅</div>
+    <div class="s-t">What Makes a Good Test?</div>
+    <div class="s-d">A good test must be VALID (measures what it claims), RELIABLE (consistent results), PRACTICAL (feasible to administer), and have positive WASHBACK (beneficial impact on teaching).</div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="t4a">✓ Validity</button>
+    <button class="tab" data-tab="t4b">🔄 Reliability</button>
+    <button class="tab" data-tab="t4c">⚡ Practicality</button>
+    <button class="tab" data-tab="t4d">↩️ Washback</button>
+  </div>
+
+  <div class="tabpanel vis" id="t4a">
+    <div class="gbox gbox-gr">
+      <h4>Validity — "Does it measure what it claims to measure?"</h4>
+      <div class="grule"><strong>Definition:</strong> The extent to which a test measures what it is supposed to measure</div>
+      <div class="grule"><em>Key principle:</em> "Test what you taught" — test must align with learning objectives</div>
+      <div class="grule"><span>Example:</span> A speaking test should assess speaking ability, not writing or grammar knowledge</div>
+    </div>
+    <div class="gbox gbox-bl">
+      <h4>Types of Validity</h4>
+      <div class="grule"><strong>Content validity</strong> — Test covers the content that was taught</div>
+      <div class="grule"><em>Face validity</em> — Test APPEARS to measure what it should (perception)</div>
+      <div class="grule"><span>Construct validity</span> — Test measures the underlying skill/ability (e.g., "reading comprehension")</div>
+      <div class="grule"><strong>Criterion validity</strong> — Test results correlate with external measures</div>
+    </div>
+  </div>
+
+  <div class="tabpanel" id="t4b">
+    <div class="gbox gbox-pu">
+      <h4>Reliability — "Does it give consistent results?"</h4>
+      <div class="grule"><strong>Definition:</strong> The consistency and stability of test results across different administrations</div>
+      <div class="grule"><em>A reliable test:</em> Same students get similar scores when tested again under same conditions</div>
+      <div class="grule"><span>Threats:</span> Ambiguous questions, inconsistent scoring, test conditions, time of day</div>
+    </div>
+    <div class="gbox gbox-te">
+      <h4>Types of Reliability</h4>
+      <div class="grule"><strong>Test-retest reliability</strong> — Same test, same students, different time → similar results</div>
+      <div class="grule"><em>Inter-rater reliability</em> — Different scorers give same scores (for subjective tests)</div>
+      <div class="grule"><span>Internal consistency</span> — All items measure the same construct</div>
+    </div>
+    <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Scenario:</strong> If students score very differently on the same test given twice, the test LACKS RELIABILITY.</span></div>
+  </div>
+
+  <div class="tabpanel" id="t4c">
+    <div class="gbox gbox-go">
+      <h4>Practicality — "Is it feasible to administer?"</h4>
+      <div class="grule"><strong>Definition:</strong> The feasibility of administering and scoring within available resources</div>
+      <div class="grule"><em>Considerations:</em> Time, cost, ease of administration, scoring ease, resources needed</div>
+      <div class="grule"><span>A practical test:</span> Easy to administer, score, and interpret within constraints</div>
+      <div class="grule"><strong>Example problem:</strong> A 3-hour oral interview for 200 students lacks practicality</div>
+    </div>
+  </div>
+
+  <div class="tabpanel" id="t4d">
+    <div class="gbox gbox-pk">
+      <h4>Washback (Backwash) Effect — "How does it influence teaching?"</h4>
+      <div class="grule"><strong>Definition:</strong> The impact of a test on teaching and learning</div>
+      <div class="grule"><em>Positive washback:</em> Test encourages good teaching practices and meaningful learning</div>
+      <div class="grule"><span>Negative washback:</span> Test leads to "teaching to the test," ignoring important skills</div>
+      <div class="grule"><strong>Example of negative:</strong> If exams only test grammar, teachers neglect speaking → bad washback</div>
+    </div>
+    <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Morocco context:</strong> If the Bac only tests reading/writing, teachers may neglect speaking/listening. This is NEGATIVE WASHBACK.</span></div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="2">← Types of Tests</button>
+    <button class="nb pri" data-go="4">Next: Test Item Types →</button>
+  </div>
+</section>
+
+<!-- SECTION 5: TEST ITEM TYPES -->
+<section class="sblock" id="dp9s4">
+  <div class="slabel">Section 5 · Test Item Types</div>
+  <h2 class="sheading">Test Item Formats — <em>Objective vs Subjective</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">📝</div>
+    <div class="s-t">Choosing the Right Test Format</div>
+    <div class="s-d">Test items can be OBJECTIVE (one correct answer, easy to score) or SUBJECTIVE (open-ended, require judgment to score).</div>
+  </div>
+
+  <table class="gtbl">
+    <tr><th>Feature</th><th class="tbl-bl">Objective Items</th><th class="tbl-pk">Subjective Items</th></tr>
+    <tr><td><strong>Answers</strong></td><td>One correct answer</td><td>Multiple possible responses</td></tr>
+    <tr><td><strong>Scoring</strong></td><td>Easy, consistent, quick</td><td>Requires judgment; may vary</td></tr>
+    <tr><td><strong>Reliability</strong></td><td>High (no scorer variation)</td><td>Lower (depends on scorer)</td></tr>
+    <tr><td><strong>Examples</strong></td><td>MCQ, T/F, matching, fill-in</td><td>Essays, compositions, oral</td></tr>
+    <tr><td><strong>Tests</strong></td><td>Recognition, discrete items</td><td>Production, integrated skills</td></tr>
+  </table>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="t5a">📋 Objective Items</button>
+    <button class="tab" data-tab="t5b">✍️ Subjective Items</button>
+    <button class="tab" data-tab="t5c">🎯 Performance-Based</button>
+  </div>
+
+  <div class="tabpanel vis" id="t5a">
+    <div class="gbox gbox-bl">
+      <h4>Objective Test Items</h4>
+      <div class="grule"><strong>Multiple Choice (MCQ)</strong> — Choose the correct answer from options</div>
+      <div class="grule"><em>True/False</em> — Indicate if statements are true or false</div>
+      <div class="grule"><span>Matching</span> — Match items from two columns</div>
+      <div class="grule"><strong>Fill-in-the-blank / Cloze</strong> — Complete gaps with correct words</div>
+      <div class="grule"><em>Ordering/Sequencing</em> — Put items in correct order</div>
+    </div>
+    <p class="stxt" style="margin-top:12px"><strong>Advantages:</strong> High reliability, quick scoring, covers more content. <strong>Disadvantages:</strong> Tests recognition not production; guessing possible.</p>
+  </div>
+
+  <div class="tabpanel" id="t5b">
+    <div class="gbox gbox-pk">
+      <h4>Subjective Test Items</h4>
+      <div class="grule"><strong>Essays/Compositions</strong> — Extended writing on a topic</div>
+      <div class="grule"><em>Short-answer questions</em> — Brief written responses</div>
+      <div class="grule"><span>Oral interviews</span> — Face-to-face speaking assessment</div>
+      <div class="grule"><strong>Presentations</strong> — Formal spoken performance</div>
+    </div>
+    <p class="stxt" style="margin-top:12px"><strong>Advantages:</strong> Tests production, creativity, integrated skills. <strong>Disadvantages:</strong> Scoring is subjective; time-consuming; lower reliability.</p>
+    <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Improving reliability:</strong> Use RUBRICS with clear criteria and scoring guides to make subjective scoring more consistent.</span></div>
+  </div>
+
+  <div class="tabpanel" id="t5c">
+    <div class="gbox gbox-gr">
+      <h4>Performance-Based Assessment</h4>
+      <div class="grule"><strong>Definition:</strong> Learners demonstrate knowledge through real-world tasks</div>
+      <div class="grule"><em>Examples:</em> Role-plays, presentations, projects, portfolios</div>
+      <div class="grule"><span>Authentic assessment:</span> Tasks mirror real-life language use</div>
+      <div class="grule"><strong>Aligns with:</strong> CLT, CBLT, Task-Based Learning</strong></div>
+    </div>
+    <p class="stxt" style="margin-top:12px"><strong>Moroccan exam note:</strong> Performance assessment = open-ended tasks like "describing a picture," "public speaking," NOT multiple choice.</p>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="3">← Principles of Testing</button>
+    <button class="nb pri" data-go="5">Next: Scoring & Rubrics →</button>
+  </div>
+</section>
+
+<!-- SECTION 6: SCORING AND RUBRICS -->
+<section class="sblock" id="dp9s5">
+  <div class="slabel">Section 6 · Scoring Methods</div>
+  <h2 class="sheading">Scoring Methods — <em>Holistic vs Analytic</em></h2>
+
+  <p class="stxt">For subjective assessments (essays, speaking), teachers need clear <strong>scoring criteria</strong>. Two main approaches are HOLISTIC and ANALYTIC scoring.</p>
+
+  <table class="gtbl">
+    <tr><th>Feature</th><th class="tbl-go">Holistic Scoring</th><th class="tbl-te">Analytic Scoring</th></tr>
+    <tr><td><strong>Approach</strong></td><td>Single overall score based on general impression</td><td>Separate scores for different criteria</td></tr>
+    <tr><td><strong>Speed</strong></td><td>Faster</td><td>Slower, more detailed</td></tr>
+    <tr><td><strong>Feedback</strong></td><td>Less specific</td><td>Detailed feedback on each criterion</td></tr>
+    <tr><td><strong>Example</strong></td><td>"This essay is a 7 out of 10"</td><td>"Content: 8, Organization: 6, Grammar: 7, Vocabulary: 8"</td></tr>
+    <tr><td><strong>Best for</strong></td><td>Quick assessment of large numbers</td><td>Formative feedback, detailed evaluation</td></tr>
+  </table>
+
+  <div class="gbox gbox-go">
+    <h4>Holistic Scoring</h4>
+    <div class="grule"><strong>One overall score</strong> based on the total impression</div>
+    <div class="grule"><em>Pros:</em> Faster, practical for large groups</div>
+    <div class="grule"><span>Cons:</span> Less detailed feedback; harder to identify specific weaknesses</div>
+  </div>
+
+  <div class="gbox gbox-te">
+    <h4>Analytic Scoring</h4>
+    <div class="grule"><strong>Separate scores</strong> for each criterion (content, grammar, vocabulary, organization, etc.)</div>
+    <div class="grule"><em>Pros:</em> Detailed feedback; identifies specific strengths/weaknesses</div>
+    <div class="grule"><span>Cons:</span> More time-consuming; requires well-defined rubric</div>
+  </div>
+
+  <div class="gbox gbox-pu">
+    <h4>Rubrics — Scoring Guides</h4>
+    <div class="grule"><strong>Definition:</strong> A set of criteria and descriptions for different performance levels</div>
+    <div class="grule"><em>Purpose:</em> Make scoring more consistent (improve reliability)</em></div>
+    <div class="grule"><span>Components:</span> Criteria + performance level descriptors + scores</span></div>
+    <div class="grule"><strong>Benefit:</strong> Increases inter-rater reliability (different scorers give similar grades)</div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Key Point:</strong> Rubrics help improve RELIABILITY of subjective assessments by making scoring criteria clear and consistent.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="4">← Test Item Types</button>
+    <button class="nb pri" data-go="6">Next: Listening Task →</button>
+  </div>
+</section>
+
+<!-- SECTION 7: LISTENING (RELEVANT SCENARIO) -->
+<section class="sblock" id="dp9s6">
+  <div class="slabel">Section 7 · Listening Comprehension</div>
+  <h2 class="sheading">🎙️ Listen — <em>A Trainer Explains Assessment Concepts</em></h2>
+  <p class="stxt">Press ▶ to listen to a teacher trainer discussing assessment and testing. <strong>Match each description to the correct concept.</strong></p>
+
+  <div class="aplayer">
+    <button class="abig" id="dp9playbtn">▶</button>
+    <div class="ainfo">
+      <div class="at">Understanding Assessment & Testing</div>
+      <div class="as">~60 seconds · British English</div>
+      <div class="apbar"><div class="apfill" id="dp9apf"></div></div>
+    </div>
+    <button class="scrtog" id="dp9scrtog">📄 Transcript</button>
+  </div>
+
+  <div class="scrbox" id="dp9scrbox">
+    <p><strong>Trainer:</strong> "Let's discuss key assessment concepts. First, there's a difference between formative and summative assessment. Formative assessment happens throughout the course — it's assessment FOR learning, helping teachers and students understand progress and make improvements. Summative assessment, on the other hand, happens at the end — it's assessment OF learning, resulting in a final grade."</p>
+    <p>"Now, let's talk about test types. A placement test determines what level a student should start at. A diagnostic test identifies specific areas of weakness. An achievement test measures what was taught in a specific course — remember, test what you taught. A proficiency test, like IELTS or TOEFL, measures overall language ability regardless of any specific course."</p>
+    <p>"Finally, good tests must be valid — they measure what they claim to measure. They must be reliable — giving consistent results. They should be practical — feasible to administer. And they should have positive washback — encouraging good teaching practices. If exams only test grammar, teachers might neglect speaking — that's negative washback."</p>
+  </div>
+
+  <h4 style="color:var(--ny);font-family:'Playfair Display',serif;font-size:1rem;margin:20px 0 13px">Match each description to the correct concept</h4>
+
+  <div class="smatch" id="dp9match">
+    <div class="sm-item">
+      <div class="sm-scenario">"Assessment FOR learning — happens throughout the course to guide improvement." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which assessment type?</em></div>
+      <select class="sm-select" data-a="Formative" id="dp9ms0">
+        <option value="">— Select —</option>
+        <option>Formative</option><option>Summative</option><option>Diagnostic</option><option>Placement</option><option>Proficiency</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp9mf0"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Measures what was taught in a specific course — test what you taught." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which test type?</em></div>
+      <select class="sm-select" data-a="Achievement test" id="dp9ms1">
+        <option value="">— Select —</option>
+        <option>Placement test</option><option>Diagnostic test</option><option>Achievement test</option><option>Proficiency test</option><option>Progress test</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp9mf1"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Measures overall language ability regardless of any specific course, like IELTS." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which test type?</em></div>
+      <select class="sm-select" data-a="Proficiency test" id="dp9ms2">
+        <option value="">— Select —</option>
+        <option>Placement test</option><option>Diagnostic test</option><option>Achievement test</option><option>Proficiency test</option><option>Formative test</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp9mf2"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"The test gives consistent results when administered multiple times." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which testing principle?</em></div>
+      <select class="sm-select" data-a="Reliability" id="dp9ms3">
+        <option value="">— Select —</option>
+        <option>Validity</option><option>Reliability</option><option>Practicality</option><option>Washback</option><option>Authenticity</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp9mf3"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"If exams only test grammar, teachers neglect speaking — this is negative..." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which concept?</em></div>
+      <select class="sm-select" data-a="Washback" id="dp9ms4">
+        <option value="">— Select —</option>
+        <option>Validity</option><option>Reliability</option><option>Practicality</option><option>Washback</option><option>Face validity</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp9mf4"></div>
+  </div>
+
+  <button class="chkb" id="dp9chkmatch">Check Answers ✓</button>
+
+  <div class="navb">
+    <button class="nb" data-go="5">← Scoring Methods</button>
+    <button class="nb pri" data-go="7">Next: Interview Prep →</button>
+  </div>
+</section>
+
+<!-- SECTION 8: INTERVIEW PREP -->
+<section class="sblock" id="dp9s7">
+  <div class="slabel">Section 8 · Interview Preparation</div>
+  <h2 class="sheading">Interview Practice — <em>Explain Washback Effect</em></h2>
+
+  <div class="co co-info"><span class="co-ico">ℹ️</span><span><strong>Note:</strong> The written exam is <strong>100% multiple choice</strong> (A, B, C, D, E). However, in the <strong>oral interview</strong>, you may be asked to explain key concepts. This section prepares you for that.</span></div>
+
+  <p class="stxt">Practice explaining the <strong>washback effect</strong> in 60–80 words. Include definition, positive vs negative washback, and an example.</p>
+
+  <div class="co co-tip"><span class="co-ico">✍️</span><span><strong>Structure your answer:</strong><br>1. Define washback effect<br>2. Explain positive washback + example<br>3. Explain negative washback + example<br>4. Why it matters for teachers</span></div>
+
+  <div style="margin-top:18px">
+    <textarea class="wa" id="dp9wtxt" placeholder="The washback effect refers to... Positive washback occurs when... For example... Negative washback happens when... For instance, if exams only test... Teachers should be aware of washback because..."></textarea>
+    <div class="wcnt" id="dp9wcnt">0 words (aim for 60–80)</div>
+    <button class="wsub" id="dp9wsub">Check My Answer ✓</button>
+    <div class="wfb" id="dp9wfb">
+      <strong>✅ Good practice!</strong><br><br>
+      <strong>Model Answer:</strong><br>
+      "The washback effect refers to the impact that a test has on teaching and learning. Positive washback occurs when a test encourages good teaching practices and meaningful learning. For example, if an exam includes speaking tasks, teachers will spend time developing students' oral skills. Negative washback happens when a test leads to 'teaching to the test' at the expense of important skills. For instance, if exams only test grammar through multiple choice, teachers may neglect communicative activities. Teachers should be aware of washback because it influences what happens in the classroom."
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="6">← Listening Task</button>
+    <button class="nb pri" data-go="8">Next: 40-Question Exam →</button>
+  </div>
+</section>
+
+<!-- SECTION 9: 40-QUESTION EXAM -->
+<section class="sblock" id="dp9s8">
+  <div class="slabel">Section 9 · Full Exam Simulation</div>
+  <h2 class="sheading">Exam Practice 🎯 — 40 Questions</h2>
+  <p class="stxt">This section simulates the <strong>real exam format</strong>: Multiple choice with 5 options (A, B, C, D, E). Option E is always "None of the above." <strong>Every wrong answer includes a full explanation.</strong></p>
+
+  <div class="co co-or"><span class="co-ico">⏱️</span><span><strong>Exam Conditions:</strong> In the real exam, you have limited time. Try to answer each question in under 45 seconds. Don't second-guess yourself!</span></div>
+
+  <div>
+    <div class="qpr">
+      <span class="qcnt" id="dp9qcnt">1 / 40</span>
+      <div class="qpbar"><div class="qpfill" id="dp9qpf" style="width:2.5%"></div></div>
+      <span class="qcnt" id="dp9qsl">Score: 0</span>
+    </div>
+    <div id="dp9qarea"></div>
+    <div class="qfbm" id="dp9qfb"></div>
+    <button class="qnxt" id="dp9qnxt">Next Question →</button>
+    <div class="spl" id="dp9spl">
+      <div class="scir"><div class="snum" id="dp9sfin">0</div><div class="sden">/ 40</div></div>
+      <div class="smsg" id="dp9smsg">Well done!</div>
+      <div class="ssub" id="dp9ssub">Keep practising!</div>
+      <button class="srty" id="dp9srty">🔄 Retry Quiz</button>
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="7">← Interview Prep</button>
+  </div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="lft">
+  <div class="flo">English<em>Pro</em> · Didactics</div>
+  <div class="ftx">Lesson 9 — Assessment Types · Test Types · Testing Principles · 40-Question Exam</div>
+</footer>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+(function(){
+'use strict';
+
+/* ══════════════════════════════════════════════════════════════
+   40-QUESTION EXAM DATA — 5 options (A, B, C, D, E = None)
+   ══════════════════════════════════════════════════════════════ */
+var QD=[
+  // Questions 1-10: Assessment Types
+  {q:'FORMATIVE assessment is also known as:',opts:['Assessment OF learning','Assessment FOR learning','Final assessment','Certification assessment','None of the above'],a:1,ex:'✅ B is correct. FORMATIVE = Assessment FOR learning (ongoing, to improve learning).'},
+  {q:'SUMMATIVE assessment is used to:',opts:['Identify weaknesses before instruction','Place students in appropriate levels','Evaluate overall achievement at the end','Provide ongoing feedback during learning','None of the above'],a:2,ex:'✅ C is correct. SUMMATIVE = Assessment OF learning — evaluates overall achievement AT THE END.'},
+  {q:'Which of the following is an example of formative assessment?',opts:['The Baccalaureate exam','Weekly quizzes with feedback','Final course examination','IELTS certification test','None of the above'],a:1,ex:'✅ B is correct. Weekly quizzes with feedback are FORMATIVE — ongoing assessment to guide improvement.'},
+  {q:'Assessment that provides a "snapshot" of learner achievement at a specific point is:',opts:['Formative assessment','Diagnostic assessment','Summative assessment','Continuous assessment','None of the above'],a:2,ex:'✅ C is correct. SUMMATIVE assessment provides a "snapshot" of achievement at a specific point in time.'},
+  {q:'Which type of assessment involves peers providing feedback to each other?',opts:['Only summative assessment','Formative assessment','Only placement tests','Only proficiency tests','None of the above'],a:1,ex:'✅ B is correct. FORMATIVE assessment often includes peer assessment and peer feedback.'},
+  {q:'The main difference between assessment and testing is:',opts:['Assessment and testing are exactly the same','Assessment is broader; testing is one type of assessment','Testing is broader; assessment is one type of testing','Only testing provides grades','None of the above'],a:1,ex:'✅ B is correct. ASSESSMENT is the broader process of gathering information; TESTING is one specific method.'},
+  {q:'Evaluation involves:',opts:['Only collecting data','Making judgments about learner achievement','Never using test scores','Only observing learners','None of the above'],a:1,ex:'✅ B is correct. EVALUATION involves making JUDGMENTS about learner achievement based on assessment data.'},
+  {q:'Which statement about formative assessment is TRUE?',opts:['It always results in a final grade','It is only given at the end of a course','It provides feedback to guide next steps','It cannot involve peer assessment','None of the above'],a:2,ex:'✅ C is correct. Formative assessment provides FEEDBACK to guide next steps in learning.'},
+  {q:'Assessment that happens throughout a course is typically:',opts:['Only summative','Formative','Only for certification','Never reliable','None of the above'],a:1,ex:'✅ B is correct. FORMATIVE assessment happens THROUGHOUT the course (ongoing).'},
+  {q:'"Assessment OF learning" refers to:',opts:['Formative assessment','Diagnostic assessment','Summative assessment','Placement assessment','None of the above'],a:2,ex:'✅ C is correct. "Assessment OF learning" = SUMMATIVE (evaluates what was learned).'},
+
+  // Questions 11-20: Types of Tests
+  {q:'A test given at the beginning to determine which class a student should join is:',opts:['Achievement test','Diagnostic test','Placement test','Proficiency test','None of the above'],a:2,ex:'✅ C is correct. PLACEMENT tests determine the appropriate level/class for a student at the START.'},
+  {q:'A test that identifies specific areas of weakness in learner knowledge is:',opts:['Placement test','Diagnostic test','Proficiency test','Achievement test','None of the above'],a:1,ex:'✅ B is correct. DIAGNOSTIC tests identify SPECIFIC WEAKNESSES to target instruction.'},
+  {q:'An achievement test measures:',opts:['Overall language ability regardless of course','Specific content that was taught in a course','Only speaking ability','Student placement level','None of the above'],a:1,ex:'✅ B is correct. ACHIEVEMENT tests measure what was TAUGHT in a specific course — "test what you taught."'},
+  {q:'IELTS and TOEFL are examples of:',opts:['Achievement tests','Diagnostic tests','Placement tests','Proficiency tests','None of the above'],a:3,ex:'✅ D is correct. IELTS and TOEFL are PROFICIENCY tests — they measure overall language ability regardless of any course.'},
+  {q:'The key difference between achievement and proficiency tests is:',opts:['Achievement tests are longer','Proficiency tests are easier','Achievement tests are course-specific; proficiency tests are not','There is no difference','None of the above'],a:2,ex:'✅ C is correct. ACHIEVEMENT = course-specific (what was taught). PROFICIENCY = general ability (not tied to course).'},
+  {q:'After teaching Unit 5, the teacher gives a test covering Unit 5 material. This is:',opts:['A proficiency test','A placement test','An achievement test','A diagnostic test','None of the above'],a:2,ex:'✅ C is correct. Testing the specific content of Unit 5 = ACHIEVEMENT test (tests what was taught).'},
+  {q:'Progress tests are administered:',opts:['Only at the beginning','Only at the end','Throughout the course at regular intervals','Only for certification','None of the above'],a:2,ex:'✅ C is correct. PROGRESS tests are given THROUGHOUT the course to monitor ongoing learning.'},
+  {q:'A student takes a test to check their overall English ability for university admission. This is likely:',opts:['An achievement test','A diagnostic test','A placement test','A proficiency test','None of the above'],a:3,ex:'✅ D is correct. Testing overall ability for university admission = PROFICIENCY test (not course-specific).'},
+  {q:'Which test type is NOT tied to any specific course content?',opts:['Achievement test','Progress test','Unit test','Proficiency test','None of the above'],a:3,ex:'✅ D is correct. PROFICIENCY tests measure general ability — NOT tied to specific course content.'},
+  {q:'A test reveals that students specifically struggle with passive voice. This test is:',opts:['Achievement test','Placement test','Diagnostic test','Proficiency test','None of the above'],a:2,ex:'✅ C is correct. Identifying specific weaknesses (passive voice) = DIAGNOSTIC test.'},
+
+  // Questions 21-30: Testing Principles
+  {q:'VALIDITY in testing means:',opts:['The test is easy to administer','The test gives consistent results','The test measures what it claims to measure','The test has positive effects on teaching','None of the above'],a:2,ex:'✅ C is correct. VALIDITY = the test measures what it is supposed to measure.'},
+  {q:'RELIABILITY in testing means:',opts:['The test measures what it claims','The test gives consistent results across administrations','The test is practical to give','The test looks appropriate','None of the above'],a:1,ex:'✅ B is correct. RELIABILITY = consistent, stable results when the test is given repeatedly.'},
+  {q:'If students score very differently when given the same test twice, the test lacks:',opts:['Validity','Practicality','Reliability','Authenticity','None of the above'],a:2,ex:'✅ C is correct. Inconsistent results on the same test = lack of RELIABILITY.'},
+  {q:'PRACTICALITY in testing refers to:',opts:['The test measuring what it claims','The test giving consistent results','The test being feasible to administer within constraints','The test having positive teaching effects','None of the above'],a:2,ex:'✅ C is correct. PRACTICALITY = the test is feasible (time, cost, resources, ease of scoring).'},
+  {q:'The WASHBACK effect refers to:',opts:['How quickly tests are scored','The impact of testing on teaching and learning','The difficulty level of tests','How tests are stored','None of the above'],a:1,ex:'✅ B is correct. WASHBACK = the impact of testing on teaching and learning (positive or negative).'},
+  {q:'If exams only test grammar, teachers neglect speaking. This is an example of:',opts:['Positive washback','Negative washback','High validity','High reliability','None of the above'],a:1,ex:'✅ B is correct. Tests causing teachers to neglect important skills = NEGATIVE WASHBACK.'},
+  {q:'FACE VALIDITY means:',opts:['The test actually measures what it should','The test APPEARS to measure what it should','The test has consistent results','The test is easy to administer','None of the above'],a:1,ex:'✅ B is correct. FACE validity = the test APPEARS (looks like it) measures what it should (perception).'},
+  {q:'CONTENT VALIDITY means:',opts:['The test looks appropriate','The test covers the content that was taught','The test is easy to score','Different scorers give the same scores','None of the above'],a:1,ex:'✅ B is correct. CONTENT validity = the test covers the content that was actually taught.'},
+  {q:'INTER-RATER reliability refers to:',opts:['Same students getting similar scores on retests','Different scorers giving the same scores','The test being easy to administer','The test measuring what it claims','None of the above'],a:1,ex:'✅ B is correct. INTER-RATER reliability = different scorers give the same/similar scores.'},
+  {q:'A speaking test that assesses speaking ability has high:',opts:['Practicality','Reliability','Construct validity','Washback','None of the above'],a:2,ex:'✅ C is correct. Testing the skill you claim to test (speaking tests speaking) = CONSTRUCT VALIDITY.'},
+
+  // Questions 31-40: Test Items, Scoring, and Applications
+  {q:'Multiple choice, true/false, and matching are examples of:',opts:['Subjective test items','Objective test items','Performance assessments','Portfolio assessments','None of the above'],a:1,ex:'✅ B is correct. MCQ, T/F, matching = OBJECTIVE items (one correct answer, easy to score).'},
+  {q:'Essays and oral interviews are examples of:',opts:['Objective test items','Discrete-point items','Subjective test items','Fill-in-the-blank items','None of the above'],a:2,ex:'✅ C is correct. Essays and oral interviews = SUBJECTIVE items (require judgment to score).'},
+  {q:'Objective test items have HIGH:',opts:['Scoring reliability','Production of language','Creativity assessment','Integration of skills','None of the above'],a:0,ex:'✅ A is correct. OBJECTIVE items have HIGH scoring reliability (no scorer variation, one correct answer).'},
+  {q:'HOLISTIC scoring means:',opts:['Giving separate scores for each criterion','Giving one overall score based on general impression','Only scoring grammar','Using only objective items','None of the above'],a:1,ex:'✅ B is correct. HOLISTIC = ONE overall score based on general impression.'},
+  {q:'ANALYTIC scoring means:',opts:['Giving one overall score','Giving separate scores for different criteria','Scoring only pronunciation','Using only MCQ items','None of the above'],a:1,ex:'✅ B is correct. ANALYTIC = SEPARATE scores for different criteria (content, grammar, vocabulary, etc.).'},
+  {q:'Using a RUBRIC helps improve:',opts:['Test validity only','Scoring reliability (consistency)','Test length','Student motivation only','None of the above'],a:1,ex:'✅ B is correct. RUBRICS improve scoring RELIABILITY by making criteria clear and consistent.'},
+  {q:'Performance-based assessment requires learners to:',opts:['Only answer multiple choice questions','Demonstrate knowledge through real-world tasks','Only take written tests','Avoid speaking tasks','None of the above'],a:1,ex:'✅ B is correct. PERFORMANCE-BASED = learners demonstrate knowledge through real-world tasks (presentations, role-plays).'},
+  {q:'Which is a performance-based assessment?',opts:['Multiple choice grammar test','True/False vocabulary test','Public speaking presentation','Matching exercise','None of the above'],a:2,ex:'✅ C is correct. Public speaking = PERFORMANCE-BASED (demonstrating skill through real task).'},
+  {q:'A cloze test involves:',opts:['Matching items from two columns','Filling in blanks in a text','Answering true/false questions','Giving oral presentations','None of the above'],a:1,ex:'✅ B is correct. CLOZE test = filling in blanks/gaps in a text.'},
+  {q:'To ensure a subjective test (essay) has good inter-rater reliability, teachers should:',opts:['Avoid using rubrics','Use clear scoring rubrics','Only give one score','Let each teacher score differently','None of the above'],a:1,ex:'✅ B is correct. Clear RUBRICS improve inter-rater reliability — different scorers give consistent scores.'}
+];
+
+var curSec=0,qCur=0,qScore=0,qAns=false,audioPlaying=false,audioTimer=null;
+
+function goToSection(n){
+  document.querySelectorAll('#dp-l9 .sblock').forEach(function(b){b.classList.remove('vis')});
+  var sec=document.getElementById('dp9s'+n);
+  if(sec)sec.classList.add('vis');
+  curSec=n;
+  updateDots();
+  document.getElementById('dp-l9').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function updateDots(){
+  document.querySelectorAll('#dp-l9 .snavdot').forEach(function(d){
+    var i=parseInt(d.getAttribute('data-s'));
+    d.classList.remove('active','done');
+    if(i<curSec)d.classList.add('done');
+    if(i===curSec)d.classList.add('active');
+  });
+}
+
+document.querySelectorAll('#dp-l9 .snavdot').forEach(function(d){
+  d.addEventListener('click',function(){goToSection(parseInt(d.getAttribute('data-s')))});
+});
+
+document.querySelectorAll('#dp-l9 .nb[data-go]').forEach(function(btn){
+  btn.addEventListener('click',function(){goToSection(parseInt(btn.getAttribute('data-go')))});
+});
+
+document.querySelectorAll('#dp-l9 .mcard').forEach(function(c){
+  c.addEventListener('click',function(){c.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l9 .fbox').forEach(function(f){
+  f.addEventListener('click',function(){f.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l9 .tabs').forEach(function(tg){
+  tg.querySelectorAll('.tab').forEach(function(tab){
+    tab.addEventListener('click',function(){
+      var pid=tab.getAttribute('data-tab');
+      tg.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});
+      tab.classList.add('active');
+      tg.parentElement.querySelectorAll('.tabpanel').forEach(function(p){p.classList.remove('vis')});
+      var pnl=document.getElementById(pid);
+      if(pnl)pnl.classList.add('vis');
+    });
+  });
+});
+
+/* Listening Match Check */
+var chkmatch=document.getElementById('dp9chkmatch');
+if(chkmatch)chkmatch.addEventListener('click',function(){
+  for(var i=0;i<5;i++){
+    var sel=document.getElementById('dp9ms'+i);
+    var fb=document.getElementById('dp9mf'+i);
+    if(!sel)continue;
+    var ans=sel.getAttribute('data-a'),giv=sel.value;
+    var ok=giv===ans;
+    sel.classList.toggle('ok',ok);sel.classList.toggle('bad',!ok);
+    fb.textContent=ok?'✅ Correct!':'❌ Answer: '+ans;
+    fb.classList.toggle('ok',ok);fb.classList.toggle('bad',!ok);
+  }
+});
+
+var pbtn=document.getElementById('dp9playbtn'),apf=document.getElementById('dp9apf');
+var audioTxt="Let's discuss key assessment concepts. First, there's a difference between formative and summative assessment. Formative assessment happens throughout the course — it's assessment FOR learning, helping teachers and students understand progress and make improvements. Summative assessment, on the other hand, happens at the end — it's assessment OF learning, resulting in a final grade. Now, let's talk about test types. A placement test determines what level a student should start at. A diagnostic test identifies specific areas of weakness. An achievement test measures what was taught in a specific course — remember, test what you taught. A proficiency test, like IELTS or TOEFL, measures overall language ability regardless of any specific course. Finally, good tests must be valid — they measure what they claim to measure. They must be reliable — giving consistent results. They should be practical — feasible to administer. And they should have positive washback — encouraging good teaching practices. If exams only test grammar, teachers might neglect speaking — that's negative washback.";
+
+if(pbtn)pbtn.addEventListener('click',function(){
+  if(audioPlaying){window.speechSynthesis&&window.speechSynthesis.cancel();clearInterval(audioTimer);audioPlaying=false;pbtn.textContent='▶';if(apf)apf.style.width='0%';return;}
+  if(!window.speechSynthesis)return;
+  var u=new SpeechSynthesisUtterance(audioTxt);u.lang='en-GB';u.rate=0.9;
+  var vv=window.speechSynthesis.getVoices(),v=vv.find(function(x){return x.lang==='en-GB'})||vv.find(function(x){return x.lang.startsWith('en')});
+  if(v)u.voice=v;
+  audioPlaying=true;pbtn.textContent='⏸';
+  var w=0;audioTimer=setInterval(function(){w=Math.min(100,w+0.28);if(apf)apf.style.width=w+'%';if(w>=100)clearInterval(audioTimer)},500);
+  u.onend=function(){audioPlaying=false;pbtn.textContent='▶';clearInterval(audioTimer)};
+  window.speechSynthesis.speak(u);
+});
+
+var stog=document.getElementById('dp9scrtog'),sbox=document.getElementById('dp9scrbox');
+if(stog)stog.addEventListener('click',function(){sbox&&sbox.classList.toggle('show')});
+
+var wtxt=document.getElementById('dp9wtxt'),wcnt=document.getElementById('dp9wcnt'),wsub=document.getElementById('dp9wsub'),wfb=document.getElementById('dp9wfb');
+if(wtxt)wtxt.addEventListener('input',function(){
+  var wc=wtxt.value.trim()===''?0:wtxt.value.trim().split(/\s+/).length;
+  if(wcnt){wcnt.textContent=wc+' words (aim for 60–80)';wcnt.style.color=wc>=60?'#2E7D52':'#7A7A7A'}
+});
+if(wsub)wsub.addEventListener('click',function(){
+  if(!wtxt||wtxt.value.trim().split(/\s+/).length<20){alert('Please write at least 20 words!');return}
+  if(wfb)wfb.classList.add('show');wsub.textContent='✅ Checked!';wsub.style.background='#2E7D52';
+});
+
+/* 40-Question Quiz with A,B,C,D,E */
+function renderQ(){
+  var d=QD[qCur],area=document.getElementById('dp9qarea'),fb=document.getElementById('dp9qfb'),nxt=document.getElementById('dp9qnxt');
+  fb.className='qfbm';nxt.classList.remove('show');qAns=false;
+  var pf=document.getElementById('dp9qpf');
+  if(document.getElementById('dp9qcnt'))document.getElementById('dp9qcnt').textContent=(qCur+1)+' / '+QD.length;
+  if(pf)pf.style.width=((qCur+1)/QD.length*100)+'%';
+  var labels=['A','B','C','D','E'];
+  var html='<div class="qq"><span class="qqn">'+(qCur+1)+'</span>'+d.q+'</div><div class="qopts">';
+  d.opts.forEach(function(o,i){html+='<button class="qopt" data-i="'+i+'"><span class="ql">'+labels[i]+'.</span> '+o+'</button>'});
+  html+='</div>';area.innerHTML=html;
+  area.querySelectorAll('.qopt').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      if(qAns)return;qAns=true;
+      var ch=parseInt(btn.getAttribute('data-i'));
+      area.querySelectorAll('.qopt').forEach(function(b){b.disabled=true});
+      if(ch===d.a){btn.classList.add('qco');qScore++;if(document.getElementById('dp9qsl'))document.getElementById('dp9qsl').textContent='Score: '+qScore;fb.textContent=d.ex;fb.className='qfbm show ok'}
+      else{btn.classList.add('qwr');area.querySelectorAll('.qopt')[d.a].classList.add('qco');fb.innerHTML='❌ Incorrect. '+d.ex;fb.className='qfbm show bad'}
+      nxt.classList.add('show');nxt.textContent=qCur<QD.length-1?'Next Question →':'See Results 🎯';
+    });
+  });
+}
+
+var qnxt=document.getElementById('dp9qnxt');
+if(qnxt)qnxt.addEventListener('click',function(){qCur++;if(qCur>=QD.length)showScore();else renderQ()});
+
+function showScore(){
+  var area=document.getElementById('dp9qarea'),fb=document.getElementById('dp9qfb'),nxt=document.getElementById('dp9qnxt'),pr=document.querySelector('#dp-l9 .qpr'),pl=document.getElementById('dp9spl');
+  if(area)area.style.display='none';if(fb)fb.style.display='none';if(nxt)nxt.style.display='none';if(pr)pr.style.display='none';if(pl)pl.classList.add('show');
+  var fin=document.getElementById('dp9sfin');if(fin)fin.textContent=qScore;
+  var pct=qScore/QD.length,msg,sub;
+  if(pct>=0.9){msg='Excellent! 🏆';sub='You\'re exam-ready!'}
+  else if(pct>=0.75){msg='Great Work! 🌟';sub='Review the questions you missed.'}
+  else if(pct>=0.6){msg='Good Progress! 👍';sub='Study the theory sections again.'}
+  else if(pct>=0.4){msg='Keep Practising! 💪';sub='Focus on the concepts you struggled with.'}
+  else{msg='More Study Needed 📚';sub='Review all sections before retrying.'}
+  if(document.getElementById('dp9smsg'))document.getElementById('dp9smsg').textContent=msg;
+  if(document.getElementById('dp9ssub'))document.getElementById('dp9ssub').textContent=sub;
+}
+
+var srty=document.getElementById('dp9srty');
+if(srty)srty.addEventListener('click',function(){
+  qScore=0;qCur=0;qAns=false;
+  var area=document.getElementById('dp9qarea'),fb=document.getElementById('dp9qfb'),nxt=document.getElementById('dp9qnxt'),pr=document.querySelector('#dp-l9 .qpr'),pl=document.getElementById('dp9spl');
+  if(area){area.style.display='block';area.innerHTML=''}if(fb){fb.style.display='block';fb.className='qfbm'}if(nxt)nxt.style.display='none';if(pr)pr.style.display='flex';if(pl)pl.classList.remove('show');
+  if(document.getElementById('dp9qsl'))document.getElementById('dp9qsl').textContent='Score: 0';
+  renderQ();
+});
+
+renderQ();
+if(window.speechSynthesis){window.speechSynthesis.getVoices();window.speechSynthesis.onvoiceschanged=function(){window.speechSynthesis.getVoices()}}
+})();
+</script>
+
+<!-- AUTO-RESIZE (MUST BE LAST) -->
+<script>
+(function(){
+  function sendHeight(){var h=document.documentElement.scrollHeight||document.body.scrollHeight;window.parent.postMessage({epHeight:h},'*')}
+  sendHeight();window.addEventListener('load',sendHeight);window.addEventListener('resize',sendHeight);
+  var mo=new MutationObserver(sendHeight);mo.observe(document.body,{childList:true,subtree:true,attributes:true});
+})();
+</script>
+
+</body>
+</html>
