@@ -1,0 +1,978 @@
+<!--============================================================
+     EnglishPro · Didactics Series · Lesson 10
+     Error Correction in Language Teaching
+     GitHub hosted — embedded in Blogger via iframe
+     100% self-contained — no external JS dependencies
+     UPDATED FORMAT: Relevant listening + 40-MCQ exam section
+     ============================================================-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Error Correction | EnglishPro Didactics Series</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;family=DM+Sans:wght@300;400;500;600&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{margin:0;padding:0;background:#FAFAF7;direction:ltr;text-align:left}
+
+#dp-l10{
+  --ny:#0D2B4E;--ny2:#1A4070;
+  --go:#C8933A;--go2:#E8B86D;--gop:#FDF6EC;
+  --cr:#FAFAF7;--wh:#fff;
+  --ink:#1A1A1A;--ink2:#3D3D3D;--mu:#7A7A7A;
+  --bd:#E2DDD6;--bdl:#F0EDE8;
+  --gr:#2E7D52;--grb:#EBF5EF;
+  --rd:#C0392B;--rdb:#FDECEA;
+  --bl:#1E5FA8;--blb:#EBF2FB;
+  --pu:#7C3AED;--pub:#F3F0FF;
+  --te:#0E7490;--teb:#ECFEFF;
+  --or:#D97706;--orb:#FEF3C7;
+  --pk:#DB2777;--pkb:#FDF2F8;
+  --sh1:0 2px 8px rgba(13,43,78,.07);
+  --sh2:0 6px 20px rgba(13,43,78,.10);
+  --r:12px;--rl:20px;
+  font-family:'DM Sans',sans-serif;
+  color:var(--ink);background:var(--cr);
+  line-height:1.7;-webkit-font-smoothing:antialiased;
+  display:block;overflow:hidden;direction:ltr;text-align:left
+}
+#dp-l10 *,#dp-l10 *::before,#dp-l10 *::after{box-sizing:border-box;margin:0;padding:0}
+#dp-l10 button{cursor:pointer;font-family:'DM Sans',sans-serif;border:none;background:none}
+#dp-l10 textarea,#dp-l10 input,#dp-l10 select{font-family:'DM Sans',sans-serif}
+
+/* HERO */
+#dp-l10 .lhero{background:linear-gradient(150deg,#0a1f38 0%,#0D2B4E 50%,#122e52 100%);padding:48px 24px 40px;position:relative;overflow:hidden;border-radius:var(--rl) var(--rl) 0 0}
+#dp-l10 .lhero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%,rgba(200,147,58,.08) 0%,transparent 60%),radial-gradient(circle at 80% 20%,rgba(124,58,237,.06) 0%,transparent 50%);pointer-events:none}
+#dp-l10 .lhero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,147,58,.4),transparent)}
+#dp-l10 .lhero-in{max-width:720px;margin:0 auto;position:relative;z-index:1}
+#dp-l10 .lvlbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,147,58,.12);border:1px solid rgba(200,147,58,.28);color:var(--go2);font-size:.68rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:18px}
+#dp-l10 .ltitle{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:900;color:#F5F0E8;line-height:1.15;margin-bottom:10px;letter-spacing:-.02em}
+#dp-l10 .ltitle em{color:var(--go);font-style:italic}
+#dp-l10 .lsub{font-size:.9rem;color:rgba(245,240,232,.62);margin-bottom:22px;max-width:520px;line-height:1.6}
+#dp-l10 .spills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px}
+#dp-l10 .spill{font-size:.67rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 11px;border-radius:100px}
+#dp-l10 .sp-th{background:rgba(124,58,237,.25);color:#C4B5FD}
+#dp-l10 .sp-ex{background:rgba(30,95,168,.25);color:#7DB8F0}
+#dp-l10 .sp-qu{background:rgba(200,147,58,.25);color:var(--go2)}
+#dp-l10 .sp-ic{background:rgba(46,125,82,.25);color:#6BCFA0}
+
+/* Nav dots */
+#dp-l10 .snav{display:flex;align-items:center;gap:5px;flex-wrap:wrap;padding-top:20px;border-top:1px solid rgba(255,255,255,.08)}
+#dp-l10 .snavdot{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;font-size:.7rem;font-weight:700;border:2px solid rgba(255,255,255,.18);color:rgba(255,255,255,.32);cursor:pointer;transition:all .25s;flex-shrink:0}
+#dp-l10 .snavdot.done{border-color:var(--gr);background:var(--gr);color:#fff}
+#dp-l10 .snavdot.active{border-color:var(--go);background:var(--go);color:#fff}
+#dp-l10 .snavsep{width:16px;height:2px;background:rgba(255,255,255,.1);border-radius:1px;flex-shrink:0}
+#dp-l10 .snavlbl{font-size:.63rem;color:rgba(245,240,232,.38);margin-left:6px}
+
+/* BODY */
+#dp-l10 .lbody{max-width:720px;margin:0 auto;padding:32px 20px 64px;background:var(--cr)}
+#dp-l10 .sblock{background:var(--wh);border:1px solid var(--bdl);border-radius:var(--rl);padding:28px;margin-bottom:24px;display:none;animation:dp10up .35s ease both;box-shadow:var(--sh1)}
+#dp-l10 .sblock.vis{display:block}
+@keyframes dp10up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+#dp-l10 .slabel{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--go);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+#dp-l10 .slabel::after{content:'';flex:1;height:1px;background:var(--bdl)}
+#dp-l10 .sheading{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ny);margin-bottom:16px;line-height:1.25}
+#dp-l10 .sheading em{color:var(--go);font-style:italic}
+#dp-l10 .stxt{font-size:.9rem;color:var(--ink2);margin-bottom:16px;line-height:1.65}
+
+/* Scene */
+#dp-l10 .scene{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:20px;margin-bottom:20px;position:relative;overflow:hidden}
+#dp-l10 .scene::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(200,147,58,.08),transparent 60%);pointer-events:none}
+#dp-l10 .s-ico{font-size:1.8rem;margin-bottom:8px;position:relative;z-index:1}
+#dp-l10 .s-t{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#F5F0E8;position:relative;z-index:1;margin-bottom:5px}
+#dp-l10 .s-d{font-size:.83rem;color:rgba(245,240,232,.65);position:relative;z-index:1;line-height:1.55}
+
+/* Callouts */
+#dp-l10 .co{display:flex;gap:10px;padding:13px 15px;border-radius:var(--r);margin:14px 0;font-size:.855rem;line-height:1.6}
+#dp-l10 .co-tip{background:var(--gop);border:1px solid rgba(200,147,58,.2);color:var(--ink2)}
+#dp-l10 .co-info{background:var(--blb);border:1px solid rgba(30,95,168,.15);color:var(--ink2)}
+#dp-l10 .co-pur{background:var(--pub);border:1px solid rgba(124,58,237,.15);color:var(--ink2)}
+#dp-l10 .co-teal{background:var(--teb);border:1px solid rgba(14,116,144,.15);color:var(--ink2)}
+#dp-l10 .co-or{background:var(--orb);border:1px solid rgba(217,119,6,.15);color:var(--ink2)}
+#dp-l10 .co-pk{background:var(--pkb);border:1px solid rgba(219,39,119,.15);color:var(--ink2)}
+#dp-l10 .co-ico{font-size:1rem;flex-shrink:0;margin-top:1px}
+
+/* Gbox */
+#dp-l10 .gbox{border-radius:0 var(--r) var(--r) 0;padding:18px 20px;margin:18px 0}
+#dp-l10 .gbox-bl{background:var(--blb);border:1px solid rgba(30,95,168,.2);border-left:4px solid var(--bl)}
+#dp-l10 .gbox-go{background:var(--gop);border:1px solid rgba(200,147,58,.2);border-left:4px solid var(--go)}
+#dp-l10 .gbox-gr{background:var(--grb);border:1px solid rgba(46,125,82,.2);border-left:4px solid var(--gr)}
+#dp-l10 .gbox-pu{background:var(--pub);border:1px solid rgba(124,58,237,.15);border-left:4px solid var(--pu)}
+#dp-l10 .gbox-te{background:var(--teb);border:1px solid rgba(14,116,144,.15);border-left:4px solid var(--te)}
+#dp-l10 .gbox-rd{background:var(--rdb);border:1px solid rgba(192,57,43,.15);border-left:4px solid var(--rd)}
+#dp-l10 .gbox-pk{background:var(--pkb);border:1px solid rgba(219,39,119,.15);border-left:4px solid var(--pk)}
+#dp-l10 .gbox h4{font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:11px}
+#dp-l10 .gbox-bl h4{color:var(--bl)}
+#dp-l10 .gbox-go h4{color:var(--go)}
+#dp-l10 .gbox-gr h4{color:var(--gr)}
+#dp-l10 .gbox-pu h4{color:var(--pu)}
+#dp-l10 .gbox-te h4{color:var(--te)}
+#dp-l10 .gbox-rd h4{color:var(--rd)}
+#dp-l10 .gbox-pk h4{color:var(--pk)}
+#dp-l10 .grule{font-family:'DM Mono',monospace;font-size:.86rem;color:var(--ny);background:rgba(255,255,255,.65);padding:9px 14px;border-radius:7px;margin-bottom:7px;line-height:1.6}
+#dp-l10 .grule span{color:var(--bl);font-weight:600}
+#dp-l10 .grule em{color:var(--go);font-style:normal;font-weight:600}
+#dp-l10 .grule strong{color:var(--gr);font-weight:700}
+
+/* Method cards */
+#dp-l10 .mcards{display:flex;flex-direction:column;gap:12px;margin:20px 0}
+#dp-l10 .mcard{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:18px;cursor:pointer;transition:all .22s}
+#dp-l10 .mcard:hover{border-color:var(--go);transform:translateX(4px)}
+#dp-l10 .mcard.fl{background:var(--gop);border-color:var(--go)}
+#dp-l10 .mc-head{display:flex;align-items:center;gap:12px}
+#dp-l10 .mc-icon{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;color:#fff}
+#dp-l10 .mc-title{font-size:.95rem;font-weight:700;color:var(--ny)}
+#dp-l10 .mc-sub{font-size:.75rem;color:var(--mu)}
+#dp-l10 .mc-hint{font-size:.75rem;color:var(--mu);font-style:italic;margin-top:6px}
+#dp-l10 .mc-body{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--bdl)}
+#dp-l10 .mcard.fl .mc-hint{display:none}
+#dp-l10 .mcard.fl .mc-body{display:block}
+#dp-l10 .mc-body p{font-size:.85rem;color:var(--ink2);line-height:1.6;margin-bottom:8px}
+
+/* Tables */
+#dp-l10 .gtbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.82rem}
+#dp-l10 .gtbl th{background:var(--ny);color:#F5F0E8;padding:9px 10px;text-align:left;font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+#dp-l10 .gtbl th:first-child{border-radius:var(--r) 0 0 0}
+#dp-l10 .gtbl th:last-child{border-radius:0 var(--r) 0 0}
+#dp-l10 .gtbl td{padding:8px 10px;border-bottom:1px solid var(--bdl);color:var(--ink2);vertical-align:top}
+#dp-l10 .gtbl tr:nth-child(even) td{background:var(--cr)}
+#dp-l10 .tbl-b{color:var(--bl);font-weight:600}
+#dp-l10 .tbl-g{color:var(--go);font-weight:600}
+#dp-l10 .tbl-gr{color:var(--gr);font-weight:600}
+#dp-l10 .tbl-pu{color:var(--pu);font-weight:600}
+#dp-l10 .tbl-rd{color:var(--rd);font-weight:600}
+#dp-l10 .tbl-te{color:var(--te);font-weight:600}
+#dp-l10 .tbl-pk{color:var(--pk);font-weight:600}
+
+/* Tabs */
+#dp-l10 .tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+#dp-l10 .tab{padding:9px 18px;border-radius:var(--r);font-size:.82rem;font-weight:600;background:var(--cr);border:2px solid var(--bd);color:var(--ink2);cursor:pointer;transition:all .2s}
+#dp-l10 .tab:hover{border-color:var(--go);color:var(--go)}
+#dp-l10 .tab.active{background:var(--ny);border-color:var(--ny);color:#fff}
+#dp-l10 .tabpanel{display:none}
+#dp-l10 .tabpanel.vis{display:block}
+
+/* Scenario Match */
+#dp-l10 .smatch{margin:20px 0}
+#dp-l10 .sm-item{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;align-items:center}
+#dp-l10 .sm-scenario{background:var(--blb);border:1px solid rgba(30,95,168,.15);border-radius:var(--r);padding:12px 14px;font-size:.85rem;color:var(--ink2);line-height:1.5}
+#dp-l10 .sm-select{border:2px solid var(--bd);border-radius:var(--r);padding:9px 12px;font-size:.85rem;color:var(--ink2);background:var(--cr);width:100%;font-family:'DM Sans',sans-serif;outline:none;transition:border-color .2s;cursor:pointer}
+#dp-l10 .sm-select:focus{border-color:var(--go)}
+#dp-l10 .sm-select.ok{border-color:var(--gr);background:var(--grb);color:var(--gr)}
+#dp-l10 .sm-select.bad{border-color:var(--rd);background:var(--rdb);color:var(--rd)}
+#dp-l10 .smfb{font-size:.82rem;font-weight:600;padding:10px 14px;border-radius:var(--r);margin-top:4px;display:none}
+#dp-l10 .smfb.ok{background:var(--grb);color:var(--gr);display:block}
+#dp-l10 .smfb.bad{background:var(--rdb);color:var(--rd);display:block}
+
+/* Audio */
+#dp-l10 .aplayer{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px;margin:14px 0;flex-wrap:wrap}
+#dp-l10 .abig{width:48px;height:48px;border-radius:50%;background:var(--go);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;transition:all .2s;cursor:pointer;border:none;box-shadow:0 4px 14px rgba(200,147,58,.4)}
+#dp-l10 .abig:hover{background:var(--go2);transform:scale(1.06)}
+#dp-l10 .ainfo{flex:1;min-width:160px}
+#dp-l10 .at{font-size:.87rem;font-weight:600;color:#F5F0E8;margin-bottom:3px}
+#dp-l10 .as{font-size:.72rem;color:rgba(245,240,232,.55)}
+#dp-l10 .apbar{height:4px;background:rgba(255,255,255,.14);border-radius:2px;margin-top:9px;overflow:hidden}
+#dp-l10 .apfill{height:100%;background:var(--go);width:0%;border-radius:2px;transition:width .3s}
+#dp-l10 .scrtog{background:rgba(255,255,255,.1);color:rgba(245,240,232,.78);font-size:.72rem;font-weight:600;padding:5px 11px;border-radius:100px;border:1px solid rgba(255,255,255,.15);cursor:pointer;transition:all .2s;flex-shrink:0}
+#dp-l10 .scrtog:hover{background:rgba(255,255,255,.2)}
+#dp-l10 .scrbox{background:var(--cr);border:1px solid var(--bd);border-radius:var(--r);padding:18px;margin-top:10px;display:none}
+#dp-l10 .scrbox.show{display:block}
+#dp-l10 .scrbox p{font-size:.875rem;color:var(--ink2);margin-bottom:7px;line-height:1.7}
+
+/* Writing */
+#dp-l10 .wa{width:100%;min-height:130px;border:2px solid var(--bd);border-radius:var(--r);padding:14px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--ink);background:var(--cr);resize:vertical;outline:none;transition:border-color .2s;line-height:1.7}
+#dp-l10 .wa:focus{border-color:var(--go)}
+#dp-l10 .wa::placeholder{color:var(--mu)}
+#dp-l10 .wcnt{font-size:.72rem;color:var(--mu);text-align:right;margin-top:5px}
+#dp-l10 .wsub{margin-top:11px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none}
+#dp-l10 .wsub:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l10 .wfb{display:none;margin-top:13px;background:var(--grb);border:1.5px solid rgba(46,125,82,.22);border-radius:var(--r);padding:15px;font-size:.855rem;color:var(--gr);line-height:1.65}
+#dp-l10 .wfb.show{display:block}
+
+/* Quiz */
+#dp-l10 .qpr{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+#dp-l10 .qpbar{flex:1;height:6px;background:var(--bd);border-radius:3px;overflow:hidden;margin:0 11px}
+#dp-l10 .qpfill{height:100%;background:linear-gradient(90deg,var(--go),var(--go2));border-radius:3px;transition:width .4s ease}
+#dp-l10 .qcnt{font-size:.77rem;font-weight:600;color:var(--mu)}
+#dp-l10 .qq{font-size:1rem;font-weight:600;color:var(--ny);margin-bottom:16px;line-height:1.5}
+#dp-l10 .qqn{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--go);color:#fff;font-size:.75rem;font-weight:700;margin-right:7px;flex-shrink:0;vertical-align:middle}
+#dp-l10 .qopts{display:flex;flex-direction:column;gap:9px}
+#dp-l10 .qopt{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:13px 16px;font-size:.9rem;color:var(--ink2);text-align:left;transition:all .2s;display:flex;align-items:center;gap:9px;cursor:pointer}
+#dp-l10 .qopt .ql{font-weight:700;color:var(--ny);min-width:18px}
+#dp-l10 .qopt:hover:not([disabled]){border-color:var(--go);background:var(--gop);transform:translateX(3px)}
+#dp-l10 .qopt.qco{border-color:var(--gr)!important;background:var(--grb)!important;color:var(--gr)!important}
+#dp-l10 .qopt.qwr{border-color:var(--rd)!important;background:var(--rdb)!important;color:var(--rd)!important}
+#dp-l10 .qfbm{display:none;margin-top:11px;padding:13px 16px;border-radius:var(--r);font-size:.86rem;font-weight:500;line-height:1.6}
+#dp-l10 .qfbm.show{display:block}
+#dp-l10 .qfbm.ok{background:var(--grb);color:var(--gr);border:1px solid rgba(46,125,82,.2)}
+#dp-l10 .qfbm.bad{background:var(--rdb);color:var(--rd);border:1px solid rgba(192,57,43,.2)}
+#dp-l10 .qnxt{margin-top:14px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;display:none;cursor:pointer;border:none}
+#dp-l10 .qnxt:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l10 .qnxt.show{display:inline-block}
+#dp-l10 .spl{text-align:center;padding:28px 20px;display:none;animation:dp10up .4s ease both}
+#dp-l10 .spl.show{display:block}
+#dp-l10 .scir{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--ny),var(--ny2));display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 8px 24px rgba(13,43,78,.2)}
+#dp-l10 .snum{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:var(--go);line-height:1}
+#dp-l10 .sden{font-size:.7rem;color:rgba(245,240,232,.5)}
+#dp-l10 .smsg{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--ny);margin-bottom:7px}
+#dp-l10 .ssub{font-size:.84rem;color:var(--mu);margin-bottom:18px}
+#dp-l10 .srty{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;margin-right:8px;cursor:pointer;border:none}
+#dp-l10 .srty:hover{background:var(--go)}
+
+/* Chkb */
+#dp-l10 .chkb{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none;margin-top:6px}
+#dp-l10 .chkb:hover{background:var(--go);transform:translateY(-1px)}
+
+/* Nav buttons */
+#dp-l10 .navb{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:18px;border-top:1px solid var(--bdl);gap:10px}
+#dp-l10 .nb{display:flex;align-items:center;gap:7px;padding:11px 22px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;border:2px solid var(--bd);color:var(--ink2);background:var(--wh);cursor:pointer}
+#dp-l10 .nb:hover{border-color:var(--go);color:var(--go)}
+#dp-l10 .nb.pri{background:var(--ny);color:#fff;border-color:transparent}
+#dp-l10 .nb.pri:hover{background:var(--go);border-color:transparent}
+#dp-l10 .nb:disabled{opacity:.38;cursor:default;pointer-events:none}
+
+/* Footer */
+#dp-l10 .lft{background:var(--ny);padding:24px;text-align:center;border-radius:0 0 var(--rl) var(--rl)}
+#dp-l10 .flo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:#F5F0E8;margin-bottom:5px}
+#dp-l10 .flo em{color:var(--go);font-style:italic}
+#dp-l10 .ftx{font-size:.74rem;color:rgba(245,240,232,.42)}
+
+/* Feature grid */
+#dp-l10 .fgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:16px 0}
+#dp-l10 .fbox{background:var(--cr);border:1px solid var(--bdl);border-radius:var(--r);padding:14px;text-align:center;cursor:pointer;transition:all .2s}
+#dp-l10 .fbox:hover{border-color:var(--go);transform:translateY(-2px);box-shadow:var(--sh1)}
+#dp-l10 .fbox.fl{background:var(--gop);border-color:var(--go)}
+#dp-l10 .fbox-ico{font-size:1.6rem;margin-bottom:6px}
+#dp-l10 .fbox-t{font-size:.82rem;font-weight:700;color:var(--ny);margin-bottom:2px}
+#dp-l10 .fbox-s{font-size:.72rem;color:var(--mu)}
+#dp-l10 .fbox-body{display:none;margin-top:10px;text-align:left}
+#dp-l10 .fbox.fl .fbox-body{display:block}
+#dp-l10 .fbox-body p{font-size:.82rem;color:var(--ink2);line-height:1.55;margin-bottom:6px}
+
+@media(max-width:560px){
+  #dp-l10 .lhero{padding:32px 16px 28px}
+  #dp-l10 .lbody{padding:20px 14px 48px}
+  #dp-l10 .sblock{padding:18px 14px}
+  #dp-l10 .navb{flex-direction:column}
+  #dp-l10 .nb{width:100%;justify-content:center}
+  #dp-l10 .tabs{gap:4px}
+  #dp-l10 .tab{padding:7px 12px;font-size:.78rem}
+  #dp-l10 .sm-item{grid-template-columns:1fr}
+  #dp-l10 .fgrid{grid-template-columns:1fr}
+  #dp-l10 .gtbl{font-size:.75rem}
+  #dp-l10 .gtbl th,#dp-l10 .gtbl td{padding:6px 8px}
+}
+</style>
+</head>
+<body>
+
+<div id="dp-l10">
+
+<!-- HERO -->
+<div class="lhero">
+  <div class="lhero-in">
+    <div class="lvlbadge">🎓 Didactics Series · Lesson 10 of 12</div>
+    <h1 class="ltitle">Error <em>Correction</em></h1>
+    <p class="lsub">Master error correction: error vs mistake, sources of errors, types of correction, corrective feedback techniques, and when/how to correct.</p>
+    <div class="spills">
+      <span class="spill sp-th">❌ Error vs Mistake</span>
+      <span class="spill sp-ex">🔍 Error Sources</span>
+      <span class="spill sp-ic">✏️ Correction Techniques</span>
+      <span class="spill sp-qu">📝 40-Question Exam</span>
+    </div>
+    <nav class="snav">
+      <div class="snavdot active" data-s="0">1</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="1">2</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="2">3</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="3">4</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="4">5</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="5">6</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="6">7</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="7">8</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="8">9</div>
+      <span class="snavlbl">9 sections</span>
+    </nav>
+  </div>
+</div>
+
+<div class="lbody">
+
+<!-- SECTION 1: ERROR VS MISTAKE -->
+<section class="sblock vis" id="dp10s0">
+  <div class="slabel">Section 1 · Foundations</div>
+  <h2 class="sheading"><em>Error</em> vs <em>Mistake</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">❌</div>
+    <div class="s-t">Not All Wrong Answers Are the Same</div>
+    <div class="s-d">The distinction between ERROR and MISTAKE is crucial in language teaching. They have different causes and require different responses from the teacher.</div>
+  </div>
+
+  <table class="gtbl">
+    <tr><th>Feature</th><th class="tbl-rd">Error</th><th class="tbl-go">Mistake (Slip)</th></tr>
+    <tr><td><strong>Definition</strong></td><td>Systematic deviation showing a gap in knowledge</td><td>Temporary lapse; learner knows the rule</td></tr>
+    <tr><td><strong>Cause</strong></td><td>Lack of knowledge or incomplete learning</td><td>Fatigue, stress, carelessness, time pressure</td></tr>
+    <tr><td><strong>Pattern</strong></td><td>Repeated, consistent</td><td>Random, inconsistent</td></tr>
+    <tr><td><strong>Self-correction</strong></td><td>Learner CANNOT self-correct (needs instruction)</td><td>Learner CAN self-correct when pointed out</td></tr>
+    <tr><td><strong>Example</strong></td><td>"She go to school" (doesn't know 3rd person -s)</td><td>Saying "He go" once when tired (knows the rule)</td></tr>
+    <tr><td><strong>Treatment</strong></td><td>Requires teaching/remediation</td><td>Just point out; learner will fix it</td></tr>
+  </table>
+
+  <div class="gbox gbox-rd">
+    <h4>Error — Competence Problem</h4>
+    <div class="grule"><strong>Definition:</strong> A systematic deviation that reveals a GAP in the learner's knowledge</div>
+    <div class="grule"><em>Key feature:</em> Learner CANNOT self-correct because they don't KNOW the rule</div>
+    <div class="grule"><span>Example:</span> A learner consistently says "She go" because they haven't learned 3rd person -s</div>
+    <div class="grule"><strong>Response:</strong> Requires explicit teaching and practice</div>
+  </div>
+
+  <div class="gbox gbox-go">
+    <h4>Mistake (Slip) — Performance Problem</h4>
+    <div class="grule"><strong>Definition:</strong> A temporary lapse; the learner KNOWS the rule but fails to apply it</div>
+    <div class="grule"><em>Key feature:</em> Learner CAN self-correct when given the chance</div>
+    <div class="grule"><span>Example:</span> A student says "He go" once when tired, but usually says "He goes" correctly</div>
+    <div class="grule"><strong>Response:</strong> Simply point out the mistake; learner will correct themselves</div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Tip:</strong> ERROR = systematic, repeated, learner CANNOT self-correct (competence). MISTAKE = temporary, random, learner CAN self-correct (performance).</span></div>
+
+  <div class="navb">
+    <button class="nb" disabled>← Back</button>
+    <button class="nb pri" data-go="1">Next: Sources of Errors →</button>
+  </div>
+</section>
+
+<!-- SECTION 2: SOURCES OF ERRORS -->
+<section class="sblock" id="dp10s1">
+  <div class="slabel">Section 2 · Sources of Errors</div>
+  <h2 class="sheading">Where Do <em>Errors</em> Come From?</h2>
+
+  <div class="scene">
+    <div class="s-ico">🔍</div>
+    <div class="s-t">Understanding Error Sources Helps Teachers Respond</div>
+    <div class="s-d">Errors come from different sources. The two main categories are INTERLINGUAL (L1 influence) and INTRALINGUAL (L2 developmental).</div>
+  </div>
+
+  <div class="mcards">
+    <div class="mcard" data-exp="es1">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--bl)">🌐</div>
+        <div><div class="mc-title">Interlingual Errors (L1 Transfer)</div><div class="mc-sub">Interference from the native language</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="es1">
+        <p><strong>Definition:</strong> Errors caused by the learner's L1 (native language) influencing their L2.</p>
+        <p><strong>Also called:</strong> Interference, Negative Transfer, L1 Transfer</p>
+        <p><strong>Example:</strong> Arabic learners saying "He go" (Arabic doesn't mark 3rd person singular)</p>
+        <p><strong>Example:</strong> French learners saying "I am here since two hours" (French structure influence)</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="es2">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--pu)">🔄</div>
+        <div><div class="mc-title">Intralingual Errors (Developmental)</div><div class="mc-sub">Errors from within the L2 system</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="es2">
+        <p><strong>Definition:</strong> Errors caused by the learner's developing L2 system, not L1 influence.</p>
+        <p><strong>Types include:</strong></p>
+        <p>• <strong>Overgeneralization:</strong> Applying a rule too widely ("goed" instead of "went")</p>
+        <p>• <strong>Ignorance of rule restrictions:</strong> Not knowing exceptions</p>
+        <p>• <strong>Incomplete application:</strong> Using rules partially</p>
+        <p>• <strong>False concepts hypothesized:</strong> Misunderstanding rules</p>
+      </div>
+    </div>
+
+    <div class="mcard" data-exp="es3">
+      <div class="mc-head">
+        <div class="mc-icon" style="background:var(--gr)">📚</div>
+        <div><div class="mc-title">Induced Errors</div><div class="mc-sub">Caused by teaching/materials</div></div>
+      </div>
+      <div class="mc-hint">Click to expand</div>
+      <div class="mc-body" id="es3">
+        <p><strong>Definition:</strong> Errors caused by faulty teaching, misleading explanations, or confusing materials.</p>
+        <p><strong>Example:</strong> A teacher over-simplifies a rule, leading students to apply it incorrectly.</p>
+        <p><strong>Also includes:</strong> Confusing textbook presentations, wrong models from teachers.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="gbox gbox-te">
+    <h4>Key Concept: Overgeneralization</h4>
+    <div class="grule"><strong>Definition:</strong> Applying a rule TOO WIDELY to cases where it doesn't apply</div>
+    <div class="grule"><em>Most common intralingual error type</em></div>
+    <div class="grule"><span>Example:</span> "goed" instead of "went" (applying -ed past tense rule to irregular verb)</div>
+    <div class="grule"><strong>Example:</strong> "childs" instead of "children" (applying -s plural rule)</div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Memory Tip:</strong> INTER-lingual = BETWEEN languages (L1 → L2). INTRA-lingual = WITHIN the L2 (developmental, overgeneralization).</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="0">← Error vs Mistake</button>
+    <button class="nb pri" data-go="2">Next: Interlanguage & Fossilization →</button>
+  </div>
+</section>
+
+<!-- SECTION 3: INTERLANGUAGE & FOSSILIZATION -->
+<section class="sblock" id="dp10s2">
+  <div class="slabel">Section 3 · Key Concepts</div>
+  <h2 class="sheading"><em>Interlanguage</em> &amp; <em>Fossilization</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">🧠</div>
+    <div class="s-t">The Learner's Developing Language System</div>
+    <div class="s-d">Interlanguage is the learner's evolving personal grammar system — neither L1 nor L2, but a transitional system that changes over time.</div>
+  </div>
+
+  <div class="gbox gbox-pu">
+    <h4>Interlanguage (Selinker, 1972)</h4>
+    <div class="grule"><strong>Theorist:</strong> Larry SELINKER (1972)</div>
+    <div class="grule"><em>Definition:</em> The learner's evolving personal system of rules — neither L1 nor L2</div>
+    <div class="grule"><span>Key features:</span> Systematic, dynamic (changes over time), shows learner's hypotheses about L2</div>
+    <div class="grule"><strong>Example:</strong> A learner consistently says "She go" — this reflects their current interlanguage grammar</div>
+  </div>
+
+  <div class="gbox gbox-rd">
+    <h4>Fossilization</h4>
+    <div class="grule"><strong>Definition:</strong> When errors in interlanguage become PERMANENT despite exposure and instruction</div>
+    <div class="grule"><em>Key feature:</em> Errors "freeze" and resist correction</div>
+    <div class="grule"><span>Example:</span> An advanced learner still says "I am agree" even after years of English instruction</div>
+    <div class="grule"><strong>Causes:</strong> Lack of motivation, sufficient communication success, age, L1 entrenchment</div>
+  </div>
+
+  <div class="gbox gbox-go">
+    <h4>Related Concepts</h4>
+    <div class="grule"><strong>U-shaped development:</strong> Learner temporarily returns to errors after seeming progress</div>
+    <div class="grule"><em>Backsliding:</em> Reverting to earlier interlanguage forms under stress</em></div>
+    <div class="grule"><span>Example:</span> A learner uses "went" correctly, then later says "goed" as they learn more -ed verbs</div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Trap:</strong> INTERLANGUAGE = the learner's EVOLVING system (Selinker). FOSSILIZATION = errors that become PERMANENT and resist correction.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="1">← Sources of Errors</button>
+    <button class="nb pri" data-go="3">Next: Types of Correction →</button>
+  </div>
+</section>
+
+<!-- SECTION 4: TYPES OF CORRECTION -->
+<section class="sblock" id="dp10s3">
+  <div class="slabel">Section 4 · Who Corrects?</div>
+  <h2 class="sheading">Types of <em>Error Correction</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">✏️</div>
+    <div class="s-t">Who Should Correct Errors?</div>
+    <div class="s-d">Error correction can come from different sources: the learner themselves, their peers, the whole class, or the teacher. Each has advantages.</div>
+  </div>
+
+  <table class="gtbl">
+    <tr><th>Type</th><th>Description</th><th>Advantages</th></tr>
+    <tr><td class="tbl-gr"><strong>Self-Correction</strong></td><td>Student recognizes and corrects their own error</td><td>Develops autonomy; deepest learning; builds awareness</td></tr>
+    <tr><td class="tbl-bl"><strong>Peer-Correction</strong></td><td>Another student identifies and corrects</td><td>Collaborative; keeps students engaged; reduces teacher talk</td></tr>
+    <tr><td class="tbl-pu"><strong>Class-Correction</strong></td><td>Teacher asks the whole class to identify/correct</td><td>Involves everyone; shared learning; non-threatening</td></tr>
+    <tr><td class="tbl-go"><strong>Teacher-Correction</strong></td><td>Teacher directly intervenes to correct</td><td>Provides accurate model; efficient; necessary for persistent errors</td></tr>
+  </table>
+
+  <div class="gbox gbox-gr">
+    <h4>Best Practice: Correction Hierarchy</h4>
+    <div class="grule">1. <strong>First:</strong> Give the learner a chance to SELF-CORRECT</div>
+    <div class="grule">2. <em>Then:</em> Ask PEERS if they can help</div>
+    <div class="grule">3. <span>Then:</span> Open to the WHOLE CLASS</span></div>
+    <div class="grule">4. <strong>Finally:</strong> TEACHER provides the correct form if needed</div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Why Self-Correction First?</strong> Research shows that learners learn best when they notice and correct their own errors. Self-correction promotes deeper processing and autonomy.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="2">← Interlanguage</button>
+    <button class="nb pri" data-go="4">Next: Correction Techniques →</button>
+  </div>
+</section>
+
+<!-- SECTION 5: CORRECTION TECHNIQUES -->
+<section class="sblock" id="dp10s4">
+  <div class="slabel">Section 5 · Corrective Feedback</div>
+  <h2 class="sheading">Corrective <em>Feedback Techniques</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">🔧</div>
+    <div class="s-t">How Should Teachers Correct Errors?</div>
+    <div class="s-d">There are many techniques for correcting errors, ranging from IMPLICIT (indirect) to EXPLICIT (direct). Each has different effects on learning.</div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="t5a">🔄 Implicit (Indirect)</button>
+    <button class="tab" data-tab="t5b">📢 Explicit (Direct)</button>
+    <button class="tab" data-tab="t5c">🎯 Other Techniques</button>
+  </div>
+
+  <div class="tabpanel vis" id="t5a">
+    <div class="gbox gbox-bl">
+      <h4>Implicit Corrective Feedback — Indirect</h4>
+      <div class="grule"><strong>RECAST:</strong> Teacher repeats the utterance CORRECTLY without explicitly pointing out the error</div>
+      <div class="grule">• Student: "Yesterday I go to school." → Teacher: "Oh, you WENT to school yesterday."</div>
+      <div class="grule">• Non-threatening; maintains flow; models correct form</div>
+    </div>
+    <div class="gbox gbox-te">
+      <h4></h4>
+      <div class="grule"><strong>CLARIFICATION REQUEST:</strong> Teacher indicates they didn't understand, prompting self-correction</div>
+      <div class="grule">• Student: "I buy a new car yesterday." → Teacher: "Sorry, you did what yesterday?"</div>
+      <div class="grule">• Gives learner chance to reformulate; promotes noticing</div>
+    </div>
+    <div class="gbox gbox-pu">
+      <h4></h4>
+      <div class="grule"><strong>REPETITION:</strong> Teacher repeats the error with rising intonation to highlight it</div>
+      <div class="grule">• Student: "She go to school." → Teacher: "She GO?" (with emphasis)</div>
+      <div class="grule">• Draws attention to error without explicit correction</div>
+    </div>
+  </div>
+
+  <div class="tabpanel" id="t5b">
+    <div class="gbox gbox-rd">
+      <h4>Explicit Corrective Feedback — Direct</h4>
+      <div class="grule"><strong>EXPLICIT CORRECTION:</strong> Teacher directly provides the correct form</div>
+      <div class="grule">• Student: "I seed a bird." → Teacher: "Not 'seed'. We say 'SAW'. I saw a bird."</div>
+      <div class="grule">• Clear and unambiguous; good for persistent errors</div>
+    </div>
+    <div class="gbox gbox-go">
+      <h4></h4>
+      <div class="grule"><strong>METALINGUISTIC FEEDBACK:</strong> Teacher explains the RULE without giving the correct form</div>
+      <div class="grule">• Student: "She go to school." → Teacher: "Remember, with 'she' we need the third person -s."</div>
+      <div class="grule">• Promotes rule awareness; learner applies the rule themselves</div>
+    </div>
+    <div class="gbox gbox-gr">
+      <h4></h4>
+      <div class="grule"><strong>ELICITATION:</strong> Teacher prompts the learner to produce the correct form</div>
+      <div class="grule">• Student: "She go..." → Teacher: "She...?" (pausing for student to complete)</div>
+      <div class="grule">• Pushes learners to actively retrieve the correct form</div>
+    </div>
+  </div>
+
+  <div class="tabpanel" id="t5c">
+    <div class="gbox gbox-pk">
+      <h4>Other Useful Techniques</h4>
+      <div class="grule"><strong>Non-verbal signals:</strong> Gestures, facial expressions, finger correction</div>
+      <div class="grule"><em>Note-taking:</em> Record errors for later remediation (delayed correction)</div>
+      <div class="grule"><span>Reformulation:</span> Teacher rephrases student's meaning in correct English</span></div>
+      <div class="grule"><strong>Echoing:</strong> Teacher repeats correct parts, pausing at the error</div>
+    </div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Trap:</strong> RECAST = teacher repeats CORRECTLY (implicit). REPETITION = teacher repeats the ERROR with emphasis (implicit). EXPLICIT CORRECTION = teacher states what's wrong (explicit).</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="3">← Types of Correction</button>
+    <button class="nb pri" data-go="5">Next: When to Correct →</button>
+  </div>
+</section>
+
+<!-- SECTION 6: WHEN TO CORRECT -->
+<section class="sblock" id="dp10s5">
+  <div class="slabel">Section 6 · Timing & Approach</div>
+  <h2 class="sheading">When &amp; <em>What</em> to Correct</h2>
+
+  <p class="stxt">Not all errors need immediate correction. Effective teachers consider the <strong>timing</strong>, the <strong>type of activity</strong>, and the <strong>type of error</strong> before deciding how to respond.</p>
+
+  <div class="gbox gbox-bl">
+    <h4>Timing: Immediate vs Delayed Correction</h4>
+    <div class="grule"><strong>IMMEDIATE:</strong> Correct during the activity (good for accuracy-focused work)</div>
+    <div class="grule"><em>DELAYED:</em> Wait until the activity ends (good for fluency-focused work)</div>
+    <div class="grule"><span>Principle:</span> Don't interrupt fluency activities; note errors for later</span></div>
+  </div>
+
+  <table class="gtbl">
+    <tr><th>Activity Type</th><th>Focus</th><th>Correction Approach</th></tr>
+    <tr><td class="tbl-pu"><strong>Accuracy Activities</strong></td><td>Grammar drills, controlled practice</td><td>Immediate correction; focus on form</td></tr>
+    <tr><td class="tbl-gr"><strong>Fluency Activities</strong></td><td>Free speaking, discussions, role-plays</td><td>Delayed correction; note errors for later</td></tr>
+  </table>
+
+  <div class="gbox gbox-go">
+    <h4>What Errors to Correct?</h4>
+    <div class="grule"><strong>GLOBAL errors:</strong> Affect overall meaning/understanding — ALWAYS correct</div>
+    <div class="grule"><em>LOCAL errors:</em> Minor, don't affect understanding — may ignore/delay</div>
+    <div class="grule"><span>FREQUENT errors:</span> Correct if pattern shows systematic problem</span></div>
+    <div class="grule"><strong>STIGMATIZING errors:</strong> Correct to avoid social embarrassment</div>
+  </div>
+
+  <div class="gbox gbox-pu">
+    <h4>Views on Error Correction by Method</h4>
+    <div class="grule"><strong>Audio-Lingual:</strong> Errors are "bad habits" — prevent and correct immediately</div>
+    <div class="grule"><em>CLT:</em> Errors are natural — tolerate during fluency work; focus on communication</em></div>
+    <div class="grule"><span>Silent Way:</span> Self-correction via teacher cues (Cuisenaire rods, gestures)</span></div>
+    <div class="grule"><strong>CLL:</strong> Non-threatening correction; teacher as "counselor"</strong></div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Key Principle:</strong> During FLUENCY activities, note errors and address them AFTER the activity. Constant interruption kills motivation and fluency development.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="4">← Correction Techniques</button>
+    <button class="nb pri" data-go="6">Next: Listening Task →</button>
+  </div>
+</section>
+
+<!-- SECTION 7: LISTENING (RELEVANT SCENARIO) -->
+<section class="sblock" id="dp10s6">
+  <div class="slabel">Section 7 · Listening Comprehension</div>
+  <h2 class="sheading">🎙️ Listen — <em>A Trainer Explains Error Correction</em></h2>
+  <p class="stxt">Press ▶ to listen to a teacher trainer discussing error correction. <strong>Match each description to the correct concept.</strong></p>
+
+  <div class="aplayer">
+    <button class="abig" id="dp10playbtn">▶</button>
+    <div class="ainfo">
+      <div class="at">Understanding Error Correction in Language Teaching</div>
+      <div class="as">~60 seconds · British English</div>
+      <div class="apbar"><div class="apfill" id="dp10apf"></div></div>
+    </div>
+    <button class="scrtog" id="dp10scrtog">📄 Transcript</button>
+  </div>
+
+  <div class="scrbox" id="dp10scrbox">
+    <p><strong>Trainer:</strong> "Let's talk about error correction. First, the difference between errors and mistakes. An error is systematic — it shows a gap in knowledge, and the learner cannot self-correct. A mistake, on the other hand, is a temporary slip — the learner knows the rule but failed to apply it. They can self-correct when pointed out."</p>
+    <p>"Errors come from different sources. Interlingual errors come from L1 interference — the native language influencing the second language. Intralingual errors come from within the L2 system, like overgeneralization — saying 'goed' instead of 'went' because the learner over-applies the past tense rule."</p>
+    <p>"For correction techniques, a recast is when the teacher repeats the utterance correctly without pointing out the error — very implicit. Metalinguistic feedback is when the teacher explains the rule without giving the answer. And elicitation is when the teacher prompts the learner to produce the correct form themselves."</p>
+    <p>"Remember: always give learners a chance to self-correct first. And during fluency activities, delay correction to avoid interrupting the flow."</p>
+  </div>
+
+  <h4 style="color:var(--ny);font-family:'Playfair Display',serif;font-size:1rem;margin:20px 0 13px">Match each description to the correct concept</h4>
+
+  <div class="smatch" id="dp10match">
+    <div class="sm-item">
+      <div class="sm-scenario">"A systematic deviation showing a gap in knowledge; learner cannot self-correct." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which term?</em></div>
+      <select class="sm-select" data-a="Error" id="dp10ms0">
+        <option value="">— Select —</option>
+        <option>Error</option><option>Mistake</option><option>Overgeneralization</option><option>Recast</option><option>Fossilization</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp10mf0"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Errors caused by L1 interference — the native language influencing the L2." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which error type?</em></div>
+      <select class="sm-select" data-a="Interlingual" id="dp10ms1">
+        <option value="">— Select —</option>
+        <option>Intralingual</option><option>Interlingual</option><option>Overgeneralization</option><option>Induced</option><option>Fossilization</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp10mf1"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Saying 'goed' instead of 'went' — applying a rule too widely." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which error type?</em></div>
+      <select class="sm-select" data-a="Overgeneralization" id="dp10ms2">
+        <option value="">— Select —</option>
+        <option>Interference</option><option>Transfer</option><option>Overgeneralization</option><option>Fossilization</option><option>Recast</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp10mf2"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Teacher repeats the utterance correctly without pointing out the error." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which technique?</em></div>
+      <select class="sm-select" data-a="Recast" id="dp10ms3">
+        <option value="">— Select —</option>
+        <option>Explicit correction</option><option>Recast</option><option>Elicitation</option><option>Metalinguistic feedback</option><option>Repetition</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp10mf3"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Teacher explains the rule without giving the correct form." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">Which technique?</em></div>
+      <select class="sm-select" data-a="Metalinguistic feedback" id="dp10ms4">
+        <option value="">— Select —</option>
+        <option>Recast</option><option>Elicitation</option><option>Metalinguistic feedback</option><option>Explicit correction</option><option>Clarification request</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp10mf4"></div>
+  </div>
+
+  <button class="chkb" id="dp10chkmatch">Check Answers ✓</button>
+
+  <div class="navb">
+    <button class="nb" data-go="5">← When to Correct</button>
+    <button class="nb pri" data-go="7">Next: Interview Prep →</button>
+  </div>
+</section>
+
+<!-- SECTION 8: INTERVIEW PREP -->
+<section class="sblock" id="dp10s7">
+  <div class="slabel">Section 8 · Interview Preparation</div>
+  <h2 class="sheading">Interview Practice — <em>Error vs Mistake</em></h2>
+
+  <div class="co co-info"><span class="co-ico">ℹ️</span><span><strong>Note:</strong> The written exam is <strong>100% multiple choice</strong> (A, B, C, D, E). However, in the <strong>oral interview</strong>, you may be asked to explain key concepts. This section prepares you for that.</span></div>
+
+  <p class="stxt">Practice explaining the difference between <strong>errors and mistakes</strong> in 60–80 words. Include definitions, causes, and how teachers should respond to each.</p>
+
+  <div class="co co-tip"><span class="co-ico">✍️</span><span><strong>Structure your answer:</strong><br>1. Define error + its cause + teacher response<br>2. Define mistake + its cause + teacher response<br>3. Key difference: Can the learner self-correct?</span></div>
+
+  <div style="margin-top:18px">
+    <textarea class="wa" id="dp10wtxt" placeholder="An error is... It is caused by... Teachers should respond by... A mistake, on the other hand, is... It is caused by... Teachers should... The key difference is that..."></textarea>
+    <div class="wcnt" id="dp10wcnt">0 words (aim for 60–80)</div>
+    <button class="wsub" id="dp10wsub">Check My Answer ✓</button>
+    <div class="wfb" id="dp10wfb">
+      <strong>✅ Good practice!</strong><br><br>
+      <strong>Model Answer:</strong><br>
+      "An error is a systematic deviation that reveals a gap in the learner's knowledge. It is caused by incomplete learning, and the learner cannot self-correct because they don't know the correct form. Teachers should provide explicit instruction and practice. A mistake, on the other hand, is a temporary slip caused by fatigue, stress, or carelessness. The learner knows the rule but failed to apply it. Teachers simply need to point it out, and the learner can self-correct. The key difference is whether the learner CAN self-correct when given the chance."
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="6">← Listening Task</button>
+    <button class="nb pri" data-go="8">Next: 40-Question Exam →</button>
+  </div>
+</section>
+
+<!-- SECTION 9: 40-QUESTION EXAM -->
+<section class="sblock" id="dp10s8">
+  <div class="slabel">Section 9 · Full Exam Simulation</div>
+  <h2 class="sheading">Exam Practice 🎯 — 40 Questions</h2>
+  <p class="stxt">This section simulates the <strong>real exam format</strong>: Multiple choice with 5 options (A, B, C, D, E). Option E is always "None of the above." <strong>Every wrong answer includes a full explanation.</strong></p>
+
+  <div class="co co-or"><span class="co-ico">⏱️</span><span><strong>Exam Conditions:</strong> In the real exam, you have limited time. Try to answer each question in under 45 seconds. Don't second-guess yourself!</span></div>
+
+  <div>
+    <div class="qpr">
+      <span class="qcnt" id="dp10qcnt">1 / 40</span>
+      <div class="qpbar"><div class="qpfill" id="dp10qpf" style="width:2.5%"></div></div>
+      <span class="qcnt" id="dp10qsl">Score: 0</span>
+    </div>
+    <div id="dp10qarea"></div>
+    <div class="qfbm" id="dp10qfb"></div>
+    <button class="qnxt" id="dp10qnxt">Next Question →</button>
+    <div class="spl" id="dp10spl">
+      <div class="scir"><div class="snum" id="dp10sfin">0</div><div class="sden">/ 40</div></div>
+      <div class="smsg" id="dp10smsg">Well done!</div>
+      <div class="ssub" id="dp10ssub">Keep practising!</div>
+      <button class="srty" id="dp10srty">🔄 Retry Quiz</button>
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="7">← Interview Prep</button>
+  </div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="lft">
+  <div class="flo">English<em>Pro</em> · Didactics</div>
+  <div class="ftx">Lesson 10 — Error Correction · Error vs Mistake · Interlanguage · Feedback Techniques · 40-Question Exam</div>
+</footer>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+(function(){
+'use strict';
+
+/* ══════════════════════════════════════════════════════════════
+   40-QUESTION EXAM DATA — 5 options (A, B, C, D, E = None)
+   ══════════════════════════════════════════════════════════════ */
+var QD=[
+  // Questions 1-10: Error vs Mistake & Basic Concepts
+  {q:'An ERROR is best defined as:',opts:['A temporary slip that the learner can self-correct','A systematic deviation showing a gap in knowledge','A mistake caused by tiredness','Any incorrect utterance','None of the above'],a:1,ex:'✅ B is correct. An ERROR is a SYSTEMATIC deviation that reveals a GAP in the learner\'s knowledge.'},
+  {q:'A MISTAKE (slip) is best defined as:',opts:['A systematic problem requiring instruction','A temporary lapse; learner knows the rule but failed to apply it','An error caused by L1 interference','A permanent fossilized form','None of the above'],a:1,ex:'✅ B is correct. A MISTAKE is a TEMPORARY lapse — the learner KNOWS the rule but failed to apply it.'},
+  {q:'The key difference between an error and a mistake is:',opts:['Errors are more serious than mistakes','Mistakes require more instruction','The learner can self-correct a mistake but not an error','Errors only occur in writing','None of the above'],a:2,ex:'✅ C is correct. The KEY difference: learners CAN self-correct mistakes (they know the rule) but CANNOT self-correct errors (they don\'t know the rule).'},
+  {q:'If a student consistently says "She go to school" because they haven\'t learned 3rd person -s, this is:',opts:['A mistake','An error','A slip','A lapse','None of the above'],a:1,ex:'✅ B is correct. This is an ERROR — it\'s systematic/repeated and shows a gap in knowledge about 3rd person -s.'},
+  {q:'If a student says "He go" once when tired but usually says "He goes" correctly, this is:',opts:['An error','An interlingual error','A mistake','Fossilization','None of the above'],a:2,ex:'✅ C is correct. This is a MISTAKE (slip) — the student knows the rule but made a temporary lapse due to tiredness.'},
+  {q:'Errors are related to:',opts:['Performance problems','Competence problems','Only speaking skills','Only writing skills','None of the above'],a:1,ex:'✅ B is correct. Errors are COMPETENCE problems — gaps in underlying knowledge. Mistakes are performance problems.'},
+  {q:'The appropriate response to an error is:',opts:['Simply point it out; learner will self-correct','Ignore it completely','Provide instruction and practice','Wait for it to disappear naturally','None of the above'],a:2,ex:'✅ C is correct. Errors require INSTRUCTION and PRACTICE because the learner doesn\'t know the correct form.'},
+  {q:'The appropriate response to a mistake is:',opts:['Provide extensive instruction','Simply point it out; learner can self-correct','Ignore it permanently','Punish the student','None of the above'],a:1,ex:'✅ B is correct. For mistakes, simply POINT IT OUT — the learner knows the rule and can self-correct.'},
+  {q:'A student makes the same grammatical error repeatedly across different contexts. This pattern indicates:',opts:['A mistake caused by stress','An error showing incomplete knowledge','A temporary slip','Normal native speaker behavior','None of the above'],a:1,ex:'✅ B is correct. REPEATED errors across contexts indicate a SYSTEMATIC problem = an ERROR, not a mistake.'},
+  {q:'Which is TRUE about errors and mistakes?',opts:['All incorrect utterances are errors','Mistakes are always more serious than errors','Errors require instruction while mistakes need only indication','Native speakers never make mistakes','None of the above'],a:2,ex:'✅ C is correct. ERRORS need instruction (learner doesn\'t know); MISTAKES need only indication (learner knows but slipped).'},
+
+  // Questions 11-20: Sources of Errors
+  {q:'INTERLINGUAL errors are caused by:',opts:['Overgeneralization of L2 rules','Influence of the learner\'s L1 on their L2','Faulty teaching materials','Lack of practice','None of the above'],a:1,ex:'✅ B is correct. INTERLINGUAL errors = L1 INTERFERENCE — the native language influences the second language.'},
+  {q:'INTRALINGUAL errors are caused by:',opts:['L1 interference','Faulty teaching','The learner\'s developing L2 system (e.g., overgeneralization)','Teacher mistakes','None of the above'],a:2,ex:'✅ C is correct. INTRALINGUAL errors come from WITHIN the L2 system — developmental errors like overgeneralization.'},
+  {q:'An Arabic learner says "He go" because Arabic doesn\'t mark 3rd person singular. This is:',opts:['An intralingual error','An interlingual error','A mistake','An induced error','None of the above'],a:1,ex:'✅ B is correct. This is INTERLINGUAL — L1 (Arabic) structure INTERFERES with L2 (English) production.'},
+  {q:'A learner says "goed" instead of "went." This is an example of:',opts:['L1 transfer','Overgeneralization','A mistake','Fossilization','None of the above'],a:1,ex:'✅ B is correct. "Goed" is OVERGENERALIZATION — applying the -ed past tense rule too widely to irregular verbs.'},
+  {q:'Overgeneralization means:',opts:['Not using rules at all','Applying a rule too narrowly','Applying a rule too widely to cases where it doesn\'t apply','Forgetting all rules','None of the above'],a:2,ex:'✅ C is correct. OVERGENERALIZATION = applying a rule TOO WIDELY to cases where it doesn\'t apply.'},
+  {q:'"Childs" instead of "children" is an example of:',opts:['L1 interference','Overgeneralization','A mistake','Positive transfer','None of the above'],a:1,ex:'✅ B is correct. "Childs" is OVERGENERALIZATION — applying the -s plural rule to an irregular noun.'},
+  {q:'Errors caused by faulty teaching or confusing materials are called:',opts:['Interlingual errors','Intralingual errors','Induced errors','Developmental errors','None of the above'],a:2,ex:'✅ C is correct. INDUCED errors are caused by faulty teaching, misleading explanations, or confusing materials.'},
+  {q:'L1 interference is also called:',opts:['Positive transfer','Negative transfer','Overgeneralization','Intralingual error','None of the above'],a:1,ex:'✅ B is correct. L1 INTERFERENCE = NEGATIVE TRANSFER — when L1 patterns cause errors in L2.'},
+  {q:'When L1 patterns help L2 learning (e.g., similar structures), this is called:',opts:['Negative transfer','Overgeneralization','Positive transfer','Fossilization','None of the above'],a:2,ex:'✅ C is correct. POSITIVE TRANSFER = when L1 patterns HELP L2 learning (similarities between languages).'},
+  {q:'INTER-lingual means "between languages" while INTRA-lingual means:',opts:['Between languages','Within the L2 system','Between cultures','Within the L1 system','None of the above'],a:1,ex:'✅ B is correct. INTRA-lingual = WITHIN the L2 system (developmental errors, overgeneralization).'},
+
+  // Questions 21-30: Interlanguage, Fossilization & Correction Types
+  {q:'INTERLANGUAGE was proposed by:',opts:['Noam Chomsky','Stephen Krashen','Larry Selinker','Lev Vygotsky','None of the above'],a:2,ex:'✅ C is correct. INTERLANGUAGE was proposed by Larry SELINKER in 1972.'},
+  {q:'Interlanguage refers to:',opts:['The learner\'s L1','The target language','The learner\'s evolving personal system — neither L1 nor L2','A type of translation','None of the above'],a:2,ex:'✅ C is correct. INTERLANGUAGE = the learner\'s EVOLVING personal grammar system — neither L1 nor L2, but transitional.'},
+  {q:'FOSSILIZATION refers to:',opts:['Errors that disappear with instruction','Errors that become permanent despite instruction','Temporary mistakes','Natural language development','None of the above'],a:1,ex:'✅ B is correct. FOSSILIZATION = errors that become PERMANENT despite exposure and instruction — they "freeze."'},
+  {q:'U-shaped development in language learning means:',opts:['Steady improvement over time','Learner temporarily returns to earlier errors after seeming progress','Errors disappear completely','Learning stops permanently','None of the above'],a:1,ex:'✅ B is correct. U-SHAPED development = learner TEMPORARILY returns to errors after progress (e.g., uses "went" then reverts to "goed").'},
+  {q:'Self-correction means:',opts:['The teacher corrects the student','The student recognizes and corrects their own error','A peer helps the student','The whole class corrects together','None of the above'],a:1,ex:'✅ B is correct. SELF-CORRECTION = the student recognizes and corrects their OWN error.'},
+  {q:'Peer-correction means:',opts:['The teacher corrects','The student self-corrects','Another student identifies and corrects the error','The textbook provides answers','None of the above'],a:2,ex:'✅ C is correct. PEER-CORRECTION = another STUDENT identifies and corrects the error.'},
+  {q:'The recommended correction hierarchy is:',opts:['Teacher → Peer → Self','Self → Peer → Class → Teacher','Immediate teacher correction always','Never correct errors','None of the above'],a:1,ex:'✅ B is correct. Best practice: SELF first → PEER → CLASS → TEACHER last (give learner chance to self-correct).'},
+  {q:'Why is self-correction considered most effective?',opts:['It\'s faster than other methods','It promotes deeper processing and autonomy','It\'s the only method that works','Teachers don\'t have to do anything','None of the above'],a:1,ex:'✅ B is correct. Self-correction promotes DEEPER PROCESSING and AUTONOMY — learners learn best when they notice their own errors.'},
+  {q:'An advantage of peer-correction is:',opts:['It\'s always more accurate than teacher correction','It keeps students engaged and reduces teacher talk','It eliminates all errors','Students prefer it to self-correction','None of the above'],a:1,ex:'✅ B is correct. Peer-correction KEEPS STUDENTS ENGAGED and reduces teacher talk time.'},
+  {q:'Teacher-correction is most appropriate when:',opts:['For every single error','When the error is persistent and other methods haven\'t worked','Never — teachers should never correct','Only for mistakes, not errors','None of the above'],a:1,ex:'✅ B is correct. Teacher-correction is needed when errors are PERSISTENT and self/peer correction hasn\'t worked.'},
+
+  // Questions 31-40: Corrective Feedback Techniques & Timing
+  {q:'A RECAST is when the teacher:',opts:['Repeats the error with emphasis','Repeats the utterance correctly without pointing out the error','Explicitly states the rule','Asks "What did you say?"','None of the above'],a:1,ex:'✅ B is correct. RECAST = teacher repeats the utterance CORRECTLY without explicitly pointing out the error (implicit).'},
+  {q:'Student: "I go to school yesterday." Teacher: "Oh, you WENT to school yesterday." This is:',opts:['Explicit correction','Recast','Elicitation','Metalinguistic feedback','None of the above'],a:1,ex:'✅ B is correct. This is a RECAST — the teacher models the correct form without explicitly pointing out the error.'},
+  {q:'METALINGUISTIC FEEDBACK is when the teacher:',opts:['Provides the correct answer directly','Explains the rule without giving the correct form','Repeats the error','Asks for clarification','None of the above'],a:1,ex:'✅ B is correct. METALINGUISTIC FEEDBACK = teacher explains the RULE without giving the correct form.'},
+  {q:'Student: "She go to school." Teacher: "Remember, with she we need the third person -s." This is:',opts:['Recast','Explicit correction','Metalinguistic feedback','Clarification request','None of the above'],a:2,ex:'✅ C is correct. This is METALINGUISTIC FEEDBACK — the teacher explains the rule without providing "goes."'},
+  {q:'ELICITATION is when the teacher:',opts:['Provides the correct form directly','Prompts the learner to produce the correct form themselves','Ignores the error','Repeats the error exactly','None of the above'],a:1,ex:'✅ B is correct. ELICITATION = teacher PROMPTS the learner to produce the correct form (e.g., "She...?" with a pause).'},
+  {q:'EXPLICIT CORRECTION is when the teacher:',opts:['Repeats correctly without comment','Directly states what\'s wrong and provides the correct form','Asks for clarification','Uses only gestures','None of the above'],a:1,ex:'✅ B is correct. EXPLICIT CORRECTION = teacher DIRECTLY states what\'s wrong and provides the correct form.'},
+  {q:'Student: "I seed a bird." Teacher: "Not seed. We say SAW." This is:',opts:['Recast','Clarification request','Explicit correction','Elicitation','None of the above'],a:2,ex:'✅ C is correct. This is EXPLICIT CORRECTION — the teacher directly points out the error and gives the correct form.'},
+  {q:'During FLUENCY activities, the best approach to error correction is:',opts:['Immediate correction of every error','Delayed correction — note errors for later','Never correct any errors','Stop the activity completely','None of the above'],a:1,ex:'✅ B is correct. During FLUENCY activities, use DELAYED correction — note errors and address them AFTER the activity.'},
+  {q:'During ACCURACY activities (e.g., grammar drills), the best approach is:',opts:['Delayed correction only','No correction at all','Immediate correction focusing on form','Only peer correction','None of the above'],a:2,ex:'✅ C is correct. During ACCURACY activities, use IMMEDIATE correction focusing on form (the goal IS accuracy).'},
+  {q:'GLOBAL errors are:',opts:['Minor errors that don\'t affect meaning','Errors that affect overall meaning and understanding','Only pronunciation errors','Only writing errors','None of the above'],a:1,ex:'✅ B is correct. GLOBAL errors affect OVERALL MEANING/understanding — these should ALWAYS be corrected.'}
+];
+
+var curSec=0,qCur=0,qScore=0,qAns=false,audioPlaying=false,audioTimer=null;
+
+function goToSection(n){
+  document.querySelectorAll('#dp-l10 .sblock').forEach(function(b){b.classList.remove('vis')});
+  var sec=document.getElementById('dp10s'+n);
+  if(sec)sec.classList.add('vis');
+  curSec=n;
+  updateDots();
+  document.getElementById('dp-l10').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function updateDots(){
+  document.querySelectorAll('#dp-l10 .snavdot').forEach(function(d){
+    var i=parseInt(d.getAttribute('data-s'));
+    d.classList.remove('active','done');
+    if(i<curSec)d.classList.add('done');
+    if(i===curSec)d.classList.add('active');
+  });
+}
+
+document.querySelectorAll('#dp-l10 .snavdot').forEach(function(d){
+  d.addEventListener('click',function(){goToSection(parseInt(d.getAttribute('data-s')))});
+});
+
+document.querySelectorAll('#dp-l10 .nb[data-go]').forEach(function(btn){
+  btn.addEventListener('click',function(){goToSection(parseInt(btn.getAttribute('data-go')))});
+});
+
+document.querySelectorAll('#dp-l10 .mcard').forEach(function(c){
+  c.addEventListener('click',function(){c.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l10 .fbox').forEach(function(f){
+  f.addEventListener('click',function(){f.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l10 .tabs').forEach(function(tg){
+  tg.querySelectorAll('.tab').forEach(function(tab){
+    tab.addEventListener('click',function(){
+      var pid=tab.getAttribute('data-tab');
+      tg.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});
+      tab.classList.add('active');
+      tg.parentElement.querySelectorAll('.tabpanel').forEach(function(p){p.classList.remove('vis')});
+      var pnl=document.getElementById(pid);
+      if(pnl)pnl.classList.add('vis');
+    });
+  });
+});
+
+/* Listening Match Check */
+var chkmatch=document.getElementById('dp10chkmatch');
+if(chkmatch)chkmatch.addEventListener('click',function(){
+  for(var i=0;i<5;i++){
+    var sel=document.getElementById('dp10ms'+i);
+    var fb=document.getElementById('dp10mf'+i);
+    if(!sel)continue;
+    var ans=sel.getAttribute('data-a'),giv=sel.value;
+    var ok=giv===ans;
+    sel.classList.toggle('ok',ok);sel.classList.toggle('bad',!ok);
+    fb.textContent=ok?'✅ Correct!':'❌ Answer: '+ans;
+    fb.classList.toggle('ok',ok);fb.classList.toggle('bad',!ok);
+  }
+});
+
+var pbtn=document.getElementById('dp10playbtn'),apf=document.getElementById('dp10apf');
+var audioTxt="Let's talk about error correction. First, the difference between errors and mistakes. An error is systematic — it shows a gap in knowledge, and the learner cannot self-correct. A mistake, on the other hand, is a temporary slip — the learner knows the rule but failed to apply it. They can self-correct when pointed out. Errors come from different sources. Interlingual errors come from L1 interference — the native language influencing the second language. Intralingual errors come from within the L2 system, like overgeneralization — saying goed instead of went because the learner over-applies the past tense rule. For correction techniques, a recast is when the teacher repeats the utterance correctly without pointing out the error — very implicit. Metalinguistic feedback is when the teacher explains the rule without giving the answer. And elicitation is when the teacher prompts the learner to produce the correct form themselves. Remember: always give learners a chance to self-correct first. And during fluency activities, delay correction to avoid interrupting the flow.";
+
+if(pbtn)pbtn.addEventListener('click',function(){
+  if(audioPlaying){window.speechSynthesis&&window.speechSynthesis.cancel();clearInterval(audioTimer);audioPlaying=false;pbtn.textContent='▶';if(apf)apf.style.width='0%';return;}
+  if(!window.speechSynthesis)return;
+  var u=new SpeechSynthesisUtterance(audioTxt);u.lang='en-GB';u.rate=0.9;
+  var vv=window.speechSynthesis.getVoices(),v=vv.find(function(x){return x.lang==='en-GB'})||vv.find(function(x){return x.lang.startsWith('en')});
+  if(v)u.voice=v;
+  audioPlaying=true;pbtn.textContent='⏸';
+  var w=0;audioTimer=setInterval(function(){w=Math.min(100,w+0.28);if(apf)apf.style.width=w+'%';if(w>=100)clearInterval(audioTimer)},500);
+  u.onend=function(){audioPlaying=false;pbtn.textContent='▶';clearInterval(audioTimer)};
+  window.speechSynthesis.speak(u);
+});
+
+var stog=document.getElementById('dp10scrtog'),sbox=document.getElementById('dp10scrbox');
+if(stog)stog.addEventListener('click',function(){sbox&&sbox.classList.toggle('show')});
+
+var wtxt=document.getElementById('dp10wtxt'),wcnt=document.getElementById('dp10wcnt'),wsub=document.getElementById('dp10wsub'),wfb=document.getElementById('dp10wfb');
+if(wtxt)wtxt.addEventListener('input',function(){
+  var wc=wtxt.value.trim()===''?0:wtxt.value.trim().split(/\s+/).length;
+  if(wcnt){wcnt.textContent=wc+' words (aim for 60–80)';wcnt.style.color=wc>=60?'#2E7D52':'#7A7A7A'}
+});
+if(wsub)wsub.addEventListener('click',function(){
+  if(!wtxt||wtxt.value.trim().split(/\s+/).length<20){alert('Please write at least 20 words!');return}
+  if(wfb)wfb.classList.add('show');wsub.textContent='✅ Checked!';wsub.style.background='#2E7D52';
+});
+
+/* 40-Question Quiz with A,B,C,D,E */
+function renderQ(){
+  var d=QD[qCur],area=document.getElementById('dp10qarea'),fb=document.getElementById('dp10qfb'),nxt=document.getElementById('dp10qnxt');
+  fb.className='qfbm';nxt.classList.remove('show');qAns=false;
+  var pf=document.getElementById('dp10qpf');
+  if(document.getElementById('dp10qcnt'))document.getElementById('dp10qcnt').textContent=(qCur+1)+' / '+QD.length;
+  if(pf)pf.style.width=((qCur+1)/QD.length*100)+'%';
+  var labels=['A','B','C','D','E'];
+  var html='<div class="qq"><span class="qqn">'+(qCur+1)+'</span>'+d.q+'</div><div class="qopts">';
+  d.opts.forEach(function(o,i){html+='<button class="qopt" data-i="'+i+'"><span class="ql">'+labels[i]+'.</span> '+o+'</button>'});
+  html+='</div>';area.innerHTML=html;
+  area.querySelectorAll('.qopt').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      if(qAns)return;qAns=true;
+      var ch=parseInt(btn.getAttribute('data-i'));
+      area.querySelectorAll('.qopt').forEach(function(b){b.disabled=true});
+      if(ch===d.a){btn.classList.add('qco');qScore++;if(document.getElementById('dp10qsl'))document.getElementById('dp10qsl').textContent='Score: '+qScore;fb.textContent=d.ex;fb.className='qfbm show ok'}
+      else{btn.classList.add('qwr');area.querySelectorAll('.qopt')[d.a].classList.add('qco');fb.innerHTML='❌ Incorrect. '+d.ex;fb.className='qfbm show bad'}
+      nxt.classList.add('show');nxt.textContent=qCur<QD.length-1?'Next Question →':'See Results 🎯';
+    });
+  });
+}
+
+var qnxt=document.getElementById('dp10qnxt');
+if(qnxt)qnxt.addEventListener('click',function(){qCur++;if(qCur>=QD.length)showScore();else renderQ()});
+
+function showScore(){
+  var area=document.getElementById('dp10qarea'),fb=document.getElementById('dp10qfb'),nxt=document.getElementById('dp10qnxt'),pr=document.querySelector('#dp-l10 .qpr'),pl=document.getElementById('dp10spl');
+  if(area)area.style.display='none';if(fb)fb.style.display='none';if(nxt)nxt.style.display='none';if(pr)pr.style.display='none';if(pl)pl.classList.add('show');
+  var fin=document.getElementById('dp10sfin');if(fin)fin.textContent=qScore;
+  var pct=qScore/QD.length,msg,sub;
+  if(pct>=0.9){msg='Excellent! 🏆';sub='You\'re exam-ready!'}
+  else if(pct>=0.75){msg='Great Work! 🌟';sub='Review the questions you missed.'}
+  else if(pct>=0.6){msg='Good Progress! 👍';sub='Study the theory sections again.'}
+  else if(pct>=0.4){msg='Keep Practising! 💪';sub='Focus on the concepts you struggled with.'}
+  else{msg='More Study Needed 📚';sub='Review all sections before retrying.'}
+  if(document.getElementById('dp10smsg'))document.getElementById('dp10smsg').textContent=msg;
+  if(document.getElementById('dp10ssub'))document.getElementById('dp10ssub').textContent=sub;
+}
+
+var srty=document.getElementById('dp10srty');
+if(srty)srty.addEventListener('click',function(){
+  qScore=0;qCur=0;qAns=false;
+  var area=document.getElementById('dp10qarea'),fb=document.getElementById('dp10qfb'),nxt=document.getElementById('dp10qnxt'),pr=document.querySelector('#dp-l10 .qpr'),pl=document.getElementById('dp10spl');
+  if(area){area.style.display='block';area.innerHTML=''}if(fb){fb.style.display='block';fb.className='qfbm'}if(nxt)nxt.style.display='none';if(pr)pr.style.display='flex';if(pl)pl.classList.remove('show');
+  if(document.getElementById('dp10qsl'))document.getElementById('dp10qsl').textContent='Score: 0';
+  renderQ();
+});
+
+renderQ();
+if(window.speechSynthesis){window.speechSynthesis.getVoices();window.speechSynthesis.onvoiceschanged=function(){window.speechSynthesis.getVoices()}}
+})();
+</script>
+
+<!-- AUTO-RESIZE (MUST BE LAST) -->
+<script>
+(function(){
+  function sendHeight(){var h=document.documentElement.scrollHeight||document.body.scrollHeight;window.parent.postMessage({epHeight:h},'*')}
+  sendHeight();window.addEventListener('load',sendHeight);window.addEventListener('resize',sendHeight);
+  var mo=new MutationObserver(sendHeight);mo.observe(document.body,{childList:true,subtree:true,attributes:true});
+})();
+</script>
+
+</body>
+</html>
