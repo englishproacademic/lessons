@@ -1,0 +1,995 @@
+<!--============================================================
+     EnglishPro · Didactics Series · Lesson 3
+     Learning Theories II: Cognitivism, Innatism & Constructivism
+     Piaget, Chomsky, LAD, Stages of Development
+     GitHub hosted — embedded in Blogger via iframe
+     100% self-contained — no external JS dependencies
+     UPDATED: Relevant listening + 40-MCQ exam section
+     ============================================================-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cognitivism, Innatism & Constructivism | EnglishPro Didactics Series</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;family=DM+Sans:wght@300;400;500;600&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{margin:0;padding:0;background:#FAFAF7;direction:ltr;text-align:left}
+
+#dp-l3{
+  --ny:#0D2B4E;--ny2:#1A4070;
+  --go:#C8933A;--go2:#E8B86D;--gop:#FDF6EC;
+  --cr:#FAFAF7;--wh:#fff;
+  --ink:#1A1A1A;--ink2:#3D3D3D;--mu:#7A7A7A;
+  --bd:#E2DDD6;--bdl:#F0EDE8;
+  --gr:#2E7D52;--grb:#EBF5EF;
+  --rd:#C0392B;--rdb:#FDECEA;
+  --bl:#1E5FA8;--blb:#EBF2FB;
+  --pu:#7C3AED;--pub:#F3F0FF;
+  --te:#0E7490;--teb:#ECFEFF;
+  --or:#D97706;--orb:#FEF3C7;
+  --sh1:0 2px 8px rgba(13,43,78,.07);
+  --sh2:0 6px 20px rgba(13,43,78,.10);
+  --r:12px;--rl:20px;
+  font-family:'DM Sans',sans-serif;
+  color:var(--ink);background:var(--cr);
+  line-height:1.7;-webkit-font-smoothing:antialiased;
+  display:block;overflow:hidden;direction:ltr;text-align:left
+}
+#dp-l3 *,#dp-l3 *::before,#dp-l3 *::after{box-sizing:border-box;margin:0;padding:0}
+#dp-l3 button{cursor:pointer;font-family:'DM Sans',sans-serif;border:none;background:none}
+#dp-l3 textarea,#dp-l3 input,#dp-l3 select{font-family:'DM Sans',sans-serif}
+
+/* HERO */
+#dp-l3 .lhero{background:linear-gradient(150deg,#0a1f38 0%,#0D2B4E 50%,#122e52 100%);padding:48px 24px 40px;position:relative;overflow:hidden;border-radius:var(--rl) var(--rl) 0 0}
+#dp-l3 .lhero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%,rgba(200,147,58,.08) 0%,transparent 60%),radial-gradient(circle at 80% 20%,rgba(124,58,237,.06) 0%,transparent 50%);pointer-events:none}
+#dp-l3 .lhero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,147,58,.4),transparent)}
+#dp-l3 .lhero-in{max-width:720px;margin:0 auto;position:relative;z-index:1}
+#dp-l3 .lvlbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,147,58,.12);border:1px solid rgba(200,147,58,.28);color:var(--go2);font-size:.68rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:18px}
+#dp-l3 .ltitle{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:900;color:#F5F0E8;line-height:1.15;margin-bottom:10px;letter-spacing:-.02em}
+#dp-l3 .ltitle em{color:var(--go);font-style:italic}
+#dp-l3 .lsub{font-size:.9rem;color:rgba(245,240,232,.62);margin-bottom:22px;max-width:520px;line-height:1.6}
+#dp-l3 .spills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px}
+#dp-l3 .spill{font-size:.67rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 11px;border-radius:100px}
+#dp-l3 .sp-th{background:rgba(124,58,237,.25);color:#C4B5FD}
+#dp-l3 .sp-ex{background:rgba(30,95,168,.25);color:#7DB8F0}
+#dp-l3 .sp-qu{background:rgba(200,147,58,.25);color:var(--go2)}
+#dp-l3 .sp-ic{background:rgba(46,125,82,.25);color:#6BCFA0}
+
+/* Nav dots */
+#dp-l3 .snav{display:flex;align-items:center;gap:5px;flex-wrap:wrap;padding-top:20px;border-top:1px solid rgba(255,255,255,.08)}
+#dp-l3 .snavdot{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;font-size:.7rem;font-weight:700;border:2px solid rgba(255,255,255,.18);color:rgba(255,255,255,.32);cursor:pointer;transition:all .25s;flex-shrink:0}
+#dp-l3 .snavdot.done{border-color:var(--gr);background:var(--gr);color:#fff}
+#dp-l3 .snavdot.active{border-color:var(--go);background:var(--go);color:#fff}
+#dp-l3 .snavsep{width:16px;height:2px;background:rgba(255,255,255,.1);border-radius:1px;flex-shrink:0}
+#dp-l3 .snavlbl{font-size:.63rem;color:rgba(245,240,232,.38);margin-left:6px}
+
+/* BODY */
+#dp-l3 .lbody{max-width:720px;margin:0 auto;padding:32px 20px 64px;background:var(--cr)}
+#dp-l3 .sblock{background:var(--wh);border:1px solid var(--bdl);border-radius:var(--rl);padding:28px;margin-bottom:24px;display:none;animation:dp3up .35s ease both;box-shadow:var(--sh1)}
+#dp-l3 .sblock.vis{display:block}
+@keyframes dp3up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+#dp-l3 .slabel{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--go);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+#dp-l3 .slabel::after{content:'';flex:1;height:1px;background:var(--bdl)}
+#dp-l3 .sheading{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ny);margin-bottom:16px;line-height:1.25}
+#dp-l3 .sheading em{color:var(--go);font-style:italic}
+#dp-l3 .stxt{font-size:.9rem;color:var(--ink2);margin-bottom:16px;line-height:1.65}
+
+/* Scene */
+#dp-l3 .scene{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:20px;margin-bottom:20px;position:relative;overflow:hidden}
+#dp-l3 .scene::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(200,147,58,.08),transparent 60%);pointer-events:none}
+#dp-l3 .s-ico{font-size:1.8rem;margin-bottom:8px;position:relative;z-index:1}
+#dp-l3 .s-t{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#F5F0E8;position:relative;z-index:1;margin-bottom:5px}
+#dp-l3 .s-d{font-size:.83rem;color:rgba(245,240,232,.65);position:relative;z-index:1;line-height:1.55}
+
+/* Callouts */
+#dp-l3 .co{display:flex;gap:10px;padding:13px 15px;border-radius:var(--r);margin:14px 0;font-size:.855rem;line-height:1.6}
+#dp-l3 .co-tip{background:var(--gop);border:1px solid rgba(200,147,58,.2);color:var(--ink2)}
+#dp-l3 .co-info{background:var(--blb);border:1px solid rgba(30,95,168,.15);color:var(--ink2)}
+#dp-l3 .co-pur{background:var(--pub);border:1px solid rgba(124,58,237,.15);color:var(--ink2)}
+#dp-l3 .co-teal{background:var(--teb);border:1px solid rgba(14,116,144,.15);color:var(--ink2)}
+#dp-l3 .co-or{background:var(--orb);border:1px solid rgba(217,119,6,.15);color:var(--ink2)}
+#dp-l3 .co-ico{font-size:1rem;flex-shrink:0;margin-top:1px}
+
+/* Gbox */
+#dp-l3 .gbox{border-radius:0 var(--r) var(--r) 0;padding:18px 20px;margin:18px 0}
+#dp-l3 .gbox-bl{background:var(--blb);border:1px solid rgba(30,95,168,.2);border-left:4px solid var(--bl)}
+#dp-l3 .gbox-go{background:var(--gop);border:1px solid rgba(200,147,58,.2);border-left:4px solid var(--go)}
+#dp-l3 .gbox-gr{background:var(--grb);border:1px solid rgba(46,125,82,.2);border-left:4px solid var(--gr)}
+#dp-l3 .gbox-pu{background:var(--pub);border:1px solid rgba(124,58,237,.15);border-left:4px solid var(--pu)}
+#dp-l3 .gbox-te{background:var(--teb);border:1px solid rgba(14,116,144,.15);border-left:4px solid var(--te)}
+#dp-l3 .gbox h4{font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:11px}
+#dp-l3 .gbox-bl h4{color:var(--bl)}
+#dp-l3 .gbox-go h4{color:var(--go)}
+#dp-l3 .gbox-gr h4{color:var(--gr)}
+#dp-l3 .gbox-pu h4{color:var(--pu)}
+#dp-l3 .gbox-te h4{color:var(--te)}
+#dp-l3 .grule{font-family:'DM Mono',monospace;font-size:.86rem;color:var(--ny);background:rgba(255,255,255,.65);padding:9px 14px;border-radius:7px;margin-bottom:7px;line-height:1.6}
+#dp-l3 .grule span{color:var(--bl);font-weight:600}
+#dp-l3 .grule em{color:var(--go);font-style:normal;font-weight:600}
+#dp-l3 .grule strong{color:var(--gr);font-weight:700}
+
+/* Flip Cards */
+#dp-l3 .tcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin:20px 0}
+#dp-l3 .tcard{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:18px;cursor:pointer;transition:all .22s;position:relative;overflow:hidden}
+#dp-l3 .tcard::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;transition:background .2s}
+#dp-l3 .tcard:hover{border-color:var(--go);transform:translateY(-3px);box-shadow:var(--sh2)}
+#dp-l3 .tcard.fl{background:var(--gop);border-color:var(--go)}
+#dp-l3 .tcard.fl::before{background:var(--go)}
+#dp-l3 .tc-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+#dp-l3 .tc-ava{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+#dp-l3 .tc-info h4{font-size:.95rem;font-weight:700;color:var(--ny);margin-bottom:2px}
+#dp-l3 .tc-info span{font-size:.72rem;color:var(--mu)}
+#dp-l3 .tc-hint{font-size:.78rem;color:var(--mu);font-style:italic}
+#dp-l3 .tc-body{display:none;margin-top:12px}
+#dp-l3 .tcard.fl .tc-hint{display:none}
+#dp-l3 .tcard.fl .tc-body{display:block}
+#dp-l3 .tc-body p{font-size:.85rem;color:var(--ink2);line-height:1.6;margin-bottom:10px}
+#dp-l3 .tc-key{background:var(--wh);border-radius:8px;padding:12px;margin-top:10px}
+#dp-l3 .tc-key h5{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--go);margin-bottom:6px}
+#dp-l3 .tc-key p{font-size:.82rem;color:var(--ny);font-weight:600;line-height:1.5;margin:0}
+
+/* Tables */
+#dp-l3 .gtbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.85rem}
+#dp-l3 .gtbl th{background:var(--ny);color:#F5F0E8;padding:9px 13px;text-align:left;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+#dp-l3 .gtbl th:first-child{border-radius:var(--r) 0 0 0}
+#dp-l3 .gtbl th:last-child{border-radius:0 var(--r) 0 0}
+#dp-l3 .gtbl td{padding:9px 13px;border-bottom:1px solid var(--bdl);color:var(--ink2);vertical-align:top}
+#dp-l3 .gtbl tr:nth-child(even) td{background:var(--cr)}
+#dp-l3 .tbl-b{color:var(--bl);font-weight:600}
+#dp-l3 .tbl-g{color:var(--go);font-weight:600}
+#dp-l3 .tbl-gr{color:var(--gr);font-weight:600}
+#dp-l3 .tbl-pu{color:var(--pu);font-weight:600}
+
+/* Tabs */
+#dp-l3 .tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+#dp-l3 .tab{padding:9px 18px;border-radius:var(--r);font-size:.82rem;font-weight:600;background:var(--cr);border:2px solid var(--bd);color:var(--ink2);cursor:pointer;transition:all .2s}
+#dp-l3 .tab:hover{border-color:var(--go);color:var(--go)}
+#dp-l3 .tab.active{background:var(--ny);border-color:var(--ny);color:#fff}
+#dp-l3 .tabpanel{display:none}
+#dp-l3 .tabpanel.vis{display:block}
+
+/* Fill blanks */
+#dp-l3 .fex{margin:18px 0}
+#dp-l3 .fi{background:var(--cr);border:1.5px solid var(--bd);border-radius:var(--r);padding:16px 18px;margin-bottom:10px;transition:border-color .2s}
+#dp-l3 .fi.ok{border-color:var(--gr);background:var(--grb)}
+#dp-l3 .fi.bad{border-color:var(--rd);background:var(--rdb)}
+#dp-l3 .fsen{font-size:.92rem;color:var(--ink2);line-height:2;display:flex;align-items:center;flex-wrap:wrap;gap:5px}
+#dp-l3 .finp{border:none;border-bottom:2px solid var(--go);background:transparent;font-size:.92rem;font-family:'DM Sans',sans-serif;color:var(--ny);font-weight:600;padding:2px 6px;min-width:100px;outline:none;transition:border-color .2s;text-align:center}
+#dp-l3 .finp:focus{border-color:var(--ny)}
+#dp-l3 .finp.ok{border-color:var(--gr);color:var(--gr)}
+#dp-l3 .finp.bad{border-color:var(--rd);color:var(--rd)}
+#dp-l3 .ffb{font-size:.78rem;font-weight:600;margin-top:7px;display:none}
+#dp-l3 .fi.ok .ffb{display:block;color:var(--gr)}
+#dp-l3 .fi.bad .ffb{display:block;color:var(--rd)}
+#dp-l3 .chkb{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none;margin-top:6px}
+#dp-l3 .chkb:hover{background:var(--go);transform:translateY(-1px)}
+
+/* Stages stepper */
+#dp-l3 .stages{display:flex;flex-direction:column;gap:12px;margin:20px 0}
+#dp-l3 .stage{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:16px;transition:all .2s}
+#dp-l3 .stage:hover{border-color:var(--go)}
+#dp-l3 .stage-head{display:flex;align-items:center;gap:12px}
+#dp-l3 .stage-num{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:700;flex-shrink:0;color:#fff}
+#dp-l3 .stage-info h4{font-size:.9rem;font-weight:700;color:var(--ny);margin-bottom:2px}
+#dp-l3 .stage-info span{font-size:.75rem;color:var(--mu)}
+#dp-l3 .stage-body{margin-top:10px;padding-top:10px;border-top:1px solid var(--bdl);font-size:.85rem;color:var(--ink2);line-height:1.6}
+
+/* Scenario Match */
+#dp-l3 .smatch{margin:20px 0}
+#dp-l3 .sm-item{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;align-items:center}
+#dp-l3 .sm-scenario{background:var(--blb);border:1px solid rgba(30,95,168,.15);border-radius:var(--r);padding:12px 14px;font-size:.85rem;color:var(--ink2);line-height:1.5}
+#dp-l3 .sm-select{border:2px solid var(--bd);border-radius:var(--r);padding:9px 12px;font-size:.85rem;color:var(--ink2);background:var(--cr);width:100%;font-family:'DM Sans',sans-serif;outline:none;transition:border-color .2s;cursor:pointer}
+#dp-l3 .sm-select:focus{border-color:var(--go)}
+#dp-l3 .sm-select.ok{border-color:var(--gr);background:var(--grb);color:var(--gr)}
+#dp-l3 .sm-select.bad{border-color:var(--rd);background:var(--rdb);color:var(--rd)}
+#dp-l3 .smfb{font-size:.82rem;font-weight:600;padding:10px 14px;border-radius:var(--r);margin-top:4px;display:none}
+#dp-l3 .smfb.ok{background:var(--grb);color:var(--gr);display:block}
+#dp-l3 .smfb.bad{background:var(--rdb);color:var(--rd);display:block}
+
+/* Stask */
+#dp-l3 .stask{border-radius:var(--r);padding:20px;margin:14px 0;border:1.5px solid}
+#dp-l3 .stask-gr{background:var(--grb);border-color:rgba(46,125,82,.22)}
+#dp-l3 .stask-bl{background:var(--blb);border-color:rgba(30,95,168,.18)}
+#dp-l3 .stask-pu{background:var(--pub);border-color:rgba(124,58,237,.18)}
+#dp-l3 .sth{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+#dp-l3 .stico{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;color:#fff}
+#dp-l3 .stitle{font-size:.9rem;font-weight:600}
+#dp-l3 .stitle-gr{color:var(--gr)}
+#dp-l3 .stitle-bl{color:var(--bl)}
+#dp-l3 .stitle-pu{color:var(--pu)}
+#dp-l3 .sinstr{font-size:.855rem;color:var(--ink2);line-height:1.6;margin-bottom:10px}
+#dp-l3 .smodel{background:var(--wh);border-radius:8px;padding:13px 15px;font-size:.84rem;color:var(--ny);line-height:1.9}
+#dp-l3 .em-gr{color:var(--gr);font-weight:600;font-style:normal}
+#dp-l3 .em-bl{color:var(--bl);font-weight:600;font-style:normal}
+#dp-l3 .em-go{color:var(--go);font-weight:600;font-style:normal}
+#dp-l3 .em-pu{color:var(--pu);font-weight:600;font-style:normal}
+
+/* Audio */
+#dp-l3 .aplayer{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px;margin:14px 0;flex-wrap:wrap}
+#dp-l3 .abig{width:48px;height:48px;border-radius:50%;background:var(--go);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;transition:all .2s;cursor:pointer;border:none;box-shadow:0 4px 14px rgba(200,147,58,.4)}
+#dp-l3 .abig:hover{background:var(--go2);transform:scale(1.06)}
+#dp-l3 .ainfo{flex:1;min-width:160px}
+#dp-l3 .at{font-size:.87rem;font-weight:600;color:#F5F0E8;margin-bottom:3px}
+#dp-l3 .as{font-size:.72rem;color:rgba(245,240,232,.55)}
+#dp-l3 .apbar{height:4px;background:rgba(255,255,255,.14);border-radius:2px;margin-top:9px;overflow:hidden}
+#dp-l3 .apfill{height:100%;background:var(--go);width:0%;border-radius:2px;transition:width .3s}
+#dp-l3 .scrtog{background:rgba(255,255,255,.1);color:rgba(245,240,232,.78);font-size:.72rem;font-weight:600;padding:5px 11px;border-radius:100px;border:1px solid rgba(255,255,255,.15);cursor:pointer;transition:all .2s;flex-shrink:0}
+#dp-l3 .scrtog:hover{background:rgba(255,255,255,.2)}
+#dp-l3 .scrbox{background:var(--cr);border:1px solid var(--bd);border-radius:var(--r);padding:18px;margin-top:10px;display:none}
+#dp-l3 .scrbox.show{display:block}
+#dp-l3 .scrbox p{font-size:.875rem;color:var(--ink2);margin-bottom:7px;line-height:1.7}
+
+/* Writing */
+#dp-l3 .wa{width:100%;min-height:130px;border:2px solid var(--bd);border-radius:var(--r);padding:14px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--ink);background:var(--cr);resize:vertical;outline:none;transition:border-color .2s;line-height:1.7}
+#dp-l3 .wa:focus{border-color:var(--go)}
+#dp-l3 .wa::placeholder{color:var(--mu)}
+#dp-l3 .wcnt{font-size:.72rem;color:var(--mu);text-align:right;margin-top:5px}
+#dp-l3 .wsub{margin-top:11px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none}
+#dp-l3 .wsub:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l3 .wfb{display:none;margin-top:13px;background:var(--grb);border:1.5px solid rgba(46,125,82,.22);border-radius:var(--r);padding:15px;font-size:.855rem;color:var(--gr);line-height:1.65}
+#dp-l3 .wfb.show{display:block}
+
+/* Quiz */
+#dp-l3 .qpr{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+#dp-l3 .qpbar{flex:1;height:6px;background:var(--bd);border-radius:3px;overflow:hidden;margin:0 11px}
+#dp-l3 .qpfill{height:100%;background:linear-gradient(90deg,var(--go),var(--go2));border-radius:3px;transition:width .4s ease}
+#dp-l3 .qcnt{font-size:.77rem;font-weight:600;color:var(--mu)}
+#dp-l3 .qq{font-size:1rem;font-weight:600;color:var(--ny);margin-bottom:16px;line-height:1.5}
+#dp-l3 .qqn{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--go);color:#fff;font-size:.75rem;font-weight:700;margin-right:7px;flex-shrink:0;vertical-align:middle}
+#dp-l3 .qopts{display:flex;flex-direction:column;gap:9px}
+#dp-l3 .qopt{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:13px 16px;font-size:.9rem;color:var(--ink2);text-align:left;transition:all .2s;display:flex;align-items:center;gap:9px;cursor:pointer}
+#dp-l3 .qopt .ql{font-weight:700;color:var(--ny);min-width:18px}
+#dp-l3 .qopt:hover:not([disabled]){border-color:var(--go);background:var(--gop);transform:translateX(3px)}
+#dp-l3 .qopt.qco{border-color:var(--gr)!important;background:var(--grb)!important;color:var(--gr)!important}
+#dp-l3 .qopt.qwr{border-color:var(--rd)!important;background:var(--rdb)!important;color:var(--rd)!important}
+#dp-l3 .qfbm{display:none;margin-top:11px;padding:13px 16px;border-radius:var(--r);font-size:.86rem;font-weight:500;line-height:1.6}
+#dp-l3 .qfbm.show{display:block}
+#dp-l3 .qfbm.ok{background:var(--grb);color:var(--gr);border:1px solid rgba(46,125,82,.2)}
+#dp-l3 .qfbm.bad{background:var(--rdb);color:var(--rd);border:1px solid rgba(192,57,43,.2)}
+#dp-l3 .qnxt{margin-top:14px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;display:none;cursor:pointer;border:none}
+#dp-l3 .qnxt:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l3 .qnxt.show{display:inline-block}
+#dp-l3 .spl{text-align:center;padding:28px 20px;display:none;animation:dp3up .4s ease both}
+#dp-l3 .spl.show{display:block}
+#dp-l3 .scir{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--ny),var(--ny2));display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 8px 24px rgba(13,43,78,.2)}
+#dp-l3 .snum{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:var(--go);line-height:1}
+#dp-l3 .sden{font-size:.7rem;color:rgba(245,240,232,.5)}
+#dp-l3 .smsg{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--ny);margin-bottom:7px}
+#dp-l3 .ssub{font-size:.84rem;color:var(--mu);margin-bottom:18px}
+#dp-l3 .srty{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;margin-right:8px;cursor:pointer;border:none}
+#dp-l3 .srty:hover{background:var(--go)}
+
+/* Nav buttons */
+#dp-l3 .navb{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:18px;border-top:1px solid var(--bdl);gap:10px}
+#dp-l3 .nb{display:flex;align-items:center;gap:7px;padding:11px 22px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;border:2px solid var(--bd);color:var(--ink2);background:var(--wh);cursor:pointer}
+#dp-l3 .nb:hover{border-color:var(--go);color:var(--go)}
+#dp-l3 .nb.pri{background:var(--ny);color:#fff;border-color:transparent}
+#dp-l3 .nb.pri:hover{background:var(--go);border-color:transparent}
+#dp-l3 .nb:disabled{opacity:.38;cursor:default;pointer-events:none}
+
+/* Footer */
+#dp-l3 .lft{background:var(--ny);padding:24px;text-align:center;border-radius:0 0 var(--rl) var(--rl)}
+#dp-l3 .flo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:#F5F0E8;margin-bottom:5px}
+#dp-l3 .flo em{color:var(--go);font-style:italic}
+#dp-l3 .ftx{font-size:.74rem;color:rgba(245,240,232,.42)}
+
+@media(max-width:560px){
+  #dp-l3 .lhero{padding:32px 16px 28px}
+  #dp-l3 .lbody{padding:20px 14px 48px}
+  #dp-l3 .sblock{padding:18px 14px}
+  #dp-l3 .tcards{grid-template-columns:1fr}
+  #dp-l3 .navb{flex-direction:column}
+  #dp-l3 .nb{width:100%;justify-content:center}
+  #dp-l3 .tabs{gap:4px}
+  #dp-l3 .tab{padding:7px 12px;font-size:.78rem}
+  #dp-l3 .sm-item{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div id="dp-l3">
+
+<!-- HERO -->
+<div class="lhero">
+  <div class="lhero-in">
+    <div class="lvlbadge">🎓 Didactics Series · Lesson 3 of 12</div>
+    <h1 class="ltitle">Learning Theories II:<br><em>Cognitivism, Innatism &amp; Constructivism</em></h1>
+    <p class="lsub">Move beyond Behaviourism! Discover how the mind processes language — from Chomsky's LAD to Piaget's developmental stages — and understand why learners are active constructors of knowledge.</p>
+    <div class="spills">
+      <span class="spill sp-th">🧠 Mental Processes</span>
+      <span class="spill sp-ex">🔬 LAD & Stages</span>
+      <span class="spill sp-ic">🎯 Interactive Tasks</span>
+      <span class="spill sp-qu">📝 40-Question Exam</span>
+    </div>
+    <nav class="snav">
+      <div class="snavdot active" data-s="0">1</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="1">2</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="2">3</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="3">4</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="4">5</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="5">6</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="6">7</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="7">8</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="8">9</div>
+      <span class="snavlbl">9 sections</span>
+    </nav>
+  </div>
+</div>
+
+<div class="lbody">
+
+<!-- SECTION 1: FOUNDATIONS -->
+<section class="sblock vis" id="dp3s0">
+  <div class="slabel">Section 1 · Foundations</div>
+  <h2 class="sheading">Beyond Behaviourism — <em>The Cognitive Revolution</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">🧠</div>
+    <div class="s-t">Why Behaviourism Wasn't Enough</div>
+    <div class="s-d">Behaviourism explained habit formation but couldn't explain how children produce sentences they've never heard before. The cognitive revolution opened the "black box" of the mind — showing that learning involves thinking, understanding, and creativity.</div>
+  </div>
+
+  <p class="stxt">In this lesson, you'll master three mentalist theories that challenged Behaviourism: <strong>Cognitivism</strong> (Piaget), <strong>Innatism</strong> (Chomsky), and <strong>Constructivism</strong> (Piaget). These theories focus on what happens <em>inside</em> the learner's mind.</p>
+
+  <div class="gbox gbox-go">
+    <h4>The Big Shift: From Behaviour to Mind</h4>
+    <div class="grule"><span>Behaviourism</span> = Learning is <em>habit formation</em> through repetition</div>
+    <div class="grule"><em>Cognitivism</em> = Learning involves <em>mental processes</em> (thinking, memory, understanding)</div>
+    <div class="grule"><strong>Innatism</strong> = Humans are <em>born with</em> the ability to learn language (LAD)</div>
+    <div class="grule"><span>Constructivism</span> = Learners <em>build</em> knowledge through experience and discovery</div>
+  </div>
+
+  <table class="gtbl">
+    <tr><th>Theory</th><th>Key Figure</th><th>Core Belief</th><th>View of Learner</th></tr>
+    <tr><td class="tbl-b">Cognitivism</td><td>Piaget</td><td>Mind processes information</td><td>Active processor</td></tr>
+    <tr><td class="tbl-pu">Innatism</td><td>Chomsky</td><td>Language ability is innate</td><td>Born with LAD</td></tr>
+    <tr><td class="tbl-gr">Constructivism</td><td>Piaget</td><td>Knowledge is constructed</td><td>Active builder</td></tr>
+  </table>
+
+  <div class="co co-info"><span class="co-ico">📚</span><span><strong>Teaching Connection:</strong> These theories support <em>inductive teaching</em> (discovery learning), <em>meaningful input</em>, and student-centered approaches — the opposite of ALM's drill-based methods.</span></div>
+
+  <div class="navb">
+    <button class="nb" disabled>← Back</button>
+    <button class="nb pri" data-go="1">Next: Key Figures →</button>
+  </div>
+</section>
+
+<!-- SECTION 2: KEY FIGURES -->
+<section class="sblock" id="dp3s1">
+  <div class="slabel">Section 2 · Key Figures</div>
+  <h2 class="sheading">The Pioneers — <em>Piaget &amp; Chomsky</em></h2>
+  <p class="stxt">Two figures dominate these theories. <strong>Tap each card to reveal their contribution.</strong></p>
+
+  <div class="tcards">
+    <div class="tcard" data-card="0">
+      <div class="tc-head">
+        <div class="tc-ava" style="background:#E8F4FD">🧒</div>
+        <div class="tc-info"><h4>Jean Piaget</h4><span>Swiss · Cognitivism & Constructivism</span></div>
+      </div>
+      <div class="tc-hint">Tap to reveal...</div>
+      <div class="tc-body">
+        <p>Piaget proposed that children actively <strong>construct knowledge</strong> through experience. Learning involves <strong>assimilation</strong> (adding new info to existing schemas) and <strong>accommodation</strong> (adjusting schemas when new info doesn't fit).</p>
+        <div class="tc-key"><h5>Key Concepts</h5><p>Four Stages of Development · Schema · Assimilation · Accommodation · Equilibrium · Discovery Learning</p></div>
+      </div>
+    </div>
+
+    <div class="tcard" data-card="1">
+      <div class="tc-head">
+        <div class="tc-ava" style="background:#F3F0FF">🗣️</div>
+        <div class="tc-info"><h4>Noam Chomsky</h4><span>American · Innatism (Nativism)</span></div>
+      </div>
+      <div class="tc-hint">Tap to reveal...</div>
+      <div class="tc-body">
+        <p>Chomsky argued that humans are <strong>born with</strong> the ability to learn language. The brain has a <strong>Language Acquisition Device (LAD)</strong> — an innate mechanism that allows children to discover grammar rules from imperfect input.</p>
+        <div class="tc-key"><h5>Key Concepts</h5><p>LAD (Language Acquisition Device) · Universal Grammar · Competence vs Performance · Poverty of the Stimulus</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Trap — Piaget appears twice!</strong> Piaget is the founder of BOTH Cognitivism (focus on mental processes) AND Constructivism (focus on building knowledge). Don't confuse them — they're related but distinct emphases of his work.</span></div>
+
+  <table class="gtbl">
+    <tr><th>Theorist</th><th>Theory</th><th>Key Idea</th><th>Famous For</th></tr>
+    <tr><td class="tbl-b">Piaget</td><td>Cognitivism</td><td>Mind processes language</td><td>Stages of Development</td></tr>
+    <tr><td class="tbl-b">Piaget</td><td>Constructivism</td><td>Knowledge is built</td><td>Schema, Assimilation</td></tr>
+    <tr><td class="tbl-pu">Chomsky</td><td>Innatism</td><td>Language is innate</td><td>LAD, Universal Grammar</td></tr>
+  </table>
+
+  <div class="navb">
+    <button class="nb" data-go="0">← Introduction</button>
+    <button class="nb pri" data-go="2">Next: Cognitivism →</button>
+  </div>
+</section>
+
+<!-- SECTION 3: COGNITIVISM -->
+<section class="sblock" id="dp3s2">
+  <div class="slabel">Section 3 · Cognitivism</div>
+  <h2 class="sheading">Cognitivism — <em>The Mind as Information Processor</em></h2>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="t3a">🧠 Core Ideas</button>
+    <button class="tab" data-tab="t3b">📊 Information Processing</button>
+    <button class="tab" data-tab="t3c">🎓 Classroom Application</button>
+  </div>
+
+  <div class="tabpanel vis" id="t3a">
+    <div class="gbox gbox-bl">
+      <h4>Cognitivism — Key Principles</h4>
+      <div class="grule">Learning involves <strong>mental processes</strong>: thinking, understanding, memory, problem-solving</div>
+      <div class="grule">Language learning is <em>creative</em>, not just imitation</div>
+      <div class="grule">Learners use mental abilities to <span>discover rules</span> and create new sentences</div>
+      <div class="grule">Learning is <em>meaningful</em> when connected to what is already known</div>
+      <div class="grule">The mind <strong>stores and retrieves</strong> information like a computer</div>
+    </div>
+
+    <p class="stxt">Unlike Behaviourism, Cognitivism opens the "black box" of the mind. It explains how learners <strong>think about</strong> language, form mental representations, and use <strong>prior knowledge</strong> to understand new information.</p>
+  </div>
+
+  <div class="tabpanel" id="t3b">
+    <div class="gbox gbox-pu">
+      <h4>Information Processing Theory</h4>
+      <div class="grule"><span>Input</span> → Information enters through senses</div>
+      <div class="grule"><em>Processing</em> → Mind organizes, connects, and stores information</div>
+      <div class="grule"><strong>Output</strong> → Learner retrieves and uses stored knowledge</div>
+    </div>
+
+    <p class="stxt">The mind is compared to a <strong>computer</strong>: it receives input, processes it, stores it in memory, and retrieves it when needed. Practice strengthens memory connections and makes retrieval faster.</p>
+
+    <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Teaching Implication:</strong> Connect new material to what students already know. Use meaningful contexts, not isolated drills. Help students organize information into mental categories (schemas).</span></div>
+  </div>
+
+  <div class="tabpanel" id="t3c">
+    <div class="gbox gbox-gr">
+      <h4>Classroom Applications of Cognitivism</h4>
+      <div class="grule"><strong>Meaningful learning</strong> — Connect new content to prior knowledge</div>
+      <div class="grule"><strong>Discovery learning</strong> — Let students figure out rules inductively</div>
+      <div class="grule"><strong>Problem-solving tasks</strong> — Engage mental processes</div>
+      <div class="grule"><strong>Graphic organizers</strong> — Help organize information into schemas</div>
+      <div class="grule"><strong>Metacognition</strong> — Teach students to think about their own thinking</div>
+    </div>
+
+    <div class="co co-pur"><span class="co-ico">🧠</span><span><strong>Exam Insight:</strong> If an exam mentions "mental processes," "meaningful learning," "schema," "information processing," or "discovery learning" — the answer is <strong>Cognitivism</strong>.</span></div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="1">← Key Figures</button>
+    <button class="nb pri" data-go="3">Next: Innatism →</button>
+  </div>
+</section>
+
+<!-- SECTION 4: INNATISM -->
+<section class="sblock" id="dp3s3">
+  <div class="slabel">Section 4 · Innatism</div>
+  <h2 class="sheading">Innatism — <em>We Are Born to Learn Language</em></h2>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="t4a">🧒 Core Ideas</button>
+    <button class="tab" data-tab="t4b">🔧 LAD & Universal Grammar</button>
+    <button class="tab" data-tab="t4c">⚖️ Competence vs Performance</button>
+  </div>
+
+  <div class="tabpanel vis" id="t4a">
+    <div class="gbox gbox-pu">
+      <h4>Innatism (Nativism) — Key Principles</h4>
+      <div class="grule">Humans are <strong>born with</strong> the natural ability to learn language</div>
+      <div class="grule">Language is NOT fully learned from the environment</div>
+      <div class="grule">The brain has a built-in <em>Language Acquisition Device (LAD)</em></div>
+      <div class="grule">Children discover grammar rules even from <span>imperfect input</span></div>
+      <div class="grule">All languages share <strong>Universal Grammar</strong> — deep structural similarities</div>
+    </div>
+
+    <p class="stxt">Chomsky directly challenged Behaviourism. He argued that children can produce sentences they've <strong>never heard before</strong> — something habit formation cannot explain. This creativity proves that language ability is <strong>innate</strong>, not just learned from the environment.</p>
+  </div>
+
+  <div class="tabpanel" id="t4b">
+    <div class="gbox gbox-bl">
+      <h4>Language Acquisition Device (LAD)</h4>
+      <div class="grule">A <strong>mental organ</strong> specifically for language learning</div>
+      <div class="grule">Allows children to <em>discover</em> the grammar rules of any language</div>
+      <div class="grule">Explains why children learn language so quickly with <span>imperfect input</span></div>
+    </div>
+
+    <div class="gbox gbox-go">
+      <h4>Universal Grammar (UG)</h4>
+      <div class="grule">All human languages share <strong>common underlying structures</strong></div>
+      <div class="grule">Humans are <em>wired</em> to understand these structures</div>
+      <div class="grule">The LAD uses UG to figure out any specific language's rules</div>
+    </div>
+
+    <div class="co co-teal"><span class="co-ico">🔬</span><span><strong>Poverty of the Stimulus:</strong> Children hear incomplete, ungrammatical, and limited language input — yet they learn perfect grammar. This "poverty of the stimulus" proves language must be innate; the environment alone can't explain it.</span></div>
+  </div>
+
+  <div class="tabpanel" id="t4c">
+    <table class="gtbl">
+      <tr><th>Concept</th><th>Definition</th><th>Example</th></tr>
+      <tr><td class="tbl-pu">Competence</td><td>Mental knowledge of language (the internal grammar)</td><td>Knowing that "He goes" is correct</td></tr>
+      <tr><td class="tbl-b">Performance</td><td>Actual language use in real situations</td><td>Sometimes saying "He go" when tired</td></tr>
+    </table>
+
+    <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Trap:</strong> <em>Competence</em> is what you KNOW (mental grammar). <em>Performance</em> is what you DO (actual speech). Errors in performance don't mean errors in competence — we make mistakes due to tiredness, nervousness, etc.</span></div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="2">← Cognitivism</button>
+    <button class="nb pri" data-go="4">Next: Constructivism →</button>
+  </div>
+</section>
+
+<!-- SECTION 5: CONSTRUCTIVISM -->
+<section class="sblock" id="dp3s4">
+  <div class="slabel">Section 5 · Constructivism</div>
+  <h2 class="sheading">Constructivism — <em>Building Knowledge Through Experience</em></h2>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="t5a">🧱 Core Ideas</button>
+    <button class="tab" data-tab="t5b">🔄 Learning Processes</button>
+    <button class="tab" data-tab="t5c">📈 Piaget's 4 Stages</button>
+  </div>
+
+  <div class="tabpanel vis" id="t5a">
+    <div class="gbox gbox-gr">
+      <h4>Constructivism — Key Principles</h4>
+      <div class="grule">Learners <strong>build knowledge</strong> through experience, not by being told</div>
+      <div class="grule">New knowledge is connected to what is already known (<em>schemata</em>)</div>
+      <div class="grule">Learning comes through <span>doing and interaction</span></div>
+      <div class="grule">Students <strong>discover</strong> knowledge (inductive/discovery approach)</div>
+      <div class="grule">Teacher is a <em>guide</em>, not a knowledge-giver</div>
+      <div class="grule">Development happens <strong>before</strong> learning (readiness matters)</div>
+    </div>
+
+    <p class="stxt">Piaget believed children are not passive receivers of information — they are <strong>active builders</strong> of knowledge. They construct understanding by reflecting on their experiences and connecting new information to existing mental frameworks (schemas).</p>
+  </div>
+
+  <div class="tabpanel" id="t5b">
+    <div class="gbox gbox-bl">
+      <h4>Key Learning Processes</h4>
+      <div class="grule"><strong>Schema</strong> = Mental framework for organizing knowledge</div>
+      <div class="grule"><em>Assimilation</em> = Adding new info to an existing schema<br>(e.g., Child knows "dog" → sees a new dog → adds it to "dog" schema)</div>
+      <div class="grule"><span>Accommodation</span> = Adjusting schema when new info doesn't fit<br>(e.g., Child sees a cat → realizes it's NOT a dog → creates new "cat" schema)</div>
+      <div class="grule"><strong>Equilibrium</strong> = Balance between what you know and experience</div>
+      <div class="grule"><em>Disequilibrium</em> = When new experience challenges existing schemas</div>
+    </div>
+
+    <div class="co co-tip"><span class="co-ico">💡</span><span><strong>The Learning Cycle:</strong> Equilibrium → New experience creates Disequilibrium → Assimilation or Accommodation → New Equilibrium (with expanded understanding)</span></div>
+  </div>
+
+  <div class="tabpanel" id="t5c">
+    <p class="stxt">Piaget identified <strong>four stages</strong> of cognitive development. Children move through these stages as they mature.</p>
+
+    <div class="stages">
+      <div class="stage">
+        <div class="stage-head">
+          <div class="stage-num" style="background:var(--bl)">1</div>
+          <div class="stage-info"><h4>Sensorimotor Stage</h4><span>Birth to 2 years</span></div>
+        </div>
+        <div class="stage-body">Learns through senses and physical actions. Trial and error learning. Develops object permanence. Egocentric thinking (can't see others' perspectives).</div>
+      </div>
+      <div class="stage">
+        <div class="stage-head">
+          <div class="stage-num" style="background:var(--pu)">2</div>
+          <div class="stage-info"><h4>Preoperational Stage</h4><span>2 to 7 years</span></div>
+        </div>
+        <div class="stage-body">Imagination and verbal skills develop. Symbolic thinking (using words/images). Still lacks logical thinking. Begins to understand others' perspectives.</div>
+      </div>
+      <div class="stage">
+        <div class="stage-head">
+          <div class="stage-num" style="background:var(--go)">3</div>
+          <div class="stage-info"><h4>Concrete Operational Stage</h4><span>7 to 11 years</span></div>
+        </div>
+        <div class="stage-body">Logical thinking with concrete objects. Can do math operations. Conservation (quantity stays same despite shape change). Egocentrism fades.</div>
+      </div>
+      <div class="stage">
+        <div class="stage-head">
+          <div class="stage-num" style="background:var(--gr)">4</div>
+          <div class="stage-info"><h4>Formal Operational Stage</h4><span>11 to 16+ years</span></div>
+        </div>
+        <div class="stage-body">Abstract, logical, and scientific thinking. Understands hypotheses, justice, ethics. Can think about possibilities, not just reality. Group-oriented.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="3">← Innatism</button>
+    <button class="nb pri" data-go="5">Next: Classroom Applications →</button>
+  </div>
+</section>
+
+<!-- SECTION 6: CLASSROOM APPLICATIONS -->
+<section class="sblock" id="dp3s5">
+  <div class="slabel">Section 6 · Classroom Application</div>
+  <h2 class="sheading">Applying These Theories in the <em>Classroom</em></h2>
+
+  <div class="gbox gbox-go">
+    <h4>Teaching Implications</h4>
+    <div class="grule"><strong>Cognitivism:</strong> Connect new learning to prior knowledge · Use graphic organizers · Encourage metacognition</div>
+    <div class="grule"><em>Innatism:</em> Provide rich language input · Trust learners' innate ability · Focus on meaningful communication</div>
+    <div class="grule"><span>Constructivism:</span> Discovery learning · Student-centered activities · Teacher as guide · Hands-on experience</div>
+  </div>
+
+  <table class="gtbl">
+    <tr><th>Theory</th><th>Teacher Role</th><th>Student Role</th><th>Technique</th></tr>
+    <tr><td class="tbl-b">Cognitivism</td><td>Facilitator</td><td>Active processor</td><td>Problem-solving tasks</td></tr>
+    <tr><td class="tbl-pu">Innatism</td><td>Input provider</td><td>Natural acquirer</td><td>Rich language exposure</td></tr>
+    <tr><td class="tbl-gr">Constructivism</td><td>Guide</td><td>Knowledge builder</td><td>Discovery activities</td></tr>
+  </table>
+
+  <div class="stask stask-gr">
+    <div class="sth"><div class="stico" style="background:var(--gr)">🗣️</div><div class="stitle stitle-gr">Oral Task — Match the Theory</div></div>
+    <div class="smodel">
+      <strong>A:</strong> Teacher shows students examples and lets them figure out the grammar rule themselves. <span class="em-go">→ What approach?</span><br><br>
+      <strong>B:</strong> Teacher provides lots of stories, conversations, and meaningful input without explicit grammar teaching. <span class="em-go">→ What theory?</span><br><br>
+      <strong>C:</strong> Teacher uses mind maps to help students organize vocabulary into categories. <span class="em-go">→ What theory?</span><br><br>
+      <strong>D:</strong> Teacher waits until students are developmentally ready before introducing abstract concepts. <span class="em-go">→ What theory?</span>
+    </div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">✅</span><span><strong>Answers:</strong> A = <strong>Constructivism</strong> (inductive/discovery learning) | B = <strong>Innatism</strong> (rich input, trust innate ability) | C = <strong>Cognitivism</strong> (schema organization) | D = <strong>Constructivism</strong> (developmental readiness)</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="4">← Constructivism</button>
+    <button class="nb pri" data-go="6">Next: Listening Task →</button>
+  </div>
+</section>
+
+<!-- SECTION 7: LISTENING (RELEVANT SCENARIO) -->
+<section class="sblock" id="dp3s6">
+  <div class="slabel">Section 7 · Listening Comprehension</div>
+  <h2 class="sheading">🎙️ Listen — <em>A Teacher Applies Mentalist Theories</em></h2>
+  <p class="stxt">Press ▶ to listen to a teacher explaining how she uses Cognitivism, Innatism, and Constructivism in her classroom. <strong>Identify which concepts she is describing.</strong></p>
+
+  <div class="aplayer">
+    <button class="abig" id="dp3playbtn">▶</button>
+    <div class="ainfo">
+      <div class="at">A Cognitivist/Constructivist Teacher Explains Her Practice</div>
+      <div class="as">~45 seconds · British English</div>
+      <div class="apbar"><div class="apfill" id="dp3apf"></div></div>
+    </div>
+    <button class="scrtog" id="dp3scrtog">📄 Transcript</button>
+  </div>
+
+  <div class="scrbox" id="dp3scrbox">
+    <p><strong>Teacher:</strong> "I believe children come to my classroom with an innate capacity for language — my job is to provide rich, meaningful input and let their natural abilities do the work. That's why I surround them with stories, conversations, and authentic texts rather than drilling isolated grammar rules."</p>
+    <p>"When teaching new concepts, I always connect them to what students already know — their existing mental frameworks. If they have a 'schema' for animals, I build on that. Sometimes their old knowledge works perfectly — they just add the new word to what they already have. But sometimes, their existing understanding doesn't fit the new information, so they have to adjust their thinking."</p>
+    <p>"I rarely tell students the grammar rule directly. Instead, I show them lots of examples and let them discover the pattern themselves. This way, they're actively building their own understanding, not just memorizing what I said. And I always consider their developmental stage — some abstract concepts simply need to wait until they're ready."</p>
+    <p>"The key difference from behaviourism? I focus on what's happening inside their minds, not just their observable responses."</p>
+  </div>
+
+  <h4 style="color:var(--ny);font-family:'Playfair Display',serif;font-size:1rem;margin:20px 0 13px">What concept is the teacher describing? — Match each statement</h4>
+
+  <div class="smatch" id="dp3match">
+    <div class="sm-item">
+      <div class="sm-scenario">"Children come with an innate capacity for language." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">What theory is this?</em></div>
+      <select class="sm-select" data-a="Innatism" id="dp3ms0">
+        <option value="">— Select —</option>
+        <option>Behaviourism</option><option>Cognitivism</option><option>Innatism</option><option>Constructivism</option><option>Social Constructivism</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp3mf0"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"I connect new concepts to students' existing mental frameworks." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">What is this process related to?</em></div>
+      <select class="sm-select" data-a="Schema" id="dp3ms1">
+        <option value="">— Select —</option>
+        <option>LAD</option><option>Schema</option><option>Reinforcement</option><option>Universal Grammar</option><option>Habit Formation</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp3mf1"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Sometimes their old knowledge works perfectly — they just add the new word." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">What process is this?</em></div>
+      <select class="sm-select" data-a="Assimilation" id="dp3ms2">
+        <option value="">— Select —</option>
+        <option>Accommodation</option><option>Assimilation</option><option>Equilibrium</option><option>Disequilibrium</option><option>Conditioning</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp3mf2"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Sometimes their existing understanding doesn't fit, so they adjust their thinking." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">What process is this?</em></div>
+      <select class="sm-select" data-a="Accommodation" id="dp3ms3">
+        <option value="">— Select —</option>
+        <option>Accommodation</option><option>Assimilation</option><option>Equilibrium</option><option>Disequilibrium</option><option>Classical Conditioning</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp3mf3"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"I let them discover the pattern themselves — actively building their own understanding." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">What approach/theory is this?</em></div>
+      <select class="sm-select" data-a="Constructivism" id="dp3ms4">
+        <option value="">— Select —</option>
+        <option>Behaviourism</option><option>Cognitivism</option><option>Innatism</option><option>Constructivism</option><option>Audio-Lingual Method</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp3mf4"></div>
+  </div>
+
+  <button class="chkb" id="dp3chkmatch">Check Answers ✓</button>
+
+  <div class="navb">
+    <button class="nb" data-go="5">← Classroom Application</button>
+    <button class="nb pri" data-go="7">Next: Interview Prep →</button>
+  </div>
+</section>
+
+<!-- SECTION 8: INTERVIEW PREP -->
+<section class="sblock" id="dp3s7">
+  <div class="slabel">Section 8 · Interview Preparation</div>
+  <h2 class="sheading">Interview Practice — <em>Explain the Theories</em></h2>
+
+  <div class="co co-info"><span class="co-ico">ℹ️</span><span><strong>Note:</strong> The written exam is <strong>100% multiple choice</strong> (A, B, C, D, E). However, in the <strong>oral interview</strong>, you may be asked to explain concepts. This section prepares you for that.</span></div>
+
+  <p class="stxt">Practice explaining <strong>the difference between Cognitivism and Constructivism</strong> in 60–80 words. This is a common interview question since both are associated with Piaget.</p>
+
+  <div class="co co-tip"><span class="co-ico">✍️</span><span><strong>Structure your answer:</strong><br>1. Briefly define Cognitivism (focus on mental processes)<br>2. Briefly define Constructivism (focus on building knowledge)<br>3. Mention they're both from Piaget<br>4. State the key difference</span></div>
+
+  <div style="margin-top:18px">
+    <textarea class="wa" id="dp3wtxt" placeholder="Cognitivism focuses on... while Constructivism emphasizes... Both theories come from Piaget's work. The key difference is... In the classroom, Cognitivism means... while Constructivism means..."></textarea>
+    <div class="wcnt" id="dp3wcnt">0 words (aim for 60–80)</div>
+    <button class="wsub" id="dp3wsub">Check My Answer ✓</button>
+    <div class="wfb" id="dp3wfb">
+      <strong>✅ Good practice!</strong><br><br>
+      <strong>Model Answer:</strong><br>
+      "Cognitivism focuses on how the mind processes information — thinking, memory, and understanding. Constructivism emphasizes that learners actively BUILD knowledge through experience, not by being told. Both theories come from Piaget's work, but they have different emphases. Cognitivism is about HOW the mind works (information processing); Constructivism is about HOW knowledge is created (through schema, assimilation, and accommodation). In class, Cognitivism means connecting to prior knowledge; Constructivism means letting students discover rules themselves."
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="6">← Listening Task</button>
+    <button class="nb pri" data-go="8">Next: 40-Question Exam →</button>
+  </div>
+</section>
+
+<!-- SECTION 9: 40-QUESTION EXAM -->
+<section class="sblock" id="dp3s8">
+  <div class="slabel">Section 9 · Full Exam Simulation</div>
+  <h2 class="sheading">Exam Practice 🎯 — 40 Questions</h2>
+  <p class="stxt">This section simulates the <strong>real exam format</strong>: Multiple choice with 5 options (A, B, C, D, E). Option E is always "None of the above." <strong>Every wrong answer includes a full explanation.</strong></p>
+
+  <div class="co co-or"><span class="co-ico">⏱️</span><span><strong>Exam Conditions:</strong> In the real exam, you have limited time. Try to answer each question in under 45 seconds. Don't second-guess yourself!</span></div>
+
+  <div>
+    <div class="qpr">
+      <span class="qcnt" id="dp3qcnt">1 / 40</span>
+      <div class="qpbar"><div class="qpfill" id="dp3qpf" style="width:2.5%"></div></div>
+      <span class="qcnt" id="dp3qsl">Score: 0</span>
+    </div>
+    <div id="dp3qarea"></div>
+    <div class="qfbm" id="dp3qfb"></div>
+    <button class="qnxt" id="dp3qnxt">Next Question →</button>
+    <div class="spl" id="dp3spl">
+      <div class="scir"><div class="snum" id="dp3sfin">0</div><div class="sden">/ 40</div></div>
+      <div class="smsg" id="dp3smsg">Well done!</div>
+      <div class="ssub" id="dp3ssub">Keep practising!</div>
+      <button class="srty" id="dp3srty">🔄 Retry Quiz</button>
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="7">← Interview Prep</button>
+  </div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="lft">
+  <div class="flo">English<em>Pro</em> · Didactics</div>
+  <div class="ftx">Lesson 3 — Cognitivism · Innatism · Constructivism · Piaget · Chomsky · 40-Question Exam</div>
+</footer>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+(function(){
+'use strict';
+
+/* ══════════════════════════════════════════════════════════════
+   40-QUESTION EXAM DATA — 5 options (A, B, C, D, E = None)
+   ══════════════════════════════════════════════════════════════ */
+var QD=[
+  // Questions 1-10: Cognitivism Basics
+  {q:'Cognitivism views learning primarily as:',opts:['Habit formation through repetition','Mental information processing','Innate genetic programming','Social interaction with peers','None of the above'],a:1,ex:'✅ B is correct. Cognitivism focuses on mental processes: thinking, understanding, memory, and problem-solving. A = Behaviourism; C = Innatism; D = Social Constructivism.'},
+  {q:'Which metaphor BEST represents the Cognitivist view of the mind?',opts:['A black box','A blank slate','A computer','A social network','None of the above'],a:2,ex:'✅ C is correct. Cognitivism compares the mind to a COMPUTER: input → processing → storage → retrieval. "Black box" is Behaviourism (ignoring the mind); "blank slate" is also Behaviourist.'},
+  {q:'In Cognitivism, learning is MOST effective when:',opts:['Material is drilled repeatedly','New information connects to prior knowledge','Students work alone','Errors are immediately corrected','None of the above'],a:1,ex:'✅ B is correct. Cognitivism emphasizes MEANINGFUL LEARNING — connecting new information to existing schemas (prior knowledge). Drilling = Behaviourism.'},
+  {q:'The term "schema" in Piaget\'s theory refers to:',opts:['A teaching technique','A mental framework for organizing knowledge','A type of grammar drill','The Language Acquisition Device','None of the above'],a:1,ex:'✅ B is correct. A schema is a mental structure that organizes and interprets information. LAD = Chomsky\'s Innatism.'},
+  {q:'Which theorist is associated with BOTH Cognitivism AND Constructivism?',opts:['Noam Chomsky','B.F. Skinner','Jean Piaget','Lev Vygotsky','None of the above'],a:2,ex:'✅ C is correct. PIAGET is the founder of both Cognitivism (mental processes) and Constructivism (building knowledge). Chomsky = Innatism; Skinner = Behaviourism; Vygotsky = Social Constructivism.'},
+  {q:'Information Processing Theory suggests that the mind:',opts:['Responds only to external stimuli','Receives, processes, stores, and retrieves information','Is born with complete language knowledge','Learns only through social interaction','None of the above'],a:1,ex:'✅ B is correct. Information Processing = Input → Processing → Storage → Retrieval, like a computer.'},
+  {q:'Which classroom practice is MOST aligned with Cognitivism?',opts:['Repetition drills','Immediate error correction','Using graphic organizers to structure knowledge','Stimulus-Response reinforcement','None of the above'],a:2,ex:'✅ C is correct. Graphic organizers help organize information into schemas = Cognitivist practice. Drills and immediate correction = Behaviourism.'},
+  {q:'Cognitivism differs from Behaviourism because Cognitivism:',opts:['Focuses only on observable behaviour','Studies internal mental processes','Rejects the role of memory','Uses only punishment to shape behaviour','None of the above'],a:1,ex:'✅ B is correct. Cognitivism opens the "black box" and studies INTERNAL mental processes. Behaviourism focuses only on observable behaviour.'},
+  {q:'According to Cognitivism, errors indicate:',opts:['Bad habits that must be eliminated','Stages in mental hypothesis testing','Lack of reinforcement','Need for more drilling','None of the above'],a:1,ex:'✅ B is correct. In Cognitivism, errors show learners are actively TESTING hypotheses about language rules — not bad habits.'},
+  {q:'The concept of "meaningful learning" is central to:',opts:['Behaviourism','Cognitivism','Audio-Lingual Method','Classical Conditioning','None of the above'],a:1,ex:'✅ B is correct. MEANINGFUL LEARNING (connecting to prior knowledge) is a core Cognitivist principle.'},
+
+  // Questions 11-20: Innatism
+  {q:'Who proposed the Language Acquisition Device (LAD)?',opts:['Jean Piaget','B.F. Skinner','Noam Chomsky','Lev Vygotsky','None of the above'],a:2,ex:'✅ C is correct. CHOMSKY proposed the LAD — an innate mental mechanism for language acquisition.'},
+  {q:'According to Innatism, children learn language because:',opts:['They imitate adults through repetition','They are born with an innate language faculty','Teachers provide explicit grammar rules','The environment fully determines learning','None of the above'],a:1,ex:'✅ B is correct. Innatism says humans are BORN WITH innate language ability (LAD). Imitation = Behaviourism.'},
+  {q:'The "Poverty of the Stimulus" argument supports:',opts:['Behaviourism — children need more input','Innatism — language must be innate','Constructivism — experience builds knowledge','Social Constructivism — peers provide input','None of the above'],a:1,ex:'✅ B is correct. Poverty of the Stimulus: children hear limited, imperfect input yet learn perfect grammar. This proves language ability must be INNATE.'},
+  {q:'Universal Grammar (UG) suggests that:',opts:['All languages have identical grammar rules','All languages share common underlying structures','Grammar must be explicitly taught','Each language is completely unique','None of the above'],a:1,ex:'✅ B is correct. UG = all languages share deep UNDERLYING structures (not identical rules). The LAD uses UG to figure out specific language rules.'},
+  {q:'Chomsky\'s "Competence" refers to:',opts:['Actual language use in real situations','Mental knowledge of language rules','Ability to pass language tests','Fluency in speaking','None of the above'],a:1,ex:'✅ B is correct. COMPETENCE = mental knowledge (internal grammar). PERFORMANCE = actual use. Errors in performance don\'t mean errors in competence.'},
+  {q:'Chomsky\'s "Performance" refers to:',opts:['Innate language knowledge','Mental grammar rules','Actual language use in real situations','The Language Acquisition Device','None of the above'],a:2,ex:'✅ C is correct. PERFORMANCE = actual language use. It can include errors due to tiredness, nervousness, etc.'},
+  {q:'Which statement would Chomsky AGREE with?',opts:['Language is entirely learned from the environment','Children are born with a blank slate','Children can produce sentences they have never heard','Language is purely habit formation','None of the above'],a:2,ex:'✅ C is correct. Chomsky argued children produce NOVEL sentences — something habit formation can\'t explain. This proves innate language ability.'},
+  {q:'The LAD helps children:',opts:['Memorize vocabulary through repetition','Discover grammar rules from imperfect input','Learn through trial and error only','Respond to stimuli automatically','None of the above'],a:1,ex:'✅ B is correct. The LAD allows children to DISCOVER grammar rules even from incomplete, imperfect input (Poverty of the Stimulus).'},
+  {q:'Innatism directly challenged:',opts:['Cognitivism','Constructivism','Behaviourism','Social Constructivism','None of the above'],a:2,ex:'✅ C is correct. Chomsky\'s Innatism directly challenged BEHAVIOURISM — arguing that language is innate, not just learned habits.'},
+  {q:'According to Innatism, the role of the environment is:',opts:['The only factor in language learning','To trigger the innate language faculty','Completely irrelevant','To provide reinforcement for habits','None of the above'],a:1,ex:'✅ B is correct. The environment provides input that TRIGGERS the LAD, but language ability itself is innate.'},
+
+  // Questions 21-30: Constructivism
+  {q:'According to Constructivism, knowledge is:',opts:['Transmitted directly from teacher to student','Built actively by the learner through experience','Entirely innate and genetic','Formed only through habit formation','None of the above'],a:1,ex:'✅ B is correct. Constructivism = learners actively BUILD knowledge through experience, not passive receiving.'},
+  {q:'"Assimilation" in Piaget\'s theory means:',opts:['Changing schemas to fit new information','Adding new information to an existing schema','Rejecting information that doesn\'t fit','Learning through social interaction','None of the above'],a:1,ex:'✅ B is correct. ASSIMILATION = adding new info to an existing schema WITHOUT changing it. Example: seeing a new dog, adding it to "dog" schema.'},
+  {q:'"Accommodation" in Piaget\'s theory means:',opts:['Adding new information to an existing schema','Modifying schemas when new information doesn\'t fit','Memorizing through repetition','Learning from more capable peers','None of the above'],a:1,ex:'✅ B is correct. ACCOMMODATION = ADJUSTING schemas because new info doesn\'t fit. Example: seeing a cat, realizing it\'s NOT a dog, creating "cat" schema.'},
+  {q:'The concept of "equilibrium" refers to:',opts:['Balance between assimilation and accommodation','The final stage of development','A teaching technique','Social interaction balance','None of the above'],a:0,ex:'✅ A is correct. EQUILIBRIUM = balance between what you know and new experiences. Disequilibrium triggers learning.'},
+  {q:'In Piaget\'s stages, the Sensorimotor stage occurs:',opts:['Birth to 2 years','2 to 7 years','7 to 11 years','11 to 16+ years','None of the above'],a:0,ex:'✅ A is correct. Sensorimotor = Birth to 2 years. Learning through senses and actions.'},
+  {q:'The Preoperational stage (2-7 years) is characterized by:',opts:['Abstract logical thinking','Symbolic thinking but lacking logic','Mathematical operations','Hypothesis testing','None of the above'],a:1,ex:'✅ B is correct. Preoperational = symbolic thinking (words/images) but lacks logical reasoning. Abstract thinking = Formal Operational.'},
+  {q:'During which stage can children think abstractly and hypothetically?',opts:['Sensorimotor','Preoperational','Concrete Operational','Formal Operational','None of the above'],a:3,ex:'✅ D is correct. FORMAL OPERATIONAL (11-16+) = abstract, logical, scientific, hypothetical thinking.'},
+  {q:'According to Constructivism, the teacher\'s role is:',opts:['Authority who transmits knowledge','Guide who facilitates discovery','Controller who drills students','Source of all correct answers','None of the above'],a:1,ex:'✅ B is correct. In Constructivism, teacher is a GUIDE who facilitates student discovery, not a knowledge transmitter.'},
+  {q:'Constructivism supports which teaching approach?',opts:['Deductive grammar teaching','Teacher-centered lectures','Discovery/inductive learning','Stimulus-Response drilling','None of the above'],a:2,ex:'✅ C is correct. Constructivism supports DISCOVERY (inductive) learning — students figure out rules themselves.'},
+  {q:'According to Piaget, development:',opts:['Follows learning','Happens before learning','Is unrelated to learning','Occurs only through social interaction','None of the above'],a:1,ex:'✅ B is correct. Piaget: DEVELOPMENT happens BEFORE learning — you must be developmentally ready. (Vygotsky disagreed: learning leads development.)'},
+
+  // Questions 31-40: Comparisons & Applications
+  {q:'The KEY difference between Cognitivism and Behaviourism is:',opts:['Cognitivism rejects all forms of practice','Cognitivism studies internal mental processes','Behaviourism focuses on the mind','They are essentially the same theory','None of the above'],a:1,ex:'✅ B is correct. Cognitivism studies INTERNAL mental processes; Behaviourism focuses only on observable behaviour.'},
+  {q:'The KEY difference between Cognitivism and Constructivism is:',opts:['Cognitivism focuses on mental processes; Constructivism on building knowledge','They are from different theorists','Cognitivism uses drills; Constructivism uses reinforcement','Cognitivism is about innate ability','None of the above'],a:0,ex:'✅ A is correct. Cognitivism = HOW the mind processes info. Constructivism = HOW knowledge is actively built. Both from Piaget.'},
+  {q:'Which theory would support letting students figure out grammar rules from examples?',opts:['Behaviourism','Audio-Lingual Method','Constructivism','Classical Conditioning','None of the above'],a:2,ex:'✅ C is correct. CONSTRUCTIVISM supports inductive/discovery learning — students discover rules themselves.'},
+  {q:'A teacher uses mind maps to help students organize vocabulary. This reflects:',opts:['Behaviourism','Cognitivism','Innatism','Social Constructivism','None of the above'],a:1,ex:'✅ B is correct. Mind maps organize information into SCHEMAS = Cognitivist approach.'},
+  {q:'A teacher provides rich language input and trusts children\'s natural ability. This reflects:',opts:['Behaviourism','Cognitivism','Innatism','Grammar Translation','None of the above'],a:2,ex:'✅ C is correct. Rich input + trusting natural ability = INNATISM (LAD will do the work).'},
+  {q:'Which statement is TRUE about all three theories (Cognitivism, Innatism, Constructivism)?',opts:['They all focus on observable behaviour only','They all reject the role of the mind','They all view the learner as active, not passive','They all emphasize drilling and repetition','None of the above'],a:2,ex:'✅ C is correct. All three are MENTALIST theories — they view learners as ACTIVE (processing, constructing, acquiring) rather than passive receivers.'},
+  {q:'Conservation (understanding that quantity remains the same despite shape change) develops in:',opts:['Sensorimotor stage','Preoperational stage','Concrete Operational stage','Formal Operational stage','None of the above'],a:2,ex:'✅ C is correct. Conservation develops in CONCRETE OPERATIONAL (7-11 years) when logical thinking emerges.'},
+  {q:'Object permanence (knowing objects exist when out of sight) develops in:',opts:['Sensorimotor stage','Preoperational stage','Concrete Operational stage','Formal Operational stage','None of the above'],a:0,ex:'✅ A is correct. Object permanence develops in SENSORIMOTOR (0-2 years).'},
+  {q:'Which statement would a Behaviourist DISAGREE with?',opts:['Language is learned through repetition','Reinforcement shapes behaviour','Children are born with innate language ability','Errors should be corrected immediately','None of the above'],a:2,ex:'✅ C is correct. "Innate language ability" is INNATISM — the direct opposite of Behaviourism.'},
+  {q:'Which combination correctly matches theorist and concept?',opts:['Chomsky — Schema, Assimilation','Piaget — LAD, Universal Grammar','Skinner — Reinforcement, Operant Conditioning','Vygotsky — Classical Conditioning','None of the above'],a:2,ex:'✅ C is correct. SKINNER = Reinforcement + Operant Conditioning. Piaget = Schema/Assimilation; Chomsky = LAD/UG; Vygotsky = ZPD/Social Constructivism.'}
+];
+
+var curSec=0,qCur=0,qScore=0,qAns=false,audioPlaying=false,audioTimer=null;
+
+function goToSection(n){
+  document.querySelectorAll('#dp-l3 .sblock').forEach(function(b){b.classList.remove('vis')});
+  var sec=document.getElementById('dp3s'+n);
+  if(sec)sec.classList.add('vis');
+  curSec=n;
+  updateDots();
+  document.getElementById('dp-l3').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function updateDots(){
+  document.querySelectorAll('#dp-l3 .snavdot').forEach(function(d){
+    var i=parseInt(d.getAttribute('data-s'));
+    d.classList.remove('active','done');
+    if(i<curSec)d.classList.add('done');
+    if(i===curSec)d.classList.add('active');
+  });
+}
+
+document.querySelectorAll('#dp-l3 .snavdot').forEach(function(d){
+  d.addEventListener('click',function(){goToSection(parseInt(d.getAttribute('data-s')))});
+});
+
+document.querySelectorAll('#dp-l3 .nb[data-go]').forEach(function(btn){
+  btn.addEventListener('click',function(){goToSection(parseInt(btn.getAttribute('data-go')))});
+});
+
+document.querySelectorAll('#dp-l3 .tcard').forEach(function(c){
+  c.addEventListener('click',function(){c.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l3 .tabs').forEach(function(tg){
+  tg.querySelectorAll('.tab').forEach(function(tab){
+    tab.addEventListener('click',function(){
+      var pid=tab.getAttribute('data-tab');
+      tg.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});
+      tab.classList.add('active');
+      tg.parentElement.querySelectorAll('.tabpanel').forEach(function(p){p.classList.remove('vis')});
+      var pnl=document.getElementById(pid);
+      if(pnl)pnl.classList.add('vis');
+    });
+  });
+});
+
+/* Listening Match Check */
+var chkmatch=document.getElementById('dp3chkmatch');
+if(chkmatch)chkmatch.addEventListener('click',function(){
+  for(var i=0;i<5;i++){
+    var sel=document.getElementById('dp3ms'+i);
+    var fb=document.getElementById('dp3mf'+i);
+    if(!sel)continue;
+    var ans=sel.getAttribute('data-a'),giv=sel.value;
+    var ok=giv===ans;
+    sel.classList.toggle('ok',ok);sel.classList.toggle('bad',!ok);
+    fb.textContent=ok?'✅ Correct!':'❌ Answer: '+ans;
+    fb.classList.toggle('ok',ok);fb.classList.toggle('bad',!ok);
+  }
+});
+
+var pbtn=document.getElementById('dp3playbtn'),apf=document.getElementById('dp3apf');
+var audioTxt="I believe children come to my classroom with an innate capacity for language — my job is to provide rich, meaningful input and let their natural abilities do the work. That's why I surround them with stories, conversations, and authentic texts rather than drilling isolated grammar rules. When teaching new concepts, I always connect them to what students already know — their existing mental frameworks. If they have a schema for animals, I build on that. Sometimes their old knowledge works perfectly — they just add the new word to what they already have. But sometimes, their existing understanding doesn't fit the new information, so they have to adjust their thinking. I rarely tell students the grammar rule directly. Instead, I show them lots of examples and let them discover the pattern themselves. This way, they're actively building their own understanding, not just memorizing what I said. And I always consider their developmental stage — some abstract concepts simply need to wait until they're ready. The key difference from behaviourism? I focus on what's happening inside their minds, not just their observable responses.";
+
+if(pbtn)pbtn.addEventListener('click',function(){
+  if(audioPlaying){window.speechSynthesis&&window.speechSynthesis.cancel();clearInterval(audioTimer);audioPlaying=false;pbtn.textContent='▶';if(apf)apf.style.width='0%';return;}
+  if(!window.speechSynthesis)return;
+  var u=new SpeechSynthesisUtterance(audioTxt);u.lang='en-GB';u.rate=0.9;
+  var vv=window.speechSynthesis.getVoices(),v=vv.find(function(x){return x.lang==='en-GB'})||vv.find(function(x){return x.lang.startsWith('en')});
+  if(v)u.voice=v;
+  audioPlaying=true;pbtn.textContent='⏸';
+  var w=0;audioTimer=setInterval(function(){w=Math.min(100,w+0.5);if(apf)apf.style.width=w+'%';if(w>=100)clearInterval(audioTimer)},400);
+  u.onend=function(){audioPlaying=false;pbtn.textContent='▶';clearInterval(audioTimer)};
+  window.speechSynthesis.speak(u);
+});
+
+var stog=document.getElementById('dp3scrtog'),sbox=document.getElementById('dp3scrbox');
+if(stog)stog.addEventListener('click',function(){sbox&&sbox.classList.toggle('show')});
+
+var wtxt=document.getElementById('dp3wtxt'),wcnt=document.getElementById('dp3wcnt'),wsub=document.getElementById('dp3wsub'),wfb=document.getElementById('dp3wfb');
+if(wtxt)wtxt.addEventListener('input',function(){
+  var wc=wtxt.value.trim()===''?0:wtxt.value.trim().split(/\s+/).length;
+  if(wcnt){wcnt.textContent=wc+' words (aim for 60–80)';wcnt.style.color=wc>=60?'#2E7D52':'#7A7A7A'}
+});
+if(wsub)wsub.addEventListener('click',function(){
+  if(!wtxt||wtxt.value.trim().split(/\s+/).length<20){alert('Please write at least 20 words!');return}
+  if(wfb)wfb.classList.add('show');wsub.textContent='✅ Checked!';wsub.style.background='#2E7D52';
+});
+
+/* 40-Question Quiz with A,B,C,D,E */
+function renderQ(){
+  var d=QD[qCur],area=document.getElementById('dp3qarea'),fb=document.getElementById('dp3qfb'),nxt=document.getElementById('dp3qnxt');
+  fb.className='qfbm';nxt.classList.remove('show');qAns=false;
+  var pf=document.getElementById('dp3qpf');
+  if(document.getElementById('dp3qcnt'))document.getElementById('dp3qcnt').textContent=(qCur+1)+' / '+QD.length;
+  if(pf)pf.style.width=((qCur+1)/QD.length*100)+'%';
+  var labels=['A','B','C','D','E'];
+  var html='<div class="qq"><span class="qqn">'+(qCur+1)+'</span>'+d.q+'</div><div class="qopts">';
+  d.opts.forEach(function(o,i){html+='<button class="qopt" data-i="'+i+'"><span class="ql">'+labels[i]+'.</span> '+o+'</button>'});
+  html+='</div>';area.innerHTML=html;
+  area.querySelectorAll('.qopt').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      if(qAns)return;qAns=true;
+      var ch=parseInt(btn.getAttribute('data-i'));
+      area.querySelectorAll('.qopt').forEach(function(b){b.disabled=true});
+      if(ch===d.a){btn.classList.add('qco');qScore++;if(document.getElementById('dp3qsl'))document.getElementById('dp3qsl').textContent='Score: '+qScore;fb.textContent=d.ex;fb.className='qfbm show ok'}
+      else{btn.classList.add('qwr');area.querySelectorAll('.qopt')[d.a].classList.add('qco');fb.innerHTML='❌ Incorrect. '+d.ex;fb.className='qfbm show bad'}
+      nxt.classList.add('show');nxt.textContent=qCur<QD.length-1?'Next Question →':'See Results 🎯';
+    });
+  });
+}
+
+var qnxt=document.getElementById('dp3qnxt');
+if(qnxt)qnxt.addEventListener('click',function(){qCur++;if(qCur>=QD.length)showScore();else renderQ()});
+
+function showScore(){
+  var area=document.getElementById('dp3qarea'),fb=document.getElementById('dp3qfb'),nxt=document.getElementById('dp3qnxt'),pr=document.querySelector('#dp-l3 .qpr'),pl=document.getElementById('dp3spl');
+  if(area)area.style.display='none';if(fb)fb.style.display='none';if(nxt)nxt.style.display='none';if(pr)pr.style.display='none';if(pl)pl.classList.add('show');
+  var fin=document.getElementById('dp3sfin');if(fin)fin.textContent=qScore;
+  var pct=qScore/QD.length,msg,sub;
+  if(pct>=0.9){msg='Excellent! 🏆';sub='You\'re exam-ready!'}
+  else if(pct>=0.75){msg='Great Work! 🌟';sub='Review the questions you missed.'}
+  else if(pct>=0.6){msg='Good Progress! 👍';sub='Study the theory sections again.'}
+  else if(pct>=0.4){msg='Keep Practising! 💪';sub='Focus on the concepts you struggled with.'}
+  else{msg='More Study Needed 📚';sub='Review all sections before retrying.'}
+  if(document.getElementById('dp3smsg'))document.getElementById('dp3smsg').textContent=msg;
+  if(document.getElementById('dp3ssub'))document.getElementById('dp3ssub').textContent=sub;
+}
+
+var srty=document.getElementById('dp3srty');
+if(srty)srty.addEventListener('click',function(){
+  qScore=0;qCur=0;qAns=false;
+  var area=document.getElementById('dp3qarea'),fb=document.getElementById('dp3qfb'),nxt=document.getElementById('dp3qnxt'),pr=document.querySelector('#dp-l3 .qpr'),pl=document.getElementById('dp3spl');
+  if(area){area.style.display='block';area.innerHTML=''}if(fb){fb.style.display='block';fb.className='qfbm'}if(nxt)nxt.style.display='none';if(pr)pr.style.display='flex';if(pl)pl.classList.remove('show');
+  if(document.getElementById('dp3qsl'))document.getElementById('dp3qsl').textContent='Score: 0';
+  renderQ();
+});
+
+renderQ();
+if(window.speechSynthesis){window.speechSynthesis.getVoices();window.speechSynthesis.onvoiceschanged=function(){window.speechSynthesis.getVoices()}}
+})();
+</script>
+
+<!-- AUTO-RESIZE (MUST BE LAST) -->
+<script>
+(function(){
+  function sendHeight(){var h=document.documentElement.scrollHeight||document.body.scrollHeight;window.parent.postMessage({epHeight:h},'*')}
+  sendHeight();window.addEventListener('load',sendHeight);window.addEventListener('resize',sendHeight);
+  var mo=new MutationObserver(sendHeight);mo.observe(document.body,{childList:true,subtree:true,attributes:true});
+})();
+</script>
+
+</body>
+</html>

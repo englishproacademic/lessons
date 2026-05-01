@@ -1,0 +1,974 @@
+<!--============================================================
+     EnglishPro · Didactics Series · Lesson 4
+     Learning Theories III: Social Constructivism & Krashen's Hypotheses
+     Vygotsky, ZPD, Scaffolding, Input Hypothesis, Affective Filter
+     GitHub hosted — embedded in Blogger via iframe
+     100% self-contained — no external JS dependencies
+     UPDATED: Relevant listening + 40-MCQ exam section
+     ============================================================-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Constructivism & Krashen's Hypotheses | EnglishPro Didactics Series</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;family=DM+Sans:wght@300;400;500;600&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{margin:0;padding:0;background:#FAFAF7;direction:ltr;text-align:left}
+
+#dp-l4{
+  --ny:#0D2B4E;--ny2:#1A4070;
+  --go:#C8933A;--go2:#E8B86D;--gop:#FDF6EC;
+  --cr:#FAFAF7;--wh:#fff;
+  --ink:#1A1A1A;--ink2:#3D3D3D;--mu:#7A7A7A;
+  --bd:#E2DDD6;--bdl:#F0EDE8;
+  --gr:#2E7D52;--grb:#EBF5EF;
+  --rd:#C0392B;--rdb:#FDECEA;
+  --bl:#1E5FA8;--blb:#EBF2FB;
+  --pu:#7C3AED;--pub:#F3F0FF;
+  --te:#0E7490;--teb:#ECFEFF;
+  --or:#D97706;--orb:#FEF3C7;
+  --sh1:0 2px 8px rgba(13,43,78,.07);
+  --sh2:0 6px 20px rgba(13,43,78,.10);
+  --r:12px;--rl:20px;
+  font-family:'DM Sans',sans-serif;
+  color:var(--ink);background:var(--cr);
+  line-height:1.7;-webkit-font-smoothing:antialiased;
+  display:block;overflow:hidden;direction:ltr;text-align:left
+}
+#dp-l4 *,#dp-l4 *::before,#dp-l4 *::after{box-sizing:border-box;margin:0;padding:0}
+#dp-l4 button{cursor:pointer;font-family:'DM Sans',sans-serif;border:none;background:none}
+#dp-l4 textarea,#dp-l4 input,#dp-l4 select{font-family:'DM Sans',sans-serif}
+
+/* HERO */
+#dp-l4 .lhero{background:linear-gradient(150deg,#0a1f38 0%,#0D2B4E 50%,#122e52 100%);padding:48px 24px 40px;position:relative;overflow:hidden;border-radius:var(--rl) var(--rl) 0 0}
+#dp-l4 .lhero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%,rgba(200,147,58,.08) 0%,transparent 60%),radial-gradient(circle at 80% 20%,rgba(124,58,237,.06) 0%,transparent 50%);pointer-events:none}
+#dp-l4 .lhero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,147,58,.4),transparent)}
+#dp-l4 .lhero-in{max-width:720px;margin:0 auto;position:relative;z-index:1}
+#dp-l4 .lvlbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,147,58,.12);border:1px solid rgba(200,147,58,.28);color:var(--go2);font-size:.68rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:18px}
+#dp-l4 .ltitle{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:900;color:#F5F0E8;line-height:1.15;margin-bottom:10px;letter-spacing:-.02em}
+#dp-l4 .ltitle em{color:var(--go);font-style:italic}
+#dp-l4 .lsub{font-size:.9rem;color:rgba(245,240,232,.62);margin-bottom:22px;max-width:520px;line-height:1.6}
+#dp-l4 .spills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px}
+#dp-l4 .spill{font-size:.67rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 11px;border-radius:100px}
+#dp-l4 .sp-th{background:rgba(124,58,237,.25);color:#C4B5FD}
+#dp-l4 .sp-ex{background:rgba(30,95,168,.25);color:#7DB8F0}
+#dp-l4 .sp-qu{background:rgba(200,147,58,.25);color:var(--go2)}
+#dp-l4 .sp-ic{background:rgba(46,125,82,.25);color:#6BCFA0}
+
+/* Nav dots */
+#dp-l4 .snav{display:flex;align-items:center;gap:5px;flex-wrap:wrap;padding-top:20px;border-top:1px solid rgba(255,255,255,.08)}
+#dp-l4 .snavdot{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;font-size:.7rem;font-weight:700;border:2px solid rgba(255,255,255,.18);color:rgba(255,255,255,.32);cursor:pointer;transition:all .25s;flex-shrink:0}
+#dp-l4 .snavdot.done{border-color:var(--gr);background:var(--gr);color:#fff}
+#dp-l4 .snavdot.active{border-color:var(--go);background:var(--go);color:#fff}
+#dp-l4 .snavsep{width:16px;height:2px;background:rgba(255,255,255,.1);border-radius:1px;flex-shrink:0}
+#dp-l4 .snavlbl{font-size:.63rem;color:rgba(245,240,232,.38);margin-left:6px}
+
+/* BODY */
+#dp-l4 .lbody{max-width:720px;margin:0 auto;padding:32px 20px 64px;background:var(--cr)}
+#dp-l4 .sblock{background:var(--wh);border:1px solid var(--bdl);border-radius:var(--rl);padding:28px;margin-bottom:24px;display:none;animation:dp4up .35s ease both;box-shadow:var(--sh1)}
+#dp-l4 .sblock.vis{display:block}
+@keyframes dp4up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+#dp-l4 .slabel{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--go);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+#dp-l4 .slabel::after{content:'';flex:1;height:1px;background:var(--bdl)}
+#dp-l4 .sheading{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ny);margin-bottom:16px;line-height:1.25}
+#dp-l4 .sheading em{color:var(--go);font-style:italic}
+#dp-l4 .stxt{font-size:.9rem;color:var(--ink2);margin-bottom:16px;line-height:1.65}
+
+/* Scene */
+#dp-l4 .scene{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:20px;margin-bottom:20px;position:relative;overflow:hidden}
+#dp-l4 .scene::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(200,147,58,.08),transparent 60%);pointer-events:none}
+#dp-l4 .s-ico{font-size:1.8rem;margin-bottom:8px;position:relative;z-index:1}
+#dp-l4 .s-t{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#F5F0E8;position:relative;z-index:1;margin-bottom:5px}
+#dp-l4 .s-d{font-size:.83rem;color:rgba(245,240,232,.65);position:relative;z-index:1;line-height:1.55}
+
+/* Callouts */
+#dp-l4 .co{display:flex;gap:10px;padding:13px 15px;border-radius:var(--r);margin:14px 0;font-size:.855rem;line-height:1.6}
+#dp-l4 .co-tip{background:var(--gop);border:1px solid rgba(200,147,58,.2);color:var(--ink2)}
+#dp-l4 .co-info{background:var(--blb);border:1px solid rgba(30,95,168,.15);color:var(--ink2)}
+#dp-l4 .co-pur{background:var(--pub);border:1px solid rgba(124,58,237,.15);color:var(--ink2)}
+#dp-l4 .co-teal{background:var(--teb);border:1px solid rgba(14,116,144,.15);color:var(--ink2)}
+#dp-l4 .co-or{background:var(--orb);border:1px solid rgba(217,119,6,.15);color:var(--ink2)}
+#dp-l4 .co-ico{font-size:1rem;flex-shrink:0;margin-top:1px}
+
+/* Gbox */
+#dp-l4 .gbox{border-radius:0 var(--r) var(--r) 0;padding:18px 20px;margin:18px 0}
+#dp-l4 .gbox-bl{background:var(--blb);border:1px solid rgba(30,95,168,.2);border-left:4px solid var(--bl)}
+#dp-l4 .gbox-go{background:var(--gop);border:1px solid rgba(200,147,58,.2);border-left:4px solid var(--go)}
+#dp-l4 .gbox-gr{background:var(--grb);border:1px solid rgba(46,125,82,.2);border-left:4px solid var(--gr)}
+#dp-l4 .gbox-pu{background:var(--pub);border:1px solid rgba(124,58,237,.15);border-left:4px solid var(--pu)}
+#dp-l4 .gbox-te{background:var(--teb);border:1px solid rgba(14,116,144,.15);border-left:4px solid var(--te)}
+#dp-l4 .gbox h4{font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:11px}
+#dp-l4 .gbox-bl h4{color:var(--bl)}
+#dp-l4 .gbox-go h4{color:var(--go)}
+#dp-l4 .gbox-gr h4{color:var(--gr)}
+#dp-l4 .gbox-pu h4{color:var(--pu)}
+#dp-l4 .gbox-te h4{color:var(--te)}
+#dp-l4 .grule{font-family:'DM Mono',monospace;font-size:.86rem;color:var(--ny);background:rgba(255,255,255,.65);padding:9px 14px;border-radius:7px;margin-bottom:7px;line-height:1.6}
+#dp-l4 .grule span{color:var(--bl);font-weight:600}
+#dp-l4 .grule em{color:var(--go);font-style:normal;font-weight:600}
+#dp-l4 .grule strong{color:var(--gr);font-weight:700}
+
+/* Flip Cards */
+#dp-l4 .tcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin:20px 0}
+#dp-l4 .tcard{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:18px;cursor:pointer;transition:all .22s;position:relative;overflow:hidden}
+#dp-l4 .tcard::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;transition:background .2s}
+#dp-l4 .tcard:hover{border-color:var(--go);transform:translateY(-3px);box-shadow:var(--sh2)}
+#dp-l4 .tcard.fl{background:var(--gop);border-color:var(--go)}
+#dp-l4 .tcard.fl::before{background:var(--go)}
+#dp-l4 .tc-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+#dp-l4 .tc-ava{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+#dp-l4 .tc-info h4{font-size:.95rem;font-weight:700;color:var(--ny);margin-bottom:2px}
+#dp-l4 .tc-info span{font-size:.72rem;color:var(--mu)}
+#dp-l4 .tc-hint{font-size:.78rem;color:var(--mu);font-style:italic}
+#dp-l4 .tc-body{display:none;margin-top:12px}
+#dp-l4 .tcard.fl .tc-hint{display:none}
+#dp-l4 .tcard.fl .tc-body{display:block}
+#dp-l4 .tc-body p{font-size:.85rem;color:var(--ink2);line-height:1.6;margin-bottom:10px}
+#dp-l4 .tc-key{background:var(--wh);border-radius:8px;padding:12px;margin-top:10px}
+#dp-l4 .tc-key h5{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--go);margin-bottom:6px}
+#dp-l4 .tc-key p{font-size:.82rem;color:var(--ny);font-weight:600;line-height:1.5;margin:0}
+
+/* Tables */
+#dp-l4 .gtbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.85rem}
+#dp-l4 .gtbl th{background:var(--ny);color:#F5F0E8;padding:9px 13px;text-align:left;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+#dp-l4 .gtbl th:first-child{border-radius:var(--r) 0 0 0}
+#dp-l4 .gtbl th:last-child{border-radius:0 var(--r) 0 0}
+#dp-l4 .gtbl td{padding:9px 13px;border-bottom:1px solid var(--bdl);color:var(--ink2);vertical-align:top}
+#dp-l4 .gtbl tr:nth-child(even) td{background:var(--cr)}
+#dp-l4 .tbl-b{color:var(--bl);font-weight:600}
+#dp-l4 .tbl-g{color:var(--go);font-weight:600}
+#dp-l4 .tbl-gr{color:var(--gr);font-weight:600}
+#dp-l4 .tbl-pu{color:var(--pu);font-weight:600}
+
+/* Tabs */
+#dp-l4 .tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+#dp-l4 .tab{padding:9px 18px;border-radius:var(--r);font-size:.82rem;font-weight:600;background:var(--cr);border:2px solid var(--bd);color:var(--ink2);cursor:pointer;transition:all .2s}
+#dp-l4 .tab:hover{border-color:var(--go);color:var(--go)}
+#dp-l4 .tab.active{background:var(--ny);border-color:var(--ny);color:#fff}
+#dp-l4 .tabpanel{display:none}
+#dp-l4 .tabpanel.vis{display:block}
+
+/* Hypothesis cards */
+#dp-l4 .hypcards{display:flex;flex-direction:column;gap:12px;margin:20px 0}
+#dp-l4 .hypcard{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:18px;cursor:pointer;transition:all .22s}
+#dp-l4 .hypcard:hover{border-color:var(--go);transform:translateX(4px)}
+#dp-l4 .hypcard.fl{background:var(--gop);border-color:var(--go)}
+#dp-l4 .hyp-head{display:flex;align-items:center;gap:12px}
+#dp-l4 .hyp-num{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:700;flex-shrink:0;color:#fff}
+#dp-l4 .hyp-title{font-size:.95rem;font-weight:700;color:var(--ny)}
+#dp-l4 .hyp-hint{font-size:.75rem;color:var(--mu);font-style:italic;margin-top:6px}
+#dp-l4 .hyp-body{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--bdl)}
+#dp-l4 .hypcard.fl .hyp-hint{display:none}
+#dp-l4 .hypcard.fl .hyp-body{display:block}
+#dp-l4 .hyp-body p{font-size:.85rem;color:var(--ink2);line-height:1.6;margin-bottom:8px}
+#dp-l4 .hyp-ex{background:var(--wh);border-radius:8px;padding:12px;margin-top:8px}
+#dp-l4 .hyp-ex strong{color:var(--go);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase}
+#dp-l4 .hyp-ex p{font-size:.82rem;color:var(--ny);margin-top:4px;margin-bottom:0}
+
+/* Scenario Match */
+#dp-l4 .smatch{margin:20px 0}
+#dp-l4 .sm-item{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;align-items:center}
+#dp-l4 .sm-scenario{background:var(--blb);border:1px solid rgba(30,95,168,.15);border-radius:var(--r);padding:12px 14px;font-size:.85rem;color:var(--ink2);line-height:1.5}
+#dp-l4 .sm-select{border:2px solid var(--bd);border-radius:var(--r);padding:9px 12px;font-size:.85rem;color:var(--ink2);background:var(--cr);width:100%;font-family:'DM Sans',sans-serif;outline:none;transition:border-color .2s;cursor:pointer}
+#dp-l4 .sm-select:focus{border-color:var(--go)}
+#dp-l4 .sm-select.ok{border-color:var(--gr);background:var(--grb);color:var(--gr)}
+#dp-l4 .sm-select.bad{border-color:var(--rd);background:var(--rdb);color:var(--rd)}
+#dp-l4 .smfb{font-size:.82rem;font-weight:600;padding:10px 14px;border-radius:var(--r);margin-top:4px;display:none}
+#dp-l4 .smfb.ok{background:var(--grb);color:var(--gr);display:block}
+#dp-l4 .smfb.bad{background:var(--rdb);color:var(--rd);display:block}
+
+/* Stask */
+#dp-l4 .stask{border-radius:var(--r);padding:20px;margin:14px 0;border:1.5px solid}
+#dp-l4 .stask-gr{background:var(--grb);border-color:rgba(46,125,82,.22)}
+#dp-l4 .stask-bl{background:var(--blb);border-color:rgba(30,95,168,.18)}
+#dp-l4 .stask-pu{background:var(--pub);border-color:rgba(124,58,237,.18)}
+#dp-l4 .sth{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+#dp-l4 .stico{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;color:#fff}
+#dp-l4 .stitle{font-size:.9rem;font-weight:600}
+#dp-l4 .stitle-gr{color:var(--gr)}
+#dp-l4 .stitle-bl{color:var(--bl)}
+#dp-l4 .stitle-pu{color:var(--pu)}
+#dp-l4 .sinstr{font-size:.855rem;color:var(--ink2);line-height:1.6;margin-bottom:10px}
+#dp-l4 .smodel{background:var(--wh);border-radius:8px;padding:13px 15px;font-size:.84rem;color:var(--ny);line-height:1.9}
+#dp-l4 .em-gr{color:var(--gr);font-weight:600;font-style:normal}
+#dp-l4 .em-bl{color:var(--bl);font-weight:600;font-style:normal}
+#dp-l4 .em-go{color:var(--go);font-weight:600;font-style:normal}
+#dp-l4 .em-pu{color:var(--pu);font-weight:600;font-style:normal}
+
+/* Audio */
+#dp-l4 .aplayer{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:18px;display:flex;align-items:center;gap:14px;margin:14px 0;flex-wrap:wrap}
+#dp-l4 .abig{width:48px;height:48px;border-radius:50%;background:var(--go);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;transition:all .2s;cursor:pointer;border:none;box-shadow:0 4px 14px rgba(200,147,58,.4)}
+#dp-l4 .abig:hover{background:var(--go2);transform:scale(1.06)}
+#dp-l4 .ainfo{flex:1;min-width:160px}
+#dp-l4 .at{font-size:.87rem;font-weight:600;color:#F5F0E8;margin-bottom:3px}
+#dp-l4 .as{font-size:.72rem;color:rgba(245,240,232,.55)}
+#dp-l4 .apbar{height:4px;background:rgba(255,255,255,.14);border-radius:2px;margin-top:9px;overflow:hidden}
+#dp-l4 .apfill{height:100%;background:var(--go);width:0%;border-radius:2px;transition:width .3s}
+#dp-l4 .scrtog{background:rgba(255,255,255,.1);color:rgba(245,240,232,.78);font-size:.72rem;font-weight:600;padding:5px 11px;border-radius:100px;border:1px solid rgba(255,255,255,.15);cursor:pointer;transition:all .2s;flex-shrink:0}
+#dp-l4 .scrtog:hover{background:rgba(255,255,255,.2)}
+#dp-l4 .scrbox{background:var(--cr);border:1px solid var(--bd);border-radius:var(--r);padding:18px;margin-top:10px;display:none}
+#dp-l4 .scrbox.show{display:block}
+#dp-l4 .scrbox p{font-size:.875rem;color:var(--ink2);margin-bottom:7px;line-height:1.7}
+
+/* Writing */
+#dp-l4 .wa{width:100%;min-height:130px;border:2px solid var(--bd);border-radius:var(--r);padding:14px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--ink);background:var(--cr);resize:vertical;outline:none;transition:border-color .2s;line-height:1.7}
+#dp-l4 .wa:focus{border-color:var(--go)}
+#dp-l4 .wa::placeholder{color:var(--mu)}
+#dp-l4 .wcnt{font-size:.72rem;color:var(--mu);text-align:right;margin-top:5px}
+#dp-l4 .wsub{margin-top:11px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none}
+#dp-l4 .wsub:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l4 .wfb{display:none;margin-top:13px;background:var(--grb);border:1.5px solid rgba(46,125,82,.22);border-radius:var(--r);padding:15px;font-size:.855rem;color:var(--gr);line-height:1.65}
+#dp-l4 .wfb.show{display:block}
+
+/* Quiz */
+#dp-l4 .qpr{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+#dp-l4 .qpbar{flex:1;height:6px;background:var(--bd);border-radius:3px;overflow:hidden;margin:0 11px}
+#dp-l4 .qpfill{height:100%;background:linear-gradient(90deg,var(--go),var(--go2));border-radius:3px;transition:width .4s ease}
+#dp-l4 .qcnt{font-size:.77rem;font-weight:600;color:var(--mu)}
+#dp-l4 .qq{font-size:1rem;font-weight:600;color:var(--ny);margin-bottom:16px;line-height:1.5}
+#dp-l4 .qqn{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--go);color:#fff;font-size:.75rem;font-weight:700;margin-right:7px;flex-shrink:0;vertical-align:middle}
+#dp-l4 .qopts{display:flex;flex-direction:column;gap:9px}
+#dp-l4 .qopt{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:13px 16px;font-size:.9rem;color:var(--ink2);text-align:left;transition:all .2s;display:flex;align-items:center;gap:9px;cursor:pointer}
+#dp-l4 .qopt .ql{font-weight:700;color:var(--ny);min-width:18px}
+#dp-l4 .qopt:hover:not([disabled]){border-color:var(--go);background:var(--gop);transform:translateX(3px)}
+#dp-l4 .qopt.qco{border-color:var(--gr)!important;background:var(--grb)!important;color:var(--gr)!important}
+#dp-l4 .qopt.qwr{border-color:var(--rd)!important;background:var(--rdb)!important;color:var(--rd)!important}
+#dp-l4 .qfbm{display:none;margin-top:11px;padding:13px 16px;border-radius:var(--r);font-size:.86rem;font-weight:500;line-height:1.6}
+#dp-l4 .qfbm.show{display:block}
+#dp-l4 .qfbm.ok{background:var(--grb);color:var(--gr);border:1px solid rgba(46,125,82,.2)}
+#dp-l4 .qfbm.bad{background:var(--rdb);color:var(--rd);border:1px solid rgba(192,57,43,.2)}
+#dp-l4 .qnxt{margin-top:14px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;display:none;cursor:pointer;border:none}
+#dp-l4 .qnxt:hover{background:var(--go);transform:translateY(-1px)}
+#dp-l4 .qnxt.show{display:inline-block}
+#dp-l4 .spl{text-align:center;padding:28px 20px;display:none;animation:dp4up .4s ease both}
+#dp-l4 .spl.show{display:block}
+#dp-l4 .scir{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--ny),var(--ny2));display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 8px 24px rgba(13,43,78,.2)}
+#dp-l4 .snum{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:var(--go);line-height:1}
+#dp-l4 .sden{font-size:.7rem;color:rgba(245,240,232,.5)}
+#dp-l4 .smsg{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--ny);margin-bottom:7px}
+#dp-l4 .ssub{font-size:.84rem;color:var(--mu);margin-bottom:18px}
+#dp-l4 .srty{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;margin-right:8px;cursor:pointer;border:none}
+#dp-l4 .srty:hover{background:var(--go)}
+
+/* Chkb */
+#dp-l4 .chkb{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none;margin-top:6px}
+#dp-l4 .chkb:hover{background:var(--go);transform:translateY(-1px)}
+
+/* Nav buttons */
+#dp-l4 .navb{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:18px;border-top:1px solid var(--bdl);gap:10px}
+#dp-l4 .nb{display:flex;align-items:center;gap:7px;padding:11px 22px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;border:2px solid var(--bd);color:var(--ink2);background:var(--wh);cursor:pointer}
+#dp-l4 .nb:hover{border-color:var(--go);color:var(--go)}
+#dp-l4 .nb.pri{background:var(--ny);color:#fff;border-color:transparent}
+#dp-l4 .nb.pri:hover{background:var(--go);border-color:transparent}
+#dp-l4 .nb:disabled{opacity:.38;cursor:default;pointer-events:none}
+
+/* Footer */
+#dp-l4 .lft{background:var(--ny);padding:24px;text-align:center;border-radius:0 0 var(--rl) var(--rl)}
+#dp-l4 .flo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:#F5F0E8;margin-bottom:5px}
+#dp-l4 .flo em{color:var(--go);font-style:italic}
+#dp-l4 .ftx{font-size:.74rem;color:rgba(245,240,232,.42)}
+
+@media(max-width:560px){
+  #dp-l4 .lhero{padding:32px 16px 28px}
+  #dp-l4 .lbody{padding:20px 14px 48px}
+  #dp-l4 .sblock{padding:18px 14px}
+  #dp-l4 .tcards{grid-template-columns:1fr}
+  #dp-l4 .navb{flex-direction:column}
+  #dp-l4 .nb{width:100%;justify-content:center}
+  #dp-l4 .tabs{gap:4px}
+  #dp-l4 .tab{padding:7px 12px;font-size:.78rem}
+  #dp-l4 .sm-item{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div id="dp-l4">
+
+<!-- HERO -->
+<div class="lhero">
+  <div class="lhero-in">
+    <div class="lvlbadge">🎓 Didactics Series · Lesson 4 of 12</div>
+    <h1 class="ltitle">Learning Theories III:<br><em>Social Constructivism &amp; Krashen</em></h1>
+    <p class="lsub">Master Vygotsky's Zone of Proximal Development, Scaffolding, and Krashen's Five Hypotheses — the theoretical foundations of modern communicative teaching.</p>
+    <div class="spills">
+      <span class="spill sp-th">🧠 SLA Theory</span>
+      <span class="spill sp-ex">🔬 5 Hypotheses</span>
+      <span class="spill sp-ic">🎯 Interactive Tasks</span>
+      <span class="spill sp-qu">📝 40-Question Exam</span>
+    </div>
+    <nav class="snav">
+      <div class="snavdot active" data-s="0">1</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="1">2</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="2">3</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="3">4</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="4">5</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="5">6</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="6">7</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="7">8</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="8">9</div>
+      <span class="snavlbl">9 sections</span>
+    </nav>
+  </div>
+</div>
+
+<div class="lbody">
+
+<!-- SECTION 1: FOUNDATIONS -->
+<section class="sblock vis" id="dp4s0">
+  <div class="slabel">Section 1 · Foundations</div>
+  <h2 class="sheading">Two Pillars of Modern Language Teaching</h2>
+
+  <div class="scene">
+    <div class="s-ico">🌉</div>
+    <div class="s-t">From Individual Learning to Social Interaction</div>
+    <div class="s-d">Piaget focused on how individuals construct knowledge. Vygotsky added a crucial dimension: learning happens through SOCIAL INTERACTION. Krashen then applied these ideas specifically to second language acquisition.</div>
+  </div>
+
+  <p class="stxt">This lesson covers two highly tested theories: <strong>Social Constructivism</strong> (Vygotsky) and <strong>Krashen's Five Hypotheses</strong>. Together, they explain WHY communicative, interactive, low-anxiety classrooms produce better language learners.</p>
+
+  <div class="gbox gbox-go">
+    <h4>What You'll Master</h4>
+    <div class="grule"><strong>Social Constructivism</strong> — Learning through social interaction (Vygotsky)</div>
+    <div class="grule"><em>Zone of Proximal Development (ZPD)</em> — The gap between what learners can do alone vs. with help</div>
+    <div class="grule"><span>Scaffolding</span> — Temporary support adjusted to learner needs</div>
+    <div class="grule"><strong>Krashen's 5 Hypotheses</strong> — Acquisition/Learning, Monitor, Input, Affective Filter, Natural Order</div>
+  </div>
+
+  <table class="gtbl">
+    <tr><th>Theorist</th><th>Theory</th><th>Core Idea</th><th>Key Term</th></tr>
+    <tr><td class="tbl-pu">Vygotsky</td><td>Social Constructivism</td><td>Learning is social</td><td>ZPD, Scaffolding</td></tr>
+    <tr><td class="tbl-b">Krashen</td><td>Monitor Model</td><td>Input drives acquisition</td><td>i+1, Affective Filter</td></tr>
+  </table>
+
+  <div class="co co-info"><span class="co-ico">📚</span><span><strong>Teaching Connection:</strong> These theories support <em>Communicative Language Teaching (CLT)</em>, <em>Task-Based Learning</em>, and the <em>Natural Approach</em>.</span></div>
+
+  <div class="navb">
+    <button class="nb" disabled>← Back</button>
+    <button class="nb pri" data-go="1">Next: Social Constructivism →</button>
+  </div>
+</section>
+
+<!-- SECTION 2: SOCIAL CONSTRUCTIVISM -->
+<section class="sblock" id="dp4s1">
+  <div class="slabel">Section 2 · Social Constructivism</div>
+  <h2 class="sheading">Vygotsky — <em>Learning is Social</em></h2>
+
+  <div class="tcards">
+    <div class="tcard" data-card="0">
+      <div class="tc-head">
+        <div class="tc-ava" style="background:#F3F0FF">👥</div>
+        <div class="tc-info"><h4>Lev Vygotsky</h4><span>Russian · Social Constructivism</span></div>
+      </div>
+      <div class="tc-hint">Tap to reveal...</div>
+      <div class="tc-body">
+        <p>Vygotsky believed that <strong>cognitive development happens through social interaction</strong>. Unlike Piaget (who focused on individual construction), Vygotsky emphasized that learning occurs first BETWEEN people, then WITHIN the individual.</p>
+        <div class="tc-key"><h5>Key Contribution</h5><p>Zone of Proximal Development (ZPD) and the concept of Scaffolding</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gbox gbox-pu">
+    <h4>Core Principles of Social Constructivism</h4>
+    <div class="grule"><strong>Learning is social</strong> — happens through interaction with others</div>
+    <div class="grule"><em>More Knowledgeable Other (MKO)</em> — Teacher, peer, or expert who provides guidance</div>
+    <div class="grule"><span>Language is a tool for thought</span> — We think through language</div>
+    <div class="grule"><strong>Learning leads development</strong> — (opposite of Piaget: development before learning)</div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Trap — Piaget vs Vygotsky:</strong><br>• <strong>Piaget:</strong> Development happens BEFORE learning (readiness)<br>• <strong>Vygotsky:</strong> Learning LEADS development (with proper support)</span></div>
+
+  <table class="gtbl">
+    <tr><th>Piaget (Constructivism)</th><th>Vygotsky (Social Constructivism)</th></tr>
+    <tr><td>Individual constructs knowledge</td><td>Knowledge is co-constructed socially</td></tr>
+    <tr><td>Development before learning</td><td>Learning leads development</td></tr>
+    <tr><td>Focus on stages</td><td>Focus on social interaction (ZPD)</td></tr>
+    <tr><td>Teacher as guide</td><td>Teacher as MKO (More Knowledgeable Other)</td></tr>
+  </table>
+
+  <div class="navb">
+    <button class="nb" data-go="0">← Introduction</button>
+    <button class="nb pri" data-go="2">Next: ZPD & Scaffolding →</button>
+  </div>
+</section>
+
+<!-- SECTION 3: ZPD & SCAFFOLDING -->
+<section class="sblock" id="dp4s2">
+  <div class="slabel">Section 3 · Key Concepts</div>
+  <h2 class="sheading">ZPD &amp; Scaffolding — <em>The Heart of Vygotsky</em></h2>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="t3a">🎯 Zone of Proximal Development</button>
+    <button class="tab" data-tab="t3b">🏗️ Scaffolding</button>
+    <button class="tab" data-tab="t3c">🎓 Classroom Application</button>
+  </div>
+
+  <div class="tabpanel vis" id="t3a">
+    <div class="gbox gbox-bl">
+      <h4>Zone of Proximal Development (ZPD)</h4>
+      <div class="grule">The <strong>gap</strong> between what a learner can do <em>alone</em> vs. what they can do <em>with help</em></div>
+      <div class="grule"><span>Zone 1:</span> What learner can do independently (too easy)</div>
+      <div class="grule"><em>Zone 2 (ZPD):</em> What learner can do WITH guidance (optimal learning zone)</div>
+      <div class="grule"><strong>Zone 3:</strong> Beyond current ability even with help (too hard)</div>
+    </div>
+
+    <p class="stxt">Learning is most effective when instruction targets the ZPD — not too easy (boring), not too hard (frustrating), but just challenging enough with proper support.</p>
+
+    <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Memory Tip:</strong> ZPD = "With help, I can do MORE than alone." The teacher's job is to work IN this zone.</span></div>
+  </div>
+
+  <div class="tabpanel" id="t3b">
+    <div class="gbox gbox-gr">
+      <h4>Scaffolding</h4>
+      <div class="grule"><strong>Temporary support</strong> provided by teacher or MKO</div>
+      <div class="grule">Support is <em>adjusted</em> to match learner's current level</div>
+      <div class="grule">Support is <span>gradually removed</span> as learner becomes capable</div>
+      <div class="grule">Goal: Learner becomes <strong>independent</strong></div>
+    </div>
+
+    <p class="stxt">Just like scaffolding on a building is removed once construction is complete, teaching scaffolding is removed once the learner can perform independently.</p>
+
+    <div class="co co-pur"><span class="co-ico">🧠</span><span><strong>Examples of Scaffolding:</strong><br>• Sentence starters: "I think... because..."<br>• Graphic organizers<br>• Think-alouds<br>• Peer tutoring<br>• Breaking complex tasks into steps</span></div>
+  </div>
+
+  <div class="tabpanel" id="t3c">
+    <div class="stask stask-gr">
+      <div class="sth"><div class="stico" style="background:var(--gr)">🗣️</div><div class="stitle stitle-gr">Classroom Application</div></div>
+      <div class="smodel">
+        <strong>ZPD in action:</strong><br>
+        • A student can't write a paragraph alone, but CAN with sentence starters and peer help<br>
+        • Teacher identifies this gap → provides scaffolding → student eventually writes independently<br><br>
+        <strong>Scaffolding examples:</strong><br>
+        • Modeling: Teacher demonstrates the task first<br>
+        • Prompts: "What comes next? Remember the structure..."<br>
+        • Collaborative learning: Pair work with more capable peer<br>
+        • Gradual release: "I do → We do → You do"
+      </div>
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="1">← Social Constructivism</button>
+    <button class="nb pri" data-go="3">Next: Krashen's Theory →</button>
+  </div>
+</section>
+
+<!-- SECTION 4: KRASHEN OVERVIEW -->
+<section class="sblock" id="dp4s3">
+  <div class="slabel">Section 4 · Krashen's Theory</div>
+  <h2 class="sheading">Krashen's Monitor Model — <em>5 Hypotheses</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">📡</div>
+    <div class="s-t">The Most Influential Theory in Second Language Acquisition</div>
+    <div class="s-d">Stephen Krashen proposed five interconnected hypotheses that explain how people acquire (not just learn) a second language. His ideas transformed language teaching and support communicative approaches.</div>
+  </div>
+
+  <p class="stxt"><strong>Stephen Krashen</strong> (American linguist) developed the <strong>Monitor Model</strong> in the 1980s. His five hypotheses are among the most frequently tested SLA concepts in teaching exams.</p>
+
+  <div class="gbox gbox-go">
+    <h4>The Five Hypotheses</h4>
+    <div class="grule"><strong>1. Acquisition vs Learning</strong> — Two different systems for developing language</div>
+    <div class="grule"><em>2. Monitor Hypothesis</em> — Learning acts as editor/monitor for acquired language</div>
+    <div class="grule"><span>3. Input Hypothesis (i+1)</span> — Acquisition happens through comprehensible input</div>
+    <div class="grule"><strong>4. Affective Filter</strong> — Emotions can block or allow acquisition</div>
+    <div class="grule"><em>5. Natural Order</em> — Grammar is acquired in a predictable sequence</div>
+  </div>
+
+  <div class="co co-info"><span class="co-ico">📚</span><span><strong>Teaching Connection:</strong> Krashen's theory is the foundation of the <em>Natural Approach</em> (Krashen & Terrell) and supports CLT, comprehension-based methods, and low-anxiety classrooms.</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="2">← ZPD & Scaffolding</button>
+    <button class="nb pri" data-go="4">Next: The 5 Hypotheses →</button>
+  </div>
+</section>
+
+<!-- SECTION 5: 5 HYPOTHESES DETAIL -->
+<section class="sblock" id="dp4s4">
+  <div class="slabel">Section 5 · The Five Hypotheses</div>
+  <h2 class="sheading">Krashen's Hypotheses — <em>In Detail</em></h2>
+  <p class="stxt"><strong>Tap each hypothesis to expand.</strong> These are heavily tested — know each one thoroughly!</p>
+
+  <div class="hypcards">
+    <div class="hypcard" data-hyp="0">
+      <div class="hyp-head">
+        <div class="hyp-num" style="background:var(--bl)">1</div>
+        <div class="hyp-title">Acquisition vs Learning Hypothesis</div>
+      </div>
+      <div class="hyp-hint">Tap to expand...</div>
+      <div class="hyp-body">
+        <p><strong>Acquisition</strong> = Unconscious, natural process (like L1). Develops through meaningful interaction. Produces "true" competence.</p>
+        <p><strong>Learning</strong> = Conscious knowledge of rules. Formal instruction. Knowing "about" the language.</p>
+        <p><em>Key insight:</em> Only ACQUISITION leads to fluent, spontaneous language use. Learning can only monitor/edit.</p>
+        <div class="hyp-ex"><strong>Example</strong><p>A child "acquires" English naturally. An adult studying grammar rules is "learning" — but might not speak fluently.</p></div>
+      </div>
+    </div>
+
+    <div class="hypcard" data-hyp="1">
+      <div class="hyp-head">
+        <div class="hyp-num" style="background:var(--pu)">2</div>
+        <div class="hyp-title">Monitor Hypothesis</div>
+      </div>
+      <div class="hyp-hint">Tap to expand...</div>
+      <div class="hyp-body">
+        <p><strong>Acquisition</strong> initiates and produces language.</p>
+        <p><strong>Learning</strong> acts as a "monitor" — edits and corrects output.</p>
+        <p><em>The Monitor works only when:</em> (1) There's enough TIME, (2) Focus is on FORM (not meaning), (3) The speaker KNOWS the rule.</p>
+        <div class="hyp-ex"><strong>Example</strong><p>In casual conversation, you don't have time to "monitor." But in a written essay, you can use learned rules to edit.</p></div>
+      </div>
+    </div>
+
+    <div class="hypcard" data-hyp="2">
+      <div class="hyp-head">
+        <div class="hyp-num" style="background:var(--go)">3</div>
+        <div class="hyp-title">Input Hypothesis (i+1)</div>
+      </div>
+      <div class="hyp-hint">Tap to expand...</div>
+      <div class="hyp-body">
+        <p><strong>Comprehensible Input</strong> = Language just beyond current level (i = current level, +1 = slightly above).</p>
+        <p>Acquisition happens when learners understand messages containing structures a little beyond their current competence.</p>
+        <p><em>Key insight:</em> Speaking is a RESULT of acquisition, not its cause. Focus on INPUT (listening/reading), not forced output.</p>
+        <div class="hyp-ex"><strong>Example</strong><p>A student at level 5 (i) needs input at level 6 (i+1) to progress — challenging but comprehensible.</p></div>
+      </div>
+    </div>
+
+    <div class="hypcard" data-hyp="3">
+      <div class="hyp-head">
+        <div class="hyp-num" style="background:var(--gr)">4</div>
+        <div class="hyp-title">Affective Filter Hypothesis</div>
+      </div>
+      <div class="hyp-hint">Tap to expand...</div>
+      <div class="hyp-body">
+        <p><strong>Affective factors:</strong> Anxiety, motivation, self-confidence.</p>
+        <p><strong>High filter</strong> (stress, fear, low motivation) = BLOCKS acquisition. Input doesn't reach the LAD.</p>
+        <p><strong>Low filter</strong> (relaxed, motivated, confident) = ALLOWS acquisition. Input gets through.</p>
+        <div class="hyp-ex"><strong>Example</strong><p>An anxious student in a high-pressure classroom won't acquire language well, even with good input.</p></div>
+      </div>
+    </div>
+
+    <div class="hypcard" data-hyp="4">
+      <div class="hyp-head">
+        <div class="hyp-num" style="background:var(--te)">5</div>
+        <div class="hyp-title">Natural Order Hypothesis</div>
+      </div>
+      <div class="hyp-hint">Tap to expand...</div>
+      <div class="hyp-body">
+        <p>Grammatical structures are acquired in a <strong>predictable order</strong> — NOT the order taught in textbooks.</p>
+        <p>This order is similar across learners, regardless of L1 background or instruction order.</p>
+        <p><em>Key insight:</em> Teaching grammar in a particular sequence doesn't change the natural acquisition order.</p>
+        <div class="hyp-ex"><strong>Example</strong><p>Learners often acquire "-ing" before third person "-s" — even if taught "-s" first.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Trap — i+1 vs ZPD:</strong><br>• <strong>i+1</strong> = Krashen's INPUT hypothesis (comprehensible input slightly above level)<br>• <strong>ZPD</strong> = Vygotsky's zone (what learner can do with help)<br>They're similar concepts from different theorists!</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="3">← Krashen Overview</button>
+    <button class="nb pri" data-go="5">Next: Classroom Application →</button>
+  </div>
+</section>
+
+<!-- SECTION 6: CLASSROOM APPLICATION -->
+<section class="sblock" id="dp4s5">
+  <div class="slabel">Section 6 · Classroom Application</div>
+  <h2 class="sheading">Applying These Theories in the <em>Classroom</em></h2>
+
+  <div class="gbox gbox-go">
+    <h4>Teaching Implications</h4>
+    <div class="grule"><strong>Vygotsky:</strong> Pair/group work · Peer tutoring · Teacher as MKO · Gradual release</div>
+    <div class="grule"><em>Krashen:</em> Rich comprehensible input · Low-anxiety environment · Focus on meaning · Allow silent period</div>
+  </div>
+
+  <table class="gtbl">
+    <tr><th>Concept</th><th>Classroom Technique</th><th>Example</th></tr>
+    <tr><td class="tbl-pu">ZPD</td><td>Differentiated instruction</td><td>Tasks matched to each learner's zone</td></tr>
+    <tr><td class="tbl-gr">Scaffolding</td><td>Gradual release</td><td>"I do → We do → You do"</td></tr>
+    <tr><td class="tbl-b">i+1</td><td>Comprehensible input</td><td>Stories slightly above level</td></tr>
+    <tr><td class="tbl-g">Affective Filter</td><td>Low-anxiety classroom</td><td>No forced speaking, positive climate</td></tr>
+    <tr><td class="tbl-pu">Natural Order</td><td>Don't force grammar sequence</td><td>Focus on communication, not sequence</td></tr>
+  </table>
+
+  <div class="stask stask-gr">
+    <div class="sth"><div class="stico" style="background:var(--gr)">🗣️</div><div class="stitle stitle-gr">Oral Task — Match the Theory</div></div>
+    <div class="smodel">
+      <strong>A:</strong> Teacher pairs a struggling student with a more capable peer to complete a task together. <span class="em-go">→ What concept?</span><br><br>
+      <strong>B:</strong> Teacher creates a relaxed, supportive classroom where mistakes are welcome. <span class="em-go">→ What hypothesis?</span><br><br>
+      <strong>C:</strong> Teacher provides sentence starters, then gradually removes them as students improve. <span class="em-go">→ What technique?</span><br><br>
+      <strong>D:</strong> Teacher reads stories to students at a level slightly above their current ability. <span class="em-go">→ What hypothesis?</span>
+    </div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">✅</span><span><strong>Answers:</strong> A = <strong>ZPD / Social Constructivism</strong> | B = <strong>Affective Filter</strong> | C = <strong>Scaffolding</strong> | D = <strong>Input Hypothesis (i+1)</strong></span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="4">← The 5 Hypotheses</button>
+    <button class="nb pri" data-go="6">Next: Listening Task →</button>
+  </div>
+</section>
+
+<!-- SECTION 7: LISTENING (RELEVANT SCENARIO) -->
+<section class="sblock" id="dp4s6">
+  <div class="slabel">Section 7 · Listening Comprehension</div>
+  <h2 class="sheading">🎙️ Listen — <em>A Teacher Applies Social Constructivism &amp; Krashen</em></h2>
+  <p class="stxt">Press ▶ to listen to a teacher explaining how she uses Vygotsky's and Krashen's theories in her classroom. <strong>Identify which concepts she is describing.</strong></p>
+
+  <div class="aplayer">
+    <button class="abig" id="dp4playbtn">▶</button>
+    <div class="ainfo">
+      <div class="at">A Teacher Applies ZPD, Scaffolding & Krashen</div>
+      <div class="as">~50 seconds · British English</div>
+      <div class="apbar"><div class="apfill" id="dp4apf"></div></div>
+    </div>
+    <button class="scrtog" id="dp4scrtog">📄 Transcript</button>
+  </div>
+
+  <div class="scrbox" id="dp4scrbox">
+    <p><strong>Teacher:</strong> "My teaching is built on two key ideas. First, I believe learning happens best when students work together. I always pair struggling students with more capable peers who can guide them through tasks they couldn't do alone. That gap between what they can do independently and what they can achieve with help — that's where real learning happens."</p>
+    <p>"Second, I provide lots of comprehensible input — stories, conversations, and texts that are just slightly above their current level. Not too easy, not too hard — just challenging enough to push them forward."</p>
+    <p>"I also pay close attention to the emotional climate of my classroom. If students feel anxious or embarrassed, that blocks their learning. So I create a relaxed environment where mistakes are welcome and there's no pressure to speak before they're ready. Some students need a silent period where they just listen and absorb — and that's perfectly fine."</p>
+    <p>"When I teach new skills, I start by modeling, then we practice together, then they try independently. I provide support at first — sentence starters, examples, prompts — but I gradually remove that support as they become more capable. That's how they become independent learners."</p>
+  </div>
+
+  <h4 style="color:var(--ny);font-family:'Playfair Display',serif;font-size:1rem;margin:20px 0 13px">What concept is the teacher describing? — Match each statement</h4>
+
+  <div class="smatch" id="dp4match">
+    <div class="sm-item">
+      <div class="sm-scenario">"That gap between what they can do independently and what they can achieve with help." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">What is this called?</em></div>
+      <select class="sm-select" data-a="ZPD" id="dp4ms0">
+        <option value="">— Select —</option>
+        <option>Scaffolding</option><option>ZPD</option><option>Input Hypothesis</option><option>Affective Filter</option><option>Natural Order</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp4mf0"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Input that is just slightly above their current level." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">What hypothesis is this?</em></div>
+      <select class="sm-select" data-a="i+1" id="dp4ms1">
+        <option value="">— Select —</option>
+        <option>Monitor Hypothesis</option><option>Affective Filter</option><option>i+1</option><option>Natural Order</option><option>Acquisition vs Learning</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp4mf1"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"If students feel anxious, that blocks their learning." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">What hypothesis is this?</em></div>
+      <select class="sm-select" data-a="Affective Filter" id="dp4ms2">
+        <option value="">— Select —</option>
+        <option>Monitor Hypothesis</option><option>Affective Filter</option><option>Input Hypothesis</option><option>Natural Order</option><option>ZPD</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp4mf2"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"Some students need a silent period where they just listen and absorb." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">What is this called?</em></div>
+      <select class="sm-select" data-a="Silent Period" id="dp4ms3">
+        <option value="">— Select —</option>
+        <option>Monitor Hypothesis</option><option>Silent Period</option><option>Scaffolding</option><option>Natural Order</option><option>MKO</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp4mf3"></div>
+
+    <div class="sm-item">
+      <div class="sm-scenario">"I provide support at first, but I gradually remove that support as they become more capable." <em style="font-size:.75rem;color:var(--mu);display:block;margin-top:4px">What technique is this?</em></div>
+      <select class="sm-select" data-a="Scaffolding" id="dp4ms4">
+        <option value="">— Select —</option>
+        <option>ZPD</option><option>Scaffolding</option><option>i+1</option><option>Monitor</option><option>MKO</option>
+      </select>
+    </div>
+    <div class="smfb" id="dp4mf4"></div>
+  </div>
+
+  <button class="chkb" id="dp4chkmatch">Check Answers ✓</button>
+
+  <div class="navb">
+    <button class="nb" data-go="5">← Classroom Application</button>
+    <button class="nb pri" data-go="7">Next: Interview Prep →</button>
+  </div>
+</section>
+
+<!-- SECTION 8: INTERVIEW PREP -->
+<section class="sblock" id="dp4s7">
+  <div class="slabel">Section 8 · Interview Preparation</div>
+  <h2 class="sheading">Interview Practice — <em>Explain the Theories</em></h2>
+
+  <div class="co co-info"><span class="co-ico">ℹ️</span><span><strong>Note:</strong> The written exam is <strong>100% multiple choice</strong> (A, B, C, D, E). However, in the <strong>oral interview</strong>, you may be asked to explain concepts. This section prepares you for that.</span></div>
+
+  <p class="stxt">Practice explaining <strong>how ZPD and i+1 are related but different</strong> in 60–80 words. This is a common comparison question.</p>
+
+  <div class="co co-tip"><span class="co-ico">✍️</span><span><strong>Structure your answer:</strong><br>1. Define ZPD (Vygotsky) — the learning zone with help<br>2. Define i+1 (Krashen) — input slightly above level<br>3. State their similarity (both = optimal challenge level)<br>4. State their difference (ZPD = general learning; i+1 = language input specifically)</span></div>
+
+  <div style="margin-top:18px">
+    <textarea class="wa" id="dp4wtxt" placeholder="ZPD (Vygotsky) refers to... while i+1 (Krashen) refers to... They are similar because... However, they differ in that... In the classroom, a teacher uses ZPD by... and i+1 by..."></textarea>
+    <div class="wcnt" id="dp4wcnt">0 words (aim for 60–80)</div>
+    <button class="wsub" id="dp4wsub">Check My Answer ✓</button>
+    <div class="wfb" id="dp4wfb">
+      <strong>✅ Good practice!</strong><br><br>
+      <strong>Model Answer:</strong><br>
+      "ZPD (Vygotsky) is the gap between what a learner can do alone and what they can do with help from an MKO. i+1 (Krashen) is comprehensible input slightly above the learner's current language level. Both concepts identify an optimal zone where learning is most effective — not too easy, not too hard. However, ZPD applies to ALL learning through social interaction, while i+1 specifically addresses language INPUT. A teacher applies ZPD through scaffolding and peer support; they apply i+1 by providing stories and texts just beyond current comprehension."
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="6">← Listening Task</button>
+    <button class="nb pri" data-go="8">Next: 40-Question Exam →</button>
+  </div>
+</section>
+
+<!-- SECTION 9: 40-QUESTION EXAM -->
+<section class="sblock" id="dp4s8">
+  <div class="slabel">Section 9 · Full Exam Simulation</div>
+  <h2 class="sheading">Exam Practice 🎯 — 40 Questions</h2>
+  <p class="stxt">This section simulates the <strong>real exam format</strong>: Multiple choice with 5 options (A, B, C, D, E). Option E is always "None of the above." <strong>Every wrong answer includes a full explanation.</strong></p>
+
+  <div class="co co-or"><span class="co-ico">⏱️</span><span><strong>Exam Conditions:</strong> In the real exam, you have limited time. Try to answer each question in under 45 seconds. Don't second-guess yourself!</span></div>
+
+  <div>
+    <div class="qpr">
+      <span class="qcnt" id="dp4qcnt">1 / 40</span>
+      <div class="qpbar"><div class="qpfill" id="dp4qpf" style="width:2.5%"></div></div>
+      <span class="qcnt" id="dp4qsl">Score: 0</span>
+    </div>
+    <div id="dp4qarea"></div>
+    <div class="qfbm" id="dp4qfb"></div>
+    <button class="qnxt" id="dp4qnxt">Next Question →</button>
+    <div class="spl" id="dp4spl">
+      <div class="scir"><div class="snum" id="dp4sfin">0</div><div class="sden">/ 40</div></div>
+      <div class="smsg" id="dp4smsg">Well done!</div>
+      <div class="ssub" id="dp4ssub">Keep practising!</div>
+      <button class="srty" id="dp4srty">🔄 Retry Quiz</button>
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="7">← Interview Prep</button>
+  </div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="lft">
+  <div class="flo">English<em>Pro</em> · Didactics</div>
+  <div class="ftx">Lesson 4 — Social Constructivism · Vygotsky · ZPD · Krashen · 5 Hypotheses · 40-Question Exam</div>
+</footer>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+(function(){
+'use strict';
+
+/* ══════════════════════════════════════════════════════════════
+   40-QUESTION EXAM DATA — 5 options (A, B, C, D, E = None)
+   ══════════════════════════════════════════════════════════════ */
+var QD=[
+  // Questions 1-10: Social Constructivism & Vygotsky
+  {q:'Social Constructivism emphasizes that learning occurs primarily through:',opts:['Individual discovery alone','Stimulus-response conditioning','Social interaction with others','Innate biological programming','None of the above'],a:2,ex:'✅ C is correct. Social Constructivism (Vygotsky) emphasizes learning through SOCIAL INTERACTION. A = Piaget\'s Constructivism; B = Behaviourism; D = Innatism.'},
+  {q:'Who is the founder of Social Constructivism?',opts:['Jean Piaget','Noam Chomsky','Stephen Krashen','Lev Vygotsky','None of the above'],a:3,ex:'✅ D is correct. VYGOTSKY founded Social Constructivism. Piaget = Constructivism (individual); Chomsky = Innatism; Krashen = Monitor Model.'},
+  {q:'The Zone of Proximal Development (ZPD) is BEST defined as:',opts:['What a learner can do independently','The gap between independent ability and ability with help','The natural order of grammar acquisition','The level of comprehensible input','None of the above'],a:1,ex:'✅ B is correct. ZPD = the GAP between what learner can do ALONE vs. WITH HELP. This is where optimal learning happens.'},
+  {q:'According to Vygotsky, who is the "More Knowledgeable Other" (MKO)?',opts:['Only the classroom teacher','Any person with more knowledge who can guide learning','The learner\'s internal voice','A textbook or learning material','None of the above'],a:1,ex:'✅ B is correct. MKO = ANY person with more knowledge — teacher, peer, tutor, parent, etc. — who provides guidance within the ZPD.'},
+  {q:'Scaffolding in education refers to:',opts:['Permanent learning supports','Temporary, adjustable support that is gradually removed','Building physical structures in the classroom','Grammar structures in language','None of the above'],a:1,ex:'✅ B is correct. Scaffolding = TEMPORARY support that is ADJUSTED to learner needs and REMOVED as they become capable.'},
+  {q:'Which statement reflects Vygotsky\'s view on learning and development?',opts:['Development must come before learning','Learning and development are unrelated','Learning leads development','Development follows a fixed sequence of stages','None of the above'],a:2,ex:'✅ C is correct. Vygotsky: LEARNING LEADS DEVELOPMENT (with proper support). Piaget believed development comes BEFORE learning (readiness).'},
+  {q:'A teacher uses "I do → We do → You do" in teaching. This is an example of:',opts:['Classical Conditioning','Scaffolding and gradual release','The Natural Order Hypothesis','Monitor Hypothesis','None of the above'],a:1,ex:'✅ B is correct. "I do → We do → You do" is SCAFFOLDING with GRADUAL RELEASE of responsibility.'},
+  {q:'Peer tutoring is effective according to Social Constructivism because:',opts:['Students learn from habitual repetition','A capable peer serves as the MKO in the learner\'s ZPD','Students are born with innate knowledge','Punishment from peers corrects errors','None of the above'],a:1,ex:'✅ B is correct. Peer tutoring = capable peer acts as MKO, providing guidance within the learner\'s ZPD.'},
+  {q:'The KEY difference between Piaget and Vygotsky is:',opts:['Piaget studied adults; Vygotsky studied children','Piaget focused on individual learning; Vygotsky on social learning','Piaget rejected stages; Vygotsky proposed stages','Piaget was a linguist; Vygotsky was a behaviourist','None of the above'],a:1,ex:'✅ B is correct. Piaget = INDIVIDUAL construction of knowledge. Vygotsky = SOCIAL construction through interaction.'},
+  {q:'Which classroom practice does NOT align with Social Constructivism?',opts:['Peer tutoring','Collaborative group work','Isolated individual drills with no interaction','Think-pair-share activities','None of the above'],a:2,ex:'✅ C is correct. Isolated drills with NO INTERACTION contradict Social Constructivism, which emphasizes social learning.'},
+
+  // Questions 11-20: Krashen's Hypotheses - Basics
+  {q:'Stephen Krashen proposed how many hypotheses in his Monitor Model?',opts:['Three','Four','Five','Six','None of the above'],a:2,ex:'✅ C is correct. Krashen proposed FIVE hypotheses: Acquisition/Learning, Monitor, Input, Affective Filter, Natural Order.'},
+  {q:'According to Krashen, "acquisition" differs from "learning" because acquisition is:',opts:['Conscious knowledge of grammar rules','Unconscious and natural, like L1 development','Only possible in formal classroom settings','Based on error correction and drilling','None of the above'],a:1,ex:'✅ B is correct. ACQUISITION = unconscious, natural, produces real competence. LEARNING = conscious knowledge of rules.'},
+  {q:'According to the Acquisition-Learning Hypothesis, which system produces fluent speech?',opts:['The learning system','The monitor system','The acquisition system','Both equally','None of the above'],a:2,ex:'✅ C is correct. Only the ACQUISITION system produces fluent, spontaneous speech. The learning system can only monitor/edit.'},
+  {q:'The Monitor Hypothesis states that "learning" serves as:',opts:['The main source of language production','An editor that corrects acquired output','A replacement for acquisition','The basis for comprehensible input','None of the above'],a:1,ex:'✅ B is correct. LEARNING acts as a MONITOR that edits and corrects output initiated by the acquisition system.'},
+  {q:'The Monitor can be used effectively only when there is:',opts:['Time, focus on form, and knowledge of the rule','Anxiety and pressure','Unconscious processing','Natural communication','None of the above'],a:0,ex:'✅ A is correct. The Monitor requires: (1) TIME, (2) FOCUS ON FORM (not meaning), (3) KNOWLEDGE of the rule.'},
+  {q:'The Input Hypothesis (i+1) states that acquisition occurs when:',opts:['Output is forced and corrected','Input is at exactly the learner\'s current level','Input is slightly above the learner\'s current level','Grammar rules are explicitly taught','None of the above'],a:2,ex:'✅ C is correct. i+1 = input SLIGHTLY ABOVE current level. i = current level; +1 = slightly beyond.'},
+  {q:'In the formula "i+1," what does "i" represent?',opts:['Input quality','The learner\'s current level of competence','Intelligence level','The ideal method','None of the above'],a:1,ex:'✅ B is correct. "i" = the learner\'s CURRENT LEVEL of language competence.'},
+  {q:'According to Krashen, speaking ability emerges as a:',opts:['Prerequisite for listening comprehension','Direct result of grammar instruction','Natural result of receiving comprehensible input','Product of drilling and repetition','None of the above'],a:2,ex:'✅ C is correct. Krashen: Speaking is a RESULT of acquisition (through input), NOT its cause. Focus on INPUT.'},
+  {q:'The Affective Filter Hypothesis suggests that emotions:',opts:['Have no impact on language acquisition','Can block or allow language acquisition','Only affect learning, not acquisition','Increase the need for grammar instruction','None of the above'],a:1,ex:'✅ B is correct. Emotions (anxiety, motivation, confidence) can BLOCK or ALLOW acquisition. High filter = blocks; Low filter = allows.'},
+  {q:'A "high affective filter" results from:',opts:['Low anxiety and high motivation','High anxiety, low motivation, or low self-confidence','Receiving too much comprehensible input','Using the monitor too frequently','None of the above'],a:1,ex:'✅ B is correct. HIGH FILTER = anxiety, low motivation, low confidence → BLOCKS acquisition.'},
+
+  // Questions 21-30: Krashen's Hypotheses - Advanced
+  {q:'The Natural Order Hypothesis states that:',opts:['Teachers determine the order of grammar acquisition','Grammar is acquired in a predictable sequence regardless of instruction','All learners acquire grammar at the same speed','L1 and L2 acquisition follow completely different orders','None of the above'],a:1,ex:'✅ B is correct. Natural Order = grammar acquired in PREDICTABLE SEQUENCE, NOT the textbook order.'},
+  {q:'According to the Natural Order Hypothesis, teaching grammar in a specific sequence:',opts:['Guarantees acquisition in that order','Does not change the natural acquisition order','Is the most effective approach','Is recommended by Krashen','None of the above'],a:1,ex:'✅ B is correct. Teaching sequence DOES NOT CHANGE natural acquisition order. Learners acquire in their own natural sequence.'},
+  {q:'The "Silent Period" in Krashen\'s theory refers to:',opts:['A punishment technique','An early stage where learners listen but don\'t speak','Forced silence in the classroom','A period of grammar study','None of the above'],a:1,ex:'✅ B is correct. Silent Period = early stage where learners ABSORB INPUT before producing speech. This is natural and should be allowed.'},
+  {q:'Krashen\'s theory is the foundation of which teaching approach?',opts:['Audio-Lingual Method','Grammar-Translation Method','Natural Approach','Silent Way','None of the above'],a:2,ex:'✅ C is correct. The NATURAL APPROACH (Krashen & Terrell) is directly based on Krashen\'s Monitor Model.'},
+  {q:'Which classroom practice BEST reflects the Input Hypothesis?',opts:['Grammar drills and pattern practice','Extensive reading of texts slightly above level','Immediate error correction','Memorization of vocabulary lists','None of the above'],a:1,ex:'✅ B is correct. Extensive reading at i+1 level = comprehensible input = Input Hypothesis.'},
+  {q:'To lower the affective filter, a teacher should:',opts:['Increase pressure and competition','Create a relaxed, supportive environment','Focus on error correction','Force students to speak before ready','None of the above'],a:1,ex:'✅ B is correct. LOW FILTER = relaxed, supportive, low anxiety → allows acquisition.'},
+  {q:'According to Krashen, which is MORE important for acquisition?',opts:['Learning grammar rules consciously','Receiving comprehensible input','Producing accurate output immediately','Memorizing vocabulary','None of the above'],a:1,ex:'✅ B is correct. COMPREHENSIBLE INPUT is the key to acquisition. Output emerges naturally from acquisition.'},
+  {q:'The term "comprehensible input" means:',opts:['Input that is too easy for the learner','Input that the learner can understand, with some challenge','Input that requires translation','Input at exactly the learner\'s level','None of the above'],a:1,ex:'✅ B is correct. Comprehensible input = understandable but with SOME CHALLENGE (i+1).'},
+  {q:'A student understands what is said but makes errors when speaking. According to Krashen, this is because:',opts:['The Monitor is overused','Acquisition has not yet occurred for those forms','The affective filter is too low','Input was too challenging','None of the above'],a:1,ex:'✅ B is correct. Speaking errors occur when forms haven\'t been ACQUIRED yet. Understanding comes before production.'},
+  {q:'Which criticism has been made of Krashen\'s theory?',opts:['It overemphasizes grammar drilling','It is difficult to measure "i+1" precisely','It focuses too much on output','It ignores the role of input','None of the above'],a:1,ex:'✅ B is correct. A major criticism: "i+1" is hard to MEASURE precisely. How do we know exactly what "+1" is for each learner?'},
+
+  // Questions 31-40: Comparisons & Application
+  {q:'Both ZPD and i+1 share the concept of:',opts:['Fixed developmental stages','Optimal challenge level for learning','Habit formation through repetition','Innate language ability','None of the above'],a:1,ex:'✅ B is correct. Both ZPD and i+1 identify an OPTIMAL CHALLENGE LEVEL — not too easy, not too hard.'},
+  {q:'The KEY difference between ZPD and i+1 is:',opts:['ZPD is about language; i+1 is about general learning','ZPD is about learning with help; i+1 is specifically about language input','ZPD is Krashen\'s; i+1 is Vygotsky\'s','There is no difference','None of the above'],a:1,ex:'✅ B is correct. ZPD = general learning with help. i+1 = specifically language INPUT level. ZPD = Vygotsky; i+1 = Krashen.'},
+  {q:'A teacher notices an anxious student not participating. Based on Krashen, the teacher should:',opts:['Force the student to speak to build confidence','Lower the affective filter by creating a supportive environment','Provide more grammar drills','Increase error correction','None of the above'],a:1,ex:'✅ B is correct. HIGH ANXIETY = high filter = blocks acquisition. Teacher should LOWER the filter by reducing pressure.'},
+  {q:'Gradual release of responsibility ("I do → We do → You do") reflects which concept?',opts:['Classical Conditioning','Scaffolding within the ZPD','The Monitor Hypothesis','The Natural Order','None of the above'],a:1,ex:'✅ B is correct. Gradual release = SCAFFOLDING that is removed as learner becomes capable within their ZPD.'},
+  {q:'Which statement would both Vygotsky AND Krashen agree with?',opts:['Learning is purely individual','Drilling is the best teaching method','Social/emotional factors affect learning','Grammar must be taught explicitly','None of the above'],a:2,ex:'✅ C is correct. Vygotsky: social interaction is key. Krashen: affective filter affects learning. Both recognize SOCIAL/EMOTIONAL factors.'},
+  {q:'A teacher reads stories aloud to beginning students who just listen. This supports:',opts:['The Output Hypothesis','The Silent Period and Input Hypothesis','Behaviourist drilling','Grammar-Translation Method','None of the above'],a:1,ex:'✅ B is correct. Reading aloud to beginners who listen = respecting SILENT PERIOD + providing COMPREHENSIBLE INPUT.'},
+  {q:'Pair work where a stronger student helps a weaker one BEST exemplifies:',opts:['Classical Conditioning','The Monitor Hypothesis','Social Constructivism (ZPD with peer as MKO)','The Natural Order Hypothesis','None of the above'],a:2,ex:'✅ C is correct. Stronger peer = MKO; helping within ZPD = Social Constructivism.'},
+  {q:'A language class with competitions, public corrections, and high-stakes tests likely has:',opts:['Low affective filter','High affective filter','Strong acquisition','Effective scaffolding','None of the above'],a:1,ex:'✅ B is correct. Competition, public correction, high stakes = ANXIETY = HIGH AFFECTIVE FILTER = blocks acquisition.'},
+  {q:'According to Social Constructivism, the teacher\'s role is:',opts:['Authority who transmits knowledge','Facilitator and More Knowledgeable Other','Silent observer with no interaction','Drill master who corrects all errors','None of the above'],a:1,ex:'✅ B is correct. Teacher = MKO who FACILITATES learning within the ZPD through scaffolding.'},
+  {q:'Which combination correctly matches theorist and concept?',opts:['Vygotsky — Input Hypothesis','Krashen — Zone of Proximal Development','Vygotsky — Scaffolding, ZPD','Krashen — Schema, Assimilation','None of the above'],a:2,ex:'✅ C is correct. VYGOTSKY = Scaffolding, ZPD. Krashen = Input (i+1), Affective Filter. Schema/Assimilation = Piaget.'}
+];
+
+var curSec=0,qCur=0,qScore=0,qAns=false,audioPlaying=false,audioTimer=null;
+
+function goToSection(n){
+  document.querySelectorAll('#dp-l4 .sblock').forEach(function(b){b.classList.remove('vis')});
+  var sec=document.getElementById('dp4s'+n);
+  if(sec)sec.classList.add('vis');
+  curSec=n;
+  updateDots();
+  document.getElementById('dp-l4').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function updateDots(){
+  document.querySelectorAll('#dp-l4 .snavdot').forEach(function(d){
+    var i=parseInt(d.getAttribute('data-s'));
+    d.classList.remove('active','done');
+    if(i<curSec)d.classList.add('done');
+    if(i===curSec)d.classList.add('active');
+  });
+}
+
+document.querySelectorAll('#dp-l4 .snavdot').forEach(function(d){
+  d.addEventListener('click',function(){goToSection(parseInt(d.getAttribute('data-s')))});
+});
+
+document.querySelectorAll('#dp-l4 .nb[data-go]').forEach(function(btn){
+  btn.addEventListener('click',function(){goToSection(parseInt(btn.getAttribute('data-go')))});
+});
+
+document.querySelectorAll('#dp-l4 .tcard').forEach(function(c){
+  c.addEventListener('click',function(){c.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l4 .hypcard').forEach(function(c){
+  c.addEventListener('click',function(){c.classList.toggle('fl')});
+});
+
+document.querySelectorAll('#dp-l4 .tabs').forEach(function(tg){
+  tg.querySelectorAll('.tab').forEach(function(tab){
+    tab.addEventListener('click',function(){
+      var pid=tab.getAttribute('data-tab');
+      tg.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});
+      tab.classList.add('active');
+      tg.parentElement.querySelectorAll('.tabpanel').forEach(function(p){p.classList.remove('vis')});
+      var pnl=document.getElementById(pid);
+      if(pnl)pnl.classList.add('vis');
+    });
+  });
+});
+
+/* Listening Match Check */
+var chkmatch=document.getElementById('dp4chkmatch');
+if(chkmatch)chkmatch.addEventListener('click',function(){
+  for(var i=0;i<5;i++){
+    var sel=document.getElementById('dp4ms'+i);
+    var fb=document.getElementById('dp4mf'+i);
+    if(!sel)continue;
+    var ans=sel.getAttribute('data-a'),giv=sel.value;
+    var ok=giv===ans;
+    sel.classList.toggle('ok',ok);sel.classList.toggle('bad',!ok);
+    fb.textContent=ok?'✅ Correct!':'❌ Answer: '+ans;
+    fb.classList.toggle('ok',ok);fb.classList.toggle('bad',!ok);
+  }
+});
+
+var pbtn=document.getElementById('dp4playbtn'),apf=document.getElementById('dp4apf');
+var audioTxt="My teaching is built on two key ideas. First, I believe learning happens best when students work together. I always pair struggling students with more capable peers who can guide them through tasks they couldn't do alone. That gap between what they can do independently and what they can achieve with help — that's where real learning happens. Second, I provide lots of comprehensible input — stories, conversations, and texts that are just slightly above their current level. Not too easy, not too hard — just challenging enough to push them forward. I also pay close attention to the emotional climate of my classroom. If students feel anxious or embarrassed, that blocks their learning. So I create a relaxed environment where mistakes are welcome and there's no pressure to speak before they're ready. Some students need a silent period where they just listen and absorb — and that's perfectly fine. When I teach new skills, I start by modeling, then we practice together, then they try independently. I provide support at first — sentence starters, examples, prompts — but I gradually remove that support as they become more capable. That's how they become independent learners.";
+
+if(pbtn)pbtn.addEventListener('click',function(){
+  if(audioPlaying){window.speechSynthesis&&window.speechSynthesis.cancel();clearInterval(audioTimer);audioPlaying=false;pbtn.textContent='▶';if(apf)apf.style.width='0%';return;}
+  if(!window.speechSynthesis)return;
+  var u=new SpeechSynthesisUtterance(audioTxt);u.lang='en-GB';u.rate=0.9;
+  var vv=window.speechSynthesis.getVoices(),v=vv.find(function(x){return x.lang==='en-GB'})||vv.find(function(x){return x.lang.startsWith('en')});
+  if(v)u.voice=v;
+  audioPlaying=true;pbtn.textContent='⏸';
+  var w=0;audioTimer=setInterval(function(){w=Math.min(100,w+0.4);if(apf)apf.style.width=w+'%';if(w>=100)clearInterval(audioTimer)},500);
+  u.onend=function(){audioPlaying=false;pbtn.textContent='▶';clearInterval(audioTimer)};
+  window.speechSynthesis.speak(u);
+});
+
+var stog=document.getElementById('dp4scrtog'),sbox=document.getElementById('dp4scrbox');
+if(stog)stog.addEventListener('click',function(){sbox&&sbox.classList.toggle('show')});
+
+var wtxt=document.getElementById('dp4wtxt'),wcnt=document.getElementById('dp4wcnt'),wsub=document.getElementById('dp4wsub'),wfb=document.getElementById('dp4wfb');
+if(wtxt)wtxt.addEventListener('input',function(){
+  var wc=wtxt.value.trim()===''?0:wtxt.value.trim().split(/\s+/).length;
+  if(wcnt){wcnt.textContent=wc+' words (aim for 60–80)';wcnt.style.color=wc>=60?'#2E7D52':'#7A7A7A'}
+});
+if(wsub)wsub.addEventListener('click',function(){
+  if(!wtxt||wtxt.value.trim().split(/\s+/).length<20){alert('Please write at least 20 words!');return}
+  if(wfb)wfb.classList.add('show');wsub.textContent='✅ Checked!';wsub.style.background='#2E7D52';
+});
+
+/* 40-Question Quiz with A,B,C,D,E */
+function renderQ(){
+  var d=QD[qCur],area=document.getElementById('dp4qarea'),fb=document.getElementById('dp4qfb'),nxt=document.getElementById('dp4qnxt');
+  fb.className='qfbm';nxt.classList.remove('show');qAns=false;
+  var pf=document.getElementById('dp4qpf');
+  if(document.getElementById('dp4qcnt'))document.getElementById('dp4qcnt').textContent=(qCur+1)+' / '+QD.length;
+  if(pf)pf.style.width=((qCur+1)/QD.length*100)+'%';
+  var labels=['A','B','C','D','E'];
+  var html='<div class="qq"><span class="qqn">'+(qCur+1)+'</span>'+d.q+'</div><div class="qopts">';
+  d.opts.forEach(function(o,i){html+='<button class="qopt" data-i="'+i+'"><span class="ql">'+labels[i]+'.</span> '+o+'</button>'});
+  html+='</div>';area.innerHTML=html;
+  area.querySelectorAll('.qopt').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      if(qAns)return;qAns=true;
+      var ch=parseInt(btn.getAttribute('data-i'));
+      area.querySelectorAll('.qopt').forEach(function(b){b.disabled=true});
+      if(ch===d.a){btn.classList.add('qco');qScore++;if(document.getElementById('dp4qsl'))document.getElementById('dp4qsl').textContent='Score: '+qScore;fb.textContent=d.ex;fb.className='qfbm show ok'}
+      else{btn.classList.add('qwr');area.querySelectorAll('.qopt')[d.a].classList.add('qco');fb.innerHTML='❌ Incorrect. '+d.ex;fb.className='qfbm show bad'}
+      nxt.classList.add('show');nxt.textContent=qCur<QD.length-1?'Next Question →':'See Results 🎯';
+    });
+  });
+}
+
+var qnxt=document.getElementById('dp4qnxt');
+if(qnxt)qnxt.addEventListener('click',function(){qCur++;if(qCur>=QD.length)showScore();else renderQ()});
+
+function showScore(){
+  var area=document.getElementById('dp4qarea'),fb=document.getElementById('dp4qfb'),nxt=document.getElementById('dp4qnxt'),pr=document.querySelector('#dp-l4 .qpr'),pl=document.getElementById('dp4spl');
+  if(area)area.style.display='none';if(fb)fb.style.display='none';if(nxt)nxt.style.display='none';if(pr)pr.style.display='none';if(pl)pl.classList.add('show');
+  var fin=document.getElementById('dp4sfin');if(fin)fin.textContent=qScore;
+  var pct=qScore/QD.length,msg,sub;
+  if(pct>=0.9){msg='Excellent! 🏆';sub='You\'re exam-ready!'}
+  else if(pct>=0.75){msg='Great Work! 🌟';sub='Review the questions you missed.'}
+  else if(pct>=0.6){msg='Good Progress! 👍';sub='Study the theory sections again.'}
+  else if(pct>=0.4){msg='Keep Practising! 💪';sub='Focus on the concepts you struggled with.'}
+  else{msg='More Study Needed 📚';sub='Review all sections before retrying.'}
+  if(document.getElementById('dp4smsg'))document.getElementById('dp4smsg').textContent=msg;
+  if(document.getElementById('dp4ssub'))document.getElementById('dp4ssub').textContent=sub;
+}
+
+var srty=document.getElementById('dp4srty');
+if(srty)srty.addEventListener('click',function(){
+  qScore=0;qCur=0;qAns=false;
+  var area=document.getElementById('dp4qarea'),fb=document.getElementById('dp4qfb'),nxt=document.getElementById('dp4qnxt'),pr=document.querySelector('#dp-l4 .qpr'),pl=document.getElementById('dp4spl');
+  if(area){area.style.display='block';area.innerHTML=''}if(fb){fb.style.display='block';fb.className='qfbm'}if(nxt)nxt.style.display='none';if(pr)pr.style.display='flex';if(pl)pl.classList.remove('show');
+  if(document.getElementById('dp4qsl'))document.getElementById('dp4qsl').textContent='Score: 0';
+  renderQ();
+});
+
+renderQ();
+if(window.speechSynthesis){window.speechSynthesis.getVoices();window.speechSynthesis.onvoiceschanged=function(){window.speechSynthesis.getVoices()}}
+})();
+</script>
+
+<!-- AUTO-RESIZE (MUST BE LAST) -->
+<script>
+(function(){
+  function sendHeight(){var h=document.documentElement.scrollHeight||document.body.scrollHeight;window.parent.postMessage({epHeight:h},'*')}
+  sendHeight();window.addEventListener('load',sendHeight);window.addEventListener('resize',sendHeight);
+  var mo=new MutationObserver(sendHeight);mo.observe(document.body,{childList:true,subtree:true,attributes:true});
+})();
+</script>
+
+</body>
+</html>
