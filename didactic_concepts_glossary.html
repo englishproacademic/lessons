@@ -1,0 +1,866 @@
+<!--============================================================
+     EnglishPro · Didactics Series · Complete Glossary
+     All Didactic Concepts A-Z
+     GitHub hosted — embedded in Blogger via iframe
+     100% self-contained — no external JS dependencies
+     Comprehensive reference with 40-MCQ exam
+     ============================================================-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Didactic Concepts Glossary | EnglishPro Didactics Series</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;family=DM+Sans:wght@300;400;500;600&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{margin:0;padding:0;background:#FAFAF7;direction:ltr;text-align:left}
+
+#dp-gloss{
+  --ny:#0D2B4E;--ny2:#1A4070;
+  --go:#C8933A;--go2:#E8B86D;--gop:#FDF6EC;
+  --cr:#FAFAF7;--wh:#fff;
+  --ink:#1A1A1A;--ink2:#3D3D3D;--mu:#7A7A7A;
+  --bd:#E2DDD6;--bdl:#F0EDE8;
+  --gr:#2E7D52;--grb:#EBF5EF;
+  --rd:#C0392B;--rdb:#FDECEA;
+  --bl:#1E5FA8;--blb:#EBF2FB;
+  --pu:#7C3AED;--pub:#F3F0FF;
+  --te:#0E7490;--teb:#ECFEFF;
+  --or:#D97706;--orb:#FEF3C7;
+  --pk:#DB2777;--pkb:#FDF2F8;
+  --sh1:0 2px 8px rgba(13,43,78,.07);
+  --r:12px;--rl:20px;
+  font-family:'DM Sans',sans-serif;
+  color:var(--ink);background:var(--cr);
+  line-height:1.7;-webkit-font-smoothing:antialiased;
+  display:block;overflow:hidden;direction:ltr;text-align:left
+}
+#dp-gloss *,#dp-gloss *::before,#dp-gloss *::after{box-sizing:border-box;margin:0;padding:0}
+#dp-gloss button{cursor:pointer;font-family:'DM Sans',sans-serif;border:none;background:none}
+
+/* HERO */
+#dp-gloss .lhero{background:linear-gradient(150deg,#0a1f38 0%,#0D2B4E 50%,#122e52 100%);padding:48px 24px 40px;position:relative;overflow:hidden;border-radius:var(--rl) var(--rl) 0 0}
+#dp-gloss .lhero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%,rgba(200,147,58,.08) 0%,transparent 60%),radial-gradient(circle at 80% 20%,rgba(124,58,237,.06) 0%,transparent 50%);pointer-events:none}
+#dp-gloss .lhero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,147,58,.4),transparent)}
+#dp-gloss .lhero-in{max-width:720px;margin:0 auto;position:relative;z-index:1}
+#dp-gloss .lvlbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,147,58,.12);border:1px solid rgba(200,147,58,.28);color:var(--go2);font-size:.68rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:18px}
+#dp-gloss .ltitle{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,4vw,2.5rem);font-weight:900;color:#F5F0E8;line-height:1.15;margin-bottom:10px;letter-spacing:-.02em}
+#dp-gloss .ltitle em{color:var(--go);font-style:italic}
+#dp-gloss .lsub{font-size:.9rem;color:rgba(245,240,232,.62);margin-bottom:22px;max-width:520px;line-height:1.6}
+#dp-gloss .spills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px}
+#dp-gloss .spill{font-size:.67rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 11px;border-radius:100px}
+#dp-gloss .sp-th{background:rgba(124,58,237,.25);color:#C4B5FD}
+#dp-gloss .sp-ex{background:rgba(30,95,168,.25);color:#7DB8F0}
+#dp-gloss .sp-qu{background:rgba(200,147,58,.25);color:var(--go2)}
+#dp-gloss .sp-ic{background:rgba(46,125,82,.25);color:#6BCFA0}
+
+/* Nav dots */
+#dp-gloss .snav{display:flex;align-items:center;gap:5px;flex-wrap:wrap;padding-top:20px;border-top:1px solid rgba(255,255,255,.08)}
+#dp-gloss .snavdot{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;font-size:.7rem;font-weight:700;border:2px solid rgba(255,255,255,.18);color:rgba(255,255,255,.32);cursor:pointer;transition:all .25s;flex-shrink:0}
+#dp-gloss .snavdot.done{border-color:var(--gr);background:var(--gr);color:#fff}
+#dp-gloss .snavdot.active{border-color:var(--go);background:var(--go);color:#fff}
+#dp-gloss .snavsep{width:16px;height:2px;background:rgba(255,255,255,.1);border-radius:1px;flex-shrink:0}
+#dp-gloss .snavlbl{font-size:.63rem;color:rgba(245,240,232,.38);margin-left:6px}
+
+/* BODY */
+#dp-gloss .lbody{max-width:720px;margin:0 auto;padding:32px 20px 64px;background:var(--cr)}
+#dp-gloss .sblock{background:var(--wh);border:1px solid var(--bdl);border-radius:var(--rl);padding:28px;margin-bottom:24px;display:none;animation:dpglup .35s ease both;box-shadow:var(--sh1)}
+#dp-gloss .sblock.vis{display:block}
+@keyframes dpglup{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+#dp-gloss .slabel{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--go);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+#dp-gloss .slabel::after{content:'';flex:1;height:1px;background:var(--bdl)}
+#dp-gloss .sheading{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ny);margin-bottom:16px;line-height:1.25}
+#dp-gloss .sheading em{color:var(--go);font-style:italic}
+#dp-gloss .stxt{font-size:.9rem;color:var(--ink2);margin-bottom:16px;line-height:1.65}
+
+/* Scene */
+#dp-gloss .scene{background:linear-gradient(135deg,var(--ny),var(--ny2));border-radius:var(--r);padding:20px;margin-bottom:20px;position:relative;overflow:hidden}
+#dp-gloss .scene::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(200,147,58,.08),transparent 60%);pointer-events:none}
+#dp-gloss .s-ico{font-size:1.8rem;margin-bottom:8px;position:relative;z-index:1}
+#dp-gloss .s-t{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#F5F0E8;position:relative;z-index:1;margin-bottom:5px}
+#dp-gloss .s-d{font-size:.83rem;color:rgba(245,240,232,.65);position:relative;z-index:1;line-height:1.55}
+
+/* Callouts */
+#dp-gloss .co{display:flex;gap:10px;padding:13px 15px;border-radius:var(--r);margin:14px 0;font-size:.855rem;line-height:1.6}
+#dp-gloss .co-tip{background:var(--gop);border:1px solid rgba(200,147,58,.2);color:var(--ink2)}
+#dp-gloss .co-or{background:var(--orb);border:1px solid rgba(217,119,6,.15);color:var(--ink2)}
+#dp-gloss .co-ico{font-size:1rem;flex-shrink:0;margin-top:1px}
+
+/* Term cards */
+#dp-gloss .termlist{display:flex;flex-direction:column;gap:8px;margin:16px 0}
+#dp-gloss .term{background:var(--cr);border:1px solid var(--bdl);border-radius:var(--r);overflow:hidden;transition:all .2s}
+#dp-gloss .term:hover{border-color:var(--go);box-shadow:var(--sh1)}
+#dp-gloss .term-head{display:flex;align-items:center;gap:10px;padding:11px 14px;cursor:pointer;background:var(--wh)}
+#dp-gloss .term-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+#dp-gloss .term-word{font-weight:700;color:var(--ny);font-size:.88rem;flex:1}
+#dp-gloss .term-arrow{color:var(--mu);font-size:.75rem;transition:transform .2s}
+#dp-gloss .term.open .term-arrow{transform:rotate(180deg)}
+#dp-gloss .term-body{display:none;padding:0 14px 12px;background:var(--wh)}
+#dp-gloss .term.open .term-body{display:block}
+#dp-gloss .term-def{font-size:.84rem;color:var(--ink2);line-height:1.55;margin-bottom:4px}
+#dp-gloss .term-ex{font-size:.78rem;color:var(--mu);font-style:italic;line-height:1.5}
+#dp-gloss .term-ex strong{color:var(--go);font-style:normal}
+
+/* Category dot colors */
+#dp-gloss .dot-bl{background:var(--bl)}
+#dp-gloss .dot-gr{background:var(--gr)}
+#dp-gloss .dot-pu{background:var(--pu)}
+#dp-gloss .dot-or{background:var(--or)}
+#dp-gloss .dot-te{background:var(--te)}
+#dp-gloss .dot-pk{background:var(--pk)}
+#dp-gloss .dot-go{background:var(--go)}
+#dp-gloss .dot-rd{background:var(--rd)}
+
+/* Quiz */
+#dp-gloss .qpr{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+#dp-gloss .qpbar{flex:1;height:6px;background:var(--bd);border-radius:3px;overflow:hidden;margin:0 11px}
+#dp-gloss .qpfill{height:100%;background:linear-gradient(90deg,var(--go),var(--go2));border-radius:3px;transition:width .4s ease}
+#dp-gloss .qcnt{font-size:.77rem;font-weight:600;color:var(--mu)}
+#dp-gloss .qq{font-size:1rem;font-weight:600;color:var(--ny);margin-bottom:16px;line-height:1.5}
+#dp-gloss .qqn{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--go);color:#fff;font-size:.75rem;font-weight:700;margin-right:7px;flex-shrink:0;vertical-align:middle}
+#dp-gloss .qopts{display:flex;flex-direction:column;gap:9px}
+#dp-gloss .qopt{background:var(--cr);border:2px solid var(--bd);border-radius:var(--r);padding:12px 14px;font-size:.88rem;color:var(--ink2);text-align:left;transition:all .2s;display:flex;align-items:center;gap:9px;cursor:pointer}
+#dp-gloss .qopt .ql{font-weight:700;color:var(--ny);min-width:18px}
+#dp-gloss .qopt:hover:not([disabled]){border-color:var(--go);background:var(--gop);transform:translateX(3px)}
+#dp-gloss .qopt.qco{border-color:var(--gr)!important;background:var(--grb)!important;color:var(--gr)!important}
+#dp-gloss .qopt.qwr{border-color:var(--rd)!important;background:var(--rdb)!important;color:var(--rd)!important}
+#dp-gloss .qfbm{display:none;margin-top:11px;padding:12px 14px;border-radius:var(--r);font-size:.84rem;font-weight:500;line-height:1.55}
+#dp-gloss .qfbm.show{display:block}
+#dp-gloss .qfbm.ok{background:var(--grb);color:var(--gr);border:1px solid rgba(46,125,82,.2)}
+#dp-gloss .qfbm.bad{background:var(--rdb);color:var(--rd);border:1px solid rgba(192,57,43,.2)}
+#dp-gloss .qnxt{margin-top:14px;background:var(--ny);color:#fff;padding:11px 26px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;display:none;cursor:pointer;border:none}
+#dp-gloss .qnxt:hover{background:var(--go);transform:translateY(-1px)}
+#dp-gloss .qnxt.show{display:inline-block}
+#dp-gloss .spl{text-align:center;padding:28px 20px;display:none;animation:dpglup .4s ease both}
+#dp-gloss .spl.show{display:block}
+#dp-gloss .scir{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--ny),var(--ny2));display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 8px 24px rgba(13,43,78,.2)}
+#dp-gloss .snum{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:var(--go);line-height:1}
+#dp-gloss .sden{font-size:.7rem;color:rgba(245,240,232,.5)}
+#dp-gloss .smsg{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--ny);margin-bottom:7px}
+#dp-gloss .ssub{font-size:.84rem;color:var(--mu);margin-bottom:18px}
+#dp-gloss .srty{background:var(--ny);color:#fff;padding:11px 24px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;cursor:pointer;border:none}
+#dp-gloss .srty:hover{background:var(--go)}
+
+/* Nav buttons */
+#dp-gloss .navb{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:18px;border-top:1px solid var(--bdl);gap:10px}
+#dp-gloss .nb{display:flex;align-items:center;gap:7px;padding:11px 22px;border-radius:var(--r);font-size:.87rem;font-weight:600;transition:all .2s;border:2px solid var(--bd);color:var(--ink2);background:var(--wh);cursor:pointer}
+#dp-gloss .nb:hover{border-color:var(--go);color:var(--go)}
+#dp-gloss .nb.pri{background:var(--ny);color:#fff;border-color:transparent}
+#dp-gloss .nb.pri:hover{background:var(--go);border-color:transparent}
+#dp-gloss .nb:disabled{opacity:.38;cursor:default;pointer-events:none}
+
+/* Footer */
+#dp-gloss .lft{background:var(--ny);padding:24px;text-align:center;border-radius:0 0 var(--rl) var(--rl)}
+#dp-gloss .flo{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:#F5F0E8;margin-bottom:5px}
+#dp-gloss .flo em{color:var(--go);font-style:italic}
+#dp-gloss .ftx{font-size:.74rem;color:rgba(245,240,232,.42)}
+
+@media(max-width:560px){
+  #dp-gloss .lhero{padding:32px 16px 28px}
+  #dp-gloss .lbody{padding:20px 14px 48px}
+  #dp-gloss .sblock{padding:18px 14px}
+  #dp-gloss .navb{flex-direction:column}
+  #dp-gloss .nb{width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<div id="dp-gloss">
+
+<!-- HERO -->
+<div class="lhero">
+  <div class="lhero-in">
+    <div class="lvlbadge">🎓 Didactics Series · Complete Reference</div>
+    <h1 class="ltitle">Didactic <em>Concepts</em> Glossary</h1>
+    <p class="lsub">120+ essential terms organized into 8 categories. Master every concept for your teaching exam with simplified definitions.</p>
+    <div class="spills">
+      <span class="spill sp-th">📖 120+ Terms</span>
+      <span class="spill sp-ex">📚 8 Categories</span>
+      <span class="spill sp-ic">✨ Simplified</span>
+      <span class="spill sp-qu">📝 40-Q Exam</span>
+    </div>
+    <nav class="snav">
+      <div class="snavdot active" data-s="0">1</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="1">2</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="2">3</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="3">4</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="4">5</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="5">6</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="6">7</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="7">8</div><div class="snavsep"></div>
+      <div class="snavdot" data-s="8">9</div>
+      <span class="snavlbl">9 sections</span>
+    </nav>
+  </div>
+</div>
+
+<div class="lbody">
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 1: CORE DEFINITIONS
+     ═══════════════════════════════════════════════════════════ -->
+<section class="sblock vis" id="dpgls0">
+  <div class="slabel">Section 1 · Core Definitions</div>
+  <h2 class="sheading">Language, Learning &amp; <em>Teaching</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">📖</div>
+    <div class="s-t">The Foundation of Everything</div>
+    <div class="s-d">Start here! These are the most fundamental terms you need to know.</div>
+  </div>
+
+  <div class="termlist">
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Language</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">A rule-governed system of sounds and words used to communicate ideas and feelings.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Communication</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">The process of sending and receiving information between people.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Learning</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">A relatively permanent change in behaviour based on experiences or discoveries.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Teaching</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Giving someone knowledge, showing how to do something, or changing their ideas through instruction.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Skill</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">An ability that comes from experience, training, or practice.</div><div class="term-ex"><strong>4 main skills:</strong> Listening, Speaking, Reading, Writing</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Sub-skill</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">A component ability within each main skill.</div><div class="term-ex"><strong>Examples:</strong> Skimming, scanning, fluency, editing</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Grammar</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">The structure and system of a language (syntax + morphology).</div><div class="term-ex"><strong>Remember:</strong> M.F.U.P = Meaning, Form, Use, Pronunciation</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Tense</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">The expression of location in time (past, present, future).</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Aspect</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">The expression of duration/structure of an action (simple, progressive, perfect).</div></div></div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" disabled>← Back</button>
+    <button class="nb pri" data-go="1">Next: Teaching Methodology →</button>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 2: TEACHING METHODOLOGY
+     ═══════════════════════════════════════════════════════════ -->
+<section class="sblock" id="dpgls1">
+  <div class="slabel">Section 2 · Teaching Methodology</div>
+  <h2 class="sheading">Approach, Method &amp; <em>Technique</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">👨‍🏫</div>
+    <div class="s-t">The Hierarchy of Teaching</div>
+    <div class="s-d">Understand the difference: Approach → Method → Technique → Procedure</div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Memory Aid:</strong> Approach (theory) → Method (system) → Technique (activity) → Procedure (steps)</span></div>
+
+  <div class="termlist">
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Approach</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">The theory/philosophy behind teaching — beliefs about how language is learned.</div><div class="term-ex"><strong>Example:</strong> Communicative Approach = language is for communication</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Method</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">A systematic set of teaching procedures based on an approach.</div><div class="term-ex"><strong>Examples:</strong> GTM, ALM, Direct Method, CLT</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Technique</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">A specific classroom activity used to achieve a learning goal.</div><div class="term-ex"><strong>Examples:</strong> Role-play, drilling, elicitation, miming</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Procedure</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Step-by-step instructions for applying a method in class.</div><div class="term-ex"><strong>Example:</strong> PPP stages = Presentation → Practice → Production</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Learner-Centredness</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Student is the center of learning; teacher is facilitator/monitor.</div><div class="term-ex"><strong>Contrast:</strong> Teacher-centered = teacher controls everything</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Humanistic Approach</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Involves learners at all levels, focusing on their whole personality, values, and emotions.</div><div class="term-ex"><strong>Methods:</strong> Silent Way, CLL, Suggestopedia, TPR</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Exercise</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">A way of practicing what was presented (fill blanks, matching, rewrite).</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Task</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Activity with a real-world outcome; students discover patterns themselves.</div><div class="term-ex"><strong>Example:</strong> "Create an action plan for positive changes in your school"</div></div></div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="0">← Core Definitions</button>
+    <button class="nb pri" data-go="2">Next: Classroom Techniques →</button>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 3: CLASSROOM TECHNIQUES
+     ═══════════════════════════════════════════════════════════ -->
+<section class="sblock" id="dpgls2">
+  <div class="slabel">Section 3 · Classroom Techniques</div>
+  <h2 class="sheading">Teaching <em>Techniques</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">🎯</div>
+    <div class="s-t">What Teachers Actually DO in Class</div>
+    <div class="s-d">Specific activities, techniques, and classroom practices.</div>
+  </div>
+
+  <div class="termlist">
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Drills</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Repetitive exercises to practice a language item.</div><div class="term-ex"><strong>Types:</strong> Repetition, substitution, transformation drills</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Elicitation</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Drawing information out of learners through guided questions instead of giving answers directly.</div><div class="term-ex"><strong>Based on:</strong> Discovery approach / Constructivism</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Miming</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Using gestures and body movements (no words) to show meaning.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Warm-up</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Fun activities at the beginning of a lesson to engage students and set context.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Review</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Activities at the end of a session to reinforce key concepts previously taught.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Recycling</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Reviewing previously taught vocabulary/skills in meaningful activities in later lessons.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Micro-teaching</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Reduced teaching situation (shorter duration, smaller class) used in teacher training.</div><div class="term-ex"><strong>Example:</strong> Teach "body parts" vocabulary in 10 minutes to 5 students</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Brainstorming</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Generating ideas quickly without judging quality — used before writing.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Information Gap</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Activity where students have different information and must communicate to complete a task.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Information Transfer</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Moving information from one format to another.</div><div class="term-ex"><strong>Example:</strong> Complete a table using information from a map</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Jigsaw Activity</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Students find different information about a topic, then share with their group.</div><div class="term-ex"><strong>Promotes:</strong> Peer-teaching, collaboration, communication</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Jigsaw Reading</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Re-ordering a mixed-up text to find correct order — promotes collaborative learning.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-te"></div><span class="term-word">Cloze</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Text with words removed and replaced by gaps for students to fill.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-te"></div><span class="term-word">Recognition Exercises</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Students recognize correct answers from options (multiple choice, matching).</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-te"></div><span class="term-word">Productive Exercises</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Students produce their own answers (no options given).</div></div></div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="1">← Teaching Methodology</button>
+    <button class="nb pri" data-go="3">Next: Teacher Roles →</button>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 4: TEACHER ROLES & CLASSROOM
+     ═══════════════════════════════════════════════════════════ -->
+<section class="sblock" id="dpgls3">
+  <div class="slabel">Section 4 · Teacher Roles & Classroom</div>
+  <h2 class="sheading">Teacher Roles &amp; <em>Classroom Management</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">🏫</div>
+    <div class="s-t">Managing the Learning Environment</div>
+    <div class="s-d">Teacher roles, checking understanding, interaction patterns.</div>
+  </div>
+
+  <div class="termlist">
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Facilitator</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">A teacher who guides learners to find their own answers rather than providing them.</div><div class="term-ex"><strong>Key role in:</strong> CLT (Communicative Language Teaching)</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Monitoring</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Walking around the class during activities to check progress, help students, and note errors.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Feedback</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Comments about learner performance — can be written or oral.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Praise</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Positive feedback that reinforces good behaviour and increases motivation.</div><div class="term-ex"><strong>Example:</strong> "Well done!" "Excellent work!"</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">CCQ (Concept Checking Question)</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Questions to check if students understood the MEANING of new language.</div><div class="term-ex"><strong>Example:</strong> "Is this past or present?" "Can you use this with friends?"</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">ICQ (Instruction Checking Question)</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Questions to check if students understood the INSTRUCTIONS.</div><div class="term-ex"><strong>Example:</strong> "Do you work alone or in pairs?" "How many sentences?"</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Interaction</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Patterns of communication — verbal or non-verbal.</div><div class="term-ex"><strong>Patterns:</strong> T-S, S-S, Ss-Ss, mingle, open pairs</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Group Dynamic</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">The way a group of people interact with each other.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Mixed-Ability Class</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">A class with learners at different proficiency levels (beginners, intermediate, advanced).</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Body Language</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Non-verbal communication: eye contact, facial expressions, gestures, posture.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Intonation</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Changes in pitch and stress to express emotions or attitudes when speaking.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Checklist</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">A list identifying areas students should focus on when correcting mistakes.</div></div></div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="2">← Classroom Techniques</button>
+    <button class="nb pri" data-go="4">Next: Language Skills →</button>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 5: LANGUAGE SKILLS
+     ═══════════════════════════════════════════════════════════ -->
+<section class="sblock" id="dpgls4">
+  <div class="slabel">Section 5 · Language Skills</div>
+  <h2 class="sheading">Reading, Writing &amp; <em>Sub-skills</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">📚</div>
+    <div class="s-t">The Four Skills & Processing Strategies</div>
+    <div class="s-d">Sub-skills for reading, writing, listening, and speaking.</div>
+  </div>
+
+  <div class="termlist">
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Integrated Skills</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Combining different language skills in one activity.</div><div class="term-ex"><strong>Example:</strong> Listen to a dialogue, then write a summary</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Accuracy</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Producing language correctly (grammar, vocabulary, pronunciation).</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Fluency</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Producing language easily and quickly, even if not perfectly correct.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Skimming</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Quick reading to get the main idea (gist).</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Scanning</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Reading to find specific information.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Intensive Reading</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Careful, detailed reading of a short text for specific learning aims.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Extensive Reading</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Reading longer texts for enjoyment and general skill development.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Predicting</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Guessing what a text will be about before reading.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Previewing/Surveying</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Looking at pictures, titles, subtitles to get the general idea before reading.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Inferring</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Guessing meaning from context — "reading between the lines."</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Top-Down Processing</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Using prior knowledge (schemata) to understand new texts.</div><div class="term-ex"><strong>Direction:</strong> Big picture → details</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Bottom-Up Processing</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Building meaning from smallest units (letters, words, sentences).</div><div class="term-ex"><strong>Direction:</strong> Details → big picture</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-te"></div><span class="term-word">SQ4R</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Reading strategy: Survey, Question, Read, Recite, Review, Reflect.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-te"></div><span class="term-word">Editing</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Correcting spelling, punctuation, and grammar in writing. Can be self or peer.</div></div></div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="3">← Teacher Roles</button>
+    <button class="nb pri" data-go="5">Next: Vocabulary & Materials →</button>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 6: VOCABULARY & MATERIALS
+     ═══════════════════════════════════════════════════════════ -->
+<section class="sblock" id="dpgls5">
+  <div class="slabel">Section 6 · Vocabulary & Materials</div>
+  <h2 class="sheading">Vocabulary, Functions &amp; <em>Materials</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">📝</div>
+    <div class="s-t">Language Components & Teaching Resources</div>
+    <div class="s-d">Vocabulary types, language functions, and classroom materials.</div>
+  </div>
+
+  <div class="termlist">
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Functions</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Fixed phrases for communicative purposes (speech acts).</div><div class="term-ex"><strong>Examples:</strong> Requesting, suggesting, apologizing, asking for advice</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Notions</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">General concepts expressed through language.</div><div class="term-ex"><strong>Examples:</strong> Time, distance, space, quality</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Chunks</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Fixed or semi-fixed expressions learned and used as whole units.</div><div class="term-ex"><strong>Examples:</strong> "I'm fine," "pretty good," "right away," collocations</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Lexical Items</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">A word or group of related words (word family).</div><div class="term-ex"><strong>Example:</strong> Furniture: chair, table, sofa, desk</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Contextualization</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Teaching vocabulary in a meaningful context rather than in isolation.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Circumlocution</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Using many words to explain an idea when you don't know the exact word.</div><div class="term-ex"><strong>Strategic competence:</strong> A communication strategy</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Metalanguage</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Language used to talk about language.</div><div class="term-ex"><strong>Examples:</strong> "Noun," "verb," "past tense" — grammar terminology</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Proverbs & Idioms</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Fixed expressions understood as a whole. Proverbs teach moral lessons.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Authentic Materials</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Materials originally created for real-life use, not for teaching.</div><div class="term-ex"><strong>Examples:</strong> Newspapers, menus, podcasts, TV shows</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Realia</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Real objects used to present vocabulary.</div><div class="term-ex"><strong>Examples:</strong> Fruits, clothes, pens, toys</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Visual Aids</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Tools for visual learners: pictures, flashcards, graphs, videos.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-te"></div><span class="term-word">Learner Training</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Teaching learners HOW to learn: recording vocabulary, continuing outside class.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-te"></div><span class="term-word">Learning Strategies</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">How learners cope with problems, accumulate new rules, and automate existing ones.</div></div></div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="4">← Language Skills</button>
+    <button class="nb pri" data-go="6">Next: Learning Theories →</button>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 7: LEARNING THEORIES & SLA
+     ═══════════════════════════════════════════════════════════ -->
+<section class="sblock" id="dpgls6">
+  <div class="slabel">Section 7 · Learning Theories & SLA</div>
+  <h2 class="sheading">Cognitive &amp; <em>SLA Theories</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">🧠</div>
+    <div class="s-t">How Learning Happens</div>
+    <div class="s-d">Key theorists, hypotheses, and cognitive concepts.</div>
+  </div>
+
+  <div class="co co-tip"><span class="co-ico">💡</span><span><strong>Memory Aid:</strong> KRASHEN = Input (i+1) | SWAIN = Output | LONG = Interaction | SCHMIDT = Noticing | VYGOTSKY = ZPD</span></div>
+
+  <div class="termlist">
+    <div class="term"><div class="term-head"><div class="term-dot dot-pk"></div><span class="term-word">Input (i+1)</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Language slightly above current level. i = current; +1 = next level.</div><div class="term-ex"><strong>Krashen:</strong> Comprehensible input drives acquisition</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pk"></div><span class="term-word">Intake</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">The portion of input that learners actually process and store (internalize).</div><div class="term-ex"><strong>Remember:</strong> Input = all exposure; Intake = what's actually learned</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pk"></div><span class="term-word">Noticing</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Consciously paying attention to form, use, and meaning of new language.</div><div class="term-ex"><strong>Schmidt:</strong> You can't learn what you don't notice</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pk"></div><span class="term-word">Consciousness-Raising</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Explicit instruction to make learners aware of language rules.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Schemata</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Learner's existing background knowledge. "Pre-existent knowledge of the world" (Cook).</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Schemes</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Innate cognitive structures that enable interaction with the world (Piaget).</div><div class="term-ex"><strong>Example:</strong> Babies have schemes for biting, sucking, grasping</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Assimilation</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Understanding new experiences using existing schemes (Piaget).</div><div class="term-ex"><strong>Example:</strong> Baby uses "sucking" scheme on new objects</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Accommodation</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Modifying existing schemes to fit new situations (Piaget).</div><div class="term-ex"><strong>Example:</strong> Baby learns not to throw glass after it breaks</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Equilibration</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Restoring balance between current understanding and new experiences (Piaget).</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Adaptation</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Adjusting schemes through assimilation and accommodation (Piaget).</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Scaffolding</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Support and guidance teachers provide to help learners accomplish tasks they couldn't do alone.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">ZPD (Zone of Proximal Development)</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Gap between what learners can do alone and what they can do with help (Vygotsky).</div><div class="term-ex"><strong>Tasks should:</strong> Be slightly above current level but achievable with support</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Reinforcer</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">A consequence that maintains or INCREASES a behaviour.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Negative Reinforcement</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Removing something unpleasant to INCREASE a behaviour.</div><div class="term-ex"><strong>⚠️ Trap:</strong> It INCREASES behaviour — it's NOT punishment!</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-rd"></div><span class="term-word">Presentation Punishment</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Adding something unpleasant to DECREASE a behaviour.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-rd"></div><span class="term-word">Removal Punishment</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Taking away something pleasant to DECREASE a behaviour.</div></div></div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Trap:</strong> i+1 = KRASHEN | ZPD = VYGOTSKY — Similar concepts, different theorists! Don't confuse them!</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="5">← Vocabulary & Materials</button>
+    <button class="nb pri" data-go="7">Next: Assessment →</button>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 8: ASSESSMENT & COMPETENCE
+     ═══════════════════════════════════════════════════════════ -->
+<section class="sblock" id="dpgls7">
+  <div class="slabel">Section 8 · Assessment & Competence</div>
+  <h2 class="sheading">Assessment &amp; <em>Communicative Competence</em></h2>
+
+  <div class="scene">
+    <div class="s-ico">📊</div>
+    <div class="s-t">Testing & Competence Models</div>
+    <div class="s-d">How we measure learning and what it means to "know" a language.</div>
+  </div>
+
+  <div class="termlist">
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Testing Tools</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Means of assessment: quizzes, cloze tests, multiple choice, presentations, portfolios.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Item</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">A single question or element in a test.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-or"></div><span class="term-word">Standard</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Both a goal and a unit for measuring progress toward that goal.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Norm-Referenced Test</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Performance compared to OTHER test-takers.</div><div class="term-ex"><strong>Examples:</strong> Teaching exam (concours), master's entrance exam</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-bl"></div><span class="term-word">Criterion-Referenced Test</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Test with a specified passing criterion (e.g., 10/20).</div><div class="term-ex"><strong>Example:</strong> Baccalaureate exam — pass/fail based on fixed score</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Holistic Scoring</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">ONE overall score for the whole work based on general impression.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Analytic Scoring</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Separate scores for different criteria (grammar, spelling, content, etc.).</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-gr"></div><span class="term-word">Rubrics</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">The criteria upon which student performance is graded.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Competence</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">The system of rules representing a learner's knowledge of language (Chomsky).</div><div class="term-ex"><strong>vs Performance:</strong> Competence = knowledge; Performance = actual use</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pu"></div><span class="term-word">Competency</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">A set of skills, abilities, and knowledge used to accomplish a specific task.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pk"></div><span class="term-word">Communicative Competence</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Knowing what to say, to whom, where, when, and how (Hymes).</div><div class="term-ex"><strong>Canale & Swain:</strong> 4 components below</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pk"></div><span class="term-word">Grammatical Competence</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Knowledge of grammar, vocabulary, phonology, and semantics.</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pk"></div><span class="term-word">Sociolinguistic Competence</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Using language appropriately in social contexts (register, politeness).</div><div class="term-ex"><strong>Example:</strong> Using formal language with boss, informal with friends</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pk"></div><span class="term-word">Discourse Competence</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Connecting sentences coherently (cohesion, coherence).</div><div class="term-ex"><strong>Example:</strong> Using "however," "therefore" to connect ideas</div></div></div>
+
+    <div class="term"><div class="term-head"><div class="term-dot dot-pk"></div><span class="term-word">Strategic Competence</span><span class="term-arrow">▼</span></div>
+      <div class="term-body"><div class="term-def">Strategies to overcome communication breakdowns.</div><div class="term-ex"><strong>Examples:</strong> Paraphrasing, circumlocution, "I mean," "mm"</div></div></div>
+  </div>
+
+  <div class="co co-or"><span class="co-ico">⚠️</span><span><strong>Exam Traps:</strong> NORM-REFERENCED = compare to others | CRITERION-REFERENCED = fixed standard | HOLISTIC = one score | ANALYTIC = multiple scores | HYMES coined Communicative Competence | CANALE & SWAIN = 4 components</span></div>
+
+  <div class="navb">
+    <button class="nb" data-go="6">← Learning Theories</button>
+    <button class="nb pri" data-go="8">Next: 40-Question Exam →</button>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 9: 40-QUESTION EXAM
+     ═══════════════════════════════════════════════════════════ -->
+<section class="sblock" id="dpgls8">
+  <div class="slabel">Section 9 · Full Exam Simulation</div>
+  <h2 class="sheading">Exam Practice 🎯 — 40 Questions</h2>
+  <p class="stxt">Test all concepts! 5 options (A, B, C, D, E). Option E = "None of the above."</p>
+
+  <div class="co co-or"><span class="co-ico">⏱️</span><span><strong>Exam Conditions:</strong> Answer each question in under 45 seconds.</span></div>
+
+  <div>
+    <div class="qpr">
+      <span class="qcnt" id="dpglqcnt">1 / 40</span>
+      <div class="qpbar"><div class="qpfill" id="dpglqpf" style="width:2.5%"></div></div>
+      <span class="qcnt" id="dpglqsl">Score: 0</span>
+    </div>
+    <div id="dpglqarea"></div>
+    <div class="qfbm" id="dpglqfb"></div>
+    <button class="qnxt" id="dpglqnxt">Next Question →</button>
+    <div class="spl" id="dpglspl">
+      <div class="scir"><div class="snum" id="dpglsfin">0</div><div class="sden">/ 40</div></div>
+      <div class="smsg" id="dpglsmsg">Well done!</div>
+      <div class="ssub" id="dpglssub">Keep practising!</div>
+      <button class="srty" id="dpglsrty">🔄 Retry Quiz</button>
+    </div>
+  </div>
+
+  <div class="navb">
+    <button class="nb" data-go="7">← Assessment</button>
+  </div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="lft">
+  <div class="flo">English<em>Pro</em> · Didactics</div>
+  <div class="ftx">Concepts Glossary · 120+ Terms · 8 Categories · 40-Question Exam</div>
+</footer>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+(function(){
+'use strict';
+
+var QD=[
+  {q:'An Approach refers to:',opts:['Step-by-step classroom instructions','The theory/philosophy behind teaching','A specific classroom activity','Test design methods','None of the above'],a:1,ex:'✅ B. APPROACH = theory/philosophy behind teaching.'},
+  {q:'A Method refers to:',opts:['Beliefs about language','A systematic set of teaching procedures','One classroom trick','Assessment criteria','None of the above'],a:1,ex:'✅ B. METHOD = systematic procedures based on an approach.'},
+  {q:'A Technique refers to:',opts:['A theory of language','A whole teaching system','A specific classroom activity','Test design','None of the above'],a:2,ex:'✅ C. TECHNIQUE = specific classroom activity.'},
+  {q:'Elicitation means:',opts:['Giving answers directly','Drawing information out through guided questions','Testing grammar','Immediate correction','None of the above'],a:1,ex:'✅ B. ELICITATION = drawing information out through questions.'},
+  {q:'Scaffolding refers to:',opts:['Building furniture','Teacher support for tasks learners can\'t do alone','Punishment','Grammar drilling','None of the above'],a:1,ex:'✅ B. SCAFFOLDING = support to accomplish tasks.'},
+  {q:'ZPD was proposed by:',opts:['Krashen','Chomsky','Vygotsky','Piaget','None of the above'],a:2,ex:'✅ C. ZPD = VYGOTSKY.'},
+  {q:'i+1 refers to:',opts:['Current level minus one','Input slightly above current level','Output at current level','Future level','None of the above'],a:1,ex:'✅ B. i+1 = input SLIGHTLY ABOVE current level (Krashen).'},
+  {q:'The difference between INPUT and INTAKE:',opts:['They are identical','Input = exposure; Intake = what\'s processed','Intake is more','Input needs output','None of the above'],a:1,ex:'✅ B. INPUT = all exposure; INTAKE = what\'s processed.'},
+  {q:'Negative reinforcement:',opts:['Decreases behaviour','Is punishment','INCREASES behaviour by removing unpleasant stimulus','Has no effect','None of the above'],a:2,ex:'✅ C. NEGATIVE REINFORCEMENT = INCREASES behaviour!'},
+  {q:'Assimilation (Piaget) means:',opts:['Changing schemes','Using existing schemes for new experiences','Creating new schemes','Forgetting knowledge','None of the above'],a:1,ex:'✅ B. ASSIMILATION = using existing schemes.'},
+  {q:'Accommodation (Piaget) means:',opts:['Using existing schemes','Modifying schemes for new situations','Ignoring information','Testing hypotheses','None of the above'],a:1,ex:'✅ B. ACCOMMODATION = modifying schemes.'},
+  {q:'Skimming is reading for:',opts:['Specific details','Main idea/gist','Grammar errors','Vocabulary','None of the above'],a:1,ex:'✅ B. SKIMMING = reading for main idea/gist.'},
+  {q:'Scanning is reading for:',opts:['Main idea','Enjoyment','Specific information','Grammar','None of the above'],a:2,ex:'✅ C. SCANNING = reading for specific information.'},
+  {q:'Top-down processing relies on:',opts:['Small units first','Prior knowledge/schemata','Grammar rules only','Vocabulary lists','None of the above'],a:1,ex:'✅ B. TOP-DOWN = uses prior knowledge.'},
+  {q:'Bottom-up processing starts with:',opts:['Background knowledge','General meaning','Smallest units (letters, words)','Cultural context','None of the above'],a:2,ex:'✅ C. BOTTOM-UP = starts with smallest units.'},
+  {q:'Accuracy focuses on:',opts:['Speed','Grammatical correctness','Natural flow','Body language','None of the above'],a:1,ex:'✅ B. ACCURACY = correctness.'},
+  {q:'Fluency focuses on:',opts:['Perfect grammar','Easy, quick communication','Written accuracy','Pronunciation only','None of the above'],a:1,ex:'✅ B. FLUENCY = easy, quick communication.'},
+  {q:'CCQ stands for:',opts:['Classroom Control Question','Concept Checking Question','Communication Clarity Question','Content Quiz','None of the above'],a:1,ex:'✅ B. CCQ = Concept Checking Question.'},
+  {q:'ICQ stands for:',opts:['Interactive Question','Instruction Checking Question','Individual Quiz','Internal Quality','None of the above'],a:1,ex:'✅ B. ICQ = Instruction Checking Question.'},
+  {q:'Information gap activities require:',opts:['Same information for all','Different information for students','Only teacher speaking','Silent reading','None of the above'],a:1,ex:'✅ B. INFORMATION GAP = different information.'},
+  {q:'Authentic materials are:',opts:['Made for teaching','Originally for real-life use','Only textbooks','Only videos','None of the above'],a:1,ex:'✅ B. AUTHENTIC = created for real-life.'},
+  {q:'Realia refers to:',opts:['Abstract concepts','Real objects to teach vocabulary','Digital materials','Textbooks','None of the above'],a:1,ex:'✅ B. REALIA = real objects.'},
+  {q:'Functions are:',opts:['Grammar rules','Fixed phrases for communicative purposes','Vocabulary lists','Reading strategies','None of the above'],a:1,ex:'✅ B. FUNCTIONS = phrases for communicative purposes.'},
+  {q:'Notions are:',opts:['Grammar rules','General concepts (time, space, distance)','Teaching methods','Test types','None of the above'],a:1,ex:'✅ B. NOTIONS = general concepts.'},
+  {q:'Chunks are:',opts:['Individual words','Fixed expressions learned as whole units','Grammar rules','Test items','None of the above'],a:1,ex:'✅ B. CHUNKS = fixed expressions.'},
+  {q:'Norm-referenced tests compare:',opts:['To a fixed standard','To other test-takers','To previous attempts','To teacher expectations','None of the above'],a:1,ex:'✅ B. NORM-REFERENCED = compare to others.'},
+  {q:'Criterion-referenced tests use:',opts:['Comparison to others','A fixed passing standard','Random grading','Peer assessment','None of the above'],a:1,ex:'✅ B. CRITERION-REFERENCED = fixed standard.'},
+  {q:'Holistic scoring gives:',opts:['Multiple scores','One overall score','Only grammar scores','No feedback','None of the above'],a:1,ex:'✅ B. HOLISTIC = ONE overall score.'},
+  {q:'Analytic scoring gives:',opts:['One impression score','Separate scores for each criterion','No grades','Pass/fail only','None of the above'],a:1,ex:'✅ B. ANALYTIC = separate scores.'},
+  {q:'Communicative Competence was coined by:',opts:['Chomsky','Hymes','Canale & Swain','Krashen','None of the above'],a:1,ex:'✅ B. HYMES coined Communicative Competence.'},
+  {q:'Strategic Competence involves:',opts:['Grammar knowledge','Strategies to overcome communication breakdowns','Social register','Sentence cohesion','None of the above'],a:1,ex:'✅ B. STRATEGIC = repair strategies.'},
+  {q:'Sociolinguistic Competence involves:',opts:['Grammar rules','Using language appropriately in social contexts','Vocabulary size','Pronunciation','None of the above'],a:1,ex:'✅ B. SOCIOLINGUISTIC = appropriate social use.'},
+  {q:'Discourse Competence involves:',opts:['Word knowledge','Connecting sentences coherently','Social appropriateness','Communication strategies','None of the above'],a:1,ex:'✅ B. DISCOURSE = cohesion, coherence.'},
+  {q:'A Facilitator:',opts:['Gives all answers','Guides learners to find answers','Only lectures','Ignores questions','None of the above'],a:1,ex:'✅ B. FACILITATOR = guides learners.'},
+  {q:'High Affective Filter (Krashen) means:',opts:['Better learning','Input is blocked','More output','Perfect acquisition','None of the above'],a:1,ex:'✅ B. HIGH FILTER = BLOCKS input.'},
+  {q:'Learner-Centredness means:',opts:['Teacher controls all','Student is center; teacher facilitates','Grammar focus only','No participation','None of the above'],a:1,ex:'✅ B. LEARNER-CENTRED = student is center.'},
+  {q:'Micro-teaching is:',opts:['Full lessons','Reduced teaching for training','Lecture-based only','Assessment method','None of the above'],a:1,ex:'✅ B. MICRO-TEACHING = reduced situation for training.'},
+  {q:'Circumlocution means:',opts:['Using exact words','Using many words when you don\'t know the exact word','Avoiding communication','Grammar translation','None of the above'],a:1,ex:'✅ B. CIRCUMLOCUTION = using many words to explain.'},
+  {q:'Metalanguage is:',opts:['Body language','Language used to talk about language','Silent language','Sign language','None of the above'],a:1,ex:'✅ B. METALANGUAGE = language about language.'},
+  {q:'SQ4R stands for:',opts:['Silent, Quick, 4 Reads','Survey, Question, Read, Recite, Review, Reflect','Speed, Quality, 4 Rules','None of these','None of the above'],a:1,ex:'✅ B. SQ4R = Survey, Question, Read, Recite, Review, Reflect.'}
+];
+
+var curSec=0,qCur=0,qScore=0,qAns=false;
+
+function goToSection(n){
+  document.querySelectorAll('#dp-gloss .sblock').forEach(function(b){b.classList.remove('vis')});
+  var sec=document.getElementById('dpgls'+n);
+  if(sec)sec.classList.add('vis');
+  curSec=n;
+  updateDots();
+  document.getElementById('dp-gloss').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function updateDots(){
+  document.querySelectorAll('#dp-gloss .snavdot').forEach(function(d){
+    var i=parseInt(d.getAttribute('data-s'));
+    d.classList.remove('active','done');
+    if(i<curSec)d.classList.add('done');
+    if(i===curSec)d.classList.add('active');
+  });
+}
+
+document.querySelectorAll('#dp-gloss .snavdot').forEach(function(d){
+  d.addEventListener('click',function(){goToSection(parseInt(d.getAttribute('data-s')))});
+});
+
+document.querySelectorAll('#dp-gloss .nb[data-go]').forEach(function(btn){
+  btn.addEventListener('click',function(){goToSection(parseInt(btn.getAttribute('data-go')))});
+});
+
+document.querySelectorAll('#dp-gloss .term').forEach(function(t){
+  t.querySelector('.term-head').addEventListener('click',function(){t.classList.toggle('open')});
+});
+
+function renderQ(){
+  var d=QD[qCur],area=document.getElementById('dpglqarea'),fb=document.getElementById('dpglqfb'),nxt=document.getElementById('dpglqnxt');
+  fb.className='qfbm';nxt.classList.remove('show');qAns=false;
+  var pf=document.getElementById('dpglqpf');
+  if(document.getElementById('dpglqcnt'))document.getElementById('dpglqcnt').textContent=(qCur+1)+' / '+QD.length;
+  if(pf)pf.style.width=((qCur+1)/QD.length*100)+'%';
+  var labels=['A','B','C','D','E'];
+  var html='<div class="qq"><span class="qqn">'+(qCur+1)+'</span>'+d.q+'</div><div class="qopts">';
+  d.opts.forEach(function(o,i){html+='<button class="qopt" data-i="'+i+'"><span class="ql">'+labels[i]+'.</span> '+o+'</button>'});
+  html+='</div>';area.innerHTML=html;
+  area.querySelectorAll('.qopt').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      if(qAns)return;qAns=true;
+      var ch=parseInt(btn.getAttribute('data-i'));
+      area.querySelectorAll('.qopt').forEach(function(b){b.disabled=true});
+      if(ch===d.a){btn.classList.add('qco');qScore++;if(document.getElementById('dpglqsl'))document.getElementById('dpglqsl').textContent='Score: '+qScore;fb.textContent=d.ex;fb.className='qfbm show ok'}
+      else{btn.classList.add('qwr');area.querySelectorAll('.qopt')[d.a].classList.add('qco');fb.innerHTML='❌ Incorrect. '+d.ex;fb.className='qfbm show bad'}
+      nxt.classList.add('show');nxt.textContent=qCur<QD.length-1?'Next Question →':'See Results 🎯';
+    });
+  });
+}
+
+var qnxt=document.getElementById('dpglqnxt');
+if(qnxt)qnxt.addEventListener('click',function(){qCur++;if(qCur>=QD.length)showScore();else renderQ()});
+
+function showScore(){
+  var area=document.getElementById('dpglqarea'),fb=document.getElementById('dpglqfb'),nxt=document.getElementById('dpglqnxt'),pr=document.querySelector('#dp-gloss .qpr'),pl=document.getElementById('dpglspl');
+  if(area)area.style.display='none';if(fb)fb.style.display='none';if(nxt)nxt.style.display='none';if(pr)pr.style.display='none';if(pl)pl.classList.add('show');
+  var fin=document.getElementById('dpglsfin');if(fin)fin.textContent=qScore;
+  var pct=qScore/QD.length,msg,sub;
+  if(pct>=0.9){msg='Excellent! 🏆';sub='You\'ve mastered the concepts!'}
+  else if(pct>=0.75){msg='Great Work! 🌟';sub='Review the terms you missed.'}
+  else if(pct>=0.6){msg='Good Progress! 👍';sub='Study the glossary again.'}
+  else if(pct>=0.4){msg='Keep Practising! 💪';sub='Focus on concepts you struggled with.'}
+  else{msg='More Study Needed 📚';sub='Review all sections before retrying.'}
+  if(document.getElementById('dpglsmsg'))document.getElementById('dpglsmsg').textContent=msg;
+  if(document.getElementById('dpglssub'))document.getElementById('dpglssub').textContent=sub;
+}
+
+var srty=document.getElementById('dpglsrty');
+if(srty)srty.addEventListener('click',function(){
+  qScore=0;qCur=0;qAns=false;
+  var area=document.getElementById('dpglqarea'),fb=document.getElementById('dpglqfb'),nxt=document.getElementById('dpglqnxt'),pr=document.querySelector('#dp-gloss .qpr'),pl=document.getElementById('dpglspl');
+  if(area){area.style.display='block';area.innerHTML=''}if(fb){fb.style.display='block';fb.className='qfbm'}if(nxt)nxt.style.display='none';if(pr)pr.style.display='flex';if(pl)pl.classList.remove('show');
+  if(document.getElementById('dpglqsl'))document.getElementById('dpglqsl').textContent='Score: 0';
+  renderQ();
+});
+
+renderQ();
+})();
+</script>
+
+<script>
+(function(){
+  function sendHeight(){var h=document.documentElement.scrollHeight||document.body.scrollHeight;window.parent.postMessage({epHeight:h},'*')}
+  sendHeight();window.addEventListener('load',sendHeight);window.addEventListener('resize',sendHeight);
+  var mo=new MutationObserver(sendHeight);mo.observe(document.body,{childList:true,subtree:true,attributes:true});
+})();
+</script>
+
+</body>
+</html>
