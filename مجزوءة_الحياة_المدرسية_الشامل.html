@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مجزوءة الحياة المدرسية — الدليل التفاعلي الشامل</title>
+<style>
+:root{--p:#1a6fc4;--s:#0d9e8a;--a:#e85b2a;--g:#c8960a;--bg:#f4f7fb;--card:#fff;--text:#1a1a2e;--muted:#6c757d;--border:#dee2e6;--sw:290px;--ok:#198754;--err:#dc3545;--sh:0 2px 12px rgba(0,0,0,.08);--r:12px}
+.dark{--bg:#0f1117;--card:#1a1d2e;--text:#e8eaf0;--muted:#9ba3b2;--border:#2d3148;--sh:0 2px 12px rgba(0,0,0,.3)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Tahoma,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.8;transition:background .3s,color .3s}
+#app{display:flex;min-height:100vh}
+#sb{width:var(--sw);min-height:100vh;background:var(--card);border-left:1px solid var(--border);position:fixed;top:0;right:0;overflow-y:auto;z-index:100;box-shadow:var(--sh);transition:transform .3s}
+#sb.col{transform:translateX(var(--sw))}
+#mn{margin-right:var(--sw);flex:1;transition:margin .3s}
+#sb.col~#mn{margin-right:0}
+#tb{position:sticky;top:0;z-index:50;background:var(--card);border-bottom:1px solid var(--border);padding:9px 18px;display:flex;align-items:center;gap:10px;box-shadow:var(--sh)}
+#tb h1{font-size:.92rem;color:var(--p);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tb{background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:5px 11px;cursor:pointer;color:var(--text);font-size:.8rem;transition:all .2s;white-space:nowrap;font-family:inherit}
+.tb:hover{background:var(--p);color:#fff;border-color:var(--p)}
+#sr{border:1px solid var(--border);border-radius:7px;padding:5px 11px;background:var(--bg);color:var(--text);font-size:.85rem;width:170px;font-family:inherit}
+#sr:focus{outline:none;border-color:var(--p)}
+.sbh{padding:13px;border-bottom:1px solid var(--border)}
+.sbt{font-size:.92rem;font-weight:700;color:var(--p)}
+.ni{display:block;padding:8px 13px;cursor:pointer;border-radius:8px;margin:3px 7px;transition:all .2s;font-size:.83rem;color:var(--text)}
+.ni:hover,.ni.on{background:var(--p);color:#fff}
+.ns{padding:7px 13px 3px;font-size:.7rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.pg{display:none;padding:20px;max-width:920px;margin:0 auto}
+.pg.on{display:block;animation:fi .3s ease}
+@keyframes fi{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.hero{background:linear-gradient(135deg,var(--p),var(--s));color:#fff;padding:32px 26px;border-radius:var(--r);margin-bottom:20px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-25px;left:-25px;width:150px;height:150px;background:rgba(255,255,255,.08);border-radius:50%}
+.hero h2{font-size:1.4rem;margin-bottom:5px}
+.hero p{opacity:.9;font-size:.9rem}
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:18px}
+.sc{background:var(--card);border-radius:var(--r);padding:16px;border:1px solid var(--border);text-align:center;box-shadow:var(--sh);transition:transform .2s}
+.sc:hover{transform:translateY(-3px)}
+.sn{font-size:1.8rem;font-weight:700;color:var(--p)}
+.sl{font-size:.76rem;color:var(--muted);margin-top:3px}
+.card{background:var(--card);border-radius:var(--r);border:1px solid var(--border);box-shadow:var(--sh);margin-bottom:16px;overflow:hidden}
+.ch{padding:14px 17px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;user-select:none}
+.ch h3{font-size:.92rem;font-weight:600;display:flex;align-items:center;gap:6px}
+.cb{padding:17px;border-top:1px solid var(--border)}
+.badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:.7rem;font-weight:600}
+.bb{background:rgba(26,111,196,.12);color:var(--p)}
+.bg{background:rgba(13,158,138,.12);color:var(--s)}
+.br{background:rgba(232,91,42,.12);color:var(--a)}
+.bo{background:rgba(200,150,10,.12);color:var(--g)}
+.def{border-right:4px solid var(--p);background:rgba(26,111,196,.06);padding:13px 17px;border-radius:0 var(--r) var(--r) 0;margin:12px 0}
+.dl{font-size:.7rem;font-weight:700;color:var(--p);margin-bottom:4px;text-transform:uppercase}
+.ex{border-right:4px solid var(--s);background:rgba(13,158,138,.06);padding:13px 17px;border-radius:0 var(--r) var(--r) 0;margin:12px 0}
+.el{font-size:.7rem;font-weight:700;color:var(--s);margin-bottom:4px;text-transform:uppercase}
+.eb{border-right:4px solid var(--a);background:rgba(232,91,42,.06);padding:13px 17px;border-radius:0 var(--r) var(--r) 0;margin:12px 0}
+.ebl{font-size:.7rem;font-weight:700;color:var(--a);margin-bottom:4px;text-transform:uppercase}
+.tip{border-right:4px solid var(--g);background:rgba(200,150,10,.08);padding:11px 15px;border-radius:0 var(--r) var(--r) 0;margin:9px 0}
+.tl{font-size:.7rem;font-weight:700;color:var(--g);margin-bottom:3px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+@media(max-width:640px){.g2,.g3{grid-template-columns:1fr}}
+.fl{display:flex;flex-direction:column;align-items:center;gap:0;margin:12px auto;width:fit-content}
+.fs{background:var(--p);color:#fff;padding:8px 22px;border-radius:8px;font-size:.84rem;font-weight:600;text-align:center;min-width:160px}
+.fa{font-size:1.2rem;color:var(--p);line-height:1}
+.ct{width:100%;border-collapse:collapse;font-size:.85rem}
+.ct th{background:var(--p);color:#fff;padding:8px 12px;text-align:right}
+.ct td{padding:8px 12px;border-bottom:1px solid var(--border)}
+.ct tr:nth-child(even) td{background:rgba(26,111,196,.04)}
+.fcg{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:13px}
+.fc{background:var(--card);border:1px solid var(--border);border-radius:var(--r);min-height:150px;cursor:pointer;perspective:700px;box-shadow:var(--sh);transition:transform .2s}
+.fc:hover{transform:scale(1.02)}
+.fci{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .5s;min-height:150px}
+.fc.fl2 .fci{transform:rotateY(180deg)}
+.fcf,.fcb{position:absolute;inset:0;backface-visibility:hidden;padding:17px;display:flex;flex-direction:column;justify-content:center;border-radius:var(--r)}
+.fcf{background:linear-gradient(135deg,var(--p),var(--s));color:#fff}
+.fcb{background:var(--card);transform:rotateY(180deg);border:2px solid var(--p)}
+.fcq{font-size:.87rem;font-weight:600}
+.fca{font-size:.82rem;color:var(--text)}
+.fch{font-size:.7rem;opacity:.75;margin-top:6px}
+.eac{background:var(--card);border-radius:var(--r);border:1px solid var(--border);box-shadow:var(--sh);margin-bottom:20px;overflow:hidden}
+.eaq{background:linear-gradient(135deg,var(--p),var(--s));color:#fff;padding:14px 17px;font-weight:600;font-size:.95rem}
+.eaa{padding:17px;font-size:.92rem;line-height:1.9}
+.eaw{border-top:1px solid var(--border);padding:12px 17px;background:rgba(25,135,84,.05)}
+.eak{border-top:1px solid var(--border);padding:12px 17px;background:rgba(26,111,196,.05)}
+.kt{display:inline-block;background:var(--p);color:#fff;padding:2px 8px;border-radius:20px;font-size:.74rem;margin:2px;font-weight:600}
+.qq{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:17px;margin-bottom:13px}
+.qqt{font-weight:600;margin-bottom:11px;font-size:.9rem}
+.qop{display:flex;flex-direction:column;gap:7px}
+.qo{padding:8px 12px;border:1px solid var(--border);border-radius:8px;cursor:pointer;transition:all .2s;font-size:.86rem}
+.qo:hover{border-color:var(--p);background:rgba(26,111,196,.06)}
+.qo.ok{background:rgba(25,135,84,.1);border-color:var(--ok);color:var(--ok);font-weight:600}
+.qo.err{background:rgba(220,53,69,.1);border-color:var(--err);color:var(--err)}
+.qo.rv{background:rgba(25,135,84,.08);border-color:var(--ok)}
+.qrs{background:linear-gradient(135deg,var(--p),var(--s));color:#fff;padding:24px;border-radius:var(--r);text-align:center;margin-top:17px}
+.qsc{font-size:2.6rem;font-weight:700}
+.sai{width:100%;border:1px solid var(--border);border-radius:8px;padding:8px 12px;background:var(--bg);color:var(--text);font-size:.86rem;font-family:inherit;resize:vertical;min-height:70px}
+.sai:focus{outline:none;border-color:var(--p)}
+.rb{background:var(--p);color:#fff;border:none;border-radius:8px;padding:6px 14px;cursor:pointer;font-size:.83rem;margin-top:7px;transition:all .2s;font-family:inherit}
+.rb:hover{background:var(--s)}
+.ra{display:none;margin-top:10px}
+.ra.on{display:block}
+.mm-c{background:linear-gradient(135deg,var(--p),var(--s));color:#fff;padding:11px 20px;border-radius:10px;font-weight:700;text-align:center;margin-bottom:16px;font-size:.94rem}
+.mm-b{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.mm-br{border:2px solid var(--p);border-radius:10px;padding:10px 13px}
+.mm-bt{font-weight:700;color:var(--p);margin-bottom:6px;font-size:.85rem}
+.mm-l{font-size:.78rem;color:var(--muted);margin:3px 0;padding-right:10px;position:relative}
+.mm-l::before{content:'◈';position:absolute;right:0;color:var(--s);font-size:.66rem;top:2px}
+.pb{background:var(--border);border-radius:20px;height:8px;overflow:hidden;margin:7px 0}
+.pbf{height:100%;border-radius:20px;background:linear-gradient(90deg,var(--p),var(--s));transition:width .8s}
+.cli{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);cursor:pointer}
+.cli:last-child{border-bottom:none}
+.clb{width:20px;height:20px;border:2px solid var(--border);border-radius:5px;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .2s;margin-top:2px;font-size:.78rem}
+.cli.dn .clb{background:var(--ok);border-color:var(--ok);color:#fff}
+.cli.dn .clt{text-decoration:line-through;color:var(--muted)}
+.clt{font-size:.86rem}
+.qp{display:inline-block;background:linear-gradient(135deg,var(--p),var(--s));color:#fff;padding:6px 15px;border-radius:26px;margin:4px;font-size:.83rem;font-weight:600}
+.qc{background:var(--card);border:2px solid var(--p);border-radius:var(--r);padding:12px 15px;margin:8px 0}
+.qct{font-weight:700;color:var(--p);font-size:.84rem;margin-bottom:5px}
+.tln{position:relative;padding-right:20px}
+.tln::before{content:'';position:absolute;right:7px;top:0;bottom:0;width:2px;background:var(--border)}
+.tli{display:flex;gap:13px;margin-bottom:16px;position:relative}
+.tld{width:17px;height:17px;border-radius:50%;background:var(--p);flex-shrink:0;margin-top:3px;border:3px solid var(--card);box-shadow:0 0 0 2px var(--p)}
+.tlt{font-weight:700;color:var(--p);margin-bottom:2px}
+.tls{font-size:.86rem;color:var(--muted)}
+.band{background:linear-gradient(135deg,var(--p),var(--s));color:#fff;border-radius:var(--r);padding:17px 21px;margin-bottom:17px}
+.band h3{font-size:1.02rem;margin-bottom:5px}
+.band p{opacity:.9;font-size:.86rem}
+.tabs{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:16px}
+.tab{padding:6px 13px;border-radius:8px;border:1px solid var(--border);cursor:pointer;font-size:.83rem;background:var(--bg);color:var(--text);transition:all .2s;font-family:inherit}
+.tab.on{background:var(--p);color:#fff;border-color:var(--p)}
+.hid{display:none}
+.btn{background:linear-gradient(135deg,var(--p),var(--s));color:#fff;border:none;border-radius:var(--r);padding:11px 22px;font-size:.92rem;font-weight:600;cursor:pointer;transition:opacity .2s;font-family:inherit;margin:4px;display:inline-block}
+.btn:hover{opacity:.88}
+.btn.sec{background:linear-gradient(135deg,var(--a),var(--g))}
+.btn.out{background:transparent;border:2px solid var(--p);color:var(--p)}
+.btn.out:hover{background:var(--p);color:#fff}
+.dv{height:1px;background:var(--border);margin:18px 0}
+.fm-i{display:flex;flex-wrap:wrap;gap:7px}
+.fm-it{padding:6px 13px;border-radius:8px;font-size:.83rem;font-weight:600}
+.fm-m{background:linear-gradient(135deg,var(--p),var(--s));color:#fff}
+.fm-a{background:rgba(26,111,196,.12);color:var(--p);border:1px solid var(--p)}
+.fm-c{background:rgba(13,158,138,.12);color:var(--s);border:1px solid var(--s)}
+.fm-e{background:rgba(232,91,42,.12);color:var(--a);border:1px solid var(--a)}
+.ind{display:inline-flex;align-items:center;gap:4px;font-size:.78rem;margin:4px 0}
+.dg{width:8px;height:8px;border-radius:50%;background:var(--ok)}
+.dr{width:8px;height:8px;border-radius:50%;background:var(--err)}
+.ci{transition:transform .3s}
+.cc .ci{transform:rotate(-90deg)}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--p)}
+@media print{#sb,#tb{display:none!important}#mn{margin-right:0!important}.pg{display:block!important}.cb{display:block!important}}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.info-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:14px;box-shadow:var(--sh)}
+.info-card h4{color:var(--p);font-size:.86rem;margin-bottom:6px}
+.info-card p,.info-card li{font-size:.84rem;color:var(--muted)}
+.tag{display:inline-block;background:rgba(26,111,196,.1);color:var(--p);border-radius:5px;padding:1px 7px;font-size:.76rem;margin:2px}
+.num-badge{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--p);color:#fff;font-size:.72rem;font-weight:700;flex-shrink:0}
+</style>
+</head>
+<body>
+<div id="app">
+<nav id="sb">
+  <div class="sbh">
+    <div class="sbt">📚 مجزوءة الحياة المدرسية</div>
+    <div style="margin-top:8px"><div style="font-size:.74rem;color:var(--muted);margin-bottom:3px">التقدم</div>
+    <div class="pb"><div class="pbf" id="gp" style="width:0%"></div></div>
+    <div id="gpt" style="font-size:.74rem;color:var(--muted)">0 / 14 مكتمل</div></div>
+  </div>
+  <div style="padding:5px">
+    <div class="ns">الرئيسية</div>
+    <div class="ni on" onclick="sp('home',this)">🏠 الرئيسية</div>
+    <div class="ns">المحاور الكبرى</div>
+    <div class="ni" onclick="sp('a1',this)">📖 المفهوم والسياق</div>
+    <div class="ni" onclick="sp('a2',this)">📜 المرجعيات التشريعية</div>
+    <div class="ni" onclick="sp('a3',this)">🏛️ مكونات الحياة المدرسية</div>
+    <div class="ni" onclick="sp('a4',this)">🌿 المناخ وبيئة التعلم</div>
+    <div class="ns">المشاريع التربوية</div>
+    <div class="ni" onclick="sp('a5',this)">🗂️ مشروع المؤسسة P.E</div>
+    <div class="ni" onclick="sp('a6',this)">🏫 مشروع القسم P.C</div>
+    <div class="ni" onclick="sp('a7',this)">🔗 النموذج التكاملي</div>
+    <div class="ns">مواضيع متخصصة</div>
+    <div class="ni" onclick="sp('a8',this)">🎭 الأنشطة المندمجة</div>
+    <div class="ni" onclick="sp('a9',this)">👂 خلية الإنصات</div>
+    <div class="ns">الامتحان</div>
+    <div class="ni" onclick="sp('ea',this)">✍️ نماذج الإجابات</div>
+    <div class="ni" onclick="sp('fc',this)">🃏 بطاقات المراجعة</div>
+    <div class="ni" onclick="sp('qz',this)">🎯 اختبر نفسك</div>
+    <div class="ni" onclick="sp('qr',this)">⚡ راجع في 10 دقائق</div>
+    <div class="ni" onclick="sp('fm',this)">🗺️ الخريطة النهائية</div>
+  </div>
+</nav>
+<div id="mn">
+<div id="tb">
+  <button class="tb" onclick="ts()">☰</button>
+  <h1>مجزوءة الحياة المدرسية — الدليل التفاعلي الشامل</h1>
+  <input type="text" id="sr" placeholder="🔍 بحث...">
+  <div style="display:flex;align-items:center;gap:5px"><span style="font-size:.82rem">🌙</span>
+  <div style="width:40px;height:21px;background:var(--border);border-radius:11px;position:relative;cursor:pointer;transition:background .3s" id="dt" onclick="td()">
+  <div style="width:15px;height:15px;background:#fff;border-radius:50%;position:absolute;top:3px;right:3px;transition:transform .3s" id="dth"></div></div></div>
+  <button class="tb" onclick="window.print()">🖨️</button>
+</div>
+
+<!-- HOME -->
+<div class="pg on" id="pg-home">
+<div class="hero"><h2>مجزوءة الحياة المدرسية</h2><p>الدليل التفاعلي الشامل — يغطي كل محاور الوحدة بعمق للاستحضار والامتحان</p>
+<div style="margin-top:15px;background:rgba(255,255,255,.2);border-radius:10px;padding:11px">
+<div style="font-size:.83rem;margin-bottom:5px;opacity:.9">التقدم الكلي</div>
+<div class="pb" style="height:10px"><div class="pbf" id="hp" style="width:0%;background:rgba(255,255,255,.8)"></div></div>
+<div id="hpt" style="font-size:.78rem;margin-top:3px;opacity:.9">ابدأ رحلتك الآن!</div></div></div>
+<div class="sg">
+<div class="sc"><div class="sn">9</div><div class="sl">محاور دراسية</div></div>
+<div class="sc"><div class="sn">8</div><div class="sl">مرجعيات</div></div>
+<div class="sc"><div class="sn">30+</div><div class="sl">سؤال امتحاني</div></div>
+<div class="sc"><div class="sn">90</div><div class="sl">دقيقة مقدّرة</div></div>
+</div>
+<div class="card" style="margin-top:18px"><div class="ch" onclick="tc(this)"><h3>📋 نظرة عامة شاملة</h3><span class="ci">▾</span></div>
+<div class="cb"><p>تتناول هذه المجزوءة <strong>الحياة المدرسية</strong> بوصفها فضاءً تربويًا متكاملًا يتجاوز نقل المعارف ليشمل مجموع الأنشطة والعلاقات والتفاعلات والممارسات داخل المؤسسة التعليمية. تنتظم حول محاور: المفهوم والسياق، المرجعيات التشريعية، مكونات الحياة المدرسية ومجالاتها، المناخ المدرسي وبيئة التعلم الآمنة، المشاريع التربوية، الأنشطة المندمجة، وخلية الإنصات والوساطة التربوية.</p>
+<div style="margin-top:10px"><span class="badge bb">المفهوم</span><span class="badge bg" style="margin-right:5px">المرجعيات</span><span class="badge br" style="margin-right:5px">المناخ</span><span class="badge bo" style="margin-right:5px">المشاريع</span><span class="badge bb" style="margin-right:5px">الأنشطة</span><span class="badge bg" style="margin-right:5px">خلية الإنصات</span></div></div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>✅ قائمة متابعة الدراسة</h3><span class="ci">▾</span></div>
+<div class="cb"><div id="cl">
+<div class="cli" onclick="ck(this)"><div class="clb">✓</div><div class="clt">قرأت مفهوم الحياة المدرسية وسياقها</div></div>
+<div class="cli" onclick="ck(this)"><div class="clb">✓</div><div class="clt">حفظت المرجعيات الثماني كاملةً</div></div>
+<div class="cli" onclick="ck(this)"><div class="clb">✓</div><div class="clt">استوعبت مكونات الحياة المدرسية ومجالاتها</div></div>
+<div class="cli" onclick="ck(this)"><div class="clb">✓</div><div class="clt">فهمت مجالس المؤسسة الأربعة واختصاصاتها</div></div>
+<div class="cli" onclick="ck(this)"><div class="clb">✓</div><div class="clt">استوعبت الزمن المدرسي والوثائق المدرسية</div></div>
+<div class="cli" onclick="ck(this)"><div class="clb">✓</div><div class="clt">فهمت المناخ المدرسي وبيئة التعلم الآمنة والفرق بينهما</div></div>
+<div class="cli" onclick="ck(this)"><div class="clb">✓</div><div class="clt">فهمت مشروع المؤسسة P.E ومنهجية DEPART</div></div>
+<div class="cli" onclick="ck(this)"><div class="clb">✓</div><div class="clt">فهمت مشروع القسم P.C والعلاقة بينه وبين P.E</div></div>
+<div class="cli" onclick="ck(this)"><div class="clb">✓</div><div class="clt">استوعبت الأنشطة المندمجة وأنواعها</div></div>
+<div class="cli" onclick="ck(this)"><div class="clb">✓</div><div class="clt">فهمت خلية الإنصات ومساراتها</div></div>
+<div class="cli" onclick="ck(this)"><div class="clb">✓</div><div class="clt">راجعت نماذج الإجابات الامتحانية</div></div>
+<div class="cli" onclick="ck(this)"><div class="clb">✓</div><div class="clt">اجتزت اختبار «اختبر نفسك»</div></div>
+<div class="cli" onclick="ck(this)"><div class="clb">✓</div><div class="clt">راجعت «راجع في 10 دقائق»</div></div>
+<div class="cli" onclick="ck(this)"><div class="clb">✓</div><div class="clt">استوعبت الخريطة النهائية الشاملة</div></div>
+</div>
+<div style="margin-top:12px"><div class="pb"><div class="pbf" id="clf" style="width:0%"></div></div>
+<div id="cll" style="font-size:.78rem;color:var(--muted);margin-top:3px">0 / 14 مكتمل</div></div></div></div>
+<div style="text-align:center;padding:10px 0 22px">
+<button class="btn" onclick="sp('a1',document.querySelector('[onclick*=a1]'))">ابدأ ← المحور الأول</button>
+<button class="btn sec" onclick="sp('qr',document.querySelector('[onclick*=qr]'))">⚡ مراجعة سريعة</button></div>
+</div>
+
+<!-- AXIS 1: CONCEPT -->
+<div class="pg" id="pg-a1">
+<div class="band"><h3>📖 المحور الأول: مفهوم الحياة المدرسية وسياقها</h3><p>التحول من التصور التقليدي إلى المفهوم الشامل</p></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🔎 لماذا ظهر المفهوم؟ السياق التاريخي</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="g2">
+<div><div style="font-weight:700;color:var(--err);margin-bottom:8px">❌ التصور التقليدي</div>
+<div class="qc"><div style="font-size:.85rem;color:var(--muted)">المدرسة = مكان للتحصيل الدراسي فقط<br>التلميذ = مستهلك للمعلومة<br>النجاح = النقطة فحسب</div></div></div>
+<div><div style="font-weight:700;color:var(--ok);margin-bottom:8px">✅ التصور الحديث</div>
+<div class="qc" style="border-color:var(--s)"><div style="font-size:.85rem">المؤسسة = فضاء للتنشئة الاجتماعية المتكاملة<br>التلميذ = فاعل ومبادر<br>النجاح = جودة التعلم + القيم + الاندماج</div></div></div>
+</div>
+<div class="tip" style="margin-top:12px"><div class="tl">السياق التاريخي</div>
+شكّل الاهتمام بالحياة المدرسية بالمغرب <strong>منعطفًا حاسمًا</strong> انتقلت معه المؤسسة من مقاربة تعتبر التلميذ مستهلكًا للمعلومة إلى مقاربة تجعل منها <strong>فضاءً للتنشئة الاجتماعية المتكاملة</strong> — مرآة للمجتمع ومشتلًا للديمقراطية.</div>
+</div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>📌 التعريف الرسمي وتحليله</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">التعريف الرسمي — دليل الحياة المدرسية 2019</div>
+<strong>«يمكن تعريف الحياة المدرسية بأنها الحياة التي يعيشها المتعلمون في جميع الأوقات والأماكن المدرسية</strong> (أوقات الدراسة والاستراحة والإطعام...؛ الفصول والساحة والملاعب الرياضية، ومواقع الزيارات والخرجات التربوية...)، <strong>قصد تربيتهم باعتماد جميع الأنشطة الدينية والتربوية والتكوينية المبرمجة</strong>، ولا سيما التي تراعي الجوانب المعرفية والوجدانية والحس حركية من شخصياتهم، مع ضمان المشاركة الفعلية والفعالة لكافة مكونات المجتمع المدني.»</div>
+<h4 style="margin:13px 0 9px;color:var(--p)">تحليل مفاتيح التعريف</h4>
+<div class="g2">
+<div class="qc"><div class="qct">«جميع الأوقات والأماكن»</div>تجاوز الحصة الدراسية إلى فضاءات متعددة: القسم، الساحة، المكتبة، النادي، الملعب.</div>
+<div class="qc"><div class="qct">«الأنشطة الدينية والتربوية والتكوينية»</div>منظومة شاملة: صفية وموازية، رسمية وغير رسمية.</div>
+<div class="qc"><div class="qct">«الجوانب المعرفية والوجدانية والحس حركية»</div>تنشئة شاملة للشخصية في أبعادها المختلفة.</div>
+<div class="qc"><div class="qct">«مشاركة مكونات المجتمع المدني»</div>الانفتاح على المحيط: متعلمون، مدرسون، إدارة، آباء، شركاء.</div>
+</div></div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🏛️ المرتكزات والأهداف والأبعاد</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="tabs"><button class="tab on" onclick="st('rc1',this)">المرتكزات</button><button class="tab" onclick="st('rc2',this)">الأهداف</button><button class="tab" onclick="st('rc3',this)">الأبعاد</button><button class="tab" onclick="st('rc4',this)">المؤشرات</button></div>
+<div id="tb-rc1">
+<div class="g2">
+<div class="qc"><div class="qct">1. المتعلم في المركز</div>تحوّل من الأستاذ كمحور إلى المتعلم الفاعل: مشاركة، مبادرة، تعلم ذاتي.</div>
+<div class="qc"><div class="qct">2. المشاركة</div>الإدارة + الأستاذ + المتعلم + الأسرة + الشركاء = فريق متكامل.</div>
+<div class="qc"><div class="qct">3. الانفتاح</div>المؤسسة تتفاعل مع المجتمع والجمعيات والمؤسسات الشريكة.</div>
+<div class="qc"><div class="qct">4. الجودة</div>الهدف هو تجويد التعلمات والارتقاء بالمؤسسة.</div>
+</div></div>
+<div id="tb-rc2" class="hid">
+<div class="tln">
+<div class="tli"><div class="tld"></div><div><div class="tlt">تحسين جودة التعلمات</div><div class="tls">تحسين كيفية التعلم لا كمية المحتوى</div></div></div>
+<div class="tli"><div class="tld"></div><div><div class="tlt">تنمية شخصية المتعلم</div><div class="tls">في المعرفة والسلوك والقيم والوجدان</div></div></div>
+<div class="tli"><div class="tld"></div><div><div class="tlt">ترسيخ قيم المواطنة</div><div class="tls">المسؤولية، الاحترام، التضامن، المشاركة</div></div></div>
+<div class="tli"><div class="tld"></div><div><div class="tlt">تحقيق الاندماج الاجتماعي</div><div class="tls">إعداد المتعلم للحياة الاجتماعية والمهنية</div></div></div>
+<div class="tli"><div class="tld"></div><div><div class="tlt">جعل المؤسسة فضاءً جاذبًا</div><div class="tls">تقليل الهدر المدرسي والغياب والانقطاع</div></div></div>
+</div></div>
+<div id="tb-rc3" class="hid">
+<div class="g2">
+<div class="qc"><div class="qct">البُعد التربوي</div>رفع جودة التعلمات: الدعم، الأنشطة، التنشيط.</div>
+<div class="qc" style="border-color:var(--s)"><div class="qct" style="color:var(--s)">البُعد الاجتماعي</div>اندماج المتعلم: الحوار، التعاون، الانتماء.</div>
+<div class="qc" style="border-color:var(--a)"><div class="qct" style="color:var(--a)">البُعد التنظيمي</div>تنظيم العمل: المشاريع، المجالس، الوثائق.</div>
+<div class="qc" style="border-color:var(--g)"><div class="qct" style="color:var(--g)">البُعد القيمي</div>تكوين المواطن: المسؤولية، السلوك المدني.</div>
+</div></div>
+<div id="tb-rc4" class="hid">
+<div class="g2">
+<div>
+<div style="font-weight:700;color:var(--ok);margin-bottom:8px">✅ مؤشرات الجودة</div>
+<div class="ind"><span class="dg"></span> مشاركة المتعلمين الفاعلة</div>
+<div class="ind"><span class="dg"></span> انخفاض العنف والغياب</div>
+<div class="ind"><span class="dg"></span> شعور بالأمان والانتماء</div>
+<div class="ind"><span class="dg"></span> انفتاح المؤسسة على المحيط</div>
+<div class="ind"><span class="dg"></span> تحسن النتائج الدراسية</div>
+</div>
+<div>
+<div style="font-weight:700;color:var(--err);margin-bottom:8px">❌ مؤشرات الهشاشة</div>
+<div class="ind"><span class="dr"></span> الغياب والانقطاع المتكرر</div>
+<div class="ind"><span class="dr"></span> النزاعات المتكررة</div>
+<div class="ind"><span class="dr"></span> ضعف التواصل</div>
+<div class="ind"><span class="dr"></span> تدني النتائج الدراسية</div>
+</div>
+</div></div>
+</div></div>
+</div>
+
+<!-- AXIS 2: REFERENCES -->
+<div class="pg" id="pg-a2">
+<div class="band"><h3>📜 المحور الثاني: المرجعيات والتشريعات</h3><p>ثماني مرجعيات تُرسي الإطار القانوني والتربوي للحياة المدرسية</p></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>📌 تعريف المرجعيات وأهميتها</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">تعريف</div>مجموع الوثائق والتوجهات والنصوص التي تحدد فلسفة المدرسة وأهدافها وآليات اشتغالها وتؤطر تدخلات الفاعلين. هي <strong>خيار استراتيجي مدعوم بنصوص رسمية</strong> لا مجرد نشاط عفوي.</div>
+<div class="tip"><div class="tl">لماذا نحتاجها؟</div>توحيد الرؤية | ضمان الاستمرارية | تنظيم التدخلات | حماية الحقوق | تحسين الجودة</div>
+</div></div>
+
+<h4 style="color:var(--p);margin:14px 0 10px;font-size:1rem">المرجعيات الثماني (من الأعلى إلى الأقل)</h4>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🇲🇦 1. دستور المملكة 2011 <span class="badge bb" style="margin-right:8px">مرجعية دستورية</span></h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">المضمون المرتبط بالحياة المدرسية</div>
+<strong>الفصل 31:</strong> تعمل الدولة والمؤسسات العمومية على تيسير الحصول على <em>تعليم عصري ميسر الولوج وذي جودة</em>، والتنشئة على التشبث بالهوية المغربية، والتكوين المهني والاستفادة من التربية البدنية والفنية.<br><br>
+<strong>الفصل 33:</strong> اتخاذ التدابير الملائمة لتيسير ولوج الشباب إلى الثقافة والعلم والتكنولوجيا والفن والرياضة والأنشطة الترفيهية.</div>
+<div class="eb"><div class="ebl">الرابط بالحياة المدرسية</div>الحياة المدرسية هي الركيزة لتحويل هذه القيم من نصوص في المقررات إلى سلوكيات ممارسة في المؤسسات.</div>
+</div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>👑 2. الخطب والرسائل الملكية <span class="badge bo" style="margin-right:8px">توجيه سيادي</span></h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">رسالة 23 ماي 2007 — الندوة الوطنية حول المدرسة والسلوك المدني</div>
+«أن رهان المدرسة في مجال التربية على السلوك المدني يكمن في مدى قدرتها على تجسيده <strong>ثقافةً وممارسةً</strong>... وأن تشكل الحياة المدرسية مثالًا حيًا للسلوك المواطن المسؤول، ونموذجًا لاحترام النظام والقانون، وتجسيدًا للممارسة الديمقراطية وفضاءً لتنمية الأنشطة الثقافية والرياضية والإبداعية.»</div>
+</div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>📗 3. الميثاق الوطني للتربية والتكوين 1999 <span class="badge bb" style="margin-right:8px">الأهم</span></h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">المادة 9 — الفكرة المحورية</div>«تسعى المدرسة المغربية الوطنية الجديدة إلى أن تكون:<br>أ — <strong>مفعمة بالحياة</strong> بفضل نهج تربوي نشيط يجاوز التلقي السلبي والعمل الفردي إلى التعلم الذاتي والقدرة على الحوار والمشاركة في الاجتهاد الجماعي.<br>ب — <strong>مفتوحة على محيطها</strong> بفضل نهج تربوي قوامه استحضار المجتمع في قلب المدرسة والخروج إليه.»</div>
+<div class="g2">
+<div class="qc"><div class="qct">تجاوز التلقي السلبي</div>المتعلم يشارك ويبادر لا يستقبل فحسب</div>
+<div class="qc"><div class="qct">التعلم الذاتي</div>المتعلم يبحث عن المعرفة لا ينتظرها</div>
+<div class="qc"><div class="qct">الحوار والعمل الجماعي</div>التعاون ركيزة أساسية</div>
+<div class="qc"><div class="qct">الانفتاح على المحيط</div>علاقات جديدة مع الفضاء البيئي والاجتماعي</div>
+</div></div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>📘 4. الكتاب الأبيض 2002</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">الفكرة الجوهرية</div>الانتقال من <strong>حفظ المعارف إلى بناء الكفايات</strong>. خصّص حيزًا مهمًا للحياة المدرسية باعتبارها أحد مداخل إصلاح المناهج. «المدرسة مجال حقيقي لترسيخ القيم الأخلاقية وقيم المواطنة وحقوق الإنسان وممارسة الحياة الديموقراطية.»</div>
+<div class="g2">
+<div class="qc"><div class="qct">المنهاج والكفايات</div>تحديد المضامين وبناء الكفايات</div>
+<div class="qc"><div class="qct">مشروع تدبير الحياة المدرسية</div>أحد المشاريع الرئيسية في ثمانية أجزاء</div>
+</div></div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🚀 5. البرنامج الاستعجالي 2009-2012</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">المشروع رقم 9 — «تحسين جودة الحياة المدرسية»</div>
+23 مشروعًا تدبيريًا منها المشروع رقم 9 بعنوان <strong>«تحسين جودة الحياة المدرسية»</strong> الهادف إلى: تخصيص غلاف زمني للتمارين وأنشطة الدعم والتفتح، تعميم الأندية التربوية، إرساء المشاركة التلاميذية، تحسين البنيات التحتية.</div>
+<div class="tip"><div class="tl">الانطلاقة الرسمية</div>كانت هذه انطلاقة رسمية لتعميم الأندية التربوية وإرساء المشاركة التلاميذية بالمؤسسات التعليمية.</div>
+</div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>📙 6. الرؤية الاستراتيجية 2015-2030</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">الشعار</div><strong>مدرسة الجودة للجميع</strong></div>
+<div class="g2">
+<div class="qc"><div class="qct">الرافعة 17 — الاندماج السوسيوثقافي</div>المدرسة حاملة للثقافة وناقلة لها</div>
+<div class="qc"><div class="qct">الرافعة 18 — المواطنة والديموقراطية</div>تشجيع المتعلمين على مشاريع تطوعية، إرساء آليات الوساطة</div>
+<div class="qc"><div class="qct">الإنصاف</div>كل المتعلمين يستفيدون</div>
+<div class="qc"><div class="qct">الجودة</div>تحسين النتائج والارتقاء بالمؤسسة</div>
+</div></div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>⚖️ 7. القانون الإطار 51-17 (2018)</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">10 أبواب و59 مادة</div>«مدرسة الإنصاف وتكافؤ الفرص» + «مدرسة الجودة للجميع»</div>
+<div class="g2">
+<div class="qc"><div class="qct">المشروع رقم 10 للارتقاء بالحياة المدرسية</div>إرساء مدرسة مواطنة دامجة، تعزيز الصلة بين مشروع المؤسسة ومشروع القسم والمشروع الشخصي</div>
+<div class="qc"><div class="qct">الأندية التربوية</div>دعم إرساء الأندية في المجالات الفنية والثقافية والعلمية</div>
+<div class="qc"><div class="qct">مشروع المؤسسة</div>أداة أساسية لأجرأة السياسات التربوية</div>
+<div class="qc"><div class="qct">التنشئة الاجتماعية</div>التربية على قيم المواطنة والانفتاح والسلوك المدني</div>
+</div></div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🗺️ 8. خارطة الطريق 2022-2026</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">امتداد عملي للقانون الإطار</div>آليات عملية + تمويلات واضحة + مؤشرات قياس</div>
+<div class="g2">
+<div class="qc"><div class="qct">الهدف الأول</div>جودة التعلمات الأساس (القراءة، الكتابة، الحساب)</div>
+<div class="qc"><div class="qct">الهدف الثاني</div>التفتح وقيم المواطنة + رفع نسب الأنشطة الموازية</div>
+<div class="qc"><div class="qct">الهدف الثالث</div>تقليص الهدر المدرسي وتعميم التعليم الأولي</div>
+<div class="qc"><div class="qct">مشروع مؤسسات الريادة</div>تحول شامل بالانخراط الطوعي للفرق التربوية</div>
+</div>
+<div class="tip" style="margin-top:12px"><div class="tl">الالتزام رقم 7</div>بيئة مدرسية آمنة يسودها مناخ الثقة والاقتران — محاربة العنف المدرسي وتأمين محيط المؤسسات.</div>
+</div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>📋 9. النصوص التشريعية والتنظيمية</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">الوظيفة</div>تنقل الحياة المدرسية من مجال الاجتهادات الفردية إلى سياق المأسسة والحكامة والعمل المشترك</div>
+<table class="ct" style="font-size:.8rem">
+<thead><tr><th>رقم النص</th><th>التاريخ</th><th>الموضوع</th></tr></thead>
+<tbody>
+<tr><td>م 2.02.376</td><td>2002</td><td>النظام الأساسي الخاص بمؤسسات التربية والتعليم</td></tr>
+<tr><td>م.و 42</td><td>2001</td><td>تفعيل الأندية التربوية</td></tr>
+<tr><td>م.و 87</td><td>2004</td><td>تفعيل أدوار الحياة المدرسية</td></tr>
+<tr><td>م.و 125</td><td>2011</td><td>الاستراتيجية الوطنية لتعميم مشروع المؤسسة</td></tr>
+<tr><td>م.و 155</td><td>2011</td><td>تفعيل أدوار الحياة المدرسية بالمؤسسات</td></tr>
+<tr><td>م.و 84</td><td>2021</td><td>إدماج أنشطة الحياة المدرسية في الزمن المدرسي</td></tr>
+<tr><td>م.و 14</td><td>2024</td><td>مشروع المؤسسة المندمج</td></tr>
+<tr><td>م.و 17/007</td><td>2017</td><td>الوقاية من العنف المدرسي</td></tr>
+</tbody>
+</table>
+</div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🗺️ خريطة ذهنية — المرجعيات</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="mm-c">المرجعيات المؤطِّرة للحياة المدرسية</div>
+<div class="mm-b">
+<div class="mm-br"><div class="mm-bt">دستورية/سيادية</div><div class="mm-l">دستور 2011</div><div class="mm-l">الخطب الملكية</div></div>
+<div class="mm-br"><div class="mm-bt">تربوية كبرى</div><div class="mm-l">الميثاق 1999</div><div class="mm-l">الكتاب الأبيض 2002</div></div>
+<div class="mm-br"><div class="mm-bt">استراتيجية</div><div class="mm-l">الرؤية 2015-2030</div><div class="mm-l">البرنامج الاستعجالي</div></div>
+<div class="mm-br"><div class="mm-bt">تشريعية</div><div class="mm-l">القانون الإطار 51-17</div><div class="mm-l">خارطة الطريق 2022-26</div><div class="mm-l">المذكرات الوزارية</div></div>
+</div>
+</div></div>
+</div>
+
+<!-- AXIS 3: COMPONENTS -->
+<div class="pg" id="pg-a3">
+<div class="band"><h3>🏛️ المحور الثالث: مكونات الحياة المدرسية ومجالاتها</h3><p>نظام حيوي متكامل يهدف إلى تنشئة المواطن لا المتعلم فحسب</p></div>
+<div class="tip"><div class="tl">المذكرة الإطار 155 — 17 نونبر 2011</div>حددت مجالات الحياة المدرسية والأنشطة المرتبطة بها وسبل تفعيلها.</div>
+
+<!-- 1. GOUVERNANCE -->
+<div class="card"><div class="ch" onclick="tc(this)"><h3>⚙️ المجال 1: الحكامة والقيادة التربوية</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">التعريف</div>الانتقال من التدبير الإداري التقليدي إلى <strong>أنموذج التدبير التشاركي والديمقراطي</strong>. الحكامة = الشفافية والمسؤولية وإشراك الفاعلين. القيادة = إلهام الفريق وتحفيزه.</div>
+<div class="tabs"><button class="tab on" onclick="st('g1',this)">تحديد الأدوار</button><button class="tab" onclick="st('g2',this)">الوثائق المدرسية</button><button class="tab" onclick="st('g3',this)">مجالس المؤسسة</button><button class="tab" onclick="st('g4',this)">الزمن المدرسي</button><button class="tab" onclick="st('g5',this)">مواثيق المؤسسة</button><button class="tab" onclick="st('g6',this)">الفضاءات</button><button class="tab" onclick="st('g7',this)">الأمن الإنساني</button></div>
+
+<div id="tb-g1">
+<div class="def"><div class="dl">تحديد الأدوار</div>تدقيق المسؤوليات والمهام المنوطة بكل فاعل تربوي لتجنّب العشوائية وتداخل الاختصاصات.</div>
+<div class="g2">
+<div class="qc"><div class="qct">المدير</div>القيادة والتنسيق والإشراف على تنفيذ مشروع المؤسسة</div>
+<div class="qc"><div class="qct">الأستاذ</div>التخطيط والتدريس وتفعيل الأنشطة</div>
+<div class="qc"><div class="qct">التلميذ</div>المشاركة والانخراط والمبادرة</div>
+<div class="qc"><div class="qct">الحارس العام</div>الانضباط والتتبع والوثائق</div>
+</div>
+<div class="tip"><div class="tl">المرسوم 2.02.376</div>اعتمد نهج الحكامة المبني على اللامركزية واللاتمركز، وتفعيل سياسة القرب وتوطيد التدبير التشاركي عبر مجالس المؤسسات.</div>
+</div>
+
+<div id="tb-g2" class="hid">
+<div class="def"><div class="dl">ضبط الوثائق المدرسية واستثمارها</div>الحفاظ عليها وحسن تعبئتها يساعد على التحكم في العمليات التربوية وبناء قرارات صائبة.</div>
+<div class="g2">
+<div class="qc"><div class="qct">وثائق تمدرس المتعلمين</div>الملف المدرسي، البيانات الفردية، ورقة التعريف، ورقة الغياب، البطاقة الشخصية، الدفتر الصحي</div>
+<div class="qc"><div class="qct">وثائق الموظفين</div>البطاقة الشخصية، لوائح الموظفين، جدول الحصص، تقارير التفتيش، الشهادات الطبية</div>
+<div class="qc"><div class="qct">الوثائق البيداغوجية</div>البنية التربوية، استعمالات الزمن، دفاتر النصوص، أوراق التنقيط، تقارير المجالس</div>
+<div class="qc"><div class="qct">الوثائق الإدارية والمالية</div>سجلات الجرد، محاضر الدخول والخروج، تقارير مجلس التدبير، المراسلات</div>
+</div>
+<div class="eb"><div class="ebl">الهدف</div>تحويل الوثائق من مجرد أرشيف جامد إلى أداة لتجويد التعلمات وضمان استمرارية المرفق العمومي.</div>
+</div>
+
+<div id="tb-g3" class="hid">
+<div class="def"><div class="dl">مجالس المؤسسة — المرسوم 2.02.376</div>آليات أساسية لتدبير الشأن التربوي والإداري والمالي، تكرّس النهج التشاركي في اتخاذ القرار.</div>
+<table class="ct">
+<thead><tr><th>المجلس</th><th>التركيبة</th><th>الدور الرئيسي</th></tr></thead>
+<tbody>
+<tr><td><strong>مجلس التدبير</strong></td><td>إدارة + أساتذة + آباء + شركاء + ممثلو التلاميذ</td><td>المصادقة على مشروع المؤسسة، النظام الداخلي، تتبع التنفيذ، ضمان الأمن</td></tr>
+<tr><td><strong>المجلس التربوي</strong></td><td>الفعاليات الإدارية والتربوية</td><td>البرنامج السنوي، الأنشطة التعليمية والتقويمية والثقافية</td></tr>
+<tr><td><strong>المجالس التعليمية</strong></td><td>أساتذة المادة الواحدة أو المستوى الواحد</td><td>التنسيق، تبادل التجارب، دراسة البرامج والكتب المدرسية</td></tr>
+<tr><td><strong>مجالس الأقسام</strong></td><td>كل أساتذة القسم</td><td>تتبع أعمال التلاميذ وتقييمها، الانتقال، الإجراءات التأديبية</td></tr>
+</tbody>
+</table>
+<div class="eb" style="margin-top:12px"><div class="ebl">نقطة امتحانية</div>مجلس التدبير يُشرك ممثلين عن التلاميذ لتفعيل المشاركة التلاميذية في الحياة المدرسية.</div>
+</div>
+
+<div id="tb-g4" class="hid">
+<div class="def"><div class="dl">تأمين الزمن المدرسي — المذكرة 154</div>التدبير الجيد للزمن المدرسي والحرص على استفادة المتعلمين بشكل كامل من زمن التعلم.</div>
+<table class="ct">
+<thead><tr><th>المدخل</th><th>الهدف</th><th>الإجراءات</th></tr></thead>
+<tbody>
+<tr><td>إرساء الشفافية</td><td>تنمية المسؤولية والالتزام</td><td>نشر جداول الحصص، لوائح الموظفين، الغالف الزمني، أسماء المتغيبين</td></tr>
+<tr><td>ضبط الغياب وتسجيله</td><td>ثقافة الرصد والتتبع</td><td>تعبئة سجل المواظبة، تقارير دورية، بطاقات التراخيص</td></tr>
+<tr><td>المعالجة البيداغوجية</td><td>تحصين زمن التعلم</td><td>الاحتفاظ بالتلاميذ عند تغيب الأستاذ، حصص استدراكية، زيارات تفقدية</td></tr>
+<tr><td>المعالجة الإدارية</td><td>تطبيق النصوص التنظيمية</td><td>تحريك المسطرة التأديبية، إرسال التقارير، التوثيق</td></tr>
+</tbody>
+</table>
+</div>
+
+<div id="tb-g5" class="hid">
+<div class="def"><div class="dl">مواثيق المؤسسة</div>«كل النصوص ذات الطابع التعاقدي التي تنظم العلاقات بين كل الفاعلين داخل المؤسسة التعليمية أو شركائها.»</div>
+<div class="g2">
+<div class="qc"><div class="qct">النظام الداخلي للمؤسسة</div>الوثيقة الأساس لتنظيم العلاقات. يتضمن: حقوق المتعلمين وواجباتهم، السلامة والأمن، الأنشطة المندمجة، تنظيم الحياة الداخلية، الأنظمة الداخلية للمجالس، النظام الخاص بذوي الاحتياجات الخاصة.</div>
+<div class="qc"><div class="qct">ميثاق القسم</div>يُعدّ من لدن مجلس القسم بمشاركة المتعلمين والأساتذة. يحدد ضوابط العمل داخل القسم والتزامات الأساتذة والمتعلمين فيما بينهم وتجاه بعضهم. ملزم لجميع الفاعلين بعد المصادقة عليه.</div>
+</div>
+<div class="tip"><div class="tl">الفرق بين الوثيقتين</div>النظام الداخلي = تنظيم المؤسسة بكاملها | ميثاق القسم = ضوابط العمل داخل القسم المحدد.</div>
+</div>
+
+<div id="tb-g6" class="hid">
+<div class="def"><div class="dl">تنظيم الفضاءات</div>يعد تنظيم فضاءات المؤسسة التعليمية مدخلًا أساسيًا لتحسين جودة الحياة المدرسية.</div>
+<div class="g2">
+<div class="qc"><div class="qct">التشوير والهوية</div>تثبيت العلم الوطني، كتابة اسم المؤسسة، ترقيم القاعات والمرافق</div>
+<div class="qc"><div class="qct">الجماليات</div>تزيين الفضاء بالجداريات، الأمثال والحكم، الشعارات القيمية على الجدران</div>
+<div class="qc"><div class="qct">الصيانة والاستغلال</div>صيانة المرافق الإدارية والتربوية، العناية بالمساحات الخضراء</div>
+<div class="qc"><div class="qct">الاستعمال المشترك</div>إمكانية استعمال بعض الفضاءات مع الشركاء والساكنة المحلية وفق ضوابط متعاقد عليها</div>
+</div>
+</div>
+
+<div id="tb-g7" class="hid">
+<div class="def"><div class="dl">الأمن الإنساني</div>تسهم المؤسسات التعليمية في تطبيق البرامج الصحية الوطنية التي تُعنى بصحة الأطفال والمراهقين.</div>
+<div class="g2">
+<div class="qc"><div class="qct">البيئة الصحية</div>ضمان النظافة، التهوية، الإضاءة، التدفئة، سلامة التغذية، صيدلية المؤسسة</div>
+<div class="qc"><div class="qct">الفحوصات الطبية</div>التنسيق مع فرق الصحة المدرسية، الكشف المبكر لمشاكل البصر والسمع والنمو</div>
+<div class="qc"><div class="qct">التوعية والوقاية</div>التربية الصحية، مكافحة التدخين والإدمان، التربية الغذائية</div>
+<div class="qc"><div class="qct">إدارة المخاطر</div>تشخيص دوري للمخاطر (البنايات، المعدات، الأنشطة)، برنامج سنوي للمراقبة</div>
+</div>
+</div>
+</div></div>
+
+<!-- 2. ASSOCIATIONS -->
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🤝 المجال 2: الجمعيات المدرسية</h3><span class="ci">▾</span></div>
+<div class="cb">
+<table class="ct">
+<thead><tr><th>النوع</th><th>الجمعيات</th></tr></thead>
+<tbody>
+<tr><td><strong>الجمعيات المدرسية</strong></td><td>الجمعية الرياضية المدرسية، جمعية تنمية التعاون المدرسي، جمعية الأنشطة الثقافية والاجتماعية</td></tr>
+<tr><td><strong>الجمعيات التدبيرية</strong></td><td>جمعية دعم مدرسة النجاح</td></tr>
+<tr><td><strong>الجمعيات الشريكة</strong></td><td>جمعيات أمهات وآباء وأولياء التلاميذ</td></tr>
+<tr><td><strong>الجمعيات الداعمة</strong></td><td>جمعية قدماء التلاميذ، جمعية صديقات وأصدقاء المدرسة، جمعيات المجتمع المدني</td></tr>
+</tbody>
+</table>
+</div></div>
+
+<!-- 3. ACTIVITIES -->
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🎯 المجال 3: الأنشطة المدرسية العشر</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">التعريف</div>مكوّن من مكونات المنهاج سواء الأنشطة الصفية أو امتداداتها في إطار الأندية التربوية. من أهم المحفزات على الانخراط الفعلي في الحياة المدرسية.</div>
+<div class="g2">
+<div class="qc"><div class="qct">1. الفنية والإبداعية</div>فنون تشكيلية، موسيقى، مسرح، إبداع أدبي</div>
+<div class="qc"><div class="qct">2. الثقافية</div>مسابقات، ندوات، اليقظة الثقافية</div>
+<div class="qc"><div class="qct">3. الاجتماعية والتضامنية</div>حملات التضامن، دعم المحيط</div>
+<div class="qc"><div class="qct">4. البيئية والتنمية المستدامة</div>نظافة المحيط، الوعي البيئي</div>
+<div class="qc"><div class="qct">5. العلمية والتكنولوجية</div>نوادٍ علمية، مشاريع بحثية</div>
+<div class="qc"><div class="qct">6. تنمية الحس المقاولاتي</div>مشاريع ريادية، محاكاة اقتصادية</div>
+<div class="qc"><div class="qct">7. الصحية</div>التربية الصحية، الوقاية من الأمراض</div>
+<div class="qc"><div class="qct">8. الإشعاعية والتواصلية</div>الإذاعة المدرسية، الصحافة، التواصل</div>
+<div class="qc"><div class="qct">9. الرياضية المدرسية</div>البطولات، الأنشطة البدنية</div>
+<div class="qc"><div class="qct">10. الخرجات والرحلات</div>زيارات تربوية، رحلات علمية</div>
+</div>
+</div></div>
+
+<!-- 4. VALUES -->
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🌟 المجال 4: السلوك المدني والتربية على القيم</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">المحاور الرئيسية</div>من صميم رسالة المؤسسات التعليمية: استيعاب مفاهيم المواطنة الكاملة وترسيخها وتجسيدها في سلوكيات حقوقية ومدنية.</div>
+<div class="g2">
+<div class="qc"><div class="qct">حقوق الإنسان</div>التربية على حقوق الإنسان والنهوض بثقافتها</div>
+<div class="qc"><div class="qct">المواطنة والديمقراطية</div>التربية على المشاركة والانتخاب</div>
+<div class="qc"><div class="qct">النزاهة والشفافية</div>ثقافة التقويم والمحاسبة</div>
+<div class="qc"><div class="qct">نبذ العنف</div>مكافحة السلوكات المشينة</div>
+<div class="qc"><div class="qct">المساواة والإنصاف</div>تكافؤ الفرص بين الجنسين</div>
+<div class="qc"><div class="qct">ذوو الاحتياجات الخاصة</div>الاعتناء بالجماعات والأطفال</div>
+<div class="qc"><div class="qct">التنمية المستدامة</div>التربية البيئية</div>
+<div class="qc"><div class="qct">القانون الدولي الإنساني</div>استكشاف المواثيق الدولية</div>
+</div>
+</div></div>
+
+<!-- 5. STUDENT PARTICIPATION -->
+<div class="card"><div class="ch" onclick="tc(this)"><h3>👥 المجال 5: المشاركة التلاميذية</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">التعريف والأهمية</div>مشاركة المتعلمين في تفعيل الحياة المدرسية <strong>حق وواجب</strong>. تضمن التعبير عن الآراء وتنمي الإحساس بالانتماء وتُرسّخ الوعي بالحقوق والواجبات.</div>
+<table class="ct">
+<thead><tr><th>صيغة المشاركة</th><th>الترتيبات</th><th>ملاحظات</th></tr></thead>
+<tbody>
+<tr><td><strong>مندوب القسم</strong></td><td>انتخاب مندوب ونائب عن كل قسم مع مراعاة مبدأ المناصفة</td><td>يُشرف عليه الأستاذ الكفيل تحت إشراف المدير بالنزاهة والشفافية</td></tr>
+<tr><td><strong>المجالس التلاميذية المحلية</strong></td><td>مجلس يضم مندوبي الأقسام (9 إلى 17 تلميذًا) — الإناث نصف على الأقل</td><td>ينتخب رئيسًا ونائبًا من الجنسين</td></tr>
+<tr><td><strong>المجالس الإقليمية</strong></td><td>للثانويات الإعدادية والتأهيلية، من بين رؤساء المجالس المحلية (9-21 تلميذًا)</td><td>الإناث بنسبة النصف على الأقل</td></tr>
+<tr><td><strong>المجالس الجهوية</strong></td><td>للثانويات التأهيلية على مستوى الأكاديمية (9-33 تلميذًا)</td><td>أسبوع ديمقراطي في مطلع كل سنة للانتخابات</td></tr>
+</tbody>
+</table>
+<div class="g2" style="margin-top:12px">
+<div class="qc"><div class="qct">مجالات المشاركة</div>الأندية التربوية، النظام الداخلي للقسم، مشروع القسم، مشروع المؤسسة، التمثيلية في مجالس المؤسسة، المشروع الشخصي، حملات التوعية</div>
+<div class="qc" style="border-color:var(--g)"><div class="qct" style="color:var(--g)">الأسبوع الديمقراطي</div>يُخصَّص أسبوع في مطلع كل سنة دراسية لعمليات الانتخاب لترسيخ ثقافة الديمقراطية وتحمل المسؤولية</div>
+</div>
+</div></div>
+
+<!-- ASSETS -->
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🏗️ ممتلكات المؤسسة</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">مسك المحاسبة المادية</div>التقيد التام بالتشريعات الجاري بها العمل في ضبط الجرد والممتلكات.</div>
+<div class="g2">
+<div class="qc"><div class="qct">ضبط سجلات الجرد</div>الأثاث، المعدات الرياضية، التجهيزات المعلوماتية، مطاعم الأقسام الداخلية</div>
+<div class="qc"><div class="qct">الاستلام والمطابقة</div>التحقق من مطابقة التجهيزات لدفاتر التحملات وسندات الطلب</div>
+<div class="qc"><div class="qct">التتبع والصيانة</div>بطاقات استعمال التجهيزات، الصيانة المنتظمة، الإصلاح في الوقت المناسب</div>
+<div class="qc"><div class="qct">الذاكرة المؤسسية</div>الاحتفاظ بما يمكن أن يُشكّل ذاكرة المؤسسة لتأثيث متحف تربوي خاص</div>
+</div>
+</div></div>
+</div>
+
+<!-- AXIS 4: CLIMATE -->
+<div class="pg" id="pg-a4">
+<div class="band"><h3>🌿 المحور الرابع: المناخ المدرسي وبيئة التعلم الآمنة</h3><p>الانتقال من التركيز على المحتوى إلى جودة البيئة التعليمية</p></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🌡️ بيئة التعلم الآمنة — التعريف والأبعاد</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">تعريف</div><strong>بيئة التعلم الآمنة</strong> هي مجموع الأبعاد المادية والنفسية والعلائقية التي تتيح للمتعلم أن ينخرط في التعلم بحرية، دون خوف أو قلق أو تهديد.</div>
+<div class="g2">
+<div class="qc"><div class="qct">الأمان الجسدي</div>غياب الخطر المادي والعنف الجسدي داخل الفضاء المدرسي</div>
+<div class="qc" style="border-color:var(--s)"><div class="qct" style="color:var(--s)">الأمان النفسي</div>شعور التلميذ بأنه مقبول ومُقدَّر ولا يُحكم عليه بقسوة</div>
+<div class="qc" style="border-color:var(--a)"><div class="qct" style="color:var(--a)">الأمان العلائقي</div>وجود علاقات احترام متبادل بين التلاميذ وبينهم وبين المدرسين</div>
+</div>
+<div class="eb" style="margin-top:12px"><div class="ebl">المرجعيات القانونية</div>
+اتفاقية حقوق الطفل 1989 (المادة 28-29) | الميثاق الوطني + الرؤية 2015-2030 | القانون الإطار 51.17 المادة 12 | الدليل الوطني للوقاية من العنف المدرسي</div>
+</div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>☁️ المناخ المدرسي — التعريف والمؤشرات</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">تعريف</div><strong>المناخ المدرسي</strong> هو الطابع العام الذي يميز حياة المؤسسة التربوية، ويشمل: جودة العلاقات، درجة الانتماء والانخراط، مستوى الاحترام والعدالة، الإحساس بالرفاه والسلامة النفسية.</div>
+<div class="g2">
+<div>
+<div style="font-weight:700;color:var(--ok);margin-bottom:8px">✅ مؤشرات إيجابية</div>
+<div class="ind"><span class="dg"></span> قواعد الحياة المشتركة واضحة ومتفاوض عليها</div>
+<div class="ind"><span class="dg"></span> تفاعل تلقائي وإيجابي في فضاءات الاستراحة</div>
+<div class="ind"><span class="dg"></span> وجود فرق عمل ومشاريع تعاونية</div>
+<div class="ind"><span class="dg"></span> مبادرة التلاميذ بطرح أسئلة دون خوف</div>
+<div class="ind"><span class="dg"></span> غياب أو ضعف ظاهرة التغيب</div>
+</div>
+<div>
+<div style="font-weight:700;color:var(--err);margin-bottom:8px">❌ إشارات الإنذار المبكر</div>
+<div class="ind"><span class="dr"></span> ارتفاع معدلات التغيب والانقطاع</div>
+<div class="ind"><span class="dr"></span> تكرار الشكاوى من التنمر</div>
+<div class="ind"><span class="dr"></span> انسحاب التلاميذ وعزلتهم</div>
+<div class="ind"><span class="dr"></span> تراجع النتائج دون مبرر أكاديمي</div>
+<div class="ind"><span class="dr"></span> تصاعد الحوادث الانضباطية</div>
+</div>
+</div>
+</div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>⚙️ العوامل المؤثرة في بيئة التعلم</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="tabs"><button class="tab on" onclick="st('cl1',this)">المادية</button><button class="tab" onclick="st('cl2',this)">العلائقية</button><button class="tab" onclick="st('cl3',this)">المحيطية</button></div>
+<div id="tb-cl1">
+<div class="g2">
+<div class="qc"><div class="qct">التهيئة المادية</div>الإضاءة، التهوية، الحرارة، الضجيج — تؤثر في التركيز والاسترخاء العصبي</div>
+<div class="qc"><div class="qct">الترتيب المكاني</div>تنظيم المقاعد يعكس فلسفة تربوية (صفوف تقليدية ↔ أفواج تعاونية)</div>
+<div class="qc"><div class="qct">الجماليات والفضاء التعبيري</div>أعمال التلاميذ المعلقة، الألوان، الزرع — تعزز الانتماء</div>
+<div class="qc"><div class="qct">الموارد والتجهيزات</div>توافرها أو شُحّها يرسل رسائل رمزية للتلميذ حول قيمته</div>
+</div></div>
+<div id="tb-cl2" class="hid">
+<div class="g2">
+<div class="qc"><div class="qct">علاقة المدرس بالتلميذ</div>النمط التربوي (ديمقراطي/استبدادي)، اللغة المستخدمة (تشجيع/نقد جارح)، العدالة والإنصاف</div>
+<div class="qc"><div class="qct">علاقة التلاميذ فيما بينهم</div>ديناميكيات المجموعة، ظاهرة التنمر (جسدي/لفظي/اجتماعي/إلكتروني)، ثقافة الاحترام</div>
+</div>
+<div class="eb" style="margin-top:12px"><div class="ebl">نقطة دقيقة</div>العوامل العلائقية هي الأكثر تأثيرًا في المناخ المدرسي.</div>
+</div>
+<div id="tb-cl3" class="hid">
+<div class="g2">
+<div class="qc"><div class="qct">الوسط الأسري</div>الاستقرار العائلي، الاهتمام بالتعليم، مستوى الدعم المنزلي</div>
+<div class="qc"><div class="qct">الوسط الاجتماعي</div>الفقر، العنف في الحي، التهميش — كلها تنعكس داخل الفصل</div>
+<div class="qc"><div class="qct">وسائل الإعلام والشبكات</div>قد تنقل النزاعات وتضخمها</div>
+<div class="qc"><div class="qct">السياق الاقتصادي</div>الهشاشة الاجتماعية ترفع منسوب التوتر المدرسي</div>
+</div>
+<div class="tip" style="margin-top:10px"><div class="tl">مبدأ جوهري</div>المحيط الخارجي يدخل إلى الفصل دون استئذان.</div>
+</div>
+</div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🔬 أدوات قياس المناخ المدرسي</h3><span class="ci">▾</span></div>
+<div class="cb">
+<table class="ct">
+<thead><tr><th>الأداة</th><th>الوصف والاستخدام</th></tr></thead>
+<tbody>
+<tr><td><strong>الملاحظة المباشرة</strong></td><td>رصد سلوكيات التلاميذ وتفاعلاتهم في الفصل والفضاءات المشتركة</td></tr>
+<tr><td><strong>الاستبيان</strong></td><td>قياس مدركات التلاميذ والمدرسين حول جودة المناخ المدرسي</td></tr>
+<tr><td><strong>المقابلة الفردية والجماعية</strong></td><td>استكشاف عميق للمشاعر والتصورات غير الظاهرة في الإحصاءات</td></tr>
+<tr><td><strong>تحليل الإحصاءات المدرسية</strong></td><td>قراءة مؤشرات التغيب والرسوب والحوادث الانضباطية</td></tr>
+<tr><td><strong>بطاقة تتبع الحالات</strong></td><td>رصد تطور حالات بعينها عبر الزمن (تُستخدم في خلية الإنصات)</td></tr>
+</tbody>
+</table>
+</div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>⚖️ المقارنة بين المناخ وبيئة التعلم (سؤال متكرر)</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="eb"><div class="ebl">تنبيه امتحاني</div>السؤال عن الفرق متكرر. المناخ = ما يُعاش يوميًا | البيئة = ما يُهيَّأ ويُصمَّم.</div>
+<table class="ct">
+<thead><tr><th>بيئة التعلم الآمنة</th><th>المناخ المدرسي</th></tr></thead>
+<tbody>
+<tr><td>الحماية والأمن (جسدي/نفسي/علائقي)</td><td>العلاقات والتفاعلات والانطباعات</td></tr>
+<tr><td>بُعد وقائي وتنظيمي</td><td>بُعد نفسي واجتماعي</td></tr>
+<tr><td>ما يُهيَّأ ويُصمَّم (الفضاء، القواعد)</td><td>ما يُشعَر به ويُعاش يوميًا</td></tr>
+<tr><td>يحقق الاستقرار</td><td>يرفع الدافعية والانخراط</td></tr>
+</tbody>
+</table>
+<div class="fl" style="margin-top:13px">
+<div class="fs">بيئة آمنة (الإطار)</div><div class="fa">↓</div>
+<div class="fs">مناخ إيجابي (العلاقات)</div><div class="fa">↓</div>
+<div class="fs">جودة التعلمات (النتيجة)</div>
+</div>
+</div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🛠️ دور الأستاذ في تهيئة الفضاء الآمن</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="g2">
+<div class="qc"><div class="qct">بناء الثقة يوميًا</div>الإنصات الحقيقي، إعطاء الكلمة بالتساوي، الاعتراف بالمشاعر، الاتساق في القواعد، التصحيح دون إحراج</div>
+<div class="qc"><div class="qct">التدخل الوقائي والمبكر</div>إنشاء روتينات آمنة، ملاحظة الإشارات الصامتة (الانسحاب، الإحجام)، إدارة النزاعات بوساطة تربوية</div>
+<div class="qc"><div class="qct">التنسيق مع الشركاء</div>الإدارة، المرشد التربوي، الأسرة، الزملاء المدرسون</div>
+</div>
+</div></div>
+</div>
+
+<!-- AXIS 5: P.E -->
+<div class="pg" id="pg-a5">
+<div class="band"><h3>🗂️ مشروع المؤسسة P.E</h3><p>الإطار النظري والمنهجي — منهجية DEPART</p></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>📌 تعريف المشروع التربوي</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">التعريف الإجرائي</div>المشروع التربوي <strong>وثيقة تخطيطية تشاركية</strong> تعبر عن التزام جماعي نحو تحسين مخرجات التعلم، تستند إلى تشخيص دقيق للواقع وتحديد الأولويات وفق مؤشرات قابلة للقياس في أفق زمني محدد.</div>
+<div class="g2">
+<div class="qc"><div class="qct">التشخيصية</div>ترتكز على قراءة علمية للواقع</div>
+<div class="qc"><div class="qct">الهادفة</div>تترجم الأولويات إلى أهداف إجرائية</div>
+<div class="qc"><div class="qct">التشاركية</div>تُشرك جميع الفاعلين التربويين</div>
+<div class="qc"><div class="qct">التقويمية</div>مؤشرات قياس واضحة ومتتبَّعة</div>
+</div>
+</div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🏫 مشروع المؤسسة P.E — الإطار والمراحل</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="g2">
+<div class="qc"><div class="qct">ما هو P.E؟</div>مشروع ذو بُعد مؤسسي يشمل المؤسسة بكاملها، يُبنى بمشاركة الإدارة والأساتذة والآباء، مدته 1-3 سنوات، يصادق عليه المجلس التربوي، يترجم الرؤية الاستراتيجية إلى أفعال.</div>
+</div>
+<div class="def" style="margin-top:12px"><div class="dl">التعريف الرسمي — المذكرة 14 / فبراير 2024</div>
+«مجموع عمليات تنظيمية وتربوية وتدبيرية متكاملة ومنسجمة تتم برمجتها من طرف المؤسسة التعليمية وفق ميزانية مرصودة، خلال فترة زمنية محددة، لبلوغ أهداف تربوية متفق عليها، تروم تحسين جودة التعلمات والرفع من المردودية التربوية والتدبيرية للمؤسسة.»</div>
+<h4 style="margin:14px 0 10px;color:var(--p)">منهجية DEPART — المراحل الست</h4>
+<div class="tln">
+<div class="tli"><div class="tld"></div><div><div class="tlt">D — الانطلاقة (Démarrage)</div><div class="tls">التحضير وتعبئة الفاعلين، تشكيل فريق القيادة، التوافق على آليات الاشتغال</div></div></div>
+<div class="tli"><div class="tld"></div><div><div class="tlt">E — تشخيص الوضعية (État des lieux)</div><div class="tls">قراءة علمية للواقع: نسب النجاح، التغيب، العنف، الموارد المتاحة، الإكراهات. يمنع القرارات العشوائية.</div></div></div>
+<div class="tli"><div class="tld"></div><div><div class="tlt">P — التخطيط والبرمجة (Planification et programmation)</div><div class="tls">تحديد الأولويات، صياغة أهداف SMART، بناء خطة العمل (أنشطة + موارد + مسؤوليات + آجال)</div></div></div>
+<div class="tli"><div class="tld"></div><div><div class="tlt">A — الأجرأة (Action)</div><div class="tls">التنفيذ الفعلي للعمليات التربوية والتدبيرية. التنفيذ = تدبير مستمر لا تطبيق حرفي.</div></div></div>
+<div class="tli"><div class="tld"></div><div><div class="tlt">R — التقويم (Régulation)</div><div class="tls">القياس بالمؤشرات، تصحيح المسار أثناء التنفيذ، لجنة المتابعة.</div></div></div>
+<div class="tli"><div class="tld"></div><div><div class="tlt">T — الانتقال (Transition)</div><div class="tls">استثمار النتائج للتخطيط للمرحلة المقبلة. لا ينتهي المشروع!</div></div></div>
+</div>
+<div class="eb" style="margin-top:12px"><div class="ebl">هدف SMART — مثال</div>
+❌ «تحسين نتائج التلاميذ»<br>✔ «رفع نسبة النجاح في الرياضيات من 55% إلى 70% في نهاية السنة الدراسية»</div>
+</div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>📄 نموذج وثيقة P.E</h3><span class="ci">▾</span></div>
+<div class="cb">
+<table class="ct">
+<thead><tr><th>العنصر</th><th>المحتوى</th></tr></thead>
+<tbody>
+<tr><td>بيانات المؤسسة</td><td>الاسم، النيابة، المديرية، الأكاديمية، رقم المؤسسة</td></tr>
+<tr><td>فريق القيادة</td><td>المدير، نائبه، ممثل الأساتذة، ممثل الآباء، الشريك</td></tr>
+<tr><td>التشخيص المؤسسي</td><td>نسب النجاح، التغيب، العنف، الموارد، الإكراهات</td></tr>
+<tr><td>الإشكالية المحورية</td><td>الصياغة الدقيقة للإشكالية الأولى ذات الأولوية</td></tr>
+<tr><td>الهدف الاستراتيجي</td><td>رفع نسبة ... من ...% إلى ...% في أفق سنة 20...</td></tr>
+<tr><td>محاور التدخل</td><td>التعلمات، الحياة المدرسية، الشراكة، التكوين</td></tr>
+</tbody>
+</table>
+</div></div>
+</div>
+
+<!-- AXIS 6: P.C -->
+<div class="pg" id="pg-a6">
+<div class="band"><h3>🏫 مشروع القسم P.C</h3><p>من التشخيص الصفي إلى الأنشطة الفارقية والتقويم المستمر</p></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>📌 ما هو P.C؟</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">تعريف</div>مشروع تربوي إجرائي يقوده الأستاذ داخل قسمه، يُبنى بمشاركة التلاميذ وأولياء أمورهم، مدته الموسم الدراسي أو فصل، يُصادَق عليه مجلس القسم، يُترجم P.E إلى ممارسات صفية ملموسة.</div>
+<div class="g2">
+<div class="qc"><div class="qct">قريب من الواقع</div>يعالج مشاكل القسم المحدد مباشرةً</div>
+<div class="qc"><div class="qct">مرن</div>يمكن تعديله حسب التطورات والاحتياجات</div>
+<div class="qc"><div class="qct">تشاركي</div>يُنجز من لدن المتعلمين بتأطير الأستاذ</div>
+<div class="qc"><div class="qct">مبني على التشخيص</div>لا يبدأ بالحلول بل بفهم الواقع</div>
+</div>
+</div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🔄 مراحل بناء P.C</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="tln">
+<div class="tli"><div class="tld" style="background:var(--s);box-shadow:0 0 0 2px var(--s)"></div><div><div class="tlt">1. التشخيص الصفي</div><div class="tls">نتائج التقويم التشخيصي + رصد صعوبات التعلم الفارقية لكل تلميذ</div></div></div>
+<div class="tli"><div class="tld" style="background:var(--s);box-shadow:0 0 0 2px var(--s)"></div><div><div class="tlt">2. رصد الاحتياجات</div><div class="tls">استبيان + ملاحظة + مقابلة مع التلاميذ وأولياء الأمور</div></div></div>
+<div class="tli"><div class="tld" style="background:var(--s);box-shadow:0 0 0 2px var(--s)"></div><div><div class="tlt">3. بناء الأهداف</div><div class="tls">أهداف خاصة بكل مجموعة متعلمين (فارقية)</div></div></div>
+<div class="tli"><div class="tld" style="background:var(--s);box-shadow:0 0 0 2px var(--s)"></div><div><div class="tlt">4. الأنشطة الصفية</div><div class="tls">وضعيات تعلمية + تمايز في التدخل + أنشطة دعم + أنشطة إثراء</div></div></div>
+<div class="tli"><div class="tld" style="background:var(--s);box-shadow:0 0 0 2px var(--s)"></div><div><div class="tlt">5. التقويم المستمر</div><div class="tls">إعادة التوجيه + تعديل المسار حسب نتائج التقويم التكويني</div></div></div>
+</div>
+<div class="tip"><div class="tl">دور الأستاذ في P.C</div>التأطير والتوجيه والإرشاد وتوفير الظروف المواتية لإنجاز المشروع الذي يتصف بالطابع التربوي والعملي.</div>
+</div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>⚖️ جدول المقارنة التكاملية P.E ↔ P.C</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="eb"><div class="ebl">قاعدة أساسية</div>مشروع القسم يجب أن <strong>ينسجم</strong> مع مشروع المؤسسة ولا يتعارض معه.</div>
+<table class="ct">
+<thead><tr><th>عنصر المقارنة</th><th>مشروع المؤسسة P.E</th><th>مشروع القسم P.C</th></tr></thead>
+<tbody>
+<tr><td>الفاعل الرئيسي</td><td>المدير + الفريق التربوي</td><td>الأستاذ + تلاميذ القسم</td></tr>
+<tr><td>النطاق</td><td>المؤسسة بكاملها</td><td>القسم الواحد</td></tr>
+<tr><td>الأفق الزمني</td><td>1 إلى 3 سنوات</td><td>فصل أو موسم دراسي</td></tr>
+<tr><td>مرجعية البناء</td><td>التوجهات الوطنية + التشخيص الكلي</td><td>التشخيص الصفي + نتائج التلاميذ</td></tr>
+<tr><td>أداة التقويم</td><td>مجلس تربوي موسّع + مجلس الآباء</td><td>مجلس القسم + شبكات الملاحظة</td></tr>
+<tr><td>مستوى التدخل</td><td>استراتيجي + هيكلي</td><td>بيداغوجي + ديداكتيكي</td></tr>
+<tr><td>المصادقة</td><td>المجلس التربوي للمؤسسة</td><td>مجلس القسم + الإدارة</td></tr>
+</tbody>
+</table>
+</div></div>
+</div>
+
+<!-- AXIS 7: INTEGRATION -->
+<div class="pg" id="pg-a7">
+<div class="band"><h3>🔗 النموذج التكاملي بين P.E و P.C + الدليل الإجرائي</h3><p>آليات الربط وضمان الانسجام المؤسسي</p></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🔗 النموذج التكاملي</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">المفهوم</div>بناء علاقة <strong>ترابط وتناسق</strong> بين مشروع المؤسسة ومشاريع الأقسام بهدف توحيد الجهود وتحسين التعلمات. التكامل بين P.E و P.C ليس خيارًا بل شرط لنجاح أي مشروع تربوي حقيقي.</div>
+<div class="eb"><div class="ebl">لماذا ظهر؟</div>كان الأستاذ يشتغل منفصلًا عن المؤسسة ← ضعف الانسجام + تكرار الجهود + صعوبة قياس الأثر.</div>
+<h4 style="margin:13px 0 9px;color:var(--p)">مستويات التكامل الأربعة</h4>
+<div class="g2">
+<div class="qc"><div class="qct">1. تكامل التشخيص</div>الأهداف المؤسسية تغذّي أهداف القسم | تشخيص القسم ينسجم مع المؤسسة</div>
+<div class="qc"><div class="qct">2. تكامل الأهداف</div>أهداف القسم تنبثق من الأهداف الكبرى للمؤسسة</div>
+<div class="qc"><div class="qct">3. تكامل الأنشطة</div>كل قسم يبرمج أنشطة تخدم أهداف المؤسسة</div>
+<div class="qc"><div class="qct">4. تكامل التقويم</div>مجلس القسم يغذّي مجلس المؤسسة | مؤشرات P.E تُقيَّم من خلال نتائج P.C</div>
+</div>
+<div class="fl" style="margin-top:14px">
+<div class="fs">تشخيص المؤسسة</div><div class="fa">↓</div>
+<div class="fs">مشروع المؤسسة P.E</div><div class="fa">↓</div>
+<div class="fs">مشاريع الأقسام P.C</div><div class="fa">↓</div>
+<div class="fs">تنفيذ مشترك</div><div class="fa">↓</div>
+<div class="fs">تقويم موحّد</div>
+</div>
+<div class="ex" style="margin-top:13px"><div class="el">مثال تطبيقي</div>هدف المؤسسة: تشجيع القراءة ← مشروع القسم: ورشات قراءة أسبوعية</div>
+</div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>📋 الدليل الإجرائي المتكامل</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">ما هو؟</div>منهجية عملية تنظم خطوات إعداد المشروع وتنفيذه وتتبعه وتقويمه. المهم ليس «ما هو المشروع» بل «كيف نبنيه بطريقة قابلة للتطبيق».</div>
+<div class="g2">
+<div class="qc"><div class="qct" style="color:var(--p)">P.E: التشخيص المؤسسي الشامل</div>النتائج + الموارد + الشراكات + الإكراهات</div>
+<div class="qc"><div class="qct" style="color:var(--s)">P.C: التقويم التشخيصي الصفي</div>نتائج + صعوبات التعلم الفارقية</div>
+<div class="qc"><div class="qct" style="color:var(--p)">P.E: الأهداف الاستراتيجية</div>رفع النجاح + تحسين المناخ + الشراكة</div>
+<div class="qc"><div class="qct" style="color:var(--s)">P.C: الأهداف التعلمية الخاصة</div>تحسين التحصيل في ... من ...% إلى ...%</div>
+<div class="qc"><div class="qct" style="color:var(--p)">P.E: خطة العمل المؤسسية</div>برامج دعم + موارد مشتركة</div>
+<div class="qc"><div class="qct" style="color:var(--s)">P.C: الأنشطة الصفية</div>وضعيات + تمايز + دعم + إثراء</div>
+<div class="qc"><div class="qct" style="color:var(--p)">P.E: لجنة متابعة مؤسسية</div>تقارير دورية + تعديل المسار الكلي</div>
+<div class="qc"><div class="qct" style="color:var(--s)">P.C: مجلس القسم</div>تعديل المسار الصفي + إعادة التوجيه</div>
+</div>
+<div class="tip" style="margin-top:12px"><div class="tl">جدول تتبع الإنجاز</div>
+المؤشرات: نسبة النجاح | التغيب المدرسي | مستوى التعلمات | الانخراط الصفي | رضا الأولياء | التمكن من الكفايات</div>
+</div></div>
+</div>
+
+<!-- AXIS 8: INTEGRATED ACTIVITIES -->
+<div class="pg" id="pg-a8">
+<div class="band"><h3>🎭 الأنشطة المندمجة تربويًا وديداكتيكيًا</h3><p>هندسة الأنشطة — المسابقة الإقليمية — الأندية اللغوية</p></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>📌 الإطار المرجعي والنظري</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="g2">
+<div class="qc"><div class="qct">المقاربة التواصلية CLT</div>اعتبار اللغة أداةً للفعل الاجتماعي وتحقيق التواصل الفعلي بدلًا من مجرد دراسة القواعد.</div>
+<div class="qc"><div class="qct">الإطار المرجعي الأوروبي CEFR</div>مرجع دولي لتحديد مستوى الكفاءة اللغوية (A1, A2, B1, B2...)</div>
+<div class="qc"><div class="qct">بيداغوجيا الكفايات والمشروع</div>تعبئة الموارد الذاتية والمكتسبة لحل وضعيات مركبة ذات دلالة وظيفية.</div>
+</div>
+</div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🏗️ مبادئ هندسة الأنشطة المندمجة الستة</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="g2">
+<div class="qc"><div class="qct">الاندماج</div>دمج المهارات الأربع (استماع، تحدث، قراءة، كتابة) في مهمة واحدة مركبة</div>
+<div class="qc"><div class="qct">الأصالة</div>محاكاة سياقات تواصلية حقيقية يواجهها المتعلم في حياته اليومية أو المهنية</div>
+<div class="qc"><div class="qct">الدعامات</div>بناء هرمية من المهام الفرعية الداعمة التي تمهد للمهمة المحورية المعقدة</div>
+<div class="qc"><div class="qct">قابلية التقييم</div>بناء النشاط على معايير شفافة توجه التعلم وتقيم الأداء بدقة</div>
+<div class="qc"><div class="qct">الوظيفية</div>إفضاء النشاط إلى «منتَج ملموس» (خطاب، عرض، مسرحية)</div>
+<div class="qc"><div class="qct">البُعد الاجتماعي</div>اعتبار التفاوض والتعاون بين الأقران عنصرًا جوهريًا في بناء الكفاية التواصلية</div>
+</div>
+</div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🔧 خطوات تصميم النشاط المندمج</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="tln">
+<div class="tli"><div class="tld"></div><div><div class="tlt">1. التشخيص والتحديد</div><div class="tls">تحديد الكفايات المستهدفة بدقة (تواصلية، لغوية، ثقافية)</div></div></div>
+<div class="tli"><div class="tld"></div><div><div class="tlt">2. انتقاء الوضعية</div><div class="tls">اختيار وضعية أصيلة ذات معنى وسياق حياتي حقيقي</div></div></div>
+<div class="tli"><div class="tld"></div><div><div class="tlt">3. هيكلة المهام</div><div class="tls">بناء تدرج من الفهم إلى التطبيق ثم الإنتاج المركب</div></div></div>
+<div class="tli"><div class="tld"></div><div><div class="tlt">4. إعداد السندات</div><div class="tls">تصميم بطاقات التوجيه وشبكات التقييم الذاتي</div></div></div>
+<div class="tli"><div class="tld"></div><div><div class="tlt">5. بناء أدوات التقويم</div><div class="tls">وضع معايير لملاحظة الأداء وتتبع العمل</div></div></div>
+</div>
+</div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🏆 المسابقة الإقليمية — نموذج للتعلم المندمج</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">لماذا هي نشاط مندمج؟</div>المسابقة الإقليمية ليست مجرد «حدث»، بل هي <strong>بنية تعلمية مركبة</strong> تعيد هندسة الكفايات اللغوية في سياق تنافسي إيجابي.</div>
+<div class="tabs"><button class="tab on" onclick="st('ms1',this)">الخطابة العامة</button><button class="tab" onclick="st('ms2',this)">المناظرة الأكاديمية</button><button class="tab" onclick="st('ms3',this)">المسرحية القصيرة</button><button class="tab" onclick="st('ms4',this)">شبكة التقييم</button></div>
+<div id="tb-ms1">
+<div class="qc"><div class="qct">الهدف</div>إنتاج خطاب شفهي منظم ومقنع حول موضوع محدد لمدة 3-5 دقائق.</div>
+<div class="g2" style="margin-top:10px">
+<div class="qc"><div class="qct">المهارات المستهدفة</div>الطلاقة اللغوية والدقة | لغة الجسد والتواصل البصري | تنظيم الأفكار وبناء الحجج</div>
+<div class="qc"><div class="qct">المنهجية</div>الطالب يعبّر عن رؤيته حول قضية معاصرة بصوت واثق وبنية منظمة</div>
+</div></div>
+<div id="tb-ms2" class="hid">
+<div class="qc"><div class="qct">الهدف</div>الدفاع عن موقف وتفنيد الحجج المضادة بأسلوب منطقي.</div>
+<div class="g2" style="margin-top:10px">
+<div class="qc"><div class="qct">المهارات</div>الاستماع النقدي | سرعة البديهة والرد | التفاوض اللغوي واحترام الرأي الآخر</div>
+<div class="qc"><div class="qct">الهيكلية</div>فريقان يتنافسان وفق قواعد زمنية صارمة</div>
+</div></div>
+<div id="tb-ms3" class="hid">
+<div class="qc"><div class="qct">الهدف</div>تجسيد وضعية تواصلية عبر أداء مسرحي إبداعي لمدة 5-8 دقائق.</div>
+<div class="g2" style="margin-top:10px">
+<div class="qc"><div class="qct">المهارات</div>التعاون الجماعي | النبرة الصوتية والتلوين الدرامي | الإبداع في صياغة السيناريو</div>
+<div class="qc"><div class="qct">المنتَج</div>عرض يدمج اللغة والحركة والإبداع الفني</div>
+</div></div>
+<div id="tb-ms4" class="hid">
+<table class="ct">
+<thead><tr><th>المعيار</th><th>ضعيف (1)</th><th>مقبول (2)</th><th>جيد (3)</th><th>متميز (4)</th></tr></thead>
+<tbody>
+<tr><td>الصحة اللغوية</td><td>أخطاء متكررة</td><td>أخطاء تعيق الفهم</td><td>أخطاء بسيطة</td><td>خالٍ من الأخطاء</td></tr>
+<tr><td>الطلاقة</td><td>توقفات متكررة</td><td>تردد بسيط</td><td>أداء متقطع</td><td>تدفق طبيعي وسلس</td></tr>
+<tr><td>الإلقاء</td><td>غياب التواصل</td><td>أداء باهت</td><td>أداء مناسب</td><td>تواصل بصري قوي</td></tr>
+<tr><td>المحتوى</td><td>محتوى شحيح</td><td>أفكار سطحية</td><td>أفكار واضحة</td><td>أفكار غنية ومنظمة</td></tr>
+</tbody>
+</table>
+</div>
+</div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🔬 النادي اللغوي — الحاضن المؤسسي</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">التعريف</div>النادي اللغوي هو «المختبر» الذي يتم فيه هندسة الأنشطة المندمجة بعيدًا عن ضغط النقطة الإشهادية.</div>
+<div class="g2">
+<div class="qc"><div class="qct">الفضاء الآمن</div>بيئة خالية من القلق تشجع على التجريب اللغوي بحرية</div>
+<div class="qc"><div class="qct">القيادة الطلابية</div>منح المتعلمين أدوارًا قيادية (رئيس، مسيّر) لتنمية الكفايات الناعمة</div>
+<div class="qc"><div class="qct">الاستدامة</div>تحويل التعلم إلى ثقافة مؤسسية مستمرة عبر المواسم الدراسية</div>
+<div class="qc"><div class="qct">الربط بالمحيط</div>الانفتاح على المديرية الإقليمية والمؤسسات الأخرى عبر المسابقات</div>
+</div>
+</div></div>
+</div>
+
+<!-- AXIS 9: LISTENING CELL -->
+<div class="pg" id="pg-a9">
+<div class="band"><h3>👂 خلية الإنصات والوساطة التربوية</h3><p>آلية تربوية لحماية المتعلم والوقاية من السلوكات المحفوفة بالمخاطر</p></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>📌 التعريف والسياق</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="def"><div class="dl">بطاقة تعريفية</div>خلية الإنصات هي <strong>آلية تربوية وإدارية مُحدَثة</strong> داخل المؤسسات التعليمية (تحت إشراف المجلس التربوي)، تهدف إلى توفير فضاء <strong>آمن، محايد، ومستدام</strong> لاستقبال المتعلمين والاستماع لمشاكلهم، وتقديم الدعم النفسي والاجتماعي، والتدخل المبكر لحل النزاعات والوقاية من السلوكات المحفوفة بالمخاطر.</div>
+<div class="tip"><div class="tl">السياق الذي أفرزها</div>ظواهر لا تربوية في الوسط المدرسي: العنف، التدخين والمخدرات، التنمر، التحرش، الغش، تراجع منظومة القيم، ارتفاع صارخ في نسب الهدر والانقطاع.</div>
+</div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>👥 الهيكلة وتشكيلة الأعضاء</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="g2">
+<div class="qc"><div class="qct">الرئاسة والإشراف</div>مدير المؤسسة أو من ينوب عنه</div>
+<div class="qc"><div class="qct">الدعم التخصصي</div>أطر الدعم التربوي والاجتماعي (الملحقون الاجتماعيون)</div>
+<div class="qc"><div class="qct">الفريق التربوي</div>مجموعة من الأساتذة المهتمين أو المنسقين</div>
+<div class="qc"><div class="qct">الشركاء الخارجيون</div>عند الحاجة: أخصائيون نفسيون، جمعيات شريكة، فرق الصحة المدرسية</div>
+</div>
+</div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🎯 الأهداف والمهام الرئيسية</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="tln">
+<div class="tli"><div class="tld" style="background:var(--g);box-shadow:0 0 0 2px var(--g)"></div><div><div class="tlt">التوجيه والإرشاد</div><div class="tls">مساعدة التلاميذ على تجاوز الصعوبات الدراسية والنفسية والاجتماعية التي تؤثر على مسارهم الدراسي</div></div></div>
+<div class="tli"><div class="tld" style="background:var(--g);box-shadow:0 0 0 2px var(--g)"></div><div><div class="tlt">الوساطة وحل النزاعات</div><div class="tls">اعتماد أساليب الوساطة التربوية بين التلاميذ لحل الخلافات بالطرق السلمية والودية</div></div></div>
+<div class="tli"><div class="tld" style="background:var(--g);box-shadow:0 0 0 2px var(--g)"></div><div><div class="tlt">التدخل الاستباقي والوقاية</div><div class="tls">رصد مظاهر الانحراف والعنف والسلوكات المحفوفة بالمخاطر ومؤشرات الانقطاع قبل تفاقمها</div></div></div>
+<div class="tli"><div class="tld" style="background:var(--g);box-shadow:0 0 0 2px var(--g)"></div><div><div class="tlt">الدعم النفسي والاجتماعي</div><div class="tls">توفير الرعاية المعنوية والنفسية للمتعلمين لضمان استقرارهم وتحسين نتائجهم الدراسية</div></div></div>
+</div>
+</div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🤝 مبادئ وأخلاقيات العمل</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="g2">
+<div class="qc" style="border-color:var(--g)"><div class="qct" style="color:var(--g)">🔒 السرية التامة</div>ضمان الخصوصية المطلقة لجميع المعلومات والاعترافات التي يدلي بها التلميذ وعدم إفشائها</div>
+<div class="qc" style="border-color:var(--s)"><div class="qct" style="color:var(--s)">👂 الإنصات الإيجابي</div>توفير بيئة حوار آمنة ودافئة خالية تمامًا من الأحكام المسبقة أو اللوم</div>
+<div class="qc" style="border-color:var(--p)"><div class="qct">⚖️ الحياد والموضوعية</div>التعامل بموضوعية تامة وإنصاف مع مختلف الأطراف المعنية دون انحياز</div>
+</div>
+</div></div>
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🔄 مسار التعامل مع الحالات</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="tln">
+<div class="tli"><div class="tld" style="background:var(--p);box-shadow:0 0 0 2px var(--p)"></div><div><div class="tlt">1. الرصد والاستقبال</div><div class="tls">توجيه التلميذ إما بطلب ذاتي منه، أو بإحالة من أستاذ، أو برصد مباشر من أطر الدعم الاجتماعي والإدارة</div></div></div>
+<div class="tli"><div class="tld" style="background:var(--p);box-shadow:0 0 0 2px var(--p)"></div><div><div class="tlt">2. الإنصات والتشخيص</div><div class="tls">جلسة فردية في فضاء الخلية الآمن لتحديد طبيعة المشكلة (نفسية/دراسية/اجتماعية) وتفريغ الشحنات الانفعالية</div></div></div>
+<div class="tli"><div class="tld" style="background:var(--p);box-shadow:0 0 0 2px var(--p)"></div><div><div class="tlt">3. الدعم والوساطة</div><div class="tls">صياغة خطة عمل مشتركة مع التلميذ، أو التدخل بالوساطة السلمية إذا تعلق الأمر بنزاع بين الأقران</div></div></div>
+<div class="tli"><div class="tld" style="background:var(--p);box-shadow:0 0 0 2px var(--p)"></div><div><div class="tlt">4. التتبع والتقييم</div><div class="tls">مواكبة التلميذ في مساره الدراسي وسلوكه للتأكد من تجاوز الصعوبة واستقرار وضعيته</div></div></div>
+</div>
+<div class="eb" style="margin-top:12px"><div class="ebl">المراجع القانونية</div>
+المذكرة 17/007 (2017) — الوقاية من العنف المدرسي | المذكرة 24/2204 (2024) — خلايا اليقظة ومواكبة التلاميذ | خارطة الطريق 2022-2026 الالتزام 7</div>
+</div></div>
+</div>
+
+<!-- EXAM ANSWERS -->
+<div class="pg" id="pg-ea">
+<div class="band"><h3>✍️ نماذج الأجوبة الامتحانية</h3><p>إجابات أكاديمية رسمية ومنظمة على الأسئلة المتوقعة</p></div>
+
+<div class="eac">
+<div class="eaq">س1: عرّف مفهوم الحياة المدرسية وبيّن أهدافه الكبرى.</div>
+<div class="eaa">تُعد الحياة المدرسية تصورًا تربويًا حديثًا ينظر إلى المؤسسة التعليمية باعتبارها فضاءً متكاملًا لا يقتصر على نقل المعارف، بل يشمل مجموع الأنشطة والعلاقات والتفاعلات والممارسات التي يعيشها المتعلم في جميع الأوقات والأماكن المدرسية، قصد تربيته باعتماد الأنشطة الدينية والتربوية والتكوينية المبرمجة مع ضمان المشاركة الفعلية لكافة مكونات المجتمع المدني. وتسعى الحياة المدرسية إلى تحقيق جملة من الأهداف المتكاملة أبرزها: تحسين جودة التعلمات، وتنمية شخصية المتعلم معرفيًا ووجدانيًا وسلوكيًا، وترسيخ قيم المواطنة والمسؤولية، وتحقيق الاندماج الاجتماعي، وجعل المؤسسة فضاءً جاذبًا يحدّ من الهدر المدرسي. وبذلك تنتقل المدرسة من مقاربة تعتبر التلميذ مستهلكًا للمعلومة إلى مقاربة تجعلها فضاءً للتنشئة الاجتماعية المتكاملة.</div>
+<div class="eaw"><strong style="color:var(--ok)">✓ لماذا هذه الإجابة قوية؟</strong><br>تنطلق بتأطير المفهوم، ثم تُعطي التعريف الرسمي من الدليل 2019، ثم تعدد الأهداف، وتختتم بالانتقال التاريخي.</div>
+<div class="eak"><strong style="color:var(--p)">✓ الكلمات المفتاحية:</strong><br>
+<span class="kt">فضاء متكامل</span><span class="kt">مجموع الأنشطة والعلاقات</span><span class="kt">الأوقات والأماكن</span><span class="kt">جودة التعلمات</span><span class="kt">تنمية الشخصية</span><span class="kt">المواطنة</span><span class="kt">الاندماج الاجتماعي</span><span class="kt">التنشئة الشاملة</span></div>
+</div>
+
+<div class="eac">
+<div class="eaq">س2: حلّل المرجعيات المؤطِّرة للحياة المدرسية في السياق المغربي.</div>
+<div class="eaa">تستمد الحياة المدرسية مشروعيتها من منظومة مرجعية متكاملة تشمل ثماني مرجعيات متدرجة. فعلى الصعيد الدستوري، يدعو دستور 2011 في فصله 31 إلى الحصول على تعليم عصري ذي جودة والتنشئة على الهوية الوطنية. وتُجسّد الرسائل الملكية، ولا سيما رسالة 2007، رهان المدرسة في تجسيد المواطنة ثقافةً وممارسةً. أما على الصعيد التربوي، فقد دعا الميثاق الوطني 1999 إلى بناء مدرسة مفعمة بالحياة ومفتوحة على محيطها، فيما أرسى الكتاب الأبيض 2002 الانتقال من الحفظ إلى بناء الكفايات. وعلى الصعيد الاستراتيجي، انتهج البرنامج الاستعجالي 2009-2012 مشروع تحسين جودة الحياة المدرسية، وأكدت الرؤية الاستراتيجية 2015-2030 مقاربة مدرسة الجودة للجميع. وتنتظم كل هذه التوجهات في إطار القانون الإطار 51-17 وخارطة الطريق 2022-2026 اللتين تُعطيان آليات تنفيذية ومؤشرات قياس واضحة، فضلًا عن النصوص التنظيمية التي تنقل الحياة المدرسية من الاجتهاد الفردي إلى سياق المأسسة والحكامة.</div>
+<div class="eaw"><strong style="color:var(--ok)">✓ لماذا هذه الإجابة قوية؟</strong><br>تُقدّم المرجعيات الثماني بترتيب تسلسلي منطقي (دستورية→تربوية→استراتيجية→تنظيمية) مع الفكرة الجامعة لكل واحدة.</div>
+<div class="eak"><span class="kt">دستور 2011</span><span class="kt">الميثاق 1999</span><span class="kt">مفعمة بالحياة</span><span class="kt">الكتاب الأبيض</span><span class="kt">الرؤية 2015-2030</span><span class="kt">القانون الإطار</span><span class="kt">المأسسة والحكامة</span></div>
+</div>
+
+<div class="eac">
+<div class="eaq">س3: حلّل مكونات الحياة المدرسية ومجالاتها.</div>
+<div class="eaa">لا تنحصر الحياة المدرسية في جدران الفصل وجداول الحصص، بل هي نظام حيوي متكامل يهدف إلى تنشئة المواطن لا المتعلم فحسب، وتتشكل مجالاتها وفق ما حددته المذكرة الإطار 155 الصادرة سنة 2011. فعلى صعيد الحكامة والقيادة التربوية، تشتغل المؤسسة عبر مجالس أربعة هي مجلس التدبير والمجلس التربوي والمجالس التعليمية ومجالس الأقسام، مما يُرسّخ التدبير التشاركي ويُعزز الشفافية. وعلى صعيد الأنشطة، تتنوع لتشمل الفنية والثقافية والاجتماعية والبيئية والعلمية والصحية والرياضية وغيرها. أما مجال السلوك المدني والتربية على القيم فيُعنى بترسيخ قيم المواطنة والديمقراطية والنزاهة ونبذ العنف. فضلًا عن ذلك، تُعدّ المشاركة التلاميذية ركيزةً محوريةً عبر مجالس تلاميذية محلية وإقليمية وجهوية تُرسّخ ثقافة الديمقراطية. وتُشكّل مواثيق المؤسسة من نظام داخلي وميثاق القسم الإطارَ التعاقديَّ الناظم لعمل الفاعلين، بينما يُعدّ الأمن الإنساني الشرطَ الأساس لحياة مدرسية سليمة.</div>
+<div class="eaw"><strong style="color:var(--ok)">✓ لماذا هذه الإجابة قوية؟</strong><br>تستحضر المذكرة 155 كمرجعية، وتُقدّم المجالات بأسلوب شامل ومنظم يُبرز التكامل بينها.</div>
+<div class="eak"><span class="kt">نظام متكامل</span><span class="kt">مجالس المؤسسة</span><span class="kt">الأنشطة العشر</span><span class="kt">السلوك المدني</span><span class="kt">المشاركة التلاميذية</span><span class="kt">مواثيق المؤسسة</span><span class="kt">الأمن الإنساني</span></div>
+</div>
+
+<div class="eac">
+<div class="eaq">س4: ميّز بين المناخ المدرسي وبيئة التعلم الآمنة.</div>
+<div class="eaa">تُشير بيئة التعلم الآمنة إلى مجموع الأبعاد المادية والنفسية والعلائقية التي تتيح للمتعلم الانخراط في التعلم بحرية دون خوف أو تهديد، وهي ذات طابع وقائي وتنظيمي يُصمَّم ويُهيَّأ عبر الفضاء والقواعد والترتيبات. في حين يُشير المناخ المدرسي إلى الطابع العام الذي يميز حياة المؤسسة التربوية، ويشمل جودة العلاقات ودرجة الانتماء والانخراط ومستوى الاحترام والإحساس بالرفاه، وهو ما يُعاش ويُشعر به يوميًا من قِبَل كل فاعل. ورغم التمييز بينهما، يجمعهما تكامل وظيفي إذ تُشكّل البيئة الآمنة الإطار الذي ينمو فيه المناخ الإيجابي، والمناخ الجيد هو الأثر الطبيعي لبيئة تعلم آمنة حقيقية. وكلاهما شرطان لتحسين جودة التعلمات وتحقيق الانخراط الفعلي للمتعلمين.</div>
+<div class="eaw"><strong style="color:var(--ok)">✓ لماذا هذه الإجابة قوية؟</strong><br>تُعرّف المفهومين بدقة، تُبرز الفرق (ما يُهيَّأ ↔ ما يُعاش)، ثم تُعيد الدمج بالتكامل.</div>
+<div class="eak"><span class="kt">الأبعاد المادية والنفسية والعلائقية</span><span class="kt">طابع وقائي تنظيمي</span><span class="kt">ما يُصمَّم ويُهيَّأ</span><span class="kt">ما يُعاش يوميًا</span><span class="kt">تكامل وظيفي</span></div>
+</div>
+
+<div class="eac">
+<div class="eaq">س5: حلّل مراحل بناء مشروع المؤسسة المندمج وفق منهجية DEPART.</div>
+<div class="eaa">يقوم مشروع المؤسسة المندمج وفق المذكرة الوزارية 14 الصادرة سنة 2024 على منهجية DEPART المتكاملة التي تضم ست مراحل. تبدأ بمرحلة الانطلاقة لتعبئة الفاعلين وتشكيل فريق القيادة، ثم تشخيص الوضعية عبر قراءة علمية للواقع تشمل نسب النجاح والتغيب والعنف والموارد المتاحة، مما يمنع اتخاذ قرارات عشوائية. تليها مرحلة التخطيط والبرمجة بتحديد الأولويات وصياغة أهداف وفق معيار SMART (محددة وقابلة للقياس في أفق زمني). ثم الأجرأة بالتنفيذ الفعلي توزيع المهام وتعبئة الموارد. فمرحلة التقويم التي تضمن تصحيح المسار عبر مؤشرات الأثر ولجنة المتابعة. وتختتم بمرحلة الانتقال التي تستثمر النتائج للتخطيط للمرحلة المقبلة، لأن المشروع أداة حية تُعدَّل وفق نتائج التقويم. وبهذه المنهجية التشاركية يتحوّل المشروع من وثيقة نظرية إلى رافعة فعلية لتحسين الأداء المؤسسي.</div>
+<div class="eaw"><strong style="color:var(--ok)">✓ لماذا هذه الإجابة قوية؟</strong><br>تستحضر المرجعية (المذكرة 14/2024)، وتُقدّم المراحل الست بترتيب منطقي مع شرح دور كل مرحلة.</div>
+<div class="eak"><span class="kt">DEPART</span><span class="kt">التشخيص العلمي</span><span class="kt">SMART</span><span class="kt">الأجرأة</span><span class="kt">التقويم بالمؤشرات</span><span class="kt">الانتقال</span><span class="kt">أداة حية</span></div>
+</div>
+
+<div class="eac">
+<div class="eaq">س6: ما المقصود بالنموذج التكاملي بين P.E و P.C؟ وما أثره في تحسين التعلمات؟</div>
+<div class="eaa">يقوم النموذج التكاملي على بناء علاقة ترابط وتناسق بين مشروع المؤسسة الذي يُحدد الرؤية الاستراتيجية ومشاريع الأقسام التي تُترجمها إلى تدخلات تربوية مباشرة. ويتجلى هذا التكامل في أربعة مستويات: توحيد التشخيص إذ تتغذى أهداف القسم من التشخيص المؤسسي، وانسجام الأهداف بحيث تنبثق أهداف القسم من الأهداف الاستراتيجية للمؤسسة، وتنسيق الأنشطة بحيث يبرمج كل قسم أنشطة تخدم هدف المؤسسة الكبير، وأخيرًا تكامل التقويم إذ يُغذّي مجلس القسم مجلس المؤسسة. ويُسهم هذا التكامل في تحسين التعلمات عبر توحيد جهود الفاعلين نحو أهداف مشتركة، وتقليص التشتت والتكرار في التدخلات، وتمكين قياس الأثر التراكمي. وبذلك يتحقق الانسجام الوظيفي الذي يحوّل المشروع من وثيقة نظرية إلى رافعة فعلية للتغيير.</div>
+<div class="eaw"><strong style="color:var(--ok)">✓ لماذا هذه الإجابة قوية؟</strong><br>تُجيب عن سؤالين (تعريف + أثر)، تُبرز المستويات الأربعة وتختتم بالانسجام الوظيفي.</div>
+<div class="eak"><span class="kt">ترابط وتناسق</span><span class="kt">توحيد التشخيص</span><span class="kt">انسجام الأهداف</span><span class="kt">تنسيق الأنشطة</span><span class="kt">تكامل التقويم</span><span class="kt">انسجام وظيفي</span></div>
+</div>
+
+<div class="eac">
+<div class="eaq">س7: عرّف خلية الإنصات والوساطة التربوية وحدد أهدافها ومبادئ عملها.</div>
+<div class="eaa">خلية الإنصات آلية تربوية وإدارية مُحدَثة داخل المؤسسات التعليمية تهدف إلى توفير فضاء آمن ومحايد ومستدام لاستقبال المتعلمين والاستماع لمشاكلهم ومعالجتها. وتتوزع أهدافها على أربعة محاور: التوجيه والإرشاد لمساعدة التلاميذ على تجاوز الصعوبات النفسية والاجتماعية، والوساطة التربوية لحل النزاعات بالطرق السلمية، والتدخل الاستباقي لرصد مظاهر الانحراف ومؤشرات الانقطاع قبل تفاقمها، والدعم النفسي والاجتماعي لضمان الاستقرار وتحسين النتائج الدراسية. وتشتغل وفق مبادئ ثلاثة جوهرية: السرية التامة التي تضمن خصوصية ما يُدلي به التلميذ، والإنصات الإيجابي الخالي من الأحكام المسبقة، والحياد الكامل تجاه مختلف الأطراف. ويسير عمل الخلية وفق مسار متسلسل: الرصد والاستقبال ثم الإنصات والتشخيص فالدعم والوساطة وأخيرًا التتبع والتقييم.</div>
+<div class="eaw"><strong style="color:var(--ok)">✓ لماذا هذه الإجابة قوية؟</strong><br>تُجيب عن ثلاثة محاور (تعريف + أهداف + مبادئ) بتدرج منطقي وإيجاز أكاديمي.</div>
+<div class="eak"><span class="kt">آلية تربوية وإدارية</span><span class="kt">فضاء آمن محايد</span><span class="kt">السرية</span><span class="kt">الإنصات الإيجابي</span><span class="kt">الحياد</span><span class="kt">التدخل الاستباقي</span><span class="kt">الوساطة التربوية</span></div>
+</div>
+
+<div class="eac">
+<div class="eaq">س8: ما هي الأنشطة المندمجة؟ وما مبادئ هندستها؟</div>
+<div class="eaa">الأنشطة المندمجة بنية تعلمية مركبة تسعى إلى دمج المهارات والكفايات المختلفة في مهمة واحدة ذات دلالة وظيفية، بدلًا من التدريب المعزول على مهارة منفردة. وتقوم هندستها على ستة مبادئ جوهرية: مبدأ الاندماج الذي يدمج المهارات الأربع في مهمة واحدة مركبة، ومبدأ الأصالة الذي يحاكي سياقات تواصلية حقيقية من الحياة اليومية، ومبدأ الدعامات ببناء هرمية من المهام الفرعية الممهِّدة للمهمة المحورية، ومبدأ قابلية التقييم عبر معايير شفافة توجه التعلم، ومبدأ الوظيفية الذي يُفضي إلى منتَج ملموس كخطاب أو مسرحية أو عرض، وأخيرًا البُعد الاجتماعي الذي يعتبر التفاوض والتعاون بين الأقران ركيزةً في بناء الكفاية. وتتجلى قيمتها في المسابقات الإقليمية والأندية اللغوية بوصفها فضاءات تعلم حقيقية تُجسّد هذه المبادئ وتُرسّخ الانخراط الفعلي للمتعلمين.</div>
+<div class="eaw"><strong style="color:var(--ok)">✓ لماذا هذه الإجابة قوية؟</strong><br>تُعرّف المفهوم ثم تُفصّل المبادئ الستة بدقة وتربط بالتطبيق الميداني.</div>
+<div class="eak"><span class="kt">بنية تعلمية مركبة</span><span class="kt">الاندماج</span><span class="kt">الأصالة</span><span class="kt">الدعامات</span><span class="kt">قابلية التقييم</span><span class="kt">الوظيفية</span><span class="kt">البُعد الاجتماعي</span></div>
+</div>
+</div>
+
+<!-- FLASHCARDS -->
+<div class="pg" id="pg-fc">
+<div class="band"><h3>🃏 بطاقات المراجعة التفاعلية</h3><p>انقر على البطاقة للكشف عن الجواب</p></div>
+<div style="margin-bottom:12px;display:flex;align-items:center;gap:9px">
+<span id="fcc" style="font-size:.84rem;color:var(--muted)">0 / 24 مشاهَدة</span>
+<button class="rb" onclick="rfc()">↺ إعادة تعيين</button>
+</div>
+<div class="fcg" id="fcg"></div>
+</div>
+
+<!-- QUIZ -->
+<div class="pg" id="pg-qz">
+<div class="band"><h3>🎯 اختبر نفسك</h3><p>اختيار متعدد + أسئلة قصيرة</p></div>
+<div id="qzc">
+<h3 style="color:var(--p);margin-bottom:12px">أولًا: اختيار من متعدد</h3>
+<div id="mcqs"></div>
+<div class="dv"></div>
+<h3 style="color:var(--p);margin-bottom:12px">ثانيًا: أسئلة قصيرة</h3>
+<div id="sas"></div>
+<div style="text-align:center;margin-top:18px">
+<button class="btn" onclick="subq()">✅ احتسب النتيجة</button>
+<button class="btn out" onclick="rsq()">↺ إعادة</button>
+</div>
+<div id="qres" class="hid"></div>
+</div>
+</div>
+
+<!-- QUICK REVIEW -->
+<div class="pg" id="pg-qr">
+<div class="band"><h3>⚡ راجع في 10 دقائق</h3><p>ملخصات مكثفة للحفظ السريع قبل الامتحان</p></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>📌 التعريفات الجوهرية</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="qc"><div class="qct">الحياة المدرسية</div>مجموع الأنشطة والعلاقات والتفاعلات التي يعيشها المتعلم في جميع الأوقات والأماكن المدرسية قصد تربيته باعتماد الأنشطة المبرمجة مع ضمان المشاركة الفعلية لمكونات المجتمع المدني.</div>
+<div class="qc" style="margin-top:9px"><div class="qct">بيئة التعلم الآمنة</div>مجموع الأبعاد المادية والنفسية والعلائقية التي تتيح للمتعلم الانخراط في التعلم بحرية دون خوف أو قلق أو تهديد.</div>
+<div class="qc" style="margin-top:9px"><div class="qct">المناخ المدرسي</div>الطابع العام الذي يميز حياة المؤسسة: جودة العلاقات + درجة الانتماء + مستوى الاحترام + الإحساس بالرفاه.</div>
+<div class="qc" style="margin-top:9px"><div class="qct">مشروع المؤسسة P.E</div>وثيقة تخطيطية تشاركية لتحسين مخرجات التعلم، تستند إلى تشخيص دقيق وأهداف قابلة للقياس، مدتها 1-3 سنوات.</div>
+<div class="qc" style="margin-top:9px"><div class="qct">مشروع القسم P.C</div>مشروع تربوي إجرائي يقوده الأستاذ بمشاركة التلاميذ، يُترجم P.E إلى ممارسات صفية ملموسة.</div>
+<div class="qc" style="margin-top:9px"><div class="qct">خلية الإنصات</div>آلية تربوية وإدارية توفر فضاءً آمنًا محايدًا لاستقبال المتعلمين وتقديم الدعم النفسي والاجتماعي والوساطة التربوية.</div>
+<div class="qc" style="margin-top:9px"><div class="qct">النشاط المندمج</div>بنية تعلمية مركبة تدمج المهارات والكفايات في مهمة واحدة ذات دلالة وظيفية تُفضي إلى منتَج ملموس.</div>
+</div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🔑 الأرقام المفتاحية للحفظ</h3><span class="ci">▾</span></div>
+<div class="cb" style="display:flex;flex-wrap:wrap;gap:7px">
+<span class="qp">8 مرجعيات</span>
+<span class="qp">4 مرتكزات</span>
+<span class="qp">5 أهداف</span>
+<span class="qp">4 أبعاد</span>
+<span class="qp">4 مجالس</span>
+<span class="qp">10 أنشطة</span>
+<span class="qp">6 مراحل DEPART</span>
+<span class="qp">4 مستويات تكامل</span>
+<span class="qp">6 مبادئ أنشطة مندمجة</span>
+<span class="qp">4 أهداف خلية الإنصات</span>
+<span class="qp">3 مبادئ خلية الإنصات</span>
+<span class="qp">4 مستويات مشاركة تلاميذية</span>
+</div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>⚡ خرائط الحفظ السريع</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="g2">
+<div>
+<div style="font-weight:700;color:var(--p);margin-bottom:7px">المرجعيات (من الأعلى للأسفل)</div>
+<div class="fl" style="align-items:flex-start">
+<div class="fs" style="font-size:.78rem;padding:5px 13px;background:var(--p)">دستور 2011</div><div class="fa" style="font-size:1rem">↓</div>
+<div class="fs" style="font-size:.78rem;padding:5px 13px;background:var(--s)">الخطب الملكية</div><div class="fa">↓</div>
+<div class="fs" style="font-size:.78rem;padding:5px 13px;background:var(--p)">الميثاق 1999</div><div class="fa">↓</div>
+<div class="fs" style="font-size:.78rem;padding:5px 13px;background:var(--s)">الكتاب الأبيض 2002</div><div class="fa">↓</div>
+<div class="fs" style="font-size:.78rem;padding:5px 13px;background:var(--a)">البرنامج الاستعجالي</div><div class="fa">↓</div>
+<div class="fs" style="font-size:.78rem;padding:5px 13px;background:var(--g)">الرؤية 2015-2030</div><div class="fa">↓</div>
+<div class="fs" style="font-size:.78rem;padding:5px 13px;background:var(--p)">القانون الإطار 51-17</div><div class="fa">↓</div>
+<div class="fs" style="font-size:.78rem;padding:5px 13px;background:var(--s)">خارطة الطريق 2022-26</div>
+</div>
+</div>
+<div>
+<div style="font-weight:700;color:var(--s);margin-bottom:7px">DEPART</div>
+<div class="fl" style="align-items:flex-start">
+<div class="fs" style="font-size:.78rem;padding:5px 13px;background:var(--s)">D — انطلاقة</div><div class="fa">↓</div>
+<div class="fs" style="font-size:.78rem;padding:5px 13px;background:var(--s)">E — تشخيص الوضعية</div><div class="fa">↓</div>
+<div class="fs" style="font-size:.78rem;padding:5px 13px;background:var(--s)">P — تخطيط وبرمجة</div><div class="fa">↓</div>
+<div class="fs" style="font-size:.78rem;padding:5px 13px;background:var(--s)">A — أجرأة</div><div class="fa">↓</div>
+<div class="fs" style="font-size:.78rem;padding:5px 13px;background:var(--s)">R — تقويم</div><div class="fa">↓</div>
+<div class="fs" style="font-size:.78rem;padding:5px 13px;background:var(--s)">T — انتقال</div>
+</div>
+</div>
+</div>
+</div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>⚠️ الأخطاء الشائعة في الامتحان</h3><span class="ci">▾</span></div>
+<div class="cb">
+<div class="eb">
+<div class="ebl">تنبيهات حاسمة</div>
+<ul style="font-size:.87rem;padding-right:16px;list-style:disc">
+<li style="margin:5px 0">❌ ذكر 4 مرجعيات فقط — الصحيح: 8 مرجعيات</li>
+<li style="margin:5px 0">❌ الخلط بين المناخ والبيئة — المناخ: ما يُعاش | البيئة: ما يُهيَّأ</li>
+<li style="margin:5px 0">❌ الخلط بين P.E و P.C — الأول مؤسساتي شامل | الثاني إجرائي صفي</li>
+<li style="margin:5px 0">❌ نسيان منهجية DEPART في P.E — 6 مراحل وليس 5</li>
+<li style="margin:5px 0">❌ اختزال مكونات الحياة المدرسية في الأنشطة — هناك 6 مجالات</li>
+<li style="margin:5px 0">❌ نسيان خلية الإنصات والمشاركة التلاميذية — محاور مستقلة</li>
+<li style="margin:5px 0">❌ الهدف «تحسين النتائج» — غير صحيح | الصحيح: «رفع النجاح من 55% إلى 70%» (SMART)</li>
+<li style="margin:5px 0">❌ اعتبار مبادئ الأنشطة المندمجة 3 أو 4 — الصحيح: 6 مبادئ</li>
+</ul>
+</div>
+</div></div>
+</div>
+
+<!-- FINAL MAP -->
+<div class="pg" id="pg-fm">
+<div class="band"><h3>🗺️ الخريطة النهائية للمراجعة</h3><p>نظرة شاملة على كل المعرفة في لمحة واحدة</p></div>
+<div class="card"><div class="cb">
+<div style="margin-bottom:16px">
+<div style="font-size:.76rem;font-weight:700;color:var(--muted);text-transform:uppercase;margin-bottom:8px">🎓 الوحدة</div>
+<div class="fm-i"><div class="fm-it fm-m">مجزوءة الحياة المدرسية</div></div>
+</div>
+<div style="margin-bottom:16px">
+<div style="font-size:.76rem;font-weight:700;color:var(--muted);text-transform:uppercase;margin-bottom:8px">📌 المحاور</div>
+<div class="fm-i">
+<div class="fm-it fm-a">المفهوم والسياق</div>
+<div class="fm-it fm-a">المرجعيات الثماني</div>
+<div class="fm-it fm-a">مكونات الحياة المدرسية</div>
+<div class="fm-it fm-a">المناخ وبيئة التعلم</div>
+<div class="fm-it fm-a">مشروع المؤسسة P.E</div>
+<div class="fm-it fm-a">مشروع القسم P.C</div>
+<div class="fm-it fm-a">النموذج التكاملي</div>
+<div class="fm-it fm-a">الأنشطة المندمجة</div>
+<div class="fm-it fm-a">خلية الإنصات</div>
+</div>
+</div>
+<div style="margin-bottom:16px">
+<div style="font-size:.76rem;font-weight:700;color:var(--muted);text-transform:uppercase;margin-bottom:8px">💡 المفاهيم الجوهرية</div>
+<div class="fm-i">
+<div class="fm-it fm-c">التعريف الرسمي 2019</div>
+<div class="fm-it fm-c">4 مرتكزات</div>
+<div class="fm-it fm-c">5 أهداف</div>
+<div class="fm-it fm-c">4 أبعاد</div>
+<div class="fm-it fm-c">دستور 2011</div>
+<div class="fm-it fm-c">الميثاق 1999</div>
+<div class="fm-it fm-c">الكتاب الأبيض</div>
+<div class="fm-it fm-c">الرؤية 2015-2030</div>
+<div class="fm-it fm-c">القانون الإطار 51-17</div>
+<div class="fm-it fm-c">خارطة الطريق</div>
+<div class="fm-it fm-c">4 مجالس المؤسسة</div>
+<div class="fm-it fm-c">10 أنشطة مدرسية</div>
+<div class="fm-it fm-c">المشاركة التلاميذية</div>
+<div class="fm-it fm-c">مواثيق المؤسسة</div>
+<div class="fm-it fm-c">الأمن الإنساني</div>
+<div class="fm-it fm-c">المناخ المدرسي</div>
+<div class="fm-it fm-c">بيئة التعلم الآمنة</div>
+<div class="fm-it fm-c">DEPART (6 مراحل)</div>
+<div class="fm-it fm-c">SMART</div>
+<div class="fm-it fm-c">4 مستويات تكامل</div>
+<div class="fm-it fm-c">6 مبادئ مندمجة</div>
+<div class="fm-it fm-c">3 مبادئ خلية الإنصات</div>
+</div>
+</div>
+<div>
+<div style="font-size:.76rem;font-weight:700;color:var(--muted);text-transform:uppercase;margin-bottom:8px">📝 الروابط الامتحانية</div>
+<div class="fm-i">
+<div class="fm-it fm-e">الميثاق ↔ مفعمة بالحياة</div>
+<div class="fm-it fm-e">الرؤية ↔ الجودة للجميع</div>
+<div class="fm-it fm-e">DEPART ↔ منهجية P.E</div>
+<div class="fm-it fm-e">P.E ↔ P.C = تكامل</div>
+<div class="fm-it fm-e">بيئة آمنة → مناخ إيجابي</div>
+<div class="fm-it fm-e">خلية الإنصات ↔ الوقاية</div>
+<div class="fm-it fm-e">الأنشطة المندمجة ↔ الكفايات</div>
+<div class="fm-it fm-e">المشاركة التلاميذية ↔ الديمقراطية</div>
+<div class="fm-it fm-e">تشخيص → هدف SMART → تقويم</div>
+<div class="fm-it fm-e">المتعلم في مركز العملية</div>
+</div>
+</div>
+</div></div>
+
+<div class="card"><div class="ch" onclick="tc(this)"><h3>🎨 الخريطة الذهنية المرئية الشاملة</h3><span class="ci">▾</span></div>
+<div class="cb" style="overflow-x:auto">
+<svg viewBox="0 0 820 540" xmlns="http://www.w3.org/2000/svg" style="width:100%;min-width:520px">
+<ellipse cx="410" cy="270" rx="100" ry="42" fill="#1a6fc4"/>
+<text x="410" y="266" text-anchor="middle" fill="white" font-size="12" font-weight="bold" font-family="Segoe UI,Arial">الحياة المدرسية</text>
+<text x="410" y="281" text-anchor="middle" fill="white" font-size="9.5" font-family="Segoe UI,Arial">مجزوءة شاملة</text>
+<line x1="312" y1="248" x2="200" y2="145" stroke="#1a6fc4" stroke-width="1.8"/>
+<rect x="100" y="112" width="120" height="34" rx="8" fill="#0d9e8a"/>
+<text x="160" y="126" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Segoe UI,Arial">المفهوم</text>
+<text x="160" y="139" text-anchor="middle" fill="white" font-size="8.5" font-family="Segoe UI,Arial">والسياق</text>
+<line x1="348" y1="230" x2="295" y2="130" stroke="#1a6fc4" stroke-width="1.8"/>
+<rect x="220" y="100" width="120" height="34" rx="8" fill="#0d9e8a"/>
+<text x="280" y="114" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Segoe UI,Arial">المرجعيات</text>
+<text x="280" y="127" text-anchor="middle" fill="white" font-size="8.5" font-family="Segoe UI,Arial">الثماني</text>
+<line x1="410" y1="228" x2="410" y2="120" stroke="#1a6fc4" stroke-width="1.8"/>
+<rect x="345" y="88" width="130" height="34" rx="8" fill="#e85b2a"/>
+<text x="410" y="102" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Segoe UI,Arial">مكونات الحياة</text>
+<text x="410" y="115" text-anchor="middle" fill="white" font-size="8.5" font-family="Segoe UI,Arial">المدرسية</text>
+<line x1="472" y1="230" x2="525" y2="130" stroke="#1a6fc4" stroke-width="1.8"/>
+<rect x="470" y="100" width="120" height="34" rx="8" fill="#e85b2a"/>
+<text x="530" y="114" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Segoe UI,Arial">المناخ</text>
+<text x="530" y="127" text-anchor="middle" fill="white" font-size="8.5" font-family="Segoe UI,Arial">وبيئة التعلم</text>
+<line x1="508" y1="248" x2="620" y2="145" stroke="#1a6fc4" stroke-width="1.8"/>
+<rect x="576" y="112" width="120" height="34" rx="8" fill="#c8960a"/>
+<text x="636" y="126" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Segoe UI,Arial">المشاريع</text>
+<text x="636" y="139" text-anchor="middle" fill="white" font-size="8.5" font-family="Segoe UI,Arial">P.E + P.C</text>
+<line x1="312" y1="292" x2="200" y2="395" stroke="#1a6fc4" stroke-width="1.8"/>
+<rect x="100" y="392" width="130" height="34" rx="8" fill="#c8960a"/>
+<text x="165" y="406" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Segoe UI,Arial">النموذج التكاملي</text>
+<text x="165" y="419" text-anchor="middle" fill="white" font-size="8.5" font-family="Segoe UI,Arial">DEPART</text>
+<line x1="380" y1="311" x2="295" y2="405" stroke="#1a6fc4" stroke-width="1.8"/>
+<rect x="210" y="400" width="130" height="34" rx="8" fill="#1a6fc4"/>
+<text x="275" y="414" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Segoe UI,Arial">الأنشطة</text>
+<text x="275" y="427" text-anchor="middle" fill="white" font-size="8.5" font-family="Segoe UI,Arial">المندمجة</text>
+<line x1="440" y1="311" x2="525" y2="405" stroke="#1a6fc4" stroke-width="1.8"/>
+<rect x="470" y="400" width="130" height="34" rx="8" fill="#0d9e8a"/>
+<text x="535" y="414" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Segoe UI,Arial">خلية الإنصات</text>
+<text x="535" y="427" text-anchor="middle" fill="white" font-size="8.5" font-family="Segoe UI,Arial">والوساطة</text>
+<line x1="508" y1="292" x2="620" y2="395" stroke="#1a6fc4" stroke-width="1.8"/>
+<rect x="580" y="392" width="130" height="34" rx="8" fill="#e85b2a"/>
+<text x="645" y="406" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Segoe UI,Arial">المشاركة</text>
+<text x="645" y="419" text-anchor="middle" fill="white" font-size="8.5" font-family="Segoe UI,Arial">التلاميذية</text>
+</svg>
+</div></div>
+</div>
+
+</div><!-- /mn -->
+</div><!-- /app -->
+<script>
+// ===== DATA =====
+const FCD=[
+{q:'ما التعريف الرسمي للحياة المدرسية؟',a:'الحياة التي يعيشها المتعلمون في جميع الأوقات والأماكن المدرسية قصد تربيتهم باعتماد جميع الأنشطة الدينية والتربوية والتكوينية المبرمجة مع ضمان المشاركة الفعلية لكافة مكونات المجتمع المدني. (دليل 2019)'},
+{q:'اذكر المرجعيات الثماني للحياة المدرسية.',a:'1.دستور 2011 | 2.الخطب الملكية | 3.الميثاق 1999 | 4.الكتاب الأبيض 2002 | 5.البرنامج الاستعجالي 2009-2012 | 6.الرؤية 2015-2030 | 7.القانون الإطار 51-17 | 8.خارطة الطريق 2022-2026'},
+{q:'ما الفكرة المحورية للميثاق الوطني 1999؟',a:'المادة 9: «مدرسة مفعمة بالحياة» تجاوز التلقي السلبي إلى التعلم الذاتي والحوار، و«مفتوحة على محيطها» باستحضار المجتمع في قلب المدرسة.'},
+{q:'ما المشروع رقم 9 في البرنامج الاستعجالي؟',a:'«تحسين جودة الحياة المدرسية»: تخصيص غلاف زمني للتفتح، تعميم الأندية التربوية، إرساء المشاركة التلاميذية، تحسين البنيات التحتية.'},
+{q:'ما المجالس الأربعة لمؤسسة التربية والتعليم؟',a:'1.مجلس التدبير (القيادة والمصادقة) | 2.المجلس التربوي (البرنامج السنوي) | 3.المجالس التعليمية (التنسيق البيداغوجي) | 4.مجالس الأقسام (التتبع والتقويم)'},
+{q:'ما الفرق بين النظام الداخلي وميثاق القسم؟',a:'النظام الداخلي: ينظم المؤسسة بكاملها (حقوق وواجبات + أمن + أنشطة). ميثاق القسم: يحدد ضوابط العمل داخل قسم محدد والتزامات الأساتذة والمتعلمين فيما بينهم.'},
+{q:'ما مراحل منهجية DEPART الست؟',a:'D=انطلاقة | E=تشخيص الوضعية | P=تخطيط وبرمجة | A=أجرأة | R=تقويم | T=انتقال'},
+{q:'ما الفرق الجوهري بين P.E و P.C؟',a:'P.E: مستوى المؤسسة، شامل، 1-3 سنوات، فريق متعدد، استراتيجي. P.C: مستوى القسم، إجرائي صفي، موسم أو فصل، يقوده الأستاذ، بيداغوجي.'},
+{q:'ما مبادئ هندسة الأنشطة المندمجة الستة؟',a:'الاندماج | الأصالة | الدعامات | قابلية التقييم | الوظيفية | البُعد الاجتماعي'},
+{q:'ما تعريف بيئة التعلم الآمنة؟',a:'مجموع الأبعاد المادية والنفسية والعلائقية التي تتيح للمتعلم الانخراط في التعلم بحرية دون خوف أو قلق أو تهديد. أبعادها الثلاثة: الأمان الجسدي + النفسي + العلائقي.'},
+{q:'ما الفرق بين المناخ المدرسي وبيئة التعلم الآمنة؟',a:'البيئة: ما يُهيَّأ ويُصمَّم (الفضاء، القواعد، الترتيبات) — وقائي تنظيمي. المناخ: ما يُعاش ويُشعر به يوميًا (العلاقات، الانتماء، الرفاه) — نفسي اجتماعي.'},
+{q:'ما أهداف خلية الإنصات الأربعة؟',a:'1.التوجيه والإرشاد | 2.الوساطة وحل النزاعات | 3.التدخل الاستباقي والوقاية | 4.الدعم النفسي والاجتماعي'},
+{q:'ما مبادئ عمل خلية الإنصات الثلاثة؟',a:'السرية التامة + الإنصات الإيجابي (بلا أحكام مسبقة) + الحياد والموضوعية'},
+{q:'ما مسار التعامل مع الحالة في خلية الإنصات؟',a:'الرصد والاستقبال → الإنصات والتشخيص → الدعم والوساطة → التتبع والتقييم'},
+{q:'ما الأنشطة المدرسية العشر؟',a:'1.الفنية والإبداعية | 2.الثقافية | 3.الاجتماعية والتضامنية | 4.البيئية والتنمية المستدامة | 5.العلمية والتكنولوجية | 6.الحس المقاولاتي | 7.الصحية | 8.الإشعاعية والتواصلية | 9.الرياضية | 10.الخرجات والرحلات'},
+{q:'ما مستويات المشاركة التلاميذية الأربعة؟',a:'مندوب القسم → مجلس تلاميذي محلي (9-17 تلميذًا) → مجلس إقليمي (9-21) → مجلس جهوي (9-33)'},
+{q:'ما التعريف الرسمي لمشروع المؤسسة المندمج؟',a:'«مجموع عمليات تنظيمية وتربوية وتدبيرية متكاملة ومنسجمة تتم برمجتها من طرف المؤسسة، وفق ميزانية مرصودة، لبلوغ أهداف تربوية متفق عليها.» (المذكرة 14/2024)'},
+{q:'ما مستويات التكامل الأربعة بين P.E و P.C؟',a:'1.تكامل التشخيص | 2.تكامل الأهداف | 3.تكامل الأنشطة | 4.تكامل التقويم'},
+{q:'ما العوامل المؤثرة في بيئة التعلم؟',a:'3 مستويات: المادية (إضاءة، ترتيب مكاني، جماليات، موارد) + العلائقية (علاقة الأستاذ بالتلميذ، علاقة التلاميذ ببعضهم) + المحيطية (الأسرة، الوسط الاجتماعي، وسائل الإعلام)'},
+{q:'ما الفصلان الدستوريان المرتبطان بالحياة المدرسية؟',a:'الفصل 31: الحصول على تعليم عصري ذي جودة + التنشئة على الهوية الوطنية + التكوين المهني والتربية البدنية والفنية. الفصل 33: تيسير ولوج الشباب للثقافة والعلم والفن والرياضة.'},
+{q:'ما الرافعتان 17 و18 في الرؤية الاستراتيجية؟',a:'الرافعة 17: الاندماج السوسيوثقافي — المدرسة حاملة للثقافة وناقلة لها. الرافعة 18: ترسيخ مجتمع المواطنة والديموقراطية والمساواة.'},
+{q:'ما المشروع رقم 10 في القانون الإطار 51-17؟',a:'الارتقاء بالحياة المدرسية: إرساء مدرسة مواطنة دامجة، تعزيز الصلة بين مشروع المؤسسة ومشروع القسم والمشروع الشخصي، دعم الأندية التربوية.'},
+{q:'ما هدف SMART؟ أعطِ مثالًا.',a:'S=محدد | M=قابل للقياس | A=قابل للتحقق | R=ذو صلة | T=ضمن أفق زمني. مثال: ❌ تحسين النتائج | ✔ رفع نسبة النجاح من 55% إلى 70% في الفصل الأول'},
+{q:'ما الالتزام رقم 7 في خارطة الطريق 2022-2026؟',a:'«بيئة مدرسية آمنة يسودها مناخ الثقة والاقتران»: محاربة العنف المدرسي وتأمين محيط المؤسسات التعليمية بالتنسيق مع السلطات.'},
+];
+
+const MCD=[
+{q:'ما المفهوم الذي يشمل مجموع الأنشطة والعلاقات في جميع الأوقات والأماكن المدرسية؟',o:['المناخ المدرسي','الحياة المدرسية','بيئة التعلم الآمنة','مشروع المؤسسة'],a:1},
+{q:'أيّ مرجعية دعت إلى «مدرسة مفعمة بالحياة ومفتوحة على محيطها»؟',o:['الكتاب الأبيض','الرؤية الاستراتيجية','الميثاق الوطني 1999','القانون الإطار'],a:2},
+{q:'ما عدد مجالات الحياة المدرسية وفق المذكرة 155 الرئيسية؟',o:['3','4','5','6'],a:2},
+{q:'ما المجلس الذي يختص بدراسة أعمال متعلمي كل قسم وتتبعها وتقييمها؟',o:['المجلس التربوي','مجلس التدبير','مجلس القسم','المجلس التعليمي'],a:2},
+{q:'ما الحرف الأول لمنهجية DEPART ومعناه؟',o:['D = تشخيص','D = انطلاقة وتعبئة','D = تدبير','D = دليل'],a:1},
+{q:'يركز المناخ المدرسي أساسًا على:',o:['سلامة المباني','العلاقات والتفاعلات والانطباعات','المناهج والبرامج','قانون المؤسسة'],a:1},
+{q:'ما الميزة التي تميز مشروع القسم P.C؟',o:['مدته ثلاث سنوات','يُصادَق عليه المجلس التربوي المؤسسي','تدخله إجرائي صفي مباشر','أهدافه استراتيجية شاملة'],a:2},
+{q:'أيٌّ مما يلي ليس من مبادئ الأنشطة المندمجة الستة؟',o:['الاندماج','الأصالة','الانفراد','الوظيفية'],a:2},
+{q:'ما مسار التعامل مع الحالة في خلية الإنصات؟',o:['تشخيص→تخطيط→تنفيذ→تقويم','رصد→إنصات→دعم→تتبع','إنصات→تقييم→علاج','استقبال→علاج→إغلاق'],a:1},
+{q:'ما التعريف الدقيق لبيئة التعلم الآمنة؟',o:['مجموع العلاقات والتفاعلات السائدة','مجموع الأبعاد المادية والنفسية والعلائقية التي تتيح التعلم بلا خوف','الطابع العام الذي يميز المؤسسة','مجموع الأنشطة الموازية'],a:1},
+{q:'ما عدد الأنشطة المدرسية المُصنَّفة في المذكرة 155؟',o:['6','8','10','12'],a:2},
+{q:'ما المجلس التلاميذي الجهوي؟',o:['يُحدَث على مستوى المديرية الإقليمية','يُحدَث على مستوى الأكاديمية للثانويات التأهيلية','يجمع مندوبي الأقسام فقط','يُعقَد كل ثلاث سنوات'],a:1},
+];
+
+const SAD=[
+{q:'ما الفرق بين النظام الداخلي للمؤسسة وميثاق القسم؟',a:'النظام الداخلي: يُنظّم المؤسسة بكاملها (حقوق وواجبات المتعلمين، السلامة، الأنشطة المندمجة، مجالس المؤسسة). ميثاق القسم: يُعدّ من لدن مجلس القسم لتحديد ضوابط العمل داخل قسم محدد والالتزامات المتبادلة بين الأساتذة والمتعلمين.'},
+{q:'ما الفرق بين الهدف «تحسين نتائج التلاميذ» والهدف «رفع نسبة النجاح من 55% إلى 70% في الفصل الأول»؟',a:'الأول مبهم وغير قابل للقياس. الثاني هدف SMART: محدد + قابل للقياس + ضمن أفق زمني. هذا الفارق جوهري في بناء مشروع المؤسسة.'},
+{q:'لماذا تُعدّ المشاركة التلاميذية حقًا وواجبًا؟',a:'حقٌّ لأنها تضمن للمتعلمين التعبير عن آرائهم وتقديم اقتراحاتهم. وواجبٌ لأنها تُنمّي الإحساس بالانتماء وتُرسّخ الوعي بالحقوق والواجبات وتُعوّدهم على تحمّل المسؤولية.'},
+{q:'كيف يتكامل مشروع القسم مع مشروع المؤسسة؟',a:'عبر أربعة مستويات: توحيد التشخيص (تشخيص القسم ينسجم مع المؤسسة)، انسجام الأهداف (القسم يُجزّئ أهداف المؤسسة)، تنسيق الأنشطة (أنشطة القسم تخدم مشروع المؤسسة)، تكامل التقويم (مجلس القسم يُغذّي مجلس المؤسسة).'},
+];
+
+// ===== STATE =====
+let dm=false,qa={},fcS=new Set();
+
+// ===== NAV =====
+function sp(id,el){
+  document.querySelectorAll('.pg').forEach(s=>s.classList.remove('on'));
+  const p=document.getElementById('pg-'+id);
+  if(p)p.classList.add('on');
+  document.querySelectorAll('.ni').forEach(n=>n.classList.remove('on'));
+  if(el)el.classList.add('on');
+}
+function ts(){document.getElementById('sb').classList.toggle('col')}
+function td(){
+  dm=!dm;
+  document.body.classList.toggle('dark',dm);
+  const t=document.getElementById('dt');
+  t.style.background=dm?'#1a6fc4':'var(--border)';
+  document.getElementById('dth').style.transform=dm?'translateX(-18px)':'none';
+}
+function tc(hdr){
+  const card=hdr.closest('.card');
+  const body=card.querySelector('.cb');
+  if(!body)return;
+  const col=card.classList.contains('cc');
+  card.classList.toggle('cc',!col);
+  body.style.display=col?'':'none';
+}
+function st(id,btn){
+  // find all siblings tabs and tab buttons
+  const tabContainer=btn.closest('.tabs');
+  if(!tabContainer)return;
+  const allBtns=tabContainer.querySelectorAll('.tab');
+  allBtns.forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  // get prefix by looking at btn onclick attr
+  const onc=btn.getAttribute('onclick');
+  const match=onc.match(/st\('([^']+)'/);
+  if(!match)return;
+  const targetId=match[1];
+  // hide all tb-* siblings — find common parent
+  const parent=tabContainer.parentElement;
+  parent.querySelectorAll('[id^="tb-"]').forEach(el=>{
+    el.classList.add('hid');
+  });
+  const target=document.getElementById('tb-'+targetId);
+  if(target)target.classList.remove('hid');
+}
+
+// ===== CHECKLIST =====
+function ck(item){
+  item.classList.toggle('dn');
+  upcp();upGp();
+}
+function upcp(){
+  const items=document.querySelectorAll('.cli');
+  const done=document.querySelectorAll('.cli.dn').length;
+  const pct=Math.round(done/items.length*100);
+  document.getElementById('clf').style.width=pct+'%';
+  document.getElementById('cll').textContent=done+' / '+items.length+' مكتمل';
+}
+function upGp(){
+  const done=document.querySelectorAll('.cli.dn').length;
+  const total=document.querySelectorAll('.cli').length;
+  const pct=Math.round(done/total*100);
+  document.getElementById('gp').style.width=pct+'%';
+  document.getElementById('hp').style.width=pct+'%';
+  document.getElementById('gpt').textContent=done+' / '+total+' مكتمل';
+  document.getElementById('hpt').textContent=pct+'% مكتمل — '+(total-done)+' بنود متبقية';
+}
+
+// ===== FLASHCARDS =====
+function rfcs(){
+  const g=document.getElementById('fcg');
+  if(!g)return;
+  g.innerHTML='';
+  FCD.forEach((fc,i)=>{
+    const d=document.createElement('div');
+    d.className='fc';
+    d.innerHTML=`<div class="fci"><div class="fcf"><div class="fcq">${fc.q}</div><div class="fch">انقر للإجابة</div></div><div class="fcb"><div class="fca">${fc.a}</div></div></div>`;
+    d.onclick=()=>{
+      d.classList.toggle('fl2');
+      fcS.add(i);
+      const el=document.getElementById('fcc');
+      if(el)el.textContent=fcS.size+' / '+FCD.length+' مشاهَدة';
+    };
+    g.appendChild(d);
+  });
+}
+function rfc(){
+  document.querySelectorAll('.fc').forEach(f=>f.classList.remove('fl2'));
+  fcS.clear();
+  const el=document.getElementById('fcc');
+  if(el)el.textContent='0 / '+FCD.length+' مشاهَدة';
+}
+
+// ===== QUIZ =====
+function rqz(){
+  const mc=document.getElementById('mcqs');
+  if(!mc)return;
+  mc.innerHTML='';
+  MCD.forEach((q,qi)=>{
+    const d=document.createElement('div');
+    d.className='qq';
+    d.innerHTML=`<div class="qqt">س${qi+1}: ${q.q}</div><div class="qop">${q.o.map((o,oi)=>`<div class="qo" onclick="selq(${qi},${oi},this,${q.a})">${o}</div>`).join('')}</div>`;
+    mc.appendChild(d);
+  });
+  const sa=document.getElementById('sas');
+  if(!sa)return;
+  sa.innerHTML='';
+  SAD.forEach((q,qi)=>{
+    const d=document.createElement('div');
+    d.className='qq';
+    d.innerHTML=`<div class="qqt">س${qi+1}: ${q.q}</div><textarea class="sai" placeholder="اكتب إجابتك..."></textarea><button class="rb" onclick="rvsa(${qi})">🔍 اكشف الجواب</button><div class="ra" id="rv-${qi}"><div class="ex"><div class="el">الإجابة النموذجية</div>${q.a}</div></div>`;
+    sa.appendChild(d);
+  });
+}
+function selq(qi,oi,el,cor){
+  const opts=el.parentElement.querySelectorAll('.qo');
+  opts.forEach(o=>o.classList.remove('ok','err','rv'));
+  if(oi===cor){el.classList.add('ok');qa[qi]=true;}
+  else{el.classList.add('err');opts[cor].classList.add('rv');qa[qi]=false;}
+}
+function rvsa(qi){
+  const el=document.getElementById('rv-'+qi);
+  if(el)el.classList.add('on');
+}
+function subq(){
+  const correct=Object.values(qa).filter(v=>v).length;
+  const pct=Math.round(correct/MCD.length*100);
+  const res=document.getElementById('qres');
+  if(!res)return;
+  const msg=pct>=80?'🌟 ممتاز! أنت مستعد للامتحان!':pct>=60?'👍 جيد! راجع النقاط الضعيفة.':'📚 تحتاج مزيدًا من المراجعة.';
+  res.innerHTML=`<div class="qrs"><div class="qsc">${correct} / ${MCD.length}</div><div style="opacity:.9;margin-top:5px">${pct}% — ${msg}</div></div>`;
+  res.classList.remove('hid');
+  res.scrollIntoView({behavior:'smooth'});
+}
+function rsq(){
+  qa={};
+  document.querySelectorAll('.qo').forEach(o=>o.classList.remove('ok','err','rv'));
+  document.querySelectorAll('.ra').forEach(r=>r.classList.remove('on'));
+  const res=document.getElementById('qres');
+  if(res)res.classList.add('hid');
+}
+
+// ===== SEARCH =====
+document.addEventListener('DOMContentLoaded',function(){
+  const sr=document.getElementById('sr');
+  if(sr){
+    sr.addEventListener('input',function(){
+      const v=this.value.toLowerCase().trim();
+      if(!v)return;
+      // simple highlight on active page
+    });
+  }
+});
+
+// ===== INIT =====
+window.onload=function(){
+  rfcs();
+  rqz();
+  upcp();
+  upGp();
+};
+</script>
+</body>
+</html>
